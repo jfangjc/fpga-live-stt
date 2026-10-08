@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "valid_shapes": 47,
+  "shape_thread_comparisons": 282,
+  "reference": "unfused sequential FP32",
+  "invalid_requests": 10,
+  "arm64_neon_executed": false
+}

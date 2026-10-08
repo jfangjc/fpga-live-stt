@@ -1,0 +1,6 @@
+{
+  "result": "PASS",
+  "hardware_execution": false,
+  "independent_int64_cases": 25,
+  "covers": "Odd output tile counts, output tiles exceeding batch limit, short final batch, K chunking, zero-copy input buffers"
+}

@@ -1,0 +1,53 @@
+PRETTY_NAME="Ubuntu 24.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.2 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+Linux kria 6.8.0-1015-xilinx #16-Ubuntu SMP PREEMPT_DYNAMIC Wed Apr 16 05:06:58 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+Image A: Bootable
+Image B: Bootable
+Requested Boot Image: Image B
+Last Booted Image: Image B
+XilinxSom_QspiImage_v1.1_20210422
+
+ImageA Revision Info: Not defined
+ImageB Revision Info: k26-smk-kv-sdt-v1.07-20260609231841
+                   Accelerator  Accel_type                    Base    Pid   Base_type  #slots(RPU+PL+AIE)    slot->handle
+              k24-starter-kits    XRT_FLAT        k24-starter-kits  id_ok    XRT_FLAT             (0+0+0)              -1
+              k26-starter-kits    XRT_FLAT        k26-starter-kits  id_ok    XRT_FLAT             (0+0+0)           0->0,
+dfx-mgr 2024.2.0-0ubuntu1~xlnx1
+libdfx-mgr2 2024.2.0-0ubuntu1~xlnx1
+libdfx1.0 2024.2.0-0ubuntu1~xlnx1
+xmutil 1:1.2.1-0ubuntu1~xlnx2
+fpga_full: /fpga-region
+amba: /axi
+zynqmp_clk: /firmware/zynqmp-firmware/clock-controller
+gic: /axi/interrupt-controller@f9010000
+
+/sys/class/uio/uio0
+axi-pmon
+0x00000000ffa00000
+0x0000000000010000
+
+/sys/class/uio/uio1
+axi-pmon
+0x00000000fd0b0000
+0x0000000000010000
+
+/sys/class/uio/uio2
+axi-pmon
+0x00000000fd490000
+0x0000000000010000
+
+/sys/class/uio/uio3
+axi-pmon
+0x00000000ffa10000
+0x0000000000010000

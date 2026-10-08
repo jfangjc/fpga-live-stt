@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "hardware_execution": false,
+  "writable_inputs_passed_without_copy": true,
+  "abi_checks": 5,
+  "packing_benchmarks": [
+    {
+      "k": 512,
+      "times": 500,
+      "outputs": 512,
+      "before_seconds": 0.02303925000160234,
+      "after_seconds": 0.017609700007596985,
+      "wire_packets_identical": true
+    },
+    {
+      "k": 512,
+      "times": 500,
+      "outputs": 1024,
+      "before_seconds": 0.045090200001141056,
+      "after_seconds": 0.035155049998138566,
+      "wire_packets_identical": true
+    },
+    {
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "before_seconds": 0.0005881999968551099,
+      "after_seconds": 0.000517150001542177,
+      "wire_packets_identical": true
+    }
+  ],
+  "note": "Host packing only, SHA hashing/zero responses; no FPGA or ARM throughput claim"
+}

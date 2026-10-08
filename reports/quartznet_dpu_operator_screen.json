@@ -1,0 +1,1012 @@
+{
+  "model": "software\\asr-baseline\\model\\model.onnx",
+  "audit_scope": "Direct Conv1D to Conv2D height=1 mapping, DPUCZDX8G B4096 assumptions. This is an operator screen, not a compiler result. Explicit padding, graph transforms and another DPU configuration may change coverage.",
+  "conv_nodes": 171,
+  "depthwise_nodes": 77,
+  "direct_padding_flags": 77,
+  "bank_depth_flags": 16,
+  "depthwise_layers": [
+    {
+      "name": "/encoder/encoder.0/mconv.0/conv/Conv",
+      "channels": 64,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 132,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.5/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.10/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.15/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.20/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.5/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.10/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.15/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.20/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.5/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.10/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.15/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.20/conv/Conv",
+      "channels": 256,
+      "kernel": 33,
+      "pads": [
+        16,
+        16
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 528,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.5/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.10/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.15/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.20/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.5/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.10/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.15/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.20/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.5/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.10/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.15/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.20/conv/Conv",
+      "channels": 256,
+      "kernel": 39,
+      "pads": [
+        19,
+        19
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 624,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.0/conv/Conv",
+      "channels": 256,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 816,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 51,
+      "pads": [
+        25,
+        25
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 1632,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 63,
+      "pads": [
+        31,
+        31
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2016,
+      "exceeds_b4096_bank_depth_2048": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.5/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.10/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.15/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.20/conv/Conv",
+      "channels": 512,
+      "kernel": 75,
+      "pads": [
+        37,
+        37
+      ],
+      "dilation": 1,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2400,
+      "exceeds_b4096_bank_depth_2048": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.0/conv/Conv",
+      "channels": 512,
+      "kernel": 87,
+      "pads": [
+        86,
+        86
+      ],
+      "dilation": 2,
+      "exceeds_direct_dpu_padding_limit": true,
+      "b4096_bank_depth_units": 2784,
+      "exceeds_b4096_bank_depth_2048": true
+    }
+  ],
+  "source": "https://docs.amd.com/r/en-US/ug1414-vitis-ai/Currently-Supported-Operators"
+}

@@ -1,0 +1,17 @@
+{
+  "source": "User-supplied CPU-only summary of hybrid-reuse128.json; printed values rounded to 6 decimals",
+  "cpu_conv_backend": "numpy",
+  "cpu_operation_seconds": {
+    "Conv": 2.174951,
+    "Relu": 0.158781,
+    "Add": 0.023493,
+    "LogSoftmax": 0.001049,
+    "Transpose": 0.000120
+  },
+  "slowest_cpu_layer": {
+    "name": "/encoder/encoder.14/mconv.10/conv/Conv",
+    "seconds": 0.043528,
+    "shape": [1,512,500]
+  },
+  "conclusion": "CPU convolution is the dominant remaining non-pointwise operation. Native CPU convolution is an optional experiment, not a verified board speedup."
+}

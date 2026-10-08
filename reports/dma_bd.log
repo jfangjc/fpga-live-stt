@@ -1,0 +1,291 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct  8 14:29:09 2026
+# Process ID         : 27868
+# Current directory  : C:/Users/jfang/Documents/Vivado/Prototype
+# Command line       : vivado.exe -mode batch -source scripts/create_dma_prototype.tcl -log reports/dma_bd.log -journal reports/dma_bd.jou
+# Log file           : C:/Users/jfang/Documents/Vivado/Prototype/reports/dma_bd.log
+# Journal file       : C:/Users/jfang/Documents/Vivado/Prototype\reports/dma_bd.jou
+# Running On         : Yoga
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13905H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 34086 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36234 MB
+# Available Virtual  : 7587 MB
+#-----------------------------------------------------------
+source scripts/create_dma_prototype.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# if {[llength [get_projects -quiet voice_dma]]} {
+#     current_project voice_dma
+#     close_project
+# }
+# create_project voice_dma $root/voice_dma -part xck26-sfvc784-2LV-c -force
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 595.676 ; gain = 267.148
+# set_property BOARD_PART xilinx.com:kv260_som:part0:2.0 [current_project]
+# set_property XPM_LIBRARIES {XPM_MEMORY} [current_project]
+# add_files [glob $root/rtl/*.v]
+# set f [open $root/scripts/voice_system_recreate.tcl r]
+# set original [read $f]
+# close $f
+# eval [string map {"set design_name voice_system" "set design_name voice_dma_system"} $original]
+INFO: [BD::TCL 103-2003] Currently there is no design <voice_dma_system> in project, so creating one...
+Wrote  : <C:\Users\jfang\Documents\Vivado\Prototype\voice_dma\voice_dma.srcs\sources_1\bd\voice_dma_system\voice_dma_system.bd> 
+create_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 628.793 ; gain = 26.648
+INFO: [BD::TCL 103-2004] Making design <voice_dma_system> as current_bd_design.
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "voice_dma_system".
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:zynq_ultra_ps_e:3.5 xilinx.com:ip:smartconnect:1.0 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:xlconstant:1.1  .
+INFO: [BD::TCL 103-2020] Checking if the following modules exist in the project's sources:  
+voice_axi  .
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 803.293 ; gain = 174.500
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'irq' of definition 'xilinx.com:signal:interrupt:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'irq' of definition 'xilinx.com:signal:interrupt:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'FREQ_HZ' with value '99999001'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'ADDR_WIDTH' with value '16'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'FREQ_HZ' with value '99999001'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_LOCK' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_CACHE' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_QOS' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_REGION' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 's_axi_aclk' has a fixed FREQ_HZ of '99999001'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'S_AXI' has a fixed FREQ_HZ of '99999001'. This value will be respected whenever this IP is instantiated in IP Integrator.
+Slave segment '/voice/S_AXI/reg0' is being assigned into address space '/ps/Data' at <0xA000_0000 [ 64K ]>.
+INFO: [BD 5-943] Reserving offset range <0xA000_0000 [ 64K ]> from slave interface '/axi_sc/S00_AXI' to master interface '/axi_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] voice_dma_system_axi_sc_0: SmartConnect voice_dma_system_axi_sc_0 is in Ultralite mode.
+Wrote  : <C:\Users\jfang\Documents\Vivado\Prototype\voice_dma\voice_dma.srcs\sources_1\bd\voice_dma_system\voice_dma_system.bd> 
+# set_property -dict [list CONFIG.PSU__USE__S_AXI_GP2 1 CONFIG.PSU__SAXIGP2__DATA_WIDTH 128] [get_bd_cells ps]
+# set_property CONFIG.NUM_MI 3 [get_bd_cells axi_sc]
+# set dma [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 tensor_dma]
+# set_property -dict [list CONFIG.c_include_sg 1 CONFIG.c_addr_width 64 \
+#     CONFIG.c_sg_length_width 23 CONFIG.c_m_axi_mm2s_data_width 128 \
+#     CONFIG.c_m_axis_mm2s_tdata_width 128 CONFIG.c_m_axi_s2mm_data_width 128 \
+#     CONFIG.c_s_axis_s2mm_tdata_width 128 \
+#     CONFIG.c_include_mm2s_dre 0 CONFIG.c_include_s2mm_dre 0] $dma
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'length' has a dependency on the module local parameter or undefined parameter 'INDEX_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'issued' has a dependency on the module local parameter or undefined parameter 'INDEX_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'load_index' has a dependency on the module local parameter or undefined parameter 'INDEX_WIDTH'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'COMPUTE' by 0123 for port or parameter 'issue'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'INPUTS' by 01 for port or parameter 'write_enable'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'WEIGHTS' by 012 for port or parameter 'write_enable'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+# set tile [create_bd_cell -type module -reference qn_tile_axis tile]
+# set memory_sc [create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 memory_sc]
+# set_property -dict [list CONFIG.NUM_SI 3 CONFIG.NUM_MI 1] $memory_sc
+# set gpio [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 tile_control]
+# set_property -dict [list CONFIG.C_GPIO_WIDTH 1 CONFIG.C_ALL_OUTPUTS 1 \
+#     CONFIG.C_DOUT_DEFAULT 0x00000001 CONFIG.C_IS_DUAL 1 \
+#     CONFIG.C_GPIO2_WIDTH 2 CONFIG.C_ALL_INPUTS_2 1] $gpio
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilvector_logic:1.0 for the IP type xilinx.com:ip:util_vector_logic:2.0 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:util_vector_logic:2.0 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+# set gate [create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 tile_reset_gate]
+# set_property -dict [list CONFIG.C_SIZE 1 CONFIG.C_OPERATION and] $gate
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconcat:1.0 for the IP type xilinx.com:ip:xlconcat:2.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconcat:2.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+# set status [create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 tile_status]
+# set_property CONFIG.NUM_PORTS 2 $status
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconcat:1.0 for the IP type xilinx.com:ip:xlconcat:2.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconcat:2.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+# set irq [create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 irq_concat]
+# set_property CONFIG.NUM_PORTS 3 $irq
+# disconnect_bd_net [get_bd_nets voice_irq] [get_bd_pins ps/pl_ps_irq0]
+# connect_bd_net [get_bd_pins voice/irq] [get_bd_pins irq_concat/In0]
+# connect_bd_net [get_bd_pins tensor_dma/mm2s_introut] [get_bd_pins irq_concat/In1]
+# connect_bd_net [get_bd_pins tensor_dma/s2mm_introut] [get_bd_pins irq_concat/In2]
+# connect_bd_net [get_bd_pins irq_concat/dout] [get_bd_pins ps/pl_ps_irq0]
+# connect_bd_net [get_bd_pins tile/busy] [get_bd_pins tile_status/In0]
+# connect_bd_net [get_bd_pins tile/error] [get_bd_pins tile_status/In1]
+# connect_bd_net [get_bd_pins tile_status/dout] [get_bd_pins tile_control/gpio2_io_i]
+WARNING: [BD 41-1306] The connection to interface pin </tile_control/gpio2_io_i> is being overridden by the user with net <tile_status_dout>. This pin will not be connected as a part of interface connection <GPIO2>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+# connect_bd_net [get_bd_pins tile_control/gpio_io_o] [get_bd_pins tile_reset_gate/Op1]
+WARNING: [BD 41-1306] The connection to interface pin </tile_control/gpio_io_o> is being overridden by the user with net <tile_control_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+# connect_bd_net [get_bd_pins reset/peripheral_aresetn] [get_bd_pins tile_reset_gate/Op2]
+# connect_bd_net [get_bd_pins tile_reset_gate/Res] [get_bd_pins tile/aresetn]
+# connect_bd_intf_net [get_bd_intf_pins axi_sc/M01_AXI] [get_bd_intf_pins tensor_dma/S_AXI_LITE]
+# connect_bd_intf_net [get_bd_intf_pins axi_sc/M02_AXI] [get_bd_intf_pins tile_control/S_AXI]
+# connect_bd_intf_net [get_bd_intf_pins tensor_dma/M_AXI_MM2S] [get_bd_intf_pins memory_sc/S00_AXI]
+# connect_bd_intf_net [get_bd_intf_pins tensor_dma/M_AXI_S2MM] [get_bd_intf_pins memory_sc/S01_AXI]
+# connect_bd_intf_net [get_bd_intf_pins tensor_dma/M_AXI_SG] [get_bd_intf_pins memory_sc/S02_AXI]
+# connect_bd_intf_net [get_bd_intf_pins memory_sc/M00_AXI] [get_bd_intf_pins ps/S_AXI_HP0_FPD]
+# connect_bd_intf_net [get_bd_intf_pins tensor_dma/M_AXIS_MM2S] [get_bd_intf_pins tile/S_AXIS]
+# connect_bd_intf_net [get_bd_intf_pins tile/M_AXIS] [get_bd_intf_pins tensor_dma/S_AXIS_S2MM]
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+# set keep [create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 tile_keep]
+# set_property -dict [list CONFIG.CONST_WIDTH 16 CONFIG.CONST_VAL 65535] $keep
+# connect_bd_net [get_bd_pins tile_keep/dout] [get_bd_pins tensor_dma/s_axis_s2mm_tkeep]
+WARNING: [BD 41-1306] The connection to interface pin </tensor_dma/s_axis_s2mm_tkeep> is being overridden by the user with net <tile_keep_dout>. This pin will not be connected as a part of interface connection <S_AXIS_S2MM>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+# foreach pin {tensor_dma/s_axi_lite_aclk tensor_dma/m_axi_mm2s_aclk tensor_dma/m_axi_s2mm_aclk tensor_dma/m_axi_sg_aclk memory_sc/aclk ps/saxihp0_fpd_aclk tile/aclk tile_control/s_axi_aclk} {
+#     connect_bd_net [get_bd_pins ps/pl_clk0] [get_bd_pins $pin]
+# }
+# foreach pin {tensor_dma/axi_resetn memory_sc/aresetn tile_control/s_axi_aresetn} {
+#     connect_bd_net [get_bd_pins reset/peripheral_aresetn] [get_bd_pins $pin]
+# }
+# assign_bd_address -offset 0xA0010000 -range 0x10000 -target_address_space [get_bd_addr_spaces ps/Data] [get_bd_addr_segs tensor_dma/S_AXI_LITE/Reg] -force
+Slave segment '/tensor_dma/S_AXI_LITE/Reg' is being assigned into address space '/ps/Data' at <0xA001_0000 [ 64K ]>.
+# assign_bd_address -offset 0xA0020000 -range 0x10000 -target_address_space [get_bd_addr_spaces ps/Data] [get_bd_addr_segs tile_control/S_AXI/Reg] -force
+Slave segment '/tile_control/S_AXI/Reg' is being assigned into address space '/ps/Data' at <0xA002_0000 [ 64K ]>.
+# assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/ps/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/tensor_dma/Data_MM2S' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/ps/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/tensor_dma/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/ps/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/tensor_dma/Data_SG' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/ps/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/tensor_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/ps/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/tensor_dma/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/ps/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/tensor_dma/Data_SG' at <0x0000_0000 [ 2G ]>.
+Slave segment '/ps/SAXIGP2/HP0_QSPI' is being assigned into address space '/tensor_dma/Data_MM2S' at <0xC000_0000 [ 512M ]>.
+Slave segment '/ps/SAXIGP2/HP0_QSPI' is being assigned into address space '/tensor_dma/Data_S2MM' at <0xC000_0000 [ 512M ]>.
+Slave segment '/ps/SAXIGP2/HP0_QSPI' is being assigned into address space '/tensor_dma/Data_SG' at <0xC000_0000 [ 512M ]>.
+Slave segment '/ps/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/tensor_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/ps/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/tensor_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Slave segment '/ps/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/tensor_dma/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/ps/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/tensor_dma/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Slave segment '/ps/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/tensor_dma/Data_SG' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/ps/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/tensor_dma/Data_SG' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+# validate_bd_design
+WARNING: [BD 41-1629] Slave segment </ps/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-3281] Instance '/ps' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+WARNING: [BD 41-3281] Instance '/tensor_dma' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+INFO: [BD 5-943] Reserving offset range <0xA000_0000 [ 64K ]> from slave interface '/axi_sc/S00_AXI' to master interface '/axi_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA001_0000 [ 64K ]> from slave interface '/axi_sc/S00_AXI' to master interface '/axi_sc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA002_0000 [ 64K ]> from slave interface '/axi_sc/S00_AXI' to master interface '/axi_sc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] voice_dma_system_axi_sc_0: SmartConnect voice_dma_system_axi_sc_0 is in Ultralite mode.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/memory_sc/S00_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/memory_sc/S00_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/memory_sc/S00_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/memory_sc/S01_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/memory_sc/S01_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/memory_sc/S01_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/memory_sc/S02_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/memory_sc/S02_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/memory_sc/S02_AXI' to master interface '/memory_sc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] voice_dma_system_memory_sc_0: SmartConnect voice_dma_system_memory_sc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+xit::source_ipfile: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 902.613 ; gain = 74.949
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_MM2S.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_S2MM.
+Excluding slave segment /ps/SAXIGP2/HP0_LPS_OCM from address space /tensor_dma/Data_SG.
+INFO: [xilinx.com:ip:util_vector_logic:2.0-10] /tile_reset_gate IP set output pin Res type to "rst" when Input pin Op1 type is "undef" and Input pin Op2 type is "rst".
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps/S_AXI_HP0_FPD(1) and /memory_sc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps/S_AXI_HP0_FPD(1) and /memory_sc/M00_AXI(0)
+validate_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 911.543 ; gain = 95.906
+# save_bd_design
+Wrote  : <C:\Users\jfang\Documents\Vivado\Prototype\voice_dma\voice_dma.srcs\sources_1\bd\voice_dma_system\voice_dma_system.bd> 
+# generate_target all [get_files voice_dma_system.bd]
+INFO: [BD 41-1662] The design 'voice_dma_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/synth/voice_dma_system.v
+Verilog Output written to : C:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/sim/voice_dma_system.v
+Verilog Output written to : C:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/hdl/voice_dma_system_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] voice_dma_system_ps_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Amd's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Amd's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps .
+Exporting to file c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/ip/voice_dma_system_axi_sc_0/bd_0/hw_handoff/voice_dma_system_axi_sc_0.hwh
+Generated Hardware Definition File c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/ip/voice_dma_system_axi_sc_0/bd_0/synth/voice_dma_system_axi_sc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_sc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block one .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block voice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tensor_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tile .
+Exporting to file c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/ip/voice_dma_system_memory_sc_0/bd_0/hw_handoff/voice_dma_system_memory_sc_0.hwh
+Generated Hardware Definition File c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/ip/voice_dma_system_memory_sc_0/bd_0/synth/voice_dma_system_memory_sc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_sc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tile_control .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tile_reset_gate .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tile_status .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block irq_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tile_keep .
+Exporting to file C:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/hw_handoff/voice_dma_system.hwh
+Generated Hardware Definition File C:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/synth/voice_dma_system.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/voice_dma_system.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/voice_dma_system.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file c:/Users/jfang/Documents/Vivado/Prototype/voice_dma/voice_dma.gen/sources_1/bd/voice_dma_system/voice_dma_system_sv.sveo
+generate_target: Time (s): cpu = 00:00:50 ; elapsed = 00:01:28 . Memory (MB): peak = 1008.398 ; gain = 96.855
+# set wrapper [make_wrapper -files [get_files voice_dma_system.bd] -top]
+# add_files $wrapper
+# add_files $root/rtl/voice_dma_top.v
+WARNING: [filemgmt 56-12] File 'C:/Users/jfang/Documents/Vivado/Prototype/rtl/voice_dma_top.v' cannot be added to the project because it already exists in the project, skipping this file
+# set_property top voice_dma_top [current_fileset]
+# add_files -fileset constrs_1 $root/Prototype.srcs/constrs_1/imports/Lab2b-Files/kria-constraints.xdc
+# add_files -fileset constrs_1 $root/Prototype.srcs/constrs_1/mic_cdc.xdc
+# set_property USED_IN_SYNTHESIS false [get_files $root/Prototype.srcs/constrs_1/mic_cdc.xdc]
+# update_compile_order -fileset sources_1
+# write_bd_tcl -force $root/scripts/voice_dma_recreate.tcl
+WARNING: [BD 41-2925] The design that will be created by this Tcl script contains the following module references: voice_axi, qn_tile_axis.
+Please add the sources of those modules before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out <C:/Users/jfang/Documents/Vivado/Prototype/scripts/voice_dma_recreate.tcl>.
+
+# puts "DMA_PROTOTYPE_BD_VALIDATED"
+DMA_PROTOTYPE_BD_VALIDATED
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 14:31:58 2026...

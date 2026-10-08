@@ -1,0 +1,36 @@
+KV260 DMA prototype V2 - host verification, 2026-10-08
+
+Vivado 2026.1, xck26-sfvc784-2LV-c, voice_dma/voice_dma.xpr.
+BD validation and synthesis completed; integrated placement/routing completed.
+Corrected status-stream-disabled revision at 100 MHz: setup WNS 0.198 ns,
+TNS 0; hold WHS 0.010 ns, THS 0.
+No unconstrained internal endpoints or missing clocks.
+Microphone serial input is intentionally false-pathed into its synchronizer.
+Routed DRC has warnings/advisories only, no error or critical warning rules.
+Warnings concern DSP input/output pipelining and block RAM collision advisories.
+Integrated resources: 288 DSP48E2 (256 tile + 32 original dot), 21 BRAM tiles.
+
+Tile native DSP48E2/XPM simulation: 13 independent vector/protocol cases PASS.
+Signed INT8 arithmetic, K=1/17/257/1024, bubbles, output backpressure, resets,
+invalid packets and TLAST handling verified. Python packet/tail/K-split PASS.
+The Linux driver compiled against the exact Ubuntu 6.8.0-1015-xilinx headers.
+Overlay compiles cleanly and applies offline to the supplied board device tree.
+
+The CPU frontend matches the original checkpoint for four tested audio lengths.
+Hybrid FP32 evaluator agrees with all 171 ONNX Conv intermediates and final
+frame argmax decisions on the supplied ten-second clip. Experimental INT8 has
+97.6% frame argmax agreement and changes one word relative to FP32 decoding.
+No ground-truth corpus word-error rate or FPGA model throughput is established.
+
+Initial V2 client/DMA binding succeeded on the board but K=1 transfer timed
+out. The optional AXI DMA control/status streams were enabled without a
+status packet source, blocking S2MM EOF completion. Corrected generated IP
+has C_SG_INCLUDE_STSCNTRL_STRM=0; scatter-gather is retained. See
+dma_board_timeout.json and kernel_dma_timeout_review.txt for evidence.
+Corrected physical arithmetic, recovery and whole-model execution remain
+pending board tests. Earlier V1 microphone and 32-lane dot
+tests do not establish V2 DMA operation. The 77,376 tile calls per ten-second
+model input may dominate latency; board measurements are required.
+
+Bitstream generation and package integrity are recorded separately in the
+Vivado run log and reports/dma_package.json after those steps complete.

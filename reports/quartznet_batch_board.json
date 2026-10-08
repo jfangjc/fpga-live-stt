@@ -1,0 +1,34 @@
+{
+  "source": "User-provided KV260 batch smoke and model output",
+  "batch_smoke": {
+    "hardware_execution": true,
+    "device": "/dev/qn-tile",
+    "all_exact": true,
+    "ioctl_calls": 86,
+    "tile_packets": 1110,
+    "input_bytes": 12134880,
+    "total_transport_test_seconds": 0.08389466499647824
+  },
+  "hybrid": {
+    "experimental": true,
+    "accuracy_validated": false,
+    "mode": "dma",
+    "hardware_execution": true,
+    "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+    "audio_seconds": 10.0,
+    "remove_dc": true,
+    "frontend_seconds": 0.059884050002438016,
+    "inference_seconds": 13.343927858000825,
+    "decode_seconds": 0.0015353109993156977,
+    "total_seconds": 13.405347219002579,
+    "real_time_factor": 1.340534721900258,
+    "tile_transactions": 77376,
+    "dma_batch_size": 64,
+    "ioctl_calls": 1209,
+    "tile_packets": 77376,
+    "dma_input_bytes": 1094902784
+  },
+  "transcript_matches_cpu_on_this_clip": true,
+  "cpu_total_seconds": 1.9581415380016551,
+  "low_latency_objective": "not achieved"
+}

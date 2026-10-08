@@ -1,0 +1,313 @@
+{
+  "source": "User-supplied KV260 board console output",
+  "runs_by_cpu_threads": {
+    "4": {
+      "run": {
+        "experimental": true,
+        "accuracy_validated": false,
+        "calibration_corpus": null,
+        "mode": "dma",
+        "hardware_execution": true,
+        "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+        "audio_seconds": 10.0,
+        "remove_dc": true,
+        "frontend_seconds": 0.06332346399722155,
+        "inference_seconds": 6.238152070000069,
+        "decode_seconds": 0.0015289889997802675,
+        "total_seconds": 6.303004522997071,
+        "real_time_factor": 0.6303004522997071,
+        "tile_transactions": 77376,
+        "dma_batch_size": 128,
+        "ioctl_calls": 605,
+        "tile_packets": 77376,
+        "dma_input_bytes": 1094902784,
+        "cpu_conv_backend": "native",
+        "cpu_conv_threads": 4,
+        "native_cpu_conv_nodes": 77,
+        "native_cpu_conv_calls": 77,
+        "native_library_sha256": "f9ddb180e7e3e06d0fee7bebfa59a82fc27fb8eb319e367bd111622a03f156a0",
+        "graph_setup_seconds": 1.907125874000485
+      },
+      "profile": {
+        "hardware_execution": true,
+        "int8_pointwise_seconds": 5.424021320031898,
+        "other_graph_seconds": 0.7889719229933689,
+        "kernel_ioctl_seconds": 2.7143461070081685,
+        "ioctl_calls": 605,
+        "dma_input_bytes": 1094902784,
+        "cpu_conv_backend": "native",
+        "peak_process_rss_kib": 287868,
+        "slowest_layers": [
+          {
+            "name": "/encoder/encoder.17/mconv.0/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.14648284700524528,
+            "shape": [
+              1,
+              1024,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 2048,
+            "dma_ioctl_calls": 16,
+            "dma_input_bytes": 33587200
+          },
+          {
+            "name": "/encoder/encoder.12/mconv.21/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.0785348039935343,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.9/mconv.16/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07825456400314579,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.14/mconv.16/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.0779775030023302,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.11/mconv.11/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.0779145080014132,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.15/mconv.6/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.0778784150024876,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.15/mconv.16/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07786251400102628,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.13/mconv.21/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07774576799420174,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          }
+        ]
+      }
+    },
+    "1": {
+      "run": {
+        "experimental": true,
+        "accuracy_validated": false,
+        "calibration_corpus": null,
+        "mode": "dma",
+        "hardware_execution": true,
+        "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+        "audio_seconds": 10.0,
+        "remove_dc": true,
+        "frontend_seconds": 0.06345087599765975,
+        "inference_seconds": 7.603696850004781,
+        "decode_seconds": 0.0014747780005563982,
+        "total_seconds": 7.668622504002997,
+        "real_time_factor": 0.7668622504002996,
+        "tile_transactions": 77376,
+        "dma_batch_size": 128,
+        "ioctl_calls": 605,
+        "tile_packets": 77376,
+        "dma_input_bytes": 1094902784,
+        "cpu_conv_backend": "native",
+        "cpu_conv_threads": 1,
+        "native_cpu_conv_nodes": 77,
+        "native_cpu_conv_calls": 77,
+        "native_library_sha256": "f9ddb180e7e3e06d0fee7bebfa59a82fc27fb8eb319e367bd111622a03f156a0",
+        "graph_setup_seconds": 1.9035385150054935
+      },
+      "profile": {
+        "hardware_execution": true,
+        "int8_pointwise_seconds": 5.415807447985571,
+        "other_graph_seconds": 2.1628373229832505,
+        "kernel_ioctl_seconds": 2.7214886129513616,
+        "ioctl_calls": 605,
+        "dma_input_bytes": 1094902784,
+        "cpu_conv_backend": "native",
+        "peak_process_rss_kib": 287868,
+        "slowest_layers": [
+          {
+            "name": "/encoder/encoder.17/mconv.0/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.14652152800408658,
+            "shape": [
+              1,
+              1024,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 2048,
+            "dma_ioctl_calls": 16,
+            "dma_input_bytes": 33587200
+          },
+          {
+            "name": "/encoder/encoder.16/mconv.0/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.08807824299583444,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": false
+          },
+          {
+            "name": "/encoder/encoder.14/mconv.1/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07824107899796218,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.16/mconv.1/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07822257299994817,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.15/mconv.6/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07783617200038861,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.8/mconv.11/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.0778217240003869,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.13/mconv.16/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.0777121659994009,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          },
+          {
+            "name": "/encoder/encoder.14/res.0.0/conv/Conv",
+            "op": "Conv",
+            "seconds": 0.07753514400246786,
+            "shape": [
+              1,
+              512,
+              500
+            ],
+            "int8_pointwise": true,
+            "tile_transactions": 1024,
+            "dma_ioctl_calls": 8,
+            "dma_input_bytes": 16793600
+          }
+        ]
+      }
+    }
+  },
+  "same_transcript_on_this_clip": true,
+  "reduction_vs_numpy_percent": 19.981416946062158,
+  "pointwise_outside_ioctl_seconds": 2.709675213023729,
+  "ratio_to_corrected_cpu_baseline": 3.218870751002752,
+  "accuracy_validated": false,
+  "native_arithmetic_smoke_output": "Not included in attachment; full-model native CPU execution reported",
+  "note": "Single-run timings exclude setup/file I/O; one matching transcript does not establish word error rate."
+}

@@ -1,0 +1,41 @@
+{
+  "result": "PASS",
+  "hardware_execution": false,
+  "isolated_cpu_conv_checks": 231,
+  "max_scaled_cpu_conv_error": 3.589704506570264e-07,
+  "cpu_conv_sessions": 77,
+  "pointwise_nodes_preserved": 94,
+  "cases": [
+    {
+      "feature_frames": 100,
+      "host_emulated_dma_seconds": 0.777364800000214,
+      "frame_argmax_agreement": 1.0,
+      "max_final_logprob_difference": 0.6902408599853516,
+      "numpy_transcript": "soo o a are number made oup",
+      "ort_cpu_transcript": "soo o a are number made oup",
+      "other_graph_seconds": 0.035858399874996394,
+      "int8_pointwise_nodes": 94
+    },
+    {
+      "feature_frames": 251,
+      "host_emulated_dma_seconds": 1.4437428999954136,
+      "frame_argmax_agreement": 0.9682539682539683,
+      "max_final_logprob_difference": 6.122025489807129,
+      "numpy_transcript": "two hundre are number made up so is the",
+      "ort_cpu_transcript": "two hundre are number made up so is the",
+      "other_graph_seconds": 0.04505189988412894,
+      "int8_pointwise_nodes": 94
+    },
+    {
+      "feature_frames": 1000,
+      "host_emulated_dma_seconds": 5.7686016999941785,
+      "frame_argmax_agreement": 0.972,
+      "max_final_logprob_difference": 13.476394653320312,
+      "numpy_transcript": "two unar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+      "ort_cpu_transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+      "other_graph_seconds": 0.12765069997112732,
+      "int8_pointwise_nodes": 94
+    }
+  ],
+  "note": "FP32 accumulation order differs; whole quantized graph is not bit exact. No board speed or corpus accuracy validation."
+}

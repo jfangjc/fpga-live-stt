@@ -1,0 +1,4 @@
+all:
+{
+    voice_dma/voice_dma.runs/impl_1/voice_dma_top.bit
+}

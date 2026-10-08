@@ -1,0 +1,15 @@
+KV260 deployment package validation 2026-10-08
+Target board profile: Ubuntu 24.04.2, kernel6.8.0-1015-xilinx, dfx-mgr2024.2.0, xmutil1.2.1
+Confirmed user firmware slotB revision1.07
+Bootgen binary copied with matching SHA256
+DTBO compiled without warnings; fdtoverlay successfully resolves supplied base tree
+Merged FPGA firmware, PL0 clock, AFI/reset, UIO range and IRQ values verified
+Shell syntax checked without performing any board operations
+Standard-library driver selftest passed; NumPy skipped in WSL (prior host operator tests passed)
+ZIP CRC/checksums verified; archive excludes user's board dumps
+Archive SHA256: 6742C7174E6D5D949BF589A21BEF2E7CAB1AB43F04A46B736E52371172465EA1
+Physical FPGA programming and runtime test remain pending user execution
+Parser correction: legacy and numeric-ID layouts, exact name/type rejection, active/inactive detection all PASS. Scripts syntax PASS. No new board load has been performed.
+UIO preflight correction: hidden of_id is not read. Mock full-loader success with absent of_id, inactive unload skipped, wrong UIO mapping rejected before MMIO: PASS. Updated ZIP SHA256: 7A4D34963431DD3E8EF37A4A85169FCF74EF0480DE3B7F24A027AA473D57A4A4
+Board evidence: voice-prototype loaded in slot0, FPGA operating, fclk and AFI bound, voice-prototype UIO4 discovered. Clock measured93750000Hz; physical MMIO/audio smoke test not yet run. Corrected overlay assigned rate to100000000Hz; merged overlay properties, checksums and ZIP CRC PASS. Updated ZIP SHA256: A980983697D5D2D9BB1979E69B0705B680E2F6D4F2582E63F2E53CD4840DB1A8. Actual100MHz clock readback remains pending.
+Physical board result 2026-10-08: PL0 readback99999999Hz; UIO4 map0 address0xa0000000 size0x10000. Signed dot PASS (-32384); capture engine PASS160PCM24 samples, range-810752..-793344. Overflow sticky, dropped7032296, captured7033523 at test completion; historical totals do not measure sustained recording loss. Speech recording and full ASR remain pending.

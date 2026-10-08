@@ -1,0 +1,419 @@
+{
+  "hardware_execution": false,
+  "device": null,
+  "all_exact": true,
+  "ioctl_calls": 86,
+  "tile_packets": 1110,
+  "input_bytes": 12134880,
+  "total_transport_test_seconds": 0.059495200010132976,
+  "tests": [
+    {
+      "kind": "uniform_batch",
+      "k": 1,
+      "count": 1,
+      "seconds": 1.7400001524947584e-05,
+      "seconds_per_tile": 1.7400001524947584e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1,
+      "count": 2,
+      "seconds": 3.9099992136470973e-05,
+      "seconds_per_tile": 1.9549996068235487e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1,
+      "count": 7,
+      "seconds": 2.570000651758164e-05,
+      "seconds_per_tile": 3.671429502511663e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1,
+      "count": 32,
+      "seconds": 5.5900003644637764e-05,
+      "seconds_per_tile": 1.7468751138949301e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1,
+      "count": 64,
+      "seconds": 4.020000051241368e-05,
+      "seconds_per_tile": 6.281250080064638e-07,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1,
+      "count": 128,
+      "seconds": 0.00014659999578725547,
+      "seconds_per_tile": 1.1453124670879333e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 17,
+      "count": 1,
+      "seconds": 1.6000005416572094e-05,
+      "seconds_per_tile": 1.6000005416572094e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 17,
+      "count": 2,
+      "seconds": 2.649999805726111e-05,
+      "seconds_per_tile": 1.3249999028630555e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 17,
+      "count": 7,
+      "seconds": 3.460000152699649e-05,
+      "seconds_per_tile": 4.942857360999499e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 17,
+      "count": 32,
+      "seconds": 7.840000034775585e-05,
+      "seconds_per_tile": 2.4500000108673703e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 17,
+      "count": 64,
+      "seconds": 0.00012150000839028507,
+      "seconds_per_tile": 1.8984376310982043e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 17,
+      "count": 128,
+      "seconds": 0.0002241000038338825,
+      "seconds_per_tile": 1.7507812799522071e-06,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 257,
+      "count": 1,
+      "seconds": 4.549999721348286e-05,
+      "seconds_per_tile": 4.549999721348286e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 257,
+      "count": 2,
+      "seconds": 4.990000161342323e-05,
+      "seconds_per_tile": 2.4950000806711614e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 257,
+      "count": 7,
+      "seconds": 0.00016340000729542226,
+      "seconds_per_tile": 2.3342858185060322e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 257,
+      "count": 32,
+      "seconds": 0.0009143000061158091,
+      "seconds_per_tile": 2.8571875191119034e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 257,
+      "count": 64,
+      "seconds": 0.002059300008113496,
+      "seconds_per_tile": 3.2176562626773375e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 257,
+      "count": 128,
+      "seconds": 0.0036764999967999756,
+      "seconds_per_tile": 2.872265622499981e-05,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1024,
+      "count": 1,
+      "seconds": 0.0001843999925768003,
+      "seconds_per_tile": 0.0001843999925768003,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1024,
+      "count": 2,
+      "seconds": 0.0002857999934349209,
+      "seconds_per_tile": 0.00014289999671746045,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1024,
+      "count": 7,
+      "seconds": 0.0011549000046215951,
+      "seconds_per_tile": 0.00016498571494594216,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1024,
+      "count": 32,
+      "seconds": 0.0056327000056626275,
+      "seconds_per_tile": 0.0001760218751769571,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1024,
+      "count": 64,
+      "seconds": 0.010359100007917732,
+      "seconds_per_tile": 0.00016186093762371456,
+      "exact": true
+    },
+    {
+      "kind": "uniform_batch",
+      "k": 1024,
+      "count": 128,
+      "seconds": 0.019843499991111457,
+      "seconds_per_tile": 0.00015502734368055826,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 33,
+      "times": 19,
+      "outputs": 21,
+      "batch_size": 1,
+      "seconds": 0.00013899999612476677,
+      "seconds_per_tile": 3.474999903119169e-05,
+      "ioctl_calls": 4,
+      "tile_packets": 4,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "batch_size": 1,
+      "seconds": 0.002054099997621961,
+      "seconds_per_tile": 8.558749990091503e-05,
+      "ioctl_calls": 24,
+      "tile_packets": 24,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 17,
+      "times": 1,
+      "outputs": 1,
+      "batch_size": 1,
+      "seconds": 2.719998883549124e-05,
+      "seconds_per_tile": 2.719998883549124e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 1,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 33,
+      "times": 19,
+      "outputs": 21,
+      "batch_size": 2,
+      "seconds": 0.000139000010676682,
+      "seconds_per_tile": 3.47500026691705e-05,
+      "ioctl_calls": 2,
+      "tile_packets": 4,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "batch_size": 2,
+      "seconds": 0.0020861999946646392,
+      "seconds_per_tile": 8.69249997776933e-05,
+      "ioctl_calls": 12,
+      "tile_packets": 24,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 17,
+      "times": 1,
+      "outputs": 1,
+      "batch_size": 2,
+      "seconds": 3.890000516548753e-05,
+      "seconds_per_tile": 3.890000516548753e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 1,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 33,
+      "times": 19,
+      "outputs": 21,
+      "batch_size": 7,
+      "seconds": 5.8999998145736754e-05,
+      "seconds_per_tile": 1.4749999536434188e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 4,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "batch_size": 7,
+      "seconds": 0.002220299997134134,
+      "seconds_per_tile": 9.251249988058892e-05,
+      "ioctl_calls": 4,
+      "tile_packets": 24,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 17,
+      "times": 1,
+      "outputs": 1,
+      "batch_size": 7,
+      "seconds": 3.0399998649954796e-05,
+      "seconds_per_tile": 3.0399998649954796e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 1,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 33,
+      "times": 19,
+      "outputs": 21,
+      "batch_size": 32,
+      "seconds": 4.369999805931002e-05,
+      "seconds_per_tile": 1.0924999514827505e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 4,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "batch_size": 32,
+      "seconds": 0.0022870999964652583,
+      "seconds_per_tile": 9.529583318605243e-05,
+      "ioctl_calls": 2,
+      "tile_packets": 24,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 17,
+      "times": 1,
+      "outputs": 1,
+      "batch_size": 32,
+      "seconds": 3.519999154377729e-05,
+      "seconds_per_tile": 3.519999154377729e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 1,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 33,
+      "times": 19,
+      "outputs": 21,
+      "batch_size": 64,
+      "seconds": 4.4200001866556704e-05,
+      "seconds_per_tile": 1.1050000466639176e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 4,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "batch_size": 64,
+      "seconds": 0.0025859000015771016,
+      "seconds_per_tile": 0.0001077458333990459,
+      "ioctl_calls": 2,
+      "tile_packets": 24,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 17,
+      "times": 1,
+      "outputs": 1,
+      "batch_size": 64,
+      "seconds": 7.250001362990588e-05,
+      "seconds_per_tile": 7.250001362990588e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 1,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 33,
+      "times": 19,
+      "outputs": 21,
+      "batch_size": 128,
+      "seconds": 5.780000356025994e-05,
+      "seconds_per_tile": 1.4450000890064985e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 4,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 1025,
+      "times": 35,
+      "outputs": 49,
+      "batch_size": 128,
+      "seconds": 0.0023373000003630295,
+      "seconds_per_tile": 9.738750001512624e-05,
+      "ioctl_calls": 2,
+      "tile_packets": 24,
+      "exact": true
+    },
+    {
+      "kind": "pointwise",
+      "k": 17,
+      "times": 1,
+      "outputs": 1,
+      "batch_size": 128,
+      "seconds": 4.209998587612063e-05,
+      "seconds_per_tile": 4.209998587612063e-05,
+      "ioctl_calls": 1,
+      "tile_packets": 1,
+      "exact": true
+    }
+  ]
+}

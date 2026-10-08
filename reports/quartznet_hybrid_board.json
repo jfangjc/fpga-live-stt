@@ -1,0 +1,32 @@
+{
+  "source": "User-provided KV260 execution results",
+  "audio_seconds": 10.0,
+  "remove_dc": true,
+  "cpu": {
+    "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+    "frontend_seconds": 0.06974641800115933,
+    "inference_seconds": 1.8876522259997728,
+    "decode_seconds": 0.0007428940007230267,
+    "total_seconds": 1.9581415380016551,
+    "real_time_factor": 0.1958141538001655,
+    "threads": 4,
+    "provider": ["CPUExecutionProvider"]
+  },
+  "hybrid": {
+    "experimental": true,
+    "accuracy_validated": false,
+    "calibration_corpus": null,
+    "mode": "dma",
+    "hardware_execution": true,
+    "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+    "frontend_seconds": 0.0601584020005248,
+    "inference_seconds": 27.650890263998008,
+    "decode_seconds": 0.0014838669994787779,
+    "total_seconds": 27.71253253299801,
+    "real_time_factor": 2.7712532532998013,
+    "tile_transactions": 77376
+  },
+  "transcripts_identical_on_this_clip": true,
+  "corpus_accuracy": "not measured",
+  "live_latency": "not measured"
+}

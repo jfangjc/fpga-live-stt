@@ -1,0 +1,32 @@
+Vivado 2026.1 Xsim validation
+2026-10-08 Australia/Sydney
+
+xvlog rtl/qn_mac.v rtl/sph0645_rx.v rtl/voice_axi.v tb/tb_sph0645.v tb/tb_axi.v
+PASS analysis.
+
+xelab -mt off tb_sph0645 -s audio_sim
+xsim audio_sim -runall
+PASS: eight left-channel samples; I2S delay and right-channel rejection verified
+Finished at463100 ns.
+
+xelab -mt off tb_axi -s axi_sim
+xsim axi_sim -runall
+PASS: AXI skew/backpressure/errors; FIFO sign/overflow/full push-pop/reset
+Finished at83920 ns.
+
+xelab and xsim required unsandboxed execution because sandboxed generated-C compiler failed XSIM43-3409. Testbench microphone uses66ns launch propagation on rising BCLK. AXI queue boundary tests force the receiver sample interface for simulation speed.
+
+Final 32-lane core integration rerun with actual XPM models:
+xelab tb_axi -L qn_xpm -L unisims_ver -s axi_xpm_verified -mt off
+xsim axi_xpm_verified -runall
+PASS: AXI skew/backpressure/errors; FIFO sign/overflow/full push-pop/reset
+Finished at83920 ns. Actual qn_xpm.xpm_memory_sdpram and xpm_memory_base models elaborated.
+
+Final stable RTL after NCO correction87961809 for PSclock99,999,001Hz:
+xelab tb_sph0645 -s audio_final_verified -mt off
+xsim audio_final_verified -runall
+PASS microphone8vectors, I2Sdelay andrightchannelrejection.
+xelab tb_axi -L qn_xpm -L unisims_ver -s axi_final_verified -mt off
+xsim axi_final_verified -runall
+PASS AXI skew/backpressure/errors; FIFO sign/overflow/full push-pop/reset.
+Logs: reports/audio_final_xsim.log and reports/axi_final_xsim.log

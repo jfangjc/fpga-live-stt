@@ -1,0 +1,4622 @@
+[
+  {
+    "file": "000.bin",
+    "node": "/encoder/encoder.0/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      100,
+      33,
+      2,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "001.bin",
+    "node": "/encoder/encoder.1/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "002.bin",
+    "node": "/encoder/encoder.1/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "003.bin",
+    "node": "/encoder/encoder.1/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "004.bin",
+    "node": "/encoder/encoder.1/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "005.bin",
+    "node": "/encoder/encoder.1/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "006.bin",
+    "node": "/encoder/encoder.2/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "007.bin",
+    "node": "/encoder/encoder.2/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "008.bin",
+    "node": "/encoder/encoder.2/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "009.bin",
+    "node": "/encoder/encoder.2/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "010.bin",
+    "node": "/encoder/encoder.2/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "011.bin",
+    "node": "/encoder/encoder.3/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "012.bin",
+    "node": "/encoder/encoder.3/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "013.bin",
+    "node": "/encoder/encoder.3/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "014.bin",
+    "node": "/encoder/encoder.3/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "015.bin",
+    "node": "/encoder/encoder.3/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "016.bin",
+    "node": "/encoder/encoder.4/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "017.bin",
+    "node": "/encoder/encoder.4/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "018.bin",
+    "node": "/encoder/encoder.4/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "019.bin",
+    "node": "/encoder/encoder.4/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "020.bin",
+    "node": "/encoder/encoder.4/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "021.bin",
+    "node": "/encoder/encoder.5/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "022.bin",
+    "node": "/encoder/encoder.5/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "023.bin",
+    "node": "/encoder/encoder.5/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "024.bin",
+    "node": "/encoder/encoder.5/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "025.bin",
+    "node": "/encoder/encoder.5/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "026.bin",
+    "node": "/encoder/encoder.6/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "027.bin",
+    "node": "/encoder/encoder.6/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "028.bin",
+    "node": "/encoder/encoder.6/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "029.bin",
+    "node": "/encoder/encoder.6/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "030.bin",
+    "node": "/encoder/encoder.6/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "031.bin",
+    "node": "/encoder/encoder.7/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "032.bin",
+    "node": "/encoder/encoder.7/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "033.bin",
+    "node": "/encoder/encoder.7/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "034.bin",
+    "node": "/encoder/encoder.7/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "035.bin",
+    "node": "/encoder/encoder.7/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "036.bin",
+    "node": "/encoder/encoder.8/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "037.bin",
+    "node": "/encoder/encoder.8/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "038.bin",
+    "node": "/encoder/encoder.8/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "039.bin",
+    "node": "/encoder/encoder.8/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "040.bin",
+    "node": "/encoder/encoder.8/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "041.bin",
+    "node": "/encoder/encoder.9/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "042.bin",
+    "node": "/encoder/encoder.9/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "043.bin",
+    "node": "/encoder/encoder.9/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "044.bin",
+    "node": "/encoder/encoder.9/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "045.bin",
+    "node": "/encoder/encoder.9/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "046.bin",
+    "node": "/encoder/encoder.10/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "047.bin",
+    "node": "/encoder/encoder.10/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "048.bin",
+    "node": "/encoder/encoder.10/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "049.bin",
+    "node": "/encoder/encoder.10/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "050.bin",
+    "node": "/encoder/encoder.10/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "051.bin",
+    "node": "/encoder/encoder.11/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "052.bin",
+    "node": "/encoder/encoder.11/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "053.bin",
+    "node": "/encoder/encoder.11/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "054.bin",
+    "node": "/encoder/encoder.11/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "055.bin",
+    "node": "/encoder/encoder.11/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "056.bin",
+    "node": "/encoder/encoder.12/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "057.bin",
+    "node": "/encoder/encoder.12/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "058.bin",
+    "node": "/encoder/encoder.12/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "059.bin",
+    "node": "/encoder/encoder.12/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "060.bin",
+    "node": "/encoder/encoder.12/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "061.bin",
+    "node": "/encoder/encoder.13/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "062.bin",
+    "node": "/encoder/encoder.13/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "063.bin",
+    "node": "/encoder/encoder.13/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "064.bin",
+    "node": "/encoder/encoder.13/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "065.bin",
+    "node": "/encoder/encoder.13/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "066.bin",
+    "node": "/encoder/encoder.14/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "067.bin",
+    "node": "/encoder/encoder.14/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "068.bin",
+    "node": "/encoder/encoder.14/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "069.bin",
+    "node": "/encoder/encoder.14/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "070.bin",
+    "node": "/encoder/encoder.14/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "071.bin",
+    "node": "/encoder/encoder.15/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "072.bin",
+    "node": "/encoder/encoder.15/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "073.bin",
+    "node": "/encoder/encoder.15/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "074.bin",
+    "node": "/encoder/encoder.15/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "075.bin",
+    "node": "/encoder/encoder.15/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "076.bin",
+    "node": "/encoder/encoder.16/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      50,
+      87,
+      1,
+      2,
+      86,
+      86
+    ],
+    "output_shape": [
+      1,
+      7,
+      50
+    ],
+    "bias": false
+  },
+  {
+    "file": "077.bin",
+    "node": "/encoder/encoder.0/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      251,
+      33,
+      2,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "078.bin",
+    "node": "/encoder/encoder.1/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "079.bin",
+    "node": "/encoder/encoder.1/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "080.bin",
+    "node": "/encoder/encoder.1/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "081.bin",
+    "node": "/encoder/encoder.1/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "082.bin",
+    "node": "/encoder/encoder.1/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "083.bin",
+    "node": "/encoder/encoder.2/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "084.bin",
+    "node": "/encoder/encoder.2/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "085.bin",
+    "node": "/encoder/encoder.2/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "086.bin",
+    "node": "/encoder/encoder.2/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "087.bin",
+    "node": "/encoder/encoder.2/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "088.bin",
+    "node": "/encoder/encoder.3/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "089.bin",
+    "node": "/encoder/encoder.3/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "090.bin",
+    "node": "/encoder/encoder.3/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "091.bin",
+    "node": "/encoder/encoder.3/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "092.bin",
+    "node": "/encoder/encoder.3/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "093.bin",
+    "node": "/encoder/encoder.4/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "094.bin",
+    "node": "/encoder/encoder.4/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "095.bin",
+    "node": "/encoder/encoder.4/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "096.bin",
+    "node": "/encoder/encoder.4/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "097.bin",
+    "node": "/encoder/encoder.4/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "098.bin",
+    "node": "/encoder/encoder.5/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "099.bin",
+    "node": "/encoder/encoder.5/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "100.bin",
+    "node": "/encoder/encoder.5/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "101.bin",
+    "node": "/encoder/encoder.5/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "102.bin",
+    "node": "/encoder/encoder.5/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "103.bin",
+    "node": "/encoder/encoder.6/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "104.bin",
+    "node": "/encoder/encoder.6/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "105.bin",
+    "node": "/encoder/encoder.6/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "106.bin",
+    "node": "/encoder/encoder.6/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "107.bin",
+    "node": "/encoder/encoder.6/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "108.bin",
+    "node": "/encoder/encoder.7/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "109.bin",
+    "node": "/encoder/encoder.7/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "110.bin",
+    "node": "/encoder/encoder.7/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "111.bin",
+    "node": "/encoder/encoder.7/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "112.bin",
+    "node": "/encoder/encoder.7/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "113.bin",
+    "node": "/encoder/encoder.8/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "114.bin",
+    "node": "/encoder/encoder.8/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "115.bin",
+    "node": "/encoder/encoder.8/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "116.bin",
+    "node": "/encoder/encoder.8/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "117.bin",
+    "node": "/encoder/encoder.8/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "118.bin",
+    "node": "/encoder/encoder.9/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "119.bin",
+    "node": "/encoder/encoder.9/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "120.bin",
+    "node": "/encoder/encoder.9/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "121.bin",
+    "node": "/encoder/encoder.9/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "122.bin",
+    "node": "/encoder/encoder.9/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "123.bin",
+    "node": "/encoder/encoder.10/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "124.bin",
+    "node": "/encoder/encoder.10/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "125.bin",
+    "node": "/encoder/encoder.10/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "126.bin",
+    "node": "/encoder/encoder.10/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "127.bin",
+    "node": "/encoder/encoder.10/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "128.bin",
+    "node": "/encoder/encoder.11/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "129.bin",
+    "node": "/encoder/encoder.11/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "130.bin",
+    "node": "/encoder/encoder.11/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "131.bin",
+    "node": "/encoder/encoder.11/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "132.bin",
+    "node": "/encoder/encoder.11/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "133.bin",
+    "node": "/encoder/encoder.12/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "134.bin",
+    "node": "/encoder/encoder.12/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "135.bin",
+    "node": "/encoder/encoder.12/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "136.bin",
+    "node": "/encoder/encoder.12/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "137.bin",
+    "node": "/encoder/encoder.12/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "138.bin",
+    "node": "/encoder/encoder.13/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "139.bin",
+    "node": "/encoder/encoder.13/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "140.bin",
+    "node": "/encoder/encoder.13/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "141.bin",
+    "node": "/encoder/encoder.13/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "142.bin",
+    "node": "/encoder/encoder.13/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "143.bin",
+    "node": "/encoder/encoder.14/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "144.bin",
+    "node": "/encoder/encoder.14/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "145.bin",
+    "node": "/encoder/encoder.14/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "146.bin",
+    "node": "/encoder/encoder.14/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "147.bin",
+    "node": "/encoder/encoder.14/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "148.bin",
+    "node": "/encoder/encoder.15/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "149.bin",
+    "node": "/encoder/encoder.15/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "150.bin",
+    "node": "/encoder/encoder.15/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "151.bin",
+    "node": "/encoder/encoder.15/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "152.bin",
+    "node": "/encoder/encoder.15/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "153.bin",
+    "node": "/encoder/encoder.16/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      126,
+      87,
+      1,
+      2,
+      86,
+      86
+    ],
+    "output_shape": [
+      1,
+      7,
+      126
+    ],
+    "bias": false
+  },
+  {
+    "file": "154.bin",
+    "node": "/encoder/encoder.0/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      1000,
+      33,
+      2,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "155.bin",
+    "node": "/encoder/encoder.1/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "156.bin",
+    "node": "/encoder/encoder.1/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "157.bin",
+    "node": "/encoder/encoder.1/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "158.bin",
+    "node": "/encoder/encoder.1/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "159.bin",
+    "node": "/encoder/encoder.1/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "160.bin",
+    "node": "/encoder/encoder.2/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "161.bin",
+    "node": "/encoder/encoder.2/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "162.bin",
+    "node": "/encoder/encoder.2/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "163.bin",
+    "node": "/encoder/encoder.2/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "164.bin",
+    "node": "/encoder/encoder.2/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "165.bin",
+    "node": "/encoder/encoder.3/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "166.bin",
+    "node": "/encoder/encoder.3/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "167.bin",
+    "node": "/encoder/encoder.3/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "168.bin",
+    "node": "/encoder/encoder.3/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "169.bin",
+    "node": "/encoder/encoder.3/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      33,
+      1,
+      1,
+      16,
+      16
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "170.bin",
+    "node": "/encoder/encoder.4/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "171.bin",
+    "node": "/encoder/encoder.4/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "172.bin",
+    "node": "/encoder/encoder.4/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "173.bin",
+    "node": "/encoder/encoder.4/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "174.bin",
+    "node": "/encoder/encoder.4/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "175.bin",
+    "node": "/encoder/encoder.5/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "176.bin",
+    "node": "/encoder/encoder.5/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "177.bin",
+    "node": "/encoder/encoder.5/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "178.bin",
+    "node": "/encoder/encoder.5/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "179.bin",
+    "node": "/encoder/encoder.5/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "180.bin",
+    "node": "/encoder/encoder.6/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "181.bin",
+    "node": "/encoder/encoder.6/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "182.bin",
+    "node": "/encoder/encoder.6/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "183.bin",
+    "node": "/encoder/encoder.6/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "184.bin",
+    "node": "/encoder/encoder.6/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      39,
+      1,
+      1,
+      19,
+      19
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "185.bin",
+    "node": "/encoder/encoder.7/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "186.bin",
+    "node": "/encoder/encoder.7/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "187.bin",
+    "node": "/encoder/encoder.7/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "188.bin",
+    "node": "/encoder/encoder.7/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "189.bin",
+    "node": "/encoder/encoder.7/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "190.bin",
+    "node": "/encoder/encoder.8/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "191.bin",
+    "node": "/encoder/encoder.8/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "192.bin",
+    "node": "/encoder/encoder.8/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "193.bin",
+    "node": "/encoder/encoder.8/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "194.bin",
+    "node": "/encoder/encoder.8/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "195.bin",
+    "node": "/encoder/encoder.9/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "196.bin",
+    "node": "/encoder/encoder.9/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "197.bin",
+    "node": "/encoder/encoder.9/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "198.bin",
+    "node": "/encoder/encoder.9/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "199.bin",
+    "node": "/encoder/encoder.9/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      51,
+      1,
+      1,
+      25,
+      25
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "200.bin",
+    "node": "/encoder/encoder.10/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "201.bin",
+    "node": "/encoder/encoder.10/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "202.bin",
+    "node": "/encoder/encoder.10/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "203.bin",
+    "node": "/encoder/encoder.10/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "204.bin",
+    "node": "/encoder/encoder.10/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "205.bin",
+    "node": "/encoder/encoder.11/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "206.bin",
+    "node": "/encoder/encoder.11/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "207.bin",
+    "node": "/encoder/encoder.11/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "208.bin",
+    "node": "/encoder/encoder.11/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "209.bin",
+    "node": "/encoder/encoder.11/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "210.bin",
+    "node": "/encoder/encoder.12/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "211.bin",
+    "node": "/encoder/encoder.12/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "212.bin",
+    "node": "/encoder/encoder.12/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "213.bin",
+    "node": "/encoder/encoder.12/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "214.bin",
+    "node": "/encoder/encoder.12/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      63,
+      1,
+      1,
+      31,
+      31
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "215.bin",
+    "node": "/encoder/encoder.13/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "216.bin",
+    "node": "/encoder/encoder.13/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "217.bin",
+    "node": "/encoder/encoder.13/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "218.bin",
+    "node": "/encoder/encoder.13/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "219.bin",
+    "node": "/encoder/encoder.13/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "220.bin",
+    "node": "/encoder/encoder.14/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "221.bin",
+    "node": "/encoder/encoder.14/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "222.bin",
+    "node": "/encoder/encoder.14/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "223.bin",
+    "node": "/encoder/encoder.14/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "224.bin",
+    "node": "/encoder/encoder.14/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "225.bin",
+    "node": "/encoder/encoder.15/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "226.bin",
+    "node": "/encoder/encoder.15/mconv.5/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "227.bin",
+    "node": "/encoder/encoder.15/mconv.10/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "228.bin",
+    "node": "/encoder/encoder.15/mconv.15/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "229.bin",
+    "node": "/encoder/encoder.15/mconv.20/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      75,
+      1,
+      1,
+      37,
+      37
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  },
+  {
+    "file": "230.bin",
+    "node": "/encoder/encoder.16/mconv.0/conv/Conv",
+    "dims": [
+      1,
+      7,
+      500,
+      87,
+      1,
+      2,
+      86,
+      86
+    ],
+    "output_shape": [
+      1,
+      7,
+      500
+    ],
+    "bias": false
+  }
+]

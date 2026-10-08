@@ -1,0 +1,14 @@
+{
+  "source": "Pinned model pointwise weight dimensions and ten-second host graph tensor shapes",
+  "pointwise_layers": 94,
+  "current_dma_input_bytes_measured_on_board": 1094902784,
+  "proposed_cached_weight_bytes": 17088512,
+  "proposed_input_bytes_with_reuse": 19693568,
+  "result_bytes_including_padded_lanes": 79233024,
+  "max_actual_layer_weight_bytes": 524288,
+  "available_uram_tiles": 64,
+  "currently_used_uram_tiles": 0,
+  "assumptions": "Each pointwise layer loads its INT8 weights once; each input time tile is reused across output groups; lanes padded to16; headers excluded",
+  "implementation_status": "architecture estimate only; no cached-weight bitstream built",
+  "board_performance": "not predicted by this byte-count estimate"
+}

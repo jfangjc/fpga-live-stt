@@ -1,0 +1,79 @@
+# Exact KV260 kernel cross-build
+
+Build completed 2026-10-08 for Ubuntu linux-xilinx 6.8.0-1015.16,
+release 6.8.0-1015-xilinx, architecture ARM64. This is compilation and
+static inspection only; the module has not been loaded or exercised on a board.
+
+Artifact:
+software/tile-driver/prebuilt/6.8.0-1015-xilinx/qn_tile.ko
+SHA256: cec1a51cc2d34a79b612ce6f99fe5b94e02d2042a4d700b5c2290475a64eaa06
+ELF: 64-bit little-endian relocatable AArch64
+vermagic: 6.8.0-1015-xilinx SMP preempt mod_unload modversions aarch64
+
+Official matching headers retained in Canonical Launchpad build 30633289:
+https://launchpad.net/~canonical-kernel-team/+archive/ubuntu/ppa/+build/30633289/+files/linux-headers-6.8.0-1015-xilinx_6.8.0-1015.16_arm64.deb
+https://launchpad.net/~canonical-kernel-team/+archive/ubuntu/ppa/+build/30633289/+files/linux-xilinx-headers-6.8.0-1015_6.8.0-1015.16_all.deb
+The Ubuntu ports archive no longer lists this superseded version. Launchpad
+provided both retained files successfully. Exact header Module.symvers was used.
+
+Build used an isolated workspace extraction of Ubuntu GCC13.3.0 and GNU
+binutils2.42 inside Fedora WSL. GCC compiler string matches the original
+kernel config: aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0.
+The ARM64 header-package fixdep and modpost executables were rebuilt for the
+x86_64 build host from the matching package's sources. No system packages
+were installed. Archive extraction checked paths and relative symlink targets;
+the absolute /lib/modules build symlink was deliberately skipped.
+
+Command details: software/tile-driver/kernel-build/build_exact.sh
+Full output: reports/kernel_6.8.0-1015-xilinx_build.txt
+make ARCH=arm64 W=1 modules completed with exit0, including MODPOST and linking.
+No qn_tile.c compiler warnings. Two tool notices:
+- Upstream scripts/kernel-doc emitted a Perl precedence warning.
+- BTF was skipped because the exact vmlinux image was unavailable.
+
+Exact kernel config confirms:
+CONFIG_XILINX_DMA=y (built in; modinfo xilinx_dma may therefore find no module)
+CONFIG_GPIO_XILINX=y
+CONFIG_CMA=y
+CONFIG_DMA_CMA=y
+CONFIG_MODVERSIONS=y
+
+Static review: packet lengths, magic, K and reserved bytes are validated;
+RX is issued before TX; coherent DMA buffers are not mapped twice; calls are
+serialized; existing file descriptors hold object references; failed DMA
+termination quarantines allocations and callback storage instead of freeing
+potentially active buffers. No source changes were necessary for Linux6.8.
+Hardware binding, DMA interrupts, timeout recovery, reset GPIO polarity and
+actual tile output still require board tests with the new DMA-capable overlay.
+The existing voice-prototype overlay does not instantiate this tile driver.
+
+The prebuilt module is unsigned. Load only for the exact matching running
+kernel and intended overlay. A later kernel requires a rebuild against its
+matching headers; copying this binary across kernel versions is not supported.
+Exclude kernel-build/ from deployment archives; it contains host tooling and
+expanded headers rather than board runtime files.
+
+Signature-related exact kernel configuration:
+CONFIG_MODULE_SIG=y
+CONFIG_MODULE_SIG_ALL=y
+# CONFIG_MODULE_SIG_FORCE is not set
+This external module is unsigned. Runtime lockdown/Secure Boot policy remains
+unknown; no board security settings were changed and no signing keys created.
+
+Downloaded package source URLs and SHA256:
+https://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils-aarch64-linux-gnu_2.42-4ubuntu2_amd64.deb
+SHA256 2628d4f91d41da925add56392e1dd5289929db70413d29115b81c74397b5f16f
+https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13-cross/cpp-13-aarch64-linux-gnu_13.3.0-6ubuntu2~24.04cross1_amd64.deb
+SHA256 5efe7d4e9ea29c235abdb0d10f665aba2c91a5f93776792a2118e7f3b888042a
+https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13-cross/gcc-13-aarch64-linux-gnu_13.3.0-6ubuntu2~24.04cross1_amd64.deb
+SHA256 06d8b04fb9886eac492545f3b6baed71e478040ba0f4e580521b0631d6bd1c9a
+https://archive.ubuntu.com/ubuntu/pool/main/i/isl/libisl23_0.26-3build1.1_amd64.deb
+SHA256 4e040926e50fb961fae9bf95660189d468336a4a17bc321872c434fc8f777e7f
+https://archive.ubuntu.com/ubuntu/pool/main/b/binutils/libsframe1_2.42-4ubuntu2_amd64.deb
+SHA256 0b8d3e9338b2d47a523532463e341962edd1e669fb1760f12d82d7a68b33096a
+https://launchpad.net/~canonical-kernel-team/+archive/ubuntu/ppa/+build/30633289/+files/linux-headers-6.8.0-1015-xilinx_6.8.0-1015.16_arm64.deb
+SHA256 9d89f6e130c6c04c0d7a27ce2c7ea6dab658739fd92498f4b650c48eebcc58f1
+https://launchpad.net/~canonical-kernel-team/+archive/ubuntu/ppa/+build/30633289/+files/linux-xilinx-headers-6.8.0-1015_6.8.0-1015.16_all.deb
+SHA256 39d65c5077cc6bbd9d983a5abafa30cd27ebe88e935d032f9abf0455f42107d6
+
+Driver source qn_tile.c SHA256 c92aa1a336cd719a67dfb498835a2b21aab7393bfded77ab4a24655e0889f28c

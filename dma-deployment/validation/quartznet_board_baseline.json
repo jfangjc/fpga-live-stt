@@ -1,0 +1,33 @@
+{
+  "source": "User-reported KV260 board output, Ubuntu 24.04.2, Cortex-A53, four threads",
+  "runner_revision": "Before valid feature-frame trimming correction",
+  "timing_scope": "Whole-file frontend/inference/greedy decode; excludes model load and file read",
+  "audio_seconds": 10.0,
+  "provider": ["CPUExecutionProvider"],
+  "fpga_inference_used": false,
+  "raw": {
+    "transcript": "two undollar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+    "frontend_seconds": 0.07392928999979631,
+    "inference_seconds": 1.9551548669996919,
+    "decode_seconds": 0.000753399000132049,
+    "total_seconds": 2.0298375559996202,
+    "real_time_factor": 0.202983755599962
+  },
+  "remove_dc": {
+    "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+    "frontend_seconds": 0.07266015499953937,
+    "inference_seconds": 1.9114772359998824,
+    "decode_seconds": 0.000733968000531604,
+    "total_seconds": 1.9848713589999534,
+    "real_time_factor": 0.19848713589999534
+  },
+  "capture": {
+    "samples": 160000,
+    "sample_rate": 16000,
+    "elapsed_seconds": 9.994,
+    "new_dropped_frames": 0,
+    "min_pcm24": -3456512,
+    "max_pcm24": 2692224
+  },
+  "accuracy": "No exact reference transcript or WER measurement available"
+}

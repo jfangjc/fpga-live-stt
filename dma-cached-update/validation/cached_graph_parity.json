@@ -1,0 +1,10 @@
+{
+  "hardware_execution": false,
+  "all_nodes_exact": true,
+  "nodes": 266,
+  "pointwise_nodes": 94,
+  "load_commands": 94,
+  "run_commands": 188,
+  "input_bytes": 18323872,
+  "output_bytes": 4956576
+}

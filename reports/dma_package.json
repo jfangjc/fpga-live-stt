@@ -1,0 +1,9 @@
+{
+  "zip": "C:\\Users\\jfang\\Documents\\Vivado\\Prototype\\voice-dma-prototype.zip",
+  "bytes": 71408034,
+  "files": 37,
+  "sha256": "2cce2146d067bebbe74a2bde2a0058667019793e40ca0b3864e01eeb30ce47a2",
+  "integrity": "PASS",
+  "firmware_revision": "dma-status-stream-disabled",
+  "hardware_board_validation": "pending"
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-08",
+  "kernel": "6.8.0-1015-xilinx",
+  "tested_archive_sha256": "e6545315dce7dbd1f889566100438007c912c5a48889abc21b02aa6805495537",
+  "dma_driver_probe": "xilinx-vdma a0010000.dma: Xilinx AXI DMA Engine Driver Probed!!",
+  "client_node": "/dev/qn-tile exists",
+  "python_dependencies": "installed successfully on ARM64 Python 3.12",
+  "tile_smoke": "FAIL at first K=1 ioctl; ETIMEDOUT errno110",
+  "confirmed_integration_defect": "C_SG_INCLUDE_STSCNTRL_STRM=1 with optional S2MM status TVALID/TLAST tied zero",
+  "correction": "Disable optional control/status stream; retain scatter-gather",
+  "reference": "https://docs.amd.com/r/en-US/pg021_axi_dma/AXI-Status-Stream",
+  "corrected_board_result": "pending"
+}

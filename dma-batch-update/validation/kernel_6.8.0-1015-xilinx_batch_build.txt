@@ -1,0 +1,9 @@
+make: Entering directory '/mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/sysroot/usr/src/linux-headers-6.8.0-1015-xilinx'
+  CC [M]  /mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/../qn_tile.o
+Possible precedence problem between ! and pattern match (m//) at ./scripts/kernel-doc line 1571.
+  MODPOST /mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/../Module.symvers
+  CC [M]  /mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/../qn_tile.mod.o
+  LD [M]  /mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/../qn_tile.ko
+  BTF [M] /mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/../qn_tile.ko
+Skipping BTF generation for /mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/../qn_tile.ko due to unavailability of vmlinux
+make: Leaving directory '/mnt/c/Users/jfang/Documents/Vivado/Prototype/software/tile-driver/kernel-build/sysroot/usr/src/linux-headers-6.8.0-1015-xilinx'

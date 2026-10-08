@@ -1,0 +1,23 @@
+QuartzNet CPU baseline validation 2026-10-08
+User recording: mono PCM24,16000Hz,160000samples,10.0seconds. No clipped samples. Mean -803352.1512PCM24, AC RMS -31.0379dBFS.
+Board continuous capture:9.994seconds;0new droppedframes. User reports audio soundsfine. Source was a YouTube video played from a phone around300seconds, not direct live speech. Video reference https://www.youtube.com/watch?v=nYA0yASgaZI&t=300 ; exact caption/reference transcript not obtained, no WER measured.
+Downloaded original NVIDIA1.0.0rc1 checkpoint and extracted only model_config.yaml. Symmetric320sample Hann, hop160,FFT512,64Slaneymels,ceilvalidlength,reflectpad,zerodither andpad_to0transcriptionsettings.
+Community ONNX model SHA256 matches a8e0a53087cb5deacc90653f186e774906bdee7c54d58f6e0656816f3e571d12 at revision7a983936e91e5b23d0cf08ddedfad1ab0cbcf5cb. Graph only accepts audio_signal, no length input. NumPy+ORT runner avoids incompatible package defaults.
+Slaney80matrix agrees with external onnx-asr reference filterbank maxabserror1.1175871e-08. Boundary160000/160001validlength and extraSTFTframemask tests PASS. CTCblank/repetition test PASS.
+Desktop FP32 CPU inference on supplied WAV PASS with raw and DCremoved modes. Outputs saved in quartznet_cpu_raw.json and quartznet_cpu_dc.json. These are desktop timings, excluding graphload/fileIO; no KV260recognition/latency result yet.
+ZIP CRC and exact modelhash verification PASS. Archive includes model+vocab+metadata+runner+requirements+originalconfig, excludes speech.wav, desktopenvironment andoriginalcheckpointweights.
+The preceding entries describe the initial baseline; the following supersede
+its pending board/parity status and original ZIP hash.
+Original checkpoint weights safely loaded with torch weights_only=True.
+Original Jasper encoder implementation + saved weights/frontend buffers used
+for bounded parity on four clips/lengths. See quartznet_original_parity.json.
+Mel filters exactly equal original buffer. Frame argmax agreement 100% for all
+four inputs. Corrected runner trims excess frontend frames before the export
+graph. Full ten-second logprob max abs error 0.00029349327087402344; largest
+error across four inputs 0.001280069351196289. No corpus WER measured.
+KV260 CPU baseline reported by user: raw 2.029837556 seconds, remove_dc
+1.984871359 seconds for ten seconds of audio (four threads). These measurements
+precede the valid-frame trimming correction. See quartznet_board_baseline.json.
+Updated ZIP hash: 2309a1bb1443be41ecddf13c3ac74b02ad23e17e9c1b8f882ad85acbc46fc3a6.
+Still unverified: accurate reference/WER, quantized accuracy, full-model FPGA
+execution, revised tile on-board DMA operation and live capture-to-text latency.

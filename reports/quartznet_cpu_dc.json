@@ -1,0 +1,14 @@
+{
+  "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "audio_seconds": 10.0,
+  "frontend_seconds": 0.021050800001830794,
+  "inference_seconds": 0.08103669999400154,
+  "decode_seconds": 0.00011680000170599669,
+  "total_seconds": 0.10220429999753833,
+  "real_time_factor": 0.010220429999753833,
+  "remove_dc": true,
+  "threads": 4,
+  "provider": [
+    "CPUExecutionProvider"
+  ]
+}

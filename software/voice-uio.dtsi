@@ -1,0 +1,16 @@
+/* Include in the matching ZynqMP Linux system-user.dtsi.
+ * Requires root #address-cells=2, #size-cells=2 and an existing gic label.
+ * Ensure PL clock0 remains enabled at the XSA's configured frequency.
+ * Enable CONFIG_UIO/CONFIG_UIO_PDRV_GENIRQ and match generic-uio through
+ * uio_pdrv_genirq.of_id=generic-uio where required by the kernel build.
+ * IRQ 121 (PL IRQ0[0]) is SPI index 89 in a GIC device-tree specifier.
+ */
+/ {
+    voice_uio: voice@a0000000 {
+        compatible = "generic-uio";
+        reg = <0x0 0xa0000000 0x0 0x10000>;
+        interrupt-parent = <&gic>;
+        interrupts = <0 89 4>;
+        status = "okay";
+    };
+};

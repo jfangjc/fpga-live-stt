@@ -1,0 +1,37 @@
+{
+  "execution": "PASS",
+  "whole_graph_bit_exact": false,
+  "all_cases_at_least_95_percent_frame_agreement": false,
+  "fpga_execution": false,
+  "arm_execution": false,
+  "native_cpu_nodes": 77,
+  "pointwise_nodes_preserved": 94,
+  "native_conv_calls": 231,
+  "cases": [
+    {
+      "feature_frames": 100,
+      "frame_argmax_agreement": 1.0,
+      "max_final_logprob_difference": 1.52587890625e-05,
+      "numpy_transcript": "soo o a are number made oup",
+      "native_transcript": "soo o a are number made oup",
+      "int8_pointwise_nodes": 94
+    },
+    {
+      "feature_frames": 251,
+      "frame_argmax_agreement": 0.9285714285714286,
+      "max_final_logprob_difference": 13.391674995422363,
+      "numpy_transcript": "two hundre are number made up so is the",
+      "native_transcript": "two hundre are number made up so is the",
+      "int8_pointwise_nodes": 94
+    },
+    {
+      "feature_frames": 1000,
+      "frame_argmax_agreement": 0.964,
+      "max_final_logprob_difference": 14.422821998596191,
+      "numpy_transcript": "two unar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+      "native_transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+      "int8_pointwise_nodes": 94
+    }
+  ],
+  "note": "Linux x86 portable C through IPC within complete model; ARM NEON and corpus accuracy remain unvalidated. FP32 reduction changes propagate through INT8 rounding."
+}

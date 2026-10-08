@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.41429",
+   "Default View_TopLeft":"-105,-272",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:24.0
+#  -string -flagsOSRD
+preplace port port-id_mic_bclk -pg 1 -lvl 8 -x 2560 -y 20 -defaultsOSRD
+preplace port port-id_mic_ws -pg 1 -lvl 8 -x 2560 -y 50 -defaultsOSRD
+preplace port port-id_mic_data -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace inst ps -pg 1 -lvl 1 -x 340 -y 90 -defaultsOSRD
+preplace inst axi_sc -pg 1 -lvl 3 -x 1240 -y 80 -defaultsOSRD
+preplace inst reset -pg 1 -lvl 2 -x 830 -y 200 -defaultsOSRD
+preplace inst one -pg 1 -lvl 1 -x 340 -y 240 -defaultsOSRD
+preplace inst voice -pg 1 -lvl 4 -x 1630 -y 110 -defaultsOSRD
+preplace inst tensor_dma -pg 1 -lvl 3 -x 1240 -y 430 -defaultsOSRD
+preplace inst tile -pg 1 -lvl 6 -x 2220 -y 420 -defaultsOSRD
+preplace inst memory_sc -pg 1 -lvl 4 -x 1630 -y 500 -defaultsOSRD
+preplace inst tile_control -pg 1 -lvl 4 -x 1630 -y 300 -defaultsOSRD
+preplace inst tile_reset_gate -pg 1 -lvl 5 -x 1930 -y 300 -defaultsOSRD
+preplace inst tile_status -pg 1 -lvl 7 -x 2440 -y 440 -defaultsOSRD
+preplace inst irq_concat -pg 1 -lvl 5 -x 1930 -y 540 -defaultsOSRD
+preplace inst tile_keep -pg 1 -lvl 2 -x 830 -y 400 -defaultsOSRD
+preplace netloc mic_data_1 1 0 4 20J 180 630J 90 1040J 160 1460
+preplace netloc one_dout 1 1 1 NJ 240
+preplace netloc ps_pl_clk0 1 0 6 30 320 650 80 1010 190 1490J 390 N 390 2080
+preplace netloc ps_pl_resetn0 1 1 1 640 80n
+preplace netloc reset_peripheral_aresetn 1 2 3 1020 220 1500J 200 1790
+preplace netloc voice_irq 1 4 1 1780 130n
+preplace netloc voice_mic_bclk 1 4 4 1760 40 N 40 N 40 2540
+preplace netloc voice_mic_ws 1 4 4 1790 50 N 50 N 50 N
+preplace netloc tensor_dma_mm2s_introut 1 3 2 1440J 600 1760J
+preplace netloc tensor_dma_s2mm_introut 1 3 2 1430J 610 1790J
+preplace netloc irq_concat_dout 1 0 6 40 310 660J 100 1000J 170 1440J 10 NJ 10 2070
+preplace netloc tile_busy 1 6 1 2340 410n
+preplace netloc tile_error 1 6 1 N 450
+preplace netloc tile_status_dout 1 4 4 1770J 370 2100J 330 NJ 330 2540
+preplace netloc tile_control_gpio_io_o 1 4 1 N 290
+preplace netloc tile_reset_gate_Res 1 5 1 2090 300n
+preplace netloc tile_keep_dout 1 2 1 NJ 400
+preplace netloc axi_sc_M00_AXI 1 3 1 1480 60n
+preplace netloc ps_M_AXI_HPM0_FPD 1 1 2 NJ 60 N
+preplace netloc axi_sc_M01_AXI 1 2 2 1040 180 1430
+preplace netloc axi_sc_M02_AXI 1 3 1 1480 100n
+preplace netloc tensor_dma_M_AXI_MM2S 1 3 1 1470 380n
+preplace netloc tensor_dma_M_AXI_S2MM 1 3 1 1450 400n
+preplace netloc tensor_dma_M_AXI_SG 1 3 1 1460 360n
+preplace netloc memory_sc_M00_AXI 1 0 5 50 300 NJ 300 1030J 210 NJ 210 1760
+preplace netloc tensor_dma_M_AXIS_MM2S 1 3 3 1480J 400 NJ 400 NJ
+preplace netloc tile_M_AXIS 1 2 5 1050 200 1450J 20 NJ 20 NJ 20 2340
+levelinfo -pg 1 0 340 830 1240 1630 1930 2220 2440 2560
+pagesize -pg 1 -db -bbox -sgen -110 0 2670 620
+"
+}
+

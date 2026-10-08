@@ -1,0 +1,13 @@
+2026-10-08: Native DSP48E2/XPM tile revision
+Vivado xsim tile_native with -L xpm -L unisims_ver and glbl top.
+PASS: 13 tile/protocol cases. K1/17/257/1024 signed integer outputs match
+independent Python vectors. Input bubbles, output stalls/TLAST, malformed
+header/K, early/missing TLAST and resets in load/compute checked.
+PASS: software tile packet layout, channel/time tails and K chunk accumulation
+checked against NumPy INT64 matmul, including all -128/all +127 extrema.
+Standalone native tile routed at 100MHz: WNS2.431ns, WHS0.097ns,
+TNS/THS0. Resources:256DSP48E2,8blockRAMtiles,2345LUT,95CLBFF.
+Reset input is explicitly false-pathed; no internal unconstrained endpoints.
+Standalone timing is separate from integrated DMA design timing.
+This tile has not been deployed to the board. No full-model FPGA speedup or
+quantized speech recognition accuracy is established by these checks.

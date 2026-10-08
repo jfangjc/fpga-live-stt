@@ -1,0 +1,119 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct  8 20:33:08 2026
+# Process ID         : 28188
+# Current directory  : C:/Users/jfang/Documents/Vivado/Prototype
+# Command line       : vivado.exe -mode batch -source scripts/cached_sim.tcl -log reports/cached_sim.log -journal reports/cached_sim.jou
+# Log file           : C:/Users/jfang/Documents/Vivado/Prototype/reports/cached_sim.log
+# Journal file       : C:/Users/jfang/Documents/Vivado/Prototype\reports/cached_sim.jou
+# Running On         : Yoga
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13905H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 34086 MB
+# Swap memory        : 2231 MB
+# Total Virtual      : 36318 MB
+# Available Virtual  : 4502 MB
+#-----------------------------------------------------------
+source scripts/cached_sim.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# create_project cached_sim $root/build/cached_sim -part xck26-sfvc784-2LV-c -force
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 594.402 ; gain = 269.590
+# set_property XPM_LIBRARIES {XPM_MEMORY} [current_project]
+# add_files $root/rtl/qn_cached_axis.v
+# add_files -fileset sim_1 $root/sim/tb_qn_cached_axis.sv
+# set_property top tb_qn_cached_axis [get_filesets sim_1]
+# set_property xsim.simulate.runtime 0ns [get_filesets sim_1]
+# update_compile_order -fileset sim_1
+# launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Thu Oct  8 20:33:19 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_qn_cached_axis'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jfang/Documents/Vivado/Prototype/build/cached_sim/cached_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/AMDDesignTools/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/jfang/Documents/Vivado/Prototype/build/cached_sim/cached_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_qn_cached_axis' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jfang/Documents/Vivado/Prototype/build/cached_sim/cached_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_qn_cached_axis_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jfang/Documents/Vivado/Prototype/rtl/qn_cached_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module qn_cached_axis
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jfang/Documents/Vivado/Prototype/sim/tb_qn_cached_axis.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_qn_cached_axis
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jfang/Documents/Vivado/Prototype/build/cached_sim/cached_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jfang/Documents/Vivado/Prototype/build/cached_sim/cached_sim.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_qn_cached_axis_behav xil_defaultlib.tb_qn_cached_axis xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_qn_cached_axis_behav xil_defaultlib.tb_qn_cached_axis xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=13...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=83...
+Compiling module unisims_ver.DSP48E2(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.qn_cached_axis_default
+Compiling module xil_defaultlib.tb_qn_cached_axis
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_qn_cached_axis_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 603.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jfang/Documents/Vivado/Prototype/build/cached_sim/cached_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_qn_cached_axis_behav -key {Behavioral:sim_1:Functional:tb_qn_cached_axis} -tclbatch {tb_qn_cached_axis.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_qn_cached_axis.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+WARNING: [Wavedata 42-489] Can't add object "/tb_qn_cached_axis/expected" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+## run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_qn_cached_axis_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 618.371 ; gain = 23.969
+# run all
+PASS: 69 cached arithmetic/protocol/reset cases
+$finish called at time : 427780 ns : File "C:/Users/jfang/Documents/Vivado/Prototype/sim/tb_qn_cached_axis.sv" Line 199
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:36 . Memory (MB): peak = 618.371 ; gain = 0.000
+# close_sim
+INFO: xsimkernel Simulation Memory Usage: 74904 KB (Peak: 74904 KB), Simulation CPU Usage: 35343 ms
+INFO: [Simtcl 6-16] Simulation closed
+# set log_file [open $root/build/cached_sim/cached_sim.sim/sim_1/behav/xsim/simulate.log r]
+# set simulation_log [read $log_file]
+# close $log_file
+# if {![regexp {PASS: [0-9]+ cached arithmetic/protocol/reset cases} $simulation_log]} {
+#     error "Cached engine testbench did not reach PASS; inspect simulation log"
+# }
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 20:34:13 2026...

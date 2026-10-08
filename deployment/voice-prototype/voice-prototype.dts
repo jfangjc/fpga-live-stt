@@ -1,0 +1,54 @@
+/dts-v1/;
+/plugin/;
+
+/* KV260 Ubuntu 24.04.2; live board symbols verified 2026-10-08. */
+/ {
+    fragment@0 {
+        target = <&fpga_full>;
+        __overlay__ {
+            firmware-name = "voice-prototype.bit.bin";
+            status = "okay";
+        };
+    };
+
+    fragment@1 {
+        target-path = "/";
+        __overlay__ {
+            voice_pl0_clock: voice-pl0-clock {
+                compatible = "xlnx,fclk";
+                clocks = <&zynqmp_clk 71>;
+                assigned-clocks = <&zynqmp_clk 71>;
+                /* Request the integer rate: slightly less can round to 93.75 MHz. */
+                assigned-clock-rates = <100000000>;
+                status = "okay";
+            };
+        };
+    };
+
+    fragment@2 {
+        target = <&amba>;
+        __overlay__ {
+            #address-cells = <2>;
+            #size-cells = <2>;
+
+            voice_afi: voice-afi {
+                compatible = "xlnx,afi-fpga";
+                /* AFI_FS: HPM0 and the disabled HPM1 preset are 128 bits. */
+                config-afi = <14 0x00000a00>;
+                resets = <&zynqmp_reset 116>;
+                status = "okay";
+            };
+
+            voice_uio: voice@a0000000 {
+                compatible = "generic-uio";
+                linux,uio-name = "voice-prototype";
+                reg = <0x0 0xa0000000 0x0 0x10000>;
+                interrupt-parent = <&gic>;
+                interrupts = <0 89 4>;
+                clocks = <&zynqmp_clk 71>;
+                clock-names = "s_axi_aclk";
+                status = "okay";
+            };
+        };
+    };
+};

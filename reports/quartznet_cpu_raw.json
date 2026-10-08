@@ -1,0 +1,14 @@
+{
+  "transcript": "two undollar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "audio_seconds": 10.0,
+  "frontend_seconds": 0.019514899999194313,
+  "inference_seconds": 0.07000149999657879,
+  "decode_seconds": 9.620000491850078e-05,
+  "total_seconds": 0.0896126000006916,
+  "real_time_factor": 0.00896126000006916,
+  "remove_dc": false,
+  "threads": 4,
+  "provider": [
+    "CPUExecutionProvider"
+  ]
+}

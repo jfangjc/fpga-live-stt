@@ -1,0 +1,2584 @@
+{
+  "mel_filter_max_abs_error": 0.0,
+  "frontend_max_abs_error": 7.385015487670898e-05,
+  "unfolded_tensors_exact": 79,
+  "valid_encoder_frames": 500,
+  "legacy_logprobs_max_abs_error": 3.573183059692383,
+  "trimmed_logprobs_max_abs_error": 0.00029349327087402344,
+  "legacy_argmax_agreement": 1.0,
+  "trimmed_argmax_agreement": 1.0,
+  "original_transcript": "two undollar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "trimmed_transcript": "two undollar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "encoder_macs": 9427489344,
+  "depthwise_macs": 882561600,
+  "pointwise_macs": 8544927744,
+  "layers": [
+    {
+      "name": "0.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 1058112,
+      "weight_shape": [
+        64,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        64,
+        501
+      ]
+    },
+    {
+      "name": "0.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 8208384,
+      "weight_shape": [
+        256,
+        64,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "1.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "2.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 4232448,
+      "weight_shape": [
+        256,
+        1,
+        33
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "3.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "4.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "5.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 5001984,
+      "weight_shape": [
+        256,
+        1,
+        39
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "6.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 32833536,
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 6541056,
+      "weight_shape": [
+        256,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        256,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 65667072,
+      "weight_shape": [
+        512,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "7.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 65667072,
+      "weight_shape": [
+        512,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "8.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 13082112,
+      "weight_shape": [
+        512,
+        1,
+        51
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "9.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "10.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "11.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 16160256,
+      "weight_shape": [
+        512,
+        1,
+        63
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "12.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "13.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "14.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.5.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.6.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.10.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.11.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.15.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.16.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.20.conv",
+      "kind": "depthwise",
+      "macs": 19238400,
+      "weight_shape": [
+        512,
+        1,
+        75
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.mconv.21.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "15.res.0.0.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "16.mconv.0.conv",
+      "kind": "depthwise",
+      "macs": 22316544,
+      "weight_shape": [
+        512,
+        1,
+        87
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "16.mconv.1.conv",
+      "kind": "pointwise",
+      "macs": 131334144,
+      "weight_shape": [
+        512,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        512,
+        501
+      ]
+    },
+    {
+      "name": "17.mconv.0.conv",
+      "kind": "pointwise",
+      "macs": 262668288,
+      "weight_shape": [
+        1024,
+        512,
+        1
+      ],
+      "output_shape": [
+        1,
+        1024,
+        501
+      ]
+    }
+  ],
+  "boundary_checks": [
+    {
+      "samples": 16000,
+      "max_abs_error": 3.62396240234375e-05,
+      "argmax_agreement": 1.0
+    },
+    {
+      "samples": 16001,
+      "max_abs_error": 0.001280069351196289,
+      "argmax_agreement": 1.0
+    },
+    {
+      "samples": 32000,
+      "max_abs_error": 3.719329833984375e-05,
+      "argmax_agreement": 1.0
+    }
+  ]
+}

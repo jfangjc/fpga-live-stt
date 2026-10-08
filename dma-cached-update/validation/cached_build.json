@@ -1,0 +1,13 @@
+{
+  "bitstream_sha256": "9df5ced27a317c10020d224790486f47f84d2f154030fcc585993b619a9850fc",
+  "firmware_sha256": "43afba2a3b49619dd2a5285ac5ec3975d879a2df395ba8d8e77284e9440fad1a",
+  "driver_sha256": "92369f1836c322928771221aadca267bdfdc8150fafd8808c61ae0e202b4c9ff",
+  "kernel": "6.8.0-1015-xilinx",
+  "clock_hz": 100000000,
+  "rtl_simulation_cases": 69,
+  "cached_graph_nodes_exact": 266,
+  "dma_status_stream_disabled": true,
+  "board_execution": "pending",
+  "performance_validated": false,
+  "accuracy_validated": false
+}

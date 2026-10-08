@@ -1,0 +1,138 @@
+{
+  "hardware_execution": false,
+  "device": null,
+  "all_exact": true,
+  "cross_fd_lease_checked": false,
+  "load_commands": 16,
+  "run_commands": 226,
+  "invalidate_commands": 2,
+  "computed_tile_groups": 795,
+  "dma_command_packets": 244,
+  "ioctl_calls": 39,
+  "input_bytes": 3265792,
+  "output_bytes": 817984,
+  "tests": [
+    {
+      "k": 1,
+      "m": 1,
+      "t": 1,
+      "exact": true,
+      "seconds": 9.860000864136964e-05,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 17,
+      "m": 29,
+      "t": 19,
+      "exact": true,
+      "seconds": 0.00020840000070165843,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 257,
+      "m": 33,
+      "t": 35,
+      "exact": true,
+      "seconds": 0.0006785000005038455,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 1024,
+      "m": 16,
+      "t": 17,
+      "exact": true,
+      "seconds": 0.0005287999956635758,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 512,
+      "m": 1024,
+      "t": 19,
+      "exact": true,
+      "seconds": 0.00992739999492187,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 1024,
+      "m": 1024,
+      "t": 16,
+      "exact": true,
+      "seconds": 0.010792400003992952,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 64,
+      "m": 256,
+      "t": 37,
+      "exact": true,
+      "seconds": 0.00047790000098757446,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 512,
+      "m": 512,
+      "t": 31,
+      "exact": true,
+      "seconds": 0.00455589999910444,
+      "ioctl_calls": 2
+    },
+    {
+      "k": 1024,
+      "m": 29,
+      "t": 16,
+      "exact": true,
+      "seconds": 0.0006046999915270135,
+      "ioctl_calls": 2
+    },
+    {
+      "kind": "batch_limit",
+      "cap": 1,
+      "k": 1,
+      "m": 1,
+      "t": 33,
+      "exact": true,
+      "ioctl_calls": 4,
+      "run_commands": 3
+    },
+    {
+      "kind": "batch_limit",
+      "cap": 3,
+      "k": 17,
+      "m": 29,
+      "t": 81,
+      "exact": true,
+      "ioctl_calls": 3,
+      "run_commands": 6
+    },
+    {
+      "kind": "batch_limit",
+      "cap": 128,
+      "k": 1,
+      "m": 16,
+      "t": 2048,
+      "exact": true,
+      "ioctl_calls": 2,
+      "run_commands": 128
+    },
+    {
+      "kind": "batch_limit",
+      "cap": 128,
+      "k": 1,
+      "m": 17,
+      "t": 1025,
+      "exact": true,
+      "ioctl_calls": 3,
+      "run_commands": 65
+    },
+    {
+      "kind": "batch_limit",
+      "cap": 128,
+      "k": 1024,
+      "m": 1024,
+      "t": 33,
+      "exact": true,
+      "ioctl_calls": 3,
+      "run_commands": 3
+    }
+  ]
+}

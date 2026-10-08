@@ -1,0 +1,13 @@
+{
+  "architecture": "AArch64 Cortex-A53 Linux userspace",
+  "source_sha256": "65d25315bf0e48a8fd1dda652c87d915e1604280eacca3bbf8c2657972672b94",
+  "library_sha256": "f9ddb180e7e3e06d0fee7bebfa59a82fc27fb8eb319e367bd111622a03f156a0",
+  "compiler": "Ubuntu GCC 13.3.0",
+  "flags": "-O3 -std=c11 -mcpu=cortex-a53 -fno-fast-math -ffp-contract=off -fPIC -shared -pthread",
+  "arm_execution": "pending board smoke and model test",
+  "host_validation": "Portable C model fixtures plus full graph through WSL IPC; ASan/UBSan passed",
+  "whole_graph_bit_exact": false,
+  "accuracy_validated": false,
+  "fpga_driver_and_bitstream_changed": false,
+  "default_backend": "numpy"
+}

@@ -1,0 +1,4 @@
+all:
+{
+    Prototype.runs/impl_1/voice_top.bit
+}

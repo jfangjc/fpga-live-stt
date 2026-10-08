@@ -1,0 +1,30 @@
+{
+  "tool": "Vivado 2026.1",
+  "part": "xck26-sfvc784-2LV-c",
+  "project": "voice_cached_dma",
+  "clock_target_hz": 100000000,
+  "setup_slack_ns": 0.192,
+  "hold_slack_ns": 0.01,
+  "all_user_timing_constraints_met": true,
+  "rtl_simulation_cases_passed": 69,
+  "resources": {
+    "lut": 11881,
+    "registers": 14288,
+    "bram_tiles": 17,
+    "uram": 32,
+    "dsp": 288
+  },
+  "sha256": {
+    "rtl/qn_cached_axis.v": "7f866217111550195c43bb33d863f3d42e50381c283e0b59056e1c1ba79e6211",
+    "sim/tb_qn_cached_axis.sv": "edf14feed6fe5a928051cad2c54dcf0e4847bbc3861f94ac6002a9911d40851f",
+    "voice_cached_dma/voice_cached_dma.runs/impl_1/voice_cached_dma_top.bit": "9df5ced27a317c10020d224790486f47f84d2f154030fcc585993b619a9850fc",
+    "voice_cached_dma/voice_cached_dma.runs/impl_1/voice_cached_dma_top.bit.bin": "43afba2a3b49619dd2a5285ac5ec3975d879a2df395ba8d8e77284e9440fad1a",
+    "software/voice-cached.dts": "220f63f987abd9c515b87a28c54dae37ad84eec977df61a38ab0528db1c9d019",
+    "software/voice-cached.dtbo": "08703788860d284fd0c6a8cfba1d8124781671314e4fabd9ead2b42407115c09",
+    "software/tile-driver/prebuilt/6.8.0-1015-xilinx/qn_tile_cached.ko": "92369f1836c322928771221aadca267bdfdc8150fafd8808c61ae0e202b4c9ff"
+  },
+  "board_execution": "pending",
+  "performance_validated": false,
+  "accuracy_validated": false,
+  "scope": "Cached pointwise weights and input reuse; bounded RUN batching; existing quantization and native CPU depthwise retained."
+}

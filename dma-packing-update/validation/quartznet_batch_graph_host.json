@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "hardware_execution": false,
+  "all_node_outputs_bit_exact": true,
+  "nodes_checked": 266,
+  "batch_size": 64,
+  "tile_packets": 77376,
+  "batch_calls": 1209,
+  "input_bytes": 1094902784,
+  "reference_emulation_seconds": 3.3314157999993768,
+  "batch_emulation_seconds": 5.7584551999898395,
+  "transcript": "two unar number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "note": "Host emulation correctness test; not a board throughput or WER measurement"
+}

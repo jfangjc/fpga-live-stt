@@ -1,0 +1,11 @@
+Vivado 2026.1 KV260 hardware prototype, 2026-10-08
+Bitstream generation: completed successfully
+XSA contains voice_prototype.bit; SHA256 matches routed voice_top.bit
+Bitstream SHA256: F1EBF42CBBF9FA3CE08555CD64225CB83F334D6FF7F43121257F2DB115376B90
+Routed WNS 0.353 ns; WHS 0.028 ns; TNS/THS 0
+Timing check: 0 no-clock pins, 0 unconstrained internal endpoints
+DRC: 0 errors, 0 critical warnings; 128 advisory DSP pipelining warnings
+CDC: 1 safe microphone crossing, 0 unsafe, 0 unknown
+Utilization: 2261 LUTs, 1095 registers, 32 DSP48E2, 16 RAMB18E2
+Final XSIM and software validation logs saved alongside this report.
+Physical board, microphone electrical behavior, and full QuartzNet ASR not validated.

@@ -1,0 +1,30 @@
+Software validation report
+Date: 2026-10-08 (Australia/Sydney)
+Working directory: C:\Users\jfang\Documents\Vivado\Prototype
+
+Runtime:
+C:\Users\jfang\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+
+PowerShell command:
+& 'C:\Users\jfang\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' software/kv260_voice.py --selftest
+
+Exit code: 0
+Exact output:
+PASS: driver chunk/tail/signed tests, grouped/depthwise/pointwise convolution reference
+
+Scope:
+Standard-library FakeMMIO driver tests plus optional NumPy convolution tests.
+Lengths: 0, 1, 2, 3, 4, 4095, 4096, 4097, 8195.
+Checks: packed signed INT8 inputs, masked tail lanes, 4096-element chunk
+chaining through raw INT32 accumulation, negative bias, INT32 wrapping,
+arithmetic shift/saturation/ReLU, greedy CTC blank/repeat collapse,
+pointwise convolution, depthwise convolution with asymmetric padding/stride,
+grouped convolution with dilation against independent nested-loop reference.
+
+Limits:
+FakeMMIO is a software protocol test double, not RTL simulation.
+No Linux UIO mapping, physical MMIO, microphone, board inference, trained
+checkpoint, recognition accuracy or hardware latency was tested here.
+Changing the MAC lane count from four to 32 retains the same register map,
+packing, length and arithmetic contract, so these software results apply
+without a lane-count-dependent change or additional rerun.

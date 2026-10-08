@@ -1,0 +1,214 @@
+#!/usr/bin/env python3
+"""Experimental full-model dynamic INT8 pointwise / FP32 CPU hybrid.
+
+CPU emulation is not hardware execution. No calibration corpus or WER validation.
+Run DMA mode only after the standalone V2 tile board test passes.
+"""
+import argparse
+from collections import Counter
+import json
+from pathlib import Path
+import sys
+import time
+
+import numpy as np
+import onnx
+from onnx import numpy_helper, helper
+
+from quartznet_cpu import read_pcm24, frontend, decode
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from qn_tile import DMADevice, pointwise
+
+
+def quantize(values, scale):
+    return np.clip(np.rint(values / scale), -127, 127).astype(np.int8)
+
+
+def conv_windows(x, w, attrs):
+    if x.ndim != 3 or w.ndim != 3:
+        raise ValueError('Only NCT 1D Conv is supported')
+    if attrs.get('auto_pad', b'NOTSET') not in (b'NOTSET', b''):
+        raise ValueError('Unsupported Conv auto_pad')
+    stride, = attrs.get('strides', [1])
+    dilation, = attrs.get('dilations', [1])
+    left, right = attrs.get('pads', [0, 0])
+    group = attrs.get('group', 1)
+    if stride < 1 or dilation < 1 or min(left, right) < 0:
+        raise ValueError('Invalid Conv attributes')
+    if x.shape[1] % group or w.shape[0] % group or w.shape[1] != x.shape[1] // group:
+        raise ValueError('Invalid grouped Conv shape')
+    if attrs.get('kernel_shape', list(w.shape[2:])) != list(w.shape[2:]):
+        raise ValueError('Conv kernel shape mismatch')
+    padded = np.pad(x, ((0, 0), (0, 0), (left, right)))
+    extent = dilation * (w.shape[2] - 1) + 1
+    windows = np.lib.stride_tricks.sliding_window_view(padded, extent, axis=2)
+    return windows[:, :, ::stride, ::dilation], group
+
+
+class Graph:
+    def __init__(self, path, mode='fp32', transact=None):
+        if mode not in ('fp32', 'emulate', 'dma') or (mode == 'dma' and transact is None):
+            raise ValueError('Invalid graph execution mode')
+        model = onnx.load(str(path))
+        onnx.checker.check_model(model)
+        if [(o.domain, o.version) for o in model.opset_import] != [('', 17)]:
+            raise ValueError('Only default-domain ONNX opset 17 is supported')
+        if [i.name for i in model.graph.input] != ['audio_signal'] or [o.name for o in model.graph.output] != ['logprobs']:
+            raise ValueError('Unexpected graph I/O')
+        self.weights = {i.name: numpy_helper.to_array(i).astype(np.float32) for i in model.graph.initializer}
+        self.nodes = list(model.graph.node)
+        self.attrs = {n.name: {a.name: helper.get_attribute_value(a) for a in n.attribute} for n in self.nodes}
+        if len(self.attrs) != len(self.nodes):
+            raise ValueError('Node names must be unique')
+        self.quantized = {}
+        self.uses = Counter(name for n in self.nodes for name in n.input)
+        self.mode, self.transact = mode, transact
+        self.stats = []
+        for node in self.nodes:
+            if node.domain or node.op_type not in ('Conv', 'Relu', 'Add', 'Transpose', 'LogSoftmax') or len(node.output) != 1:
+                raise ValueError(f'Unsupported node: {node.name} {node.domain}:{node.op_type}')
+            if node.op_type == 'Conv':
+                if node.input[1] not in self.weights or (len(node.input) > 2 and node.input[2] not in self.weights):
+                    raise ValueError('Only constant Conv weights/bias are supported')
+                w = self.weights[node.input[1]]
+                if w.ndim != 3:
+                    raise ValueError('Only 1D convolutions are supported')
+                if self.attrs[node.name].get('group', 1) == 1 and w.shape[2] == 1:
+                    scales = np.max(np.abs(w[:, :, 0]), axis=1).astype(np.float32) / np.float32(127)
+                    scales[scales == 0] = 1
+                    self.quantized[node.name] = (quantize(w[:, :, 0], scales[:, None]), scales)
+
+    def convolution(self, node, x):
+        w = self.weights[node.input[1]]
+        windows, group = conv_windows(x, w, self.attrs[node.name])
+        if self.mode != 'fp32' and node.name in self.quantized:
+            # Whole-layer activation scale, shared across N/C/T. Bias stays FP32.
+            act_scale = np.float32(np.max(np.abs(x)) / np.float32(127))
+            if act_scale == 0:
+                act_scale = np.float32(1)
+            if not np.isfinite(act_scale):
+                raise ValueError('Non-finite activation quantization scale')
+            qw, weight_scale = self.quantized[node.name]
+            qx = quantize(windows[..., 0], act_scale)
+            out = []
+            for batch in qx:
+                if self.mode == 'dma':
+                    sums = pointwise(batch, qw, self.transact)
+                else:
+                    # Batched exact INT32 CPU matmul, not a hardware timing model.
+                    if batch.shape[0] * 16384 > np.iinfo(np.int32).max:
+                        raise ValueError('Unsafe INT32 reduction length')
+                    sums = qw.astype(np.int32) @ batch.astype(np.int32)
+                out.append(sums.astype(np.float32) * (weight_scale * act_scale)[:, None])
+            y = np.stack(out)
+        elif group == x.shape[1] and w.shape[1] == 1:
+            multiplier = w.shape[0] // group
+            y = np.einsum('nctk,cmk->ncmt', windows,
+                          w.reshape(group, multiplier, w.shape[2]), optimize=False,
+                          dtype=np.float32).reshape(x.shape[0], w.shape[0], windows.shape[2])
+        elif group == 1 and w.shape[2] == 1:
+            y = np.matmul(w[:, :, 0], windows[..., 0])
+        else:
+            # General grouped 1D convolution, preserving channel grouping.
+            cin, cout = x.shape[1] // group, w.shape[0] // group
+            parts = [np.einsum('nctk,ock->not', windows[:, g*cin:(g+1)*cin],
+                              w[g*cout:(g+1)*cout], optimize=False, dtype=np.float32)
+                     for g in range(group)]
+            y = np.concatenate(parts, axis=1)
+        if len(node.input) > 2:
+            y = y + self.weights[node.input[2]][None, :, None]
+        return y.astype(np.float32, copy=False)
+
+    def run(self, features, observer=None):
+        if features.dtype != np.float32 or features.ndim != 3 or features.shape[1] != 64:
+            raise ValueError('Expected FP32 features [N,64,T]')
+        values = dict(self.weights)
+        values['audio_signal'] = features
+        uses = self.uses.copy()
+        self.stats = []
+        for node in self.nodes:
+            start = time.perf_counter()
+            args = [values[name] for name in node.input]
+            attrs = self.attrs[node.name]
+            if node.op_type == 'Conv':
+                y = self.convolution(node, args[0])
+            elif node.op_type == 'Relu':
+                y = np.maximum(args[0], np.float32(0))
+            elif node.op_type == 'Add':
+                y = args[0] + args[1]
+            elif node.op_type == 'Transpose':
+                y = args[0].transpose(attrs.get('perm', list(reversed(range(args[0].ndim)))))
+            else:
+                axis = attrs.get('axis', -1)
+                shifted = args[0] - np.max(args[0], axis=axis, keepdims=True)
+                y = shifted - np.log(np.sum(np.exp(shifted), axis=axis, keepdims=True))
+            if not np.all(np.isfinite(y)):
+                raise ValueError(f'Non-finite result at {node.name}')
+            quantized = self.mode != 'fp32' and node.name in self.quantized
+            record = {'name': node.name, 'op': node.op_type, 'seconds': time.perf_counter()-start,
+                      'shape': list(y.shape), 'int8_pointwise': quantized}
+            if quantized:
+                record['tile_transactions'] = int(y.shape[0] * ((y.shape[2]+15)//16) *
+                                                   ((y.shape[1]+15)//16) * ((args[0].shape[1]+1023)//1024))
+            self.stats.append(record)
+            values[node.output[0]] = y
+            if observer:
+                observer(node, y)
+            for name in node.input:
+                uses[name] -= 1
+                if uses[name] == 0 and name not in self.weights:
+                    del values[name]
+        return values['logprobs']
+
+
+def vocabulary(directory):
+    result = {}
+    for line in (directory / 'vocab.txt').read_text(encoding='utf-8').splitlines():
+        token, index = line.rsplit(' ', 1)
+        result[int(index)] = token
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('wav', type=Path)
+    parser.add_argument('--model', type=Path, default=Path(__file__).parent / 'model')
+    modes = parser.add_mutually_exclusive_group(required=True)
+    modes.add_argument('--emulate-tile', action='store_true')
+    modes.add_argument('--fp32-numpy', action='store_true')
+    modes.add_argument('--device', help='DMA device; only after V2 board tile validation')
+    parser.add_argument('--remove-dc', action='store_true')
+    parser.add_argument('--report', type=Path)
+    args = parser.parse_args()
+    audio = read_pcm24(args.wav)
+    if args.remove_dc:
+        audio -= audio.mean()
+    mode = 'dma' if args.device else 'fp32' if args.fp32_numpy else 'emulate'
+    transport = DMADevice(args.device) if args.device else None
+    try:
+        graph = Graph(args.model / 'model.onnx', mode, transport)
+        start = time.perf_counter()
+        features, valid = frontend(audio)
+        prepared = time.perf_counter()
+        output = graph.run(features[:, :, :valid].copy())
+        inferred = time.perf_counter()
+        text = decode(output, vocabulary(args.model), (valid + 1)//2)
+        ended = time.perf_counter()
+        report = {'experimental': True, 'accuracy_validated': False, 'calibration_corpus': None,
+                  'mode': mode, 'hardware_execution': mode == 'dma', 'transcript': text,
+                  'audio_seconds': len(audio)/16000, 'remove_dc': args.remove_dc,
+                  'frontend_seconds': prepared-start, 'inference_seconds': inferred-prepared,
+                  'decode_seconds': ended-inferred, 'total_seconds': ended-start,
+                  'real_time_factor': (ended-start)/(len(audio)/16000),
+                  'tile_transactions': sum(n.get('tile_transactions', 0) for n in graph.stats),
+                  'layers': graph.stats}
+        if args.report:
+            args.report.write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
+        print(json.dumps({k:v for k,v in report.items() if k != 'layers'}, indent=2))
+    finally:
+        if transport:
+            transport.close()
+
+
+if __name__ == '__main__':
+    main()

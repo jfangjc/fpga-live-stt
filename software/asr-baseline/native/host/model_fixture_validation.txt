@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "fpga_execution": false,
+  "arm_execution": false,
+  "model_fixture_checks": 462,
+  "max_scaled_error": 2.384185791015625e-07,
+  "note": "Portable C branch on Linux x86, model-derived same-input comparisons. ARM NEON and full ASR require board validation."
+}

@@ -1,0 +1,15 @@
+{
+  "kernel": "6.8.0-1015-xilinx",
+  "architecture": "ARM64",
+  "build": "exact Ubuntu headers, W=1",
+  "module_sha256": "c04cf2c5b0a6f0d0190085bd7d76bc5c5f5dc5063127b6f38ec74123ab36ffa8",
+  "source_sha256": "a5acc0d6ab8462272ab02ee5111bf58b5ce13f37db6b8d90dc8c04232c48c3e3",
+  "uapi_sha256": "f87c241f0d0a379b6c96d435f1be64902d41bced8ac178a9994194a1fe76e012",
+  "legacy_module_preserved": true,
+  "batch_ioctl": "0x40185102; pointers/packet_bytes/count, 24 bytes",
+  "max_batch": 128,
+  "board_batch_validation": "pending",
+  "build_notices": "upstream kernel-doc Perl warning; BTF skipped without vmlinux",
+  "dma_provider_source_review": "upstream Linuxv6.8; exact Ubuntu provider source inaccessible",
+  "callback_helper": "https://raw.githubusercontent.com/torvalds/linux/v6.8/drivers/dma/dmaengine.h"
+}

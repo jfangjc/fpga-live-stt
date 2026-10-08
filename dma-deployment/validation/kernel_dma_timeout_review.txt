@@ -1,0 +1,47 @@
+DMA K1 timeout review (2026-10-08)
+
+The first DMA integration generated AXI DMA with
+C_SG_INCLUDE_STSCNTRL_STRM=1, but voice_dma_system.v tied
+s_axis_s2mm_sts_tvalid and s_axis_s2mm_sts_tlast to constant0. The custom tile
+provides only the primary output data stream, not the optional status stream.
+
+AMD PG021 AXI Status Stream:
+https://docs.amd.com/r/en-US/pg021_axi_dma/AXI-Status-Stream
+The EOF buffer-descriptor update waits for receipt of the entire enabled
+status stream. A permanently invalid status input prevents that completion.
+This explains an S2MM completion timeout even if primary stream data reached
+DDR. Fix the hardware parameter c_sg_include_stscntrl_strm=0 and regenerate the
+DMA IP/bitstream. Keep c_include_sg=1; SG descriptor support is still required.
+The kernel client module does not require a change for this issue.
+
+Primary Linuxv6.8 DMA source reviewed:
+https://raw.githubusercontent.com/torvalds/linux/v6.8/drivers/dma/xilinx/xilinx_dma.c
+- SG support is detected from DMASR SG bit3, not a DT include-sg flag.
+- Transfer start programs pending-descriptor count into the coalescing field;
+  one ioctl submits one descriptor, so the threshold is1.
+- irq-delay defaults to0; it is not needed for normal one-descriptor IOC.
+- IRQ handler processes IOC/delay events and schedules descriptor cleanup.
+- SG cleanup requires the completed status bit on the last descriptor.
+The exact Ubuntu source retrieval through git.launchpad.net returned HTTP403;
+these source observations are explicitly from upstreamv6.8. The client was
+compiled against exact Ubuntu headers and Module.symvers separately.
+
+GPIO mapping primary Linuxv6.8 source:
+https://raw.githubusercontent.com/torvalds/linux/v6.8/drivers/gpio/gpio-xilinx.c
+The software map compacts both banks and maps back to hardware bank offsets.
+Widths1 and2 therefore expose logical GPIO0=reset,1=busy,2=error.
+The current reset-gpios offset0 GPIO_ACTIVE_LOW and error-gpios offset2
+GPIO_ACTIVE_HIGH are consistent with the hardware wiring and qn_reset().
+When idle after probe, GPIO DATA0 should be physical1 (reset deasserted).
+
+If a timeout remains after the hardware correction, inspect MM2S CR/SR
+(offset0x00/0x04), S2MM CR/SR (0x30/0x34), GPIO DATA/TRI (0x00/0x04 and
+0x08/0x0c), and GIC SPI90/91 interrupt counts DURING the ioctl wait.
+The client terminates/resets channels after timeout, so afterward snapshots
+can erase the evidence. An IOC status without the matching IRQ-count increase
+points toward routing/DT IRQ mismatch. SG decode/slave errors point toward
+descriptor DDR access/addressing; primary decode/slave errors point toward
+payload memory access. TX completes with RX pending and tile idle is consistent
+with the missing enabled status stream found here.
+
+No module source edits or board register writes were performed in this review.

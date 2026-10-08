@@ -1,0 +1,3 @@
+current_project voice_dma
+open_bd_design [get_files voice_dma_system.bd]
+regenerate_bd_layout

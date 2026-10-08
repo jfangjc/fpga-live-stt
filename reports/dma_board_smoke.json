@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "physical_dma_used": true,
+  "firmware_revision": "dma-status-stream-disabled",
+  "source": "User-provided KV260 tile_smoke output",
+  "tiles": [
+    {"k": 1, "packet_bytes": 48, "round_trip_seconds": 0.0008225249985116534},
+    {"k": 17, "packet_bytes": 560, "round_trip_seconds": 0.0005745099988416769},
+    {"k": 257, "packet_bytes": 8240, "round_trip_seconds": 0.000347246001183521},
+    {"k": 1024, "packet_bytes": 32784, "round_trip_seconds": 0.00036351699964143336}
+  ],
+  "tails_and_k_chunking": "PASS",
+  "full_model_board_validation": "pending",
+  "speech_accuracy_validation": "pending"
+}

@@ -1,0 +1,151 @@
+{
+  "source": "User-supplied KV260 console output",
+  "run": {
+    "experimental": true,
+    "accuracy_validated": false,
+    "calibration_corpus": null,
+    "mode": "dma",
+    "hardware_execution": true,
+    "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+    "audio_seconds": 10.0,
+    "remove_dc": true,
+    "frontend_seconds": 0.06710242499684682,
+    "inference_seconds": 8.488329523002903,
+    "decode_seconds": 0.0015889999995124526,
+    "total_seconds": 8.557020947999263,
+    "real_time_factor": 0.8557020947999263,
+    "tile_transactions": 77376,
+    "dma_batch_size": 128,
+    "ioctl_calls": 605,
+    "tile_packets": 77376,
+    "dma_input_bytes": 1094902784,
+    "cpu_conv_backend": "ort",
+    "cpu_conv_threads": 1,
+    "graph_setup_seconds": 2.0968778470050893
+  },
+  "profile": {
+    "hardware_execution": true,
+    "int8_pointwise_seconds": 5.915945834021841,
+    "other_graph_seconds": 2.5467761629843153,
+    "kernel_ioctl_seconds": 2.751833777052525,
+    "ioctl_calls": 605,
+    "dma_input_bytes": 1094902784,
+    "cpu_conv_backend": "ort",
+    "peak_process_rss_kib": 287860,
+    "slowest_layers": [
+      {
+        "name": "/encoder/encoder.17/mconv.0/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.1670241790052387,
+        "shape": [
+          1,
+          1024,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 2048,
+        "dma_ioctl_calls": 16,
+        "dma_input_bytes": 33587200
+      },
+      {
+        "name": "/encoder/encoder.16/mconv.1/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08753894999972545,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      },
+      {
+        "name": "/encoder/encoder.7/mconv.6/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08642285999667365,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      },
+      {
+        "name": "/encoder/encoder.12/mconv.16/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08626820000063162,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      },
+      {
+        "name": "/encoder/encoder.7/mconv.11/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08602095000242116,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      },
+      {
+        "name": "/encoder/encoder.7/mconv.16/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08588561899523484,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      },
+      {
+        "name": "/encoder/encoder.7/mconv.21/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08576716000243323,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      },
+      {
+        "name": "/encoder/encoder.14/mconv.6/conv/Conv",
+        "op": "Conv",
+        "seconds": 0.08571163000306115,
+        "shape": [
+          1,
+          512,
+          500
+        ],
+        "int8_pointwise": true,
+        "tile_transactions": 1024,
+        "dma_ioctl_calls": 8,
+        "dma_input_bytes": 16793600
+      }
+    ]
+  },
+  "conclusion": "No measured speed improvement over packing+NumPy CPU Conv run"
+}

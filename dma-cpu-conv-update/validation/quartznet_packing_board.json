@@ -1,0 +1,20 @@
+{
+  "source": "User-supplied KV260 console output",
+  "hardware_execution": true,
+  "accuracy_validated": false,
+  "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "audio_seconds": 10.0,
+  "frontend_seconds": 0.06025469000451267,
+  "inference_seconds": 8.286009057999763,
+  "decode_seconds": 0.001517680000688415,
+  "total_seconds": 8.347781428004964,
+  "real_time_factor": 0.8347781428004964,
+  "int8_pointwise_seconds": 5.902970914030448,
+  "other_graph_seconds": 2.3583177239852375,
+  "kernel_ioctl_seconds": 2.7190007170429453,
+  "tile_packets": 77376,
+  "dma_batch_size": 128,
+  "ioctl_calls": 605,
+  "dma_input_bytes": 1094902784,
+  "note": "Reduced summary of supplied output. Faster than clip duration; excludes model initialization/file I/O and is not live latency."
+}

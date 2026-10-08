@@ -1,0 +1,3044 @@
+{
+  "experimental": true,
+  "accuracy_validated": false,
+  "calibration_corpus": null,
+  "mode": "emulate",
+  "hardware_execution": false,
+  "transcript": "two anare number made up so is the api price on the right old of these numbers are fake and neither of them represent the actual costs to",
+  "audio_seconds": 10.0,
+  "remove_dc": true,
+  "frontend_seconds": 0.010635400001774542,
+  "inference_seconds": 3.1803958999953466,
+  "decode_seconds": 0.0005189000075915828,
+  "total_seconds": 3.1915502000047127,
+  "real_time_factor": 0.31915502000047125,
+  "tile_transactions": 77376,
+  "dma_batch_size": null,
+  "ioctl_calls": 0,
+  "tile_packets": 0,
+  "dma_input_bytes": 0,
+  "cpu_conv_backend": "ort",
+  "cpu_conv_threads": 1,
+  "layers": [
+    {
+      "name": "/encoder/encoder.0/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006933999975444749,
+      "shape": [
+        1,
+        64,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.0/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.003547400003299117,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.0/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 5.469999450724572e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0007007999956840649,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.012290899991057813,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.1/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 5.199998850002885e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006222999945748597,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011438499990617856,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.1/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 3.8700003642588854e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0005829000001540408,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.012245800011442043,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.1/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 6.489999941550195e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006512000109069049,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011556799989193678,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.1/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 3.9999998989515007e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0005767999973613769,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011455200001364574,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.1/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.01155859998834785,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.1/Add",
+      "op": "Add",
+      "seconds": 5.699999746866524e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.1/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 5.399998917710036e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006045999907655641,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011263200009125285,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.2/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 5.219999002292752e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.00060299999313429,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.01128830001107417,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.2/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 3.4199998481199145e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0005593999958364293,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011384900004486553,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.2/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 4.120000812690705e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.000574999998207204,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011338600001181476,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.2/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 5.7199998991563916e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.000618099991697818,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011332099995343015,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.2/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011508199997479096,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.2/Add",
+      "op": "Add",
+      "seconds": 3.46999877365306e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.2/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 4.919999628327787e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0005882999976165593,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011886500011314638,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.3/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 4.149999585933983e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.000614699994912371,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011642200013739057,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.3/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 4.1100007365457714e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006162000063341111,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011326100007863715,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.3/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 3.4199998481199145e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0005776000034529716,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011329300003126264,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.3/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 4.859999171458185e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0005664000054821372,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011442599992733449,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.3/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011404100005165674,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.3/Add",
+      "op": "Add",
+      "seconds": 3.680000372696668e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.3/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 3.579999611247331e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0007023999933153391,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011291000002529472,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.4/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 5.189998773857951e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006561999907717109,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011354100002790801,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.4/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 3.480000304989517e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.000647900000330992,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011254099998041056,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.4/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 5.149999924469739e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006594000005861744,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011589600006118417,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.4/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 4.199999966658652e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006753999914508313,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011297300006845035,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.4/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.01130159999593161,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.4/Add",
+      "op": "Add",
+      "seconds": 3.409999771974981e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.4/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 3.5200006095692515e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006818999972892925,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011422099996707402,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.5/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 3.569999535102397e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006713000038871542,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.01136920000135433,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.5/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 4.950001311954111e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006476999988080934,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011329199987812899,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.5/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 4.669999179895967e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006531999970320612,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.01130399999965448,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.5/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 4.7900000936351717e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0006717999931424856,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011432500003138557,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.5/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.01158769999165088,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.5/Add",
+      "op": "Add",
+      "seconds": 5.809999129269272e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.5/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 4.6900007873773575e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0007268000044859946,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011433499996201135,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.6/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 3.6600002204068005e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0008115999953588471,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0113402999995742,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.6/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 5.4799995268695056e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0007427999953506514,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011918399992282502,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.6/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 4.169999738223851e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0007182000117609277,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011772500001825392,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.6/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 3.940000897273421e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0007310000073630363,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011263699998380616,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.6/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.011527299997396767,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 512
+    },
+    {
+      "name": "/encoder/encoder.6/Add",
+      "op": "Add",
+      "seconds": 3.339999238960445e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.6/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 3.71999922208488e-05,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.000927800007048063,
+      "shape": [
+        1,
+        256,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.02302199999394361,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.7/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00011930000619031489,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0017799000052036718,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.047754200000781566,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.7/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 8.030000026337802e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0019269000040367246,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04691460001049563,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.7/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 7.369999366346747e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.001942100003361702,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04831169999670237,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.7/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 0.00015380000695586205,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018106999923475087,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.046014000006834976,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.7/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.02267760000540875,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.7/Add",
+      "op": "Add",
+      "seconds": 6.989999383222312e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.7/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00011340000492054969,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018303000106243417,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.047969699997338466,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.8/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.0001900000061141327,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0026019000069936737,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04826740000862628,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.8/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 0.0001016999885905534,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018177000019932166,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.048301100003300235,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.8/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 0.00014289999671746045,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0019370000081835315,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.053080099998624064,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.8/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 0.0001075999898603186,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018568999948911369,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.047211200013407506,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.8/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04833999999391381,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.8/Add",
+      "op": "Add",
+      "seconds": 0.00023740000324323773,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.8/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.0006156000017654151,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002037800004472956,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04734960000496358,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.9/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00011190000805072486,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018611000123200938,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04485789999307599,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.9/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 0.00012090000382158905,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002066699991701171,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04490340000484139,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.9/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 8.909999451134354e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018198999896412715,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04362849998869933,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.9/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 8.850000449456275e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0018102000030921772,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.043553800001973286,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.9/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0441214000020409,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.9/Add",
+      "op": "Add",
+      "seconds": 7.449999975506216e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.9/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.0006355000077746809,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002393700007814914,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044807400001445785,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.10/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 8.569999772589654e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002316100013558753,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044635600002948195,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.10/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 0.00011360000644344836,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0022988999990047887,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04453759999887552,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.10/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 0.00012110000534448773,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0023991999914869666,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044241600000532344,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.10/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 0.00013949999993201345,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0023689999943599105,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04743749999033753,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.10/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04960310000751633,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.10/Add",
+      "op": "Add",
+      "seconds": 0.0002604000037536025,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.10/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00012299999070819467,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0024944999895524234,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.045920200005639344,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.11/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00011839999933727086,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002389199988101609,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04786420000891667,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.11/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 0.00013120000949129462,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0024127000069711357,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04510160000063479,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.11/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 0.00010140000085812062,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002334699995117262,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04603810000116937,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.11/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 0.00011980000999756157,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002374699994106777,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04525089998787735,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.11/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04826870000397321,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.11/Add",
+      "op": "Add",
+      "seconds": 0.00015439999697264284,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.11/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.000646999993477948,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002577999999630265,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04934060000232421,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.12/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 8.579999848734587e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002711799999815412,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04757619999872986,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.12/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 0.00010000000474974513,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0024169999960577115,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0477029999892693,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.12/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 0.00011249999806750566,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002310000010766089,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.05010299998684786,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.12/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 0.00010829999519046396,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002426000006380491,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.047638699994422495,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.12/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04760849999729544,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.12/Add",
+      "op": "Add",
+      "seconds": 0.00010869999823626131,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.12/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00026050000451505184,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002709300009883009,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04527069999312516,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.13/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 7.690000347793102e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0023942000116221607,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044185799997649156,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.13/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 7.720000576227903e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0023204000026453286,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044234100001631305,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.13/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 7.720000576227903e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002470000006724149,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04505050000443589,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.13/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 7.690000347793102e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002363599996897392,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04399460001150146,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.13/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04526469999109395,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.13/Add",
+      "op": "Add",
+      "seconds": 8.230000094044954e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.13/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.0006470999942393973,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002693300004466437,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04622039999230765,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.14/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00010699999984353781,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002665099993464537,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.047134899999946356,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.14/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 0.00012959999730810523,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002534999992349185,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.05442100000800565,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.14/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 0.0001816000003600493,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.00256239999725949,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.045278400008101016,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.14/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 8.040000102482736e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0023461999953724444,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04445680000935681,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.14/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044860599999083206,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.14/Add",
+      "op": "Add",
+      "seconds": 8.060000254772604e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.14/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00023710000095888972,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.00236540001060348,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0489168000058271,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.15/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00010259999544359744,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.5/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002686000007088296,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.6/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04748690000269562,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.15/mout.0_1/Relu",
+      "op": "Relu",
+      "seconds": 6.910000229254365e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.10/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.002345100001548417,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.11/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04352029999427032,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.15/mout.0_2/Relu",
+      "op": "Relu",
+      "seconds": 0.00010050000855699182,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.15/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0023452000023098662,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.16/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.044655000005150214,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.15/mout.0_3/Relu",
+      "op": "Relu",
+      "seconds": 9.529999806545675e-05,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.20/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.0026164000009885058,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.21/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04512419999809936,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.15/res.0.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04605889999947976,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.15/Add",
+      "op": "Add",
+      "seconds": 0.0001075999898603186,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.15/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.0006285999988904223,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.003554199996870011,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.1/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.04890620001242496,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 1024
+    },
+    {
+      "name": "/encoder/encoder.16/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.00010790000669658184,
+      "shape": [
+        1,
+        512,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.0/conv/Conv",
+      "op": "Conv",
+      "seconds": 0.09788469999330118,
+      "shape": [
+        1,
+        1024,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 2048
+    },
+    {
+      "name": "/encoder/encoder.17/mout/mout.0/Relu",
+      "op": "Relu",
+      "seconds": 0.0007018000032985583,
+      "shape": [
+        1,
+        1024,
+        500
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/decoder_layers/decoder_layers.0/Conv",
+      "op": "Conv",
+      "seconds": 0.011517200007801875,
+      "shape": [
+        1,
+        29,
+        500
+      ],
+      "int8_pointwise": true,
+      "tile_transactions": 64
+    },
+    {
+      "name": "/Transpose",
+      "op": "Transpose",
+      "seconds": 0.00010859999747481197,
+      "shape": [
+        1,
+        500,
+        29
+      ],
+      "int8_pointwise": false
+    },
+    {
+      "name": "/LogSoftmax",
+      "op": "LogSoftmax",
+      "seconds": 6.419999408535659e-05,
+      "shape": [
+        1,
+        500,
+        29
+      ],
+      "int8_pointwise": false
+    }
+  ]
+}
