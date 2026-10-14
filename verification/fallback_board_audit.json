@@ -1,0 +1,209 @@
+{
+  "complete": true,
+  "scope": "Integrity of supplied CPU-only diagnosis; no independently executed board run or speedup claim",
+  "checks": {
+    "per1": {
+      "expected_configuration": true,
+      "20_runs_3_warmups": true,
+      "fp32_parity_reported": true,
+      "cpu_only_explicit": true,
+      "audio_matches": true,
+      "model_matches": true,
+      "thread_environment_recorded": true,
+      "finite_positive_timing": true,
+      "253_alternating_steps": true,
+      "finite_nonnegative_step_timing": true,
+      "cpu_sum_reproduces": true,
+      "pointwise_sum_reproduces": true,
+      "partition_bounds_profile_sum": true,
+      "percentiles_reproduce": true,
+      "all_current_sources_match": true
+    },
+    "shared1": {
+      "expected_configuration": true,
+      "20_runs_3_warmups": true,
+      "fp32_parity_reported": true,
+      "cpu_only_explicit": true,
+      "audio_matches": true,
+      "model_matches": true,
+      "thread_environment_recorded": true,
+      "finite_positive_timing": true,
+      "253_alternating_steps": true,
+      "finite_nonnegative_step_timing": true,
+      "cpu_sum_reproduces": true,
+      "pointwise_sum_reproduces": true,
+      "partition_bounds_profile_sum": true,
+      "percentiles_reproduce": true,
+      "all_current_sources_match": true
+    },
+    "shared2": {
+      "expected_configuration": true,
+      "20_runs_3_warmups": true,
+      "fp32_parity_reported": true,
+      "cpu_only_explicit": true,
+      "audio_matches": true,
+      "model_matches": true,
+      "thread_environment_recorded": true,
+      "finite_positive_timing": true,
+      "253_alternating_steps": true,
+      "finite_nonnegative_step_timing": true,
+      "cpu_sum_reproduces": true,
+      "pointwise_sum_reproduces": true,
+      "partition_bounds_profile_sum": true,
+      "percentiles_reproduce": true,
+      "all_current_sources_match": true
+    },
+    "shared4": {
+      "expected_configuration": true,
+      "20_runs_3_warmups": true,
+      "fp32_parity_reported": true,
+      "cpu_only_explicit": true,
+      "audio_matches": true,
+      "model_matches": true,
+      "thread_environment_recorded": true,
+      "finite_positive_timing": true,
+      "253_alternating_steps": true,
+      "finite_nonnegative_step_timing": true,
+      "cpu_sum_reproduces": true,
+      "pointwise_sum_reproduces": true,
+      "partition_bounds_profile_sum": true,
+      "percentiles_reproduce": true,
+      "all_current_sources_match": true
+    },
+    "transcripts_match_across_configurations": true
+  },
+  "source_checks": {
+    "per1": {
+      "software/runtime/profile_cpu_regions.py": true,
+      "software/runtime/partition.py": true,
+      "software/model-tools/citrinet_cpu.py": true
+    },
+    "shared1": {
+      "software/runtime/profile_cpu_regions.py": true,
+      "software/runtime/partition.py": true,
+      "software/model-tools/citrinet_cpu.py": true
+    },
+    "shared2": {
+      "software/runtime/profile_cpu_regions.py": true,
+      "software/runtime/partition.py": true,
+      "software/model-tools/citrinet_cpu.py": true
+    },
+    "shared4": {
+      "software/runtime/profile_cpu_regions.py": true,
+      "software/runtime/partition.py": true,
+      "software/model-tools/citrinet_cpu.py": true
+    }
+  },
+  "report_sha256": {
+    "per1": "a4d971ed984a9cb2936a19f8681a44845fd5224731cccd9cde8ab28b94201d0c",
+    "shared1": "e4cc55b5926dc1223d12ae34f4b01ae5de03d322f3eec7a87d56b37c483ccc55",
+    "shared2": "272d43f1f60dfb78a8bbe7e8eb78fc9e3ec8bd2908f446a40f3b08be865f3ef4",
+    "shared4": "67904a7c7db90f16c3f7e080306abda17ee38ef8b4babb15d2e8ce9e621e053d"
+  },
+  "timings_seconds": {
+    "per1": {
+      "full_cpu_graph_seconds": {
+        "p50": 1.302025388504262,
+        "p95": 1.305508248310798
+      },
+      "partition_seconds": {
+        "p50": 0.8197115944931284,
+        "p95": 0.8855668137919566
+      },
+      "cpu_region_seconds": {
+        "p50": 0.5054960570050753,
+        "p95": 0.5743630517856217
+      },
+      "fp32_pointwise_seconds": {
+        "p50": 0.3009829194415943,
+        "p95": 0.3325764731860545
+      },
+      "unprofiled_partition_overhead_seconds": {
+        "p50": 0.009644050383940339,
+        "p95": 0.01172840427461779
+      }
+    },
+    "shared1": {
+      "full_cpu_graph_seconds": {
+        "p50": 1.3099027319913148,
+        "p95": 1.3122473872528644
+      },
+      "partition_seconds": {
+        "p50": 0.8139101234992268,
+        "p95": 0.8914434133934265
+      },
+      "cpu_region_seconds": {
+        "p50": 0.5056364090851275,
+        "p95": 0.575670374823676
+      },
+      "fp32_pointwise_seconds": {
+        "p50": 0.2988613974666805,
+        "p95": 0.33466641592021923
+      },
+      "unprofiled_partition_overhead_seconds": {
+        "p50": 0.009569177025696263,
+        "p95": 0.010368856628338112
+      }
+    },
+    "shared2": {
+      "full_cpu_graph_seconds": {
+        "p50": 0.7399720265020733,
+        "p95": 0.7799394137502531
+      },
+      "partition_seconds": {
+        "p50": 1.145513840005151,
+        "p95": 1.2567510938584747
+      },
+      "cpu_region_seconds": {
+        "p50": 0.4594548835520982,
+        "p95": 0.5515025333261292
+      },
+      "fp32_pointwise_seconds": {
+        "p50": 0.6744867570087081,
+        "p95": 0.7308431091725651
+      },
+      "unprofiled_partition_overhead_seconds": {
+        "p50": 0.009796832026040647,
+        "p95": 0.015608499767404284
+      }
+    },
+    "shared4": {
+      "full_cpu_graph_seconds": {
+        "p50": 0.5016612660037936,
+        "p95": 0.5303361923928606
+      },
+      "partition_seconds": {
+        "p50": 1.6205524530014372,
+        "p95": 1.8056499879028707
+      },
+      "cpu_region_seconds": {
+        "p50": 0.5946913565494469,
+        "p95": 0.6840935599815567
+      },
+      "fp32_pointwise_seconds": {
+        "p50": 0.9703327234456083,
+        "p95": 1.2200185050664003
+      },
+      "unprofiled_partition_overhead_seconds": {
+        "p50": 0.010242481861496344,
+        "p95": 0.015728210270026466
+      }
+    }
+  },
+  "fallback_p50_improvement_percent_vs_per1": {
+    "per1": 0.0,
+    "shared1": -0.027765217573372247,
+    "shared2": 9.10811722761169,
+    "shared4": -17.645102925793175
+  },
+  "production_recommendation": "Retain the measured production configuration until a physical hybrid run validates shared2. Shared2 is a candidate because fallback median improves 9.11%; its FP32 pointwise contention penalty may differ in the native FPGA path. Reject shared4 on this evidence.",
+  "caveats": [
+    "FPGA-labelled pointwise steps execute FP32 NumPy BLAS in this diagnostic; they are not FPGA timings.",
+    "The full-graph CPU comparator uses the selected 1/2/4 ORT threads, so it differs across configurations.",
+    "BLAS environment is 4 threads for every configuration; shared ORT workers may contend with BLAS. Worker spinning is requested off but not established.",
+    "FP32 fallback inputs differ from the production dynamic INT8 path. Only a physical hybrid test can establish production timing.",
+    "Reported output parity is an assertion result bound to current profiler source, not a retained raw logit tensor comparison.",
+    "Profiler does not record thermals/clocks/affinity or realized BLAS thread count; causal attribution to contention requires further evidence.",
+    "Partition and full-graph inference timings omit WAV loading, frontend and CTC decode; they are not end-to-end acceptance measurements."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "validation_adapter_sha256": "2ea05e6aa4bbfc4ad72a970189ceaf32927be1d336718aabcbd6d535617de15a",
+  "tokenizer_adapter_sha256": "a1b98b49261485a40198d64775ea612d0294c016f24d58759fbe5c921d989469",
+  "explicit_audio_dtype": "float32",
+  "status": "pass",
+  "complete_original_nemo_wrapper_validated": true,
+  "nemo_toolkit": "1.23.0",
+  "torch": "2.2.2+cpu",
+  "transformers": "4.30.2",
+  "tokenizers": "0.13.3",
+  "archived_vocabulary_mapping_equal": true,
+  "original_configured_ctc_decoder_executed": true,
+  "checkpoint_sha256": "db3cdb75f281e9889a6747ec9ff9994da03b5a17bb5a561586e9e57057ba15aa",
+  "model_sha256": "c87b9d25d593a482b18826b4a968765eb3e1f60c0a0e58079bc89268d625f3b0",
+  "tokenizer_sha256": "4b055e597de3216bdb04491d3ce5014b174606eb9c8e2467b28a1a975e8e22f5",
+  "decoder_id": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "preprocessing_id": "c2d4fccebfb020ecffd3e30b1bda748963f670f490221af01e3f263acec9bab6",
+  "frontend_npz_sha256": "7a3be154b7545cf153a2e814eabc051962e0d89e1191acf234da471420b63c4d",
+  "frontend_constants_sha256": "7a3be154b7545cf153a2e814eabc051962e0d89e1191acf234da471420b63c4d",
+  "frontend_source_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "decoder_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "citrinet_cpu_source_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "validate_nemo_source_sha256": "3c62d7fd816939a4e4f0b181d03f07bd0ba8a1afe028c2d0dc049321445d5945",
+  "model_config_sha256": "97bece72accc3344f1828993daf94a9401123f937a56c2d426b07d423d828f3c",
+  "tests": [
+    {
+      "wav": "/mnt/c/Users/jfang/Documents/Vivado/Prototype_v2/research/eval/user-recording/speech.wav",
+      "wav_sha256": "6e6fc731ed40933d7e6aea715aa7546e8f4c7e4a6cbff627c93ef5c499a201a5",
+      "transcript": "children are number made up so is the a p i price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "frontend_max_absolute_error": 5.823373794555664e-05,
+      "log_probs_max_absolute_error": 0.0003724098205566406,
+      "argmax_equal": true
+    },
+    {
+      "wav": "/mnt/c/Users/jfang/Documents/Vivado/Prototype_v2/research/eval/librispeech-mini/evaluation/6930-75918-0000.wav",
+      "wav_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "transcript": "concord returned to its place amidst the tents",
+      "frontend_max_absolute_error": 3.6716461181640625e-05,
+      "log_probs_max_absolute_error": 1.621246337890625e-05,
+      "argmax_equal": true
+    }
+  ]
+}

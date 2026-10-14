@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "full_block_simulation_passed": false,
+  "mac_model_vendor_conformance_cycles": 6000,
+  "depthwise_unit_cases": 180,
+  "simulation_substitution": "Only DSP48E2 is replaced in a derived simulation-only source; all controller/memory/quantizer RTL retained",
+  "sources_sha256": {
+    "build/mac_conformance/mac_conformance.sim/sim_1/behav/xsim/simulate.log": "0dd4ee6facdbda06ba2a9e6c2c16a48c27fbb77e628ce05d05fb701d42a1e00e",
+    "build/bimodal_dw_sim/bimodal_dw_sim.sim/sim_1/behav/xsim/simulate.log": "5c9787e621f9c606793aaf2435e87bafa8af8badec08ea8a0b1cfa7ce8e3d78f",
+    "rtl/experimental/qn_branch_pw_core.v": "26a084a95fefc59045dbb8b22e46f13d732bddec5f7d68191346cf818f8e4a53",
+    "sim/fast/qn_branch_pw_core.v": "90a08b7900dd7b9a80b27dcb11ba134287454381953eb2ffa20b1a98eaf7f791",
+    "sim/qn_mac_model.sv": "13db357e011e6c9cdfbe33f55d2c059a5f557def4e66676fb3226a3acb533bc6",
+    "sim/tb_mac_conformance.sv": "d952e59a038b7ae134a8d0db86dfbae4d8171f257505fac488d452a7120d9abb",
+    "scripts/create_mac_conformance.py": "b06aca043b6ac4c2c54e72ebca3a3b197591e14b58a9af716e693dac928ce93e",
+    "scripts/create_branch_bimodal_build.py": "cbedd13903dac0d868740c0739f4a90cfd860b3a0059afa5d37b6c7c328780a7",
+    "verification/bimodal-dw/config.mem": "f1fe65fc74f8e9ffff5ebe65341e223f19e4336380079a70dc012ab31f554749",
+    "verification/bimodal-dw/expected.mem": "f791e2e0a8432dfcfce48d7eaef6e5195d829ce004de9a25c4523de61ef36d37",
+    "verification/bimodal-dw/input.mem": "90706cfec06affdfac2574759dc37721a4301bfb43bb600705f5da0fc326454f",
+    "verification/bimodal-dw/manifest.json": "3a1d670b8a48132139d52fe7735f7d305c8bb431dc172c6a917385c4304f4431",
+    "verification/bimodal-dw/metadata.mem": "5ad646cee1a83a71ee8d452dad2a479d1c3261df698a449fccc755cbd9f73a6d",
+    "rtl/experimental/fused_depthwise_bimodal.sv": "7f0772516ddd8d7e9cf3079856277ba48450ce492159b4b68cdba671040e1478",
+    "sim/tb_bimodal_dw.sv": "6f35c159bc8965acebf22ca557332c7560f7662a60a1d81127ba81e7e6e6341f",
+    "scripts/create_bimodal_dw.py": "a4a6929fc47c890a2bee17a7d5f351d3734c138d6b5513536c979d4a0be4d732",
+    "scripts/create_bimodal_dw_tb.py": "dd3d076e2ddbecf782fb2218abc0ae01116bd5a42daeff474e1282fefd0a3dad",
+    "scripts/bimodal_dw_sim.tcl": "b4cac9971dbc5c5b7bcc201e65e63092a66951729c4f9f83679e4160fb73bc8f"
+  }
+}

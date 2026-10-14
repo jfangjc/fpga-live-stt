@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "all_outputs_bit_exact": true,
+  "records": [
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 2,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 2,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    }
+  ],
+  "clips": [
+    {
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 2.5,
+      "all_outputs_bit_exact": true
+    }
+  ],
+  "library_sha256": "a7a367dcad9bb4ff0b8126e8958a724f49ab0744ee620b426638eae22bd8f297",
+  "parent_library_sha256": "745e79572cf731f413d944535b3b972a7f7894edfb125b6f65f3372514ade1bb",
+  "compiler_sha256": "7d57a015b3607fa758b7cef82b548ffad5e4ce08ec2dc9eff5a6042bc6102649",
+  "runtime_source_sha256": "1836311e2b32e0eb37f3899fa679d9383f09e018903d15dfd43e0a9d233045ae",
+  "transport_source_sha256": "ee023e2b48c46f1670c73118fe1a0c4904247c557e1bd3d4339d7daaa15c31a3",
+  "source_sha256": "c8f1dc4c0d0fa6176a1f9d27d06d1636cc96e9526380da06e4eb94e259d6b8de",
+  "graph_sha256": "935da234aef87ab5f46d463b92333ad2b1fbede2434c2af0950bc087eebdcbc4"
+}

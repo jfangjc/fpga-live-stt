@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "evidence_valid": true,
+  "twofold_speed_acceptance": true,
+  "confirmation_sha256": "a08756b7999c5bc4d25f70e538fa7c6610527f7651a9a85c3e3807c124d3e494",
+  "cpu_screen_sha256": "66e7eba56fb548bf71266abd710a849d0b5ed2ffa92fdbbe37945f652689cf74",
+  "contexts": [
+    {
+      "context_seconds": 0.5,
+      "cpu_p50": 0.05609578000075999,
+      "fpga_p50": 0.027171949499461334,
+      "cpu_p95": 0.07213178494894237,
+      "fpga_p95": 0.029411468502439676,
+      "speedup_factor": 2.0644738796482764,
+      "meets_50_percent": true
+    },
+    {
+      "context_seconds": 1,
+      "cpu_p50": 0.09589738700015005,
+      "fpga_p50": 0.03703657000005478,
+      "cpu_p95": 0.10795695455490205,
+      "fpga_p95": 0.04559339119878132,
+      "speedup_factor": 2.5892620995952975,
+      "meets_50_percent": true
+    },
+    {
+      "context_seconds": 2.5,
+      "cpu_p50": 0.14582136549870484,
+      "fpga_p50": 0.06242915750044631,
+      "cpu_p95": 0.157237416303542,
+      "fpga_p95": 0.07181239590026962,
+      "speedup_factor": 2.335789418552739,
+      "meets_50_percent": true
+    }
+  ],
+  "source_sha256": "a32619c28e7549a5219008f4650d10079d78f3e45677ec8bd020c107bc438ae4",
+  "scope": "Tested warm full audio paths only; no live capture or representative WER qualification"
+}

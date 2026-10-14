@@ -1,0 +1,7 @@
+{
+  "complete": true,
+  "frontend_arithmetic_ast_identical_except_unused_padding": true,
+  "strongest_screened_cpu_selection_verified": true,
+  "cpu_screen_sha256": "53764964c37eef28ef974e74f95b423661717401c28b213e7e2768be5aaff195",
+  "scope": "Input arithmetic and CPU selection audit; physical performance confirmation still pending"
+}

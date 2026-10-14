@@ -1,0 +1,47 @@
+{
+  "frontend_formula_checks": [
+    {
+      "samples": 320,
+      "valid": 3,
+      "shape": [
+        1,
+        80,
+        16
+      ],
+      "max_abs_error": 1.0579824447631836e-05
+    },
+    {
+      "samples": 1600,
+      "valid": 11,
+      "shape": [
+        1,
+        80,
+        16
+      ],
+      "max_abs_error": 5.2094459533691406e-05
+    },
+    {
+      "samples": 16003,
+      "valid": 101,
+      "shape": [
+        1,
+        80,
+        112
+      ],
+      "max_abs_error": 2.568960189819336e-05
+    }
+  ],
+  "silence_finite": true,
+  "physical_hardware": false,
+  "full_original_nemo_parity": false,
+  "accelerated_nodes": 126,
+  "partition_steps": 253,
+  "quantized_vs_fp32_logit_max_abs_error": 0.6275091171264648,
+  "argmax_agreement_fraction": 1.0,
+  "encoded_lengths_equal": true,
+  "limitations": [
+    "Frontend reference is independently written torch formula using actual checkpoint constants, not full original NeMo preprocessor",
+    "Random features are not held-out recognition accuracy",
+    "Partitioned execution creates many CPU regions; initialization and warm overhead require KV260 measurement"
+  ]
+}

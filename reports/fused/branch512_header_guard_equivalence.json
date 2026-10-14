@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "binary_header_acceptance_unchanged": true,
+  "all_hk_ht_combinations_covered": 4294967296,
+  "eligible_hk": 256,
+  "ht_values_enumerated": 65536,
+  "proof": "For hk!=256 both predicates are false for every ht; at hk==256 all 65536 ht values are enumerated. Other header factors are byte-identical.",
+  "maximum_eligible_product": 4096,
+  "maximum_full_input_product": 268431360,
+  "datapath_and_handshake_unchanged": true,
+  "sources_sha256": {
+    "rtl/experimental/qn_branch512_drop_inner.sv": "40a31904db658c8e6ba8b35273e235de0374f0f23833109d237de9c410956220",
+    "rtl/experimental/qn_branch512_guard_inner.sv": "c323c261f381f87141841c73c467863497bb74606b4026cbb5fbc1a050933af8",
+    "scripts/create_branch512_guard.py": "0ba70d9e72cc52c2a01d2786866baf6af8486a338d689f86bb1777c011570bff",
+    "scripts/prove_branch512_header_guard.py": "9a65ff4f9a9ab6c04298551829123809e1722d5e66bf53f46bd25ce4ad4372bb"
+  }
+}

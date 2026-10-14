@@ -1,0 +1,1 @@
+{"scope":"standalone OOC primitive, not integrated firmware","clock_hz":100000000,"input_output_delay_ns":2.0,"clock_uncertainty_ns":0.1,"setup_slack_ns":2.013,"hold_slack_ns":0.101,"physical_hardware_execution":false}

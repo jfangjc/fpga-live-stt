@@ -1,0 +1,132 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "all_outputs_bit_exact": true,
+  "records": [
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 2,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": false
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 2,
+      "same_input": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair_chain_residual_overlap",
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "chain": "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "stride": 1,
+      "same_input": true
+    }
+  ],
+  "clips": [
+    {
+      "seconds": 0.25,
+      "res_threads": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 0.5,
+      "res_threads": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 1,
+      "res_threads": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 2.5,
+      "res_threads": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 0.25,
+      "res_threads": 3,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 0.5,
+      "res_threads": 3,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 1,
+      "res_threads": 3,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 2.5,
+      "res_threads": 3,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 0.25,
+      "res_threads": 4,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 0.5,
+      "res_threads": 4,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 1,
+      "res_threads": 4,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "seconds": 2.5,
+      "res_threads": 4,
+      "all_outputs_bit_exact": true
+    }
+  ],
+  "library_sha256": "9828ee52cda41b455ce78d81039ccba1a774f4b51e32eefcae35d84d6cf93653",
+  "parent_library_sha256": "745e79572cf731f413d944535b3b972a7f7894edfb125b6f65f3372514ade1bb",
+  "compiler_sha256": "ca53483251c545327b94e570e63edded1e0899cbb931a7f6f47ca769f4cb78ec",
+  "runtime_source_sha256": "a44426672705195ba0e338df79ca2f6afab57243251dc43eff7feafae4550cc0",
+  "transport_source_sha256": "ee023e2b48c46f1670c73118fe1a0c4904247c557e1bd3d4339d7daaa15c31a3",
+  "source_sha256": "03383d416f60be5de6d2098f6957a6af56cde9cfeb58205ec08a3c96dc1bc348",
+  "graph_sha256": "443dcfa80ad812e3019a8ff5b116e8ee1e6c63dd60be006cd7f699d45d3e3d0d"
+}

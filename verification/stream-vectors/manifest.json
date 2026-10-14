@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "independent_numpy_reference": true,
+  "generator_sha256": "718792ae0e7f50dc829b5d6f8526ea573c28cab012e06f1ebe7ce44ee61c195d",
+  "cases": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      17,
+      13,
+      2,
+      11
+    ],
+    [
+      51,
+      51,
+      3,
+      21
+    ],
+    [
+      101,
+      99,
+      5,
+      29
+    ],
+    [
+      256,
+      255,
+      3,
+      39
+    ],
+    [
+      65,
+      0,
+      2,
+      41
+    ],
+    [
+      17,
+      17,
+      8,
+      1
+    ]
+  ],
+  "files_sha256": {
+    "verification/stream-vectors/stream_101_99_5_29.mem": "ebe55e618cd826096d07cee49f242a46c4550c157cc60d189871273300fc715b",
+    "verification/stream-vectors/stream_17_13_2_11.mem": "828677ed839639d33d17c811e4f7a6fa4a744b331f97fd6541821aaa7bb4fdc7",
+    "verification/stream-vectors/stream_17_17_8_1.mem": "cd047b43d2e045110dbe2fe15ecf1cbe22725d255d63f059c454d2caa26fa2c6",
+    "verification/stream-vectors/stream_1_1_1_1.mem": "b85687bb17167e3ca3223a5726792b4befe63dd6b87fe32bbd5f2d56fe804e80",
+    "verification/stream-vectors/stream_256_255_3_39.mem": "8d34d8fa4ff2bd832e6a0bd9ca47067f42d8848d84e87a9438cb4018778518c3",
+    "verification/stream-vectors/stream_51_51_3_21.mem": "046f5c6304349efac801a56f7ad50fe96afac240b7ccfd8416db2e260a773c56",
+    "verification/stream-vectors/stream_65_0_2_41.mem": "a9e41a82e57447f53664425bf2929761588d5c6798ecf3c04685637447e14e43"
+  }
+}

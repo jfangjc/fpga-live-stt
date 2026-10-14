@@ -1,0 +1,5739 @@
+{
+  "checkpoint": "nvidia/stt_en_citrinet_256_ls",
+  "hf_revision": "c7cdacff0262bbb2a17771d20ec9f9f3b5cff6ed",
+  "sha256": {
+    "model_config.yaml": "33c6bba509e5684bc6e411ff7df97c2a2368f2fc6d982b37b1c4dee29e92fefd",
+    "model_weights.ckpt": "545e4e70995c17f54cb44742f19497ea81650b7b8d9ff52f099bf9fa43b04aea",
+    "stt_en_citrinet_256_ls.nemo": "a00c8fb75a2bcc37271275293bce950863e4e069d43f6cf193d42fcf605aa21c",
+    "vocab.txt": "6e862c3be921c2fd937829e53d8fd554752a4a584abf9cdc0bc745717fecf3f9"
+  },
+  "trainable_encoder_decoder_parameters": 9767441,
+  "state_elements_including_buffers": 9854833,
+  "tokenizer_actual": "WordPiece (wpe) with archived vocab.txt",
+  "vocabulary_size": 256,
+  "blank_index": 256,
+  "features": 80,
+  "window_samples": 400,
+  "fft_size": 512,
+  "hop_samples": 160,
+  "temporal_length_rule": "Three same-padding stride-two convolutions: ceil(feature_lengths / 8)",
+  "se_blocks": 23,
+  "se_context": "Global valid utterance; not causal streaming",
+  "onnx_operators": {
+    "Shape": 237,
+    "Constant": 1629,
+    "Gather": 237,
+    "Cast": 533,
+    "Range": 237,
+    "Unsqueeze": 658,
+    "GreaterOrEqual": 221,
+    "Where": 244,
+    "Conv": 236,
+    "Less": 23,
+    "Not": 23,
+    "ReduceSum": 46,
+    "Div": 26,
+    "Transpose": 47,
+    "MatMul": 46,
+    "Relu": 130,
+    "Sigmoid": 23,
+    "Mul": 23,
+    "Add": 27,
+    "Sub": 6,
+    "LogSoftmax": 1
+  },
+  "convolution_nodes": 236,
+  "pointwise_nodes": 129,
+  "shape_scenario": {
+    "audio_samples": 160000,
+    "feature_length": 1001,
+    "padded_feature_frames": 1008,
+    "encoded_length": 126
+  },
+  "estimates_not_measurements": true,
+  "convolution_macs": 2732405760,
+  "pointwise_macs": 2572303104,
+  "pointwise_int8_weights_bytes": 8606336,
+  "pointwise_int8_input_bytes": 10225152,
+  "pointwise_int32_result_bytes": 40707576,
+  "pointwise_fused_int8_result_bytes": 10176894,
+  "old_core_padded_int32_result_bytes": 41279488,
+  "adapter_eligible_nodes": 126,
+  "adapter_eligible_macs": 2514500352,
+  "adapter_eligible_weight_bytes": 8409728,
+  "adapter_eligible_input_bytes": 9773568,
+  "adapter_eligible_padded_int32_result_bytes": 40361984,
+  "adapter_omitted_pointwise_layers": [
+    "encoder.1.res.0.0.conv",
+    "encoder.7.res.0.0.conv",
+    "encoder.14.res.0.0.conv"
+  ],
+  "ideal_pointwise_compute_seconds_at_256_mac_lanes_100mhz": 0.10048059,
+  "ideal_compute_limitations": "Excludes depthwise/SE/masks, memory stalls, tail lanes, weights, DMA, packing, requantization, preprocessing, decode; not a speed forecast",
+  "layers": [
+    {
+      "name": "encoder.0.mconv.0.conv",
+      "input_shape": [
+        1,
+        80,
+        1008
+      ],
+      "output_shape": [
+        1,
+        80,
+        1008
+      ],
+      "kernel": 5,
+      "stride": 1,
+      "groups": 80,
+      "weights": 400,
+      "macs": 403200,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 400,
+      "estimated_int8_input_bytes": 80640,
+      "estimated_int32_result_bytes": 322560,
+      "estimated_fused_int8_result_bytes": 80640,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.0.mconv.1.conv",
+      "input_shape": [
+        1,
+        80,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 20480,
+      "macs": 20643840,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 20480,
+      "estimated_int8_input_bytes": 80640,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": 1032192
+    },
+    {
+      "name": "encoder.1.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 11,
+      "stride": 1,
+      "groups": 256,
+      "weights": 2816,
+      "macs": 2838528,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 2816,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.1.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 66060288,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": 1032192
+    },
+    {
+      "name": "encoder.1.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 11,
+      "stride": 1,
+      "groups": 256,
+      "weights": 2816,
+      "macs": 2838528,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 2816,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.1.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 66060288,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": 1032192
+    },
+    {
+      "name": "encoder.1.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 11,
+      "stride": 1,
+      "groups": 256,
+      "weights": 2816,
+      "macs": 2838528,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 2816,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.1.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 66060288,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": 1032192
+    },
+    {
+      "name": "encoder.1.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 11,
+      "stride": 1,
+      "groups": 256,
+      "weights": 2816,
+      "macs": 2838528,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 2816,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.1.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        1008
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 66060288,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 1032192,
+      "estimated_fused_int8_result_bytes": 258048,
+      "old_core_padded_int32_result_bytes": 1032192
+    },
+    {
+      "name": "encoder.1.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 11,
+      "stride": 2,
+      "groups": 256,
+      "weights": 2816,
+      "macs": 1419264,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 2816,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.1.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.1.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        1008
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 2,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 258048,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.2.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.2.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.2.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.2.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.2.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.2.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.2.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.2.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.2.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.2.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.2.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.3.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 1935360,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.3.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.3.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 1935360,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.3.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.3.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 1935360,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.3.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.3.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 1935360,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.3.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.3.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 1935360,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.3.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.3.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.4.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 2193408,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.4.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.4.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 2193408,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.4.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.4.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 2193408,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.4.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.4.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 2193408,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.4.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.4.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 2193408,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.4.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.4.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.5.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 2451456,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.5.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.5.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 2451456,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.5.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.5.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 2451456,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.5.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.5.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 2451456,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.5.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.5.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 2451456,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.5.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.5.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.6.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 2709504,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.6.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.6.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 2709504,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.6.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.6.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 2709504,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.6.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.6.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 2709504,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.6.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.6.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 2709504,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.6.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.6.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.7.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.7.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.7.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.7.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.7.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.7.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.7.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 13,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 1677312,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.7.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        504
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 33030144,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 516096,
+      "estimated_fused_int8_result_bytes": 129024,
+      "old_core_padded_int32_result_bytes": 524288
+    },
+    {
+      "name": "encoder.7.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 13,
+      "stride": 2,
+      "groups": 256,
+      "weights": 3328,
+      "macs": 838656,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3328,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.7.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.7.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        504
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 2,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 129024,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.8.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 967680,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.8.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.8.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 967680,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.8.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.8.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 967680,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.8.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.8.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 967680,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.8.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.8.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 15,
+      "stride": 1,
+      "groups": 256,
+      "weights": 3840,
+      "macs": 967680,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 3840,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.8.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.8.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.9.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 1096704,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.9.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.9.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 1096704,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.9.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.9.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 1096704,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.9.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.9.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 1096704,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.9.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.9.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 17,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4352,
+      "macs": 1096704,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4352,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.9.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.9.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.10.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 1225728,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.10.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.10.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 1225728,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.10.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.10.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 1225728,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.10.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.10.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 1225728,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.10.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.10.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 19,
+      "stride": 1,
+      "groups": 256,
+      "weights": 4864,
+      "macs": 1225728,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 4864,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.10.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.10.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.11.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 1354752,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.11.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.11.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 1354752,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.11.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.11.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 1354752,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.11.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.11.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 1354752,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.11.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.11.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 21,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5376,
+      "macs": 1354752,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5376,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.11.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.11.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.12.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 23,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5888,
+      "macs": 1483776,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5888,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.12.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.12.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 23,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5888,
+      "macs": 1483776,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5888,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.12.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.12.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 23,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5888,
+      "macs": 1483776,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5888,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.12.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.12.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 23,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5888,
+      "macs": 1483776,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5888,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.12.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.12.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 23,
+      "stride": 1,
+      "groups": 256,
+      "weights": 5888,
+      "macs": 1483776,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 5888,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.12.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.12.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.13.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.13.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.13.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.13.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.13.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.13.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.13.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.13.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.13.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.13.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.13.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.14.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.14.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.14.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.14.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.14.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.14.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.14.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 25,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 1612800,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.14.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        252
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 16515072,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 258048,
+      "estimated_fused_int8_result_bytes": 64512,
+      "old_core_padded_int32_result_bytes": 262144
+    },
+    {
+      "name": "encoder.14.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 25,
+      "stride": 2,
+      "groups": 256,
+      "weights": 6400,
+      "macs": 806400,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6400,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.14.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.14.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        252
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 2,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 64512,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.15.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 27,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6912,
+      "macs": 870912,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6912,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.15.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.15.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 27,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6912,
+      "macs": 870912,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6912,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.15.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.15.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 27,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6912,
+      "macs": 870912,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6912,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.15.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.15.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 27,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6912,
+      "macs": 870912,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6912,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.15.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.15.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 27,
+      "stride": 1,
+      "groups": 256,
+      "weights": 6912,
+      "macs": 870912,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 6912,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.15.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.15.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.16.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 29,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7424,
+      "macs": 935424,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7424,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.16.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.16.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 29,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7424,
+      "macs": 935424,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7424,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.16.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.16.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 29,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7424,
+      "macs": 935424,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7424,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.16.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.16.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 29,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7424,
+      "macs": 935424,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7424,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.16.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.16.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 29,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7424,
+      "macs": 935424,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7424,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.16.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.16.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.17.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 31,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7936,
+      "macs": 999936,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7936,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.17.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.17.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 31,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7936,
+      "macs": 999936,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7936,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.17.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.17.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 31,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7936,
+      "macs": 999936,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7936,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.17.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.17.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 31,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7936,
+      "macs": 999936,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7936,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.17.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.17.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 31,
+      "stride": 1,
+      "groups": 256,
+      "weights": 7936,
+      "macs": 999936,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 7936,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.17.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.17.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.18.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 33,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8448,
+      "macs": 1064448,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8448,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.18.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.18.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 33,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8448,
+      "macs": 1064448,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8448,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.18.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.18.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 33,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8448,
+      "macs": 1064448,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8448,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.18.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.18.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 33,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8448,
+      "macs": 1064448,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8448,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.18.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.18.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 33,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8448,
+      "macs": 1064448,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8448,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.18.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.18.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.19.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 35,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8960,
+      "macs": 1128960,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8960,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.19.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.19.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 35,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8960,
+      "macs": 1128960,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8960,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.19.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.19.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 35,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8960,
+      "macs": 1128960,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8960,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.19.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.19.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 35,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8960,
+      "macs": 1128960,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8960,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.19.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.19.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 35,
+      "stride": 1,
+      "groups": 256,
+      "weights": 8960,
+      "macs": 1128960,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 8960,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.19.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.19.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.20.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 37,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9472,
+      "macs": 1193472,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9472,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.20.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.20.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 37,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9472,
+      "macs": 1193472,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9472,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.20.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.20.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 37,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9472,
+      "macs": 1193472,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9472,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.20.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.20.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 37,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9472,
+      "macs": 1193472,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9472,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.20.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.20.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 37,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9472,
+      "macs": 1193472,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9472,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.20.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.20.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.21.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 39,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9984,
+      "macs": 1257984,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9984,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.21.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.21.mconv.5.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 39,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9984,
+      "macs": 1257984,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9984,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.21.mconv.6.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.21.mconv.10.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 39,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9984,
+      "macs": 1257984,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9984,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.21.mconv.11.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.21.mconv.15.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 39,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9984,
+      "macs": 1257984,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9984,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.21.mconv.16.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.21.mconv.20.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 39,
+      "stride": 1,
+      "groups": 256,
+      "weights": 9984,
+      "macs": 1257984,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 9984,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.21.mconv.21.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.21.res.0.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 65536,
+      "macs": 8257536,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 65536,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": 131072
+    },
+    {
+      "name": "encoder.22.mconv.0.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        256,
+        126
+      ],
+      "kernel": 41,
+      "stride": 1,
+      "groups": 256,
+      "weights": 10496,
+      "macs": 1322496,
+      "pointwise": false,
+      "estimated_int8_weight_bytes": 10496,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 129024,
+      "estimated_fused_int8_result_bytes": 32256,
+      "old_core_padded_int32_result_bytes": null
+    },
+    {
+      "name": "encoder.22.mconv.1.conv",
+      "input_shape": [
+        1,
+        256,
+        126
+      ],
+      "output_shape": [
+        1,
+        640,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 163840,
+      "macs": 20643840,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 163840,
+      "estimated_int8_input_bytes": 32256,
+      "estimated_int32_result_bytes": 322560,
+      "estimated_fused_int8_result_bytes": 80640,
+      "old_core_padded_int32_result_bytes": 327680
+    },
+    {
+      "name": "decoder",
+      "input_shape": [
+        1,
+        640,
+        126
+      ],
+      "output_shape": [
+        1,
+        257,
+        126
+      ],
+      "kernel": 1,
+      "stride": 1,
+      "groups": 1,
+      "weights": 164480,
+      "macs": 20724480,
+      "pointwise": true,
+      "estimated_int8_weight_bytes": 164480,
+      "estimated_int8_input_bytes": 80640,
+      "estimated_int32_result_bytes": 129528,
+      "estimated_fused_int8_result_bytes": 32382,
+      "old_core_padded_int32_result_bytes": 139264
+    }
+  ]
+}

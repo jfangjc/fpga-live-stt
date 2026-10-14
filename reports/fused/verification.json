@@ -1,0 +1,122 @@
+{
+  "primitives": {
+    "requant": {
+      "scope": "standalone OOC primitive, not integrated firmware",
+      "clock_hz": 100000000,
+      "input_output_delay_ns": 2.0,
+      "clock_uncertainty_ns": 0.1,
+      "setup_slack_ns": 2.56,
+      "hold_slack_ns": 0.052,
+      "dsp_cells": 16,
+      "physical_hardware_execution": false,
+      "drc_warning_rows": [
+        "| DPIP-2    | Warning  | Input pipelining       | 28     |",
+        "| DPOP-3    | Warning  | PREG Output pipelining | 8      |",
+        "| DPOP-4    | Warning  | MREG Output pipelining | 16     |",
+        "| RTSTAT-10 | Warning  | No routable loads      | 1      |"
+      ]
+    },
+    "se": {
+      "scope": "standalone OOC primitive, not integrated firmware",
+      "clock_hz": 100000000,
+      "input_output_delay_ns": 2.0,
+      "clock_uncertainty_ns": 0.1,
+      "setup_slack_ns": 2.013,
+      "hold_slack_ns": 0.101,
+      "physical_hardware_execution": false,
+      "drc_warning_rows": []
+    }
+  },
+  "board_cpu_results": {
+    "board-int8-4-paired.json": {
+      "baseline": {
+        "global_p50": 0.7852926580017083,
+        "global_p95": 1.5294247006044315,
+        "wer": 0.01910828025477707
+      },
+      "candidate": {
+        "global_p50": 0.571575493508135,
+        "global_p95": 1.092401426446304,
+        "wer": 0.025477707006369428
+      },
+      "aggregate_clip_median_reduction": 0.2772323905664048
+    },
+    "board-user-int8-4-paired.json": {
+      "baseline": {
+        "global_p50": 0.7224169054970844,
+        "global_p95": 0.7408912857070391,
+        "wer": 0.21428571428571427
+      },
+      "candidate": {
+        "global_p50": 0.527152559501701,
+        "global_p95": 0.5382277458964382,
+        "wer": 0.14285714285714285
+      },
+      "aggregate_clip_median_reduction": 0.27029315691473865
+    },
+    "board-stress-ac-int8-4-paired.json": {
+      "baseline": {
+        "global_p50": 0.7208921530036605,
+        "global_p95": 0.749203745397972,
+        "wer": 0.2619047619047619
+      },
+      "candidate": {
+        "global_p50": 0.5276983500007191,
+        "global_p95": 0.5368835610039241,
+        "wer": 0.19047619047619047
+      },
+      "aggregate_clip_median_reduction": 0.26787561320436626
+    }
+  },
+  "physical_fpga_acceleration_demonstrated": false,
+  "representative_accuracy_gate_passed": false,
+  "full_fused_block_implemented": false,
+  "firmware_changed": false,
+  "files_sha256": {
+    "reports/fused/board-int8-4-paired.json": "78ff6a89f442015ee067539ec24fad357bc694d794b3e553edc7bad89f41c2ab",
+    "reports/fused/board-stress-ac-int8-4-paired.json": "09e86e9bbd9794b57678f015a74a7492db949d9897e4cdbe646fa7f87ab5da67",
+    "reports/fused/board-user-int8-4-paired.json": "9ddabfd4edcc946f1af7fa43ed623457b6ba509e7519fdf9a4a0ffb33049dbdb",
+    "reports/fused/integer-regression.json": "bb577a451e7abbf2f6422c4a17bb341fcf67d5193a681cff928f4759e736e2d6",
+    "reports/fused/requant_drc.rpt": "15471be36846070f385d510c8c98a11a820c100ecd84bb1dd13305635a08654a",
+    "reports/fused/requant_implementation.json": "fde6662115288aca6453faa942f7b584caeecbb8f0264ce83eb067bf53d50f1b",
+    "reports/fused/requant_sim.log": "edb968e4ba93f820badaa6def68376f40afed5f0608e41e1a512482b95841df3",
+    "reports/fused/requant_timing.rpt": "7a667c9879f35feaa7dcb37cd66411152cdc71428480ce6db656582011610437",
+    "reports/fused/requant_utilization.rpt": "643bb9ef67ee0840e4759395135b9d5fe8476e51a545878ef617cce8f698752c",
+    "reports/fused/se_drc.rpt": "2de1224cb75de1e70bfff8dedaf57b47b2609e795f72f193a44a45c1b9537730",
+    "reports/fused/se_implementation.json": "17cdf53988ac363b6d4362d41c4c8284a7c764e07cf968bfe7e78b69a030f5a0",
+    "reports/fused/se_sim.log": "d5d77fd568f48a5c0928541883a6a41c15bf114527f81d860b1daa81dc4c6556",
+    "reports/fused/se_timing.rpt": "91251d5886e2332b6780fa01ca38bbc9e36123d207d1fc34f3f1ab6cd0f48e69",
+    "reports/fused/se_utilization.rpt": "ff0fcae31ce8d683cff683c509d2ee794c925e03fffa328d73e0e84b27475d34",
+    "reports/fused/user-int8-launcher-smoke.json": "20d006121f81f1931a612bb6844fd1bbaeee15a70bc3dc0561d1c96b942eafc0",
+    "reports/fused/user-integer-regression.json": "d1e15569b3e30ca712477ae65be5dec9110c43f550fdac761d30b98f07d08505",
+    "reports/fused/user-stress-ac-integer.json": "9ecf3749ff2ac40f3518547c88711bad97646fcb9c009ef739a479ae46007562",
+    "reports/fused/user-stress-integer.json": "1412dd1bb643b315348d0dbe1dcc4638d66d6d5d082d57fdbfd4c2ce1d19d299",
+    "reports/fused/user-stress-mixed0.json": "b0096564866099ac34957f882efa194f69b80ea72bbade04456763719de33cb5",
+    "research/fused/cpu-int8.json": "e8266132f5414eee6a4211ae01e8384ea941bb3695d0a64308765f0a8e7d53b6",
+    "research/fused/cpu-int8.onnx": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+    "rtl/experimental/fused_requant.v": "e9967c77136d1f7255823313d8b41843f5a9025bc43679f44dbf437b045d7590",
+    "rtl/experimental/fused_se_reduce.v": "2a446d017467d3a5944aec7984a70281d8961115f7a8a06f7fa9e8ed15c11a72",
+    "scripts/fused_requant_impl.tcl": "58c0f5e415b91835ee591706090664c9765fce1d10e55e0c95dc536d943e5431",
+    "scripts/fused_requant_sim.tcl": "912b7e717bb84a4968dcfbb28c0e0a9e0ae5b87bd650b48d27f6f114584b6805",
+    "scripts/fused_se_impl.tcl": "2a881fab3d36cb8ccb5fc1c1cd38f706f6d8e12a4f007e8b3aab9c0990257600",
+    "scripts/fused_se_sim.tcl": "b26eb2d4420e7e037191e4a89001063fbe754f6422daa41f23f0a6585b518c3b",
+    "scripts/generate_requant_vectors.py": "fc3b9b339b735d35a040203150e2c335daa86b18656f6f101b43adfba9d1370b",
+    "scripts/generate_se_vectors.py": "e948b1052b4b9f1a56f7f9b3313ab1e9997742422f9bc0a344c6c0d0e5a0bc33",
+    "sim/fused_vectors/expected.mem": "e314c8378c66f6a5923e86f2cc595dd1fa37f4fb85dd454e413534623c26a01f",
+    "sim/fused_vectors/input.mem": "4fc427dd282d1b22923b737b8653072ab38b4bdbf659229d2795f56adc14b873",
+    "sim/fused_vectors/provenance.json": "3024a2570848ca0ada227468df81fa26865866a3b7f4f68e42185ecf5c6b9962",
+    "sim/se_vectors/counts.vh": "5300eaa33b42619cd67e765d41cd09ca10958cde545f9ed1eb392a3d6f989aac",
+    "sim/se_vectors/expected.mem": "d40318db604c8c045f1f64480e0d5fca3e741023372298f9e75ed1081beb6cd7",
+    "sim/se_vectors/input.mem": "a2953f48435e1260de5aaf097523310699fba5c562c347e5d03e497ec0e816e5",
+    "sim/se_vectors/provenance.json": "c794635b97d3c0b36c80472f45e7f1898849bb8256265bd2d1ab7174314b43f6",
+    "sim/tb_fused_requant.sv": "80578fefd5e751572dcaccb09550a7574d7d8dc116d073e6b7ab4ad3fe996611",
+    "sim/tb_fused_se_reduce.sv": "a87afafa752119363e95031b2e379452e5df5edc4fac07394418e9c7e0d80962",
+    "software/fused/benchmark_cpu.py": "d285bf6e6fe0f835c478e2c9107367590dc500fcb070868716644a2ff7a910b7",
+    "software/fused/build_cpu_int8.py": "ed294de79441196a401ebb8f8cffe68521b8264c6292d204b86405ea2c1c3b69",
+    "software/fused/common.py": "c724a52134c0580eb27661833e65f927b06960dd123b265691e788ed2ac9d48a",
+    "software/fused/experiment.py": "43e6ab83fa0b4899118bbc5dd232b07719db146521ed3abc91133c86e1349f98",
+    "software/fused/oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "software/fused/test_fused.py": "7607bd8e3858b44571f8708e3f91a1b2b98be4657d4baff65fef8ac2ea415938",
+    "software/fused/transcribe_cpu_int8.py": "dbd66e6a07d5e8ec83bd807441bb7af14e0365d2a182d087dd11256403918a23"
+  }
+}

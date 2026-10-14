@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "reference_qualified_for_deployment": false,
+  "reference_purpose": "Reuse unchanged placement/routing for the exact DW stage change; new timing/parity gates remain mandatory",
+  "incremental_directive": "TimingClosure",
+  "clock_hz": 166666666,
+  "reference_setup_slack_ns": -0.075,
+  "reference_hold_slack_ns": 0.01,
+  "sources_sha256": {
+    "build/branch512_outslice166_system/Prototype_v3_branch512_outslice166.runs/impl_1/asr_v2_top_routed.dcp": "20b37c58ebb4fbcbfe5afbc76f6b324fb55387814f2f73108293953cb03ba0d0",
+    "reports/fused/branch512_outslice166_timing_failure.json": "c6ebb7c65e7bec9081210a99d71dc9d771e56ffd88039abad1d74c07c3449047",
+    "scripts/bind_drop166_incremental_reference.py": "f90bb75f90fd326245dfc1b33a952eee04bfa444b2b794e7b036b2dec5686433"
+  },
+  "documentation": "https://docs.amd.com/r/en-US/ug904-vivado-implementation/Using-Incremental-Implementation-in-Project-Mode"
+}

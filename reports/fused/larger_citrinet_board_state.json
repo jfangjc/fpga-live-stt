@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "clock_readback_hz": 99999999,
+  "active_app": "asr-v3-bulk",
+  "firmware_changed_by_test": false,
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "firmware_sha256": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
+  "sources_sha256": {
+    "software/latency/benchmark_larger_citrinet.py": "16b568f60972d41f377a9ab011da0796bef4f24a98090aa8d45c706e5cb37444",
+    "software/model-tools/larger_tokenizer.py": "a1b98b49261485a40198d64775ea612d0294c016f24d58759fbe5c921d989469",
+    "software/ort_fpga_bulk/libort_fpga.so": "ee4ae4d5a62b29fce40fae84c80bd8df1cc289f137d89392a09b4c03c78067fe"
+  }
+}

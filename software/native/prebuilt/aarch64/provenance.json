@@ -1,0 +1,24 @@
+{
+  "target": "Linux aarch64 Cortex-A53",
+  "compiler": "aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "flags": "-O3 -std=c11 -Wall -Wextra -Werror -fno-fast-math -ffp-contract=off -mcpu=cortex-a53 -fPIC -shared",
+  "sysroot": "existing Ubuntu 24.04 ARM64 glibc2.39 downloaded sysroot (read-only)",
+  "source_and_binary_sha256": {
+    "qnc.c": "34cec4f48dc3b92f63ac5ebbee2770f46c114984b8fecfd9312a7d5e051650b7",
+    "qnc.h": "4ae98c968a076db814d9e8f797cc84e3bfc280aa1afe7b082a16729580ae3491",
+    "qnc.py": "bca25aa90f44a83e66ce0354ab4097496405d27cb6077bce99b2dc7733783887",
+    "cross_build.sh": "f1531c82210c6805abe11890f448a55edd712c597d680178477023a2f5c9ded7",
+    "test_qnc.c": "6c7679c6641b5f8cb153129bd232196079d26e050d8199f2a095fa7ad88f98e8",
+    "prebuilt/aarch64/libqnc.so": "d7b0e17468a74aef7074141ebef77150944f719574531f66960f24c71c1e1d34"
+  },
+  "host_verification": {
+    "compiler_warnings_as_errors": true,
+    "int64_arithmetic_and_protocol_tests": "passed",
+    "address_sanitizer": "passed",
+    "undefined_behavior_sanitizer": "passed",
+    "cortex_a53_instruction_emulation": "NEON and QNC_FORCE_SCALAR tests passed under QEMU8.2.2",
+    "code_generation": "FDIV + FRINTN + TRN verified; no reciprocal approximations or FMA"
+  },
+  "target_binary_executed_on_kv260": false,
+  "deployment_requirement": "Compile with make on the board or copy only prebuilt/aarch64/libqnc.so; exclude host x86 library"
+}

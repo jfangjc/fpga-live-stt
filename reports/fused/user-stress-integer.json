@@ -1,0 +1,90 @@
+{
+  "engine": "integer",
+  "hardware_execution": false,
+  "model_identity": {
+    "model.onnx": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "frontend.npz": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "vocab.txt": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "frontend_decoder_source": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "wer_source": "8e25ea2e2607e8ed1d3c3fbf1f9906336c462bbaeea3793c152dbcc365d6a119"
+  },
+  "sources_sha256": {
+    "benchmark_cpu.py": "d285bf6e6fe0f835c478e2c9107367590dc500fcb070868716644a2ff7a910b7",
+    "build_cpu_int8.py": "ed294de79441196a401ebb8f8cffe68521b8264c6292d204b86405ea2c1c3b69",
+    "common.py": "c724a52134c0580eb27661833e65f927b06960dd123b265691e788ed2ac9d48a",
+    "experiment.py": "43e6ab83fa0b4899118bbc5dd232b07719db146521ed3abc91133c86e1349f98",
+    "oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "test_fused.py": "7607bd8e3858b44571f8708e3f91a1b2b98be4657d4baff65fef8ac2ea415938"
+  },
+  "calibration_sha256": "166d3e6160a3d4cdfd8d49f6d5c95fbada9dedfefd7e1c41e1b1d96cb8bac6ae",
+  "evaluation_manifest_sha256": "051f8dd108b32793a6f77def8a1690ca02c50eedb00b56b303a6276f1bb3f4a8",
+  "exclude_blocks": [],
+  "environment": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "thermal_millicelsius": {},
+    "cpu_frequency_khz": {},
+    "cpu_governor": {},
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "hwmon_temperature_millicelsius": {},
+    "iio_temperature_attributes": {},
+    "cpu_frequency_bounds_khz": {}
+  },
+  "cpu_wer": 0.4523809523809524,
+  "candidate_wer": 0.47619047619047616,
+  "absolute_wer_degradation": 0.02380952380952378,
+  "regression_within_one_pp": false,
+  "required_category_coverage": false,
+  "final_accuracy_gate_claimed": false,
+  "rtl_expansion_approved": false,
+  "clips": [
+    {
+      "id": "user-quiet-minus20db",
+      "audio_sha256": "0efae30a4d4919d616b327c1b61e7846f59250fb55681418acefaa13f47fb416",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "reference_words": 28,
+      "cpu_text": "tdr number made up so is the a p i price on the right old of these numbers are fake and neither of them represent the actual costs two",
+      "candidate_text": "ter our number made up so is the ap pi i price on the right old of these numbers are fake and neither of them represent the actual costs two",
+      "cpu_errors": 7,
+      "candidate_errors": 7,
+      "max_log_probability_difference": 15.66552448272705,
+      "candidate_diagnostic_seconds": 8.335238100000424,
+      "encoded_length": 126
+    },
+    {
+      "id": "user-noise-snr20",
+      "audio_sha256": "908999c6c0e23d829f7c0dd5d8554f5a2d4c3b7e379e59c64074cb7978582bd9",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "reference_words": 28,
+      "cpu_text": "turerr number made up so is the a p i price on the right all of these numbers are fink and neither of them represent the actual costs tw",
+      "candidate_text": "ter are number made up so is the a pe price on the right all of these numbers are fakk and neither of them represent the actual costsw",
+      "cpu_errors": 8,
+      "candidate_errors": 8,
+      "max_log_probability_difference": 14.782379150390625,
+      "candidate_diagnostic_seconds": 8.29498850001255,
+      "encoded_length": 126
+    },
+    {
+      "id": "user-noise-snr10",
+      "audio_sha256": "385549ad1f39030a93076ca3a86e517ab36449a1e94afa7fef8149f798c76d0b",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "reference_words": 28,
+      "cpu_text": "to re number me now know in the a i writ over r i h be themver are bak in neither theyan actual pa you",
+      "candidate_text": "you know mew no inded i re i me neumber the ma neither never re the maculal you",
+      "cpu_errors": 23,
+      "candidate_errors": 25,
+      "max_log_probability_difference": 9.303099632263184,
+      "candidate_diagnostic_seconds": 7.65439619999961,
+      "encoded_length": 126
+    }
+  ],
+  "limits": [
+    "Small regression is not representative accuracy acceptance.",
+    "Integer Python reference timing is not a latency prediction.",
+    "QDQ uses FP32 bias/SE/residual arithmetic; integer engine uses INT32 bias, Q31 Conv, Q16 residual, Q0.15 gate."
+  ]
+}

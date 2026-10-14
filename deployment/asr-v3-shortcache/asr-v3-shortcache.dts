@@ -1,0 +1,101 @@
+/dts-v1/;
+/plugin/;
+
+/* Cached-layer revision; board symbols from supplied Ubuntu board tree.
+ * Must be used only with the matching asr_v3_pair bitstream. */
+/ {
+    fragment@0 {
+        target = <&fpga_full>;
+        __overlay__ {
+            firmware-name = "asr-v3-shortcache.bit.bin";
+            status = "okay";
+        };
+    };
+    fragment@1 {
+        target-path = "/";
+        __overlay__ {
+            voice_cached_clock: asr-v3-shortcache-clock {
+                compatible = "xlnx,fclk";
+                clocks = <&zynqmp_clk 71>;
+                assigned-clocks = <&zynqmp_clk 71>;
+                assigned-clock-rates = <100000000>;
+                status = "okay";
+            };
+        };
+    };
+    fragment@2 {
+        target = <&amba>;
+        __overlay__ {
+            #address-cells = <2>;
+            #size-cells = <2>;
+            voice_cached_afi: asr-v3-shortcache-afi {
+                compatible = "xlnx,afi-fpga";
+                /* SAXIGP2=HP0: 128 bits maps AFI indices4/5 to0.
+                 * HPM0/HPM1 preset widths use the previous verified0xa00. */
+                config-afi = <4 0>, <5 0>, <14 0xa00>;
+                resets = <&zynqmp_reset 116>;
+                status = "okay";
+            };
+            voice_cached_audio: voice@a0000000 {
+                compatible = "generic-uio";
+                linux,uio-name = "voice-prototype";
+                reg = <0 0xa0000000 0 0x10000>;
+                interrupt-parent = <&gic>;
+                interrupts = <0 89 4>;
+                clocks = <&zynqmp_clk 71>;
+                clock-names = "s_axi_aclk";
+            };
+            voice_tensor_dma: dma@a0010000 {
+                compatible = "xlnx,axi-dma-1.00.a";
+                #dma-cells = <1>;
+                #address-cells = <2>;
+                #size-cells = <2>;
+                /* Identity DMA translation through the noncoherent HP0 port.
+                 * Includes low DDR and the PS high DDR window at 0x800000000. */
+                dma-ranges = <0 0 0 0 0x10 0>;
+                reg = <0 0xa0010000 0 0x10000>;
+                xlnx,addrwidth = <64>;
+                xlnx,sg-length-width = <23>;
+                clocks = <&zynqmp_clk 71>, <&zynqmp_clk 71>,
+                         <&zynqmp_clk 71>, <&zynqmp_clk 71>;
+                clock-names = "s_axi_lite_aclk", "m_axi_mm2s_aclk",
+                              "m_axi_s2mm_aclk", "m_axi_sg_aclk";
+                interrupt-parent = <&gic>;
+                dma-channel-mm2s {
+                    compatible = "xlnx,axi-dma-mm2s-channel";
+                    interrupts = <0 90 4>;
+                    xlnx,datawidth = <128>;
+                };
+                dma-channel-s2mm {
+                    compatible = "xlnx,axi-dma-s2mm-channel";
+                    interrupts = <0 91 4>;
+                    xlnx,datawidth = <128>;
+                };
+            };
+            voice_tile_gpio: gpio@a0020000 {
+                compatible = "xlnx,xps-gpio-1.00.a";
+                reg = <0 0xa0020000 0 0x10000>;
+                gpio-controller;
+                #gpio-cells = <2>;
+                xlnx,gpio-width = <1>;
+                xlnx,is-dual = <1>;
+                xlnx,gpio2-width = <2>;
+                xlnx,all-outputs = <1>;
+                xlnx,all-inputs-2 = <1>;
+                xlnx,dout-default = <1>;
+                xlnx,tri-default = <0>;
+                xlnx,tri-default-2 = <3>;
+                clocks = <&zynqmp_clk 71>;
+                clock-names = "s_axi_aclk";
+            };
+            voice_tile_client: qn-tile {
+                compatible = "prototype,qn-tile";
+                dmas = <&voice_tensor_dma 0>, <&voice_tensor_dma 1>;
+                dma-names = "tx", "rx";
+                reset-gpios = <&voice_tile_gpio 0 1>;
+                error-gpios = <&voice_tile_gpio 2 0>;
+            };
+        };
+    };
+};
+

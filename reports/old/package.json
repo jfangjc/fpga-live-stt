@@ -1,0 +1,11 @@
+{
+  "zip_sha256": "b9519f252578044e66b7e149f5be6bb8bd8f4a6ff92a883fc8783af7f770427c",
+  "files": 170,
+  "firmware_source_audit_passed": true,
+  "original_nemo_validation_passed": true,
+  "original_nemo_report_sha256": "ef4c1c3e3214fe63113e75f0417b8d5fefc79074e6f6ce652d24f51a43b15aea",
+  "physical_board_validation": false,
+  "accuracy_gate_passed": false,
+  "speedup_gate_passed": false,
+  "package": "C:\\Users\\jfang\\Documents\\Vivado\\Prototype_v2\\prototype-v2-package.zip"
+}

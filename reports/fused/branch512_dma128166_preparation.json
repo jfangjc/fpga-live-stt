@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "preparation_only": true,
+  "hardware_execution": false,
+  "candidate_qualified": false,
+  "clock_hz": 166666666,
+  "pointwise_macs": 512,
+  "depthwise_macs": 64,
+  "parent_regression_sha256": "172e760d1436ee927f7928991761ff8756c00ee048b0f064e58ca20eed1ffbed",
+  "parent_dma_burst_beats": 16,
+  "candidate_dma_burst_beats": 128,
+  "memory_data_width_bits": 128,
+  "arithmetic_and_protocol_changes": false,
+  "parent_dma_xci_sha256": "9e3b947dba9352c08af209429a23075fb8806686fe836a284d2376a4b74271a1",
+  "source_reference": "https://docs.amd.com/r/en-US/pg021_axi_dma/Field-Descriptions",
+  "sources_sha256": {
+    "scripts/branch512_dma128166_synth.tcl": "755766fb2f3d57c401de0e9cc3323355be864afe9375bec16e53900b4f23b83e",
+    "scripts/branch512_dma128166_implement.tcl": "b1f9f8f859e6d2e68765d990ee34b14a9db7c9244bc38c43b898fab6caef02c9",
+    "scripts/build_branch512_dma128166.ps1": "1c0efed3c0d28a4d0b2fd37bf7ece88d904b66af921d4706d09a808e0bf2c118",
+    "scripts/create_branch512_dma128166_build.py": "a4dfa845691b8668bf40e46db14e9785370d484712afa2c08435e9a349560499"
+  },
+  "note": "No build, firmware deployment or latency claim. Requires routed timing/DRC, DMA boundary and physical output qualification."
+}

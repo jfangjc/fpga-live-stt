@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "qualified": false,
+  "hardware_execution": false,
+  "clock_hz": 166666666,
+  "setup_slack_ns": -0.536,
+  "hold_slack_ns": 0.002,
+  "deployment_started": false,
+  "reason": "Routed timing gate failed; no qualified export or physical latency result",
+  "worst_path": "Pointwise DSP output to outer sequencer step register enable",
+  "next_experiment": "Separate elastic output register with retained completion handshake",
+  "sources_and_reports_sha256": {
+    "reports/fused/branch512_slice166_system_timing.rpt": "9b36d6f42ac82d8f5db7baf348a700fab5fb402bd6038b1fa4c17b8255c2df69",
+    "build/branch512_slice166_implement_driver.log": "51b3606810bbad474f7c89de7d525eba567cf1ef13f74a9de95ac0d67a050984",
+    "reports/fused/branch512_slice_regression_evidence.json": "4ac27f26c8a52f87a4642e216cddc07e8afdc69695f79bcc6e143e8a202239ea",
+    "rtl/experimental/qn_branch512_slice_axis.sv": "479d624f59e3f828d9f19c634aa70c216f2b84490928973b98780fa421ae3830"
+  }
+}

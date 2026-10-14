@@ -1,0 +1,379 @@
+{
+  "complete": true,
+  "model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "library_sha256": "43c21e1c10d2c52a9e07ac7b54af8c3d75c5b9f388218f6ebd01a359e5943855",
+  "source_sha256": "bd5b35caf6eb391197ad050351ed7ed674e795810b73f7ea4ff62acee1eb8416",
+  "graph_source_sha256": "7030d02560b9f026019a76f12a3549d8b852320f41bc108fe9d10c73ce22ff0b",
+  "scope": "Greedy diagnostic selection, no hardware or representative WER claim",
+  "diagnostic_prefixes": 36,
+  "selected": [
+    {
+      "depthwise": "/encoder/encoder.1/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.16/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.16/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.21/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.16/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.21/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.16/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.21/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.16/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.21/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.16/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.1/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.6/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.11/conv/Conv_quant"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.16/conv/Conv_quant"
+    }
+  ],
+  "candidates": [
+    {
+      "depthwise": "/encoder/encoder.1/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.21/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.1/conv/Conv_quant",
+      "accepted": false,
+      "first_mismatch": {
+        "id": "user-ac-quiet-minus20db",
+        "seconds": 2,
+        "cpu": "tunery number made up so",
+        "oracle": "##unery number made up so"
+      }
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.21/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.11/conv/Conv_quant",
+      "accepted": false,
+      "first_mismatch": {
+        "id": "user-ac-quiet-minus20db",
+        "seconds": 1,
+        "cpu": "##unery numberad",
+        "oracle": "##unerallyumber me"
+      }
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.21/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.21/conv/Conv_quant",
+      "accepted": false,
+      "first_mismatch": {
+        "id": "user-ac-noise-snr20",
+        "seconds": 0.5,
+        "cpu": "to",
+        "oracle": "to r"
+      }
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.16/conv/Conv_quant",
+      "accepted": false,
+      "first_mismatch": {
+        "id": "user-speech-original",
+        "seconds": 1,
+        "cpu": "funery number mad",
+        "oracle": "ununery number mad"
+      }
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.21/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.1/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.6/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.11/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.16/conv/Conv_quant",
+      "accepted": true,
+      "first_mismatch": null
+    }
+  ],
+  "hardware_execution": false,
+  "representative_corpus_qualified": false
+}

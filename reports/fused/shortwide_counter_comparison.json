@@ -1,0 +1,80 @@
+{
+  "complete": true,
+  "scope": "Measured diagnostics; interval components overlap and must not be added together",
+  "sources_sha256": {
+    "reports/fused/shortcache_scheduled_half.json": "e3fa42984bc66c6dcd133801f24d1ed8a4b098b6f82edd72100f395225178e85",
+    "reports/fused/shortwide_scheduled_half.json": "3fc10aab7f864c5cc898e23998adbbfa591e50bfe185da1be764d82b17a95074",
+    "reports/fused/shortcache_scheduled_one.json": "b6e29917b39e7be71d0a7dbe4f21113588dadccdd52be4526148a47dfacc71f5",
+    "reports/fused/shortwide_scheduled_one.json": "7097b62ffc6548caa149f0352dcbe219efdaf1ec9e59bc2e072ccaafb5316ce4"
+  },
+  "rows": [
+    {
+      "version": "16 time lanes",
+      "context_seconds": 0.5,
+      "frontend_seconds": 0.004090020505827852,
+      "model_seconds": 0.0601582329836674,
+      "decode_seconds": 0.00012457249977160245,
+      "ioctl_seconds": 0.0073759045044425875,
+      "run_pack_seconds": 0.00029837847978342324,
+      "unpack_seconds": 0.00042677251622080803,
+      "active_cycles": 568160.0,
+      "input_stall_cycles": 389088.0,
+      "output_stall_cycles": 0.0,
+      "tx_bytes": 279552.0,
+      "rx_bytes": 279552.0,
+      "fpga_active_seconds": 0.005681600056816001,
+      "model_outside_transport_seconds": 0.05142351159884129
+    },
+    {
+      "version": "64 time lanes",
+      "context_seconds": 0.5,
+      "frontend_seconds": 0.004154050489887595,
+      "model_seconds": 0.058080840011825785,
+      "decode_seconds": 0.00012466197949834168,
+      "ioctl_seconds": 0.005723256501369178,
+      "run_pack_seconds": 0.00029873737366870046,
+      "unpack_seconds": 0.0004264909657649696,
+      "active_cycles": 404832.0,
+      "input_stall_cycles": 225760.0,
+      "output_stall_cycles": 0.0,
+      "tx_bytes": 279552.0,
+      "rx_bytes": 279552.0,
+      "fpga_active_seconds": 0.0040483200404832,
+      "model_outside_transport_seconds": 0.05129027052316815
+    },
+    {
+      "version": "16 time lanes",
+      "context_seconds": 1.0,
+      "frontend_seconds": 0.006208711987710558,
+      "model_seconds": 0.09028036100789905,
+      "decode_seconds": 0.0001538030046503991,
+      "ioctl_seconds": 0.012771824520314112,
+      "run_pack_seconds": 0.00033117749262601137,
+      "unpack_seconds": 0.0005374259781092405,
+      "active_cycles": 1083744.0,
+      "input_stall_cycles": 736224.0,
+      "output_stall_cycles": 0.0,
+      "tx_bytes": 541696.0,
+      "rx_bytes": 541696.0,
+      "fpga_active_seconds": 0.010837440108374402,
+      "model_outside_transport_seconds": 0.0766199985955609
+    },
+    {
+      "version": "64 time lanes",
+      "context_seconds": 1.0,
+      "frontend_seconds": 0.00609425050788559,
+      "model_seconds": 0.08628348397905938,
+      "decode_seconds": 0.00015378298121504486,
+      "ioctl_seconds": 0.007985319098224863,
+      "run_pack_seconds": 0.00032966540311463177,
+      "unpack_seconds": 0.0005387101846281439,
+      "active_cycles": 608096.0,
+      "input_stall_cycles": 260576.0,
+      "output_stall_cycles": 0.0,
+      "tx_bytes": 541696.0,
+      "rx_bytes": 541696.0,
+      "fpga_active_seconds": 0.0060809600608096,
+      "model_outside_transport_seconds": 0.0773923845263198
+    }
+  ]
+}

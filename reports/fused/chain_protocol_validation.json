@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "source_sha256": "1dbf4bd9d3eee11f7cd6506dd5d9ce41928b6299c6e92c3a88d1d806044e73c2",
+  "kernel": "6.8.0-1036-xilinx",
+  "driver_vermagic": "6.8.0-1036-xilinx SMP preempt mod_unload modversions aarch64",
+  "driver_sha256": "1a710ff4ed105665ed46df17bbed99fc5bc362be964a9c693e2a896c8aefbf92",
+  "tests": [
+    {
+      "name": "chain_packets",
+      "command": [
+        "gcc",
+        "-O2",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "test_short_protocol.c",
+        "-o",
+        "/home/ubuntu/prototype-v3-fused/reports/fused/chain_packets"
+      ],
+      "stdout": "PASS: 120068 chain and short-cache packet, slot, kernel, frame, reserved-byte and normalization checks",
+      "binary_sha256": "76c16a541c8351a97ce44831474e49080b14e53068dfbbb47144d22656298b49",
+      "sources_sha256": {
+        "deployment/experimental-chain/test_short_protocol.c": "6aaad493febf3315590713fa56c61a3f3ecf85fb6a730d9659cc38c2c7bc88c6"
+      }
+    },
+    {
+      "name": "chain_transport",
+      "command": [
+        "gcc",
+        "-O2",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "test_slot_transport.c",
+        "qnc_transport.c",
+        "-o",
+        "/home/ubuntu/prototype-v3-fused/reports/fused/chain_transport"
+      ],
+      "stdout": "PASS: 32-slot residency, 384 chain packets, exact packing/unpacking, bounds, tags and error invalidation",
+      "binary_sha256": "6379af9c634fa3f575f3f08a36d134752a82176f18f00938fe3f926511ddc3d9",
+      "sources_sha256": {
+        "software/ort_fpga_chain/test_slot_transport.c": "89c44ea38869bed408281ed8ef34c8d5f0c9e852b77ce981d9c487227e986d96",
+        "software/ort_fpga_chain/qnc_transport.c": "ee023e2b48c46f1670c73118fe1a0c4904247c557e1bd3d4339d7daaa15c31a3"
+      }
+    }
+  ],
+  "headers_sha256": {
+    "software/ort_fpga_chain/qnc.h": "db478c3f82a5eadbcae506776567e7ddd62c8b8556aca3cdf5baecd661232762",
+    "deployment/experimental-chain/qn_cache_protocol.h": "c46694ace9702f8fd4525824dbb07330c3d6f83b8660d3483c322c90211a76d6"
+  }
+}

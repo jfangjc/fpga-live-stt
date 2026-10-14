@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "cases": 135,
+  "beats": 210,
+  "sources_and_evidence_sha256": {
+    "rtl/experimental/fused_depthwise_adaptive.sv": "ca6c75e2595647129efcdea627794fd3c3af8f0352238b4e83dfb86a01077d44",
+    "rtl/experimental/fused_affine_quant_exact.sv": "ffa80f036c46de74b78eb7981a6db2737d4e611fc05cbd6f9e777ee6f7742d5f",
+    "sim/tb_adaptive_dw.sv": "016c7b804c0b9e28ac35af171d4b52fb726fe0ce62b72856094bf80a29675560",
+    "scripts/create_adaptive_dw_tb.py": "7e7486105d7f053b9e439190b244cb548a990d6fac1c5629ab8cf9645fd34c1f",
+    "verification/adaptive-dw/config.mem": "851bf61a48ef98e60013b3a3255f462e92bd4b1048256a8c9f10c0cdfa919edd",
+    "verification/adaptive-dw/expected.mem": "fe7eff170851d60b32d358bb1fdb5065d5f655c02f1fb4c9ea43f5801f5c7b26",
+    "verification/adaptive-dw/input.mem": "f03a11e742ab205f33e669409ae1e532743423f12ca3dd50d2bad5c8c4d67ddf",
+    "verification/adaptive-dw/manifest.json": "ee3d9a80ed424bc70602425a6fa114a962d9098038b1a1a6ab6e35ddde20c716",
+    "verification/adaptive-dw/metadata.mem": "e5c739e3b8d5b3bb12aa16e2258f418b312ebf4d38f23b1e35dd892ef8222cb3",
+    "build/adaptive_dw_sim/adaptive_dw_sim.sim/sim_1/behav/xsim/simulate.log": "32e6856889d7aa9a2ff799586270d1e2454223b333fcd6532c57b85b6e079ba0"
+  }
+}

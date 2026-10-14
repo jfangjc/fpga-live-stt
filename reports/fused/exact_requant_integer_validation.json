@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "random_cases": 1000000,
+  "targeted_half_cases": 100000,
+  "all_float32_bit_exact": true,
+  "single_rounding_disagreements": 22985,
+  "rtl_vectors": 2400,
+  "source_sha256": "15a22f0ed585550faa5be60bdfb2236364d4d12c2b78a0e10e05cfe7d5dca9fd",
+  "reference_sha256": "23103269ae9840b4c21c8b70504f9253485b8586207e8ed9c9f8ae0a8b049ff5",
+  "fixture_sha256": "097b5773aee3df151fb8b161479aa4a0a13a74d26873be0b33bb3914ab638e33"
+}

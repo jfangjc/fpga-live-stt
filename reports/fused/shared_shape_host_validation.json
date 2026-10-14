@@ -1,0 +1,71 @@
+{
+  "scope": "Numerical metadata-rewrite verification; not a latency benchmark",
+  "hardware_fpga_execution": false,
+  "complete": true,
+  "original_model_sha256": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+  "shared_model_sha256": "03161810093dd964960262aae88241eed1993b27216751137b505be8e6b8d2e3",
+  "transformation_source_sha256": "fa8ab990052465c0ad804e6ab57063d79372b985ba784dbe2fac3a0691bcd872",
+  "validator_sha256": "aaf1169625b2606dea798f266b066808c234f4ebd944e7e3bbbff55b8fde7362",
+  "ort_version": "1.30.0",
+  "all_logits_bit_exact": true,
+  "dynamic_shape_checks": [
+    {
+      "batch": 1,
+      "frames": 32,
+      "valid_lengths": [
+        1
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 64,
+      "valid_lengths": [
+        51
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 112,
+      "valid_lengths": [
+        101
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 208,
+      "valid_lengths": [
+        199
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 400,
+      "valid_lengths": [
+        399
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 1008,
+      "valid_lengths": [
+        1001
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 2,
+      "frames": 64,
+      "valid_lengths": [
+        13,
+        63
+      ],
+      "logits_bit_exact": true
+    }
+  ],
+  "clips": []
+}

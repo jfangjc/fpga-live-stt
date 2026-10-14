@@ -1,0 +1,126 @@
+{
+  "scope": "Numerical CSE verification; not a latency benchmark",
+  "hardware_fpga_execution": false,
+  "complete": true,
+  "original_model_sha256": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+  "cse_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "transformation_source_sha256": "a1f51814ace3f221b4230a154198444355944ead9241604f29f3a3fc71996ff6",
+  "validator_sha256": "b28d3f50891e3d8f76d00a2f76f9dbfe0fb3d7fa3bab947b179d9a24882a6b42",
+  "ort_version": "1.30.0",
+  "all_logits_bit_exact": true,
+  "dynamic_shape_checks": [
+    {
+      "batch": 1,
+      "frames": 32,
+      "valid_lengths": [
+        1
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 64,
+      "valid_lengths": [
+        51
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 112,
+      "valid_lengths": [
+        101
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 208,
+      "valid_lengths": [
+        199
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 400,
+      "valid_lengths": [
+        399
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 1,
+      "frames": 1008,
+      "valid_lengths": [
+        1001
+      ],
+      "logits_bit_exact": true
+    },
+    {
+      "batch": 2,
+      "frames": 64,
+      "valid_lengths": [
+        13,
+        63
+      ],
+      "logits_bit_exact": true
+    }
+  ],
+  "clips": [
+    {
+      "id": "user-speech-original",
+      "audio_sha256": "6e6fc731ed40933d7e6aea715aa7546e8f4c7e4a6cbff627c93ef5c499a201a5",
+      "logits_bit_exact": true,
+      "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to"
+    },
+    {
+      "id": "6930-75918-0000",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "logits_bit_exact": true,
+      "text": "concord returned to its place amidst the tents"
+    },
+    {
+      "id": "6930-75918-0001",
+      "audio_sha256": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+      "logits_bit_exact": true,
+      "text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day"
+    },
+    {
+      "id": "6930-75918-0002",
+      "audio_sha256": "ca418189ed1db4ce1bf5e6940d51a9ce870d4d52f3ef9019ccdbb2189d1a0a9c",
+      "logits_bit_exact": true,
+      "text": "congratulations were poured in upon the princess everywhere during her journey"
+    },
+    {
+      "id": "6930-75918-0003",
+      "audio_sha256": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2",
+      "logits_bit_exact": true,
+      "text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france"
+    },
+    {
+      "id": "6930-75918-0004",
+      "audio_sha256": "af568c26be7892254398fc5ecc6a346dc28c3e5ef1123aa6cdf8a8dda3ce1c57",
+      "logits_bit_exact": true,
+      "text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them"
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "audio_sha256": "0efae30a4d4919d616b327c1b61e7846f59250fb55681418acefaa13f47fb416",
+      "logits_bit_exact": true,
+      "text": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two"
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "audio_sha256": "66b2c22d819230ef7668e0c93b1724e753d6ca90a89c438b92a7742f914cfc2c",
+      "logits_bit_exact": true,
+      "text": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to"
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "audio_sha256": "c281634ccf180d03894d94704849b1718adf80f1033fc355a6281bbc092aa98d",
+      "logits_bit_exact": true,
+      "text": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tools": "Vivado/Vitis 2026.1 build 6511674",
+  "target_hz": 100000000,
+  "routed_setup_slack_ns": 0.192,
+  "routed_hold_slack_ns": 0.01,
+  "luts": 11881,
+  "bram_tiles": 17,
+  "uram_tiles": 32,
+  "dsps": 288,
+  "drc_errors": 0,
+  "drc_critical_warnings": 0,
+  "drc_advisory_checks": 902,
+  "cdc_unsafe": 0,
+  "hardware_audit_complete": true,
+  "physical_kv260_validation": false
+}

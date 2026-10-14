@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "contended_screen_inadmissible": "branch512_cpu_pool_policy.json",
+  "accepted_policy_selection": "branch512_cpu_pool_policy_clean.json",
+  "accepted_screen_runs": 60,
+  "timing_acceptance": false,
+  "reason": "Clean screen waited for both known board compute PIDs to exit; final acceptance requires paired confirmation."
+}

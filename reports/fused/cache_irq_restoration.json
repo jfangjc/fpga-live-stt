@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "before": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "after": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "source_sha256": "56f75a56b5493d65f661e5e12b3fa03f2a13cb88cb31431d79b52135a10165f7",
+  "reports": [
+    "reports/fused/cache_block_half.json",
+    "reports/fused/cache_total_half.json",
+    "reports/fused/cache_block_one.json",
+    "reports/fused/cache_total_one.json"
+  ]
+}

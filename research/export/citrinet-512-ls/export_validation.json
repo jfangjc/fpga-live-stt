@@ -1,0 +1,60 @@
+{
+  "original_nemo_wrapper_validated": false,
+  "reference": "NeMo v1.23.0 JasperBlock + archived weights",
+  "torch": "2.2.2+cpu",
+  "onnx": "1.16.1",
+  "onnxruntime": "1.18.1",
+  "tests": [
+    {
+      "batch": 1,
+      "frames": 1008,
+      "valid_lengths": [
+        1001
+      ],
+      "encoded_lengths": [
+        126
+      ],
+      "max_absolute_error": 2.384185791015625e-05,
+      "argmax_equal": true
+    },
+    {
+      "batch": 1,
+      "frames": 257,
+      "valid_lengths": [
+        251
+      ],
+      "encoded_lengths": [
+        32
+      ],
+      "max_absolute_error": 1.430511474609375e-05,
+      "argmax_equal": true
+    },
+    {
+      "batch": 2,
+      "frames": 1120,
+      "valid_lengths": [
+        1103,
+        957
+      ],
+      "encoded_lengths": [
+        138,
+        120
+      ],
+      "max_absolute_error": 5.7220458984375e-05,
+      "argmax_equal": true
+    },
+    {
+      "batch": 1,
+      "frames": 64,
+      "valid_lengths": [
+        63
+      ],
+      "encoded_lengths": [
+        8
+      ],
+      "max_absolute_error": 1.239776611328125e-05,
+      "argmax_equal": true
+    }
+  ],
+  "sha256": "2679ea28e9e2ef481964e8329575581bf7a87aba39eb4f937b03762288ad0d00"
+}

@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "evidence_valid": true,
+  "twofold_speed_acceptance": false,
+  "confirmation_sha256": "a84ae14b5d02e6f2a0eb214163a066dd26f2294d4392fa933c1b54e05e698157",
+  "cpu_screen_sha256": "66e7eba56fb548bf71266abd710a849d0b5ed2ffa92fdbbe37945f652689cf74",
+  "contexts": [
+    {
+      "context_seconds": 0.5,
+      "cpu_p50": 0.054744261500104585,
+      "fpga_p50": 0.026646311500030606,
+      "cpu_p95": 0.06261226740016355,
+      "fpga_p95": 0.027523676050077484,
+      "speedup_factor": 2.0544780278516863,
+      "meets_50_percent": false,
+      "strongest_cpu_p50": 0.05257505200000878,
+      "strongest_cpu_p95": 0.06009008680001386,
+      "speedup_against_strongest_cpu": 1.9730705317300068
+    },
+    {
+      "context_seconds": 1,
+      "cpu_p50": 0.09582532100012031,
+      "fpga_p50": 0.03594409399988763,
+      "cpu_p95": 0.11778912389993366,
+      "fpga_p95": 0.04912065089998806,
+      "speedup_factor": 2.665954551543847,
+      "meets_50_percent": true,
+      "strongest_cpu_p50": 0.09582532100012031,
+      "strongest_cpu_p95": 0.10113743520000754,
+      "speedup_against_strongest_cpu": 2.665954551543847
+    },
+    {
+      "context_seconds": 2.5,
+      "cpu_p50": 0.1456567115001235,
+      "fpga_p50": 0.05957637550000072,
+      "cpu_p95": 0.15228646345004793,
+      "fpga_p95": 0.06228822265002238,
+      "speedup_factor": 2.4448736647317815,
+      "meets_50_percent": true,
+      "strongest_cpu_p50": 0.1456567115001235,
+      "strongest_cpu_p95": 0.15038555020002775,
+      "speedup_against_strongest_cpu": 2.4448736647317815
+    }
+  ],
+  "source_sha256": "068bf613e40c39ec0c5c7928dd943651b66e54473ce6c35b7bf80c754b51a293",
+  "scope": "Tested warm full audio paths only; no live capture or representative WER qualification"
+}

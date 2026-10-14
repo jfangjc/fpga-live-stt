@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "verified_archive_sha256": "0bc86f836107988754d9cabfc49ab7df03670466adf2f54ab757f3a5f1e3f448",
+  "required_artifacts_verified": [
+    "reports/fused/FPGA_ASR_2X_COMPLETION_AUDIT.json",
+    "reports/fused/branch512_ab166_vf_latency_confirmation.json",
+    "reports/fused/valid_frame_cpu_leaders_confirmation.json",
+    "reports/fused/valid_frame_final_bulk_state.json",
+    "software/ort_fpga_stream_registered/libort_fpga.so",
+    "software/ort_fpga_stream_branch512_neon/libort_fpga.so",
+    "deployment/asr-v3-branch512-ab166/asr-v3-branch512-ab166.bit.bin",
+    "research/fused/cpu-int8-cse.onnx",
+    "LATENCY_GOAL_STATUS.md"
+  ],
+  "archive": "C:\\Users\\jfang\\Downloads\\FPGA-ASR-2x-final-baseline-audited-2026-10-15\\fpga-asr-latency-work.zip",
+  "previous_versions_preserved": true,
+  "goal_requirements_verified": true
+}

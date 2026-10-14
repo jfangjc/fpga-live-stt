@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "whole_model_latency_accepted": true,
+  "ten_percent_latency_accepted": false,
+  "contexts": [
+    {
+      "context_seconds": 0.5,
+      "cpu_p50": 0.06922033350565471,
+      "fpga_p50": 0.06239631347125396,
+      "cpu_p95": 0.07359618862974457,
+      "fpga_p95": 0.06667210686428007,
+      "latency_accepted": true,
+      "gain_percent": 9.858403866030606,
+      "mean_saving_95ci_seconds": [
+        0.005593838549936966,
+        0.006796261265607124
+      ],
+      "cpu_spin_duration_us": 10,
+      "fpga_spin_duration_us": 10,
+      "dma_irq_core": 0
+    },
+    {
+      "context_seconds": 1.0,
+      "cpu_p50": 0.10525041446089745,
+      "fpga_p50": 0.09262575447792187,
+      "cpu_p95": 0.10897946473560297,
+      "fpga_p95": 0.09985987258842216,
+      "latency_accepted": true,
+      "gain_percent": 11.994879115336765,
+      "mean_saving_95ci_seconds": [
+        0.011570516068745445,
+        0.012846511153644921
+      ],
+      "cpu_spin_duration_us": 10,
+      "fpga_spin_duration_us": 0,
+      "dma_irq_core": 3
+    }
+  ],
+  "evidence_sha256": {
+    "reports/fused/shortwide_scheduled_half.json": "3fc10aab7f864c5cc898e23998adbbfa591e50bfe185da1be764d82b17a95074",
+    "reports/fused/shortwide_scheduled_one.json": "7097b62ffc6548caa149f0352dcbe219efdaf1ec9e59bc2e072ccaafb5316ce4",
+    "reports/fused/shortwide_scheduled_resident_validation.json": "c00f2c7cca7a71cb828278d84a6a485b3b1ed332cbbb1de22af3d70e7eb57c06",
+    "reports/fused/shortwide_board_restoration.json": "7a1f210e17d7b3e4116f0fef4d8451acb6247831d2a6bc72487e2617558e961c",
+    "reports/fused/shortwide_firmware_evidence.json": "3d6867e9a41b5f00d1dd97f67e6cf2255d494ac37c25a4c74614f51146ab75a7",
+    "reports/fused/shortwide_physical_synthetic.json": "7ee3422cd93a7f38d44e54322f52fa05c9dcf126a2200e0a50233542bd8eee38"
+  },
+  "representative_corpus_qualified": false,
+  "capture_tested": false
+}

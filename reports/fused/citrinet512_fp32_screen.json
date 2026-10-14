@@ -1,0 +1,340 @@
+{
+  "model_sha256": "2679ea28e9e2ef481964e8329575581bf7a87aba39eb4f937b03762288ad0d00",
+  "model_dir": "research/export/citrinet-512-ls",
+  "ort": "1.30.0",
+  "hardware_execution": false,
+  "runs": 15,
+  "contexts": [],
+  "environment_before": {
+    "platform": "Linux-6.8.0-1036-xilinx-aarch64-with-glibc2.39",
+    "machine": "aarch64",
+    "thermal_millicelsius": {},
+    "cpu_frequency_khz": {},
+    "cpu_governor": {},
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": null
+    },
+    "hwmon_temperature_millicelsius": {
+      "/sys/class/hwmon/hwmon0/temp3_input": "23368",
+      "/sys/class/hwmon/hwmon0/temp1_input": "25599",
+      "/sys/class/hwmon/hwmon0/temp2_input": "23252"
+    },
+    "iio_temperature_attributes": {
+      "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_input": "24837",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "39160",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_input": "23034",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "39354",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "39022",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_input": "24651",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+    },
+    "cpu_frequency_bounds_khz": {}
+  },
+  "representative_accuracy_qualified": false,
+  "timing_scope": "resident full audio frontend/model/decode; WAV IO and setup excluded; physical weights/transfers/synchronization included",
+  "cpu_policies": [
+    {
+      "threads": 1,
+      "contexts": [
+        {
+          "context_seconds": 0.5,
+          "p50": 0.6078662350009836,
+          "p95": 0.6093434149977839,
+          "seconds": [
+            0.6080149650006206,
+            0.6084756039999775,
+            0.6073513490009645,
+            0.6093189619969053,
+            0.6088917369997944,
+            0.6078662350009836,
+            0.608004488000006,
+            0.6077678660003585,
+            0.608462440999574,
+            0.6077978009998333,
+            0.6073979479988338,
+            0.6094004719998338,
+            0.6071661379974103,
+            0.6072271820012247,
+            0.6073031050000282
+          ]
+        },
+        {
+          "context_seconds": 1.0,
+          "p50": 0.8948153710007318,
+          "p95": 0.9096523430995148,
+          "seconds": [
+            0.895428913001524,
+            0.894192378000298,
+            0.8941398520000803,
+            0.8950122800015379,
+            0.926010186001804,
+            0.9026418389985338,
+            0.8946656400003121,
+            0.8943555900004867,
+            0.8945127570004843,
+            0.8946206940017873,
+            0.8952799289982067,
+            0.8953516949986806,
+            0.8948153710007318,
+            0.8949316479993286,
+            0.8946875379988342
+          ]
+        },
+        {
+          "context_seconds": 2.5,
+          "p50": 1.5931587619998027,
+          "p95": 1.6551000285991904,
+          "seconds": [
+            1.5915105940002832,
+            1.5940128170004755,
+            1.5925526190003438,
+            1.5919870360012283,
+            1.5938881399997626,
+            1.5914203959982842,
+            1.5921500519980327,
+            1.5931587619998027,
+            1.5915126619984221,
+            1.591679238001234,
+            1.595773327000643,
+            1.593990894001763,
+            1.6462240479995671,
+            1.6758106499983114,
+            1.6338774249998096
+          ]
+        }
+      ]
+    },
+    {
+      "threads": 2,
+      "contexts": [
+        {
+          "context_seconds": 0.5,
+          "p50": 0.3646893139994063,
+          "p95": 0.36589195410124375,
+          "seconds": [
+            0.3649606990002212,
+            0.365492427998106,
+            0.3668213000019023,
+            0.36411454699918977,
+            0.36387441599799786,
+            0.36506449400258134,
+            0.3648992119997274,
+            0.3645480380000663,
+            0.36549366300096153,
+            0.3638260080006148,
+            0.36392428999897675,
+            0.3651390490013,
+            0.3624305980010831,
+            0.36381297100160737,
+            0.3646893139994063
+          ]
+        },
+        {
+          "context_seconds": 1.0,
+          "p50": 0.5253432989993598,
+          "p95": 0.5441906540014315,
+          "seconds": [
+            0.5238611270033289,
+            0.5249537560011959,
+            0.5249057059991173,
+            0.5240599940007087,
+            0.5240678259979177,
+            0.5430961880010727,
+            0.5467444080022688,
+            0.52795824200075,
+            0.5231836080020003,
+            0.5257409699988784,
+            0.5261744290000934,
+            0.5248456190020079,
+            0.5260820499970578,
+            0.5253432989993598,
+            0.5260267529993143
+          ]
+        },
+        {
+          "context_seconds": 2.5,
+          "p50": 0.9027311370009556,
+          "p95": 0.9063524280005367,
+          "seconds": [
+            0.9022159240012115,
+            0.901754531001643,
+            0.9025862890011922,
+            0.9017639400008193,
+            0.9054858829986188,
+            0.9046354439997231,
+            0.9044950970019272,
+            0.9061251870007254,
+            0.9027311370009556,
+            0.9068826570000965,
+            0.9042052889999468,
+            0.9029843839998648,
+            0.9022305460021016,
+            0.9021798290013976,
+            0.9027106630019262
+          ]
+        }
+      ]
+    },
+    {
+      "threads": 4,
+      "contexts": [
+        {
+          "context_seconds": 0.5,
+          "p50": 0.25286172200139845,
+          "p95": 0.2621258986000612,
+          "seconds": [
+            0.2513996279994899,
+            0.25286172200139845,
+            0.2619422770003439,
+            0.2538600680018135,
+            0.25779925100141554,
+            0.26125743800002965,
+            0.25491107599737006,
+            0.25522243100203923,
+            0.2506991490008659,
+            0.24810612899818807,
+            0.24950076099776197,
+            0.26255434899940155,
+            0.24966535400017165,
+            0.2510234469991701,
+            0.24963944499904756
+          ]
+        },
+        {
+          "context_seconds": 1.0,
+          "p50": 0.349348933003057,
+          "p95": 0.3585280692004744,
+          "seconds": [
+            0.3488423930029967,
+            0.35817560400028015,
+            0.349348933003057,
+            0.3505944640019152,
+            0.348885308001627,
+            0.3477176199994574,
+            0.3482974190010282,
+            0.3478491230016516,
+            0.3593504880009277,
+            0.3476717209996423,
+            0.3541636460031441,
+            0.3502180519972171,
+            0.3514520930002618,
+            0.3473922090015549,
+            0.34966516499844147
+          ]
+        },
+        {
+          "context_seconds": 2.5,
+          "p50": 0.5714623399981065,
+          "p95": 0.5980887576992245,
+          "seconds": [
+            0.5964995799986355,
+            0.5957793100023991,
+            0.601796839000599,
+            0.5864730639987101,
+            0.5707620840003074,
+            0.5708112249994883,
+            0.5693177339999238,
+            0.5696267900020757,
+            0.5731067779997829,
+            0.5861417699998128,
+            0.5805522699993162,
+            0.5705511630003457,
+            0.5710739209971507,
+            0.5714623399981065,
+            0.5710883749998175
+          ]
+        }
+      ]
+    }
+  ],
+  "evaluation": [
+    {
+      "id": "6930-75918-0000",
+      "transcript": "concord returned to its place amidst the tents",
+      "errors": 0,
+      "reference_words": 8,
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "reference_status": "regression reference"
+    },
+    {
+      "id": "6930-75918-0001",
+      "transcript": "the english foded to the french baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "errors": 1,
+      "reference_words": 43,
+      "audio_sha256": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+      "reference_status": "regression reference"
+    },
+    {
+      "id": "6930-75918-0002",
+      "transcript": "congratulations were poured in upon the princess everywhere during her journey",
+      "errors": 0,
+      "reference_words": 11,
+      "audio_sha256": "ca418189ed1db4ce1bf5e6940d51a9ce870d4d52f3ef9019ccdbb2189d1a0a9c",
+      "reference_status": "regression reference"
+    },
+    {
+      "id": "6930-75918-0003",
+      "transcript": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she had suffered too much unhappiness in england for england to have made her forget france",
+      "errors": 0,
+      "reference_words": 64,
+      "audio_sha256": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2",
+      "reference_status": "regression reference"
+    },
+    {
+      "id": "6930-75918-0004",
+      "transcript": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "errors": 1,
+      "reference_words": 31,
+      "audio_sha256": "af568c26be7892254398fc5ecc6a346dc28c3e5ef1123aa6cdf8a8dda3ce1c57",
+      "reference_status": "regression reference"
+    },
+    {
+      "id": "user-speech-original",
+      "transcript": "children are number made up so is the a p i price on the right alloth of these numbers are fake and neither of them represent the actual costs two",
+      "errors": 7,
+      "reference_words": 28,
+      "audio_sha256": "6e6fc731ed40933d7e6aea715aa7546e8f4c7e4a6cbff627c93ef5c499a201a5",
+      "reference_status": "user supplied brief transcript; completeness unconfirmed"
+    }
+  ],
+  "environment_after": {
+    "platform": "Linux-6.8.0-1036-xilinx-aarch64-with-glibc2.39",
+    "machine": "aarch64",
+    "thermal_millicelsius": {},
+    "cpu_frequency_khz": {},
+    "cpu_governor": {},
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": null
+    },
+    "hwmon_temperature_millicelsius": {
+      "/sys/class/hwmon/hwmon0/temp3_input": "24511",
+      "/sys/class/hwmon/hwmon0/temp1_input": "26190",
+      "/sys/class/hwmon/hwmon0/temp2_input": "26967"
+    },
+    "iio_temperature_attributes": {
+      "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_input": "27138",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "39312",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_input": "24340",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "39294",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "39190",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_input": "25537",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+    },
+    "cpu_frequency_bounds_khz": {}
+  },
+  "complete": true
+}

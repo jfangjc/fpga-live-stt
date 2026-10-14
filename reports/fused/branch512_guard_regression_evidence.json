@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "pointwise_macs": 512,
+  "depthwise_macs": 64,
+  "full_blocks_checked": 25,
+  "full_reset_replay_cases": 8,
+  "header_acceptance_unchanged": true,
+  "datapath_and_handshake_unchanged": true,
+  "sources_sha256": {
+    "reports/fused/branch512_header_guard_equivalence.json": "f7abd2c7c0b2b8b1c1e222d0f941ca5a42280938f595d81f561e3efa799de5b2",
+    "reports/fused/branch512_drop_regression_evidence.json": "69203777279d630ac270df7f249e0755a14aa52d559705951f0463767cd550c7",
+    "build/branch512_guard_fast_sim/branch512_guard_fast_sim.sim/sim_1/behav/xsim/simulate.log": "930abdaaf41ff8a6baccf658fac31e9607c6442d00b86244f5aafb3e0a009a52",
+    "scripts/branch512_guard_fast_sim.tcl": "8b6634b07ceac0292513668993f007d4719c1309eb11677261d68295f10f831b",
+    "build/branch512_guard_reset_sim/branch512_guard_reset_sim.sim/sim_1/behav/xsim/simulate.log": "f1452a221ab26714e96be6671755d99b3f6ab70e33e9c8c0d0fc9078b9b0f8b5",
+    "scripts/branch512_guard_reset_sim.tcl": "723f418f3a26de8494464eb3e5e7fba078390188ed9f88e93163231508396836",
+    "build/branch512_guard_payload_reset_sim/branch512_guard_payload_reset_sim.sim/sim_1/behav/xsim/simulate.log": "a9762f03899bcc0b5b9f5d16211b09678e10931864a001e4b67307c28f40f0c2",
+    "scripts/branch512_guard_payload_reset_sim.tcl": "076d12cd9b37b31d23df68feb405876ccfdc8163fb4bc1d913c39365a900adc0",
+    "rtl/experimental/qn_branch512_guard_inner.sv": "c323c261f381f87141841c73c467863497bb74606b4026cbb5fbc1a050933af8",
+    "rtl/experimental/qn_branch512_guard_axis.sv": "af22c5468b267ff3a2293a67e4bfa86427bec6a99b97380f4ecd0f21dcd87532",
+    "sim/tb_qn_branch512_guard_axis.sv": "57b738bc873f34aeb62a5ddc7d66e6d4bb7919432fcbf55d2793aae2ef812219",
+    "sim/tb_qn_branch512_guard_reset.sv": "132cc5d6d85214f8f53f27cf72ae5c2aa05fec42018da9b9ff35b3b7537c9ac5",
+    "sim/tb_qn_branch512_guard_payload_reset.sv": "b993225cea1914a9b59eb5a734d9093595893187fbaded1d3444e6b133cdb4b4",
+    "scripts/create_branch512_guard.py": "0ba70d9e72cc52c2a01d2786866baf6af8486a338d689f86bb1777c011570bff",
+    "scripts/bind_branch512_guard_regression.py": "9d734aa6dd40d1418e8964a75a7da2ef1aa345c6c9c6617332c65822c5286585",
+    "rtl/experimental/qn_branch512_drop_inner.sv": "40a31904db658c8e6ba8b35273e235de0374f0f23833109d237de9c410956220",
+    "scripts/prove_branch512_header_guard.py": "9a65ff4f9a9ab6c04298551829123809e1722d5e66bf53f46bd25ce4ad4372bb"
+  }
+}

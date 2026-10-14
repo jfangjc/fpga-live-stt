@@ -1,0 +1,220 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "all_outputs_bit_exact": true,
+  "groups": [
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.1/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.2/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.3/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.3/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 2
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.4/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 1
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.4/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 1
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.5/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.6/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 2
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 0
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.7/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.8/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    }
+  ],
+  "physical_groups": [
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.1/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.2/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.3/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.3/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 2
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.4/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 1
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.4/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 1
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.5/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.6/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 2
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 0
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.7/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.8/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    }
+  ],
+  "physical_transactions": 10,
+  "retained_boundaries": 22,
+  "diagnostics": [
+    {
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true,
+      "text": "you",
+      "check_seconds": 0.42259110399936617
+    },
+    {
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true,
+      "text": "to",
+      "check_seconds": 0.5908148520011309
+    },
+    {
+      "seconds": 1,
+      "all_outputs_bit_exact": true,
+      "text": "funery number mad",
+      "check_seconds": 1.1034386190003715
+    }
+  ],
+  "source_sha256": "c40f18ae177e84a65f7a465b7f4df8ffa10304453c1bbd8c54c79ffbaad9a635",
+  "library_sha256": "745e79572cf731f413d944535b3b972a7f7894edfb125b6f65f3372514ade1bb",
+  "graph_sha256": "0c9fe7f42cfd1bfa94bf66a3fc092efaa42e5c8d913f1da110b69b10df4e8254",
+  "compiler_sha256": "1f80bd72ba0a24990d81b43a16fa9b92ee74f4b10aa9413b61cfc978661b4f90",
+  "representative_corpus_qualified": false
+}

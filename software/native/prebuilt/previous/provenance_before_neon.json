@@ -1,0 +1,21 @@
+{
+  "target": "Linux aarch64 Cortex-A53",
+  "compiler": "aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "flags": "-O3 -std=c11 -Wall -Wextra -Werror -fno-fast-math -ffp-contract=off -mcpu=cortex-a53 -fPIC -shared",
+  "sysroot": "existing Ubuntu 24.04 ARM64 glibc2.39 downloaded sysroot (read-only)",
+  "source_and_binary_sha256": {
+    "qnc.c": "4d8fa76e7265e7ad30b292f887e4c6e75d5b8516e0db4c755c47e8368e77cda5",
+    "qnc.h": "2ddd6e84c83919c2a6148ca3072a92b9289bb0a3cd6610de4ca0e7462b57cab5",
+    "qnc.py": "9573e8fa4813ed7ac5fb8681a6194505bfd3b8a00e7c03a16ba2701296afc198",
+    "cross_build.sh": "e9157ed6bcf16ea858ce585d99d0a00fdd7b905f14d2be1021ac245b322855e8",
+    "prebuilt/aarch64/libqnc.so": "40c545423ddb885cd43573eccff8d99d985674b9f5172e876f768abcaf349c17"
+  },
+  "host_verification": {
+    "compiler_warnings_as_errors": true,
+    "int64_arithmetic_and_protocol_tests": "passed",
+    "address_sanitizer": "passed",
+    "undefined_behavior_sanitizer": "passed"
+  },
+  "target_binary_executed_on_kv260": false,
+  "deployment_requirement": "Compile with make on the board or copy only prebuilt/aarch64/libqnc.so; exclude host x86 library"
+}

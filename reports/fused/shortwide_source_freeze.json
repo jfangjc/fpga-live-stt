@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "parent_physical_validation_sha256": "edfed6935d95fc44d68bba2c7c464e476f1a0d4cd6095bc2c09cade098c6911b",
+  "sources_sha256": {
+    "rtl/experimental/qn_short_wide_axis.sv": "2ab2141b596b75f3c0568e1e384215c73d295a4962f4374ea84bad7639a67b7f",
+    "rtl/experimental/fused_depthwise_channel_wide.sv": "7d1a0d436f678a196ed9988c4a6386443c40a5a61108884278a4d45f4d4b289f",
+    "rtl/experimental/qn_short_cache_core.v": "e958533371b961ea113d059f317fdb75750e2b17a17c9259dbe4a57d8740bcbe",
+    "rtl/experimental/fused_affine_quant.v": "eda062410420504864e78b3db6aa66bf48302269122bedf7dc2cbd8b9b4ddb1a",
+    "scripts/short_wide_sim.tcl": "29713128be98eb6f8c57252997d2122595b8757a305adc559b3f3a9be515adbc",
+    "scripts/short_wide_synth.tcl": "474e359e598ef87400703487a9d5d5a5164a089ddd09d077c75897952284d9d4",
+    "scripts/build_short_wide_sources.py": "5a3c1e902149b4300bb81747c05d4ee2acf67913989363e3ca7ea3d6c788ae1d",
+    "scripts/prepare_short_wide_software.py": "5a0c58813fdf8d6ae486517eb5afc50a05561a82c9be3fe2528b2d395e5c7506",
+    "sim/tb_qn_short_cache_axis.sv": "620d52cb0dd70759639f48b5c0d1da30cc41bd3e1b2b7ed92dd982b1452d4084",
+    "software/ort_fpga_shortwide/libort_fpga.so": "43c21e1c10d2c52a9e07ac7b54af8c3d75c5b9f388218f6ebd01a359e5943855",
+    "software/ort_fpga_shortwide/graph.py": "bc15212270cd9c97bf054f789d52f153c038327930e0beda27668f8fd37a6f31",
+    "software/ort_fpga_shortwide/selection.json": "58bab5b65f420c3404e464a90075b570db7acae5d817e890884c5afafdddb7ee",
+    "deployment/experimental-shortwide/qn_tile.ko": "1e2cf3e9be252b9aa2ebfa8fae6f84a6ce63438db732db5ceb2754faeca93249"
+  },
+  "native_library_reused": true,
+  "driver_reused": true,
+  "graph_selection_reused": true,
+  "hardware_execution": false
+}

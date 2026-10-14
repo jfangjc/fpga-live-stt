@@ -1,0 +1,11 @@
+{
+  "vectors": 1024,
+  "oracle": "Python unbounded integer divmod",
+  "physical_hardware_execution": false,
+  "sha256": {
+    "scripts/generate_affine_vectors.py": "7c5a60c59d045d7be9f6dab586c67d968e01d79b5457d74b796cabdda0012b93",
+    "rtl/experimental/fused_affine_quant.v": "eda062410420504864e78b3db6aa66bf48302269122bedf7dc2cbd8b9b4ddb1a",
+    "sim/affine_vectors/input.mem": "0908a8c69a2da8255134d503b30665e84266a6b95396420574a7852fbb095653",
+    "sim/affine_vectors/expected.mem": "b1aca2157484a1235bb0ddaa99bb237bc3894ff5d2c27d6fe5f56432911cc87a"
+  }
+}

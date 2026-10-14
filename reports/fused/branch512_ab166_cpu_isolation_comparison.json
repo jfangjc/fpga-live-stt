@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "comparisons": [
+    {
+      "context_seconds": 0.5,
+      "isolated_cpu_p50": 0.05257505200000878,
+      "paired_cpu_p50": 0.054726735994336195,
+      "hybrid_p50": 0.026504456502152607,
+      "speedup_against_faster_cpu": 1.9836306394639258,
+      "meets_50_percent": false
+    },
+    {
+      "context_seconds": 1,
+      "isolated_cpu_p50": 0.0959144130000027,
+      "paired_cpu_p50": 0.09612502650998067,
+      "hybrid_p50": 0.03582271500636125,
+      "speedup_against_faster_cpu": 2.677474696794216,
+      "meets_50_percent": true
+    },
+    {
+      "context_seconds": 2.5,
+      "isolated_cpu_p50": 0.14707285150001326,
+      "paired_cpu_p50": 0.146003081004892,
+      "hybrid_p50": 0.05963815050199628,
+      "speedup_against_faster_cpu": 2.4481490417782963,
+      "meets_50_percent": true
+    }
+  ]
+}

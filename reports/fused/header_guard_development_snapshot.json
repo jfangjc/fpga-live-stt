@@ -1,0 +1,57 @@
+{
+  "archive": "C:\\Users\\jfang\\Downloads\\FPGA-ASR-header-guard-development-2026-10-13\\fpga-asr-latency-work.zip",
+  "sha256": "f47c58f470da6f22db2662fbc6b6ea0b542a1c6317c204b0bf2b1f757bc0ee70",
+  "files": 2263,
+  "bytes": 577268340,
+  "verified": true,
+  "measurement_kind": "Independent paired warm confirmation",
+  "selected_report": "C:\\Users\\jfang\\Documents\\Vivado\\Prototype_v2\\reports\\fused\\adaptive_latency_confirmation.json",
+  "timing_acceptance": true,
+  "summary": [
+    {
+      "context_seconds": 0.5,
+      "cpu_p50": 0.055884600995341316,
+      "fpga_p50": 0.03893875199719332,
+      "cpu_p95": 0.06710812034798438,
+      "fpga_p95": 0.047411412097426366,
+      "latency_reduction_percent": 30.32293099768332,
+      "paired_bootstrap_95ci_percent": [
+        28.79572106557806,
+        30.86167586795363
+      ],
+      "meets_20_percent": true,
+      "meets_30_percent": true,
+      "meets_50_percent": false
+    },
+    {
+      "context_seconds": 1,
+      "cpu_p50": 0.09505344649369363,
+      "fpga_p50": 0.05415805699885823,
+      "cpu_p95": 0.10190541020056117,
+      "fpga_p95": 0.06044086794427131,
+      "latency_reduction_percent": 43.023573582414635,
+      "paired_bootstrap_95ci_percent": [
+        42.65950103440385,
+        43.308681978220385
+      ],
+      "meets_20_percent": true,
+      "meets_30_percent": true,
+      "meets_50_percent": false
+    },
+    {
+      "context_seconds": 2.5,
+      "cpu_p50": 0.14991700699465582,
+      "fpga_p50": 0.09160106549825286,
+      "cpu_p95": 0.1596225351066096,
+      "fpga_p95": 0.10053912705625409,
+      "latency_reduction_percent": 38.89881652885572,
+      "paired_bootstrap_95ci_percent": [
+        38.75211730970577,
+        39.118708844143676
+      ],
+      "meets_20_percent": true,
+      "meets_30_percent": true,
+      "meets_50_percent": false
+    }
+  ]
+}

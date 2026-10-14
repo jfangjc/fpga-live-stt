@@ -1,0 +1,11 @@
+# Refresh all 1-4 thread original/maskfast tail/pool CPU policies on the current board.
+# This runs sequentially after all preceding physical jobs and uses the same app harness.
+cpu_label='branch512_ab166_cpu_policy_wide'
+cpu_command=f'cd {REMOTE} && printf "%s\\n" {shlex.quote(PASSWORD)} | sudo -S sh scripts/run_branch512_ab166_board.sh software/latency/tune_branch512_ab166_cpu.py --runs 30 --out reports/fused/{cpu_label}.json > reports/fused/{cpu_label}.log 2>&1'
+local([PLINK,*OPTIONS,HOST,cpu_command])
+download(f'reports/fused/{cpu_label}.json');download(f'reports/fused/{cpu_label}.log')
+cpu_report=json.loads((ROOT/f'reports/fused/{cpu_label}.json').read_text())
+assert cpu_report['complete'] and not cpu_report['hardware_execution']
+assert cpu_report['candidate_count']==64 and cpu_report['all_warm_logits_bit_exact']
+print('COMPLETE: refreshed 64-policy strongest valid CPU screen',flush=True)
+

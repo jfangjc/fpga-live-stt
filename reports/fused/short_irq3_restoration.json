@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "original_requested_affinity": {
+    "56": "0-3",
+    "57": "0-3"
+  },
+  "restored_requested_affinity": {
+    "56": "0-3",
+    "57": "0-3"
+  },
+  "source_sha256": "a62ab3c330cf699c185d7cfd4462cd3384345a747dc314383a8ededf04bfc35e",
+  "reports": [
+    "reports/fused/short_irq3_one_confirmation300.json"
+  ]
+}

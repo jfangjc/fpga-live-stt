@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "adopted": false,
+  "reason": "No useful speed improvement over current maskfast tail at target model lengths",
+  "byte_transitions_checked": 5355,
+  "finite_float32_byte_equivalence_proved_for_checkpoint_scales": true,
+  "intermediate_quotient_equivalence_claimed": false,
+  "full_path_gain_proven": false,
+  "operator_cases": 105,
+  "faster_cases": 26,
+  "sources_sha256": {
+    "software/latency/libresidual_tail_recip64.so": "53d16dbfc2dfd9575c09f099f58bbe4d365d29a160819212b64c23c18c244366",
+    "software/latency/residual_tail_recip64.cc": "93254428a4a5fb45749d1039219142b63eeaa3375f91e15c8545ab8d9b8af138",
+    "scripts/bind_recip64_experiment.py": "2e9bdbe7822b97b568272960271697ff4ccc527873a93d654a80896265957895",
+    "reports/fused/residual_tail_recip64_boundaries.json": "e32f2b8d49a05db225d63c1e4434744f8fd6c519cd6ea6de4203c1ea29eadeb2",
+    "reports/fused/residual_tail_recip64_validation.json": "7aa3f315b5cc189a270eaed58354e5db34281bf81d503d1b1ef7138370ef76e3",
+    "reports/fused/residual_tail_recip64_operator_benchmark.json": "336e6cee310d8a8b517e2fd6e78c92cbcc304d149709b3c7edbf560b03b70034",
+    "software/latency/prove_recip64_byte_boundaries.py": "a1835116b4e071670eedf20e949a97dbd2dfab6ab1afc897ba6317476f11aa1b",
+    "software/latency/test_residual_tail_recip64.py": "c8cef9bfbbf8b2a0a508f25e2bd0f6ebc5ef2e7c511d0de7105bb2b2581e9f73",
+    "software/latency/benchmark_residual_tail_recip64.py": "be497f2395309430d4d07d75fb7a45964efc6368c6e3a79c1ac719e327cf9c6a",
+    "scripts/create_residual_tail_recip64.py": "675c90b738d7b7234dd6f50d845569e5e0f1499ade0246e6b4c8140bb28a17e4",
+    "software/latency/residual_tail_maskfast.cc": "0cb2635334d7e6ab588059eb91d3a02e56b1e3f465b91a0ff77097e125b6664d",
+    "software/latency/libresidual_tail_maskfast.so": "db6da50db1bdd2421c3475f82960c6f5a80ed01a70243440e7de28143d0ec366",
+    "research/fused/cpu-int8-cse.onnx": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72"
+  }
+}

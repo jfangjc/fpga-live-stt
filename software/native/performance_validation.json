@@ -1,0 +1,83 @@
+{
+  "status": "local_verification_passed",
+  "physical_optimized_binary_tested": false,
+  "post_optimization_board_speedup_claimed": false,
+  "source_sha256": {
+    "qnc.c": "34cec4f48dc3b92f63ac5ebbee2770f46c114984b8fecfd9312a7d5e051650b7",
+    "qnc.h": "4ae98c968a076db814d9e8f797cc84e3bfc280aa1afe7b082a16729580ae3491",
+    "qnc.py": "bca25aa90f44a83e66ce0354ab4097496405d27cb6077bce99b2dc7733783887",
+    "test_qnc.c": "6c7679c6641b5f8cb153129bd232196079d26e050d8199f2a095fa7ad88f98e8",
+    "Makefile": "0ee83eb8917286180773dad7365e26e19732adaf819dcfeacf314d69f58b6587",
+    "cross_build.sh": "f1531c82210c6805abe11890f448a55edd712c597d680178477023a2f5c9ded7"
+  },
+  "aarch64_binary_sha256": "d7b0e17468a74aef7074141ebef77150944f719574531f66960f24c71c1e1d34",
+  "executed_tests": {
+    "host_validation.txt": {
+      "status": "passed",
+      "sha256": "eab1255e3877dd75763cefb072379b026e2c7ab900be65c85750c56632fab2c2",
+      "path": "software\\native\\prebuilt\\aarch64\\host_validation.txt"
+    },
+    "sanitizer_validation.txt": {
+      "status": "passed",
+      "sha256": "eab1255e3877dd75763cefb072379b026e2c7ab900be65c85750c56632fab2c2",
+      "path": "software\\native\\prebuilt\\aarch64\\sanitizer_validation.txt"
+    },
+    "neon_validation.txt": {
+      "status": "passed",
+      "sha256": "eab1255e3877dd75763cefb072379b026e2c7ab900be65c85750c56632fab2c2",
+      "path": "software\\native\\prebuilt\\aarch64\\neon_validation.txt"
+    },
+    "scalar_validation.txt": {
+      "status": "passed",
+      "sha256": "eab1255e3877dd75763cefb072379b026e2c7ab900be65c85750c56632fab2c2",
+      "path": "software\\native\\prebuilt\\aarch64\\scalar_validation.txt"
+    }
+  },
+  "arm64_verification": {
+    "emulator": "QEMU8.2.2 static Cortex-A53 instruction emulation",
+    "neon_actual_target_binary": "passed",
+    "forced_scalar_actual_target_binary": "passed",
+    "oracle": "INT64 sums and bit-exact scalar FP32 quantization/scaling; full/partial tiles, ties, non-power-of-two scales",
+    "performance_emulation_claimed": false
+  },
+  "sanitizers": {
+    "address": "passed",
+    "undefined_behavior": "passed"
+  },
+  "code_generation": {
+    "vector_fdiv": true,
+    "explicit_nearest_even_frintn": true,
+    "transpose_instructions": true,
+    "reciprocal_approximation": false,
+    "fma": false,
+    "disassembly_sha256": "c93ebb4a0fbd593067b17bf8f6ac728c13eb91f4619cd6c4d4ac998e8d799cd9"
+  },
+  "profile_fields": [
+    "load_pack_seconds",
+    "scan_seconds",
+    "run_pack_seconds",
+    "unpack_seconds"
+  ],
+  "original_qnc_stats_abi_unchanged": true,
+  "qnc2_protocol_unchanged": true,
+  "received_board_baseline": {
+    "hybrid_median_seconds": 1.411791122998693,
+    "cpu_median_seconds": 0.5427779799938435,
+    "pointwise_outside_ioctl_seconds": 0.49775421104277484,
+    "ioctl_seconds": 0.36869796384416986,
+    "cpu_fallback_seconds": 0.5029969910974614,
+    "ideal_host_elimination_seconds": 0.9140369119559182
+  },
+  "required_next_tests": [
+    "Board make -B",
+    "Native physical smoke",
+    "Fresh physical-vs-numerical INT8 graph parity",
+    "Repeated warm paired timing with phases",
+    "Representative WER and continuous capture"
+  ],
+  "proof_invalidation": [
+    "Native source/header/Python/binary hashes changed: previous physical INT8 parity report is stale",
+    "Original CPU NeMo parity unchanged if model/frontend/decoder/checkpoint identities unchanged"
+  ],
+  "previous_deployment_zip_modified": false
+}

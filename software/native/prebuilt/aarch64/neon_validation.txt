@@ -1,0 +1,1 @@
+PASS: INT64 arithmetic, bit-exact full-tile FP32 scalar oracle (ties/non-power-of-two scales), padding/cropping, batches, corruption, I/O failure, invalidate

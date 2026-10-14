@@ -1,0 +1,31 @@
+{
+  "dataset": "openslr/librispeech_asr",
+  "config": "clean",
+  "license": "CC-BY-4.0",
+  "source": "https://www.openslr.org/12/",
+  "limitations": "Small consecutive read-speech samples, not representative corpus WER; requested microphone categories absent",
+  "splits": {
+    "calibration": {
+      "split": "validation",
+      "count": 5,
+      "ids": [
+        "2277-149896-0000",
+        "2277-149896-0001",
+        "2277-149896-0002",
+        "2277-149896-0003",
+        "2277-149896-0004"
+      ]
+    },
+    "evaluation": {
+      "split": "test",
+      "count": 5,
+      "ids": [
+        "6930-75918-0000",
+        "6930-75918-0001",
+        "6930-75918-0002",
+        "6930-75918-0003",
+        "6930-75918-0004"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "timing_gate_passed": false,
+  "qualified_export_created": false,
+  "setup_slack_ns": -0.308,
+  "hold_slack_ns": 0.01,
+  "setup_failing_endpoints": 854,
+  "preserved_files_sha256": {
+    "reports/fused/branch512_dma128166_failed_route/branch512_dma128166_system_timing.rpt": "523f1eebe356b4699ad99ffedc36dfb4b58cd35154b621ae822642613c6e64ea",
+    "reports/fused/branch512_dma128166_failed_route/branch512_dma128166_system_drc.rpt": "c6c9386a629e48b84a2a513169645515990cc1ff2cd409e1eb6a519d3fe2c6aa",
+    "reports/fused/branch512_dma128166_failed_route/branch512_dma128166_system_utilization.rpt": "bf9fd55e9d802d2c4bad6ed6cab66ceeef9670bc58b14f18efa7c5aaf8fb0dd5",
+    "reports/fused/branch512_dma128166_failed_route/branch512_dma128166_system_hierarchical.rpt": "55f9fdd48de47dd58a7ab7a3994018c5b50a7d1eb76c308c942a395b769bf751",
+    "reports/fused/branch512_dma128166_failed_route/branch512_dma128166_implement_driver.log": "9038655cf772abcf7ddd2535c81756ffef1eb2df947d9bab967ca184813b75b3",
+    "reports/fused/branch512_dma128166_failed_route/asr_v2_top_routed.dcp": "99a6ab8b44ed51bcf8db234e74ef28f3ab781fd5930de4990a453b879ce9e8c6"
+  },
+  "preparation_sha256": "36b140c15d82129f6395350d1ee39c5fb10f65c13154a01b19ff8eab7331311b",
+  "note": "Failed positive setup margin; no new firmware was installed or tested. Qualified parent unchanged."
+}

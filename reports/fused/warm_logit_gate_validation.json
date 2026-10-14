@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "source_sha256": "0eb3d00f9acc41fe468c85bc763d6d10c58a91ffce4555a89b0ae7837a6b8886",
+  "test_sha256": "32166b193e0839acdb4db0e7e220a78f29975c20216e0ae977d9bbd8312256d2",
+  "exact_pairs_accepted": 3,
+  "intermittent_one_ulp_corruption_rejected": true,
+  "text_and_lengths_unchanged_in_negative_case": true,
+  "scope": "Actual warm confirmation loop with synthetic outputs; not physical or latency evidence"
+}

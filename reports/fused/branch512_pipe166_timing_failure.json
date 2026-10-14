@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "qualified": false,
+  "clock_hz": 166666666,
+  "setup_slack_ns": -3.073,
+  "hold_slack_ns": 0.002,
+  "routed_bitstream_generated": true,
+  "qualified_xsa_exported": false,
+  "timing_gate_rejected": true,
+  "board_deployment_started": false,
+  "worst_path": "Unused voice/inst/mac weight BRAM through multiplier/add tree to accumulator",
+  "next_path": "Depthwise output/masking through pointwise header-length validation",
+  "sources_sha256": {
+    "reports/fused/branch512_pipe166_system_timing.rpt": "a1a3ec6bf9b101a03bd947d985897ac1de2260e7f16929e9c6d11cbf6fee0f13",
+    "reports/fused/branch512_pipe166_physopt_paths.rpt": "f3b159ff97209107f7ea1ad67161eae0fba0e0ed3481b64ca1fce00c582d82f2",
+    "build/branch512_pipe166_implement_driver.log": "3eb7ba048873ea80b69b1294fc2938ad85e2bf2a76e13d7eb254499dcbff78bf",
+    "scripts/branch512_pipe166_implement.tcl": "e0d852be03b3f3db58e5c933f4b464b450c350b708c87e55a2bbf35bb476e1a1"
+  }
+}

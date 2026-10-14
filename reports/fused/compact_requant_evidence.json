@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "whole_model_speed_qualified": false,
+  "random_cases": 1000000,
+  "targeted_half_cases": 100000,
+  "rtl_lanes": 9600,
+  "isolated_synthesis_lanes": 32,
+  "area": {
+    "exact": {
+      "luts": 54102,
+      "registers": 10609,
+      "dsps": 128
+    },
+    "compact": {
+      "luts": 21362,
+      "registers": 7912,
+      "dsps": 64
+    }
+  },
+  "lut_reduction_percent": 60.51532290858008,
+  "sources_and_evidence_sha256": {
+    "build/compact_requant_sim/compact_requant_sim.sim/sim_1/behav/xsim/simulate.log": "51ac05a089e7a944da62097b9b3b911977a56b25bec56dd4215ef58735607724",
+    "reports/fused/compact_requant_integer_validation.json": "c61795487440fabd4841673422ea60a5d3630379193c2879edda09a90c729284",
+    "rtl/experimental/fused_affine_quant_compact.sv": "09e95d5a6c73268d31e30ce2bab70eb51a33405387a8cbdd2bbd16fde51c9b41",
+    "software/latency/compact_requant_reference.py": "cf5e276bb3e42e53550c70f4a03d625ca512da79686b1b5ba19886a4fe27ac51",
+    "verification/exact-requant/quant.mem": "097b5773aee3df151fb8b161479aa4a0a13a74d26873be0b33bb3914ab638e33",
+    "sim/tb_compact_requant.sv": "0e8f6367d338cf7e8c698b9c08a46f618fb9281f41a70c2ee44c957ca2ab0545",
+    "scripts/test_compact_requant.py": "205c16a598c9266f155c25c05214143a2e6dc4951dc7300faceb29279878aaaf",
+    "scripts/compact_requant_sim.tcl": "31b4b85dea11e90daa8b967753d9249d15b3740ea8f540491b49649a9a2cbe87",
+    "scripts/compact_requant_synth.tcl": "66dc09c349bfedeca53092eae304775e8f4a61ad25eee93d60c393b0f24885b2",
+    "reports/fused/requant_exact_synth_utilization.rpt": "41c59e6e43e0aa2fec2de644280630708d08361e60300d1801689f2301cf542c",
+    "reports/fused/requant_exact_synth_timing.rpt": "a3eb18fb72d501de1fc0214cd0e74f44effe1e1eb565eb02e97142bb2588761a",
+    "reports/fused/requant_compact_synth_utilization.rpt": "5ee414a51c7db193750664ab64b505120f0e6803eebe32785135a338da20b669",
+    "reports/fused/requant_compact_synth_timing.rpt": "ccceeef3703a237c3e4cbfd9f146d884ddebc97e1cfc7bb8e367f8184adcaf3f"
+  }
+}

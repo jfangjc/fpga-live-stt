@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "all_float32_bit_exact": true,
+  "random_cases": 1000000,
+  "random_bias_wrap_cases": 250240,
+  "rtl_lanes": 9600,
+  "rtl_bias_wrap_lanes": 67,
+  "fixture_sha256": "9726726edf41402637412b551e6052ac74c0be9b8c2a05fa7ef16aa9cb5ad8e2",
+  "rtl_sha256": "a2f4df09f86c67cc4ab24336d9a398af290a713e5cf171303271ddfb45f8c662",
+  "source_sha256": "c6a1cdfe59242d2110a6557dd394fc4f56364521c2b76eb0f73693a26b85c025",
+  "reference_sha256": "cf5e276bb3e42e53550c70f4a03d625ca512da79686b1b5ba19886a4fe27ac51"
+}

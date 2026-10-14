@@ -1,0 +1,142 @@
+{
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "file",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "audio",
+      "type": {
+        "sampling_rate": 16000,
+        "_type": "Audio"
+      }
+    },
+    {
+      "feature_idx": 2,
+      "name": "text",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 3,
+      "name": "speaker_id",
+      "type": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 4,
+      "name": "chapter_id",
+      "type": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 5,
+      "name": "id",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "row_idx": 0,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/234bf103726646f6948bab918be3a226316832f62b2ca6861100cff043922b4a/2277-149896-0000.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/validation/0/audio/audio.flac?Expires=1791500755&Signature=q9BlU1rmahAyo~xAfacxOn4844MqYAHu~0RLF0zmgRlq~c3QVRQ122xL2zxe4YW7HIFiAnYri2Kn8n3p~lcAXFAH1FmQWOf54ptV2UWNC59mqbeXHHe-xoy6IRS7kScfJmZRCyLE9w31lsQ~ooEyHHktdAP-itddm8XArpbLX~vmb2bhKz7BO3EE7se2OsgVgpbSQ9aBPeFZnI7S4Mm38aoWJRYB45AyIqBoNrem6mmScAKIJNKRKlwijwdQKarnn6z~DPyxOhK3u3UqGbUkf6s0h6p3gn6uFbf13rSUj5QuVD21k0n3~phmByvewCEdtlFZ~734nZMNJ5uoK6N1JQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "HE WAS IN A FEVERED STATE OF MIND OWING TO THE BLIGHT HIS WIFE'S ACTION THREATENED TO CAST UPON HIS ENTIRE FUTURE",
+        "speaker_id": 2277,
+        "chapter_id": 149896,
+        "id": "2277-149896-0000"
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 1,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/234bf103726646f6948bab918be3a226316832f62b2ca6861100cff043922b4a/2277-149896-0001.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/validation/1/audio/audio.flac?Expires=1791500755&Signature=WN1VMB2KSCckFhzhN29HqJhwECCcQEWJ-kWYUnSgFUhE~hzYPWm0PGbYTELg1nqOwQCmoGO8-cWKTjaBsyyxa8Wb1k~FHvJMLqGX5Iln3S4B5fw6o~ANG6KxOTF7vWofXsOemARx~-feK1J8kcW2ZamnmlhcSrjCDXDcFsDdsoyTbw~RVboKphGTe4tnyCzuUqnORAWgV8ZGIUcBFW0yWzFG7JmPmy74W8HADSrpsulbKTf~1~bE6wYBgPR3qtXoEL2pPp4luvo2cn1eqSphdrG~uBLOLJNvlfvYFujSLPbjmihU4qhqNsDvAraXja6IG~aXJDIOF2YJ~UN02X6asw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "HE WOULD HAVE TO PAY HER THE MONEY WHICH SHE WOULD NOW REGULARLY DEMAND OR THERE WOULD BE TROUBLE IT DID NOT MATTER WHAT HE DID",
+        "speaker_id": 2277,
+        "chapter_id": 149896,
+        "id": "2277-149896-0001"
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 2,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/234bf103726646f6948bab918be3a226316832f62b2ca6861100cff043922b4a/2277-149896-0002.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/validation/2/audio/audio.flac?Expires=1791500755&Signature=npQKTJ4pEwLjM0MW5ito0x8GCSsGROT5bHjADpa8fZODCqmTCE~isE9iGe36Vpnq5fAhHAhEUg8FFjVzjRuW9ojX4grxfO7KP0Jjqd0k8ESZxbVsSOjOpCW4qwgEJeSQK7bPtthpWa2S3ZQoxyE4seC43tE0uiFGDUN4Fw6gvkitBzVFso8SQHrJkqakmwga7u80ucNIn1wOkNfc89h2uu6T90Db8dKYoBAIPckn3pt6VbonMhR6LE0RNitRF0rVTkaFYUqvrLpLMjaNb85gnf9dKXzxfR258VZP0V6FaGn5-3Yrq42ymZWRUw9Lh7TRUj6oedVzGM6el4Ch6L0-Sg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "HURSTWOOD WALKED THE FLOOR MENTALLY ARRANGING THE CHIEF POINTS OF HIS SITUATION",
+        "speaker_id": 2277,
+        "chapter_id": 149896,
+        "id": "2277-149896-0002"
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 3,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/234bf103726646f6948bab918be3a226316832f62b2ca6861100cff043922b4a/2277-149896-0003.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/validation/3/audio/audio.flac?Expires=1791500755&Signature=w6QnBt~qgOtf9bm~yJQxLJlmS0GxeMGFzFpoHKO4L1sDJt7gitgTtrt5gSOqcdiIlasVS~aQLD4r4uDamQMVukbIx-eO-d0bVbYaO4HERupJIVglN8XRXD5fbF8O1LW5MdU9k8A~Q-WTkgTATzwudpGSGhRSqwf0glPpAUaInyMSQxvZKIuhZWr6hspT58ijD6p9yJkI-uS-ZxJg1DsDD85-qlBokuy2ChWCLnfx0ddzKy8p9D9Y7Dt2jYFlyOa0LT8nCOiKbSAGjlg5PjTsPw4exM2Rjk~UIUlecXb7xHOO5d6DUXDvglmByCo48DOGuziN6vFnqHWFMZxB2nb8XA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "HE ALSO THOUGHT OF HIS MANAGERIAL POSITION",
+        "speaker_id": 2277,
+        "chapter_id": 149896,
+        "id": "2277-149896-0003"
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 4,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/234bf103726646f6948bab918be3a226316832f62b2ca6861100cff043922b4a/2277-149896-0004.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/validation/4/audio/audio.flac?Expires=1791500755&Signature=oj9rNeuI2CorvMJYoRnNXISucSg~ZEfQWo8At--TLTfQQvKBtK212HTWjV8jaYhO56drQL8ciz5BtaG5e6poJObRW79mGIH8TAfZzS09v10PpjYqLYVA-rP5AEz~PPd~nwcJmvytwxWrjypCSqhbtAPTVyZ6lttSaOxAGSO1t-rMhhB7Ih3YbXVHyG-2GqpUxg4NmYnEJBnvaGlzrOgWEF~usFrm-tvSMJCU8xjA6jt8tyjLGlkidSMKBuQ2eL4kpxyY94G0K~P4yh23daVRqYQI6OksoBUzCfXkdswG6UYclqDo5~i6dgEK3DSGA8Y~d06LE9u4FwRllpai~zBPTQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "HOW WOULD THE PAPERS TALK ABOUT IT",
+        "speaker_id": 2277,
+        "chapter_id": 149896,
+        "id": "2277-149896-0004"
+      },
+      "truncated_cells": []
+    }
+  ],
+  "num_rows_total": 2703,
+  "num_rows_per_page": 100,
+  "partial": false
+}

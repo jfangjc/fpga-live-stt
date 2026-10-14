@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "timing_acceptance": false,
+  "candidates": [
+    {
+      "name": "vector",
+      "operator_cases": 105,
+      "faster_cases": 0,
+      "status": "Rejected: slower in every paired operator case",
+      "full_path_gain_proven": false
+    },
+    {
+      "name": "maskfast",
+      "operator_cases": 105,
+      "faster_cases": 105,
+      "status": "Full-path candidate; independent CPU/hybrid confirmation pending",
+      "full_path_gain_proven": false
+    }
+  ],
+  "sources_sha256": {
+    "reports/fused/residual_tail_vector_validation.json": "c57c646fc00287d6817a620bbe38ba35a6d165e6c1e74e2095b345af8c239a1f",
+    "reports/fused/residual_tail_vector_operator_benchmark.json": "8cfb58a2378506ff42db24b93155242e25e58e54b6d0a0a97269baa3d21ce921",
+    "software/latency/libresidual_tail_vector.so": "77e35cf3be6c28cd1e1e14bd14291cc36238c9db7bbb30c8ecd535f771133217",
+    "software/latency/residual_tail_vector.cc": "41ce1a8d8726b73d5af6bcdda8417dbaabcf591c6c95fb2d9df746b6c204ab29",
+    "software/latency/test_residual_tail_vector.py": "f4e16474c03f28489040c57ddf74bd52ac640f9c1aaeee892a34076a00ba0838",
+    "software/latency/benchmark_residual_tail_vector.py": "3368d93ceefb7caeb228ef879d657a5dc28584a62dd31f3d833487bd4ea53f1b",
+    "scripts/create_residual_tail_vector.py": "c342e73ded57ea1bfd0833ae6387eee5c0c62d99744494c361cc99f64b1a3604",
+    "reports/fused/residual_tail_maskfast_validation.json": "e66fe2d0c1a4a9fe571b0ba1ab4347b0c655cd04bb8c9ab61f4898cc9b1b7ed8",
+    "reports/fused/residual_tail_maskfast_operator_benchmark.json": "32dd42cde6736c35928ab670cb296857ec263f59b283c185a37d8ddd04251bb9",
+    "software/latency/libresidual_tail_maskfast.so": "db6da50db1bdd2421c3475f82960c6f5a80ed01a70243440e7de28143d0ec366",
+    "software/latency/residual_tail_maskfast.cc": "0cb2635334d7e6ab588059eb91d3a02e56b1e3f465b91a0ff77097e125b6664d",
+    "software/latency/test_residual_tail_maskfast.py": "0e0aa4cef1755e33a92de4c3e277eb0e917d20c79f63aa0697ca996888cb5f9c",
+    "software/latency/benchmark_residual_tail_maskfast.py": "763b32c9e8ca0bf43b4e3456bdd094e5fdded85b2df2c7dd98778b7df7dee04e",
+    "scripts/create_residual_tail_maskfast.py": "07c361d263af6322828e3c79f360ff3275183b0c3c4e294eef32f73f785b2639",
+    "software/latency/residual_tail.cc": "f3efe925b7400e6f7a600eb769038956fd2f63fa55d2af4a848aae77ead2a110",
+    "software/latency/residual_tail.py": "964ceb8f7a6ecd9adfa9ae388bb20cb7fcfe91a7f7d294b2c03da8a9accb45dd",
+    "software/latency/libresidual_tail.so": "ce97d2ce3c8db1a09eafccf37797deb0a4f6666aeae7135d9e92e5a9191d0eb2",
+    "scripts/bind_residual_tail_candidates.py": "1459aef2611210c12ea2edcdab729395349e481449a396fe3d4a4ffce740f535"
+  }
+}

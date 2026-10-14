@@ -1,0 +1,16 @@
+{
+  "execution": "CPU INT8; no FPGA execution",
+  "candidate_sha256": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+  "threads": 4,
+  "worker_spinning": false,
+  "initialization_seconds": 15.40561020700261,
+  "recordings": [
+    {
+      "wav": "/home/ubuntu/prototype-v3-fused/research/eval/user-recording/speech.wav",
+      "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "encoded_length": 126,
+      "processing_seconds": 0.5730942840018542
+    }
+  ],
+  "representative_accuracy_accepted": false
+}

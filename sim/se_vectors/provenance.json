@@ -1,0 +1,15 @@
+{
+  "input_beats": 7283,
+  "output_packets": 512,
+  "lanes": 16,
+  "test_max_samples": 1024,
+  "real_se_channels": 256,
+  "real_se_vector_sha256": "925601e86139e065be3bc532ca4e0e6ebb01076fa84e3dc6efafb658c5f01cdd",
+  "physical_hardware_execution": false,
+  "sources_sha256": {
+    "scripts/generate_se_vectors.py": "e948b1052b4b9f1a56f7f9b3313ab1e9997742422f9bc0a344c6c0d0e5a0bc33",
+    "rtl/experimental/fused_se_reduce.v": "2a446d017467d3a5944aec7984a70281d8961115f7a8a06f7fa9e8ed15c11a72"
+  },
+  "input.mem_sha256": "a2953f48435e1260de5aaf097523310699fba5c562c347e5d03e497ec0e816e5",
+  "expected.mem_sha256": "d40318db604c8c045f1f64480e0d5fca3e741023372298f9e75ed1081beb6cd7"
+}
