@@ -1,0 +1,76 @@
+{
+  "initialization_seconds": 6.131636582009378,
+  "metadata": {
+    "model_sha256": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "tokenizer_sha256": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "preprocessing_id": "aa00440a1170782541d9d6af55ab904b75712abce08fa2df34c701288d37b20f",
+    "decoder_id": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "threads": 4,
+    "hardware_execution": false,
+    "precision": "FP32",
+    "calibration_audio_sha256": [],
+    "onnxruntime_version": "1.30.0",
+    "original_nemo_wrapper_validated": true,
+    "accelerated_nodes": [],
+    "cpu_region_threads": 4,
+    "native_library_sha256": null,
+    "checkpoint_sha256": "a00c8fb75a2bcc37271275293bce950863e4e069d43f6cf193d42fcf605aa21c",
+    "frontend_constants_sha256": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "frontend_source_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "decoder_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    },
+    "source_sha256": {
+      "software/model-tools/citrinet_cpu.py": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+      "software/runtime/citrinet_adapter.py": "8ffcab4d1716160fb93ebdf7550f22b8b5d3f599639957cde96ec7889ee38c4d",
+      "software/runtime/partition.py": "50bf9cc2033180161c9d7fe5f80099c56abf9c62b6fe7a5509d818ff2ee2e9ec",
+      "software/native/qnc.py": "9573e8fa4813ed7ac5fb8681a6194505bfd3b8a00e7c03a16ba2701296afc198",
+      "software/native/qnc.c": "4d8fa76e7265e7ad30b292f887e4c6e75d5b8516e0db4c755c47e8368e77cda5",
+      "software/native/qnc.h": "2ddd6e84c83919c2a6148ca3072a92b9289bb0a3cd6610de4ca0e7462b57cab5"
+    },
+    "original_model_output_parity_validated": true,
+    "physical_quantized_graph_parity_validated": false,
+    "original_model_output_parity_report_sha256": "ef4c1c3e3214fe63113e75f0417b8d5fefc79074e6f6ce652d24f51a43b15aea"
+  },
+  "warmups": 1,
+  "runs": [
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013078909978503361,
+      "frontend_seconds": 0.04285866199643351,
+      "inference_seconds": 0.4844277600059286,
+      "decode_seconds": 0.00035053599276579916,
+      "total_seconds": 0.5289448489929782,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.001358691995847039,
+      "frontend_seconds": 0.055526843992993236,
+      "inference_seconds": 0.48555442900396883,
+      "decode_seconds": 0.0003380150010343641,
+      "total_seconds": 0.5427779799938435,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013589709997177124,
+      "frontend_seconds": 0.05077130800054874,
+      "inference_seconds": 0.4916770169947995,
+      "decode_seconds": 0.00035892600135412067,
+      "total_seconds": 0.5441662219964201,
+      "encoded_length": 93,
+      "hardware_execution": false
+    }
+  ],
+  "p50_seconds": 0.5427779799938435,
+  "p95_seconds": 0.5440273977961624
+}

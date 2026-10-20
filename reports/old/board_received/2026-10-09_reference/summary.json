@@ -1,0 +1,43 @@
+{
+  "evidence_origin": "User-pasted KV260 output; not independently executed by this agent",
+  "attachment_sha256": "adcb2ac653694e200e6beeebc6cc1aff060d65d0217860cbaa1528d17d692590",
+  "audio_seconds": 7.435,
+  "physical_int8_parity_passed": true,
+  "physical_vs_emulation_max_error": 0.0,
+  "cpu_p50_seconds": 0.5427779799938435,
+  "cpu_p95_seconds": 0.5440273977961624,
+  "fpga_p50_seconds": 1.411791122998693,
+  "fpga_p95_seconds": 1.484135541295109,
+  "hybrid_to_cpu_p50_ratio": 2.6010471593094224,
+  "target_p50_seconds": 0.4342223839950748,
+  "per_run_profiles": [
+    {
+      "cpu": 0.5029969910974614,
+      "fpga": 0.8664521748869447,
+      "total_seconds": 1.411791122998693,
+      "ioctl_seconds": 0.36869796384416986,
+      "native_pointwise_outside_ioctl_seconds": 0.49775421104277484
+    },
+    {
+      "cpu": 0.5017295729921898,
+      "fpga": 0.8655404430173803,
+      "total_seconds": 1.4072224409901537,
+      "ioctl_seconds": 0.3667349511233624,
+      "native_pointwise_outside_ioctl_seconds": 0.4988054918940179
+    },
+    {
+      "cpu": 0.5766990901029203,
+      "fpga": 0.8744280959217576,
+      "total_seconds": 1.4921738099947106,
+      "ioctl_seconds": 0.3713442740991013,
+      "native_pointwise_outside_ioctl_seconds": 0.5030838218226563
+    }
+  ],
+  "limits": [
+    "Only three warm measured runs with one warmup; not paired acceptance benchmarking",
+    "No representative WER corpus or sustained capture evidence supplied",
+    "Active firmware identity, PL clock and temperatures not recorded in this pasted output",
+    "FPGA profile includes native host work and ioctls, not just hardware compute"
+  ],
+  "speedup_target_achieved": false
+}

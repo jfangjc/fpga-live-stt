@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+cd /home/ubuntu/prototype-v3-fused
+.venv/bin/python software/latency/context_benchmark_policy.py --runtime bulk --threads 4 --spin-us 1000 --contexts 8 10 --runs 100 --nodes /encoder/encoder.1/mconv.1/conv/Conv_quant /encoder/encoder.1/mconv.6/conv/Conv_quant /encoder/encoder.1/mconv.11/conv/Conv_quant /encoder/encoder.1/mconv.16/conv/Conv_quant /encoder/encoder.3/res.0.0/conv/Conv_quant /encoder/encoder.4/mconv.16/conv/Conv_quant --out reports/fused/context_spin1000_confirmation100.json
+.venv/bin/python software/latency/context_benchmark_threads.py --runtime bulk --threads 2 --contexts 0.5 --runs 100 --nodes /encoder/encoder.1/mconv.1/conv/Conv_quant /encoder/encoder.1/mconv.6/conv/Conv_quant /encoder/encoder.1/mconv.11/conv/Conv_quant /encoder/encoder.1/mconv.16/conv/Conv_quant /encoder/encoder.3/res.0.0/conv/Conv_quant /encoder/encoder.4/mconv.16/conv/Conv_quant --out reports/fused/context_half_second_threads2_100.json
+.venv/bin/python software/latency/resident.py --benchmark reports/fused/context_spin1000_confirmation100.json --backend fpga --wav research/eval/user-recording/speech.wav --repeats 3 > reports/fused/latency_resident_fpga.jsonl
+.venv/bin/python software/latency/resident.py --benchmark reports/fused/context_spin1000_confirmation100.json --backend cpu --wav research/eval/user-recording/speech.wav --repeats 3 > reports/fused/latency_resident_cpu.jsonl

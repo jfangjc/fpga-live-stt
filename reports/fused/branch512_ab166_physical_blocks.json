@@ -1,0 +1,2093 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "library_sha256": "b1446f2a3ce0387a88201d9cecce4c5dd0e49dde93ace1adf2e30d568fa1f59a",
+  "boundary_library_sha256": "95948662d4244bba449810edce277b2b2baa4172dae26843c6a7895925de876a",
+  "driver_sha256": "7d4b3405fd464cce7bfc76b43d9f570f8de452cf7db971de48b082b7cc3be9fd",
+  "firmware_sha256": "fad8317f3e1f5f9bdd20e923551ecdba9bccac5ec4e83db855df13c1b19d3d15",
+  "clock_hz": 166666666,
+  "clock_readback_hz": 166666665,
+  "graph_compiler_sha256": "861abe068f052079ef82b4b2926003e5e8662b2b18cfba83e10997b54ee2f816",
+  "boundary_transform_sha256": "c8dc32657d936e44a4834a34a051011fc355197f20923ef83981316d96951082",
+  "residual_tail_library_sha256": "ce97d2ce3c8db1a09eafccf37797deb0a4f6666aeae7135d9e92e5a9191d0eb2",
+  "pair_compiler_sha256": "b960d57d37c334adc6fce0174e797bcbf64c9d54d802e917eb0f6c6e877d5e12",
+  "timer_source_sha256": "d6defa3f0fa72eb9dad42f1d1966b454d137067c8aef787ae476d2e22c03abac",
+  "capture_tested": false,
+  "representative_corpus_qualified": false,
+  "warm_transactions": 23,
+  "retained_pairs": 121,
+  "residual_projections": 21,
+  "main_path_pairs": 100,
+  "weight_updates_per_inference": 242,
+  "weight_transfers_inside_timing": true,
+  "retained_boundaries": 77,
+  "maximum_feature_frames": 256,
+  "kernel_program_cache": true,
+  "all_outputs_bit_exact": true,
+  "cases": [
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 1,
+      "valid_times": 1,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 6,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 13,
+      "valid_times": 13,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 8,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 17,
+      "valid_times": 17,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 32,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 65,
+      "valid_times": 65,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 0,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 128,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "residual": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "times": 256,
+      "valid_times": 256,
+      "stride": 1,
+      "all_outputs_bit_exact": true
+    }
+  ],
+  "regions": 21,
+  "input_contract": "Invalid suffix bytes equal quantization zero",
+  "body_reference_library_sha256": "b415ef0c16d5d8da460fa048e0cd5fa9f6dc24592e2d31392a27184e13f1e8ba",
+  "source_sha256": "e5eb7b330154843f50ad4b11606bb8e45f7cb7a3c4f788ac44e09d18b8763fb5",
+  "compiler_sha256": "861abe068f052079ef82b4b2926003e5e8662b2b18cfba83e10997b54ee2f816"
+}

@@ -1,0 +1,78 @@
+{
+  "bd_validated": "true",
+  "dma_parameters_match": true,
+  "irq_concat_match": true,
+  "register_addresses": {
+    "/tensor_dma/S_AXI_LITE/Reg": 2684420096,
+    "/tile_control/S_AXI/Reg": 2684485632,
+    "/voice/S_AXI/reg0": 2684354560
+  },
+  "expected_ps_irq0_device_tree_spis": [
+    89,
+    90,
+    91
+  ],
+  "artifacts": {
+    "reports/cached_dma_timing.rpt": {
+      "exists": true,
+      "fresh": true,
+      "sha256": "776468c5dec6156e5c9c55c342721b0e8d7b826ace56077d2d58120925073176"
+    },
+    "reports/cached_dma_drc.rpt": {
+      "exists": true,
+      "fresh": true,
+      "sha256": "9c264dd7c1ef351c5dd44cbf6566bdbaa7918c0b71737303c9fd741d6b7299f7"
+    },
+    "reports/cached_dma_utilization.rpt": {
+      "exists": true,
+      "fresh": true,
+      "sha256": "531740f5ec7134ae6b06aa956dde9acc678f3daf3d52e1e9217394e207b85f62"
+    },
+    "deployment/asr_v2.xsa": {
+      "exists": true,
+      "fresh": true,
+      "sha256": "2f522636b86783b24f9ef5b29f401a02d17061441ad1f1a71673f11fe84bb8e4"
+    },
+    "Prototype_v2.runs/impl_1/asr_v2_top.bit": {
+      "exists": true,
+      "fresh": true,
+      "sha256": "397e16713b07628cf6ff16ae3e8c30a954f3e8a58ca2818ea743fa4ee4d9af7c"
+    }
+  },
+  "overlays": [
+    {
+      "path": "deployment\\asr-v2.dts",
+      "checks": {
+        "audio": true,
+        "dma": true,
+        "gpio": true,
+        "irq89": true,
+        "irq90": true,
+        "irq91": true
+      },
+      "sha256": "470c9e7dcdde84823018370b945b326e80d68de13693a0607f538d33b950928f"
+    }
+  ],
+  "timing_pass": true,
+  "drc_pass": true,
+  "drc_error_lines": [],
+  "complete": true,
+  "sources_sha256": {
+    "rtl\\qn_cached_axis.v": "7f866217111550195c43bb33d863f3d42e50381c283e0b59056e1c1ba79e6211",
+    "rtl\\qn_mac.v": "f94785f6245adaf94b89360dd89625339ba4cb4be3816177f146056179270aa7",
+    "rtl\\sph0645_rx.v": "7e809414a0070baedfb482166b7418bd2321a4034388aac6b42878d15b2cf612",
+    "rtl\\voice_axi.v": "5d93921e7080ca50e52936efad7f677b52abdd7fa1090ce65de559e8a65524ff",
+    "rtl\\voice_dma_top.v": "7c4f200d6d573ec390e91092bd710f9b2eebe73d89406fe92b216185014048a6",
+    "hardware\\mic_cdc.xdc": "429a78b054823d8bcb1db25775e4212595bf893a191a3e3935858ad07887e054",
+    "hardware\\pmod.xdc": "7ac33875cbd770329702d893e530e2b74479a1d62e99bf195ac461c142291146",
+    "Prototype_v2.srcs\\sources_1\\bd\\asr_v2_system\\asr_v2_system.bd": "74be57a80ca93f5a367cce67bfa59123b57323e914f168ac39d50ce8d0b3d91c",
+    "scripts\\integrate_v2.tcl": "83490ded1a4629327a3bd43ebceade39b84e6849aa811999a18166f2ea0cfbf5",
+    "scripts\\build_v2.tcl": "8a6b29d350d8b3fd0d033a3bad32f2906439497c72045c9bae9f230253a96837",
+    "Prototype_v2.srcs\\constrs_1\\imports\\Lab2b-Files\\kria-constraints.xdc": "7ac33875cbd770329702d893e530e2b74479a1d62e99bf195ac461c142291146"
+  },
+  "limits": [
+    "Timestamps detect obvious staleness, not provenance alone; source hashes must be frozen with completed reports",
+    "IRQ mapping uses verified previous platform PS IRQ0 SPI89; physical overlay application must validate running board symbols",
+    "Pass requires successful routed timing/DRC and deployment checks beyond JSON wiring"
+  ]
+}

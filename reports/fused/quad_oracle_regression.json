@@ -1,0 +1,131 @@
+{
+  "hardware_execution": false,
+  "nodes": [
+    "/encoder/encoder.1/mconv.6/conv/Conv_quant",
+    "/encoder/encoder.1/mconv.11/conv/Conv_quant",
+    "/encoder/encoder.1/mconv.16/conv/Conv_quant"
+  ],
+  "model_sha256": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+  "library_sha256": "c84bf0c0e80f11d46d8291e3ad3f948ee4fe5c72fd21a75d95773ea5c0ca0ca6",
+  "all_transcripts_identical": true,
+  "clips": [
+    {
+      "id": "6930-75918-0000",
+      "cpu_text": "concord returned to its place amidst the tents",
+      "oracle_text": "concord returned to its place amidst the tents",
+      "reference": "concord returned to its place amidst the tents",
+      "cpu_errors": 0,
+      "reference_words": 8,
+      "oracle_errors": 0,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "manifest": "research/eval/librispeech-mini/evaluation.jsonl"
+    },
+    {
+      "id": "6930-75918-0001",
+      "cpu_text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "oracle_text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "reference": "the english forwarded to the french baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "cpu_errors": 2,
+      "reference_words": 43,
+      "oracle_errors": 2,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+      "manifest": "research/eval/librispeech-mini/evaluation.jsonl"
+    },
+    {
+      "id": "6930-75918-0002",
+      "cpu_text": "congratulations were poured in upon the princess everywhere during her journey",
+      "oracle_text": "congratulations were poured in upon the princess everywhere during her journey",
+      "reference": "congratulations were poured in upon the princess everywhere during her journey",
+      "cpu_errors": 0,
+      "reference_words": 11,
+      "oracle_errors": 0,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "ca418189ed1db4ce1bf5e6940d51a9ce870d4d52f3ef9019ccdbb2189d1a0a9c",
+      "manifest": "research/eval/librispeech-mini/evaluation.jsonl"
+    },
+    {
+      "id": "6930-75918-0003",
+      "cpu_text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+      "oracle_text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+      "reference": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she had suffered too much unhappiness in england for england to have made her forget france",
+      "cpu_errors": 1,
+      "reference_words": 64,
+      "oracle_errors": 1,
+      "max_logit_difference": 13.414865493774414,
+      "max_valid_logit_difference": 13.414865493774414,
+      "audio_sha256": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2",
+      "manifest": "research/eval/librispeech-mini/evaluation.jsonl"
+    },
+    {
+      "id": "6930-75918-0004",
+      "cpu_text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "oracle_text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "reference": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened before them",
+      "cpu_errors": 1,
+      "reference_words": 31,
+      "oracle_errors": 1,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "af568c26be7892254398fc5ecc6a346dc28c3e5ef1123aa6cdf8a8dda3ce1c57",
+      "manifest": "research/eval/librispeech-mini/evaluation.jsonl"
+    },
+    {
+      "id": "user-speech-original",
+      "cpu_text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "oracle_text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "cpu_errors": 4,
+      "reference_words": 28,
+      "oracle_errors": 4,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "6e6fc731ed40933d7e6aea715aa7546e8f4c7e4a6cbff627c93ef5c499a201a5",
+      "manifest": "research/eval/user-recording/evaluation.jsonl"
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "cpu_text": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+      "oracle_text": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "cpu_errors": 5,
+      "reference_words": 28,
+      "oracle_errors": 5,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "0efae30a4d4919d616b327c1b61e7846f59250fb55681418acefaa13f47fb416",
+      "manifest": "research/eval/user-stress-ac/evaluation.jsonl"
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "cpu_text": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "oracle_text": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "cpu_errors": 4,
+      "reference_words": 28,
+      "oracle_errors": 4,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "66b2c22d819230ef7668e0c93b1724e753d6ca90a89c438b92a7742f914cfc2c",
+      "manifest": "research/eval/user-stress-ac/evaluation.jsonl"
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "cpu_text": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+      "oracle_text": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+      "reference": "two hundred number made up so is the api price on the right, both of these numbers are fake and neither of them represent the actual costs to",
+      "cpu_errors": 7,
+      "reference_words": 28,
+      "oracle_errors": 7,
+      "max_logit_difference": 0.0,
+      "max_valid_logit_difference": 0.0,
+      "audio_sha256": "c281634ccf180d03894d94704849b1718adf80f1033fc355a6281bbc092aa98d",
+      "manifest": "research/eval/user-stress-ac/evaluation.jsonl"
+    }
+  ],
+  "representative_accuracy_claimed": false
+}

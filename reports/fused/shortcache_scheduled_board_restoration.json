@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "accepted_application": "asr-v3-bulk",
+  "fpga_state": "operating",
+  "clock_hz": 99999999,
+  "firmware_sha256": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
+  "driver_sha256": "2fbe494b5bf4fea682b72d6e94c6321f2985c3616415fe2a1626809fd2f1f42f",
+  "loaded_module_srcversion": "119D8EA219110BF8E1229A8",
+  "irq": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "source_sha256": "8fa362593148186392d2ff88569f439259a21e1cfa8060801f91e68210d20382"
+}

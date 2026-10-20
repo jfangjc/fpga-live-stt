@@ -1,0 +1,94 @@
+{
+  "source_identity": {
+    "model.onnx": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "frontend.npz": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "vocab.txt": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "frontend_decoder_source": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "wer_source": "8e25ea2e2607e8ed1d3c3fbf1f9906336c462bbaeea3793c152dbcc365d6a119"
+  },
+  "model_sha256": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+  "sources_sha256": {
+    "benchmark_cpu.py": "d285bf6e6fe0f835c478e2c9107367590dc500fcb070868716644a2ff7a910b7",
+    "build_cpu_int8.py": "ed294de79441196a401ebb8f8cffe68521b8264c6292d204b86405ea2c1c3b69",
+    "common.py": "c724a52134c0580eb27661833e65f927b06960dd123b265691e788ed2ac9d48a",
+    "experiment.py": "43e6ab83fa0b4899118bbc5dd232b07719db146521ed3abc91133c86e1349f98",
+    "oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "test_fused.py": "7607bd8e3858b44571f8708e3f91a1b2b98be4657d4baff65fef8ac2ea415938"
+  },
+  "calibration_manifest_sha256": "f0c1c6ab7e2e99603ec71b98a59b74c8a8a25eb4a885b900dfe5cafdcf967748",
+  "calibration_audio_sha256": [
+    "20e10e583b4918e05cea91316f7bde65a345d2756e64abc7f7ee133e2a0547f5",
+    "2015beb0e883fac46113c4295bf26852dd4edf4db4f03992f7786162dacfbccf",
+    "3e79d139f899ba281721ce9ed9a716c9c4b6491e7d88f45dad849ee74c7e0a29",
+    "08743768593471a329e747aa8a301f215747c140d15c0a7438b56e4b90ecc7e8",
+    "32cba910e144ceba8155d8d82a591f20c307446708bf617a4fdfe4c3db98c6f0"
+  ],
+  "calibration_ids": [
+    "2277-149896-0000",
+    "2277-149896-0001",
+    "2277-149896-0002",
+    "2277-149896-0003",
+    "2277-149896-0004"
+  ],
+  "evaluation_manifest_sha256": "4a12343465ea37810d5eba71f107d3f748bd2b158ca8bc0fc46654fb290eb03c",
+  "precision": "ORT QLinearConv: asymmetric UINT8 activations/per-channel INT8 weights/INT32 bias; FP32 SE/residual/decoder",
+  "integer_conv_nodes": 235,
+  "hardware_execution": false,
+  "cpu_wer": 0.01910828025477707,
+  "int8_wer": 0.025477707006369428,
+  "absolute_wer_degradation": 0.006369426751592359,
+  "regression_within_one_pp": true,
+  "final_accuracy_gate_claimed": false,
+  "clips": [
+    {
+      "id": "6930-75918-0000",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "cpu_text": "concord returned to its place amidst the tents",
+      "int8_text": "concord returned to its place amidst the tents",
+      "cpu_errors": 0,
+      "int8_errors": 0,
+      "reference_words": 8,
+      "diagnostic_seconds": 0.06602040000143461
+    },
+    {
+      "id": "6930-75918-0001",
+      "audio_sha256": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+      "cpu_text": "the english foarded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "int8_text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "cpu_errors": 2,
+      "int8_errors": 2,
+      "reference_words": 43,
+      "diagnostic_seconds": 0.1066158999747131
+    },
+    {
+      "id": "6930-75918-0002",
+      "audio_sha256": "ca418189ed1db4ce1bf5e6940d51a9ce870d4d52f3ef9019ccdbb2189d1a0a9c",
+      "cpu_text": "congratulations were poured in upon the princess everywhere during her journey",
+      "int8_text": "congratulations were poured in upon the princess everywhere during her journey",
+      "cpu_errors": 0,
+      "int8_errors": 0,
+      "reference_words": 11,
+      "diagnostic_seconds": 0.07356600000639446
+    },
+    {
+      "id": "6930-75918-0003",
+      "audio_sha256": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2",
+      "cpu_text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she had suffered too much unhappiness in england for england to have made her forget france",
+      "int8_text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+      "cpu_errors": 0,
+      "int8_errors": 1,
+      "reference_words": 64,
+      "diagnostic_seconds": 0.20920080001815222
+    },
+    {
+      "id": "6930-75918-0004",
+      "audio_sha256": "af568c26be7892254398fc5ecc6a346dc28c3e5ef1123aa6cdf8a8dda3ce1c57",
+      "cpu_text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "int8_text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "cpu_errors": 1,
+      "int8_errors": 1,
+      "reference_words": 31,
+      "diagnostic_seconds": 0.11256000000867061
+    }
+  ]
+}

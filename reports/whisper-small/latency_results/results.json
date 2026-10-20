@@ -1,0 +1,614 @@
+{
+  "scope": "End-to-end process time including model load, WAV, frontend, encoder, decoder, text and DMA",
+  "model": "openai/whisper-small",
+  "language": "en",
+  "decoding": "greedy beam=1 best_of=1 temperature=0 no fallback; attention mode recorded per run",
+  "threads": 4,
+  "warmup": 0,
+  "repeats": 3,
+  "model_file_pre_read": true,
+  "external_resource_timing": true,
+  "fpga_decoder_dense": false,
+  "fpga_attention": true,
+  "cpu_attention_mode": "unfused",
+  "artifacts": {
+    "build-cpu/bin/whisper-cli": "b00d2a2517604858ba332b6b144e7bdd47932712c35e647dc6d79d489e461251",
+    "build-hybrid/bin/whisper-cli": "8dfefb09f7e81fde24494b84720938a344065df7d1f50c8d880e5556c02d7000",
+    "models/ggml-small-q8_0.bin": "49c8fb02b65e6049d5fa6c04f81f53b867b5ec9540406812c643f177317f779f",
+    "models/ggml-small.bin": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b",
+    "models/ggml-small-q5_0.bin": "d952ad748a45d78449a6190970d43030f161f3515e220e06fc1dc6c1ee6607d2",
+    "/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0000.wav": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+    "/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0001.wav": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+    "/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0003.wav": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2"
+  },
+  "dynamic_libraries": {
+    "cpu": {
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/src/libwhisper.so.1": "63ba9ea37f9349368d19b969a4bc3cceed5d42d86b8f178da6c8b3b8ab7c3998",
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml.so.0": "9f798e67cf7fe187989988b6568d9f2d57877c94f4eece1a78d2de25c0a2485b",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml-base.so.0": "8b08e2145f69ab77f5c7508ee3d31c1eb19c7557ace162efdb094b58d9986600",
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml-cpu.so.0": "95fa9632f9272aab4d3e5eff24ff2e11326ed470b4008bdebdeb57b77f6f51d0"
+    },
+    "hybrid": {
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/src/libwhisper.so.1": "380c6c6bc441e538511f33cec0cbcfc6305368039ceab6af5f69860ace18c3b2",
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/ggml/src/libggml.so.0": "d1de42b36d9ee99d4e2fc0dba1de9926b34d935246b7480ab5d1ea279f9e7f40",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/ggml/src/libggml-base.so.0": "2f94187a98eb5dce089a98e2bc6c85e0bdedb34bd1996f608040eb24b20d88ca",
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/ggml/src/libggml-cpu.so.0": "9ed38f2ebf68527ff8d5955375d6635eb1eb519e09392371d0bcdf4d6e003e6f"
+    }
+  },
+  "clips": [
+    {
+      "audio": "/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0000.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 74.55522704700024,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_0_cpu_0_no_flash.log",
+            "resource_log": "latency_results/0_0_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 74.53671914699999,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_1_cpu_0_no_flash.log",
+            "resource_log": "latency_results/0_1_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 74.54287791499974,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_2_cpu_0_no_flash.log",
+            "resource_log": "latency_results/0_2_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 58.264175153,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_0_cpu_1_no_flash.log",
+            "resource_log": "latency_results/0_0_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 58.40274870400026,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_1_cpu_1_no_flash.log",
+            "resource_log": "latency_results/0_1_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 58.403577775000485,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_2_cpu_1_no_flash.log",
+            "resource_log": "latency_results/0_2_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 63.85795866200033,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_0_cpu_2_no_flash.log",
+            "resource_log": "latency_results/0_0_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 63.856185562000064,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_1_cpu_2_no_flash.log",
+            "resource_log": "latency_results/0_1_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 63.76885888900051,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_2_cpu_2_no_flash.log",
+            "resource_log": "latency_results/0_2_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 21.015414733999933,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_0_hybrid.log",
+            "resource_log": "latency_results/0_0_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          },
+          {
+            "seconds": 19.507394285999908,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_1_hybrid.log",
+            "resource_log": "latency_results/0_1_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          },
+          {
+            "seconds": 19.292663634000746,
+            "text": "Concord returned to its place amidst the tents.",
+            "log": "latency_results/0_2_hybrid.log",
+            "resource_log": "latency_results/0_2_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 74.54287791499974,
+          "p95_seconds": 74.55522704700024,
+          "runs": 3
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 58.40274870400026,
+          "p95_seconds": 58.403577775000485,
+          "runs": 3
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 63.856185562000064,
+          "p95_seconds": 63.85795866200033,
+          "runs": 3
+        },
+        "hybrid": {
+          "p50_seconds": 19.507394285999908,
+          "p95_seconds": 21.015414733999933,
+          "runs": 3
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.9938774932085535,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0001.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 78.44684200499978,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_0_cpu_0_no_flash.log",
+            "resource_log": "latency_results/1_0_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 78.45456434399966,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_1_cpu_0_no_flash.log",
+            "resource_log": "latency_results/1_1_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 78.62198259200068,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_2_cpu_0_no_flash.log",
+            "resource_log": "latency_results/1_2_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 64.11330758099939,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_0_cpu_1_no_flash.log",
+            "resource_log": "latency_results/1_0_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 61.6168673330003,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_1_cpu_1_no_flash.log",
+            "resource_log": "latency_results/1_1_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 61.49633316299969,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_2_cpu_1_no_flash.log",
+            "resource_log": "latency_results/1_2_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 67.27042407500085,
+            "text": "The English folded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_0_cpu_2_no_flash.log",
+            "resource_log": "latency_results/1_0_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 67.15187399899969,
+            "text": "The English folded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_1_cpu_2_no_flash.log",
+            "resource_log": "latency_results/1_1_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 67.26703240400002,
+            "text": "The English folded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_2_cpu_2_no_flash.log",
+            "resource_log": "latency_results/1_2_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 22.57055283199952,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_0_hybrid.log",
+            "resource_log": "latency_results/1_0_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          },
+          {
+            "seconds": 22.79477430499992,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_1_hybrid.log",
+            "resource_log": "latency_results/1_1_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          },
+          {
+            "seconds": 22.721333966000202,
+            "text": "The English voted to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "latency_results/1_2_hybrid.log",
+            "resource_log": "latency_results/1_2_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 78.45456434399966,
+          "p95_seconds": 78.62198259200068,
+          "runs": 3
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 61.6168673330003,
+          "p95_seconds": 64.11330758099939,
+          "runs": 3
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 67.26703240400002,
+          "p95_seconds": 67.27042407500085,
+          "runs": 3
+        },
+        "hybrid": {
+          "p50_seconds": 22.721333966000202,
+          "p95_seconds": 22.79477430499992,
+          "runs": 3
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.7118507841662236,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0003.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 81.12850375700054,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_0_cpu_0_no_flash.log",
+            "resource_log": "latency_results/2_0_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 81.12933537000026,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_1_cpu_0_no_flash.log",
+            "resource_log": "latency_results/2_1_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 81.142436567,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_2_cpu_0_no_flash.log",
+            "resource_log": "latency_results/2_2_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 63.8268389800005,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_0_cpu_1_no_flash.log",
+            "resource_log": "latency_results/2_0_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 63.82037804800075,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_1_cpu_1_no_flash.log",
+            "resource_log": "latency_results/2_1_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 63.77287639499991,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_2_cpu_1_no_flash.log",
+            "resource_log": "latency_results/2_2_cpu_1_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 69.63692282500051,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_0_cpu_2_no_flash.log",
+            "resource_log": "latency_results/2_0_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 69.5352095900007,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_1_cpu_2_no_flash.log",
+            "resource_log": "latency_results/2_1_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 69.5629317060002,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_2_cpu_2_no_flash.log",
+            "resource_log": "latency_results/2_2_cpu_2_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 24.764206497000487,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_0_hybrid.log",
+            "resource_log": "latency_results/2_0_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          },
+          {
+            "seconds": 24.866256992999297,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_1_hybrid.log",
+            "resource_log": "latency_results/2_1_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          },
+          {
+            "seconds": 25.01704366100057,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "latency_results/2_2_hybrid.log",
+            "resource_log": "latency_results/2_2_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 120,
+              "ioctls": 1728,
+              "weight_loads": 720,
+              "time_tiles": 67680
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 81.12933537000026,
+          "p95_seconds": 81.142436567,
+          "runs": 3
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 63.82037804800075,
+          "p95_seconds": 63.8268389800005,
+          "runs": 3
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 69.5629317060002,
+          "p95_seconds": 69.63692282500051,
+          "runs": 3
+        },
+        "hybrid": {
+          "p50_seconds": 24.866256992999297,
+          "p95_seconds": 25.01704366100057,
+          "runs": 3
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.5665454220137907,
+      "text_parity": true,
+      "timing_2x": true
+    }
+  ],
+  "qualified_2x": false,
+  "manifest": {
+    "path": "latency-three/evaluation.jsonl",
+    "sha256": "d698177928cfe0a6c822271e414b71ad7012311be667b6894bd1594249ef3d30"
+  },
+  "all_clips_timing_2x": true,
+  "artifacts_unchanged_after_run": true,
+  "accuracy_status": "Corpus WER not measured; prototype remains unqualified"
+}

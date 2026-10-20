@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "before": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "after": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "source_sha256": "0124f6861aa731a1226e34d6eddb6a143777f2fd00491b1a699e73056504b451",
+  "reports": [
+    "reports/fused/pair_block_half.json",
+    "reports/fused/pair_total_half.json",
+    "reports/fused/pair_block_one.json",
+    "reports/fused/pair_total_one.json"
+  ]
+}

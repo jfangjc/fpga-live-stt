@@ -1,0 +1,368 @@
+{
+  "scope": "End-to-end process time including model load, WAV, frontend, encoder, decoder, text and DMA",
+  "model": "openai/whisper-base",
+  "language": "en",
+  "decoding": "greedy beam=1 best_of=1 temperature=0 no fallback; attention mode recorded per run",
+  "threads": 4,
+  "warmup": 1,
+  "repeats": 3,
+  "model_file_pre_read": true,
+  "external_resource_timing": true,
+  "fpga_decoder_dense": false,
+  "fpga_attention": true,
+  "cpu_attention_mode": "unfused",
+  "artifacts": {
+    "/home/ubuntu/whisper-small-kv260-20261020/build-cpu/bin/whisper-cli": "b00d2a2517604858ba332b6b144e7bdd47932712c35e647dc6d79d489e461251",
+    "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/bin/whisper-cli": "8dfefb09f7e81fde24494b84720938a344065df7d1f50c8d880e5556c02d7000",
+    "/home/ubuntu/whisper-kv260/model-base-q8_0.bin": "c577b9a86e7e048a0b7eada054f4dd79a56bbfa911fbdacf900ac5b567cbb7d9",
+    "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0000.wav": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+    "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0001.wav": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+    "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0003.wav": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2"
+  },
+  "dynamic_libraries": {
+    "cpu": {
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/src/libwhisper.so.1": "63ba9ea37f9349368d19b969a4bc3cceed5d42d86b8f178da6c8b3b8ab7c3998",
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml.so.0": "9f798e67cf7fe187989988b6568d9f2d57877c94f4eece1a78d2de25c0a2485b",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml-base.so.0": "8b08e2145f69ab77f5c7508ee3d31c1eb19c7557ace162efdb094b58d9986600",
+      "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml-cpu.so.0": "95fa9632f9272aab4d3e5eff24ff2e11326ed470b4008bdebdeb57b77f6f51d0"
+    },
+    "hybrid": {
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/src/libwhisper.so.1": "380c6c6bc441e538511f33cec0cbcfc6305368039ceab6af5f69860ace18c3b2",
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/ggml/src/libggml.so.0": "d1de42b36d9ee99d4e2fc0dba1de9926b34d935246b7480ab5d1ea279f9e7f40",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/ggml/src/libggml-base.so.0": "2f94187a98eb5dce089a98e2bc6c85e0bdedb34bd1996f608040eb24b20d88ca",
+      "/home/ubuntu/whisper-small-kv260-20261020/build-hybrid/ggml/src/libggml-cpu.so.0": "9ed38f2ebf68527ff8d5955375d6635eb1eb519e09392371d0bcdf4d6e003e6f"
+    }
+  },
+  "clips": [
+    {
+      "audio": "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0000.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 16.91871708600047,
+            "text": "Concorde returned to its place amidst the tents.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_0_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_0_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 16.960613023000406,
+            "text": "Concorde returned to its place amidst the tents.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_1_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_1_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 16.92597778599975,
+            "text": "Concorde returned to its place amidst the tents.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_2_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_2_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 6.63267230800011,
+            "text": "Concorde returned to its place amidst the tents.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_0_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_0_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          },
+          {
+            "seconds": 6.603795779000393,
+            "text": "Concorde returned to its place amidst the tents.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_1_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_1_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          },
+          {
+            "seconds": 8.740746971999215,
+            "text": "Concorde returned to its place amidst the tents.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_2_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/0_2_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 16.92597778599975,
+          "p95_seconds": 16.960613023000406,
+          "runs": 3
+        },
+        "hybrid": {
+          "p50_seconds": 6.63267230800011,
+          "p95_seconds": 8.740746971999215,
+          "runs": 3
+        }
+      },
+      "best_cpu": "cpu_0_no_flash",
+      "speedup": 2.551909245627014,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0001.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 18.41929518300003,
+            "text": "The English forwarded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_0_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_0_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 18.32191924000017,
+            "text": "The English forwarded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_1_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_1_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 18.37028146099965,
+            "text": "The English forwarded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_2_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_2_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 8.13484852000056,
+            "text": "The English forwarded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_0_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_0_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          },
+          {
+            "seconds": 8.080576954000207,
+            "text": "The English forwarded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_1_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_1_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          },
+          {
+            "seconds": 8.086468367000634,
+            "text": "The English forwarded to the French baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_2_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/1_2_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 18.37028146099965,
+          "p95_seconds": 18.41929518300003,
+          "runs": 3
+        },
+        "hybrid": {
+          "p50_seconds": 8.086468367000634,
+          "p95_seconds": 8.13484852000056,
+          "runs": 3
+        }
+      },
+      "best_cpu": "cpu_0_no_flash",
+      "speedup": 2.2717310731054527,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0003.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 19.232174054999632,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_0_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_0_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 19.171984615000838,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_1_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_1_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          },
+          {
+            "seconds": 19.221723620000375,
+            "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_2_cpu_0_no_flash.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_2_cpu_0_no_flash.time.txt",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 8.953155813000194,
+            "text": "From the respect paid her on all sides, she seemed like a queen. And from the adoration with which she was treated by two or three, she appeared an object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_0_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_0_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          },
+          {
+            "seconds": 8.962562677000278,
+            "text": "From the respect paid her on all sides, she seemed like a queen. And from the adoration with which she was treated by two or three, she appeared an object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_1_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_1_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          },
+          {
+            "seconds": 8.97021550699992,
+            "text": "From the respect paid her on all sides, she seemed like a queen. And from the adoration with which she was treated by two or three, she appeared an object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+            "log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_2_hybrid.log",
+            "resource_log": "/home/ubuntu/whisper-base-os-audit-20261020/current_results/2_2_hybrid.time.txt",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 19.221723620000375,
+          "p95_seconds": 19.232174054999632,
+          "runs": 3
+        },
+        "hybrid": {
+          "p50_seconds": 8.962562677000278,
+          "p95_seconds": 8.97021550699992,
+          "runs": 3
+        }
+      },
+      "best_cpu": "cpu_0_no_flash",
+      "speedup": 2.1446682508929222,
+      "text_parity": false,
+      "timing_2x": true
+    }
+  ],
+  "qualified_2x": false,
+  "all_clips_timing_2x": true,
+  "artifacts_unchanged_after_run": true,
+  "accuracy_status": "Corpus WER not measured; prototype remains unqualified"
+}

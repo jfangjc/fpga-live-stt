@@ -1,0 +1,1023 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "physical_backend_implemented": true,
+  "pairs": [
+    [
+      "/encoder/encoder.1/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.1/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.1/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.1/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.1/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.1/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.1/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.1/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.2/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.2/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.2/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.2/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.2/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.2/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.2/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.2/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.2/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.2/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.3/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.3/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.3/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.3/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.3/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.3/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.3/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.3/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.4/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.4/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.4/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.4/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.4/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.4/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.4/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.4/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.4/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.4/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.5/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.5/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.5/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.5/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.5/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.5/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.5/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.5/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.5/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.5/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.6/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.6/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.6/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.6/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.6/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.6/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.6/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.6/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.6/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.6/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.7/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.7/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.7/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.7/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.7/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.7/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.7/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.7/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.8/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.8/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.8/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.8/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.8/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.8/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.8/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.8/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.8/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.8/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.9/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.9/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.9/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.9/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.9/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.9/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.9/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.9/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.9/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.9/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.10/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.10/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.10/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.10/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.10/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.10/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.10/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.10/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.10/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.10/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.11/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.11/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.11/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.11/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.11/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.11/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.11/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.11/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.11/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.11/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.12/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.12/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.12/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.12/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.12/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.12/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.12/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.12/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.12/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.12/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.13/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.13/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.13/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.13/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.13/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.13/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.13/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.13/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.13/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.13/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.14/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.14/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.14/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.14/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.14/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.14/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.14/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.14/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.15/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.15/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.15/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.15/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.15/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.15/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.15/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.15/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.15/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.15/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.16/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.16/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.16/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.16/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.16/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.16/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.16/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.16/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.17/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.17/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.17/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.17/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.17/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.17/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.17/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.17/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.17/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.17/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.18/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.18/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.18/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.18/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.18/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.18/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.18/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.18/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.18/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.18/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.19/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.19/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.19/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.19/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.19/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.19/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.19/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.19/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.19/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.19/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.20/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.20/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.20/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.20/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.20/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.20/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.20/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.20/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.20/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.20/mconv.21/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.21/mconv.0/conv/Conv_quant",
+      "/encoder/encoder.21/mconv.1/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.21/mconv.5/conv/Conv_quant",
+      "/encoder/encoder.21/mconv.6/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.21/mconv.10/conv/Conv_quant",
+      "/encoder/encoder.21/mconv.11/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.21/mconv.15/conv/Conv_quant",
+      "/encoder/encoder.21/mconv.16/conv/Conv_quant"
+    ],
+    [
+      "/encoder/encoder.21/mconv.20/conv/Conv_quant",
+      "/encoder/encoder.21/mconv.21/conv/Conv_quant"
+    ]
+  ],
+  "groups": [
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.1/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.2/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.1/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.3/mconv.1/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 0
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.3/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.3/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 2
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.4/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.5/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.6/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.7/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.8/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.9/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.9/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.9/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.9/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.10/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.10/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.10/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.10/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.11/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.11/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.11/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.11/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.12/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.12/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.12/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.12/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.13/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.13/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.13/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.13/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.14/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.14/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.14/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 3
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.15/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.15/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.15/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.15/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.11/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.16/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.16/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.16/mconv.11/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 2
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.16/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 0
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.17/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.17/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.17/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.17/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.18/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.18/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.18/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.18/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.19/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.19/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.19/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.19/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.20/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.20/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.20/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.20/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain",
+      "pairs": [
+        "/encoder/encoder.21/mconv.1/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.21/mconv.6/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.21/mconv.11/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.21/mconv.16/conv/Conv_quant_retained_pair",
+        "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair"
+      ],
+      "retained_boundaries": 4
+    }
+  ],
+  "retained_pairs": 100,
+  "transactions": 23,
+  "all_diagnostic_transcripts_equal": true,
+  "all_cpu_logits_bit_exact": true,
+  "representative_wer_qualified": false,
+  "clips": [
+    {
+      "id": "user-speech-original",
+      "seconds": 0.25,
+      "text": "you",
+      "cpu_text": "you",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-speech-original",
+      "seconds": 0.5,
+      "text": "to",
+      "cpu_text": "to",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-speech-original",
+      "seconds": 1,
+      "text": "funery number mad",
+      "cpu_text": "funery number mad",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-speech-original",
+      "seconds": 2,
+      "text": "tuninary number made up so",
+      "cpu_text": "tuninary number made up so",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 0.25,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 0.5,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 1,
+      "text": "conquor",
+      "cpu_text": "conquor",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 2,
+      "text": "concord returned to its",
+      "cpu_text": "concord returned to its",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 0.25,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 0.5,
+      "text": "the",
+      "cpu_text": "the",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 1,
+      "text": "the english",
+      "cpu_text": "the english",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 2,
+      "text": "the english fwarded to the french",
+      "cpu_text": "the english fwarded to the french",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 0.25,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 0.5,
+      "text": "think",
+      "cpu_text": "think",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 1,
+      "text": "congratulate",
+      "cpu_text": "congratulate",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 2,
+      "text": "congratulations were poured",
+      "cpu_text": "congratulations were poured",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 0.25,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 0.5,
+      "text": "from the",
+      "cpu_text": "from the",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 1,
+      "text": "from the respect",
+      "cpu_text": "from the respect",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 2,
+      "text": "from the respect paid her on all",
+      "cpu_text": "from the respect paid her on all",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 0.25,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 0.5,
+      "text": "",
+      "cpu_text": "",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 1,
+      "text": "she tau her",
+      "cpu_text": "she tau her",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 2,
+      "text": "she taught her daughter that",
+      "cpu_text": "she taught her daughter that",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 0.25,
+      "text": "you",
+      "cpu_text": "you",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 0.5,
+      "text": "to run",
+      "cpu_text": "to run",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 1,
+      "text": "##unery numberad",
+      "cpu_text": "##unery numberad",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 2,
+      "text": "tunery number made up so",
+      "cpu_text": "tunery number made up so",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 0.25,
+      "text": "you",
+      "cpu_text": "you",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 0.5,
+      "text": "to",
+      "cpu_text": "to",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 1,
+      "text": "funery number mad",
+      "cpu_text": "funery number mad",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 2,
+      "text": "tery number made up so",
+      "cpu_text": "tery number made up so",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 0.25,
+      "text": "you",
+      "cpu_text": "you",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 0.5,
+      "text": "you ro",
+      "cpu_text": "you ro",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 1,
+      "text": "funeral numberad",
+      "cpu_text": "funeral numberad",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 2,
+      "text": "gunerally number made up so",
+      "cpu_text": "gunerally number made up so",
+      "text_exact": true,
+      "length_exact": true,
+      "all_cpu_logits_bit_exact": true,
+      "maximum_logit_difference": 0.0
+    }
+  ],
+  "library_sha256": "b415ef0c16d5d8da460fa048e0cd5fa9f6dc24592e2d31392a27184e13f1e8ba",
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "source_sha256": "9766ca671159e35569f00873b5f9ad9660685e226b9250524592962c55b413fe",
+  "runtime_source_sha256": "eb7645dab573425b0a55721a6c0ea70f1f562f05e20f6a5270c6a6d8f1717c98",
+  "pair_compiler_sha256": "b960d57d37c334adc6fce0174e797bcbf64c9d54d802e917eb0f6c6e877d5e12",
+  "chain_compiler_sha256": "595dc1645c6dd14d7aacc9114bfc5e210b5aee0597884fe2a220da9bf6598bf1",
+  "boundary_transform_sha256": "c8dc32657d936e44a4834a34a051011fc355197f20923ef83981316d96951082",
+  "tail_transform_sha256": "964ceb8f7a6ecd9adfa9ae388bb20cb7fcfe91a7f7d294b2c03da8a9accb45dd",
+  "graph_sha256": "d77b25642201513307737c645819218ee02806d916b19804fd8d3a74f285d012"
+}

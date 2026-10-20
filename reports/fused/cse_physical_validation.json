@@ -1,0 +1,782 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "scope": "Physical integer parity and diagnostic accuracy; not timing acceptance",
+  "nodes": [
+    "/encoder/encoder.1/mconv.1/conv/Conv_quant",
+    "/encoder/encoder.1/mconv.6/conv/Conv_quant",
+    "/encoder/encoder.1/mconv.11/conv/Conv_quant",
+    "/encoder/encoder.1/mconv.16/conv/Conv_quant",
+    "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+    "/encoder/encoder.4/mconv.16/conv/Conv_quant"
+  ],
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "cpu_validation_sha256": "858b481c746ab63e6e5c86fe6c2516a2325c9bca94cb2dcc6595a14dc27fb2d9",
+  "library_sha256": "ee4ae4d5a62b29fce40fae84c80bd8df1cc289f137d89392a09b4c03c78067fe",
+  "driver_sha256": "2fbe494b5bf4fea682b72d6e94c6321f2985c3616415fe2a1626809fd2f1f42f",
+  "firmware_sha256": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
+  "pl_clock_hz": 99999999,
+  "source_sha256": "40f52eebe296115feb49465e4d778e378add9eead666bb3815d598f58f081e62",
+  "errors": {
+    "cpu": 24,
+    "fpga": 24
+  },
+  "words": 269,
+  "wer_degradation_percentage_points": 0.0,
+  "representative_corpus_qualified": false,
+  "clips": [
+    {
+      "id": "user-speech-original",
+      "audio_sha256": "6e6fc731ed40933d7e6aea715aa7546e8f4c7e4a6cbff627c93ef5c499a201a5",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "errors": 4,
+          "encoded_length": 126
+        },
+        "oracle": {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "errors": 4,
+          "encoded_length": 126
+        },
+        "fpga": {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "errors": 4,
+          "encoded_length": 126
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 316,
+          "tx_bytes": 1712320,
+          "rx_bytes": 1294624,
+          "ioctl_seconds": 0.012174461007816717,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.00053454699809663,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0008991609793156385,
+          "unpack_seconds": 0.0015962200704962015,
+          "mac_issue_cycles": 647168,
+          "input_stall_cycles": 139,
+          "output_stall_cycles": 0,
+          "active_cycles": 831857
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0000",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "concord returned to its place amidst the tents",
+          "errors": 0,
+          "encoded_length": 44
+        },
+        "oracle": {
+          "text": "concord returned to its place amidst the tents",
+          "errors": 0,
+          "encoded_length": 44
+        },
+        "fpga": {
+          "text": "concord returned to its place amidst the tents",
+          "errors": 0,
+          "encoded_length": 44
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 110,
+          "tx_bytes": 868544,
+          "rx_bytes": 450848,
+          "ioctl_seconds": 0.004793371044797823,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0005994490056764334,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00016952198348008096,
+          "unpack_seconds": 0.0005339279887266457,
+          "mac_issue_cycles": 225280,
+          "input_stall_cycles": 26,
+          "output_stall_cycles": 0,
+          "active_cycles": 289552
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0001",
+      "audio_sha256": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+          "errors": 2,
+          "encoded_length": 178
+        },
+        "oracle": {
+          "text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+          "errors": 2,
+          "encoded_length": 178
+        },
+        "fpga": {
+          "text": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+          "errors": 2,
+          "encoded_length": 178
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 446,
+          "tx_bytes": 2244800,
+          "rx_bytes": 1827104,
+          "ioctl_seconds": 0.016502148006111383,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006521589821204543,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0010782919998746365,
+          "unpack_seconds": 0.0023947309819050133,
+          "mac_issue_cycles": 913408,
+          "input_stall_cycles": 148,
+          "output_stall_cycles": 0,
+          "active_cycles": 1174026
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0002",
+      "audio_sha256": "ca418189ed1db4ce1bf5e6940d51a9ce870d4d52f3ef9019ccdbb2189d1a0a9c",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "congratulations were poured in upon the princess everywhere during her journey",
+          "errors": 0,
+          "encoded_length": 63
+        },
+        "oracle": {
+          "text": "congratulations were poured in upon the princess everywhere during her journey",
+          "errors": 0,
+          "encoded_length": 63
+        },
+        "fpga": {
+          "text": "congratulations were poured in upon the princess everywhere during her journey",
+          "errors": 0,
+          "encoded_length": 63
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 160,
+          "tx_bytes": 1073344,
+          "rx_bytes": 655648,
+          "ioctl_seconds": 0.006650064868154004,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006780900002922863,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0002139050338882953,
+          "unpack_seconds": 0.0009143599891103804,
+          "mac_issue_cycles": 327680,
+          "input_stall_cycles": 37,
+          "output_stall_cycles": 0,
+          "active_cycles": 421163
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0003",
+      "audio_sha256": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+          "errors": 1,
+          "encoded_length": 292
+        },
+        "oracle": {
+          "text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+          "errors": 1,
+          "encoded_length": 292
+        },
+        "fpga": {
+          "text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+          "errors": 1,
+          "encoded_length": 292
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 730,
+          "tx_bytes": 3408064,
+          "rx_bytes": 2990368,
+          "ioctl_seconds": 0.025124819978373125,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006623680237680674,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.002037576021393761,
+          "unpack_seconds": 0.004076172976056114,
+          "mac_issue_cycles": 1495040,
+          "input_stall_cycles": 273,
+          "output_stall_cycles": 0,
+          "active_cycles": 1921639
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0004",
+      "audio_sha256": "af568c26be7892254398fc5ecc6a346dc28c3e5ef1123aa6cdf8a8dda3ce1c57",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+          "errors": 1,
+          "encoded_length": 139
+        },
+        "oracle": {
+          "text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+          "errors": 1,
+          "encoded_length": 139
+        },
+        "fpga": {
+          "text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+          "errors": 1,
+          "encoded_length": 139
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 350,
+          "tx_bytes": 1851584,
+          "rx_bytes": 1433888,
+          "ioctl_seconds": 0.01285887203994207,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006908469658810645,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0007552880269940943,
+          "unpack_seconds": 0.0017784030351322144,
+          "mac_issue_cycles": 716800,
+          "input_stall_cycles": 189,
+          "output_stall_cycles": 0,
+          "active_cycles": 921395
+        }
+      }
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "audio_sha256": "0efae30a4d4919d616b327c1b61e7846f59250fb55681418acefaa13f47fb416",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+          "errors": 5,
+          "encoded_length": 126
+        },
+        "oracle": {
+          "text": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+          "errors": 5,
+          "encoded_length": 126
+        },
+        "fpga": {
+          "text": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+          "errors": 5,
+          "encoded_length": 126
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 316,
+          "tx_bytes": 1712320,
+          "rx_bytes": 1294624,
+          "ioctl_seconds": 0.012253352004336193,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006820260023232549,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00033792504109442234,
+          "unpack_seconds": 0.001655910979025066,
+          "mac_issue_cycles": 647168,
+          "input_stall_cycles": 124,
+          "output_stall_cycles": 0,
+          "active_cycles": 831842
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "audio_sha256": "66b2c22d819230ef7668e0c93b1724e753d6ca90a89c438b92a7742f914cfc2c",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "errors": 4,
+          "encoded_length": 126
+        },
+        "oracle": {
+          "text": "turre are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "errors": 4,
+          "encoded_length": 126
+        },
+        "fpga": {
+          "text": "turre are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "errors": 4,
+          "encoded_length": 126
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 316,
+          "tx_bytes": 1712320,
+          "rx_bytes": 1294624,
+          "ioctl_seconds": 0.012369949981803074,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006467689818236977,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0003413259983062744,
+          "unpack_seconds": 0.001649832003749907,
+          "mac_issue_cycles": 647168,
+          "input_stall_cycles": 148,
+          "output_stall_cycles": 0,
+          "active_cycles": 831866
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "audio_sha256": "c281634ccf180d03894d94704849b1718adf80f1033fc355a6281bbc092aa98d",
+      "physical_oracle_bit_parity": true,
+      "results": {
+        "cpu": {
+          "text": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+          "errors": 7,
+          "encoded_length": 126
+        },
+        "oracle": {
+          "text": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+          "errors": 7,
+          "encoded_length": 126
+        },
+        "fpga": {
+          "text": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+          "errors": 7,
+          "encoded_length": 126
+        }
+      },
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 6,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "fpga": {
+          "ioctls": 12,
+          "loads": 6,
+          "runs": 316,
+          "tx_bytes": 1712320,
+          "rx_bytes": 1294624,
+          "ioctl_seconds": 0.012096958962501958,
+          "physical_calls": 6,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0006139980396255851,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00033334395266138017,
+          "unpack_seconds": 0.0017071540059987456,
+          "mac_issue_cycles": 647168,
+          "input_stall_cycles": 119,
+          "output_stall_cycles": 0,
+          "active_cycles": 831837
+        }
+      }
+    }
+  ],
+  "environment": {
+    "platform": "Linux-6.8.0-1015-xilinx-aarch64-with-glibc2.39",
+    "machine": "aarch64",
+    "thermal_millicelsius": {},
+    "cpu_frequency_khz": {
+      "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": "1333333",
+      "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": "1333333",
+      "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": "1333333",
+      "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": "1333333"
+    },
+    "cpu_governor": {
+      "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor": "userspace",
+      "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor": "userspace",
+      "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor": "userspace",
+      "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor": "userspace"
+    },
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "hwmon_temperature_millicelsius": {
+      "/sys/class/hwmon/hwmon0/temp3_input": "34505",
+      "/sys/class/hwmon/hwmon0/temp1_input": "37676",
+      "/sys/class/hwmon/hwmon0/temp2_input": "35842"
+    },
+    "iio_temperature_attributes": {
+      "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_input": "37303",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "40716",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_input": "34202",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "40676",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "40508",
+      "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+      "/sys/bus/iio/devices/iio:device0/in_temp7_input": "36075",
+      "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+    },
+    "cpu_frequency_bounds_khz": {
+      "/sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq": "333333",
+      "/sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq": "333333",
+      "/sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq": "333333",
+      "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq": "333333",
+      "/sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq": "1333333",
+      "/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq": "1333333",
+      "/sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq": "1333333",
+      "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq": "1333333"
+    }
+  }
+}

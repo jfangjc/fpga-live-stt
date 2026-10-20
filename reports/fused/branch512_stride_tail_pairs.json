@@ -1,0 +1,636 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "latency_measured": false,
+  "all_outputs_bit_exact": true,
+  "cases": [
+    {
+      "times": 1,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 16,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 16,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 16,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 16,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 32,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 32,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 32,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 32,
+      "valid_times": 32,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 16,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 16,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 16,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 16,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 33,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 33,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 33,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 33,
+      "valid_times": 33,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 64,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 64,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 64,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 64,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 129,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 129,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 129,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 129,
+      "valid_times": 129,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "pattern": "random",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "pattern": "zero",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "pattern": "maximum",
+      "all_three_outputs_bit_exact": true
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "pattern": "alternating",
+      "all_three_outputs_bit_exact": true
+    }
+  ],
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "library_sha256": "b1446f2a3ce0387a88201d9cecce4c5dd0e49dde93ace1adf2e30d568fa1f59a",
+  "stride_tail_source_sha256": "0056026367fd21bc05ade9576bab4aeaf0b35ce1c7d5ac26dc3ac8b8f5859ce7",
+  "source_sha256": "e72dc5958e5e0119d991806405fc4a51d095450f4c2a513da578cf35c189c8b0"
+}

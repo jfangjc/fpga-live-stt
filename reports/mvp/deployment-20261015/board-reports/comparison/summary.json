@@ -1,0 +1,280 @@
+{
+  "onnxruntime": "1.30.0",
+  "results": [
+    {
+      "audio_seconds": 0.5,
+      "runs": 300,
+      "warmup_pairs": 10,
+      "cpu_policy": {
+        "graph": "pool",
+        "threads": 4,
+        "spin": 10,
+        "level": "extended",
+        "tail_impl": "original"
+      },
+      "fpga_policy": {
+        "threads": 4,
+        "spin": 10,
+        "level": "all",
+        "irq_core": 2,
+        "graph": "pool"
+      },
+      "metrics": {
+        "cpu": {
+          "p50_ms": 53.912235500320094,
+          "p95_ms": 69.04684909823118,
+          "p99_ms": 84.35849424669867,
+          "mean_ms": 56.20619996981986,
+          "min_ms": 51.267123002617154,
+          "max_ms": 90.95969899499323,
+          "rtf_p50": 0.10782447100064019,
+          "frontend_p50_ms": 3.6184670025249943,
+          "model_p50_ms": 50.27170600078534,
+          "decode_p50_ms": 0.12410850467858836
+        },
+        "fpga": {
+          "p50_ms": 26.201658496574964,
+          "p95_ms": 28.506812549676397,
+          "p99_ms": 35.37961326888761,
+          "mean_ms": 26.631259066731825,
+          "min_ms": 25.654066004790366,
+          "max_ms": 47.923984995577484,
+          "rtf_p50": 0.05240331699314993,
+          "frontend_p50_ms": 3.614662498875987,
+          "model_p50_ms": 22.515784497954883,
+          "decode_p50_ms": 0.12425349996192381
+        }
+      },
+      "speedup_p50": 2.057588663991152,
+      "latency_reduction_percent": 51.39942120111232,
+      "all_logits_bit_exact": true,
+      "text": "to",
+      "graph_build_seconds": 67.78385164099745,
+      "fpga_session_init_seconds": 12.416062950003834,
+      "cpu_session_init_seconds": 0.9142758189991582,
+      "cold_fpga": {
+        "seconds": 0.11632366900448687,
+        "frontend_seconds": 0.013744937001320068,
+        "model_seconds": 0.09604270799900405,
+        "decode_seconds": 0.006536024004162755,
+        "text": "to",
+        "length": 7,
+        "feature_frames": 51,
+        "counters": {
+          "ioctls": 48,
+          "loads": 256,
+          "runs": 180,
+          "tx_bytes": 11178752,
+          "rx_bytes": 263248,
+          "ioctl_seconds": 0.0739316290273564,
+          "physical_calls": 128,
+          "oracle_calls": 0
+        }
+      },
+      "cold_cpu": {
+        "seconds": 0.08491006700205617,
+        "frontend_seconds": 0.023047818001941778,
+        "model_seconds": 0.06173000499984482,
+        "decode_seconds": 0.00013224400026956573,
+        "text": "to",
+        "length": 7,
+        "feature_frames": 51,
+        "counters": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0
+        }
+      },
+      "audio_sha256": "995477faaaf8f17cd41e031b8b5b23e032ebb20ac49c5a49c81ac4f8b2a5e452"
+    },
+    {
+      "audio_seconds": 1,
+      "runs": 300,
+      "warmup_pairs": 10,
+      "cpu_policy": {
+        "graph": "pool",
+        "threads": 4,
+        "spin": 0,
+        "level": "extended",
+        "tail_impl": "maskfast"
+      },
+      "fpga_policy": {
+        "threads": 4,
+        "spin": 10,
+        "level": "all",
+        "irq_core": 2,
+        "graph": "pool"
+      },
+      "metrics": {
+        "cpu": {
+          "p50_ms": 94.60904300067341,
+          "p95_ms": 118.39613170450322,
+          "p99_ms": 143.3007482124958,
+          "mean_ms": 97.35212784328421,
+          "min_ms": 92.86937100114301,
+          "max_ms": 149.2936889990233,
+          "rtf_p50": 0.09460904300067341,
+          "frontend_p50_ms": 5.481713000335731,
+          "model_p50_ms": 88.92093499889597,
+          "decode_p50_ms": 0.15458899724762887
+        },
+        "fpga": {
+          "p50_ms": 35.94330700070714,
+          "p95_ms": 53.57430495496374,
+          "p99_ms": 65.24240620041381,
+          "mean_ms": 38.42290725309188,
+          "min_ms": 34.464296004443895,
+          "max_ms": 83.2249109953409,
+          "rtf_p50": 0.035943307000707136,
+          "frontend_p50_ms": 5.559195004025241,
+          "model_p50_ms": 30.284366999694612,
+          "decode_p50_ms": 0.15299449660233222
+        }
+      },
+      "speedup_p50": 2.6321741346396452,
+      "latency_reduction_percent": 62.00859256080701,
+      "all_logits_bit_exact": true,
+      "text": "funery number mad",
+      "graph_build_seconds": 67.78385164099745,
+      "fpga_session_init_seconds": 12.421433957999398,
+      "cpu_session_init_seconds": 0.903589578003448,
+      "cold_fpga": {
+        "seconds": 0.06572799100104021,
+        "frontend_seconds": 0.005621881005936302,
+        "model_seconds": 0.05993674499768531,
+        "decode_seconds": 0.00016936499741859734,
+        "text": "funery number mad",
+        "length": 13,
+        "feature_frames": 101,
+        "counters": {
+          "ioctls": 48,
+          "loads": 256,
+          "runs": 311,
+          "tx_bytes": 11281152,
+          "rx_bytes": 455760,
+          "ioctl_seconds": 0.03753181703359587,
+          "physical_calls": 128,
+          "oracle_calls": 0
+        }
+      },
+      "cold_cpu": {
+        "seconds": 0.09856346999731613,
+        "frontend_seconds": 0.005402545000833925,
+        "model_seconds": 0.09301183999923524,
+        "decode_seconds": 0.00014908499724697322,
+        "text": "funery number mad",
+        "length": 13,
+        "feature_frames": 101,
+        "counters": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0
+        }
+      },
+      "audio_sha256": "9aebfb79d560766e287dd2a6a91b718c144e5076414eed918db9cbed262d63a8"
+    },
+    {
+      "audio_seconds": 2.5,
+      "runs": 300,
+      "warmup_pairs": 10,
+      "cpu_policy": {
+        "graph": "pool",
+        "threads": 4,
+        "spin": 10,
+        "level": "all",
+        "tail_impl": "maskfast"
+      },
+      "fpga_policy": {
+        "threads": 4,
+        "spin": 0,
+        "level": "extended",
+        "irq_core": 2,
+        "graph": "pool"
+      },
+      "metrics": {
+        "cpu": {
+          "p50_ms": 145.65136400415213,
+          "p95_ms": 165.4929441006971,
+          "p99_ms": 219.2035392359684,
+          "mean_ms": 148.82024513317447,
+          "min_ms": 143.03881100204308,
+          "max_ms": 233.8626109994948,
+          "rtf_p50": 0.05826054560166085,
+          "frontend_p50_ms": 10.898023498157272,
+          "model_p50_ms": 134.54577599623008,
+          "decode_p50_ms": 0.19036600133404136
+        },
+        "fpga": {
+          "p50_ms": 59.240796999802114,
+          "p95_ms": 71.90358274456231,
+          "p99_ms": 105.76034803096263,
+          "mean_ms": 61.28076468655006,
+          "min_ms": 57.98504300037166,
+          "max_ms": 108.68272299558157,
+          "rtf_p50": 0.023696318799920846,
+          "frontend_p50_ms": 10.957295500702458,
+          "model_p50_ms": 48.133054999198066,
+          "decode_p50_ms": 0.187901001481805
+        }
+      },
+      "speedup_p50": 2.4586327561501014,
+      "latency_reduction_percent": 59.3269878350653,
+      "all_logits_bit_exact": true,
+      "text": "##erary number made up so is the",
+      "graph_build_seconds": 67.78385164099745,
+      "fpga_session_init_seconds": 12.3707377279934,
+      "cpu_session_init_seconds": 0.9853264969933662,
+      "cold_fpga": {
+        "seconds": 0.08470284200302558,
+        "frontend_seconds": 0.010992929004714824,
+        "model_seconds": 0.07350536699959775,
+        "decode_seconds": 0.0002045459987130016,
+        "text": "##erary number made up so is the",
+        "length": 32,
+        "feature_frames": 251,
+        "counters": {
+          "ioctls": 48,
+          "loads": 256,
+          "runs": 632,
+          "tx_bytes": 11531008,
+          "rx_bytes": 926800,
+          "ioctl_seconds": 0.048451570990437176,
+          "physical_calls": 128,
+          "oracle_calls": 0
+        }
+      },
+      "cold_cpu": {
+        "seconds": 0.15085559600265697,
+        "frontend_seconds": 0.010874826002691407,
+        "model_seconds": 0.13977045399951749,
+        "decode_seconds": 0.0002103160004480742,
+        "text": "##erary number made up so is the",
+        "length": 32,
+        "feature_frames": 251,
+        "counters": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0
+        }
+      },
+      "audio_sha256": "146729ca965e25e8c04131e5a5450816bb62f0a9d00e006bae75bbda68a432b5"
+    }
+  ],
+  "timing_scope": "frontend + model + greedy decode; excludes WAV file IO, initialization, firmware transitions and verification",
+  "input_scope": "Three prefixes of one speech recording; no representative WER or live microphone qualification"
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-15",
+  "board": "KV260",
+  "clean_software_installation": true,
+  "fresh_branch_firmware_installation": true,
+  "full_warm_logit_comparisons": 900,
+  "twofold_speed_acceptance": false,
+  "warm_contexts": [
+    {
+      "context_seconds": 0.5,
+      "cpu_p50": 0.0521298104977177,
+      "fpga_p50": 0.026114030995813664,
+      "cpu_p95": 0.05586712620061007,
+      "fpga_p95": 0.026821707698400133,
+      "speedup_factor": 1.9962375975610438,
+      "meets_50_percent": false,
+      "strongest_cpu_p50": 0.0521298104977177,
+      "strongest_cpu_p95": 0.05586712620061007,
+      "speedup_against_strongest_cpu": 1.9962375975610438
+    },
+    {
+      "context_seconds": 1,
+      "cpu_p50": 0.09397900250041857,
+      "fpga_p50": 0.03574955850126571,
+      "cpu_p95": 0.11567863625132307,
+      "fpga_p95": 0.05101085795395194,
+      "speedup_factor": 2.6288157515872888,
+      "meets_50_percent": true,
+      "strongest_cpu_p50": 0.09381408800027202,
+      "strongest_cpu_p95": 0.09683269719962481,
+      "speedup_against_strongest_cpu": 2.6242027016068055
+    },
+    {
+      "context_seconds": 2.5,
+      "cpu_p50": 0.14617918750082026,
+      "fpga_p50": 0.05944316499881097,
+      "cpu_p95": 0.16087593600022956,
+      "fpga_p95": 0.06971372904699823,
+      "speedup_factor": 2.459142064587985,
+      "meets_50_percent": true,
+      "strongest_cpu_p50": 0.14544889499984492,
+      "strongest_cpu_p95": 0.14842475460040988,
+      "speedup_against_strongest_cpu": 2.4468565057522476
+    }
+  ],
+  "dependencies": {
+    "flatbuffers": "25.12.19",
+    "ml_dtypes": "0.6.0",
+    "numpy": "2.5.3",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.30.0",
+    "packaging": "26.3",
+    "protobuf": "7.36.2",
+    "typing_extensions": "4.16.0"
+  },
+  "capture_qualified": false,
+  "representative_wer_qualified": false,
+  "scope": "Original MVP clean-board measurements. Public runtime needs its own physical verification.",
+  "cold_initialization_seconds": [
+    109.30311268700461,
+    109.59574534199783,
+    109.44943914900068
+  ],
+  "cold_processing_seconds": [
+    0.09327525699336547,
+    0.11304260900215013,
+    0.13742822600033833
+  ]
+}

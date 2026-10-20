@@ -1,0 +1,583 @@
+{
+  "runs": 36,
+  "max_absolute_wall_vs_internal_difference_seconds": 0.8265026150001518,
+  "all_cpu_neon_enabled": true,
+  "measurements": [
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 470.08883239700117,
+      "cli_internal_seconds": {
+        "load": 32.30714,
+        "mel": 0.04904,
+        "encode": 435.62819,
+        "decode": 0.87366,
+        "batchd": 0.27205,
+        "total": 469.31131
+      },
+      "difference_seconds": 0.777522397001178,
+      "real_time_factor": 134.11949569101319
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 464.58219261500017,
+      "cli_internal_seconds": {
+        "load": 48.057559999999995,
+        "mel": 0.04879,
+        "encode": 414.33246999999994,
+        "decode": 0.87312,
+        "batchd": 0.26532,
+        "total": 463.75569
+      },
+      "difference_seconds": 0.8265026150001518,
+      "real_time_factor": 132.54841444079892
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 453.05108698799995,
+      "cli_internal_seconds": {
+        "load": 33.04999,
+        "mel": 0.049030000000000004,
+        "encode": 417.83446999999995,
+        "decode": 0.89361,
+        "batchd": 0.26461,
+        "total": 452.27247
+      },
+      "difference_seconds": 0.7786169879999534,
+      "real_time_factor": 129.25851269272468
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 338.8198473069988,
+      "cli_internal_seconds": {
+        "load": 25.96686,
+        "mel": 0.04894,
+        "encode": 311.21621999999996,
+        "decode": 0.66791,
+        "batchd": 0.19486,
+        "total": 338.27259000000004
+      },
+      "difference_seconds": 0.5472573069987448,
+      "real_time_factor": 96.66757412467868
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 314.09907848500006,
+      "cli_internal_seconds": {
+        "load": 2.2002800000000002,
+        "mel": 0.048909999999999995,
+        "encode": 310.28388,
+        "decode": 0.68161,
+        "batchd": 0.19075999999999999,
+        "total": 313.57669
+      },
+      "difference_seconds": 0.5223884850000786,
+      "real_time_factor": 89.61457303423683
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 338.43981214999985,
+      "cli_internal_seconds": {
+        "load": 26.04541,
+        "mel": 0.04882,
+        "encode": 310.79694,
+        "decode": 0.66199,
+        "batchd": 0.19057,
+        "total": 337.92194
+      },
+      "difference_seconds": 0.517872149999846,
+      "real_time_factor": 96.5591475463623
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 351.66853576500034,
+      "cli_internal_seconds": {
+        "load": 1.52494,
+        "mel": 0.04889,
+        "encode": 348.55103,
+        "decode": 0.7231799999999999,
+        "batchd": 0.21227000000000001,
+        "total": 351.23303000000004
+      },
+      "difference_seconds": 0.43550576500030047,
+      "real_time_factor": 100.33339108844518
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 376.51079777700033,
+      "cli_internal_seconds": {
+        "load": 25.298009999999998,
+        "mel": 0.04901,
+        "encode": 349.57538,
+        "decode": 0.74265,
+        "batchd": 0.21274,
+        "total": 376.05190999999996
+      },
+      "difference_seconds": 0.45888777700037053,
+      "real_time_factor": 107.42105500057072
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 373.48772528100017,
+      "cli_internal_seconds": {
+        "load": 22.117240000000002,
+        "mel": 0.0644,
+        "encode": 349.74078000000003,
+        "decode": 0.7227899999999999,
+        "batchd": 0.21184,
+        "total": 373.03634000000005
+      },
+      "difference_seconds": 0.451385281000114,
+      "real_time_factor": 106.55855214864485
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "hybrid",
+      "python_wall_seconds": 117.21637076099978,
+      "cli_internal_seconds": {
+        "load": 25.89308,
+        "mel": 0.049,
+        "encode": 89.26608999999999,
+        "decode": 0.7165,
+        "batchd": 0.40005,
+        "total": 116.4967
+      },
+      "difference_seconds": 0.7196707609997759,
+      "real_time_factor": 33.44261647960051
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "hybrid",
+      "python_wall_seconds": 116.48670979299823,
+      "cli_internal_seconds": {
+        "load": 26.97128,
+        "mel": 0.04914,
+        "encode": 87.66955,
+        "decode": 0.66461,
+        "batchd": 0.19104,
+        "total": 115.71905000000001
+      },
+      "difference_seconds": 0.7676597929982165,
+      "real_time_factor": 33.23443931326626
+    },
+    {
+      "audio": "6930-75918-0000.wav",
+      "audio_seconds": 3.505,
+      "variant": "hybrid",
+      "python_wall_seconds": 103.00587174800057,
+      "cli_internal_seconds": {
+        "load": 13.57288,
+        "mel": 0.06445999999999999,
+        "encode": 87.59496,
+        "decode": 0.68276,
+        "batchd": 0.19087,
+        "total": 102.29106
+      },
+      "difference_seconds": 0.7148117480005709,
+      "real_time_factor": 29.388265833951664
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 452.11451500899966,
+      "cli_internal_seconds": {
+        "load": 28.976490000000002,
+        "mel": 0.14773,
+        "encode": 417.89178000000004,
+        "decode": 3.6659499999999996,
+        "batchd": 0.26543,
+        "total": 451.33065999999997
+      },
+      "difference_seconds": 0.7838550089996943,
+      "real_time_factor": 31.78309420098416
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 454.1469593390011,
+      "cli_internal_seconds": {
+        "load": 32.22755,
+        "mel": 0.14009,
+        "encode": 416.61259,
+        "decode": 3.6789699999999996,
+        "batchd": 0.26515,
+        "total": 453.33469
+      },
+      "difference_seconds": 0.8122693390010909,
+      "real_time_factor": 31.92597253701238
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 449.6671320619971,
+      "cli_internal_seconds": {
+        "load": 27.068099999999998,
+        "mel": 0.15575999999999998,
+        "encode": 417.34105999999997,
+        "decode": 3.66885,
+        "batchd": 0.26500999999999997,
+        "total": 448.87215999999995
+      },
+      "difference_seconds": 0.7949720619971572,
+      "real_time_factor": 31.61104619065006
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 318.25334472599934,
+      "cli_internal_seconds": {
+        "load": 3.8292800000000002,
+        "mel": 0.14058,
+        "encode": 310.34621999999996,
+        "decode": 2.81325,
+        "batchd": 0.19072999999999998,
+        "total": 317.72369
+      },
+      "difference_seconds": 0.5296547259993645,
+      "real_time_factor": 22.37281860991208
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 342.1122434940007,
+      "cli_internal_seconds": {
+        "load": 27.255599999999998,
+        "mel": 0.14047,
+        "encode": 310.78371999999996,
+        "decode": 2.8147399999999996,
+        "batchd": 0.1915,
+        "total": 341.58494
+      },
+      "difference_seconds": 0.5273034940007051,
+      "real_time_factor": 24.050069841406028
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 338.10746158300026,
+      "cli_internal_seconds": {
+        "load": 26.52849,
+        "mel": 0.14084,
+        "encode": 307.54631,
+        "decode": 2.79279,
+        "batchd": 0.19044,
+        "total": 337.57434
+      },
+      "difference_seconds": 0.533121583000252,
+      "real_time_factor": 23.768538599859422
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 376.81190305900054,
+      "cli_internal_seconds": {
+        "load": 21.22491,
+        "mel": 0.14052,
+        "encode": 350.53428,
+        "decode": 3.89837,
+        "batchd": 0.21206999999999998,
+        "total": 376.38488
+      },
+      "difference_seconds": 0.4270230590005326,
+      "real_time_factor": 26.489413220316383
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 376.75024404299984,
+      "cli_internal_seconds": {
+        "load": 21.32157,
+        "mel": 0.14052,
+        "encode": 351.21444,
+        "decode": 3.03841,
+        "batchd": 0.21149,
+        "total": 376.32194
+      },
+      "difference_seconds": 0.42830404299985503,
+      "real_time_factor": 26.48507866734621
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 375.7818505280011,
+      "cli_internal_seconds": {
+        "load": 24.749650000000003,
+        "mel": 0.1408,
+        "encode": 346.79634000000004,
+        "decode": 3.0542399999999996,
+        "batchd": 0.21196,
+        "total": 375.34978
+      },
+      "difference_seconds": 0.43207052800107704,
+      "real_time_factor": 26.417001794587073
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "hybrid",
+      "python_wall_seconds": 120.64257067500148,
+      "cli_internal_seconds": {
+        "load": 26.75747,
+        "mel": 0.14051,
+        "encode": 89.60682000000001,
+        "decode": 2.83148,
+        "batchd": 0.19099000000000002,
+        "total": 119.92246
+      },
+      "difference_seconds": 0.7201106750014787,
+      "real_time_factor": 8.481024300527345
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "hybrid",
+      "python_wall_seconds": 110.00378457299848,
+      "cli_internal_seconds": {
+        "load": 15.90963,
+        "mel": 0.14051,
+        "encode": 89.86604,
+        "decode": 2.79076,
+        "batchd": 0.19100999999999999,
+        "total": 109.27195
+      },
+      "difference_seconds": 0.7318345729984799,
+      "real_time_factor": 7.733130725694094
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "audio_seconds": 14.225,
+      "variant": "hybrid",
+      "python_wall_seconds": 93.49082867100151,
+      "cli_internal_seconds": {
+        "load": 2.20094,
+        "mel": 0.14072,
+        "encode": 87.0367,
+        "decode": 2.81219,
+        "batchd": 0.19136,
+        "total": 92.75979
+      },
+      "difference_seconds": 0.7310386710015138,
+      "real_time_factor": 6.5722902404921975
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 460.9943412110006,
+      "cli_internal_seconds": {
+        "load": 39.90044,
+        "mel": 0.21918,
+        "encode": 413.28366,
+        "decode": 5.94212,
+        "batchd": 0.26496,
+        "total": 460.17759
+      },
+      "difference_seconds": 0.8167512110005646,
+      "real_time_factor": 19.772435822903734
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 452.3615390060004,
+      "cli_internal_seconds": {
+        "load": 31.79811,
+        "mel": 0.23374,
+        "encode": 412.80688,
+        "decode": 5.93391,
+        "batchd": 0.26488,
+        "total": 451.57131
+      },
+      "difference_seconds": 0.790229006000402,
+      "real_time_factor": 19.402167660561886
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_0_no_flash",
+      "python_wall_seconds": 452.7855461559993,
+      "cli_internal_seconds": {
+        "load": 32.00716,
+        "mel": 0.23383,
+        "encode": 413.00953000000004,
+        "decode": 5.96169,
+        "batchd": 0.26487,
+        "total": 452.01090999999997
+      },
+      "difference_seconds": 0.7746361559993602,
+      "real_time_factor": 19.42035368458071
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 339.763752922001,
+      "cli_internal_seconds": {
+        "load": 25.66536,
+        "mel": 0.21794,
+        "encode": 308.11353,
+        "decode": 4.51243,
+        "batchd": 0.19027000000000002,
+        "total": 339.23453
+      },
+      "difference_seconds": 0.5292229220009972,
+      "real_time_factor": 14.57275371743517
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 335.3865998270012,
+      "cli_internal_seconds": {
+        "load": 21.86969,
+        "mel": 0.21796000000000001,
+        "encode": 307.56456,
+        "decode": 4.5007600000000005,
+        "batchd": 0.19043000000000002,
+        "total": 334.87571999999994
+      },
+      "difference_seconds": 0.5108798270012471,
+      "real_time_factor": 14.385013932103845
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_1_no_flash",
+      "python_wall_seconds": 335.36909940999976,
+      "cli_internal_seconds": {
+        "load": 21.73431,
+        "mel": 0.218,
+        "encode": 307.64065999999997,
+        "decode": 4.53053,
+        "batchd": 0.1906,
+        "total": 334.84862
+      },
+      "difference_seconds": 0.5204794099997798,
+      "real_time_factor": 14.384263324469215
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 374.17640908700196,
+      "cli_internal_seconds": {
+        "load": 20.887529999999998,
+        "mel": 0.21785,
+        "encode": 346.98825,
+        "decode": 4.9135100000000005,
+        "batchd": 0.21244,
+        "total": 373.75316
+      },
+      "difference_seconds": 0.4232490870019774,
+      "real_time_factor": 16.048741543512843
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 374.2248779930014,
+      "cli_internal_seconds": {
+        "load": 20.810209999999998,
+        "mel": 0.21786000000000003,
+        "encode": 347.11309,
+        "decode": 4.91473,
+        "batchd": 0.21166,
+        "total": 373.80225
+      },
+      "difference_seconds": 0.42262799300141296,
+      "real_time_factor": 16.050820415741
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "cpu_2_no_flash",
+      "python_wall_seconds": 373.94968678200166,
+      "cli_internal_seconds": {
+        "load": 20.72826,
+        "mel": 0.21793,
+        "encode": 346.90919,
+        "decode": 4.92696,
+        "batchd": 0.21215,
+        "total": 373.52678000000003
+      },
+      "difference_seconds": 0.42290678200163256,
+      "real_time_factor": 16.039017232768675
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "hybrid",
+      "python_wall_seconds": 96.5300915830012,
+      "cli_internal_seconds": {
+        "load": 2.2012899999999997,
+        "mel": 0.21882,
+        "encode": 88.0603,
+        "decode": 4.51789,
+        "batchd": 0.19466,
+        "total": 95.76661999999999
+      },
+      "difference_seconds": 0.7634715830012055,
+      "real_time_factor": 4.140256984044657
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "hybrid",
+      "python_wall_seconds": 95.68846947400016,
+      "cli_internal_seconds": {
+        "load": 2.20333,
+        "mel": 0.21818,
+        "encode": 87.27638,
+        "decode": 4.5441199999999995,
+        "batchd": 0.19135,
+        "total": 94.9683
+      },
+      "difference_seconds": 0.7201694740001585,
+      "real_time_factor": 4.10415910246623
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "audio_seconds": 23.315,
+      "variant": "hybrid",
+      "python_wall_seconds": 95.01454660200034,
+      "cli_internal_seconds": {
+        "load": 2.20217,
+        "mel": 0.21803999999999998,
+        "encode": 86.56281,
+        "decode": 4.55195,
+        "batchd": 0.19129,
+        "total": 94.26194
+      },
+      "difference_seconds": 0.7526066020003412,
+      "real_time_factor": 4.07525398250055
+    }
+  ]
+}

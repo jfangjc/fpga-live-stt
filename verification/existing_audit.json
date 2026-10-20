@@ -1,0 +1,73 @@
+{
+  "kind": "independent local artifact audit; estimates are not physical measurements",
+  "historical_evidence_hashes_match": true,
+  "module_architecture": "ELF64 little-endian AArch64",
+  "vermagic": "6.8.0-1015-xilinx SMP preempt mod_unload modversions aarch64",
+  "constraint_sha256": "7ac33875cbd770329702d893e530e2b74479a1d62e99bf195ac461c142291146",
+  "constraint_pin_assignments": {
+    "pmod_i2s2_lrclk": "H12",
+    "pmod_i2s_lrclk": "B10",
+    "pmod_i2s2_dout": "E10",
+    "pmod_i2s_dout": "E12",
+    "pmod_i2s2_bclk": "D10",
+    "pmod_i2s_bclk": "D11",
+    "pmod_led_d1": "C11",
+    "pmod_btn_sw1": "B11"
+  },
+  "protocol_recomputed": {
+    "loads": 94,
+    "runs": 3008,
+    "ioctls": 699,
+    "tx": 36831712,
+    "rx": 79282656,
+    "padded_macs": 8749318144,
+    "minimum_core_cycles": 40359936
+  },
+  "core_cycle_lower_bound_seconds_at_100MHz": 0.40359936,
+  "int32_accumulator_extreme_abs_upper_bound": 16777216,
+  "budget": {
+    "old_cpu_seconds": 1.9651243530097418,
+    "old_hybrid_seconds": 3.4991042069887044,
+    "target_20_percent_lower_seconds": 1.5720994824077934,
+    "old_hybrid_over_cpu": 1.78060192558784,
+    "all_ioctl_removed_floor_seconds": 2.4077151066594524,
+    "all_pointwise_host_work_removed_floor_seconds": 1.9774875193543267
+  },
+  "artifacts": {
+    "rtl/qn_cached_axis.v": {
+      "actual": "7f866217111550195c43bb33d863f3d42e50381c283e0b59056e1c1ba79e6211",
+      "expected": "7f866217111550195c43bb33d863f3d42e50381c283e0b59056e1c1ba79e6211"
+    },
+    "sim/tb_qn_cached_axis.sv": {
+      "actual": "edf14feed6fe5a928051cad2c54dcf0e4847bbc3861f94ac6002a9911d40851f",
+      "expected": "edf14feed6fe5a928051cad2c54dcf0e4847bbc3861f94ac6002a9911d40851f"
+    },
+    "voice_cached_dma/voice_cached_dma.runs/impl_1/voice_cached_dma_top.bit": {
+      "actual": "9df5ced27a317c10020d224790486f47f84d2f154030fcc585993b619a9850fc",
+      "expected": "9df5ced27a317c10020d224790486f47f84d2f154030fcc585993b619a9850fc"
+    },
+    "voice_cached_dma/voice_cached_dma.runs/impl_1/voice_cached_dma_top.bit.bin": {
+      "actual": "43afba2a3b49619dd2a5285ac5ec3975d879a2df395ba8d8e77284e9440fad1a",
+      "expected": "43afba2a3b49619dd2a5285ac5ec3975d879a2df395ba8d8e77284e9440fad1a"
+    },
+    "software/voice-cached.dts": {
+      "actual": "220f63f987abd9c515b87a28c54dae37ad84eec977df61a38ab0528db1c9d019",
+      "expected": "220f63f987abd9c515b87a28c54dae37ad84eec977df61a38ab0528db1c9d019"
+    },
+    "software/voice-cached.dtbo": {
+      "actual": "08703788860d284fd0c6a8cfba1d8124781671314e4fabd9ead2b42407115c09",
+      "expected": "08703788860d284fd0c6a8cfba1d8124781671314e4fabd9ead2b42407115c09"
+    },
+    "software/tile-driver/prebuilt/6.8.0-1015-xilinx/qn_tile_cached.ko": {
+      "actual": "92369f1836c322928771221aadca267bdfdc8150fafd8808c61ae0e202b4c9ff",
+      "expected": "92369f1836c322928771221aadca267bdfdc8150fafd8808c61ae0e202b4c9ff"
+    }
+  },
+  "limitations": [
+    "No KV260 access or new physical measurements",
+    "Vermagic/hash verification does not prove module loading or DMA compatibility",
+    "Verified voice_dma_top maps pmod_i2s ports to internal mic_* ports; retain this wrapper or adapt constraints explicitly",
+    "Historical routed results do not validate a new prototype_v2 build",
+    "Minimum serial core cycles exclude several positive overheads and stalls"
+  ]
+}

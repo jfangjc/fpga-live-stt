@@ -1,0 +1,11 @@
+{
+  "vectors": 1024,
+  "lanes": 4,
+  "sha256": {
+    "scripts/generate_requant_vectors.py": "fc3b9b339b735d35a040203150e2c335daa86b18656f6f101b43adfba9d1370b",
+    "software/fused/oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "rtl/experimental/fused_requant.v": "e9967c77136d1f7255823313d8b41843f5a9025bc43679f44dbf437b045d7590",
+    "sim/fused_vectors/input.mem": "4fc427dd282d1b22923b737b8653072ab38b4bdbf659229d2795f56adc14b873",
+    "sim/fused_vectors/expected.mem": "e314c8378c66f6a5923e86f2cc595dd1fa37f4fb85dd454e413534623c26a01f"
+  }
+}

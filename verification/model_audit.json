@@ -1,0 +1,61 @@
+{
+  "checkpoint_tokenizer_type": "wpe",
+  "feature_channels": 80,
+  "pad_to": 16,
+  "se_contexts": [
+    -1
+  ],
+  "model_sha256": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+  "checks": [
+    {
+      "frames": 96,
+      "valid": 65,
+      "encoded_length": [
+        9
+      ],
+      "max_abs_error": 1.71661376953125e-05,
+      "argmax_equal": true
+    },
+    {
+      "frames": 513,
+      "valid": 499,
+      "encoded_length": [
+        63
+      ],
+      "max_abs_error": 1.9073486328125e-05,
+      "argmax_equal": true
+    }
+  ],
+  "operators": {
+    "Shape": 237,
+    "Constant": 1629,
+    "Gather": 237,
+    "Cast": 533,
+    "Range": 237,
+    "Unsqueeze": 658,
+    "GreaterOrEqual": 221,
+    "Where": 244,
+    "Conv": 236,
+    "Less": 23,
+    "Not": 23,
+    "ReduceSum": 46,
+    "Div": 26,
+    "Transpose": 47,
+    "MatMul": 46,
+    "Relu": 130,
+    "Sigmoid": 23,
+    "Mul": 23,
+    "Add": 27,
+    "Sub": 6,
+    "LogSoftmax": 1
+  },
+  "full_original_nemo_wrapper_parity": false,
+  "frontend_parity": false,
+  "tokenizer_parity": false,
+  "limitations": [
+    "Reference reuses pinned exporter construction; independent random probes do not independently prove full NeMo model reconstruction",
+    "Zero-length feature input causes masked SE division by zero; reject empty/too-short audio or define original validated behavior",
+    "WordPiece vocabulary ## continuation tokens require matching WordPiece decoder; not SentencePiece",
+    "Global SE context and symmetric convolution imply no demonstrated causal streaming"
+  ]
+}

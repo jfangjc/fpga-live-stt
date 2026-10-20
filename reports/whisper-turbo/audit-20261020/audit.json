@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "stage": "complete",
+  "runs": [
+    {
+      "variant": "cpu_original",
+      "outer_supervisor_seconds_including_polling_and_hardware_setup": 324.14274143299997,
+      "stages_seconds": {
+        "load": 2.1761500000000003,
+        "mel": 0.049030000000000004,
+        "encode": 312.2175,
+        "decode": 0.6628,
+        "batchd": 0.19476,
+        "total": 315.49419
+      },
+      "binary_sha256": "1782885b4b4676194c4e705c985567104572cf1d632ab48f3426737757fdcbde",
+      "model_sha256": "317eb69c11673c9de1e1f0d459b253999804ec71ac4c23c17ecf5fbe24e259a1",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "libraries": {
+        "/home/ubuntu/whisper-turbo-kv260/build-cpu/src/libwhisper.so.1": "8a693bfac1c665a7b5e558f1a4a0cb17550609fda611bf860d52642467589a18",
+        "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml.so.0": "8a7d82b49a61da18a5c0663d8730d830e877b21a6c693e884507f86d96407bf1",
+        "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+        "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+        "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+        "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+        "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-base.so.0": "5580ade62cba589a9048dd693081311e4cacab79c54beec7b3f8fb561a61fe55",
+        "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-cpu.so.0": "3944342d07b9784c13621c85d46b745320250fcdadb90474be66371aea47d970"
+      },
+      "resource_time": "\tCommand being timed: \"/home/ubuntu/whisper-turbo-kv260/build-cpu/bin/whisper-cli -m /home/ubuntu/whisper-turbo-kv260/models/ggml-large-v3-turbo-q8_0.bin -f /home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0000.wav -t 4 -l en -nt -ng -nf -bs 1 -bo 1 -nfa\"\n\tUser time (seconds): 1233.06\n\tSystem time (seconds): 4.03\n\tPercent of CPU this job got: 391%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 5:16.11\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 1265292\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 28\n\tMinor (reclaiming a frame) page faults: 435143\n\tVoluntary context switches: 79\n\tInvoluntary context switches: 31673\n\tSwaps: 0\n\tFile system inputs: 6080\n\tFile system outputs: 24\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "stdout": "\n Concord returned to its place amidst the tents."
+    },
+    {
+      "variant": "hybrid",
+      "outer_supervisor_seconds_including_polling_and_hardware_setup": 100.94412427999998,
+      "stages_seconds": {
+        "load": 2.1971100000000003,
+        "mel": 0.04931,
+        "encode": 89.15957,
+        "decode": 0.66426,
+        "batchd": 0.19111,
+        "total": 92.44507
+      },
+      "binary_sha256": "8dfefb09f7e81fde24494b84720938a344065df7d1f50c8d880e5556c02d7000",
+      "model_sha256": "317eb69c11673c9de1e1f0d459b253999804ec71ac4c23c17ecf5fbe24e259a1",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "libraries": {
+        "/home/ubuntu/whisper-turbo-kv260/build-hybrid/src/libwhisper.so.1": "380c6c6bc441e538511f33cec0cbcfc6305368039ceab6af5f69860ace18c3b2",
+        "/home/ubuntu/whisper-turbo-kv260/build-hybrid/ggml/src/libggml.so.0": "d1de42b36d9ee99d4e2fc0dba1de9926b34d935246b7480ab5d1ea279f9e7f40",
+        "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+        "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+        "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+        "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+        "/home/ubuntu/whisper-turbo-kv260/build-hybrid/ggml/src/libggml-base.so.0": "2f94187a98eb5dce089a98e2bc6c85e0bdedb34bd1996f608040eb24b20d88ca",
+        "/home/ubuntu/whisper-turbo-kv260/build-hybrid/ggml/src/libggml-cpu.so.0": "fb720cb29a5002c6548338881a12e074d070b352722123360c2b45e6dc604cdd"
+      },
+      "resource_time": "\tCommand being timed: \"/home/ubuntu/whisper-turbo-kv260/build-hybrid/bin/whisper-cli -m /home/ubuntu/whisper-turbo-kv260/models/ggml-large-v3-turbo-q8_0.bin -f /home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0000.wav -t 4 -l en -nt -ng -nf -bs 1 -bo 1 -nfa\"\n\tUser time (seconds): 308.23\n\tSystem time (seconds): 17.48\n\tPercent of CPU this job got: 349%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 1:33.23\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 1814288\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 28\n\tMinor (reclaiming a frame) page faults: 847420\n\tVoluntary context switches: 13114\n\tInvoluntary context switches: 7757\n\tSwaps: 0\n\tFile system inputs: 5328\n\tFile system outputs: 24\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "stdout": "remove from slot 0 returns: 0 (Ok)\n\nasr-v3-bulk: Loaded with slot_handle 0\n\n\n Concord returned to its place amidst the tents."
+    },
+    {
+      "variant": "cpu_native",
+      "outer_supervisor_seconds_including_polling_and_hardware_setup": 324.204768047,
+      "stages_seconds": {
+        "load": 2.19568,
+        "mel": 0.04888,
+        "encode": 311.602,
+        "decode": 0.66186,
+        "batchd": 0.2089,
+        "total": 314.89125
+      },
+      "binary_sha256": "b00d2a2517604858ba332b6b144e7bdd47932712c35e647dc6d79d489e461251",
+      "model_sha256": "317eb69c11673c9de1e1f0d459b253999804ec71ac4c23c17ecf5fbe24e259a1",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "libraries": {
+        "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/src/libwhisper.so.1": "63ba9ea37f9349368d19b969a4bc3cceed5d42d86b8f178da6c8b3b8ab7c3998",
+        "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml.so.0": "9f798e67cf7fe187989988b6568d9f2d57877c94f4eece1a78d2de25c0a2485b",
+        "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+        "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+        "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+        "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+        "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml-base.so.0": "8b08e2145f69ab77f5c7508ee3d31c1eb19c7557ace162efdb094b58d9986600",
+        "/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/ggml/src/libggml-cpu.so.0": "95fa9632f9272aab4d3e5eff24ff2e11326ed470b4008bdebdeb57b77f6f51d0"
+      },
+      "resource_time": "\tCommand being timed: \"/home/ubuntu/whisper-turbo-kv260/audit-20261020/build-native/bin/whisper-cli -m /home/ubuntu/whisper-turbo-kv260/models/ggml-large-v3-turbo-q8_0.bin -f /home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0000.wav -t 4 -l en -nt -ng -nf -bs 1 -bo 1 -nfa\"\n\tUser time (seconds): 1230.74\n\tSystem time (seconds): 4.25\n\tPercent of CPU this job got: 391%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 5:15.40\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 1265304\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 453097\n\tVoluntary context switches: 37\n\tInvoluntary context switches: 33342\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 24\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "stdout": "\n Concord returned to its place amidst the tents."
+    }
+  ],
+  "machine_start": {
+    "uptime": "265.20 899.90",
+    "loadavg": "0.35 0.57 0.29 1/188 2114",
+    "cpu_stat": "cpu  5517 0 4659 89991 5091 0 5 0 0 0",
+    "cpu_clock": [
+      "acpu           0       0        0        1333333320  0          0     50000      Y                        deviceless                      no_connection_id"
+    ],
+    "temperatures": {},
+    "meminfo": "MemTotal:        3995528 kB\nMemFree:         3214364 kB\nMemAvailable:    3552544 kB\nBuffers:           32984 kB\nCached:           431040 kB\nSwapCached:            0 kB\nActive:           429480 kB\nInactive:         141640 kB\nActive(anon):     117896 kB\nInactive(anon):        0 kB\nActive(file):     311584 kB\nInactive(file):   141640 kB\nUnevictable:       26368 kB\nMlocked:           26368 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               572 kB\nWriteback:             0 kB\nAnonPages:        133472 kB\nMapped:           106148 kB\nShmem:              3344 kB\nKReclaimable:      33680 kB\nSlab:              96216 kB\nSReclaimable:      33680 kB\nSUnreclaim:        62536 kB\nKernelStack:        3056 kB\nShadowCallStack:     780 kB\nPageTables:         2792 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     1997764 kB\nCommitted_AS:     613164 kB\nVmallocTotal:   133141626880 kB\nVmallocUsed:       10748 kB\nVmallocChunk:          0 kB\nPercpu:             1808 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nCmaTotal:         819200 kB\nCmaFree:          814444 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n"
+  },
+  "scope": "Independent fresh CLI processes; OS model file pre-read before each timed command; full 1500-position encoder context",
+  "temperature_note": "Empty temperatures means sensors unavailable, not a measured safe temperature.",
+  "machine_end": {
+    "uptime": "1500.57 2206.47",
+    "loadavg": "3.27 3.25 2.38 1/178 5705",
+    "cpu_stat": "cpu  352530 0 12800 220647 12733 0 88 0 0 0",
+    "cpu_clock": [
+      "acpu           0       0        0        1333333320  0          0     50000      Y                        deviceless                      no_connection_id"
+    ],
+    "temperatures": {},
+    "meminfo": "MemTotal:        3995528 kB\nMemFree:         2178760 kB\nMemAvailable:    3555652 kB\nBuffers:           40804 kB\nCached:          1454556 kB\nSwapCached:            0 kB\nActive:           569088 kB\nInactive:        1050960 kB\nActive(anon):     135496 kB\nInactive(anon):        0 kB\nActive(file):     433592 kB\nInactive(file):  1050960 kB\nUnevictable:       26368 kB\nMlocked:           26368 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:                28 kB\nWriteback:             0 kB\nAnonPages:        150992 kB\nMapped:           131800 kB\nShmem:              3348 kB\nKReclaimable:      48444 kB\nSlab:             112564 kB\nSReclaimable:      48444 kB\nSUnreclaim:        64120 kB\nKernelStack:        2928 kB\nShadowCallStack:     740 kB\nPageTables:         3212 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     1997764 kB\nCommitted_AS:     693792 kB\nVmallocTotal:   133141626880 kB\nVmallocUsed:       10696 kB\nVmallocChunk:          0 kB\nPercpu:             1904 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nCmaTotal:         819200 kB\nCmaFree:          795864 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n"
+  }
+}

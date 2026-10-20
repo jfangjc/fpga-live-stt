@@ -1,0 +1,40 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "unfused_seconds": 313.5738647649996,
+  "fused_completed": false,
+  "fused_seconds": null,
+  "fused_censored_lower_bound_seconds": 344.9312512414996,
+  "selected": "unfused",
+  "scope": "CPU attention candidate screening only; timeout is not a completed-transcription timing",
+  "reference_sha256": "148e826ae9c47d22562002e79aaf2f63e0e5bb60f86af81ced2b0f45fe858941",
+  "dynamic_libraries": {
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/src/libwhisper.so.1": "8a693bfac1c665a7b5e558f1a4a0cb17550609fda611bf860d52642467589a18",
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml.so.0": "8a7d82b49a61da18a5c0663d8730d830e877b21a6c693e884507f86d96407bf1",
+    "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+    "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+    "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+    "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-base.so.0": "5580ade62cba589a9048dd693081311e4cacab79c54beec7b3f8fb561a61fe55",
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-cpu.so.0": "3944342d07b9784c13621c85d46b745320250fcdadb90474be66371aea47d970"
+  },
+  "command": [
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/bin/whisper-cli",
+    "-m",
+    "/home/ubuntu/whisper-turbo-kv260/models/ggml-large-v3-turbo-q8_0.bin",
+    "-f",
+    "/home/ubuntu/prototype-v2-package/research/eval/librispeech-mini/evaluation/6930-75918-0000.wav",
+    "-t",
+    "4",
+    "-l",
+    "en",
+    "-nt",
+    "-ng",
+    "-nf",
+    "-bs",
+    "1",
+    "-bo",
+    "1",
+    "-fa"
+  ],
+  "text": null
+}

@@ -1,0 +1,10 @@
+{
+  "pid": 7912,
+  "status": "complete",
+  "phase": "complete",
+  "total_runs": null,
+  "phase_started": "2026-10-19T22:57:35.156477+00:00",
+  "prototype_gates_passed": true,
+  "live_streaming_qualified": false,
+  "note": "Fixed-file full-context results; no microphone trial"
+}

@@ -1,0 +1,93 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "accelerated_convolutions": 64,
+  "retained_pairs": 32,
+  "whole_model_latency_accepted": true,
+  "ten_percent_latency_accepted": false,
+  "metrics": [
+    {
+      "scope": "block",
+      "context_seconds": 0.5,
+      "cpu_p50": 0.0008076189988059923,
+      "fpga_p50": 0.000551364995772019,
+      "cpu_p95": 0.0008490050080581568,
+      "fpga_p95": 0.000622292494517751,
+      "mean_saving_95ci_seconds": [
+        0.0002547673312656116,
+        0.0002738448223863088
+      ],
+      "runs": 200,
+      "latency_gate_passed": true,
+      "p50_reduction_percent": 31.729565972671114,
+      "ten_percent_gate_passed": true
+    },
+    {
+      "scope": "block",
+      "context_seconds": 1.0,
+      "cpu_p50": 0.0010619130043778569,
+      "fpga_p50": 0.0008040584798436612,
+      "cpu_p95": 0.0011121755000203847,
+      "fpga_p95": 0.0008636120372102595,
+      "mean_saving_95ci_seconds": [
+        0.00025293639513620294,
+        0.00028702058754060994
+      ],
+      "runs": 200,
+      "latency_gate_passed": true,
+      "p50_reduction_percent": 24.282076165482593,
+      "ten_percent_gate_passed": true
+    },
+    {
+      "scope": "total",
+      "context_seconds": 0.5,
+      "cpu_p50": 0.06899873749352992,
+      "fpga_p50": 0.06585054550669156,
+      "cpu_p95": 0.07278257589641726,
+      "fpga_p95": 0.06831558368867263,
+      "mean_saving_95ci_seconds": [
+        0.0024685861358860473,
+        0.0033807959169377382
+      ],
+      "runs": 300,
+      "latency_gate_passed": true,
+      "p50_reduction_percent": 4.562680566631472,
+      "ten_percent_gate_passed": false
+    },
+    {
+      "scope": "total",
+      "context_seconds": 1.0,
+      "cpu_p50": 0.1053274820005754,
+      "fpga_p50": 0.10139619099209085,
+      "cpu_p95": 0.10961849533923669,
+      "fpga_p95": 0.10851581549650291,
+      "mean_saving_95ci_seconds": [
+        0.003451307118499244,
+        0.004562969830874257
+      ],
+      "runs": 300,
+      "latency_gate_passed": true,
+      "p50_reduction_percent": 3.7324456388913463,
+      "ten_percent_gate_passed": false
+    }
+  ],
+  "evidence_sha256": {
+    "shortcache_physical_validation.json": "edfed6935d95fc44d68bba2c7c464e476f1a0d4cd6095bc2c09cade098c6911b",
+    "shortcache_resident_validation.json": "bf20b7111976340d872de2d39ff22629754e497a31e923b404954b4f4b93c3ae",
+    "shortcache_native_oracle_validation.json": "57372012486ba6fed03aa41f869c5a85ed6029b0ea044b35078acafbb59b2fa0",
+    "shortcache_selection_screen.json": "58bab5b65f420c3404e464a90075b570db7acae5d817e890884c5afafdddb7ee",
+    "shortcache_physical_synthetic.json": "683b808dcb0c76fbc9911ae0cf10807b54dc4ce01d41e3d14413155e7bf00c7f",
+    "shortcache_board_restoration.json": "219d5d6d9280157750f7e94bf17839811aa77b0523317f4fe84e51e4e6a0aa14",
+    "shortcache_irq_restoration.json": "62c7bb7512837e0526c135f2e21e37dcfc5a84bf2b299a38f6d3c6ce9d69f359",
+    "shortcache_firmware_evidence.json": "404ee4411111bef733e3814d52378862d411a70086c3a97c4096365a5456e3cf",
+    "selection.json": "58bab5b65f420c3404e464a90075b570db7acae5d817e890884c5afafdddb7ee",
+    "shortcache_block_half.json": "7d1ca453d5e5a1a3309b99e3e2848fbd83247311750b1515ae1cc688165992d2",
+    "shortcache_block_one.json": "82db0bc8380fdf5b03a5173189b63ce60d421a0982ad68ca573eb6400db7b7eb",
+    "shortcache_total_half.json": "d61c6b6258e313dd28d8997b8e7b6660724fb4755f196ae32e5d044cbfdd4827",
+    "shortcache_total_one.json": "feb1425f5e4f168350e323434b300957e5bcdfa8aed71f571628371b9d4464b8"
+  },
+  "source_sha256": "a6874c3c5492a1b0b1d7bfdc19d464b6150f63e4d57ad8a1c1f8b0f008c236d1",
+  "representative_corpus_qualified": false,
+  "capture_tested": false,
+  "raw_paired_statistics_independently_recomputed": true
+}

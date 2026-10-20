@@ -1,0 +1,33 @@
+{
+  "root": "/home/ubuntu/whisper-turbo-runtime-check-v020",
+  "manifest_and_relocated_libraries": true,
+  "runs": {
+    "en": {
+      "seconds": 92.98356011099895,
+      "exact_qualified_transcript": true,
+      "physical_counters": {
+        "matrix_operations": 264,
+        "ioctls": 8880,
+        "weight_loads": 3744,
+        "time_tiles": 351936
+      },
+      "restored": true
+    },
+    "auto": {
+      "seconds": 174.37812356200084,
+      "exact_qualified_transcript": true,
+      "physical_counters": {
+        "matrix_operations": 528,
+        "ioctls": 17760,
+        "weight_loads": 7488,
+        "time_tiles": 703872
+      },
+      "restored": true
+    }
+  },
+  "expected_failure": {
+    "exit_code": 7,
+    "restored": true
+  },
+  "passed": true
+}

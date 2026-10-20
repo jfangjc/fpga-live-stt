@@ -1,0 +1,115 @@
+{
+  "checks": {
+    "native_checks_all_true": true,
+    "native_hardware_execution": true,
+    "physical_parity_flags_all_true": true,
+    "physical_exact_logits": true,
+    "physical_transcripts_match": true,
+    "physical_hardware_execution": true,
+    "native_binary_hash_consistent_across_reports": true,
+    "physical_report_hash_binding": true,
+    "original_report_hash_binding": true,
+    "all_current_sources_match": true,
+    "current_artifact_hashes_match": true,
+    "audio_hash_matches_current_reference": true,
+    "cpu_20_runs_3_warmups": true,
+    "cpu_timings_finite_positive": true,
+    "cpu_stage_sum_equals_total": true,
+    "cpu_percentiles_reproduce": true,
+    "cpu_transcripts_and_lengths_match_physical": true,
+    "hybrid_20_runs_3_warmups": true,
+    "hybrid_timings_finite_positive": true,
+    "hybrid_stage_sum_equals_total": true,
+    "hybrid_percentiles_reproduce": true,
+    "hybrid_transcripts_and_lengths_match_physical": true,
+    "hybrid_positive_dma_each_run": true,
+    "hybrid_counter_counts_match_parity": true,
+    "hybrid_physical_proof_bound": true
+  },
+  "all_integrity_checks_passed": true,
+  "report_sha256": {
+    "native": "1a6e83d7a2007c5910d207fe40b5e9902d001cc04f5bef0e68b0b99b153df33a",
+    "physical": "e344a8ebf12867d439761d9188e76584462fe9a6b02a08386bbfe82cb2965bda",
+    "cpu": "1b037938028d043daab1e8e9f7689c804471d19631b928f81c7ef78f1b00d935",
+    "hybrid": "092e57cfa972f637686cb61fdcb5c03d815744f42000c9a0fcac1dcf4cda28cb"
+  },
+  "source_checks": {
+    "physical": {
+      "software/model-tools/citrinet_cpu.py": true,
+      "software/runtime/citrinet_adapter.py": true,
+      "software/runtime/partition.py": true,
+      "software/native/qnc.py": true,
+      "software/native/qnc.c": true,
+      "software/native/qnc.h": true
+    },
+    "cpu": {
+      "software/model-tools/citrinet_cpu.py": true,
+      "software/runtime/citrinet_adapter.py": true,
+      "software/runtime/partition.py": true,
+      "software/native/qnc.py": true,
+      "software/native/qnc.c": true,
+      "software/native/qnc.h": true
+    },
+    "hybrid": {
+      "software/model-tools/citrinet_cpu.py": true,
+      "software/runtime/citrinet_adapter.py": true,
+      "software/runtime/partition.py": true,
+      "software/native/qnc.py": true,
+      "software/native/qnc.c": true,
+      "software/native/qnc.h": true
+    }
+  },
+  "timings": {
+    "cpu": {
+      "p50_seconds": 0.5641978895073407,
+      "p95_seconds": 0.6001119897497119,
+      "stage_p50_seconds": {
+        "load_seconds": 0.001360663998639211,
+        "frontend_seconds": 0.06495807349710958,
+        "inference_seconds": 0.49518631999671925,
+        "decode_seconds": 0.00033733500458765775
+      }
+    },
+    "hybrid": {
+      "p50_seconds": 1.1250888585054781,
+      "p95_seconds": 1.2048647527415597,
+      "stage_p50_seconds": {
+        "load_seconds": 0.001301506497839,
+        "frontend_seconds": 0.029587627504952252,
+        "inference_seconds": 1.0937880299970857,
+        "decode_seconds": 0.00030033400253159925
+      }
+    }
+  },
+  "hybrid_dma_counts_each_run": {
+    "loads": 126,
+    "runs": 1837,
+    "ioctls": 389,
+    "tx_bytes": 15879600,
+    "rx_bytes": 30282416
+  },
+  "native_phase_p50_seconds": {
+    "ioctl_seconds": 0.36594353194959695,
+    "load_pack_seconds": 0.012625469484191854,
+    "scan_seconds": 0.02866941301181214,
+    "run_pack_seconds": 0.06397371491766535,
+    "unpack_seconds": 0.02807998359639896
+  },
+  "partition_p50_seconds": {
+    "cpu": 0.499796467993292,
+    "fpga": 0.5864356789170415
+  },
+  "hybrid_cpu_p50_ratio": 1.9941387222981444,
+  "target_p50_seconds": 0.4513583116058726,
+  "speed_target_passed": false,
+  "limitations": [
+    "Reports are user-supplied; board execution was not independently observed.",
+    "Board-built native binary hash is consistent across reports, but that exact binary was not supplied.",
+    "Reports do not bind the loaded firmware/driver or board clock/temperature telemetry.",
+    "CPU and hybrid timing reports are sequential, not interleaved paired measurements.",
+    "Timed runs lack individual audio hashes; transcript, duration and encoded length are consistent with the parity clip.",
+    "One clip does not establish held-out corpus WER or sustained microphone capture.",
+    "DMA runs count 16-time-frame RUN protocol packets, not ioctl calls.",
+    "Partition/native medians are independently aggregated; sums need not equal total p50."
+  ]
+}

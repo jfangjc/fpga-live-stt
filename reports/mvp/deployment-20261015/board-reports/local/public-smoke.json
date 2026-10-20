@@ -1,0 +1,88 @@
+{
+  "hardware_execution": true,
+  "policy_context_seconds": 1,
+  "audio_seconds": 1.0,
+  "initialization_seconds": 63.94489997599885,
+  "cold": {
+    "seconds": 11.346167367002636,
+    "frontend_seconds": 0.012048753000271972,
+    "model_seconds": 8.251135112004704,
+    "decode_seconds": 3.08298350199766,
+    "text": "funery number mad",
+    "length": 13,
+    "feature_frames": 101,
+    "counters": {
+      "ioctls": 48,
+      "loads": 256,
+      "runs": 311,
+      "tx_bytes": 11281152,
+      "rx_bytes": 455760,
+      "ioctl_seconds": 0.0728034740241128,
+      "physical_calls": 128,
+      "oracle_calls": 0
+    }
+  },
+  "warm_runs": [
+    {
+      "seconds": 18.849309460005315,
+      "frontend_seconds": 18.818892995004717,
+      "model_seconds": 0.03025756099668797,
+      "decode_seconds": 0.00015890400391072035,
+      "text": "funery number mad",
+      "length": 13,
+      "feature_frames": 101,
+      "counters": {
+        "ioctls": 24,
+        "loads": 256,
+        "runs": 311,
+        "tx_bytes": 11281152,
+        "rx_bytes": 455760,
+        "ioctl_seconds": 0.01625347701337887,
+        "physical_calls": 128,
+        "oracle_calls": 0
+      }
+    },
+    {
+      "seconds": 0.03680804799660109,
+      "frontend_seconds": 0.005350845000066329,
+      "model_seconds": 0.031304639000154566,
+      "decode_seconds": 0.00015256399638019502,
+      "text": "funery number mad",
+      "length": 13,
+      "feature_frames": 101,
+      "counters": {
+        "ioctls": 24,
+        "loads": 256,
+        "runs": 311,
+        "tx_bytes": 11281152,
+        "rx_bytes": 455760,
+        "ioctl_seconds": 0.016751974013459403,
+        "physical_calls": 128,
+        "oracle_calls": 0
+      }
+    },
+    {
+      "seconds": 0.03649987000244437,
+      "frontend_seconds": 0.005574950999289285,
+      "model_seconds": 0.030771723999350797,
+      "decode_seconds": 0.00015319500380428508,
+      "text": "funery number mad",
+      "length": 13,
+      "feature_frames": 101,
+      "counters": {
+        "ioctls": 24,
+        "loads": 256,
+        "runs": 311,
+        "tx_bytes": 11281152,
+        "rx_bytes": 455760,
+        "ioctl_seconds": 0.01620502302830573,
+        "physical_calls": 128,
+        "oracle_calls": 0
+      }
+    }
+  ],
+  "warm_p50_seconds": 0.03680804799660109,
+  "all_warm_logits_bit_exact": true,
+  "capture_qualified": false,
+  "representative_wer_qualified": false
+}

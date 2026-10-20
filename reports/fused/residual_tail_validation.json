@@ -1,0 +1,2548 @@
+{
+  "complete": true,
+  "all_bit_exact": true,
+  "library_sha256": "ce97d2ce3c8db1a09eafccf37797deb0a4f6666aeae7135d9e92e5a9191d0eb2",
+  "source_sha256": "0700039c72f0a644ec27a05485792278e33032dfc04159a52575162a3ab87745",
+  "implementation_sha256": "f3efe925b7400e6f7a600eb769038956fd2f63fa55d2af4a848aae77ead2a110",
+  "transform_sha256": "964ceb8f7a6ecd9adfa9ae388bb20cb7fcfe91a7f7d294b2c03da8a9accb45dd",
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "records": [
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.1/mconv.23/Where_output_0",
+        "/encoder/encoder.1/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.1/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.1/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.1/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.2/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.2/mconv.0/Where",
+        "/encoder/encoder.1/mout/mconv.3/Relu",
+        "/encoder/encoder.1/Add",
+        "/encoder/encoder.1/mconv.23/Mul",
+        "/encoder/encoder.1/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.2/mconv.23/Where_output_0",
+        "/encoder/encoder.2/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.2/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.2/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.1/mconv.10/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.3/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.3/mconv.0/Where",
+        "/encoder/encoder.2/mout/mconv.3/Relu",
+        "/encoder/encoder.2/Add",
+        "/encoder/encoder.2/mconv.23/Mul",
+        "/encoder/encoder.2/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.3/mconv.23/Where_output_0",
+        "/encoder/encoder.3/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.3/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.3/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.1/mconv.16/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.4/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.4/mconv.0/Where",
+        "/encoder/encoder.3/mout/mconv.3/Relu",
+        "/encoder/encoder.3/Add",
+        "/encoder/encoder.3/mconv.23/Mul",
+        "/encoder/encoder.3/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.4/mconv.23/Where_output_0",
+        "/encoder/encoder.4/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.4/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.4/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.0/mconv.1/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.5/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.5/mconv.0/Where",
+        "/encoder/encoder.4/mout/mconv.3/Relu",
+        "/encoder/encoder.4/Add",
+        "/encoder/encoder.4/mconv.23/Mul",
+        "/encoder/encoder.4/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.5/mconv.23/Where_output_0",
+        "/encoder/encoder.5/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.5/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.5/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.5/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.6/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.6/mconv.0/Where",
+        "/encoder/encoder.5/mout/mconv.3/Relu",
+        "/encoder/encoder.5/Add",
+        "/encoder/encoder.5/mconv.23/Mul",
+        "/encoder/encoder.5/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.6/mconv.23/Where_output_0",
+        "/encoder/encoder.6/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.6/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.6/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.6/mconv.16/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.7/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.7/mconv.0/Where",
+        "/encoder/encoder.6/mout/mconv.3/Relu",
+        "/encoder/encoder.6/Add",
+        "/encoder/encoder.6/mconv.23/Mul",
+        "/encoder/encoder.6/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.7/mconv.23/Where_output_0",
+        "/encoder/encoder.7/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.7/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.7/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.7/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.8/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.8/mconv.0/Where",
+        "/encoder/encoder.7/mout/mconv.3/Relu",
+        "/encoder/encoder.7/Add",
+        "/encoder/encoder.7/mconv.23/Mul",
+        "/encoder/encoder.7/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.8/mconv.23/Where_output_0",
+        "/encoder/encoder.8/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.8/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.8/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.8/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.9/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.9/mconv.0/Where",
+        "/encoder/encoder.8/mout/mconv.3/Relu",
+        "/encoder/encoder.8/Add",
+        "/encoder/encoder.8/mconv.23/Mul",
+        "/encoder/encoder.8/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.9/mconv.23/Where_output_0",
+        "/encoder/encoder.9/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.9/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.9/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.2/mconv.20/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.10/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.10/mconv.0/Where",
+        "/encoder/encoder.9/mout/mconv.3/Relu",
+        "/encoder/encoder.9/Add",
+        "/encoder/encoder.9/mconv.23/Mul",
+        "/encoder/encoder.9/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.10/mconv.23/Where_output_0",
+        "/encoder/encoder.10/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.10/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.10/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.7/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.11/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.11/mconv.0/Where",
+        "/encoder/encoder.10/mout/mconv.3/Relu",
+        "/encoder/encoder.10/Add",
+        "/encoder/encoder.10/mconv.23/Mul",
+        "/encoder/encoder.10/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.11/mconv.23/Where_output_0",
+        "/encoder/encoder.11/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.11/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.11/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.5/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.12/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.12/mconv.0/Where",
+        "/encoder/encoder.11/mout/mconv.3/Relu",
+        "/encoder/encoder.11/Add",
+        "/encoder/encoder.11/mconv.23/Mul",
+        "/encoder/encoder.11/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.12/mconv.23/Where_output_0",
+        "/encoder/encoder.12/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.12/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.12/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.6/mconv.5/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.13/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.13/mconv.0/Where",
+        "/encoder/encoder.12/mout/mconv.3/Relu",
+        "/encoder/encoder.12/Add",
+        "/encoder/encoder.12/mconv.23/Mul",
+        "/encoder/encoder.12/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.13/mconv.23/Where_output_0",
+        "/encoder/encoder.13/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.13/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.13/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.4/mconv.11/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.14/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.14/mconv.0/Where",
+        "/encoder/encoder.13/mout/mconv.3/Relu",
+        "/encoder/encoder.13/Add",
+        "/encoder/encoder.13/mconv.23/Mul",
+        "/encoder/encoder.13/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.14/mconv.23/Where_output_0",
+        "/encoder/encoder.14/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.14/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.14/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.6/mconv.16/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.15/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.15/mconv.0/Where",
+        "/encoder/encoder.14/mout/mconv.3/Relu",
+        "/encoder/encoder.14/Add",
+        "/encoder/encoder.14/mconv.23/Mul",
+        "/encoder/encoder.14/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.15/mconv.23/Where_output_0",
+        "/encoder/encoder.15/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.15/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.15/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.6/mconv.6/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.16/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.16/mconv.0/Where",
+        "/encoder/encoder.15/mout/mconv.3/Relu",
+        "/encoder/encoder.15/Add",
+        "/encoder/encoder.15/mconv.23/Mul",
+        "/encoder/encoder.15/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.16/mconv.23/Where_output_0",
+        "/encoder/encoder.16/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.16/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.16/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.2/mconv.11/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.17/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.17/mconv.0/Where",
+        "/encoder/encoder.16/mout/mconv.3/Relu",
+        "/encoder/encoder.16/Add",
+        "/encoder/encoder.16/mconv.23/Mul",
+        "/encoder/encoder.16/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.17/mconv.23/Where_output_0",
+        "/encoder/encoder.17/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.17/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.17/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.5/mconv.6/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.18/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.18/mconv.0/Where",
+        "/encoder/encoder.17/mout/mconv.3/Relu",
+        "/encoder/encoder.17/Add",
+        "/encoder/encoder.17/mconv.23/Mul",
+        "/encoder/encoder.17/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.18/mconv.23/Where_output_0",
+        "/encoder/encoder.18/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.18/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.18/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.1/mconv.6/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.19/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.19/mconv.0/Where",
+        "/encoder/encoder.18/mout/mconv.3/Relu",
+        "/encoder/encoder.18/Add",
+        "/encoder/encoder.18/mconv.23/Mul",
+        "/encoder/encoder.18/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.19/mconv.23/Where_output_0",
+        "/encoder/encoder.19/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.19/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.19/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.19/res.0.0/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.20/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.20/mconv.0/Where",
+        "/encoder/encoder.19/mout/mconv.3/Relu",
+        "/encoder/encoder.19/Add",
+        "/encoder/encoder.19/mconv.23/Mul",
+        "/encoder/encoder.19/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.20/mconv.23/Where_output_0",
+        "/encoder/encoder.20/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.20/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.20/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.1/mconv.6/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.21/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.21/mconv.0/Where",
+        "/encoder/encoder.20/mout/mconv.3/Relu",
+        "/encoder/encoder.20/Add",
+        "/encoder/encoder.20/mconv.23/Mul",
+        "/encoder/encoder.20/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "inputs": [
+        "/encoder/encoder.21/mconv.23/Where_output_0",
+        "/encoder/encoder.21/mconv.23/Sigmoid_output_0",
+        "/encoder/encoder.21/res.0.0/conv/Conv_output_0_quantized",
+        "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+        "/encoder/encoder.21/res.0.0/conv/Conv_output_0_scale",
+        "/encoder/encoder.6/mconv.11/conv/Conv_output_0_zero_point",
+        "/encoder/encoder.22/mconv.0/Where_output_0_scale",
+        "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+      ],
+      "nodes": [
+        "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+        "/encoder/encoder.22/mconv.0/Where",
+        "/encoder/encoder.21/mout/mconv.3/Relu",
+        "/encoder/encoder.21/Add",
+        "/encoder/encoder.21/mconv.23/Mul",
+        "/encoder/encoder.21/res.0.0/conv/Conv_output_0_DequantizeLinear"
+      ],
+      "relu": true
+    }
+  ],
+  "micro_cases": [
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 8,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 123,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 8,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 118,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 127,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 7,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 133,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 9,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 133,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 131,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 120,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 127,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 7,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 142,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 11,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 116,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 121,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 9,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 128,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 11,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 123,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 8,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 128,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 7,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 124,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 135,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 9,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 129,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 5,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 121,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 11,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 135,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 6,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 134,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 1,
+      "masked": 1,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 3,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 3,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 4,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 4,
+      "masked": 2,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 17,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 17,
+      "masked": 8,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 0,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 256,
+      "bit_exact": true
+    },
+    {
+      "quantizer": "/encoder/encoder.22/mconv.0/Where_output_0_QuantizeLinear",
+      "times": 256,
+      "masked": 141,
+      "bit_exact": true
+    }
+  ],
+  "full_model_cases": [
+    {
+      "audio": "speech.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "speech.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "speech.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "speech.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0000.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0000.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0000.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0000.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0001.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0001.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0001.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0001.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0002.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0002.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0002.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0002.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0003.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0003.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0003.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0003.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0004.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0004.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0004.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "evaluation/6930-75918-0004.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "quiet-minus20db.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "quiet-minus20db.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "quiet-minus20db.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "quiet-minus20db.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr20.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr20.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr20.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr20.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr10.wav",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr10.wav",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr10.wav",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "audio": "noise-snr10.wav",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    }
+  ],
+  "hardware_execution": false
+}

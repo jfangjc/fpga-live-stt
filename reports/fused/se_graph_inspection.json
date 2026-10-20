@@ -1,0 +1,257 @@
+[
+  {
+    "name": "/encoder/encoder.1/mconv.23/Less",
+    "op": "Less",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.21/Unsqueeze_1_output_0",
+      "/encoder/encoder.1/mconv.21/Unsqueeze_3_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Less_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Not",
+    "op": "Not",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Less_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Not_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Cast_2",
+    "op": "Cast",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Less_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Cast_2_output_0"
+    ],
+    "attributes": {
+      "to": 7
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Cast_1",
+    "op": "Cast",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Not_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Cast_1_output_0"
+    ],
+    "attributes": {
+      "to": 9
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/ReduceSum_1",
+    "op": "ReduceSum",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Cast_2_output_0",
+      "onnx::ReduceSum_978"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/ReduceSum_1_output_0"
+    ],
+    "attributes": {
+      "keepdims": 1
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Where",
+    "op": "Where",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+      "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+      "/encoder/encoder.1/mconv.21/conv/Conv_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Where_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Cast_3",
+    "op": "Cast",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/ReduceSum_1_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Cast_3_output_0"
+    ],
+    "attributes": {
+      "to": 1
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/ReduceSum",
+    "op": "ReduceSum",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Where_output_0",
+      "onnx::ReduceSum_978"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/ReduceSum_output_0"
+    ],
+    "attributes": {
+      "keepdims": 1
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Div",
+    "op": "Div",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/ReduceSum_output_0",
+      "/encoder/encoder.1/mconv.23/Cast_3_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Div_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Transpose",
+    "op": "Transpose",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Div_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Transpose_output_0"
+    ],
+    "attributes": {
+      "perm": [
+        0,
+        2,
+        1
+      ]
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/fc/fc.0/MatMul",
+    "op": "MatMul",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Transpose_output_0",
+      "onnx::MatMul_6138"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/fc/fc.0/MatMul_output_0"
+    ],
+    "attributes": {},
+    "constants": {
+      "onnx::MatMul_6138": {
+        "shape": [
+          256,
+          32
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/fc/mconv.3/Relu",
+    "op": "Relu",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/fc/fc.0/MatMul_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/fc/mconv.3/Relu_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/fc/fc.2/MatMul",
+    "op": "MatMul",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/fc/mconv.3/Relu_output_0",
+      "onnx::MatMul_6139"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/fc/fc.2/MatMul_output_0"
+    ],
+    "attributes": {},
+    "constants": {
+      "onnx::MatMul_6139": {
+        "shape": [
+          32,
+          256
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Transpose_1",
+    "op": "Transpose",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/fc/fc.2/MatMul_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Transpose_1_output_0"
+    ],
+    "attributes": {
+      "perm": [
+        0,
+        2,
+        1
+      ]
+    },
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Sigmoid",
+    "op": "Sigmoid",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Transpose_1_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Sigmoid_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  },
+  {
+    "name": "/encoder/encoder.1/mconv.23/Mul",
+    "op": "Mul",
+    "domain": "",
+    "inputs": [
+      "/encoder/encoder.1/mconv.23/Where_output_0",
+      "/encoder/encoder.1/mconv.23/Sigmoid_output_0"
+    ],
+    "outputs": [
+      "/encoder/encoder.1/mconv.23/Mul_output_0"
+    ],
+    "attributes": {},
+    "constants": {}
+  }
+]

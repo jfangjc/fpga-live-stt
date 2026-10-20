@@ -1,0 +1,2438 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "convolutions": 200,
+  "all_uint8_inputs_fit_int32": true,
+  "rows": [
+    {
+      "name": "/encoder/encoder.1/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -149175,
+      "maximum_possible_biased_sum": 149685,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1208404,
+      "maximum_possible_biased_sum": 1204406,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -229755,
+      "maximum_possible_biased_sum": 251175,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1062434,
+      "maximum_possible_biased_sum": 1057891,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -198390,
+      "maximum_possible_biased_sum": 207570,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1120653,
+      "maximum_possible_biased_sum": 1134822,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -224400,
+      "maximum_possible_biased_sum": 158865,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1186046,
+      "maximum_possible_biased_sum": 1186729,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -228735,
+      "maximum_possible_biased_sum": 275145,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1009040,
+      "maximum_possible_biased_sum": 1001635,
+      "constant_output_channels_normalized": [
+        2,
+        26,
+        39,
+        43,
+        76,
+        87,
+        88,
+        101,
+        167,
+        170,
+        222,
+        254
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -307785,
+      "maximum_possible_biased_sum": 301665,
+      "constant_output_channels_normalized": [
+        2,
+        26,
+        39,
+        43,
+        76,
+        87,
+        88,
+        101,
+        167,
+        170,
+        222,
+        254
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1114780,
+      "maximum_possible_biased_sum": 1107800,
+      "constant_output_channels_normalized": [
+        8,
+        93,
+        139,
+        140,
+        173,
+        211,
+        226,
+        234,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -234345,
+      "maximum_possible_biased_sum": 254235,
+      "constant_output_channels_normalized": [
+        8,
+        93,
+        139,
+        140,
+        173,
+        211,
+        226,
+        234,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1289811,
+      "maximum_possible_biased_sum": 1313739,
+      "constant_output_channels_normalized": [
+        21,
+        35,
+        102,
+        170,
+        226,
+        243
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -284835,
+      "maximum_possible_biased_sum": 301410,
+      "constant_output_channels_normalized": [
+        21,
+        35,
+        102,
+        170,
+        226,
+        243
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1217545,
+      "maximum_possible_biased_sum": 1218725,
+      "constant_output_channels_normalized": [
+        28,
+        56,
+        70,
+        121,
+        227
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -370005,
+      "maximum_possible_biased_sum": 346035,
+      "constant_output_channels_normalized": [
+        28,
+        56,
+        70,
+        121,
+        227
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1223514,
+      "maximum_possible_biased_sum": 11353806,
+      "constant_output_channels_normalized": [
+        186
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -179010,
+      "maximum_possible_biased_sum": 194820,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1209765,
+      "maximum_possible_biased_sum": 1187339,
+      "constant_output_channels_normalized": [
+        6,
+        23,
+        96,
+        138,
+        161,
+        178,
+        236,
+        247,
+        248,
+        255
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -242505,
+      "maximum_possible_biased_sum": 316200,
+      "constant_output_channels_normalized": [
+        41,
+        137
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1145313,
+      "maximum_possible_biased_sum": 1139487,
+      "constant_output_channels_normalized": [
+        84,
+        132,
+        145,
+        173,
+        174
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -315690,
+      "maximum_possible_biased_sum": 378165,
+      "constant_output_channels_normalized": [
+        84,
+        132,
+        145,
+        173,
+        174
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1159718,
+      "maximum_possible_biased_sum": 1170727,
+      "constant_output_channels_normalized": [
+        2
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -343740,
+      "maximum_possible_biased_sum": 335580,
+      "constant_output_channels_normalized": [
+        2
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1208777,
+      "maximum_possible_biased_sum": 1202248,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -185895,
+      "maximum_possible_biased_sum": 195330,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1208085,
+      "maximum_possible_biased_sum": 1199625,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -236640,
+      "maximum_possible_biased_sum": 264945,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1233262,
+      "maximum_possible_biased_sum": 1245593,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -312630,
+      "maximum_possible_biased_sum": 312375,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1272728,
+      "maximum_possible_biased_sum": 1299202,
+      "constant_output_channels_normalized": [
+        198
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -366690,
+      "maximum_possible_biased_sum": 370770,
+      "constant_output_channels_normalized": [
+        198
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1387357,
+      "maximum_possible_biased_sum": 1383473,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -429930,
+      "maximum_possible_biased_sum": 453390,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1282049,
+      "maximum_possible_biased_sum": 1298041,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -229500,
+      "maximum_possible_biased_sum": 224910,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1204022,
+      "maximum_possible_biased_sum": 1207667,
+      "constant_output_channels_normalized": [
+        29,
+        115,
+        116,
+        182
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -248880,
+      "maximum_possible_biased_sum": 284325,
+      "constant_output_channels_normalized": [
+        29,
+        115,
+        116,
+        182
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1428321,
+      "maximum_possible_biased_sum": 1393509,
+      "constant_output_channels_normalized": [
+        43,
+        71,
+        179,
+        224,
+        229
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -253725,
+      "maximum_possible_biased_sum": 405960,
+      "constant_output_channels_normalized": [
+        43,
+        71,
+        179,
+        224,
+        229
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1258316,
+      "maximum_possible_biased_sum": 1268479,
+      "constant_output_channels_normalized": [
+        30,
+        97,
+        111,
+        191,
+        192
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -274380,
+      "maximum_possible_biased_sum": 345015,
+      "constant_output_channels_normalized": [
+        30,
+        97,
+        111,
+        191,
+        192
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1326925,
+      "maximum_possible_biased_sum": 1342670,
+      "constant_output_channels_normalized": [
+        135,
+        143,
+        158,
+        226
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -442425,
+      "maximum_possible_biased_sum": 449310,
+      "constant_output_channels_normalized": [
+        135,
+        143,
+        158,
+        226
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1323729,
+      "maximum_possible_biased_sum": 5170477,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -286110,
+      "maximum_possible_biased_sum": 277440,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1235670,
+      "maximum_possible_biased_sum": 2093618,
+      "constant_output_channels_normalized": [
+        133
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -324105,
+      "maximum_possible_biased_sum": 282285,
+      "constant_output_channels_normalized": [
+        133
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1313046,
+      "maximum_possible_biased_sum": 1336957,
+      "constant_output_channels_normalized": [
+        53,
+        179
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -344505,
+      "maximum_possible_biased_sum": 347310,
+      "constant_output_channels_normalized": [
+        53,
+        179
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1253875,
+      "maximum_possible_biased_sum": 1279040,
+      "constant_output_channels_normalized": [
+        1
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -427890,
+      "maximum_possible_biased_sum": 330480,
+      "constant_output_channels_normalized": [
+        1
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1277720,
+      "maximum_possible_biased_sum": 1299820,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -489345,
+      "maximum_possible_biased_sum": 516885,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1305215,
+      "maximum_possible_biased_sum": 1278982,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -308550,
+      "maximum_possible_biased_sum": 275145,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1171724,
+      "maximum_possible_biased_sum": 1172491,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -213435,
+      "maximum_possible_biased_sum": 179265,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1392700,
+      "maximum_possible_biased_sum": 1402610,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -204510,
+      "maximum_possible_biased_sum": 180540,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1344291,
+      "maximum_possible_biased_sum": 1357013,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -224910,
+      "maximum_possible_biased_sum": 220065,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1173586,
+      "maximum_possible_biased_sum": 1185674,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -220575,
+      "maximum_possible_biased_sum": 282030,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1276973,
+      "maximum_possible_biased_sum": 1277362,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -297330,
+      "maximum_possible_biased_sum": 284070,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1263694,
+      "maximum_possible_biased_sum": 1277108,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -286365,
+      "maximum_possible_biased_sum": 281010,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1317232,
+      "maximum_possible_biased_sum": 1353128,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -384285,
+      "maximum_possible_biased_sum": 266730,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1346887,
+      "maximum_possible_biased_sum": 1408015,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -350880,
+      "maximum_possible_biased_sum": 305490,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1397720,
+      "maximum_possible_biased_sum": 1389940,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -270045,
+      "maximum_possible_biased_sum": 351390,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1293895,
+      "maximum_possible_biased_sum": 1287341,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -319260,
+      "maximum_possible_biased_sum": 206550,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1439515,
+      "maximum_possible_biased_sum": 1441985,
+      "constant_output_channels_normalized": [
+        206
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -249135,
+      "maximum_possible_biased_sum": 312375,
+      "constant_output_channels_normalized": [
+        206
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1261434,
+      "maximum_possible_biased_sum": 1253376,
+      "constant_output_channels_normalized": [
+        222
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -258315,
+      "maximum_possible_biased_sum": 283050,
+      "constant_output_channels_normalized": [
+        222
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1275893,
+      "maximum_possible_biased_sum": 1297822,
+      "constant_output_channels_normalized": [
+        149
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -349605,
+      "maximum_possible_biased_sum": 384285,
+      "constant_output_channels_normalized": [
+        149
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1412778,
+      "maximum_possible_biased_sum": 1427412,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -334815,
+      "maximum_possible_biased_sum": 340425,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1360051,
+      "maximum_possible_biased_sum": 1345244,
+      "constant_output_channels_normalized": [
+        57,
+        167
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -239700,
+      "maximum_possible_biased_sum": 295290,
+      "constant_output_channels_normalized": [
+        57,
+        167
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1434518,
+      "maximum_possible_biased_sum": 1404397,
+      "constant_output_channels_normalized": [
+        5,
+        158
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -296310,
+      "maximum_possible_biased_sum": 304725,
+      "constant_output_channels_normalized": [
+        5,
+        158
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1335156,
+      "maximum_possible_biased_sum": 1331124,
+      "constant_output_channels_normalized": [
+        88,
+        97
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -300390,
+      "maximum_possible_biased_sum": 195585,
+      "constant_output_channels_normalized": [
+        88,
+        97
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1295789,
+      "maximum_possible_biased_sum": 1303936,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -289680,
+      "maximum_possible_biased_sum": 255000,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1417416,
+      "maximum_possible_biased_sum": 1426854,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -268770,
+      "maximum_possible_biased_sum": 276165,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1371945,
+      "maximum_possible_biased_sum": 1410187,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -228225,
+      "maximum_possible_biased_sum": 218790,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1476299,
+      "maximum_possible_biased_sum": 1515871,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -206040,
+      "maximum_possible_biased_sum": 347820,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1344094,
+      "maximum_possible_biased_sum": 1341761,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -275655,
+      "maximum_possible_biased_sum": 268515,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1429037,
+      "maximum_possible_biased_sum": 1405033,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -326655,
+      "maximum_possible_biased_sum": 371790,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1448671,
+      "maximum_possible_biased_sum": 1450934,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -381225,
+      "maximum_possible_biased_sum": 330480,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1412071,
+      "maximum_possible_biased_sum": 1371824,
+      "constant_output_channels_normalized": [
+        124,
+        147,
+        241
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -288915,
+      "maximum_possible_biased_sum": 301920,
+      "constant_output_channels_normalized": [
+        124,
+        147,
+        241
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1366583,
+      "maximum_possible_biased_sum": 1365742,
+      "constant_output_channels_normalized": [
+        44,
+        116,
+        119
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -303960,
+      "maximum_possible_biased_sum": 303450,
+      "constant_output_channels_normalized": [
+        44,
+        116,
+        119
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1290613,
+      "maximum_possible_biased_sum": 1298402,
+      "constant_output_channels_normalized": [
+        56,
+        201,
+        246
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -408255,
+      "maximum_possible_biased_sum": 439875,
+      "constant_output_channels_normalized": [
+        56,
+        201,
+        246
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1230043,
+      "maximum_possible_biased_sum": 1223822,
+      "constant_output_channels_normalized": [
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -401370,
+      "maximum_possible_biased_sum": 392190,
+      "constant_output_channels_normalized": [
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1449654,
+      "maximum_possible_biased_sum": 1461936,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -282795,
+      "maximum_possible_biased_sum": 301665,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1329038,
+      "maximum_possible_biased_sum": 1284967,
+      "constant_output_channels_normalized": [
+        5,
+        25,
+        43,
+        52,
+        57,
+        91,
+        97,
+        114,
+        123,
+        131,
+        196,
+        209,
+        236,
+        237,
+        245,
+        246,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -369750,
+      "maximum_possible_biased_sum": 369240,
+      "constant_output_channels_normalized": [
+        5,
+        25,
+        43,
+        52,
+        57,
+        91,
+        97,
+        114,
+        123,
+        131,
+        196,
+        209,
+        236,
+        237,
+        245,
+        246,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1249517,
+      "maximum_possible_biased_sum": 1253308,
+      "constant_output_channels_normalized": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        19,
+        20,
+        25,
+        26,
+        27,
+        31,
+        33,
+        34,
+        35,
+        49,
+        50,
+        54,
+        59,
+        62,
+        64,
+        77,
+        83,
+        86,
+        95,
+        102,
+        104,
+        105,
+        109,
+        112,
+        114,
+        123,
+        128,
+        135,
+        145,
+        151,
+        153,
+        158,
+        160,
+        168,
+        174,
+        197,
+        199,
+        200,
+        201,
+        202,
+        207,
+        208,
+        209,
+        216,
+        221,
+        222,
+        223,
+        231,
+        234,
+        236,
+        238,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -551310,
+      "maximum_possible_biased_sum": 387855,
+      "constant_output_channels_normalized": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        19,
+        20,
+        25,
+        26,
+        27,
+        31,
+        33,
+        34,
+        35,
+        49,
+        50,
+        54,
+        59,
+        62,
+        64,
+        77,
+        83,
+        86,
+        95,
+        102,
+        104,
+        105,
+        109,
+        112,
+        114,
+        123,
+        128,
+        135,
+        145,
+        151,
+        153,
+        158,
+        160,
+        168,
+        174,
+        197,
+        199,
+        200,
+        201,
+        202,
+        207,
+        208,
+        209,
+        216,
+        221,
+        222,
+        223,
+        231,
+        234,
+        236,
+        238,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -971808,
+      "maximum_possible_biased_sum": 1006739,
+      "constant_output_channels_normalized": [
+        10,
+        11,
+        14,
+        18,
+        23,
+        26,
+        27,
+        28,
+        30,
+        33,
+        34,
+        35,
+        38,
+        41,
+        44,
+        48,
+        49,
+        52,
+        54,
+        57,
+        60,
+        64,
+        65,
+        67,
+        76,
+        80,
+        90,
+        107,
+        122,
+        133,
+        134,
+        137,
+        138,
+        139,
+        144,
+        145,
+        146,
+        147,
+        150,
+        151,
+        158,
+        168,
+        169,
+        173,
+        175,
+        181,
+        182,
+        187,
+        188,
+        190,
+        195,
+        207,
+        210,
+        212,
+        215,
+        219,
+        222,
+        226,
+        230,
+        232,
+        233,
+        235,
+        240,
+        252,
+        253
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -428655,
+      "maximum_possible_biased_sum": 402390,
+      "constant_output_channels_normalized": [
+        10,
+        11,
+        14,
+        18,
+        23,
+        26,
+        27,
+        28,
+        30,
+        33,
+        34,
+        35,
+        38,
+        41,
+        44,
+        48,
+        49,
+        52,
+        54,
+        57,
+        60,
+        64,
+        65,
+        67,
+        76,
+        80,
+        90,
+        107,
+        122,
+        133,
+        134,
+        137,
+        138,
+        139,
+        144,
+        145,
+        146,
+        147,
+        150,
+        151,
+        158,
+        168,
+        169,
+        173,
+        175,
+        181,
+        182,
+        187,
+        188,
+        190,
+        195,
+        207,
+        210,
+        212,
+        215,
+        219,
+        222,
+        226,
+        230,
+        232,
+        233,
+        235,
+        240,
+        252,
+        253
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -983558,
+      "maximum_possible_biased_sum": 1038170,
+      "constant_output_channels_normalized": [
+        4,
+        10,
+        20,
+        44,
+        47,
+        50,
+        54,
+        56,
+        57,
+        58,
+        67,
+        69,
+        70,
+        78,
+        89,
+        92,
+        93,
+        94,
+        97,
+        112,
+        115,
+        116,
+        123,
+        133,
+        142,
+        149,
+        152,
+        163,
+        165,
+        171,
+        176,
+        177,
+        182,
+        200,
+        204,
+        205,
+        216,
+        227,
+        229,
+        230,
+        234,
+        239,
+        245,
+        248
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -459255,
+      "maximum_possible_biased_sum": 341955,
+      "constant_output_channels_normalized": [
+        4,
+        10,
+        20,
+        44,
+        47,
+        50,
+        54,
+        56,
+        57,
+        58,
+        67,
+        69,
+        70,
+        78,
+        89,
+        92,
+        93,
+        94,
+        97,
+        112,
+        115,
+        116,
+        123,
+        133,
+        142,
+        149,
+        152,
+        163,
+        165,
+        171,
+        176,
+        177,
+        182,
+        200,
+        204,
+        205,
+        216,
+        227,
+        229,
+        230,
+        234,
+        239,
+        245,
+        248
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1180169,
+      "maximum_possible_biased_sum": 5585267,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -340935,
+      "maximum_possible_biased_sum": 317475,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1363015,
+      "maximum_possible_biased_sum": 1336670,
+      "constant_output_channels_normalized": [
+        207
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -270045,
+      "maximum_possible_biased_sum": 246330,
+      "constant_output_channels_normalized": [
+        207
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1440255,
+      "maximum_possible_biased_sum": 1455525,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -258060,
+      "maximum_possible_biased_sum": 359805,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1372144,
+      "maximum_possible_biased_sum": 1376756,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -273105,
+      "maximum_possible_biased_sum": 212925,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1315345,
+      "maximum_possible_biased_sum": 1340480,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -476085,
+      "maximum_possible_biased_sum": 276930,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1422177,
+      "maximum_possible_biased_sum": 1400163,
+      "constant_output_channels_normalized": [
+        128,
+        134,
+        188
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -351135,
+      "maximum_possible_biased_sum": 404175,
+      "constant_output_channels_normalized": [
+        128,
+        134,
+        188
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1259998,
+      "maximum_possible_biased_sum": 1284137,
+      "constant_output_channels_normalized": [
+        128
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -389895,
+      "maximum_possible_biased_sum": 421515,
+      "constant_output_channels_normalized": [
+        128
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1246694,
+      "maximum_possible_biased_sum": 1244290,
+      "constant_output_channels_normalized": [
+        70,
+        229
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -351645,
+      "maximum_possible_biased_sum": 331500,
+      "constant_output_channels_normalized": [
+        70,
+        229
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1338366,
+      "maximum_possible_biased_sum": 1339899,
+      "constant_output_channels_normalized": [
+        54,
+        247
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -327165,
+      "maximum_possible_biased_sum": 338130,
+      "constant_output_channels_normalized": [
+        54,
+        247
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1478591,
+      "maximum_possible_biased_sum": 1384294,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -301410,
+      "maximum_possible_biased_sum": 304215,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1323780,
+      "maximum_possible_biased_sum": 1304505,
+      "constant_output_channels_normalized": [
+        0,
+        8,
+        15,
+        27,
+        31,
+        48,
+        59,
+        79,
+        85,
+        86,
+        93,
+        96,
+        102,
+        124,
+        126,
+        136,
+        138,
+        147,
+        151,
+        153,
+        154,
+        164,
+        181,
+        203,
+        208,
+        217,
+        232,
+        243
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -413865,
+      "maximum_possible_biased_sum": 482205,
+      "constant_output_channels_normalized": [
+        0,
+        8,
+        15,
+        27,
+        31,
+        48,
+        59,
+        79,
+        85,
+        86,
+        93,
+        96,
+        102,
+        124,
+        126,
+        136,
+        138,
+        147,
+        151,
+        153,
+        154,
+        164,
+        181,
+        203,
+        208,
+        217,
+        232,
+        243
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1224041,
+      "maximum_possible_biased_sum": 1224724,
+      "constant_output_channels_normalized": [
+        10,
+        11,
+        12,
+        14,
+        27,
+        44,
+        45,
+        49,
+        55,
+        56,
+        57,
+        64,
+        77,
+        86,
+        95,
+        98,
+        99,
+        104,
+        116,
+        121,
+        128,
+        136,
+        147,
+        154,
+        159,
+        161,
+        176,
+        188,
+        192,
+        207,
+        210,
+        244,
+        247
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -484755,
+      "maximum_possible_biased_sum": 522240,
+      "constant_output_channels_normalized": [
+        10,
+        11,
+        12,
+        14,
+        27,
+        44,
+        45,
+        49,
+        55,
+        56,
+        57,
+        64,
+        77,
+        86,
+        95,
+        98,
+        99,
+        104,
+        116,
+        121,
+        128,
+        136,
+        147,
+        154,
+        159,
+        161,
+        176,
+        188,
+        192,
+        207,
+        210,
+        244,
+        247
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1131057,
+      "maximum_possible_biased_sum": 1137788,
+      "constant_output_channels_normalized": [
+        15,
+        17,
+        28,
+        41,
+        45,
+        47,
+        58,
+        69,
+        75,
+        81,
+        83,
+        96,
+        98,
+        113,
+        142,
+        151,
+        155,
+        156,
+        159,
+        163,
+        165,
+        176,
+        180,
+        188,
+        194,
+        209,
+        221,
+        226,
+        229,
+        255
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -574770,
+      "maximum_possible_biased_sum": 553605,
+      "constant_output_channels_normalized": [
+        2,
+        11,
+        27,
+        39,
+        42,
+        43,
+        60,
+        63,
+        72,
+        73,
+        78,
+        98,
+        99,
+        111,
+        115,
+        116,
+        118,
+        121,
+        127,
+        128,
+        130,
+        147,
+        151,
+        164,
+        165,
+        174,
+        184,
+        203,
+        213,
+        230,
+        235,
+        239,
+        251
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1260314,
+      "maximum_possible_biased_sum": 1241746,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -207060,
+      "maximum_possible_biased_sum": 430950,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1186212,
+      "maximum_possible_biased_sum": 1159278,
+      "constant_output_channels_normalized": [
+        20
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -431970,
+      "maximum_possible_biased_sum": 445485,
+      "constant_output_channels_normalized": [
+        20
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1282105,
+      "maximum_possible_biased_sum": 1281823,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -321045,
+      "maximum_possible_biased_sum": 537795,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1401239,
+      "maximum_possible_biased_sum": 1335500,
+      "constant_output_channels_normalized": [
+        148
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -514590,
+      "maximum_possible_biased_sum": 302940,
+      "constant_output_channels_normalized": [
+        148
+      ],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1349411,
+      "maximum_possible_biased_sum": 1355374,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -397290,
+      "maximum_possible_biased_sum": 390150,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1226303,
+      "maximum_possible_biased_sum": 1222972,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -247095,
+      "maximum_possible_biased_sum": 335580,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1223807,
+      "maximum_possible_biased_sum": 1201463,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -179775,
+      "maximum_possible_biased_sum": 157335,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1422435,
+      "maximum_possible_biased_sum": 1411890,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -185895,
+      "maximum_possible_biased_sum": 139995,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1501348,
+      "maximum_possible_biased_sum": 1487252,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -198645,
+      "maximum_possible_biased_sum": 146880,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1434756,
+      "maximum_possible_biased_sum": 1454139,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -260355,
+      "maximum_possible_biased_sum": 425085,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1399645,
+      "maximum_possible_biased_sum": 1403330,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -232560,
+      "maximum_possible_biased_sum": 266985,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1328143,
+      "maximum_possible_biased_sum": 1295418,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -207315,
+      "maximum_possible_biased_sum": 284835,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1481136,
+      "maximum_possible_biased_sum": 1424025,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -151980,
+      "maximum_possible_biased_sum": 224145,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1560102,
+      "maximum_possible_biased_sum": 1529478,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -245310,
+      "maximum_possible_biased_sum": 153510,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1339752,
+      "maximum_possible_biased_sum": 1323918,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -245565,
+      "maximum_possible_biased_sum": 307020,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1403899,
+      "maximum_possible_biased_sum": 1420226,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -183855,
+      "maximum_possible_biased_sum": 150705,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1403234,
+      "maximum_possible_biased_sum": 1395391,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -278460,
+      "maximum_possible_biased_sum": 249390,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1410512,
+      "maximum_possible_biased_sum": 1411063,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -174930,
+      "maximum_possible_biased_sum": 183090,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1390342,
+      "maximum_possible_biased_sum": 1409048,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -166515,
+      "maximum_possible_biased_sum": 145095,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1509411,
+      "maximum_possible_biased_sum": 1482249,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -138720,
+      "maximum_possible_biased_sum": 147390,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1421657,
+      "maximum_possible_biased_sum": 1433833,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.0/conv/Conv_quant",
+      "minimum_possible_biased_sum": -137955,
+      "maximum_possible_biased_sum": 111945,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.1/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1440616,
+      "maximum_possible_biased_sum": 1412324,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.5/conv/Conv_quant",
+      "minimum_possible_biased_sum": -202215,
+      "maximum_possible_biased_sum": 141015,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.6/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1346892,
+      "maximum_possible_biased_sum": 1357128,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.10/conv/Conv_quant",
+      "minimum_possible_biased_sum": -171105,
+      "maximum_possible_biased_sum": 126225,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.11/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1372577,
+      "maximum_possible_biased_sum": 1410263,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.15/conv/Conv_quant",
+      "minimum_possible_biased_sum": -114240,
+      "maximum_possible_biased_sum": 182070,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.16/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1380634,
+      "maximum_possible_biased_sum": 1381016,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.20/conv/Conv_quant",
+      "minimum_possible_biased_sum": -186405,
+      "maximum_possible_biased_sum": 141270,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.21/conv/Conv_quant",
+      "minimum_possible_biased_sum": -1313712,
+      "maximum_possible_biased_sum": 1324955,
+      "constant_output_channels_normalized": [],
+      "correction_fits_int32": true,
+      "all_uint8_inputs_fit_int32": true
+    }
+  ],
+  "source_sha256": "4b7bcaf6af62962dc43be118a3efae4e8a14ef6e2f212cdbab63961abd175566",
+  "model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "selection_proof_sha256": "df151cf6c0b9056ce2d61e1b975df9fc3b193dde7a6421ea5911d3c814ecf2c2"
+}

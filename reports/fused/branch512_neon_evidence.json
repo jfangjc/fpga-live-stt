@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "arithmetic_and_program_construction_unchanged": true,
+  "guarded_byte_cases": 1024,
+  "packet_checks": 288,
+  "error_checks": 159,
+  "library_sha256": "bdea23da18d3a9a6d0341c1d76d100569e3b41c609c24f7822a898902bc9fc9b",
+  "parent_library_sha256": "b1446f2a3ce0387a88201d9cecce4c5dd0e49dde93ace1adf2e30d568fa1f59a",
+  "notes": "Native unpack microbenchmark only. T=1 can regress; whole-model latency requires paired physical confirmation.",
+  "sources_sha256": {
+    "software/ort_fpga_stream_branch512_neon/branch_graph.py": "861abe068f052079ef82b4b2926003e5e8662b2b18cfba83e10997b54ee2f816",
+    "software/ort_fpga_stream_branch512_neon/build.sh": "13bf12e11057f36cbde7b132a072267a9219ccfdd5c8ca571de18c57a3a370d2",
+    "software/ort_fpga_stream_branch512_neon/libort_fpga.so": "bdea23da18d3a9a6d0341c1d76d100569e3b41c609c24f7822a898902bc9fc9b",
+    "software/ort_fpga_stream_branch512_neon/pair_graph.py": "b960d57d37c334adc6fce0174e797bcbf64c9d54d802e917eb0f6c6e877d5e12",
+    "software/ort_fpga_stream_branch512_neon/pointwise.cc": "04f06c076cfaef896da30eba95a521a0299dcf4bde80b59e1361a744a9f01d0a",
+    "software/ort_fpga_stream_branch512_neon/qnc.h": "b99d23871222a6e68682b3c3a18c4055ec7badd4af0560cd697ef806ce6034a2",
+    "software/ort_fpga_stream_branch512_neon/qnc_transport.c": "bb4d1f032512597a9690bf862d5cadcc4f5120975880111c30209c0ac8730b31",
+    "software/ort_fpga_stream_branch512_neon/stream_graph.py": "595dc1645c6dd14d7aacc9114bfc5e210b5aee0597884fe2a220da9bf6598bf1",
+    "software/ort_fpga_stream_branch512_neon/include/onnxruntime_c_api.h": "e035e30c27e74c8c00e0f483e576e12b4067d17f12e9237fd6eff8b346c9b381",
+    "software/ort_fpga_stream_branch512_neon/include/onnxruntime_ep_c_api.h": "e6c986c9e98583f8113b2c6bc3864814883b806d501cf24da4d239c45753e235",
+    "software/ort_fpga_stream_branch512_neon/include/onnxruntime_error_code.h": "5ce3b054e798eced8d14f5b86e98692fd33470463f96194ce0700a2d53dd8721",
+    "scripts/create_branch512_neon.py": "510ec93bc809afea5544e797ffe421060e06c7d876708ae9b724396f60cc6a99",
+    "scripts/bind_branch512_neon.py": "6dd339965c80144e37931f8ee36441f0a80a5635bc941c4a814b7412191c7142",
+    "software/latency/test_neon_unpack.c": "8abe6c3ad794ae8542bfc1dbd2785d4cfb33904025de407e1148c6fd1b77ef36",
+    "software/latency/test_branch512_neon_transport.py": "ad73609c0090d9c05844ac0adf98f2c7e6c764d7109e3aee3e17887ebf04c3d9",
+    "reports/fused/branch512_neon_unpack.json": "ccca997bbc67936240c19f546937858c1f4a27f0b14d629e6b7645061c8a7fd3",
+    "reports/fused/branch512_neon_mock_transport.json": "8c7afe3e3ebbcb77ca3e0f5f52487ff04a9e92837e93eaf3ae4580e1d2abc36e",
+    "reports/fused/branch512_neon_mock_transport.log": "286e137712374338ef76800187ed108d21c9e58f2e154c9eab1d91deee925fc7"
+  }
+}

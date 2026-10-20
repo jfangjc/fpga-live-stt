@@ -1,0 +1,29 @@
+{
+  "seconds": 313.5738647649996,
+  "text": "Concord returned to its place amidst the tents.",
+  "log": "cpu-q8-smoke.log",
+  "physical": false,
+  "fpga_decoder": false,
+  "fpga_attention": false,
+  "flash_attention": false,
+  "physical_counters": null,
+  "language": "en",
+  "mode": "cpu",
+  "model": "openai/whisper-large-v3-turbo",
+  "timing_scope": "Full process including model load and file I/O",
+  "dynamic_libraries": {
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/src/libwhisper.so.1": "8a693bfac1c665a7b5e558f1a4a0cb17550609fda611bf860d52642467589a18",
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml.so.0": "8a7d82b49a61da18a5c0663d8730d830e877b21a6c693e884507f86d96407bf1",
+    "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+    "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+    "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+    "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-base.so.0": "5580ade62cba589a9048dd693081311e4cacab79c54beec7b3f8fb561a61fe55",
+    "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-cpu.so.0": "3944342d07b9784c13621c85d46b745320250fcdadb90474be66371aea47d970"
+  },
+  "sha256": {
+    "build-cpu/bin/whisper-cli": "1782885b4b4676194c4e705c985567104572cf1d632ab48f3426737757fdcbde",
+    "models/ggml-large-v3-turbo-q8_0.bin": "317eb69c11673c9de1e1f0d459b253999804ec71ac4c23c17ecf5fbe24e259a1",
+    "/home/ubuntu/prototype-v3-fused/research/eval/librispeech-mini/evaluation/6930-75918-0000.wav": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8"
+  }
+}

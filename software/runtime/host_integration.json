@@ -1,0 +1,1042 @@
+{
+  "cpu": {
+    "transcript": "well i don't wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+    "audio_seconds": 7.435,
+    "load_seconds": 0.0006607999966945499,
+    "frontend_seconds": 0.07302650000201538,
+    "inference_seconds": 0.1041315000038594,
+    "decode_seconds": 0.00010479999764356762,
+    "total_seconds": 0.1779236000002129,
+    "encoded_length": 93,
+    "hardware_execution": false,
+    "host_wall": 0.17794839999987744
+  },
+  "emulate": {
+    "transcript": "well i don't wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+    "audio_seconds": 7.435,
+    "load_seconds": 0.0008890000026440248,
+    "frontend_seconds": 0.04188639999483712,
+    "inference_seconds": 6.443894399999408,
+    "decode_seconds": 7.470000127796084e-05,
+    "total_seconds": 6.486744499998167,
+    "encoded_length": 93,
+    "hardware_execution": false,
+    "partition_profile": [
+      {
+        "kind": "cpu",
+        "seconds": 0.000614999997196719
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.026836000004550442
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.002183599994168617
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.07910990000527818
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0016251999913947657
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.09592459999839775
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0012348000018391758
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.10001539999211673
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0016706000023987144
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0916921000025468
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.001325000004726462
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.03634120000060648
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0017296000005444512
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.04579689999809489
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.004905699999653734
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.013784499999019317
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.03420829999959096
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.013692300010006875
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007999000081326813
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.05945260000589769
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0013466000091284513
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0618218000017805
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.04532940000353847
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.014796000003116205
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0009732000035000965
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06358109999564476
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008874000050127506
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.05925930000375956
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0029664999892702326
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.07304050000675488
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0009034999966388568
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.07518539999728091
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0020857000054093078
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.014676899998448789
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0003760999970836565
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.060031399989384227
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0011984999873675406
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.05553460000373889
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0009214000019710511
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.057007699986570515
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.007608399988384917
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.058705799994640984
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0013273000076878816
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.05823759999475442
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.006947799993213266
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.05746060000092257
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00039259999175556004
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06014149999828078
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0010267000034218654
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06092630000784993
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0016650000034132972
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06393020000541583
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0014050999889150262
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.052509000001009554
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0009329000022262335
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06321809999644756
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0012567000085255131
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06371370000124443
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.009541799998260103
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.07669679999526124
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0010501000069780275
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06536779999441933
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0010212999914074317
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.013775400002487004
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.057222399991587736
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0134299000055762
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0009606999956304207
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0762638999876799
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0013058999902568758
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.013833599994541146
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00037689998862333596
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06447009999828879
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0011696000001393259
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.07499779999488965
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0009548000089125708
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06746610000845976
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008999999990919605
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06558870000299066
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.001182299994979985
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06558519999089185
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00144680000084918
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.007007799998973496
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.055876700003864244
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.007174500002292916
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.014271799998823553
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006760100004612468
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006513999978778884
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0710698000038974
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008893000049283728
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006805099998018704
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005944000004092231
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.06547210000280757
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0003209999995306134
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006582300004083663
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008960999984992668
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.08023129998764489
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006492999964393675
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006730499997502193
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.012519200012320653
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.07950300000084098
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006282000103965402
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006668400004855357
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008660999883431941
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0887073999911081
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0003164999943692237
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006745099992258474
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0012235000031068921
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.08044170000357553
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008641000022180378
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0077132000005804
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0034641999955056235
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.09321079999790527
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007145999989006668
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006872000012663193
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005832999886479229
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006900899999891408
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0002986000035889447
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.08086380000167992
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0012012999941362068
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006623099994612858
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.000981399993179366
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0861010999942664
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0014478999946732074
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006745999999111518
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006404000014299527
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.08918540000740904
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006394000083673745
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.00673609999648761
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00031069999386090785
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.10173629999917466
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007613999914610758
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006504900011350401
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006309000018518418
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.09031339999637567
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007202999986475334
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006761099997675046
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006739000091329217
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0924032999901101
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.005178499995963648
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0069817000039620325
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006548999954247847
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.10838999999396037
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007691999926464632
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.007006200001342222
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0011368999985279515
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.10674220000510104
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007422000053338706
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.007005600011325441
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0011658000003080815
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006753699999535456
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006261999951675534
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.1077207000053022
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0038189000042621046
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006659399994532578
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006663999956799671
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.13210560000152327
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007329000072786584
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.006594399994355626
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0010197000083280727
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.10913840000284836
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0029808000108459964
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0067583999916678295
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006910000083735213
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003296399998362176
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.11492260001250543
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033324999967589974
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00045530000352300704
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033245000086026266
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005992000078549609
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033173999981954694
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007088999991538003
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003226899993023835
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00048580000293441117
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0034078000026056543
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005791000003227964
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033358999935444444
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005746000097133219
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0032414000015705824
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005082999996375293
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033605999924475327
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00044579998939298093
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.1230177000106778
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007526000117650256
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.004415700008394197
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005230999959167093
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.00333729998965282
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00024510000366717577
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.12548790000437293
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.010204400008660741
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.004230600010487251
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0019650000031106174
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.00325660000089556
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00043069999082945287
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003182500004186295
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0004064999957336113
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.1435914000030607
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005812000017613173
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.00334619999921415
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0002638000005390495
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003227499997592531
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006920000014360994
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003330799998366274
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007421000045724213
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.020277600007830188
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.14898640000319574
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033506999898236245
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005547999899135903
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003318199989735149
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0004925000102957711
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003514500000164844
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006256000051507726
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003483399996184744
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006562000053236261
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.13988879999669734
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.014640100009273738
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003282499994384125
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005424999981187284
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0034389999927952886
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008967999892774969
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0034747000026982278
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0004825000069104135
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.1495580000046175
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0003345000004628673
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0032829999981913716
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006135000003268942
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0032070999877760187
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.000458399998024106
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0032528000010643154
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006036000122549012
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.1504125999927055
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008540999988326803
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.004484599994611926
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006486000056611374
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033303999953204766
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0002741000062087551
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003572300003725104
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0007141999958548695
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.15774599999713246
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006185000092955306
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0032352999987779185
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0008095999946817756
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003256399999372661
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0004769000079249963
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.0033862999989651144
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005814000032842159
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.16651229999843054
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0005460999964270741
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.003318499992019497
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0006751000037183985
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.00808300000790041
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.00042010001197922975
+      },
+      {
+        "kind": "fpga",
+        "seconds": 0.16796809999505058
+      },
+      {
+        "kind": "cpu",
+        "seconds": 0.0002004000125452876
+      }
+    ],
+    "host_wall": 6.486769299997832,
+    "accelerated_nodes": 126
+  },
+  "physical_board": false
+}

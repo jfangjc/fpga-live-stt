@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "profiling_only": true,
+  "runs_per_context": 100,
+  "contexts": [
+    {
+      "context_seconds": 0.5,
+      "features_bit_exact": true,
+      "stage_median_ms": {
+        "preemphasis_and_frames": 0.5615299999135459,
+        "window_and_fft": 1.2896124999315361,
+        "power": 0.27414500004852016,
+        "mel_projection": 0.30888500009496056,
+        "log": 0.26045449976663804,
+        "normalization": 0.5069339999863587,
+        "padding_and_output": 0.45979800029272155
+      },
+      "instrumented_total_p50_ms": 3.6779944998670544
+    },
+    {
+      "context_seconds": 1,
+      "features_bit_exact": true,
+      "stage_median_ms": {
+        "preemphasis_and_frames": 0.643561499828138,
+        "window_and_fft": 2.3787820000507054,
+        "power": 0.5391149998104083,
+        "mel_projection": 0.4100224998637714,
+        "log": 0.4700029996911326,
+        "normalization": 0.6031759999132191,
+        "padding_and_output": 0.477323500035709
+      },
+      "instrumented_total_p50_ms": 5.5315820000032545
+    },
+    {
+      "context_seconds": 2.5,
+      "features_bit_exact": true,
+      "stage_median_ms": {
+        "preemphasis_and_frames": 0.9183010001834191,
+        "window_and_fft": 5.7188799999039475,
+        "power": 1.261576999695535,
+        "mel_projection": 0.8497050000642048,
+        "log": 1.0768790000383888,
+        "normalization": 0.8022039996831154,
+        "padding_and_output": 0.4995239999061596
+      },
+      "instrumented_total_p50_ms": 11.163956000018516
+    }
+  ],
+  "scipy_available": false,
+  "numpy_version": "2.5.3",
+  "source_sha256": "82a05f342129adbd6a8cf4889f4b7585422e42692602f96eabb942cac92abeaa",
+  "pinned_frontend_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "note": "Instrumentation overhead is included. Not a CPU/FPGA comparison; no preprocessing changes."
+}

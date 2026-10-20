@@ -1,0 +1,29 @@
+{
+  "physical_board": false,
+  "fp32_partition_parity": [
+    {
+      "time": 32,
+      "valid": 31,
+      "max_abs_logprob_error": 1.430511474609375e-05,
+      "encoded_lengths_equal": true
+    },
+    {
+      "time": 48,
+      "valid": 33,
+      "max_abs_logprob_error": 1.430511474609375e-05,
+      "encoded_lengths_equal": true
+    },
+    {
+      "time": 80,
+      "valid": 65,
+      "max_abs_logprob_error": 2.002716064453125e-05,
+      "encoded_lengths_equal": true
+    }
+  ],
+  "accelerated_nodes": 126,
+  "steps": 253,
+  "limits": [
+    "Not original NeMo wrapper waveform parity",
+    "Not INT8 WER or physical accelerator validation"
+  ]
+}

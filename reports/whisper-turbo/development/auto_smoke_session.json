@@ -1,0 +1,28 @@
+{
+  "original_app": "k26-starter-kits",
+  "original_qn_module": false,
+  "kernel": "6.8.0-1036-xilinx",
+  "firmware_sha256": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/whisper-turbo-kv260/source/software/whisper/transcribe.py",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/3570-5694-0013.wav",
+    "--binary",
+    "build-hybrid/bin/whisper-cli",
+    "--model",
+    "models/ggml-large-v3-turbo-q8_0.bin",
+    "--language",
+    "auto",
+    "--fpga-attention",
+    "--out",
+    "auto-smoke.json"
+  ],
+  "restored": true,
+  "clock_hz": 99999999,
+  "activation_seconds": 1.0210272549993533,
+  "command_seconds": 189.74205291099952,
+  "command_exit_code": 0,
+  "restoration_seconds": 1.6670961890004037,
+  "session_seconds": 192.43019870599983
+}

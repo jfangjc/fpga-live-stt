@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "complete_original_nemo_wrapper_validated": true,
+  "nemo_toolkit": "1.23.0",
+  "torch": "2.2.2+cpu",
+  "transformers": "4.30.2",
+  "tokenizers": "0.13.3",
+  "archived_vocabulary_mapping_equal": true,
+  "original_configured_ctc_decoder_executed": true,
+  "checkpoint_sha256": "a00c8fb75a2bcc37271275293bce950863e4e069d43f6cf193d42fcf605aa21c",
+  "model_sha256": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+  "tokenizer_sha256": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+  "decoder_id": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "preprocessing_id": "aa00440a1170782541d9d6af55ab904b75712abce08fa2df34c701288d37b20f",
+  "frontend_npz_sha256": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+  "frontend_constants_sha256": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+  "frontend_source_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "decoder_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "citrinet_cpu_source_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+  "validate_nemo_source_sha256": "3c62d7fd816939a4e4f0b181d03f07bd0ba8a1afe028c2d0dc049321445d5945",
+  "model_config_sha256": "33c6bba509e5684bc6e411ff7df97c2a2368f2fc6d982b37b1c4dee29e92fefd",
+  "tests": [
+    {
+      "wav": "/mnt/c/Users/jfang/Documents/Vivado/Prototype_v2/research/reference_speech.wav",
+      "wav_sha256": "5fceacff0315d49cb59fcc505bcecf1ed5f2f35c2897b1e65a59f30e5d922150",
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "frontend_max_absolute_error": 9.292364120483398e-05,
+      "log_probs_max_absolute_error": 5.14984130859375e-05,
+      "argmax_equal": true
+    },
+    {
+      "wav": "/mnt/c/Users/jfang/Documents/Vivado/Prototype_v2/research/eval/librispeech-mini/evaluation/6930-75918-0000.wav",
+      "wav_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "transcript": "concord returned to its place amidst the tents",
+      "frontend_max_absolute_error": 3.6716461181640625e-05,
+      "log_probs_max_absolute_error": 3.4332275390625e-05,
+      "argmax_equal": true
+    }
+  ]
+}

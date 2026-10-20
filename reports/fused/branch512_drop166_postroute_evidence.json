@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "firmware_exported": false,
+  "directive": "Explore",
+  "setup_slack_ns": 0.0,
+  "hold_slack_ns": 0.01,
+  "error_or_critical_drc_count": 0,
+  "timing_acceptance": false,
+  "clock_hz": 166666666,
+  "pointwise_macs": 512,
+  "depthwise_macs": 64,
+  "sources_sha256": {
+    "reports/fused/branch512_drop166_postroute_trial.json": "d6df41fcf6d173013480ae21dd16513ef9adf9be876fe5c2c73aa58b5e978136",
+    "reports/fused/branch512_drop166_postroute_timing.rpt": "6152248c917f361bb86913675f870e2449c325d74cc3e755b54d8bae75e352ce",
+    "build/branch512_drop166_postroute_driver.log": "5de39463a0bd712cc5184ea35f4c6f88787cb11669241a688c254fc8082c1722",
+    "reports/fused/branch512_drop166_fullroute_failure.json": "d52fda7bb182304270c6a8892c320a45d5d5ba9d5158797215200c7c20365611",
+    "scripts/branch512_drop166_postroute_probe.tcl": "62c69b1afa65f057e0363d27f49f09769f9e4342d1473fffbdf89051ebdf4f82",
+    "scripts/bind_drop166_postroute_trial.py": "0324a46ed618e57ef5f54ed8f7f4d05afe394d173c163e47c113d7c6e5b4fc61",
+    "build/branch512_drop166_postroute_repair/asr_v2_top.dcp": "a85bc90b0c5a74b48ba26e33e30371bb0deb885825cfbbf55298b9f77bc8ee5f",
+    "reports/fused/branch512_drop166_postroute_before.rpt": "158ef1050f3ffff2ab407fbddaa81817ca8bf9964368bef23f500e5ed496ec2d",
+    "reports/fused/branch512_drop166_postroute_paths.rpt": "703b06ee399192a76eeceaaca91f507e09c072ad6396400d40ffcd3a6e39c799",
+    "reports/fused/branch512_drop166_postroute_drc.rpt": "514b67cc44d266731efcd877ef8cc979bb0ea87923a4442b684aa407457cd4a5",
+    "reports/fused/branch512_drop166_postroute_status.rpt": "cd28cfdc68fbd5703057eba31c6c0cf3035f563658e791f0ed72a4134ec32e96",
+    "reports/fused/branch512_drop166_fullroute_failed_driver.log": "2750dfd94a555f2542d61eb7bf820b6426f50ccf3537fc581f6cab3b5afc008f",
+    "reports/fused/branch512_drop166_fullroute_failed_timing.rpt": "5a95197a9d8b2c0f0e97b2afb0e59bc63457bef041e294f0a4f36f845fb1b17c",
+    "reports/fused/branch512_drop166_fullroute_failed_drc.rpt": "6b45ded0eada57909886d8163d466f1e69d07ca8129d2d8d4f0ee44e77078f1e",
+    "build/branch512_drop166_system/Prototype_v3_branch512_drop166.runs/impl_1/asr_v2_top_routed.dcp": "b6d1823187a5428c59f126ae0d011d2b79bcdfc6259d06dac2307fbc80a8a407",
+    "reports/fused/branch512_drop_regression_evidence.json": "69203777279d630ac270df7f249e0755a14aa52d559705951f0463767cd550c7",
+    "scripts/record_branch512_drop166_failure.py": "97873505845040db90e59cce9db6d9c2a41a4c8c2ff1f0811378a9bfea7e146a"
+  }
+}

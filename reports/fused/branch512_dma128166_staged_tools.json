@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "read_only_board_check": true,
+  "staged_files": 17,
+  "sources_sha256": {
+    "scripts/finalize_branch512_dma128166_firmware.py": "2f957faf7671dccb1ae03d33050d8506c46a12a1439658681b3f0b4937ab1591",
+    "scripts/install_branch512_dma128166_firmware.py": "2b4bb26e9a0f6fb43023c615870118e4fb98fd36bf22db4b51b83fd100bd073d",
+    "scripts/prepare_branch512_dma128166_firmware.py": "b546428119cee552993a32ddde0b31655c43dd8087639d7a1ee36b817c3a1409",
+    "scripts/run_branch512_dma128166_board.sh": "304363b2120f519de44191ea7799ae529895361714c18e3da9b7ad8f62924cac",
+    "software/latency/branch512_dma128166_benchmark.py": "bc867fde8b96438ff1769b12a831d544441d644b7e402ca14e7bd33bc87e8975",
+    "software/latency/branch512_dma128166_irq_benchmark.py": "e06272cf27737034f80684cd101f7c5ee56344991e2555cd926f5a5a2d787522",
+    "software/latency/branch512_dma128166_maskfast_benchmark.py": "6715927359d1c095505a22f66b13521b09b2a05143612051bee3e2af10790be2",
+    "software/latency/branch512_dma128166_more_benchmark.py": "e9128451f6ebddf511f273a922849b740543738f8ce7ba1185bb7b559192e4ee",
+    "software/latency/branch512_dma128166_neon_benchmark.py": "361f5a58565847270355e0da44dfe5e17bc1f09eae24056d42f2594e255cf5ef",
+    "software/latency/branch512_dma128166_neon_maskfast_benchmark.py": "86ab0bbdbb1aaea30f4e6709c93eb3b9885989c39557879a55cc1bbe84005123",
+    "software/latency/confirm_branch512_dma128166_irq_latency.py": "c8eba572654d646b58d5fdabe7d2788e9741ea0e71d8b206bfe4bd0574fa53cb",
+    "software/latency/test_ab_neon_pointwise_physical.py": "80422808bc27f704ada0d4a896e17f6b860bb1e7c9cd1872c3d742614a123876",
+    "software/latency/test_ab_scale_split_pairs_physical.py": "7a80218d4f2415894d5e8d9b581d854b1fe761f6d7f5d75b496b6df2e34f085a",
+    "software/latency/test_ab_stride_pointwise_physical.py": "aed549d7af30536fd355aedcb7e659145c8db5809293042a5404f1bc859719e4",
+    "software/latency/test_branch512_dma128166_blocks.py": "247c5b0ead9d7c6fda8b7e334994f984c8bd76f825063de90daf62537e022a4d",
+    "software/latency/tune_branch512_dma128166_irq_policy.py": "9b57d7029ce4e901bb4eb32e3e9f38a48a4d1ebe2c3697ce1120a5c83593d728",
+    "software/latency/validate_branch512_dma128166_physical.py": "ee3765dad9b47892fbf299d18d299cbb478097fd44605a2a76c37cdba5f62456"
+  }
+}

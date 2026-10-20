@@ -1,0 +1,2399 @@
+{
+  "hardware_fpga_execution": false,
+  "scope": "CPU thread screen; resident memory-input frontend/model/decoder",
+  "complete": true,
+  "runs": 30,
+  "worker_spinning": false,
+  "spin_duration_us": 0,
+  "main_core": 3,
+  "idle_between_calls_seconds": 0.003,
+  "initialization_seconds": {
+    "1": 5.009304075007094,
+    "2": 4.9050919270084705,
+    "4": 4.960311756993178
+  },
+  "feature_padding_policy": "trim_to_valid",
+  "model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "audio_sha256": "6e6fc731ed40933d7e6aea715aa7546e8f4c7e4a6cbff627c93ef5c499a201a5",
+  "runner_sha256": "009fff16bb47470d6ff0703b82b75a53cc7831f26b80154d27d0583640bd0806",
+  "contexts": [
+    {
+      "context_seconds": 0.5,
+      "cpu_bit_parity_between_thread_policies": true,
+      "max_logit_difference_between_policies": 0.0,
+      "environment_before": {
+        "platform": "Linux-6.8.0-1015-xilinx-aarch64-with-glibc2.39",
+        "machine": "aarch64",
+        "thermal_millicelsius": {},
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": "1333333"
+        },
+        "cpu_governor": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor": "userspace"
+        },
+        "thread_environment": {
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": null,
+          "MKL_NUM_THREADS": null
+        },
+        "hwmon_temperature_millicelsius": {
+          "/sys/class/hwmon/hwmon0/temp3_input": "32251",
+          "/sys/class/hwmon/hwmon0/temp1_input": "33262",
+          "/sys/class/hwmon/hwmon0/temp2_input": "32951"
+        },
+        "iio_temperature_attributes": {
+          "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_input": "33635",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "40282",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_input": "31940",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "40288",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "40168",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_input": "32189",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+        },
+        "cpu_frequency_bounds_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq": "1333333"
+        }
+      },
+      "environment_after": {
+        "platform": "Linux-6.8.0-1015-xilinx-aarch64-with-glibc2.39",
+        "machine": "aarch64",
+        "thermal_millicelsius": {},
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": "1333333"
+        },
+        "cpu_governor": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor": "userspace"
+        },
+        "thread_environment": {
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": null,
+          "MKL_NUM_THREADS": null
+        },
+        "hwmon_temperature_millicelsius": {
+          "/sys/class/hwmon/hwmon0/temp3_input": "31948",
+          "/sys/class/hwmon/hwmon0/temp1_input": "33293",
+          "/sys/class/hwmon/hwmon0/temp2_input": "34225"
+        },
+        "iio_temperature_attributes": {
+          "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_input": "34319",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "40514",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_input": "31917",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "40332",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "40165",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_input": "32780",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+        },
+        "cpu_frequency_bounds_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq": "1333333"
+        }
+      },
+      "policies": {
+        "1": {
+          "p50": 0.08613591649918817,
+          "p95": 0.08693097256036708,
+          "model_p50": 0.08207919751293957,
+          "frontend_p50": 0.003943296484067105
+        },
+        "2": {
+          "p50": 0.07294037599058356,
+          "p95": 0.07662693004822359,
+          "model_p50": 0.0687079899944365,
+          "frontend_p50": 0.0040108024986693636
+        },
+        "4": {
+          "p50": 0.06880808100686409,
+          "p95": 0.0743892782003968,
+          "model_p50": 0.06448538301629014,
+          "frontend_p50": 0.003977462503826246
+        }
+      },
+      "fastest_p50_threads": 4,
+      "paired_mean_saving_vs_four_95ci_seconds": {
+        "1": [
+          -0.01718036867358023,
+          -0.014999444495066806
+        ],
+        "2": [
+          -0.004198166424879067,
+          -0.0024180019496513223
+        ]
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "cpu_bit_parity_between_thread_policies": true,
+      "max_logit_difference_between_policies": 0.0,
+      "environment_before": {
+        "platform": "Linux-6.8.0-1015-xilinx-aarch64-with-glibc2.39",
+        "machine": "aarch64",
+        "thermal_millicelsius": {},
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": "1333333"
+        },
+        "cpu_governor": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor": "userspace"
+        },
+        "thread_environment": {
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": null,
+          "MKL_NUM_THREADS": null
+        },
+        "hwmon_temperature_millicelsius": {
+          "/sys/class/hwmon/hwmon0/temp3_input": "31832",
+          "/sys/class/hwmon/hwmon0/temp1_input": "32624",
+          "/sys/class/hwmon/hwmon0/temp2_input": "33526"
+        },
+        "iio_temperature_attributes": {
+          "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_input": "33541",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "40524",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_input": "31948",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "40246",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "40167",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_input": "33619",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+        },
+        "cpu_frequency_bounds_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq": "1333333"
+        }
+      },
+      "environment_after": {
+        "platform": "Linux-6.8.0-1015-xilinx-aarch64-with-glibc2.39",
+        "machine": "aarch64",
+        "thermal_millicelsius": {},
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": "1333333"
+        },
+        "cpu_governor": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor": "userspace",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor": "userspace"
+        },
+        "thread_environment": {
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": null,
+          "MKL_NUM_THREADS": null
+        },
+        "hwmon_temperature_millicelsius": {
+          "/sys/class/hwmon/hwmon0/temp3_input": "31816",
+          "/sys/class/hwmon/hwmon0/temp1_input": "33464",
+          "/sys/class/hwmon/hwmon0/temp2_input": "33433"
+        },
+        "iio_temperature_attributes": {
+          "/sys/bus/iio/devices/iio:device0/in_temp20_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_input": "33386",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_raw": "40462",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_input": "32135",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_raw": "40346",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_raw": "40203",
+          "/sys/bus/iio/devices/iio:device0/in_temp20_offset": "-36058",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_scale": "7.771514892",
+          "/sys/bus/iio/devices/iio:device0/in_temp7_input": "33044",
+          "/sys/bus/iio/devices/iio:device0/in_temp8_scale": "7.771514892"
+        },
+        "cpu_frequency_bounds_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq": "333333",
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq": "1333333",
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq": "1333333"
+        }
+      },
+      "policies": {
+        "1": {
+          "p50": 0.13798594850231893,
+          "p95": 0.13833792754012392,
+          "model_p50": 0.13194545899750665,
+          "frontend_p50": 0.005873319998499937
+        },
+        "2": {
+          "p50": 0.11482004300341941,
+          "p95": 0.11672297526965848,
+          "model_p50": 0.10875403850513976,
+          "frontend_p50": 0.005872330511920154
+        },
+        "4": {
+          "p50": 0.1046064039983321,
+          "p95": 0.10746286664652871,
+          "model_p50": 0.0985717739968095,
+          "frontend_p50": 0.005864274993655272
+        }
+      },
+      "fastest_p50_threads": 4,
+      "paired_mean_saving_vs_four_95ci_seconds": {
+        "1": [
+          -0.03390798930823318,
+          -0.032787998144097705
+        ],
+        "2": [
+          -0.011110510362826365,
+          -0.00978657060462865
+        ]
+      }
+    }
+  ],
+  "triple_runs": [
+    {
+      "context_seconds": 0.5,
+      "repeat": 0,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.073127771000145,
+          "frontend_seconds": 0.0042010609759017825,
+          "model_seconds": 0.06880198800354265,
+          "decode_seconds": 0.00012472202070057392,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08678198599955067,
+          "frontend_seconds": 0.00392002597800456,
+          "model_seconds": 0.08273805901990272,
+          "decode_seconds": 0.00012390100164338946,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.07437609799671918,
+          "frontend_seconds": 0.0040552289865445346,
+          "model_seconds": 0.07019650799338706,
+          "decode_seconds": 0.0001243610167875886,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 1,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.087030720023904,
+          "frontend_seconds": 0.0046091360272839665,
+          "model_seconds": 0.0822976519993972,
+          "decode_seconds": 0.00012393199722282588,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07509082899196073,
+          "frontend_seconds": 0.0040813389932736754,
+          "model_seconds": 0.07088572799693793,
+          "decode_seconds": 0.0001237620017491281,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06843598300474696,
+          "frontend_seconds": 0.003945425996789709,
+          "model_seconds": 0.06434428502689116,
+          "decode_seconds": 0.00014627198106609285,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 2,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06928369600791484,
+          "frontend_seconds": 0.003952456987462938,
+          "model_seconds": 0.06520711700432003,
+          "decode_seconds": 0.0001241220161318779,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07253186200978234,
+          "frontend_seconds": 0.004008416988654062,
+          "model_seconds": 0.06839942300575785,
+          "decode_seconds": 0.00012402201537042856,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.0858219430083409,
+          "frontend_seconds": 0.003925655997591093,
+          "model_seconds": 0.08177300498937257,
+          "decode_seconds": 0.00012328202137723565,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 3,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07272392499726266,
+          "frontend_seconds": 0.0040550689736846834,
+          "model_seconds": 0.06854194501647726,
+          "decode_seconds": 0.00012691100710071623,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08925092301797122,
+          "frontend_seconds": 0.004089989000931382,
+          "model_seconds": 0.08503795199794695,
+          "decode_seconds": 0.00012298201909288764,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.0690470429835841,
+          "frontend_seconds": 0.0041354799759574234,
+          "model_seconds": 0.06478602101560682,
+          "decode_seconds": 0.00012554199201986194,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 4,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08623015898047015,
+          "frontend_seconds": 0.003943266987334937,
+          "model_seconds": 0.08215500999358483,
+          "decode_seconds": 0.00013188199955038726,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06874094801605679,
+          "frontend_seconds": 0.004105608997633681,
+          "model_seconds": 0.06451011702301912,
+          "decode_seconds": 0.00012522199540399015,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07249803200829774,
+          "frontend_seconds": 0.00397135698585771,
+          "model_seconds": 0.06839939299970865,
+          "decode_seconds": 0.00012728202273137867,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 5,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06915961400954984,
+          "frontend_seconds": 0.00395515700802207,
+          "model_seconds": 0.06507869498454966,
+          "decode_seconds": 0.00012576201697811484,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08608005798305385,
+          "frontend_seconds": 0.003962116985348985,
+          "model_seconds": 0.08199477900052443,
+          "decode_seconds": 0.00012316199718043208,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.0725418129877653,
+          "frontend_seconds": 0.004094958974746987,
+          "model_seconds": 0.06830334200640209,
+          "decode_seconds": 0.00014351200661621988,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 6,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08617142000002787,
+          "frontend_seconds": 0.003924737015040591,
+          "model_seconds": 0.08212351097608916,
+          "decode_seconds": 0.0001231720088981092,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06860371699440293,
+          "frontend_seconds": 0.004132809990551323,
+          "model_seconds": 0.06434573500882834,
+          "decode_seconds": 0.00012517199502326548,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07242977200075984,
+          "frontend_seconds": 0.0039238470199052244,
+          "model_seconds": 0.0683804229774978,
+          "decode_seconds": 0.00012550200335681438,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 7,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06849687499925494,
+          "frontend_seconds": 0.0039175770070869476,
+          "model_seconds": 0.06443207600386813,
+          "decode_seconds": 0.00014722198829986155,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08602815700578503,
+          "frontend_seconds": 0.003945336997276172,
+          "model_seconds": 0.08195984800113365,
+          "decode_seconds": 0.00012297200737521052,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.0740150340134278,
+          "frontend_seconds": 0.004136648989515379,
+          "model_seconds": 0.06975102302385494,
+          "decode_seconds": 0.00012736200005747378,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 8,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07352881800034083,
+          "frontend_seconds": 0.004125949984882027,
+          "model_seconds": 0.0692784959974233,
+          "decode_seconds": 0.00012437201803550124,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.0683707440039143,
+          "frontend_seconds": 0.003907617006916553,
+          "model_seconds": 0.06433844499406405,
+          "decode_seconds": 0.0001246820029336959,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08644941300735809,
+          "frontend_seconds": 0.003950287005864084,
+          "model_seconds": 0.08237405499676242,
+          "decode_seconds": 0.00012507100473158062,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 9,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06871825800044462,
+          "frontend_seconds": 0.004187660000752658,
+          "model_seconds": 0.06440554599976167,
+          "decode_seconds": 0.00012505199993029237,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08597668600850739,
+          "frontend_seconds": 0.003924866003217176,
+          "model_seconds": 0.08192811801563948,
+          "decode_seconds": 0.00012370198965072632,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07362177898176014,
+          "frontend_seconds": 0.004178859991952777,
+          "model_seconds": 0.06931820799945854,
+          "decode_seconds": 0.00012471099034883082,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 10,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08596205699723214,
+          "frontend_seconds": 0.003912586020305753,
+          "model_seconds": 0.08192540897289291,
+          "decode_seconds": 0.00012406200403347611,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.07175176197779365,
+          "frontend_seconds": 0.004128859000047669,
+          "model_seconds": 0.06749644098454155,
+          "decode_seconds": 0.00012646199320442975,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07628024800214916,
+          "frontend_seconds": 0.003969757002778351,
+          "model_seconds": 0.07218353898497298,
+          "decode_seconds": 0.00012695201439782977,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 11,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08596274699084461,
+          "frontend_seconds": 0.003923096985090524,
+          "model_seconds": 0.08191573800286278,
+          "decode_seconds": 0.0001239120028913021,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07320074300514534,
+          "frontend_seconds": 0.0041849999979604036,
+          "model_seconds": 0.06889072200283408,
+          "decode_seconds": 0.00012502100435085595,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.07219728900236078,
+          "frontend_seconds": 0.00397411800804548,
+          "model_seconds": 0.06809740897733718,
+          "decode_seconds": 0.00012576201697811484,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 12,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06850132599356584,
+          "frontend_seconds": 0.003943326999433339,
+          "model_seconds": 0.06443362700520083,
+          "decode_seconds": 0.00012437198893167078,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07258241501403973,
+          "frontend_seconds": 0.003910675994120538,
+          "model_seconds": 0.06854468700475991,
+          "decode_seconds": 0.0001270520151592791,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08680905899382196,
+          "frontend_seconds": 0.003955016989493743,
+          "model_seconds": 0.08273693101364188,
+          "decode_seconds": 0.00011711099068634212,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 13,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06853042601142079,
+          "frontend_seconds": 0.004109598987270147,
+          "model_seconds": 0.06429616501554847,
+          "decode_seconds": 0.00012466200860217214,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07374406102462672,
+          "frontend_seconds": 0.003941347007639706,
+          "model_seconds": 0.06967864200123586,
+          "decode_seconds": 0.00012407201575115323,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08625061102793552,
+          "frontend_seconds": 0.0039408260199707,
+          "model_seconds": 0.08218606299487874,
+          "decode_seconds": 0.00012372201308608055,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 14,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08644073401228525,
+          "frontend_seconds": 0.004100869002286345,
+          "model_seconds": 0.08221732400124893,
+          "decode_seconds": 0.00012254100874997675,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.0740020259981975,
+          "frontend_seconds": 0.003996387997176498,
+          "model_seconds": 0.06988533600815572,
+          "decode_seconds": 0.00012030199286527932,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06851966699468903,
+          "frontend_seconds": 0.003937836998375133,
+          "model_seconds": 0.06443525798385963,
+          "decode_seconds": 0.00014657201245427132,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 15,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07267229701392353,
+          "frontend_seconds": 0.0039944380114320666,
+          "model_seconds": 0.06853386698639952,
+          "decode_seconds": 0.0001439920160919428,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.07141445900197141,
+          "frontend_seconds": 0.003931147017283365,
+          "model_seconds": 0.06735939998179674,
+          "decode_seconds": 0.0001239120028913021,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08612140000332147,
+          "frontend_seconds": 0.003943325980799273,
+          "model_seconds": 0.08205364202149212,
+          "decode_seconds": 0.00012443200103007257,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 16,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07302099198568612,
+          "frontend_seconds": 0.004112058988539502,
+          "model_seconds": 0.06878361100098118,
+          "decode_seconds": 0.0001253219961654395,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.07402741600526497,
+          "frontend_seconds": 0.003908676007995382,
+          "model_seconds": 0.06998396798735484,
+          "decode_seconds": 0.00013477200991474092,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08598749799421057,
+          "frontend_seconds": 0.003963706985814497,
+          "model_seconds": 0.08190025901421905,
+          "decode_seconds": 0.00012353199417702854,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 17,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07253434500307776,
+          "frontend_seconds": 0.003990648023318499,
+          "model_seconds": 0.06842015500296839,
+          "decode_seconds": 0.0001235419767908752,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08605472900671884,
+          "frontend_seconds": 0.003924267017282546,
+          "model_seconds": 0.0820073909999337,
+          "decode_seconds": 0.00012307098950259387,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06891855300636962,
+          "frontend_seconds": 0.004103359009604901,
+          "model_seconds": 0.06468886198126711,
+          "decode_seconds": 0.00012633201549760997,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 18,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07275883900001645,
+          "frontend_seconds": 0.004002797999419272,
+          "model_seconds": 0.06863188900751993,
+          "decode_seconds": 0.00012415199307724833,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08605923998402432,
+          "frontend_seconds": 0.0040244379779323936,
+          "model_seconds": 0.08190971001749858,
+          "decode_seconds": 0.00012509198859333992,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06871248999959789,
+          "frontend_seconds": 0.004169290012214333,
+          "model_seconds": 0.06441966799320653,
+          "decode_seconds": 0.00012353199417702854,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 19,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06926205800846219,
+          "frontend_seconds": 0.003976608015364036,
+          "model_seconds": 0.06515856899204664,
+          "decode_seconds": 0.00012688100105151534,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08621481200680137,
+          "frontend_seconds": 0.003985937015386298,
+          "model_seconds": 0.08210475300438702,
+          "decode_seconds": 0.00012412198702804744,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07280520899803378,
+          "frontend_seconds": 0.004093328985618427,
+          "model_seconds": 0.06858404801459983,
+          "decode_seconds": 0.00012783199781551957,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 20,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08615935198031366,
+          "frontend_seconds": 0.003908005979610607,
+          "model_seconds": 0.08211014399421401,
+          "decode_seconds": 0.00014120200648903847,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07384484398062341,
+          "frontend_seconds": 0.004124078986933455,
+          "model_seconds": 0.06959603299037553,
+          "decode_seconds": 0.00012473200331442058,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06842774600954726,
+          "frontend_seconds": 0.003918527014320716,
+          "model_seconds": 0.06436337699415162,
+          "decode_seconds": 0.00014584200107492507,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 21,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06848795700352639,
+          "frontend_seconds": 0.003919586015399545,
+          "model_seconds": 0.06444254898815416,
+          "decode_seconds": 0.00012582199997268617,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08598399898619391,
+          "frontend_seconds": 0.003976587002398446,
+          "model_seconds": 0.08188375999452546,
+          "decode_seconds": 0.00012365198927000165,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.072859759995481,
+          "frontend_seconds": 0.004103900020709261,
+          "model_seconds": 0.06863236898789182,
+          "decode_seconds": 0.000123490986879915,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 22,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06817051200778224,
+          "frontend_seconds": 0.003978316992288455,
+          "model_seconds": 0.06406676300684921,
+          "decode_seconds": 0.00012543200864456594,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08623637299751863,
+          "frontend_seconds": 0.0039296070171985775,
+          "model_seconds": 0.08218333497643471,
+          "decode_seconds": 0.00012343100388534367,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07276440999703482,
+          "frontend_seconds": 0.004125559993553907,
+          "model_seconds": 0.06851471800473519,
+          "decode_seconds": 0.00012413199874572456,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 23,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.086673490004614,
+          "frontend_seconds": 0.0039322369848378,
+          "model_seconds": 0.08260727100423537,
+          "decode_seconds": 0.00013398201554082334,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.0686587099917233,
+          "frontend_seconds": 0.004143099999055266,
+          "model_seconds": 0.06438960798550397,
+          "decode_seconds": 0.00012600200716406107,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07257960599963553,
+          "frontend_seconds": 0.00393508598790504,
+          "model_seconds": 0.0685205090267118,
+          "decode_seconds": 0.00012401098501868546,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 24,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.07691057899501175,
+          "frontend_seconds": 0.0039467570022679865,
+          "model_seconds": 0.07284085999708623,
+          "decode_seconds": 0.0001229619956575334,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.08311786799458787,
+          "frontend_seconds": 0.003965337004046887,
+          "model_seconds": 0.07900624899775721,
+          "decode_seconds": 0.00014628199278376997,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08604615100193769,
+          "frontend_seconds": 0.004060758015839383,
+          "model_seconds": 0.08186169099644758,
+          "decode_seconds": 0.00012370198965072632,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 25,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08650223800214007,
+          "frontend_seconds": 0.004236380977090448,
+          "model_seconds": 0.08214337500976399,
+          "decode_seconds": 0.00012248201528564095,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.07440006200340576,
+          "frontend_seconds": 0.004017127008410171,
+          "model_seconds": 0.07023515299079008,
+          "decode_seconds": 0.00014778200420551002,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07782662298996001,
+          "frontend_seconds": 0.003931656974600628,
+          "model_seconds": 0.07376873400062323,
+          "decode_seconds": 0.00012623201473616064,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 26,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.07003098001587205,
+          "frontend_seconds": 0.005445718998089433,
+          "model_seconds": 0.06446064900956117,
+          "decode_seconds": 0.00012461200822144747,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07258314700447954,
+          "frontend_seconds": 0.003933836007490754,
+          "model_seconds": 0.06852606899337843,
+          "decode_seconds": 0.00012324200361035764,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08615043299505487,
+          "frontend_seconds": 0.003895636007655412,
+          "model_seconds": 0.08213266500388272,
+          "decode_seconds": 0.00012213198351673782,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 27,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06862641999032348,
+          "frontend_seconds": 0.004100498976185918,
+          "model_seconds": 0.06440046901116148,
+          "decode_seconds": 0.00012545200297608972,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08607655199011788,
+          "frontend_seconds": 0.003932616993552074,
+          "model_seconds": 0.08202049401006661,
+          "decode_seconds": 0.00012344098649919033,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.0734683400078211,
+          "frontend_seconds": 0.004100609017768875,
+          "model_seconds": 0.06924238000647165,
+          "decode_seconds": 0.0001253509835805744,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 28,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.08592742998735048,
+          "frontend_seconds": 0.003932736988645047,
+          "model_seconds": 0.08187204101704992,
+          "decode_seconds": 0.00012265198165550828,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "4": {
+          "seconds": 0.06887521399767138,
+          "frontend_seconds": 0.0040640780061949044,
+          "model_seconds": 0.06468789398786612,
+          "decode_seconds": 0.00012324200361035764,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.0738642560027074,
+          "frontend_seconds": 0.004013188008684665,
+          "model_seconds": 0.06972543700248934,
+          "decode_seconds": 0.00012563099153339863,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "repeat": 29,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.06923607899807394,
+          "frontend_seconds": 0.003934776992537081,
+          "model_seconds": 0.06517462100600824,
+          "decode_seconds": 0.00012668099952861667,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "1": {
+          "seconds": 0.08601200097473338,
+          "frontend_seconds": 0.00394589698407799,
+          "model_seconds": 0.08194338300381787,
+          "decode_seconds": 0.0001227209868375212,
+          "text": "to",
+          "encoded_length": 7
+        },
+        "2": {
+          "seconds": 0.07263359799981117,
+          "frontend_seconds": 0.004006478004157543,
+          "model_seconds": 0.0685016089992132,
+          "decode_seconds": 0.00012551099644042552,
+          "text": "to",
+          "encoded_length": 7
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 0,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11493234100635163,
+          "frontend_seconds": 0.005867764994036406,
+          "model_seconds": 0.10889148301794194,
+          "decode_seconds": 0.00017309299437329173,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10510098899248987,
+          "frontend_seconds": 0.005834934010636061,
+          "model_seconds": 0.09911414299858734,
+          "decode_seconds": 0.00015191198326647282,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13791371302795596,
+          "frontend_seconds": 0.0058827250031754375,
+          "model_seconds": 0.1318783050228376,
+          "decode_seconds": 0.0001526830019429326,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 1,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10402068399707787,
+          "frontend_seconds": 0.005838015000335872,
+          "model_seconds": 0.09800297598121688,
+          "decode_seconds": 0.00017969301552511752,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13790567399701104,
+          "frontend_seconds": 0.0058285440027248114,
+          "model_seconds": 0.13192331799655221,
+          "decode_seconds": 0.00015381199773401022,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11539988900767639,
+          "frontend_seconds": 0.005903345998376608,
+          "model_seconds": 0.10932386099011637,
+          "decode_seconds": 0.0001726820191834122,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 2,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11565479199634865,
+          "frontend_seconds": 0.005914554989431053,
+          "model_seconds": 0.10956330501358025,
+          "decode_seconds": 0.0001769319933373481,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13790262400289066,
+          "frontend_seconds": 0.0058282749960199,
+          "model_seconds": 0.1319202970189508,
+          "decode_seconds": 0.00015405198791995645,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10419752699090168,
+          "frontend_seconds": 0.005873905000044033,
+          "model_seconds": 0.09817037000902928,
+          "decode_seconds": 0.00015325198182836175,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 3,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10448480100603774,
+          "frontend_seconds": 0.005920196010265499,
+          "model_seconds": 0.09840846300357953,
+          "decode_seconds": 0.0001561419921927154,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11484136100625619,
+          "frontend_seconds": 0.005888215004233643,
+          "model_seconds": 0.10880018398165703,
+          "decode_seconds": 0.0001529620203655213,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13805443700402975,
+          "frontend_seconds": 0.005822343984618783,
+          "model_seconds": 0.1320775510102976,
+          "decode_seconds": 0.00015454200911335647,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 4,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10483388701686636,
+          "frontend_seconds": 0.005843225022545084,
+          "model_seconds": 0.09883632999844849,
+          "decode_seconds": 0.00015433199587278068,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11494436301290989,
+          "frontend_seconds": 0.005895945010706782,
+          "model_seconds": 0.1088965660019312,
+          "decode_seconds": 0.0001518520002719015,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13804156699916348,
+          "frontend_seconds": 0.005885505001060665,
+          "model_seconds": 0.13198137999279425,
+          "decode_seconds": 0.00017468200530856848,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 5,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10504886999842711,
+          "frontend_seconds": 0.005848814995260909,
+          "model_seconds": 0.09904704301152378,
+          "decode_seconds": 0.00015301199164241552,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.1445801020017825,
+          "frontend_seconds": 0.005908866005484015,
+          "model_seconds": 0.13851911399979144,
+          "decode_seconds": 0.0001521219965070486,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11466592000215314,
+          "frontend_seconds": 0.005865154991624877,
+          "model_seconds": 0.10864933201810345,
+          "decode_seconds": 0.0001514329924248159,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 6,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.1384285039966926,
+          "frontend_seconds": 0.005869704997166991,
+          "model_seconds": 0.1323935859836638,
+          "decode_seconds": 0.00016521301586180925,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11521011797594838,
+          "frontend_seconds": 0.005944225995335728,
+          "model_seconds": 0.10911312999087386,
+          "decode_seconds": 0.00015276198973879218,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10397015497437678,
+          "frontend_seconds": 0.005864714999916032,
+          "model_seconds": 0.09795002799364738,
+          "decode_seconds": 0.00015541198081336915,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 7,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11494246398797259,
+          "frontend_seconds": 0.0058793250063899904,
+          "model_seconds": 0.10891449698829092,
+          "decode_seconds": 0.00014864199329167604,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10490438900887966,
+          "frontend_seconds": 0.005875394999748096,
+          "model_seconds": 0.09887462199549191,
+          "decode_seconds": 0.0001543720136396587,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13776353499270044,
+          "frontend_seconds": 0.0058631449937820435,
+          "model_seconds": 0.13174811800126918,
+          "decode_seconds": 0.0001522719976492226,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 8,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10462311501032673,
+          "frontend_seconds": 0.005960006004897878,
+          "model_seconds": 0.09850894601549953,
+          "decode_seconds": 0.00015416298992931843,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13798143801977858,
+          "frontend_seconds": 0.005936205998295918,
+          "model_seconds": 0.13189121001050808,
+          "decode_seconds": 0.000154022010974586,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11461098998552188,
+          "frontend_seconds": 0.005834544979734346,
+          "model_seconds": 0.10862256199470721,
+          "decode_seconds": 0.00015388301108032465,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 9,
+      "order": [
+        4,
+        2,
+        1
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10427157001686282,
+          "frontend_seconds": 0.005819784011691809,
+          "model_seconds": 0.0983024140005,
+          "decode_seconds": 0.0001493720046710223,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11468200199306011,
+          "frontend_seconds": 0.005872205016203225,
+          "model_seconds": 0.10865800498868339,
+          "decode_seconds": 0.0001517919881734997,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13781131702126004,
+          "frontend_seconds": 0.005839745019329712,
+          "model_seconds": 0.13181831999099813,
+          "decode_seconds": 0.0001532520109321922,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 10,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.13822722298209555,
+          "frontend_seconds": 0.005879774980712682,
+          "model_seconds": 0.13217307499144226,
+          "decode_seconds": 0.00017437300994060934,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11462448097881861,
+          "frontend_seconds": 0.005828184977872297,
+          "model_seconds": 0.10862019401974976,
+          "decode_seconds": 0.00017610198119655252,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10354773100698367,
+          "frontend_seconds": 0.005911615997320041,
+          "model_seconds": 0.09748374298214912,
+          "decode_seconds": 0.0001523720275145024,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 11,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.13800469000125304,
+          "frontend_seconds": 0.005887685023481026,
+          "model_seconds": 0.13196533199516125,
+          "decode_seconds": 0.00015167298261076212,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11465054098516703,
+          "frontend_seconds": 0.005859544995473698,
+          "model_seconds": 0.10864028398646042,
+          "decode_seconds": 0.00015071200323291123,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10498942199046724,
+          "frontend_seconds": 0.005905775993596762,
+          "model_seconds": 0.09893050300888717,
+          "decode_seconds": 0.00015314298798330128,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 12,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11460605199681595,
+          "frontend_seconds": 0.00586035501328297,
+          "model_seconds": 0.10859295498812571,
+          "decode_seconds": 0.0001527419954072684,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13799263100372627,
+          "frontend_seconds": 0.00584832500317134,
+          "model_seconds": 0.13199239398818463,
+          "decode_seconds": 0.00015191201237030327,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10395378700923175,
+          "frontend_seconds": 0.0058959250163752586,
+          "model_seconds": 0.09790587000316009,
+          "decode_seconds": 0.00015199198969639838,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 13,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.1141430450079497,
+          "frontend_seconds": 0.005816633987706155,
+          "model_seconds": 0.1081761890091002,
+          "decode_seconds": 0.00015022201114334166,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10372455499600619,
+          "frontend_seconds": 0.005875025992281735,
+          "model_seconds": 0.09769708599196747,
+          "decode_seconds": 0.00015244301175698638,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.1377845880051609,
+          "frontend_seconds": 0.0058769349998328835,
+          "model_seconds": 0.13175551002495922,
+          "decode_seconds": 0.0001521429803688079,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 14,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11499930699937977,
+          "frontend_seconds": 0.006181859003845602,
+          "model_seconds": 0.10866659600287676,
+          "decode_seconds": 0.00015085199265740812,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10496073198737577,
+          "frontend_seconds": 0.005912396009080112,
+          "model_seconds": 0.0988961839757394,
+          "decode_seconds": 0.0001521520025562495,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.1379895620048046,
+          "frontend_seconds": 0.005981936992611736,
+          "model_seconds": 0.13185436301864684,
+          "decode_seconds": 0.00015326199354603887,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 15,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10418017199845053,
+          "frontend_seconds": 0.005840525001985952,
+          "model_seconds": 0.09818547498434782,
+          "decode_seconds": 0.00015417201211676002,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13799022199236788,
+          "frontend_seconds": 0.005861225014086813,
+          "model_seconds": 0.13197681499877945,
+          "decode_seconds": 0.00015218197950161994,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11459937298786826,
+          "frontend_seconds": 0.0058148739917669445,
+          "model_seconds": 0.10862974700285122,
+          "decode_seconds": 0.0001547519932501018,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 16,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11479872500058264,
+          "frontend_seconds": 0.005857724987436086,
+          "model_seconds": 0.10878811799921095,
+          "decode_seconds": 0.00015288201393559575,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13786777999484912,
+          "frontend_seconds": 0.005830043985042721,
+          "model_seconds": 0.13188570400234312,
+          "decode_seconds": 0.00015203200746327639,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10455351701239124,
+          "frontend_seconds": 0.005881515011424199,
+          "model_seconds": 0.0985192499938421,
+          "decode_seconds": 0.00015275200712494552,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 17,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11516375100472942,
+          "frontend_seconds": 0.005919946008361876,
+          "model_seconds": 0.10909107301267795,
+          "decode_seconds": 0.0001527319836895913,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.1379752820066642,
+          "frontend_seconds": 0.005898805015021935,
+          "model_seconds": 0.1319237650022842,
+          "decode_seconds": 0.0001527119893580675,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10438548499951139,
+          "frontend_seconds": 0.0058471950178500265,
+          "model_seconds": 0.09838420798769221,
+          "decode_seconds": 0.00015408199396915734,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 18,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.13793336297385395,
+          "frontend_seconds": 0.00590366599499248,
+          "model_seconds": 0.13187716499669477,
+          "decode_seconds": 0.00015253198216669261,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.1145619940070901,
+          "frontend_seconds": 0.0058724560076370835,
+          "model_seconds": 0.1085369260108564,
+          "decode_seconds": 0.00015261198859661818,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10454120801296085,
+          "frontend_seconds": 0.0058496650017332286,
+          "model_seconds": 0.09853733101044782,
+          "decode_seconds": 0.00015421200077980757,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 19,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.12355173399555497,
+          "frontend_seconds": 0.005900685995584354,
+          "model_seconds": 0.11749923598836176,
+          "decode_seconds": 0.00015181201160885394,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10521648800931871,
+          "frontend_seconds": 0.005846515006851405,
+          "model_seconds": 0.0992159910092596,
+          "decode_seconds": 0.000153981993207708,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.1378376409993507,
+          "frontend_seconds": 0.0058499549922998995,
+          "model_seconds": 0.13181519400677644,
+          "decode_seconds": 0.00017249200027436018,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 20,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11472617599065416,
+          "frontend_seconds": 0.0058531749818939716,
+          "model_seconds": 0.10871995901106857,
+          "decode_seconds": 0.00015304199769161642,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10458224901231006,
+          "frontend_seconds": 0.0058195040037389845,
+          "model_seconds": 0.0985767130041495,
+          "decode_seconds": 0.00018603200442157686,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13802154498989694,
+          "frontend_seconds": 0.005878714990103617,
+          "model_seconds": 0.1319915880158078,
+          "decode_seconds": 0.00015124198398552835,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 21,
+      "order": [
+        1,
+        4,
+        2
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.13790327397873625,
+          "frontend_seconds": 0.005842614977154881,
+          "model_seconds": 0.1319082870031707,
+          "decode_seconds": 0.00015237199841067195,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10514496802352369,
+          "frontend_seconds": 0.00584506502491422,
+          "model_seconds": 0.09914469998329878,
+          "decode_seconds": 0.0001552030153106898,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11516400298569351,
+          "frontend_seconds": 0.005909475992666557,
+          "model_seconds": 0.10910205499385484,
+          "decode_seconds": 0.00015247199917212129,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 22,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11448947398457676,
+          "frontend_seconds": 0.005880045995581895,
+          "model_seconds": 0.10845676600001752,
+          "decode_seconds": 0.00015266198897734284,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13798233499983326,
+          "frontend_seconds": 0.005888556013815105,
+          "model_seconds": 0.13194226700579748,
+          "decode_seconds": 0.00015151198022067547,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.1078862379945349,
+          "frontend_seconds": 0.005855384981259704,
+          "model_seconds": 0.10185235101380385,
+          "decode_seconds": 0.0001785019994713366,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 23,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11455491598462686,
+          "frontend_seconds": 0.005828634981298819,
+          "model_seconds": 0.10855200802325271,
+          "decode_seconds": 0.00017427298007532954,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10735029098577797,
+          "frontend_seconds": 0.00850767400697805,
+          "model_seconds": 0.09868875498068519,
+          "decode_seconds": 0.0001538619981147349,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13785474401083775,
+          "frontend_seconds": 0.005846495012519881,
+          "model_seconds": 0.13185571698704734,
+          "decode_seconds": 0.00015253201127052307,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 24,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.13797724599135108,
+          "frontend_seconds": 0.005848244996741414,
+          "model_seconds": 0.13197649901849218,
+          "decode_seconds": 0.00015250197611749172,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11583908402826637,
+          "frontend_seconds": 0.005810514005133882,
+          "model_seconds": 0.1098771080141887,
+          "decode_seconds": 0.00015146200894378126,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10755497400532477,
+          "frontend_seconds": 0.005863834987394512,
+          "model_seconds": 0.10153342701960355,
+          "decode_seconds": 0.0001577119983267039,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 25,
+      "order": [
+        2,
+        4,
+        1
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11567241200827993,
+          "frontend_seconds": 0.005925436009420082,
+          "model_seconds": 0.10959329400793649,
+          "decode_seconds": 0.00015368199092336,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.1046367319941055,
+          "frontend_seconds": 0.005869665998034179,
+          "model_seconds": 0.09861333400476724,
+          "decode_seconds": 0.00015373199130408466,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13802974799182266,
+          "frontend_seconds": 0.005857434996869415,
+          "model_seconds": 0.13201886098249815,
+          "decode_seconds": 0.00015345201245509088,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 26,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.11744615901261568,
+          "frontend_seconds": 0.005828805005876347,
+          "model_seconds": 0.11146499202004634,
+          "decode_seconds": 0.00015236198669299483,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13810296999872662,
+          "frontend_seconds": 0.0058804459986276925,
+          "model_seconds": 0.13206976201036014,
+          "decode_seconds": 0.00015276198973879218,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10589124099351466,
+          "frontend_seconds": 0.005906656006118283,
+          "model_seconds": 0.09980356198502705,
+          "decode_seconds": 0.00018102300236932933,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 27,
+      "order": [
+        4,
+        1,
+        2
+      ],
+      "results": {
+        "4": {
+          "seconds": 0.10490340602700599,
+          "frontend_seconds": 0.0058331450272817165,
+          "model_seconds": 0.09891513898037374,
+          "decode_seconds": 0.00015512201935052872,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13802506800857373,
+          "frontend_seconds": 0.005854624992934987,
+          "model_seconds": 0.13201974099501967,
+          "decode_seconds": 0.00015070202061906457,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.1145268969994504,
+          "frontend_seconds": 0.005864316015504301,
+          "model_seconds": 0.10851075800019316,
+          "decode_seconds": 0.00015182298375293612,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 28,
+      "order": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "1": {
+          "seconds": 0.1380798589962069,
+          "frontend_seconds": 0.005887665000045672,
+          "model_seconds": 0.13202381200972013,
+          "decode_seconds": 0.0001683819864410907,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "2": {
+          "seconds": 0.11516178699093871,
+          "frontend_seconds": 0.005883635982172564,
+          "model_seconds": 0.10912361901137047,
+          "decode_seconds": 0.00015453199739567935,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10458969298633747,
+          "frontend_seconds": 0.005868435982847586,
+          "model_seconds": 0.0985668349894695,
+          "decode_seconds": 0.00015442201402038336,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    },
+    {
+      "context_seconds": 1.0,
+      "repeat": 29,
+      "order": [
+        2,
+        1,
+        4
+      ],
+      "results": {
+        "2": {
+          "seconds": 0.114572158025112,
+          "frontend_seconds": 0.005884736019652337,
+          "model_seconds": 0.10853313998086378,
+          "decode_seconds": 0.00015428202459588647,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "1": {
+          "seconds": 0.13800444899243303,
+          "frontend_seconds": 0.005900685995584354,
+          "model_seconds": 0.13194865098921582,
+          "decode_seconds": 0.0001551120076328516,
+          "text": "funery number mad",
+          "encoded_length": 13
+        },
+        "4": {
+          "seconds": 0.10423658799845725,
+          "frontend_seconds": 0.005834554991452023,
+          "model_seconds": 0.09824724102509208,
+          "decode_seconds": 0.00015479198191314936,
+          "text": "funery number mad",
+          "encoded_length": 13
+        }
+      }
+    }
+  ]
+}

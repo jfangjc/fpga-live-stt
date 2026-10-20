@@ -1,0 +1,1745 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "latency_acceptance": false,
+  "model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "library_sha256": "b93c698bf9d4c2b4b94c64342ed9e3163a9d0d0200f636167865a046da8b6d8e",
+  "source_sha256": "c97ae2bd88993de40fdd66be565717ec313bed341120a5e6195c4946318eb168",
+  "graph_source_sha256": "dcf7b15ca8502d8c52fc40fbfe1ab8f39a75a584a70fe635d88f4f0414f7a5a7",
+  "clips": [
+    {
+      "id": "user-speech-original",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+        "oracle": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-speech-original",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "oracle": "you"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-speech-original",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "to",
+        "oracle": "to"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-speech-original",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "funery number mad",
+        "oracle": "funery number mad"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "concord returned to its place amidst the tents",
+        "oracle": "concord returned to its place amidst the tents"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "conquor",
+        "oracle": "conquor"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+        "oracle": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "the",
+        "oracle": "the"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "the english",
+        "oracle": "the english"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "congratulations were poured in upon the princess everywhere during her journey",
+        "oracle": "congratulations were poured in upon the princess everywhere during her journey"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "think",
+        "oracle": "think"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "congratulate",
+        "oracle": "congratulate"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+        "oracle": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "from the",
+        "oracle": "from the"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "from the respect",
+        "oracle": "from the respect"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+        "oracle": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "",
+        "oracle": ""
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "she tau her",
+        "oracle": "she tau her"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+        "oracle": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "oracle": "you"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "to run",
+        "oracle": "to run"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "##unery numberad",
+        "oracle": "##unery numberad"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+        "oracle": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "oracle": "you"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "to",
+        "oracle": "to"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "funery number mad",
+        "oracle": "funery number mad"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+        "oracle": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "oracle": "you"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "you ro",
+        "oracle": "you ro"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "funeral numberad",
+        "oracle": "funeral numberad"
+      },
+      "length_exact": true,
+      "physical_oracle_bit_parity": null,
+      "counters": {
+        "cpu": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        },
+        "oracle": {
+          "ioctls": 0,
+          "loads": 0,
+          "runs": 0,
+          "tx_bytes": 0,
+          "rx_bytes": 0,
+          "ioctl_seconds": 0.0,
+          "physical_calls": 0,
+          "oracle_calls": 4,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0,
+          "unpack_seconds": 0.0,
+          "mac_issue_cycles": 0,
+          "input_stall_cycles": 0,
+          "output_stall_cycles": 0,
+          "active_cycles": 0
+        }
+      }
+    }
+  ],
+  "errors": {
+    "cpu": 24,
+    "oracle": 24
+  },
+  "words": 269,
+  "representative_corpus_qualified": false
+}

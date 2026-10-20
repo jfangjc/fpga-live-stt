@@ -1,0 +1,10 @@
+{
+  "archive": "whisper-small-board-assets-20261020.zip",
+  "sha256": "5ebe5ac662b8cea34e20d4fbbc46bf376f01e9824dde92660f422af600489c59",
+  "bytes": 962729467,
+  "manifest_files": 2938,
+  "all_file_hashes_and_crc_verified": true,
+  "model_checkpoint_hashes_match": true,
+  "tested_binaries_and_libraries_match": true,
+  "purpose": "Development backup; not relocated-deployment or live-streaming qualified"
+}

@@ -1,0 +1,56 @@
+{
+  "normalization": "English lowercase alphanumeric/apostrophe words",
+  "clips": [
+    {
+      "id": "3570-5694-0013",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 15
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 15
+        }
+      }
+    },
+    {
+      "id": "8455-210777-0062",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 10
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 10
+        }
+      }
+    },
+    {
+      "id": "237-134500-0034",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 5
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 5
+        }
+      }
+    }
+  ],
+  "totals": {
+    "cpu_0_no_flash": {
+      "word_errors": 0,
+      "reference_words": 30,
+      "wer": 0.0
+    },
+    "hybrid": {
+      "word_errors": 0,
+      "reference_words": 30,
+      "wer": 0.0
+    }
+  }
+}

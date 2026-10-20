@@ -1,0 +1,30 @@
+{
+  "original_app": "k26-starter-kits",
+  "original_qn_module": false,
+  "kernel": "6.8.0-1036-xilinx",
+  "firmware_sha256": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/software/whisper/transcribe.py",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/research/whisper-validation/audio/3570-5694-0013.wav",
+    "--binary",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/build-hybrid/bin/whisper-cli",
+    "--model",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/ggml-large-v3-turbo-q8_0.bin",
+    "--language",
+    "en",
+    "--threads",
+    "4",
+    "--fpga-attention",
+    "--out",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/reports/deployment-check/en.json"
+  ],
+  "restored": true,
+  "clock_hz": 99999999,
+  "activation_seconds": 2.5103683000015735,
+  "command_seconds": 115.33931415500047,
+  "command_exit_code": 0,
+  "restoration_seconds": 1.6476327239979582,
+  "session_seconds": 119.49737898999956
+}

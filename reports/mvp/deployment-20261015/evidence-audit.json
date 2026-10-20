@@ -1,0 +1,8 @@
+{
+  "measured_pairs_audited": 900,
+  "all_outputs_and_counters_pass": true,
+  "before_after_board_state_identical": true,
+  "overlimit_rejected_and_restored": true,
+  "transferred_source_sha256_verified": true,
+  "input_prefix_relationship_verified": true
+}

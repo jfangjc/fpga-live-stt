@@ -1,0 +1,2073 @@
+{
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "library_sha256": "b415ef0c16d5d8da460fa048e0cd5fa9f6dc24592e2d31392a27184e13f1e8ba",
+  "boundary_library_sha256": "95948662d4244bba449810edce277b2b2baa4172dae26843c6a7895925de876a",
+  "driver_sha256": "cca03f8a23063c0f3e03e40ffc134a1fbf7933ece12c4f2886c759855d9c3a61",
+  "firmware_sha256": "466be8d8df96a198454445d70633c4007b4fc45e463fd201e562a828ddb71558",
+  "clock_hz": 100000000,
+  "clock_readback_hz": 99999999,
+  "graph_compiler_sha256": "595dc1645c6dd14d7aacc9114bfc5e210b5aee0597884fe2a220da9bf6598bf1",
+  "boundary_transform_sha256": "c8dc32657d936e44a4834a34a051011fc355197f20923ef83981316d96951082",
+  "residual_tail_library_sha256": "ce97d2ce3c8db1a09eafccf37797deb0a4f6666aeae7135d9e92e5a9191d0eb2",
+  "pair_compiler_sha256": "b960d57d37c334adc6fce0174e797bcbf64c9d54d802e917eb0f6c6e877d5e12",
+  "timer_source_sha256": "64a79f86a28fa0988e750ff9175b563424518cec926dafbd83c90bc33b8eea3d",
+  "hardware_execution": true,
+  "capture_tested": false,
+  "representative_corpus_qualified": false,
+  "warm_transactions": 23,
+  "retained_pairs": 100,
+  "weight_updates_per_inference": 200,
+  "weight_transfers_inside_timing": true,
+  "retained_boundaries": 77,
+  "maximum_feature_frames": 256,
+  "kernel_program_cache": true,
+  "complete": true,
+  "all_numpy_bit_exact": true,
+  "immutable_program_tested": true,
+  "fd_close_cleanup_tested": true,
+  "kernel_rejections": [
+    {
+      "operation": 7,
+      "errno": 116
+    },
+    {
+      "operation": 8,
+      "errno": 116
+    },
+    {
+      "operation": 7,
+      "errno": 14
+    },
+    {
+      "operation": 7,
+      "errno": 22
+    },
+    {
+      "operation": 7,
+      "errno": 22
+    },
+    {
+      "operation": 7,
+      "errno": 22
+    },
+    {
+      "operation": 7,
+      "errno": 22
+    },
+    {
+      "operation": 7,
+      "errno": 22
+    },
+    {
+      "operation": 7,
+      "errno": 22
+    },
+    {
+      "operation": 7,
+      "errno": 116
+    },
+    {
+      "operation": 8,
+      "errno": 116
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 14
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 22
+    },
+    {
+      "operation": 6,
+      "errno": 28
+    },
+    {
+      "operation": 6,
+      "errno": 28
+    }
+  ],
+  "physical_cases": [
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2269668844,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 402642146,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 464378325,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 2136212199,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 424900656,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2174981661,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 344864711,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 2779690719,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2998871240,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2167969448,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2851966957,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3895307451,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 437249471,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 851701646,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 4,
+      "tag": 3330338911,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 2352017325,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 3,
+      "tag": 1479898396,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 1,
+      "tag": 138496056,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3227318894,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 1514612746,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3120639915,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 965427809,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 1,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 1,
+      "valid_times": 1,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 17,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 17,
+      "valid_times": 8,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 17,
+      "valid_times": 17,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 65,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 65,
+      "valid_times": 32,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 65,
+      "valid_times": 65,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 256,
+      "valid_times": 0,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 256,
+      "valid_times": 128,
+      "numpy_bit_exact": true
+    },
+    {
+      "stages": 5,
+      "tag": 3960958262,
+      "times": 256,
+      "valid_times": 256,
+      "numpy_bit_exact": true
+    }
+  ],
+  "source_sha256": "6f5291416470d2f2f65309271246ceefd9f081eb4527787f004c29310b4c3ec1"
+}

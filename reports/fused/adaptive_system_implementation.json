@@ -1,0 +1,1 @@
+{"clock_hz":100000000,"pointwise_macs":512,"depthwise_macs":64,"setup_slack_ns":0.028,"hold_slack_ns":0.010,"physical_execution":false}

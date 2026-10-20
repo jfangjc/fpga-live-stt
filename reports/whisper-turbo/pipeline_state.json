@@ -1,0 +1,8 @@
+{
+  "pid": 20889,
+  "status": "complete",
+  "phase": "complete",
+  "phase_started": "2026-10-18T17:25:20.003040+00:00",
+  "total_runs": null,
+  "archive": "/home/ubuntu/whisper-turbo-kv260/kv260-whisper-large-v3-turbo-prototype-0.2.0-runtime.zip"
+}

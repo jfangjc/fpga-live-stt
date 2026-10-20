@@ -1,0 +1,25 @@
+{
+  "independent_reference": true,
+  "arithmetic": "Integer floor/remainder ties-to-even; explicit DW padding/masking and pointwise matmul",
+  "generator_sha256": "3d5b7bc86a1314f2ddbd2ce97b58bab1f182471f4f3ba43ee4725024a320bfca",
+  "files_sha256": {
+    "verification/chain-prefetch-vectors/chain_101_99_5.mem": "4cf03033efea77cc07d1cb97e70ee04d24c762a6958ceedd38c17a208a6996b4",
+    "verification/chain-prefetch-vectors/chain_17_13_2.mem": "828677ed839639d33d17c811e4f7a6fa4a744b331f97fd6541821aaa7bb4fdc7",
+    "verification/chain-prefetch-vectors/chain_1_1_1.mem": "df581741e77a9d99d499c54df2c6bd5a8de95b79279954c130d3c042fa9dba96",
+    "verification/chain-prefetch-vectors/chain_256_255_3.mem": "53d8c74c34b1bc12cfad55d4ac0b9a0943e54dcacaedee4d0bdbf25cc806353f",
+    "verification/chain-prefetch-vectors/chain_51_51_3.mem": "ee731f75a1402c5c333615bd819c4e7a8bb3235762d66777ac199a608c41407d",
+    "verification/chain-prefetch-vectors/chain_65_0_2.mem": "a9e41a82e57447f53664425bf2929761588d5c6798ecf3c04685637447e14e43",
+    "verification/chain-prefetch-vectors/pair_101_99_26_17_179_76_167.mem": "2441e8a2b6011cf1d9225ca9846667201bc6f14bf8ee9cf08c27fb262d4e059a",
+    "verification/chain-prefetch-vectors/pair_17_0_16_13_145_110_141.mem": "90f276e8898fbdf30cc95bf0228e50f449460350c75c98bc1b246ab4f3f77806",
+    "verification/chain-prefetch-vectors/pair_17_13_11_11_128_127_128.mem": "ac22db3f4238791526d508c39bda3630056a3210429cfb94ab4c0ee9789b0cbb",
+    "verification/chain-prefetch-vectors/pair_17_13_11_15_128_127_128.mem": "690fa4d85a1905bd85b90d7a9885d44741f903dd8a2a711ca40d83a0e4cb439c",
+    "verification/chain-prefetch-vectors/pair_17_13_16_13_145_110_141.mem": "4f7fbe12c7d618dd873271a269fd5a0867fae846f8b1cef8e998d6bda8ae1aa5",
+    "verification/chain-prefetch-vectors/pair_17_13_21_15_162_93_154.mem": "13f0baa95645c4b717f58a55b96cb14083d52a364a2eb54ef2da49adbbf513e0",
+    "verification/chain-prefetch-vectors/pair_17_13_26_17_179_76_167.mem": "0b62515076b8a5591fbf2dd120d9090b07b639b58154ccc6db7b9bd46932220d",
+    "verification/chain-prefetch-vectors/pair_17_13_31_19_196_59_180.mem": "de80052429c8efbc1177624c5ad381a2a83b969d24c629561c7cebda22274e38",
+    "verification/chain-prefetch-vectors/pair_17_13_36_21_213_42_193.mem": "d9dc9023203674f7a779ff3d825ee8eb0b556a6a4f2b0070dda7c0bc5ea44582",
+    "verification/chain-prefetch-vectors/pair_17_13_44_17_220_37_129.mem": "cb30db106806f94eadf9517dbe8ebc0a62dcffd976146cf5f2c96581c334e6e6",
+    "verification/chain-prefetch-vectors/pair_256_255_26_17_179_76_167.mem": "f624417bb4fa675d290a3ee8e16eb89569e62375b15e74743dd2d5a2f71585fa",
+    "verification/chain-prefetch-vectors/pair_51_51_11_11_128_127_128.mem": "32e370a78e266d53105e1fd613568989964c861decb8d2be7a93a1c86c7b9d69"
+  }
+}

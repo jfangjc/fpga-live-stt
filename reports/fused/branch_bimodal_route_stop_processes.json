@@ -1,0 +1,44 @@
+[
+  {
+    "ProcessId": 2796,
+    "ParentProcessId": 31644,
+    "Name": "vivado.exe",
+    "CommandLine": "\"C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/vivado.exe\"   -mode batch -source scripts/branch_bimodal_implement.tcl -log build/branch_bimodal_implement_vivado.log -journal build/branch_bimodal_implement_vivado.jou"
+  },
+  {
+    "ProcessId": 4428,
+    "ParentProcessId": 2796,
+    "Name": "cmd.exe",
+    "CommandLine": "C:\\WINDOWS\\system32\\cmd.exe /c C:/AMDDesignTools/2026.1/Vivado/bin/loader.bat -m64 -exec vrs C:/Users/jfang/Documents/Vivado/Prototype_v2/build/branch_bimodal_system/Prototype_v3_branch_bimodal.runs/.jobs/vrs_config_2.xml"
+  },
+  {
+    "ProcessId": 23524,
+    "ParentProcessId": 4428,
+    "Name": "vrs.exe",
+    "CommandLine": "\"C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/vrs.exe\"   C:/Users/jfang/Documents/Vivado/Prototype_v2/build/branch_bimodal_system/Prototype_v3_branch_bimodal.runs/.jobs/vrs_config_2.xml"
+  },
+  {
+    "ProcessId": 11904,
+    "ParentProcessId": 23524,
+    "Name": "cmd.exe",
+    "CommandLine": "C:\\WINDOWS\\system32\\cmd.exe /c C:/Users/jfang/Documents/Vivado/Prototype_v2/build/branch_bimodal_system/Prototype_v3_branch_bimodal.runs/impl_1/runme.bat -quiet"
+  },
+  {
+    "ProcessId": 16116,
+    "ParentProcessId": 11904,
+    "Name": "cscript.exe",
+    "CommandLine": "cscript  /nologo /E:JScript \"C:\\Users\\jfang\\Documents\\Vivado\\Prototype_v2\\build\\branch_bimodal_system\\Prototype_v3_branch_bimodal.runs\\impl_1\\\\rundef.js\" -quiet"
+  },
+  {
+    "ProcessId": 27488,
+    "ParentProcessId": 16116,
+    "Name": "cmd.exe",
+    "CommandLine": "C:\\WINDOWS\\system32\\cmd.exe /c vivado.bat -log asr_v2_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source asr_v2_top.tcl -notrace 2>&1"
+  },
+  {
+    "ProcessId": 26276,
+    "ParentProcessId": 27488,
+    "Name": "vivado.exe",
+    "CommandLine": "\"C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/vivado.exe\"   -log asr_v2_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source asr_v2_top.tcl -notrace"
+  }
+]

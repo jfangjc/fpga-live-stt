@@ -1,0 +1,48 @@
+QNC2 cached-layer DMA driver build: 2026-10-09
+
+Artifact: qn_tile_cached.ko
+Size: 480768 bytes
+SHA256: 92369f1836c322928771221aadca267bdfdc8150fafd8808c61ae0e202b4c9ff
+ELF: ELF64 little-endian AArch64 relocatable
+Internal module name: qn_tile
+vermagic: 6.8.0-1015-xilinx SMP preempt mod_unload modversions aarch64
+srcversion: 9FFF3C48601376DB83853E3
+
+Build: kernel-build/build_exact.sh using existing Canonical exact
+linux-xilinx headers 6.8.0-1015.16 and exact Module.symvers, Ubuntu GCC13.3.0
+and binutils2.42. make ARCH=arm64 W=1 modules exited 0. No driver compiler
+warnings. Existing tool notices: kernel-doc Perl precedence warning, BTF
+skipped because the exact vmlinux image is unavailable. Module is unsigned.
+
+qn_tile.c SHA256:
+a3af4a075312db8ea261a05e7f47eb03ad1eb5232dafac21e97dca4422d8ff3a
+qn_layer_protocol.h SHA256:
+5f5357c86a7fa15facff6eff4324c669413f3f89ee34cf8f9ccf53b4f7276e0e
+
+Host test: gcc -std=c11 -Wall -Wextra -Werror test_layer_protocol.c
+PASS: 305152 shape/length/batch bounds checks plus malformed header, alignment and ABI checks.
+Tests reuse the actual pre-DMA validator. A sanitizer build could not link
+because Fedora WSL lacked libasan.so.8.0.0 and libubsan.so.1.0.0;
+no sanitizer results are claimed for this test.
+
+Legacy prebuilt files unchanged:
+qn_tile.ko SHA256 cec1a51cc2d34a79b612ce6f99fe5b94e02d2042a4d700b5c2290475a64eaa06
+qn_tile_batch.ko SHA256 c04cf2c5b0a6f0d0190085bd7d76bc5c5f5dc5063127b6f38ec74123ab36ffa8
+
+Not board-validated: physical DMA, QNC2 response handling, multi-file lease
+tests, reset/timeout recovery and removal paths require the new bitstream
+and tests on KV260. No performance or accuracy claims derive from this build.
+
+Batch revision adds ioctl nr4, 0xc0205104, homogeneous RUN chains 1..128
+with total response capacity 133120 bytes. Every packet is validated before
+DMA and every response header/status checked before userspace copy.
+No RTL change required. Legacy ioctl limits and prebuilt binaries unchanged.
+
+qn_tile_uapi.h SHA256:
+8f4c2acfe2b1fa06813326af2d8c86fc88633e749ab464789b34f02839650cbe
+test_layer_protocol.c SHA256:
+73dd5a218f3eb62dc0601aff521eaabab9683a7590eb9e24cfe94c244f2eb33a
+
+Additional host tests cover all M/count capacity boundaries and malformed
+last-packet tag/shape/opcode. Kernel compilation and static inspection only;
+physical batched DMA, IRQ coalescing and timing need board validation.

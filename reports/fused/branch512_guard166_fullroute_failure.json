@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "qualified": false,
+  "hardware_execution": false,
+  "deployment_started": false,
+  "clock_hz": 166666666,
+  "setup_slack_ns": 0.0,
+  "hold_slack_ns": 0.005,
+  "worst_path": "Pointwise input BRAM through multiplication to DSP product register",
+  "sources_sha256": {
+    "reports/fused/branch512_guard166_fullroute_failed_driver.log": "6144e570120b3fa3c4e5d16a0569164ef09919b49a81ae780c801a858caa146e",
+    "reports/fused/branch512_guard166_fullroute_failed_timing.rpt": "9718942f2e5d316f106992c4dbbad1a3a92d45a193702cddccedaf31a6751578",
+    "reports/fused/branch512_guard166_fullroute_failed_drc.rpt": "5dfb44429592bc82d7a024a1b8a0eee06d03791a268b072afed776fe431e0076",
+    "build/branch512_guard166_system/Prototype_v3_branch512_guard166.runs/impl_1/asr_v2_top_routed.dcp": "1d56aa3d9c02fa67696ecf835c859c813de65607b812b01c48d6a8ba1a3f3d1c",
+    "reports/fused/branch512_guard_regression_evidence.json": "090c4f7e950ac74716dce51102e1bd618ed3f6ebcb9d64a32db9590756097e9d",
+    "scripts/record_branch512_guard166_failure.py": "53916c09b0ee60c6340d34ddac685805e10e202b1b86307c4c86ec3082c864b6"
+  }
+}

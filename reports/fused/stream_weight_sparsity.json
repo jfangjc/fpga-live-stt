@@ -1,0 +1,1010 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "model_sha256": "5950e0955b6652da70071e7086e35350ccea899c19b6319cb9278382d094cb6a",
+  "rows": [
+    {
+      "program": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 11,
+      "dw_zero_weights": 123,
+      "dw_weights": 2816,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 3733,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 11,
+      "dw_zero_weights": 82,
+      "dw_weights": 2816,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 2296,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 11,
+      "dw_zero_weights": 75,
+      "dw_weights": 2816,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1519,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 11,
+      "dw_zero_weights": 59,
+      "dw_weights": 2816,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1639,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 13,
+      "dw_zero_weights": 112,
+      "dw_weights": 3328,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 5560,
+      "pw_zero_rows": 12
+    },
+    {
+      "program": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 13,
+      "dw_zero_weights": 232,
+      "dw_weights": 3328,
+      "dw_zero_rows": 12,
+      "pw_zero_weights": 6904,
+      "pw_zero_rows": 9
+    },
+    {
+      "program": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 13,
+      "dw_zero_weights": 201,
+      "dw_weights": 3328,
+      "dw_zero_rows": 9,
+      "pw_zero_weights": 5016,
+      "pw_zero_rows": 6
+    },
+    {
+      "program": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 13,
+      "dw_zero_weights": 175,
+      "dw_weights": 3328,
+      "dw_zero_rows": 6,
+      "pw_zero_weights": 4037,
+      "pw_zero_rows": 5
+    },
+    {
+      "program": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 13,
+      "dw_zero_weights": 146,
+      "dw_weights": 3328,
+      "dw_zero_rows": 5,
+      "pw_zero_weights": 2758,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.3/mconv.1/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 15,
+      "dw_zero_weights": 117,
+      "dw_weights": 3840,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 4131,
+      "pw_zero_rows": 10
+    },
+    {
+      "program": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 15,
+      "dw_zero_weights": 94,
+      "dw_weights": 3840,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 3146,
+      "pw_zero_rows": 5
+    },
+    {
+      "program": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 15,
+      "dw_zero_weights": 124,
+      "dw_weights": 3840,
+      "dw_zero_rows": 5,
+      "pw_zero_weights": 2931,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 15,
+      "dw_zero_weights": 69,
+      "dw_weights": 3840,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1614,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 17,
+      "dw_zero_weights": 141,
+      "dw_weights": 4352,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1188,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 17,
+      "dw_zero_weights": 113,
+      "dw_weights": 4352,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 999,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 17,
+      "dw_zero_weights": 114,
+      "dw_weights": 4352,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1276,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 17,
+      "dw_zero_weights": 107,
+      "dw_weights": 4352,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1372,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 17,
+      "dw_zero_weights": 81,
+      "dw_weights": 4352,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1207,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 19,
+      "dw_zero_weights": 241,
+      "dw_weights": 4864,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 2138,
+      "pw_zero_rows": 4
+    },
+    {
+      "program": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 19,
+      "dw_zero_weights": 255,
+      "dw_weights": 4864,
+      "dw_zero_rows": 4,
+      "pw_zero_weights": 3133,
+      "pw_zero_rows": 5
+    },
+    {
+      "program": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 19,
+      "dw_zero_weights": 227,
+      "dw_weights": 4864,
+      "dw_zero_rows": 5,
+      "pw_zero_weights": 3367,
+      "pw_zero_rows": 5
+    },
+    {
+      "program": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 19,
+      "dw_zero_weights": 232,
+      "dw_weights": 4864,
+      "dw_zero_rows": 5,
+      "pw_zero_weights": 3140,
+      "pw_zero_rows": 4
+    },
+    {
+      "program": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 19,
+      "dw_zero_weights": 180,
+      "dw_weights": 4864,
+      "dw_zero_rows": 4,
+      "pw_zero_weights": 1902,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 21,
+      "dw_zero_weights": 127,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1197,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 21,
+      "dw_zero_weights": 109,
+      "dw_weights": 5376,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1739,
+      "pw_zero_rows": 2
+    },
+    {
+      "program": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 21,
+      "dw_zero_weights": 141,
+      "dw_weights": 5376,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 1727,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 21,
+      "dw_zero_weights": 107,
+      "dw_weights": 5376,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1289,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 21,
+      "dw_zero_weights": 61,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1073,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 13,
+      "dw_zero_weights": 86,
+      "dw_weights": 3328,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1097,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 13,
+      "dw_zero_weights": 66,
+      "dw_weights": 3328,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 961,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 13,
+      "dw_zero_weights": 45,
+      "dw_weights": 3328,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 925,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 13,
+      "dw_zero_weights": 30,
+      "dw_weights": 3328,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1002,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 15,
+      "dw_zero_weights": 50,
+      "dw_weights": 3840,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1272,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 15,
+      "dw_zero_weights": 63,
+      "dw_weights": 3840,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1061,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 15,
+      "dw_zero_weights": 58,
+      "dw_weights": 3840,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 995,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 15,
+      "dw_zero_weights": 58,
+      "dw_weights": 3840,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 990,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 15,
+      "dw_zero_weights": 57,
+      "dw_weights": 3840,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 830,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 17,
+      "dw_zero_weights": 79,
+      "dw_weights": 4352,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 876,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 17,
+      "dw_zero_weights": 84,
+      "dw_weights": 4352,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1060,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 17,
+      "dw_zero_weights": 101,
+      "dw_weights": 4352,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1412,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 17,
+      "dw_zero_weights": 91,
+      "dw_weights": 4352,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1392,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 17,
+      "dw_zero_weights": 73,
+      "dw_weights": 4352,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1198,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 19,
+      "dw_zero_weights": 69,
+      "dw_weights": 4864,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1294,
+      "pw_zero_rows": 2
+    },
+    {
+      "program": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 19,
+      "dw_zero_weights": 126,
+      "dw_weights": 4864,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 1663,
+      "pw_zero_rows": 2
+    },
+    {
+      "program": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 19,
+      "dw_zero_weights": 144,
+      "dw_weights": 4864,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 1753,
+      "pw_zero_rows": 2
+    },
+    {
+      "program": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 19,
+      "dw_zero_weights": 112,
+      "dw_weights": 4864,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 1323,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 19,
+      "dw_zero_weights": 60,
+      "dw_weights": 4864,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 711,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 21,
+      "dw_zero_weights": 140,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 707,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 21,
+      "dw_zero_weights": 128,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 692,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 21,
+      "dw_zero_weights": 135,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 713,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 21,
+      "dw_zero_weights": 153,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 714,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 21,
+      "dw_zero_weights": 107,
+      "dw_weights": 5376,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 718,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 23,
+      "dw_zero_weights": 156,
+      "dw_weights": 5888,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1548,
+      "pw_zero_rows": 3
+    },
+    {
+      "program": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 23,
+      "dw_zero_weights": 212,
+      "dw_weights": 5888,
+      "dw_zero_rows": 3,
+      "pw_zero_weights": 2237,
+      "pw_zero_rows": 3
+    },
+    {
+      "program": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 23,
+      "dw_zero_weights": 180,
+      "dw_weights": 5888,
+      "dw_zero_rows": 3,
+      "pw_zero_weights": 2338,
+      "pw_zero_rows": 3
+    },
+    {
+      "program": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 23,
+      "dw_zero_weights": 161,
+      "dw_weights": 5888,
+      "dw_zero_rows": 3,
+      "pw_zero_weights": 1899,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 23,
+      "dw_zero_weights": 106,
+      "dw_weights": 5888,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 974,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 25,
+      "dw_zero_weights": 151,
+      "dw_weights": 6400,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 5166,
+      "pw_zero_rows": 17
+    },
+    {
+      "program": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 25,
+      "dw_zero_weights": 542,
+      "dw_weights": 6400,
+      "dw_zero_rows": 17,
+      "pw_zero_weights": 18902,
+      "pw_zero_rows": 58
+    },
+    {
+      "program": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 25,
+      "dw_zero_weights": 1526,
+      "dw_weights": 6400,
+      "dw_zero_rows": 58,
+      "pw_zero_weights": 28287,
+      "pw_zero_rows": 65
+    },
+    {
+      "program": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 25,
+      "dw_zero_weights": 1686,
+      "dw_weights": 6400,
+      "dw_zero_rows": 65,
+      "pw_zero_weights": 25611,
+      "pw_zero_rows": 44
+    },
+    {
+      "program": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 25,
+      "dw_zero_weights": 1176,
+      "dw_weights": 6400,
+      "dw_zero_rows": 44,
+      "pw_zero_weights": 11841,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 25,
+      "dw_zero_weights": 183,
+      "dw_weights": 6400,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1156,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 25,
+      "dw_zero_weights": 191,
+      "dw_weights": 6400,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1083,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 25,
+      "dw_zero_weights": 192,
+      "dw_weights": 6400,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 915,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 25,
+      "dw_zero_weights": 185,
+      "dw_weights": 6400,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1047,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 27,
+      "dw_zero_weights": 206,
+      "dw_weights": 6912,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1895,
+      "pw_zero_rows": 3
+    },
+    {
+      "program": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 27,
+      "dw_zero_weights": 249,
+      "dw_weights": 6912,
+      "dw_zero_rows": 3,
+      "pw_zero_weights": 2104,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 27,
+      "dw_zero_weights": 202,
+      "dw_weights": 6912,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1779,
+      "pw_zero_rows": 2
+    },
+    {
+      "program": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 27,
+      "dw_zero_weights": 238,
+      "dw_weights": 6912,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 1895,
+      "pw_zero_rows": 2
+    },
+    {
+      "program": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 27,
+      "dw_zero_weights": 255,
+      "dw_weights": 6912,
+      "dw_zero_rows": 2,
+      "pw_zero_weights": 1343,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.16/mconv.11/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 29,
+      "dw_zero_weights": 205,
+      "dw_weights": 7424,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 8045,
+      "pw_zero_rows": 28
+    },
+    {
+      "program": "/encoder/encoder.16/mconv.11/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 29,
+      "dw_zero_weights": 919,
+      "dw_weights": 7424,
+      "dw_zero_rows": 28,
+      "pw_zero_weights": 15537,
+      "pw_zero_rows": 33
+    },
+    {
+      "program": "/encoder/encoder.16/mconv.11/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 29,
+      "dw_zero_weights": 1047,
+      "dw_weights": 7424,
+      "dw_zero_rows": 33,
+      "pw_zero_weights": 16075,
+      "pw_zero_rows": 30
+    },
+    {
+      "program": "/encoder/encoder.16/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 29,
+      "dw_zero_weights": 1069,
+      "dw_weights": 7424,
+      "dw_zero_rows": 33,
+      "pw_zero_weights": 9269,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 31,
+      "dw_zero_weights": 414,
+      "dw_weights": 7936,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1481,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 31,
+      "dw_zero_weights": 443,
+      "dw_weights": 7936,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1318,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 31,
+      "dw_zero_weights": 389,
+      "dw_weights": 7936,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1306,
+      "pw_zero_rows": 1
+    },
+    {
+      "program": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 31,
+      "dw_zero_weights": 421,
+      "dw_weights": 7936,
+      "dw_zero_rows": 1,
+      "pw_zero_weights": 1330,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 31,
+      "dw_zero_weights": 484,
+      "dw_weights": 7936,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 961,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 33,
+      "dw_zero_weights": 448,
+      "dw_weights": 8448,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 1069,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 33,
+      "dw_zero_weights": 456,
+      "dw_weights": 8448,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 726,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 33,
+      "dw_zero_weights": 501,
+      "dw_weights": 8448,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 793,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 33,
+      "dw_zero_weights": 480,
+      "dw_weights": 8448,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 850,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 33,
+      "dw_zero_weights": 560,
+      "dw_weights": 8448,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 771,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 35,
+      "dw_zero_weights": 510,
+      "dw_weights": 8960,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 851,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 35,
+      "dw_zero_weights": 526,
+      "dw_weights": 8960,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 594,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 35,
+      "dw_zero_weights": 505,
+      "dw_weights": 8960,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 606,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 35,
+      "dw_zero_weights": 560,
+      "dw_weights": 8960,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 632,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 35,
+      "dw_zero_weights": 577,
+      "dw_weights": 8960,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 652,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 37,
+      "dw_zero_weights": 590,
+      "dw_weights": 9472,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 688,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 37,
+      "dw_zero_weights": 594,
+      "dw_weights": 9472,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 666,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 37,
+      "dw_zero_weights": 639,
+      "dw_weights": 9472,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 654,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 37,
+      "dw_zero_weights": 641,
+      "dw_weights": 9472,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 760,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 37,
+      "dw_zero_weights": 722,
+      "dw_weights": 9472,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 728,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 0,
+      "kernel": 39,
+      "dw_zero_weights": 901,
+      "dw_weights": 9984,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 735,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 1,
+      "kernel": 39,
+      "dw_zero_weights": 975,
+      "dw_weights": 9984,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 782,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 2,
+      "kernel": 39,
+      "dw_zero_weights": 1065,
+      "dw_weights": 9984,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 825,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 3,
+      "kernel": 39,
+      "dw_zero_weights": 1149,
+      "dw_weights": 9984,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 878,
+      "pw_zero_rows": 0
+    },
+    {
+      "program": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain_program",
+      "stage": 4,
+      "kernel": 39,
+      "dw_zero_weights": 1447,
+      "dw_weights": 9984,
+      "dw_zero_rows": 0,
+      "pw_zero_weights": 803,
+      "pw_zero_rows": 0
+    }
+  ],
+  "dw_zero_weight_fraction": 0.05526707225557462,
+  "dw_zero_rows": 371,
+  "pw_zero_rows": 377
+}

@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "qualified": false,
+  "hardware_execution": false,
+  "deployment_started": false,
+  "clock_hz": 166666666,
+  "setup_slack_ns": -0.034,
+  "hold_slack_ns": 0.01,
+  "worst_path": "Outer state through inner header-validation multiplier to pair_cycles clock enable",
+  "sources_sha256": {
+    "reports/fused/branch512_drop166_fullroute_failed_driver.log": "2750dfd94a555f2542d61eb7bf820b6426f50ccf3537fc581f6cab3b5afc008f",
+    "reports/fused/branch512_drop166_fullroute_failed_timing.rpt": "5a95197a9d8b2c0f0e97b2afb0e59bc63457bef041e294f0a4f36f845fb1b17c",
+    "reports/fused/branch512_drop166_fullroute_failed_drc.rpt": "6b45ded0eada57909886d8163d466f1e69d07ca8129d2d8d4f0ee44e77078f1e",
+    "build/branch512_drop166_system/Prototype_v3_branch512_drop166.runs/impl_1/asr_v2_top_routed.dcp": "b6d1823187a5428c59f126ae0d011d2b79bcdfc6259d06dac2307fbc80a8a407",
+    "reports/fused/branch512_drop_regression_evidence.json": "69203777279d630ac270df7f249e0755a14aa52d559705951f0463767cd550c7",
+    "scripts/record_branch512_drop166_failure.py": "97873505845040db90e59cce9db6d9c2a41a4c8c2ff1f0811378a9bfea7e146a"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "hardware_execution": true,
+  "audio_seconds": 1.0,
+  "initialization_seconds": 63.19108873300138,
+  "warm_p50_seconds": 0.03621732800093014,
+  "all_warm_logits_bit_exact": true,
+  "cold_counters": {
+    "ioctls": 48,
+    "loads": 256,
+    "runs": 311,
+    "tx_bytes": 11281152,
+    "rx_bytes": 455760,
+    "ioctl_seconds": 0.07446035702741938,
+    "physical_calls": 128,
+    "oracle_calls": 0
+  },
+  "warm_counters": [
+    {
+      "ioctls": 24,
+      "loads": 256,
+      "runs": 311,
+      "tx_bytes": 11281152,
+      "rx_bytes": 455760,
+      "ioctl_seconds": 0.016507276995980646,
+      "physical_calls": 128,
+      "oracle_calls": 0
+    },
+    {
+      "ioctls": 24,
+      "loads": 256,
+      "runs": 311,
+      "tx_bytes": 11281152,
+      "rx_bytes": 455760,
+      "ioctl_seconds": 0.016580056995735504,
+      "physical_calls": 128,
+      "oracle_calls": 0
+    },
+    {
+      "ioctls": 24,
+      "loads": 256,
+      "runs": 311,
+      "tx_bytes": 11281152,
+      "rx_bytes": 455760,
+      "ioctl_seconds": 0.016478186029416975,
+      "physical_calls": 128,
+      "oracle_calls": 0
+    }
+  ],
+  "bulk_rollback_verified": true,
+  "kernel": "6.8.0-1036-xilinx",
+  "date": "2026-10-15",
+  "scope": "Public-folder entry point on the recorded KV260. Three warm calls, not a new 300-pair benchmark."
+}

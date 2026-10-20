@@ -1,0 +1,1968 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date              : Tue Oct 13 18:38:19 2026
+| Host              : Yoga running 64-bit major release  (build 9200)
+| Command           : report_timing -delay_type max -max_paths 30 -nworst 1 -file C:/Users/jfang/Documents/Vivado/Prototype_v2/reports/fused/branch512_drop166_postroute_paths.rpt
+| Design            : asr_v2_top
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.31 12-08-2025
+| Design State      : Physopt postRoute
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[10]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[10])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[10]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<10>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[10])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[11]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[11])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[11]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<11>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[11])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[12]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[12])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[12]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<12>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[12])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[13]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[13])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[13]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<13>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[13])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[14]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[14])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[14]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<14>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[14])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[15]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[15])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[15]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<15>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[15])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[16]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[16])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[16]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<16>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[16])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[17]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[17])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[17]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<17>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[17])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[18]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[18])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[18]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<18>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[18]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[18])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[19]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[19])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[19]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<19>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[19]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[19])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[1]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[1])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[1]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<1>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[1])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[20]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[20])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[20]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<20>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[20]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[20])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[21]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[21])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[21]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<21>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[21]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[21])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[22]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[22])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[22]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<22>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[22]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[22])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[2]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[2])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[2]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<2>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[2])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[3]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[3])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[3]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<3>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[3])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[4]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[4])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[4]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<4>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[4])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[5]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[5])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[5]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<5>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[5])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[6]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[6])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[6]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<6>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[6])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[7]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[7])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[7]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<7>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[7])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[8]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[8])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[8]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<8>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[8])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[9]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.811ns  (logic 1.392ns (23.954%)  route 4.419ns (76.046%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_U[9])
+                                                      0.700     9.159 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/U[9]
+                         net (fo=1, routed)           0.000     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.U<9>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/U[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_U[9])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.159    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.000    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[10]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[10])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[10]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<10>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[10])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[11]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[11])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[11]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<11>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[11])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[12]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[12])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[12]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<12>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[12])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[13]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[13])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[13]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<13>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[13])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[14]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[14])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[14]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<14>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[14])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[15]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[15])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[15]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<15>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[15])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[16]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[16])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[16]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<16>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[16])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+Slack (MET) :             0.001ns  (required time - arrival time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[17]
+                            (rising edge-triggered cell DSP_M_DATA clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_pl_0 rise@6.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        5.810ns  (logic 1.391ns (23.941%)  route 4.419ns (76.059%))
+  Logic Levels:           3  (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.102ns = ( 9.102 - 6.000 ) 
+    Source Clock Delay      (SCD):    3.348ns
+    Clock Pessimism Removal (CPR):    0.192ns
+  Clock Uncertainty:      0.136ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.262ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.081ns (routing 1.584ns, distribution 1.497ns)
+  Clock Net Delay (Destination): 2.886ns (routing 1.450ns, distribution 1.436ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       3.081     3.348    system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/clka
+    RAMB36_X0Y47         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y47         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[13])
+                                                      0.320     3.668 f  system_i/asr_v2_system_i/tile/inst/engine/pointwise/input_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/DOUTBDOUT[13]
+                         net (fo=32, routed)          4.419     8.087    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/A[1]
+    DSP48E2_X0Y52        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[1]_A2_DATA[1])
+                                                      0.258     8.345 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA_INST/A2_DATA[1]
+                         net (fo=1, routed)           0.000     8.345    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_A_B_DATA.A2_DATA<1>
+    DSP48E2_X0Y52        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[1]_A2A1[1])
+                                                      0.114     8.459 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA_INST/A2A1[1]
+                         net (fo=1, routed)           0.000     8.459    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_PREADD_DATA.A2A1<1>
+    DSP48E2_X0Y52        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[1]_V[17])
+                                                      0.699     9.158 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER_INST/V[17]
+                         net (fo=1, routed)           0.000     9.158    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_MULTIPLIER.V<17>
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/V[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      6.000     6.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     6.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=45147, routed)       2.886     9.102    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/CLK
+    DSP48E2_X0Y52        DSP_M_DATA                                   r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST/CLK
+                         clock pessimism              0.192     9.294    <hidden>
+                         clock uncertainty           -0.136     9.158    <hidden>
+    DSP48E2_X0Y52        DSP_M_DATA (Setup_DSP_M_DATA_DSP48E2_CLK_V[17])
+                                                      0.001     9.159    system_i/asr_v2_system_i/tile/inst/engine/pointwise/times[6].outputs[25].mac/DSP_M_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          9.159    <hidden>
+                         arrival time                          -9.158    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.001    <hidden>
+
+
+
+

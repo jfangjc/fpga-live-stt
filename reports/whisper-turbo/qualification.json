@@ -1,0 +1,108 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "prototype_gates_passed": true,
+  "production_qualified": false,
+  "gates": {
+    "repeated_latency": true,
+    "all_clips_2x_p50": true,
+    "same_dynamic_libraries": true,
+    "artifacts_stable_during_runs": true,
+    "same_model_architecture": true,
+    "verified_source_checkpoint": true,
+    "three_comparator_formats": true,
+    "checkpoint_identity": true,
+    "exact_arithmetic": true,
+    "physical_attention": true,
+    "complete_selected_partition": true,
+    "board_restored": true,
+    "english_wer_sample": true
+  },
+  "latency": [
+    {
+      "audio": "6930-75918-0000.wav",
+      "best_cpu": "cpu_1_no_flash",
+      "cpu": {
+        "p50_seconds": 338.43981214999985,
+        "p95_seconds": 338.8198473069988,
+        "runs": 3
+      },
+      "hybrid": {
+        "p50_seconds": 116.48670979299823,
+        "p95_seconds": 117.21637076099978,
+        "runs": 3
+      },
+      "speedup_p50": 2.9053942097894394,
+      "speedup_p95": 2.890550569918608
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "best_cpu": "cpu_1_no_flash",
+      "cpu": {
+        "p50_seconds": 338.10746158300026,
+        "p95_seconds": 342.1122434940007,
+        "runs": 3
+      },
+      "hybrid": {
+        "p50_seconds": 110.00378457299848,
+        "p95_seconds": 120.64257067500148,
+        "runs": 3
+      },
+      "speedup_p50": 3.0735984484118566,
+      "speedup_p95": 2.8357506109150763
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "best_cpu": "cpu_1_no_flash",
+      "cpu": {
+        "p50_seconds": 335.3865998270012,
+        "p95_seconds": 339.763752922001,
+        "runs": 3
+      },
+      "hybrid": {
+        "p50_seconds": 95.68846947400016,
+        "p95_seconds": 96.5300915830012,
+        "runs": 3
+      },
+      "speedup_p50": 3.5049844737889786,
+      "speedup_p95": 3.519770336381126
+    }
+  ],
+  "accuracy": {
+    "clips": 10,
+    "reference_words": 244,
+    "cpu_fp16_wer": 0.028688524590163935,
+    "hybrid_wer": 0.02459016393442623,
+    "absolute_wer_increase": -0.004098360655737706,
+    "maximum_allowed_increase": 0.01,
+    "totals": {
+      "cpu_0_no_flash": {
+        "word_errors": 7,
+        "reference_words": 244,
+        "wer": 0.028688524590163935
+      },
+      "hybrid": {
+        "word_errors": 6,
+        "reference_words": 244,
+        "wer": 0.02459016393442623
+      }
+    }
+  },
+  "timing_scope": "End-to-end process time including model load, WAV, frontend, encoder, decoder, text and DMA; FPGA activation/restoration separate",
+  "evidence_sha256": {
+    "latency_results/results.json": "cd566a2409949fcc6e6bb412b236b28a29927c26391ef0af404c9305a71cdb04",
+    "validation_results/results.json": "0e3ecccafcc0851c0e0af0c6ac526df23494c9c997dde2956de5663a626ffaf5",
+    "validation_wer.json": "74b9e48f01dfd747542ef82b9e4739457cdae5f07ce769abbbd6293dcdf4b5ae",
+    "parallel_conformance.json": "e8f7262820dcc96965227997f845d2e13c56cea0b73ceebaa8964592e0998542",
+    "parallel_session.json": "4c773fc2e1a4cf9e8e64601e0778c8079fc79eec35b55b38970f5a598c23fb1d",
+    "validation_session.json": "5f1aa3cc9bf9f0fa2cffdd16f9cca402252c3bf858921557d367d0575addd485",
+    "latency_session.json": "c3008052f5178916c235a680ba16f6dfc966577d244c8269e7fe39c99a3ec31e",
+    "model_manifest.json": "6b1afd0bb74d9adf1c34b8e1a15046d80ccf50a61b9005dd5d079046e81a36d5"
+  },
+  "limits": [
+    "Small English read-speech sample",
+    "Multilingual/noisy/long-form corpus accuracy unqualified",
+    "One model/context per process",
+    "CPU comparison limited to pinned whisper.cpp runtime",
+    "p95 descriptive with three measured runs per configuration"
+  ]
+}

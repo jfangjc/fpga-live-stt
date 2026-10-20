@@ -1,0 +1,10 @@
+{
+  "kernel": "6.8.0-1036-xilinx",
+  "python": "3.12.3",
+  "sysfs": {
+    "/sys/class/hwmon/hwmon0/temp3_input": "22786",
+    "/sys/class/hwmon/hwmon0/temp1_input": "24231",
+    "/sys/class/hwmon/hwmon0/temp2_input": "24853"
+  },
+  "loadavg": "4.10 2.41 1.02 1/208 67472"
+}

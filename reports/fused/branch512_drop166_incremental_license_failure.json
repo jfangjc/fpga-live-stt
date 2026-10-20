@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "deployment_started": false,
+  "incremental_license_supported": false,
+  "fallback": "Full implementation of unchanged synthesized RTL",
+  "sources_sha256": {
+    "reports/fused/branch512_drop166_incremental_license_driver.log": "04c98555175629b230bc3648b1f83ce951f917967496a58e8db07a52af2f316c",
+    "reports/fused/branch512_drop166_incremental_license_run.log": "9a291426b29fb7226e4773e230c81d416141b49fe6f27b470f75bcf586e43e7b",
+    "scripts/record_drop166_incremental_license_failure.py": "735f876337239f96ced1ef14b11292d9a703c3ff4dc5d4e556db0f026efae320"
+  }
+}

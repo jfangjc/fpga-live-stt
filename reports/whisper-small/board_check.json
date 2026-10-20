@@ -1,0 +1,8 @@
+{
+  "active_app": "k26-starter-kits",
+  "qn_tile_loaded": false,
+  "fpga_state": "operating",
+  "reported_cpu_clock": [
+    "acpu           0       0        0        1333333320  0          0     50000      Y                        deviceless                      no_connection_id"
+  ]
+}

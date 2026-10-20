@@ -1,0 +1,675 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "latency_acceptance": false,
+  "model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "source_sha256": "8a25cd9942bdac504096fa759b1e631afc92dc527adf9adf75b280887e22b9e7",
+  "depthwise": "/encoder/encoder.1/mconv.5/conv/Conv_quant",
+  "pointwise": "/encoder/encoder.1/mconv.6/conv/Conv_quant",
+  "retained_intermediate": "UINT8, original scale/zero point",
+  "scope": "Software fixed-point pair oracle and diagnostic transcripts; no representative accuracy qualification",
+  "errors": {
+    "cpu": 24,
+    "pair_oracle": 24
+  },
+  "words": 269,
+  "wer_degradation_percentage_points": 0.0,
+  "all_texts_exact": true,
+  "clips": [
+    {
+      "id": "user-speech-original",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+        "pair_oracle": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        1001
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 1,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-speech-original",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "pair_oracle": "you"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-speech-original",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "to",
+        "pair_oracle": "to"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-speech-original",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "funery number mad",
+        "pair_oracle": "funery number mad"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "concord returned to its place amidst the tents",
+        "pair_oracle": "concord returned to its place amidst the tents"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        351
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0000",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "conquor",
+        "pair_oracle": "conquor"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+        "pair_oracle": "the english foded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        1423
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "the",
+        "pair_oracle": "the"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0001",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "the english",
+        "pair_oracle": "the english"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "congratulations were poured in upon the princess everywhere during her journey",
+        "pair_oracle": "congratulations were poured in upon the princess everywhere during her journey"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        503
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "think",
+        "pair_oracle": "think"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0002",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "congratulate",
+        "pair_oracle": "congratulate"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+        "pair_oracle": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        2332
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "from the",
+        "pair_oracle": "from the"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0003",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "from the respect",
+        "pair_oracle": "from the respect"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+        "pair_oracle": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        1107
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 1,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "",
+        "pair_oracle": ""
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "6930-75918-0004",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "she tau her",
+        "pair_oracle": "she tau her"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two",
+        "pair_oracle": "tunra are number made up so is the apii price on the right old of these numbers are fake and neither of them represent the actual costs two"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        1001
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "pair_oracle": "you"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "to run",
+        "pair_oracle": "to run"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "##unery numberad",
+        "pair_oracle": "##unery numberad"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to",
+        "pair_oracle": "turer are number made up so is the apii price on the right all of these numbers are fake and neither of them represent the actual costs to"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        1001
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "pair_oracle": "you"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "to",
+        "pair_oracle": "to"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "funery number mad",
+        "pair_oracle": "funery number mad"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": null,
+      "texts": {
+        "cpu": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t",
+        "pair_oracle": "tuner are number made up so is the ap pie price on the right all of these numbers are fakk and neither of them represent the actual costs t"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        1001
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": 0.25,
+      "texts": {
+        "cpu": "you",
+        "pair_oracle": "you"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        26
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": 0.5,
+      "texts": {
+        "cpu": "you ro",
+        "pair_oracle": "you ro"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        51
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "context_seconds": 1,
+      "texts": {
+        "cpu": "funeral numberad",
+        "pair_oracle": "funeral numberad"
+      },
+      "length_exact": true,
+      "mask_bytes_exact": true,
+      "input_shape": [
+        1,
+        256,
+        101
+      ],
+      "depthwise_byte_differences": 0,
+      "pointwise_byte_differences": 0,
+      "max_valid_logit_difference": 0.0
+    }
+  ],
+  "vector_files": {
+    "params.mem": "4d38f60d9aae57d878bec12b2d55d4f69af3b1c978410089c9e92d5d2972f483",
+    "output.mem": "6c290cd1f836c2d14b7bf71f67c675abb8672826996dfcb0dd2ad80864ad7a52",
+    "half_second.npz": "605465cb8fa3fd873ecfcb469109f8e8e625e38eac2df597bd545f59604bbd13",
+    "weights.mem": "2f1868bf05b4d31f8763ff308af67424a16f6ac29127d8adf269c93471c3b4e0",
+    "input.mem": "818d164ecf9088cf40d857a8bd034bcde9aa7481419a5bde7edf1b8f2e954879"
+  }
+}

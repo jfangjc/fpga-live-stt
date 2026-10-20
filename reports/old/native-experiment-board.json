@@ -1,0 +1,56 @@
+{
+  "hardware_execution": true,
+  "device": "/dev/qn-tile",
+  "checks": [
+    {
+      "m": 1,
+      "k": 1,
+      "times": 1,
+      "exact_integer_match": true,
+      "load_and_run_seconds": 0.0003032749955309555
+    },
+    {
+      "m": 17,
+      "k": 31,
+      "times": 17,
+      "exact_integer_match": true,
+      "load_and_run_seconds": 0.0004240179987391457
+    },
+    {
+      "m": 256,
+      "k": 64,
+      "times": 129,
+      "exact_integer_match": true,
+      "load_and_run_seconds": 0.002042995998635888
+    },
+    {
+      "m": 1024,
+      "k": 1024,
+      "times": 33,
+      "exact_integer_match": true,
+      "load_and_run_seconds": 0.008656600999529473
+    },
+    {
+      "fused_float_scaling_exact": true
+    },
+    {
+      "run_after_invalidate_rejected": true
+    }
+  ],
+  "stats": {
+    "ioctls": 13,
+    "loads": 5,
+    "runs": 18,
+    "tx_bytes": 1125856,
+    "rx_bytes": 352640,
+    "ioctl_seconds": 0.007071143001667224,
+    "load_pack_seconds": 0.0032335360010620207,
+    "scan_seconds": 9.200011845678091e-07,
+    "run_pack_seconds": 0.00010037000174634159,
+    "unpack_seconds": 0.0002319350023753941
+  },
+  "native_library_sha256": "930716c774c1510b35a1e157be5feb09a7fe2652e7fe180f8ce441c44276c91c",
+  "limits": [
+    "Arithmetic smoke does not establish model WER, speedup or sustained capture"
+  ]
+}

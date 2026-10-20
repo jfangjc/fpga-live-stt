@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "runs_per_context": 100,
+  "contexts": [
+    {
+      "input_seconds": 1.5,
+      "feature_frames": 151,
+      "cpu_p50": 0.1306292794761248,
+      "fpga_p50": 0.11424320502555929,
+      "cpu_p95": 0.13459285959252157,
+      "fpga_p95": 0.12219444063084665,
+      "gain_percent": 12.543952256553936,
+      "cpu_transcript_exact": true,
+      "mean_saving_95ci_seconds": [
+        0.015113315793700167,
+        0.017828895469792768
+      ],
+      "latency_accepted": true
+    },
+    {
+      "input_seconds": 2.0,
+      "feature_frames": 201,
+      "cpu_p50": 0.15320694301044568,
+      "fpga_p50": 0.1335237085004337,
+      "cpu_p95": 0.16002309289760888,
+      "fpga_p95": 0.14106140803487505,
+      "gain_percent": 12.847482054824344,
+      "cpu_transcript_exact": true,
+      "mean_saving_95ci_seconds": [
+        0.018685809772709037,
+        0.020268485586624592
+      ],
+      "latency_accepted": true
+    },
+    {
+      "input_seconds": 2.5,
+      "feature_frames": 251,
+      "cpu_p50": 0.1705521840194706,
+      "fpga_p50": 0.14956300251651555,
+      "cpu_p95": 0.17635157408949453,
+      "fpga_p95": 0.15431755429308394,
+      "gain_percent": 12.30660376683237,
+      "cpu_transcript_exact": true,
+      "mean_saving_95ci_seconds": [
+        0.020469751241224,
+        0.021884170488017843
+      ],
+      "latency_accepted": true
+    },
+    {
+      "input_seconds": 2.55,
+      "feature_frames": 256,
+      "cpu_p50": 0.1694983344641514,
+      "fpga_p50": 0.14769603699096479,
+      "cpu_p95": 0.17415842835616785,
+      "fpga_p95": 0.1548574535321677,
+      "gain_percent": 12.86283876600438,
+      "cpu_transcript_exact": true,
+      "mean_saving_95ci_seconds": [
+        0.020924743433846742,
+        0.022264177872173604
+      ],
+      "latency_accepted": true
+    }
+  ],
+  "unsupported_inputs": [
+    {
+      "input_seconds": 3.0,
+      "valid_feature_frames": 301,
+      "physical_execution": false,
+      "reason": "Exceeds current resident API 2.55-second window and 256-frame hardware limit; no fallback benchmark"
+    },
+    {
+      "input_seconds": 5.0,
+      "valid_feature_frames": 501,
+      "physical_execution": false,
+      "reason": "Exceeds current resident API 2.55-second window and 256-frame hardware limit; no fallback benchmark"
+    },
+    {
+      "input_seconds": 10.0,
+      "valid_feature_frames": 1001,
+      "physical_execution": false,
+      "reason": "Exceeds current resident API 2.55-second window and 256-frame hardware limit; no fallback benchmark"
+    }
+  ],
+  "maximum_window_seconds": 2.55,
+  "policy_scope": "Inherited 1-second CPU/FPGA policy, not re-tuned for longer inputs",
+  "evidence_sha256": {
+    "reports/fused/shortwide_long_inputs.json": "c6d22b4f2702177e4676afa74dd732ae73df6b347f8f6ebffd5ff511393c313f",
+    "reports/fused/shortwide_long_board_restoration.json": "41a51b3ba7d52436b6cae84348f0b76d92fd3aab18b108f293f00d604ae8b353"
+  },
+  "representative_corpus_qualified": false,
+  "capture_tested": false
+}

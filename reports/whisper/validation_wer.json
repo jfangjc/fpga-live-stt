@@ -1,0 +1,237 @@
+{
+  "normalization": "English lowercase alphanumeric/apostrophe words",
+  "clips": [
+    {
+      "id": "3570-5694-0013",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 15
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 0,
+          "reference_words": 15
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 0,
+          "reference_words": 15
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 15
+        }
+      }
+    },
+    {
+      "id": "8455-210777-0062",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 10
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 0,
+          "reference_words": 10
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 2,
+          "reference_words": 10
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 10
+        }
+      }
+    },
+    {
+      "id": "237-134500-0034",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 5
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 0,
+          "reference_words": 5
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 0,
+          "reference_words": 5
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 5
+        }
+      }
+    },
+    {
+      "id": "121-123852-0003",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 2,
+          "reference_words": 48
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 2,
+          "reference_words": 48
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 2,
+          "reference_words": 48
+        },
+        "hybrid": {
+          "word_errors": 2,
+          "reference_words": 48
+        }
+      }
+    },
+    {
+      "id": "5142-33396-0033",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 21
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 0,
+          "reference_words": 21
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 0,
+          "reference_words": 21
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 21
+        }
+      }
+    },
+    {
+      "id": "7176-92135-0045",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 3,
+          "reference_words": 14
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 3,
+          "reference_words": 14
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 4,
+          "reference_words": 14
+        },
+        "hybrid": {
+          "word_errors": 3,
+          "reference_words": 14
+        }
+      }
+    },
+    {
+      "id": "1221-135766-0011",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 0,
+          "reference_words": 55
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 0,
+          "reference_words": 55
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 0,
+          "reference_words": 55
+        },
+        "hybrid": {
+          "word_errors": 0,
+          "reference_words": 55
+        }
+      }
+    },
+    {
+      "id": "8230-279154-0004",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 2,
+          "reference_words": 31
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 2,
+          "reference_words": 31
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 2,
+          "reference_words": 31
+        },
+        "hybrid": {
+          "word_errors": 2,
+          "reference_words": 31
+        }
+      }
+    },
+    {
+      "id": "4992-41806-0013",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 3,
+          "reference_words": 16
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 3,
+          "reference_words": 16
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 3,
+          "reference_words": 16
+        },
+        "hybrid": {
+          "word_errors": 3,
+          "reference_words": 16
+        }
+      }
+    },
+    {
+      "id": "260-123286-0019",
+      "scores": {
+        "cpu_0_no_flash": {
+          "word_errors": 1,
+          "reference_words": 29
+        },
+        "cpu_1_no_flash": {
+          "word_errors": 1,
+          "reference_words": 29
+        },
+        "cpu_2_no_flash": {
+          "word_errors": 2,
+          "reference_words": 29
+        },
+        "hybrid": {
+          "word_errors": 1,
+          "reference_words": 29
+        }
+      }
+    }
+  ],
+  "totals": {
+    "cpu_0_no_flash": {
+      "word_errors": 11,
+      "reference_words": 244,
+      "wer": 0.045081967213114756
+    },
+    "cpu_1_no_flash": {
+      "word_errors": 11,
+      "reference_words": 244,
+      "wer": 0.045081967213114756
+    },
+    "cpu_2_no_flash": {
+      "word_errors": 15,
+      "reference_words": 244,
+      "wer": 0.06147540983606557
+    },
+    "hybrid": {
+      "word_errors": 11,
+      "reference_words": 244,
+      "wer": 0.045081967213114756
+    }
+  }
+}

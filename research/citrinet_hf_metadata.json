@@ -1,0 +1,198 @@
+{
+  "_id": "62d1cc37fddc6f4758162665",
+  "id": "nvidia/stt_en_citrinet_256_ls",
+  "private": false,
+  "pipeline_tag": "automatic-speech-recognition",
+  "library_name": "nemo",
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "CTC",
+    "Citrinet",
+    "Transformer",
+    "pytorch",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "en",
+    "dataset:librispeech_asr",
+    "arxiv:2104.01721",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "downloads": 937,
+  "likes": 1,
+  "modelId": "nvidia/stt_en_citrinet_256_ls",
+  "author": "nvidia",
+  "sha": "c7cdacff0262bbb2a17771d20ec9f9f3b5cff6ed",
+  "lastModified": "2025-02-18T11:49:48Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "example_title": "Librispeech sample 1",
+      "src": "https://cdn-media.huggingface.co/speech_samples/sample1.flac"
+    },
+    {
+      "example_title": "Librispeech sample 2",
+      "src": "https://cdn-media.huggingface.co/speech_samples/sample2.flac"
+    }
+  ],
+  "model-index": [
+    {
+      "name": "stt_en_citrinet_256_ls",
+      "results": [
+        {
+          "task": {
+            "name": "Automatic Speech Recognition",
+            "type": "automatic-speech-recognition"
+          },
+          "dataset": {
+            "name": "LibriSpeech (clean)",
+            "type": "librispeech_asr",
+            "config": "clean",
+            "split": "test",
+            "args": {
+              "language": "en"
+            }
+          },
+          "metrics": [
+            {
+              "name": "Test WER",
+              "type": "wer",
+              "value": 3.78,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "task": {
+            "type": "Automatic Speech Recognition",
+            "name": "automatic-speech-recognition"
+          },
+          "dataset": {
+            "name": "LibriSpeech (other)",
+            "type": "librispeech_asr",
+            "config": "other",
+            "split": "test",
+            "args": {
+              "language": "en"
+            }
+          },
+          "metrics": [
+            {
+              "name": "Test WER",
+              "type": "wer",
+              "value": 9.6,
+              "verified": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {},
+  "cardData": {
+    "language": [
+      "en"
+    ],
+    "library_name": "nemo",
+    "datasets": [
+      "librispeech_asr"
+    ],
+    "thumbnail": null,
+    "tags": [
+      "automatic-speech-recognition",
+      "speech",
+      "audio",
+      "CTC",
+      "Citrinet",
+      "Transformer",
+      "pytorch",
+      "NeMo",
+      "hf-asr-leaderboard"
+    ],
+    "license": "cc-by-4.0",
+    "widget": [
+      {
+        "example_title": "Librispeech sample 1",
+        "src": "https://cdn-media.huggingface.co/speech_samples/sample1.flac"
+      },
+      {
+        "example_title": "Librispeech sample 2",
+        "src": "https://cdn-media.huggingface.co/speech_samples/sample2.flac"
+      }
+    ],
+    "model-index": [
+      {
+        "name": "stt_en_citrinet_256_ls",
+        "results": [
+          {
+            "task": {
+              "name": "Automatic Speech Recognition",
+              "type": "automatic-speech-recognition"
+            },
+            "dataset": {
+              "name": "LibriSpeech (clean)",
+              "type": "librispeech_asr",
+              "config": "clean",
+              "split": "test",
+              "args": {
+                "language": "en"
+              }
+            },
+            "metrics": [
+              {
+                "name": "Test WER",
+                "type": "wer",
+                "value": 3.78,
+                "verified": false
+              }
+            ]
+          },
+          {
+            "task": {
+              "type": "Automatic Speech Recognition",
+              "name": "automatic-speech-recognition"
+            },
+            "dataset": {
+              "name": "LibriSpeech (other)",
+              "type": "librispeech_asr",
+              "config": "other",
+              "split": "test",
+              "args": {
+                "language": "en"
+              }
+            },
+            "metrics": [
+              {
+                "name": "Test WER",
+                "type": "wer",
+                "value": 9.6,
+                "verified": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "stt_en_citrinet_256_ls.nemo"
+    }
+  ],
+  "spaces": [
+    "embedl/hfviewer"
+  ],
+  "createdAt": "2022-07-15T20:21:11Z",
+  "usedStorage": 36693216
+}

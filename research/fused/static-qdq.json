@@ -1,0 +1,22 @@
+{
+  "model_sha256": "349f7b2b1018990a0fef9c763a2ed1903eae2fe2f8dd8a5eaaa5bf877babd98d",
+  "source_identity": {
+    "model.onnx": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "frontend.npz": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "vocab.txt": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "frontend_decoder_source": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "wer_source": "8e25ea2e2607e8ed1d3c3fbf1f9906336c462bbaeea3793c152dbcc365d6a119"
+  },
+  "calibration_sha256": "166d3e6160a3d4cdfd8d49f6d5c95fbada9dedfefd7e1c41e1b1d96cb8bac6ae",
+  "exclude_blocks": [],
+  "sources_sha256": {
+    "benchmark_cpu.py": "029d265f733f77f4107a5a90c9dc16ffa06abadcf3d70b4616af2c297c7e9ab1",
+    "common.py": "c724a52134c0580eb27661833e65f927b06960dd123b265691e788ed2ac9d48a",
+    "experiment.py": "43e6ab83fa0b4899118bbc5dd232b07719db146521ed3abc91133c86e1349f98",
+    "oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "test_fused.py": "7607bd8e3858b44571f8708e3f91a1b2b98be4657d4baff65fef8ac2ea415938"
+  },
+  "precision": "static INT8 QDQ Conv weights/activation; FP32 bias, SE, residual arithmetic",
+  "purpose": "CPU baseline candidate and numerical screen; QDQ is not Q31 oracle parity",
+  "hardware_execution": false
+}

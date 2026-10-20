@@ -1,0 +1,50 @@
+whisper_init_from_file_with_params_no_state: loading model from '/home/ubuntu/whisper-turbo-kv260/models/ggml-large-v3-turbo-q8_0.bin'
+whisper_init_with_params_no_state: use gpu    = 0
+whisper_init_with_params_no_state: flash attn = 0
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 1
+whisper_init_with_params_no_state: backends   = 1
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 7
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:          CPU total size =   873.55 MB
+whisper_model_load: model size    =  873.55 MB
+whisper_backend_init_gpu: no GPU found
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   36.15 MB
+whisper_init_state: compute buffer (encode) =  212.31 MB
+whisper_init_state: compute buffer (cross)  =    9.27 MB
+whisper_init_state: compute buffer (decode) =   99.12 MB
+
+system_info: n_threads = 4 / 4 | WHISPER : COREML = 0 | OPENVINO = 0 | CPU : NEON = 1 | ARM_FMA = 1 | REPACK = 1 | 
+
+main: processing '/home/ubuntu/whisper-turbo-kv260/latency-three/audio/6930-75918-0000.wav' (56080 samples, 3.5 sec), 4 threads, 1 processors, 1 beams + best of 1, lang = en, task = transcribe, timestamps = 0 ...
+
+
+whisper_print_timings:     load time =  2197.11 ms
+whisper_print_timings:     fallbacks =   0 p /   0 h
+whisper_print_timings:      mel time =    49.31 ms
+whisper_print_timings:   sample time =    68.67 ms /     1 runs (    68.67 ms per run)
+whisper_print_timings:   encode time = 89159.57 ms /     1 runs ( 89159.57 ms per run)
+whisper_print_timings:   decode time =   664.26 ms /    11 runs (    60.39 ms per run)
+whisper_print_timings:   batchd time =   191.11 ms /     4 runs (    47.78 ms per run)
+whisper_print_timings:   prompt time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:    total time = 92445.07 ms
+KV260_STATS calls=264 seconds=69.924313 ioctls=8880 loads=3744 runs=351936 tx_bytes=3662517760 rx_bytes=11587212800 ioctl_seconds=43.973401 attention_calls=64
+KV260_PROFILE prepare=4.642890 transport_load_pack=1.122111 transport_scan=4.267241 transport_run_pack=7.347091 transport_unpack=7.976603

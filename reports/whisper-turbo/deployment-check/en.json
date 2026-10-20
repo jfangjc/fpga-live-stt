@@ -1,0 +1,34 @@
+{
+  "seconds": 92.98356011099895,
+  "text": "this differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility",
+  "log": "/home/ubuntu/whisper-turbo-runtime-check-v020/reports/deployment-check/en.log",
+  "physical": true,
+  "fpga_decoder": false,
+  "fpga_attention": true,
+  "flash_attention": false,
+  "physical_counters": {
+    "matrix_operations": 264,
+    "ioctls": 8880,
+    "weight_loads": 3744,
+    "time_tiles": 351936
+  },
+  "language": "en",
+  "mode": "hybrid",
+  "model": "openai/whisper-large-v3-turbo",
+  "timing_scope": "Full process including model load and file I/O",
+  "dynamic_libraries": {
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/build-hybrid/src/libwhisper.so.1": "380c6c6bc441e538511f33cec0cbcfc6305368039ceab6af5f69860ace18c3b2",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/build-hybrid/ggml/src/libggml.so.0": "d1de42b36d9ee99d4e2fc0dba1de9926b34d935246b7480ab5d1ea279f9e7f40",
+    "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+    "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+    "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+    "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/build-hybrid/ggml/src/libggml-base.so.0": "2f94187a98eb5dce089a98e2bc6c85e0bdedb34bd1996f608040eb24b20d88ca",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/build-hybrid/ggml/src/libggml-cpu.so.0": "fb720cb29a5002c6548338881a12e074d070b352722123360c2b45e6dc604cdd"
+  },
+  "sha256": {
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/build-hybrid/bin/whisper-cli": "8dfefb09f7e81fde24494b84720938a344065df7d1f50c8d880e5556c02d7000",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/ggml-large-v3-turbo-q8_0.bin": "317eb69c11673c9de1e1f0d459b253999804ec71ac4c23c17ecf5fbe24e259a1",
+    "/home/ubuntu/whisper-turbo-runtime-check-v020/research/whisper-validation/audio/3570-5694-0013.wav": "c855b7ae6a6872f603af6cc329fdcff9508504c0ad391b0e8b6b4e2bc32d0376"
+  }
+}

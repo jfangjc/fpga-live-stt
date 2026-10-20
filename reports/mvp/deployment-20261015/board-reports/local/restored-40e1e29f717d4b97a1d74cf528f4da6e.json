@@ -1,0 +1,17 @@
+{
+  "app": "asr-v3-bulk",
+  "kernel": "6.8.0-1036-xilinx",
+  "clock_readback_hz": 99999999,
+  "module_srcversion": "119D8EA219110BF8E1229A8",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "irq": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  }
+}

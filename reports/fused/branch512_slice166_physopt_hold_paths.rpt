@@ -1,0 +1,548 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date              : Tue Oct 13 08:54:28 2026
+| Host              : Yoga running 64-bit major release  (build 9200)
+| Command           : report_timing -delay_type min -max_paths 10 -nworst 1 -input_pins -nets -file C:/Users/jfang/Documents/Vivado/Prototype_v2/reports/fused/branch512_slice166_physopt_hold_paths.rpt
+| Design            : asr_v2_top
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.31 12-08-2025
+| Design State      : Physopt postPlace
+| Temperature Grade : C
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -0.136ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/m_vector_i_reg[1101]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1101]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.216ns  (logic 0.113ns (52.315%)  route 0.103ns (47.685%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.250ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.471ns
+    Source Clock Delay      (SCD):    3.032ns
+    Clock Pessimism Removal (CPR):    0.189ns
+  Clock Net Delay (Source):      2.816ns (routing 1.495ns, distribution 1.321ns)
+  Clock Net Delay (Destination): 3.204ns (routing 1.633ns, distribution 1.571ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.816     3.032    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/aclk
+    SLICE_X6Y119         FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/m_vector_i_reg[1101]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y119         FDRE (Prop_BFF2_SLICEL_C_Q)
+                                                      0.113     3.145 r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/m_vector_i_reg[1101]/Q
+                         net (fo=3, estimated)        0.103     3.248    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1144]_0[43]
+    SLICE_X6Y120         FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1101]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.204     3.471    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/aclk
+    SLICE_X6Y120         FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1101]/C
+                         clock pessimism             -0.189     3.282    <hidden>
+    SLICE_X6Y120         FDRE (Hold_EFF2_SLICEL_C_D)
+                                                      0.102     3.384    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1101]
+  -------------------------------------------------------------------
+                         required time                         -3.384    <hidden>
+                         arrival time                           3.248    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.136    <hidden>
+
+Slack (VIOLATED) :        -0.091ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][148]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_140_153/RAME/I
+                            (rising edge-triggered cell RAMD32 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.247ns  (logic 0.113ns (45.749%)  route 0.134ns (54.251%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.235ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.466ns
+    Source Clock Delay      (SCD):    3.043ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Net Delay (Source):      2.827ns (routing 1.495ns, distribution 1.332ns)
+  Clock Net Delay (Destination): 3.199ns (routing 1.633ns, distribution 1.566ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.827     3.043    system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/aclk
+    SLICE_X8Y62          FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][148]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y62          FDRE (Prop_CFF2_SLICEM_C_Q)
+                                                      0.113     3.156 r  system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][148]/Q
+                         net (fo=2, estimated)        0.134     3.290    system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_140_153/DIE0
+    SLICE_X8Y59          RAMD32                                       r  system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_140_153/RAME/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.199     3.466    system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_140_153/WCLK
+    SLICE_X8Y59          RAMD32                                       r  system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_140_153/RAME/CLK
+                         clock pessimism             -0.188     3.278    <hidden>
+    SLICE_X8Y59          RAMD32 (Hold_E5LUT_SLICEM_CLK_I)
+                                                      0.103     3.381    system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_140_153/RAME
+  -------------------------------------------------------------------
+                         required time                         -3.381    <hidden>
+                         arrival time                           3.290    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.091    <hidden>
+
+Slack (VIOLATED) :        -0.090ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/m_vector_i_reg[1100]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1100]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.261ns  (logic 0.112ns (42.912%)  route 0.149ns (57.088%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.250ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.471ns
+    Source Clock Delay      (SCD):    3.032ns
+    Clock Pessimism Removal (CPR):    0.189ns
+  Clock Net Delay (Source):      2.816ns (routing 1.495ns, distribution 1.321ns)
+  Clock Net Delay (Destination): 3.204ns (routing 1.633ns, distribution 1.571ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.816     3.032    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/aclk
+    SLICE_X6Y119         FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/m_vector_i_reg[1100]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y119         FDRE (Prop_BFF_SLICEL_C_Q)
+                                                      0.112     3.144 r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_sreg/m_vector_i_reg[1100]/Q
+                         net (fo=3, estimated)        0.149     3.293    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1144]_0[42]
+    SLICE_X6Y120         FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1100]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.204     3.471    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/aclk
+    SLICE_X6Y120         FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1100]/C
+                         clock pessimism             -0.189     3.282    <hidden>
+    SLICE_X6Y120         FDRE (Hold_EFF_SLICEL_C_D)
+                                                      0.101     3.383    system_i/asr_v2_system_i/memory_sc/inst/s02_entry_pipeline/s02_mmu/inst/aw_reg_stall/skid_buffer_reg[1100]
+  -------------------------------------------------------------------
+                         required time                         -3.383    <hidden>
+                         arrival time                           3.293    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.090    <hidden>
+
+Slack (VIOLATED) :        -0.089ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_reg[11][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_hold_reg[11][15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.204ns  (logic 0.112ns (54.902%)  route 0.092ns (45.098%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.190ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.379ns
+    Source Clock Delay      (SCD):    3.001ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Net Delay (Source):      2.785ns (routing 1.495ns, distribution 1.290ns)
+  Clock Net Delay (Destination): 3.112ns (routing 1.633ns, distribution 1.479ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.785     3.001    system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/aclk
+    SLICE_X52Y60         FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_reg[11][15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X52Y60         FDRE (Prop_HFF_SLICEL_C_Q)
+                                                      0.112     3.113 r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_reg[11][15]/Q
+                         net (fo=1, estimated)        0.092     3.205    system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_reg_n_0_[11][15]
+    SLICE_X52Y59         FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_hold_reg[11][15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.112     3.379    system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/aclk
+    SLICE_X52Y59         FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_hold_reg[11][15]/C
+                         clock pessimism             -0.188     3.191    <hidden>
+    SLICE_X52Y59         FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.103     3.294    system_i/asr_v2_system_i/tile/inst/engine/depthwise/quant/product_hold_reg[11][15]
+  -------------------------------------------------------------------
+                         required time                         -3.294    <hidden>
+                         arrival time                           3.205    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.089    <hidden>
+
+Slack (VIOLATED) :        -0.083ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][96]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_84_97/RAMG/I
+                            (rising edge-triggered cell RAMD32 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.256ns  (logic 0.114ns (44.531%)  route 0.142ns (55.469%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.235ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.468ns
+    Source Clock Delay      (SCD):    3.045ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Net Delay (Source):      2.829ns (routing 1.495ns, distribution 1.334ns)
+  Clock Net Delay (Destination): 3.201ns (routing 1.633ns, distribution 1.568ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.829     3.045    system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/aclk
+    SLICE_X7Y63          FDRE                                         r  system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][96]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y63          FDRE (Prop_AFF2_SLICEM_C_Q)
+                                                      0.114     3.159 r  system_i/asr_v2_system_i/memory_sc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][96]/Q
+                         net (fo=2, estimated)        0.142     3.301    system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_84_97/DIG0
+    SLICE_X7Y57          RAMD32                                       r  system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_84_97/RAMG/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.201     3.468    system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_84_97/WCLK
+    SLICE_X7Y57          RAMD32                                       r  system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_84_97/RAMG/CLK
+                         clock pessimism             -0.188     3.280    <hidden>
+    SLICE_X7Y57          RAMD32 (Hold_G5LUT_SLICEM_CLK_I)
+                                                      0.104     3.384    system_i/asr_v2_system_i/memory_sc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_84_97/RAMG
+  -------------------------------------------------------------------
+                         required time                         -3.384    <hidden>
+                         arrival time                           3.301    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.083    <hidden>
+
+Slack (VIOLATED) :        -0.080ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[9][13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[9][13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.229ns  (logic 0.112ns (48.908%)  route 0.117ns (51.092%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.206ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.356ns
+    Source Clock Delay      (SCD):    2.901ns
+    Clock Pessimism Removal (CPR):    0.249ns
+  Clock Net Delay (Source):      2.685ns (routing 1.495ns, distribution 1.190ns)
+  Clock Net Delay (Destination): 3.089ns (routing 1.633ns, distribution 1.456ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.685     2.901    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/aclk
+    SLICE_X40Y194        FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[9][13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y194        FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.112     3.013 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[9][13]/Q
+                         net (fo=1, estimated)        0.117     3.130    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[9]__0[13]
+    SLICE_X41Y193        FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[9][13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.089     3.356    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/aclk
+    SLICE_X41Y193        FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[9][13]/C
+                         clock pessimism             -0.249     3.107    <hidden>
+    SLICE_X41Y193        FDRE (Hold_HFF2_SLICEM_C_D)
+                                                      0.103     3.210    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[9][13]
+  -------------------------------------------------------------------
+                         required time                         -3.210    <hidden>
+                         arrival time                           3.130    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.080    <hidden>
+
+Slack (VIOLATED) :        -0.080ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/weight_low_reg[160]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/dw_weights_reg_bram_8/DINADIN[16]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.218ns  (logic 0.112ns (51.376%)  route 0.106ns (48.624%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.346ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.540ns
+    Source Clock Delay      (SCD):    3.006ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Net Delay (Source):      2.790ns (routing 1.495ns, distribution 1.295ns)
+  Clock Net Delay (Destination): 3.273ns (routing 1.633ns, distribution 1.640ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.790     3.006    system_i/asr_v2_system_i/tile/inst/engine/aclk
+    SLICE_X52Y58         FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/weight_low_reg[160]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X52Y58         FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.112     3.118 r  system_i/asr_v2_system_i/tile/inst/engine/weight_low_reg[160]/Q
+                         net (fo=2, estimated)        0.106     3.224    system_i/asr_v2_system_i/tile/inst/engine/p_2_in[160]
+    RAMB36_X2Y12         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/dw_weights_reg_bram_8/DINADIN[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.273     3.540    system_i/asr_v2_system_i/tile/inst/engine/aclk
+    RAMB36_X2Y12         RAMB36E2                                     r  system_i/asr_v2_system_i/tile/inst/engine/dw_weights_reg_bram_8/CLKARDCLK
+                         clock pessimism             -0.188     3.352    <hidden>
+    RAMB36_X2Y12         RAMB36E2 (Hold_RAMB36E2_RAMB36_CLKARDCLK_DINADIN[16])
+                                                     -0.048     3.304    system_i/asr_v2_system_i/tile/inst/engine/dw_weights_reg_bram_8
+  -------------------------------------------------------------------
+                         required time                         -3.304    <hidden>
+                         arrival time                           3.224    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.080    <hidden>
+
+Slack (VIOLATED) :        -0.077ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/weights_quad_reg[761]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[761]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.231ns  (logic 0.112ns (48.485%)  route 0.119ns (51.515%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.206ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.312ns
+    Source Clock Delay      (SCD):    2.861ns
+    Clock Pessimism Removal (CPR):    0.245ns
+  Clock Net Delay (Source):      2.645ns (routing 1.495ns, distribution 1.150ns)
+  Clock Net Delay (Destination): 3.045ns (routing 1.633ns, distribution 1.412ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.645     2.861    system_i/asr_v2_system_i/tile/inst/engine/aclk
+    SLICE_X40Y2          FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/weights_quad_reg[761]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y2          FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.112     2.973 r  system_i/asr_v2_system_i/tile/inst/engine/weights_quad_reg[761]/Q
+                         net (fo=1, estimated)        0.119     3.092    system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[1311]_0[761]
+    SLICE_X41Y2          FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[761]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.045     3.312    system_i/asr_v2_system_i/tile/inst/engine/depthwise/aclk
+    SLICE_X41Y2          FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[761]/C
+                         clock pessimism             -0.245     3.067    <hidden>
+    SLICE_X41Y2          FDRE (Hold_GFF2_SLICEM_C_D)
+                                                      0.102     3.169    system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[761]
+  -------------------------------------------------------------------
+                         required time                         -3.169    <hidden>
+                         arrival time                           3.092    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.077    <hidden>
+
+Slack (VIOLATED) :        -0.077ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[10][3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[10][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.230ns  (logic 0.111ns (48.261%)  route 0.119ns (51.739%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.205ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.356ns
+    Source Clock Delay      (SCD):    2.902ns
+    Clock Pessimism Removal (CPR):    0.249ns
+  Clock Net Delay (Source):      2.686ns (routing 1.495ns, distribution 1.191ns)
+  Clock Net Delay (Destination): 3.089ns (routing 1.633ns, distribution 1.456ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.686     2.902    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/aclk
+    SLICE_X40Y193        FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[10][3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y193        FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.111     3.013 r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[10][3]/Q
+                         net (fo=1, estimated)        0.119     3.132    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_reg[10]__0[3]
+    SLICE_X41Y193        FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[10][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.089     3.356    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/aclk
+    SLICE_X41Y193        FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[10][3]/C
+                         clock pessimism             -0.249     3.107    <hidden>
+    SLICE_X41Y193        FDRE (Hold_GFF2_SLICEM_C_D)
+                                                      0.102     3.209    system_i/asr_v2_system_i/tile/inst/engine/pointwise/requant/product_hold_reg[10][3]
+  -------------------------------------------------------------------
+                         required time                         -3.209    <hidden>
+                         arrival time                           3.132    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.077    <hidden>
+
+Slack (VIOLATED) :        -0.076ns  (arrival time - required time)
+  Source:                 system_i/asr_v2_system_i/tile/inst/engine/weights_quad_reg[360]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[360]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.233ns  (logic 0.112ns (48.069%)  route 0.121ns (51.931%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.207ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.313ns
+    Source Clock Delay      (SCD):    2.861ns
+    Clock Pessimism Removal (CPR):    0.245ns
+  Clock Net Delay (Source):      2.645ns (routing 1.495ns, distribution 1.150ns)
+  Clock Net Delay (Destination): 3.046ns (routing 1.633ns, distribution 1.413ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.181     0.181    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    2.645     2.861    system_i/asr_v2_system_i/tile/inst/engine/aclk
+    SLICE_X40Y1          FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/weights_quad_reg[360]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y1          FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.112     2.973 r  system_i/asr_v2_system_i/tile/inst/engine/weights_quad_reg[360]/Q
+                         net (fo=1, estimated)        0.121     3.094    system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[1311]_0[360]
+    SLICE_X41Y1          FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[360]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS8_X0Y0             PS8                          0.000     0.000 r  system_i/asr_v2_system_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, estimated)        0.229     0.229    system_i/asr_v2_system_i/ps/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80                                                     r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/I
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  system_i/asr_v2_system_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=44541, estimated)    3.046     3.313    system_i/asr_v2_system_i/tile/inst/engine/depthwise/aclk
+    SLICE_X41Y1          FDRE                                         r  system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[360]/C
+                         clock pessimism             -0.245     3.068    <hidden>
+    SLICE_X41Y1          FDRE (Hold_AFF2_SLICEM_C_D)
+                                                      0.102     3.170    system_i/asr_v2_system_i/tile/inst/engine/depthwise/weights_reg[360]
+  -------------------------------------------------------------------
+                         required time                         -3.170    <hidden>
+                         arrival time                           3.094    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -0.076    <hidden>
+
+
+
+

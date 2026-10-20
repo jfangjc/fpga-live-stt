@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "simulation_passed": false,
+  "arithmetic_cases": 8,
+  "total_cases": 25,
+  "sources_sha256": {
+    "verification/bimodal-branch-vectors/branch_13_7_3_11.mem": "79bcfde2cc6e0b34046f95c334ac699c34438e0b8f20f77bc9328ef6e6573468",
+    "verification/bimodal-branch-vectors/branch_17_17_7_1.mem": "a537cfd8785789b9dcaecc259351aa30f5cd537900dcbd0a945c78b0f1f88802",
+    "verification/bimodal-branch-vectors/branch_1_1_1_1.mem": "cc7fdd0ba7077b9d798aa589b0d475fc102e14d2d2ee51b237b685fceedd0211",
+    "verification/bimodal-branch-vectors/branch_31_30_3_41.mem": "9d20068e76653a5d37d3bceda3983a7ff111a5c05af564e10f87120867cb49cd",
+    "verification/bimodal-branch-vectors/branch_32_31_3_11.mem": "0df5cec6e2df330ba035fa7c7ce9b6e4a4b8537a97337cb724b5bad9dac33ddc",
+    "verification/bimodal-branch-vectors/branch_33_33_3_39.mem": "cd2b63f540d6853b5471c9fadccbca9c493bc2b70c3655fd4a0e2066299dcb5a",
+    "verification/bimodal-branch-vectors/branch_65_0_2_41.mem": "a6c516c4913851c03d1cf1111b7d9de3b581843884142eb142d1596314450f65",
+    "verification/bimodal-branch-vectors/branch_65_63_5_29.mem": "55204b0dbbc56da7b9cc75ea1e26490998d84dbe94558be7f9313e7ebda6a14f",
+    "sim/tb_qn_branch_bimodal_axis.sv": "6eb17ef13afbbc022fb7d5092023dbee401449d2c47091ab48a4610eb8c35b41",
+    "scripts/branch_bimodal_sim.tcl": "dd556486ca1b7acb4fdd7ff2179d3c00de7a0c6a56be0352dfe993d88278f745",
+    "scripts/create_branch_bimodal_tb.py": "4a6315225f9e56bfcc3be7bff45c1cf0c6ee6ec08e8582ac60ff44bc035ebebf"
+  }
+}

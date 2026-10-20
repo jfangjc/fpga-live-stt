@@ -1,0 +1,716 @@
+{
+  "schema": 1,
+  "block_id": 1,
+  "model_identity": {
+    "model.onnx": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "frontend.npz": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "vocab.txt": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "frontend_decoder_source": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "wer_source": "8e25ea2e2607e8ed1d3c3fbf1f9906336c462bbaeea3793c152dbcc365d6a119"
+  },
+  "calibration_sha256": "166d3e6160a3d4cdfd8d49f6d5c95fbada9dedfefd7e1c41e1b1d96cb8bac6ae",
+  "sources_sha256": {
+    "benchmark_cpu.py": "029d265f733f77f4107a5a90c9dc16ffa06abadcf3d70b4616af2c297c7e9ab1",
+    "common.py": "c724a52134c0580eb27661833e65f927b06960dd123b265691e788ed2ac9d48a",
+    "experiment.py": "43e6ab83fa0b4899118bbc5dd232b07719db146521ed3abc91133c86e1349f98",
+    "oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "test_fused.py": "7607bd8e3858b44571f8708e3f91a1b2b98be4657d4baff65fef8ac2ea415938"
+  },
+  "vectors_sha256": "925601e86139e065be3bc532ca4e0e6ebb01076fa84e3dc6efafb658c5f01cdd",
+  "convolutions": [
+    {
+      "prefix": "conv_0",
+      "node": "/encoder/encoder.1/mconv.0/conv/Conv",
+      "input_scale": 0.016867712140083313,
+      "output_scale": 0.0026226576883345842,
+      "stride": 1,
+      "pads": [
+        5,
+        5
+      ],
+      "dilation": 1,
+      "group": 256,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        1,
+        11
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_1",
+      "node": "/encoder/encoder.1/mconv.1/conv/Conv",
+      "input_scale": 0.0026226576883345842,
+      "output_scale": 0.013872472569346428,
+      "stride": 1,
+      "pads": [
+        0,
+        0
+      ],
+      "dilation": 1,
+      "group": 1,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_2",
+      "node": "/encoder/encoder.1/mconv.5/conv/Conv",
+      "input_scale": 0.011470822617411613,
+      "output_scale": 0.0032825185917317867,
+      "stride": 1,
+      "pads": [
+        5,
+        5
+      ],
+      "dilation": 1,
+      "group": 256,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        1,
+        11
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_3",
+      "node": "/encoder/encoder.1/mconv.6/conv/Conv",
+      "input_scale": 0.0032825185917317867,
+      "output_scale": 0.02023971453309059,
+      "stride": 1,
+      "pads": [
+        0,
+        0
+      ],
+      "dilation": 1,
+      "group": 1,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_4",
+      "node": "/encoder/encoder.1/mconv.10/conv/Conv",
+      "input_scale": 0.013155258260667324,
+      "output_scale": 0.004508682992309332,
+      "stride": 1,
+      "pads": [
+        5,
+        5
+      ],
+      "dilation": 1,
+      "group": 256,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        1,
+        11
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_5",
+      "node": "/encoder/encoder.1/mconv.11/conv/Conv",
+      "input_scale": 0.004508682992309332,
+      "output_scale": 0.01888071559369564,
+      "stride": 1,
+      "pads": [
+        0,
+        0
+      ],
+      "dilation": 1,
+      "group": 1,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_6",
+      "node": "/encoder/encoder.1/mconv.15/conv/Conv",
+      "input_scale": 0.013512950390577316,
+      "output_scale": 0.004983080551028252,
+      "stride": 1,
+      "pads": [
+        5,
+        5
+      ],
+      "dilation": 1,
+      "group": 256,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        1,
+        11
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_7",
+      "node": "/encoder/encoder.1/mconv.16/conv/Conv",
+      "input_scale": 0.004983080551028252,
+      "output_scale": 0.01721741072833538,
+      "stride": 1,
+      "pads": [
+        0,
+        0
+      ],
+      "dilation": 1,
+      "group": 1,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        752
+      ]
+    },
+    {
+      "prefix": "conv_8",
+      "node": "/encoder/encoder.1/mconv.20/conv/Conv",
+      "input_scale": 0.01721741072833538,
+      "output_scale": 0.00885759573429823,
+      "stride": 2,
+      "pads": [
+        5,
+        5
+      ],
+      "dilation": 1,
+      "group": 256,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        1,
+        11
+      ],
+      "output_shape": [
+        1,
+        256,
+        376
+      ]
+    },
+    {
+      "prefix": "conv_9",
+      "node": "/encoder/encoder.1/mconv.21/conv/Conv",
+      "input_scale": 0.00885759573429823,
+      "output_scale": 0.06719138473272324,
+      "stride": 1,
+      "pads": [
+        0,
+        0
+      ],
+      "dilation": 1,
+      "group": 1,
+      "input_shape": [
+        1,
+        256,
+        376
+      ],
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        376
+      ]
+    },
+    {
+      "prefix": "conv_10",
+      "node": "/encoder/encoder.1/res.0.0/conv/Conv",
+      "input_scale": 0.016867712140083313,
+      "output_scale": 0.024032948538661003,
+      "stride": 2,
+      "pads": [
+        0,
+        0
+      ],
+      "dilation": 1,
+      "group": 1,
+      "input_shape": [
+        1,
+        256,
+        752
+      ],
+      "weight_shape": [
+        256,
+        256,
+        1
+      ],
+      "output_shape": [
+        1,
+        256,
+        376
+      ]
+    }
+  ],
+  "se_reductions": [
+    {
+      "prefix": "se_0",
+      "node": "/encoder/encoder.1/mconv.23/ReduceSum",
+      "axes": [
+        -1
+      ],
+      "activation_scale": 0.06719138473272324
+    }
+  ],
+  "primitives": [
+    {
+      "prefix": "primitive_0",
+      "node": "/encoder/encoder.1/mconv.0/Where",
+      "kind": "Where",
+      "output_scale": 0.016867712140083313,
+      "inputs": [
+        {
+          "key": "primitive_0_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_0_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_0_input_2",
+          "scale": 0.016867712140083313,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_1",
+      "node": "/encoder/encoder.1/mconv.1/Where",
+      "kind": "Where",
+      "output_scale": 0.0026226576883345842,
+      "inputs": [
+        {
+          "key": "primitive_1_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_1_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_1_input_2",
+          "scale": 0.0026226576883345842,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_2",
+      "node": "/encoder/encoder.1/mconv.3/Relu",
+      "kind": "Relu",
+      "output_scale": 0.011470822617411613,
+      "inputs": [
+        {
+          "key": "primitive_2_input_0",
+          "scale": 0.013872472569346428,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_3",
+      "node": "/encoder/encoder.1/mconv.5/Where",
+      "kind": "Where",
+      "output_scale": 0.011470822617411613,
+      "inputs": [
+        {
+          "key": "primitive_3_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_3_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_3_input_2",
+          "scale": 0.011470822617411613,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_4",
+      "node": "/encoder/encoder.1/mconv.6/Where",
+      "kind": "Where",
+      "output_scale": 0.0032825185917317867,
+      "inputs": [
+        {
+          "key": "primitive_4_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_4_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_4_input_2",
+          "scale": 0.0032825185917317867,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_5",
+      "node": "/encoder/encoder.1/mconv.3_1/Relu",
+      "kind": "Relu",
+      "output_scale": 0.013155258260667324,
+      "inputs": [
+        {
+          "key": "primitive_5_input_0",
+          "scale": 0.02023971453309059,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_6",
+      "node": "/encoder/encoder.1/mconv.10/Where",
+      "kind": "Where",
+      "output_scale": 0.013155258260667324,
+      "inputs": [
+        {
+          "key": "primitive_6_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_6_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_6_input_2",
+          "scale": 0.013155258260667324,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_7",
+      "node": "/encoder/encoder.1/mconv.11/Where",
+      "kind": "Where",
+      "output_scale": 0.004508682992309332,
+      "inputs": [
+        {
+          "key": "primitive_7_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_7_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_7_input_2",
+          "scale": 0.004508682992309332,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_8",
+      "node": "/encoder/encoder.1/mconv.3_2/Relu",
+      "kind": "Relu",
+      "output_scale": 0.013512950390577316,
+      "inputs": [
+        {
+          "key": "primitive_8_input_0",
+          "scale": 0.01888071559369564,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_9",
+      "node": "/encoder/encoder.1/mconv.15/Where",
+      "kind": "Where",
+      "output_scale": 0.013512950390577316,
+      "inputs": [
+        {
+          "key": "primitive_9_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_9_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_9_input_2",
+          "scale": 0.013512950390577316,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_10",
+      "node": "/encoder/encoder.1/mconv.16/Where",
+      "kind": "Where",
+      "output_scale": 0.004983080551028252,
+      "inputs": [
+        {
+          "key": "primitive_10_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_10_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_10_input_2",
+          "scale": 0.004983080551028252,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_11",
+      "node": "/encoder/encoder.1/mconv.3_3/Relu",
+      "kind": "Relu",
+      "output_scale": 0.01721741072833538,
+      "inputs": [
+        {
+          "key": "primitive_11_input_0",
+          "scale": 0.01721741072833538,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_12",
+      "node": "/encoder/encoder.1/mconv.20/Where",
+      "kind": "Where",
+      "output_scale": 0.01721741072833538,
+      "inputs": [
+        {
+          "key": "primitive_12_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_12_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_12_input_2",
+          "scale": 0.01721741072833538,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_13",
+      "node": "/encoder/encoder.1/mconv.21/Where",
+      "kind": "Where",
+      "output_scale": 0.00885759573429823,
+      "inputs": [
+        {
+          "key": "primitive_13_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_13_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_13_input_2",
+          "scale": 0.00885759573429823,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_14",
+      "node": "/encoder/encoder.1/mconv.23/Where",
+      "kind": "Where",
+      "output_scale": 0.06719138473272324,
+      "inputs": [
+        {
+          "key": "primitive_14_input_0",
+          "scale": null,
+          "dtype": "bool"
+        },
+        {
+          "key": "primitive_14_input_1",
+          "scale": null,
+          "dtype": "float32"
+        },
+        {
+          "key": "primitive_14_input_2",
+          "scale": 0.06719138473272324,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_15",
+      "node": "/encoder/encoder.1/mconv.23/fc/mconv.3/Relu",
+      "kind": "Relu",
+      "output_scale": 0.03971293941140175,
+      "inputs": [
+        {
+          "key": "primitive_15_input_0",
+          "scale": null,
+          "dtype": "float32"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_16",
+      "node": "/encoder/encoder.1/mconv.23/Mul",
+      "kind": "Mul",
+      "output_scale": 0.021755320951342583,
+      "inputs": [
+        {
+          "key": "primitive_16_input_0",
+          "scale": 0.06719138473272324,
+          "dtype": "int8"
+        },
+        {
+          "key": "primitive_16_input_1",
+          "scale": null,
+          "dtype": "uint16"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_17",
+      "node": "/encoder/encoder.1/Add",
+      "kind": "Add",
+      "output_scale": 0.013348403386771679,
+      "inputs": [
+        {
+          "key": "primitive_17_input_0",
+          "scale": 0.021755320951342583,
+          "dtype": "int8"
+        },
+        {
+          "key": "primitive_17_input_1",
+          "scale": 0.024032948538661003,
+          "dtype": "int8"
+        }
+      ]
+    },
+    {
+      "prefix": "primitive_18",
+      "node": "/encoder/encoder.1/mout/mconv.3/Relu",
+      "kind": "Relu",
+      "output_scale": 0.013348403386771679,
+      "inputs": [
+        {
+          "key": "primitive_18_input_0",
+          "scale": 0.013348403386771679,
+          "dtype": "int8"
+        }
+      ]
+    }
+  ],
+  "hardware_execution": false,
+  "quantization": "symmetric [-127,127], INT32 bias/accumulator, Q31 nearest-even Conv output",
+  "host_boundaries": "SE MLP/sigmoid FP32; FPGA gate Q0.15, residual Q16 alignment, INT8 output",
+  "limits": [
+    "Representative whole-model WER and physical bit parity are required before expansion.",
+    "Vector capture is a host regression, not hardware verification."
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "initialization_seconds": 6.131247091005207,
+  "metadata": {
+    "model_sha256": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "tokenizer_sha256": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "preprocessing_id": "aa00440a1170782541d9d6af55ab904b75712abce08fa2df34c701288d37b20f",
+    "decoder_id": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "threads": 4,
+    "hardware_execution": false,
+    "precision": "FP32",
+    "calibration_audio_sha256": [],
+    "onnxruntime_version": "1.30.0",
+    "original_nemo_wrapper_validated": true,
+    "accelerated_nodes": [],
+    "cpu_region_threads": 4,
+    "native_library_sha256": null,
+    "checkpoint_sha256": "a00c8fb75a2bcc37271275293bce950863e4e069d43f6cf193d42fcf605aa21c",
+    "frontend_constants_sha256": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "frontend_source_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "decoder_sha256": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    },
+    "source_sha256": {
+      "software/model-tools/citrinet_cpu.py": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+      "software/runtime/citrinet_adapter.py": "8ffcab4d1716160fb93ebdf7550f22b8b5d3f599639957cde96ec7889ee38c4d",
+      "software/runtime/partition.py": "50bf9cc2033180161c9d7fe5f80099c56abf9c62b6fe7a5509d818ff2ee2e9ec",
+      "software/native/qnc.py": "bca25aa90f44a83e66ce0354ab4097496405d27cb6077bce99b2dc7733783887",
+      "software/native/qnc.c": "34cec4f48dc3b92f63ac5ebbee2770f46c114984b8fecfd9312a7d5e051650b7",
+      "software/native/qnc.h": "4ae98c968a076db814d9e8f797cc84e3bfc280aa1afe7b082a16729580ae3491"
+    },
+    "original_model_output_parity_validated": true,
+    "physical_quantized_graph_parity_validated": false,
+    "original_model_output_parity_report_sha256": "ef4c1c3e3214fe63113e75f0417b8d5fefc79074e6f6ce652d24f51a43b15aea"
+  },
+  "warmups": 3,
+  "runs": [
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013337779964786023,
+      "frontend_seconds": 0.04597433700109832,
+      "inference_seconds": 0.4887658520019613,
+      "decode_seconds": 0.00033771000744309276,
+      "total_seconds": 0.5364116770069813,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.001569874002598226,
+      "frontend_seconds": 0.0551343650004128,
+      "inference_seconds": 0.5272046030004276,
+      "decode_seconds": 0.00035941999522037804,
+      "total_seconds": 0.584268261998659,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.001335608001681976,
+      "frontend_seconds": 0.0451158520008903,
+      "inference_seconds": 0.5311545069998829,
+      "decode_seconds": 0.00033696000173222274,
+      "total_seconds": 0.5779429270041874,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.001674527011346072,
+      "frontend_seconds": 0.045214184996439144,
+      "inference_seconds": 0.5247120929998346,
+      "decode_seconds": 0.00033616999280638993,
+      "total_seconds": 0.5719369750004262,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013610989990411326,
+      "frontend_seconds": 0.045571273993118666,
+      "inference_seconds": 0.5156341690017143,
+      "decode_seconds": 0.00033830000029411167,
+      "total_seconds": 0.5629048419941682,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013369469961617142,
+      "frontend_seconds": 0.061307328011025675,
+      "inference_seconds": 0.519894626995665,
+      "decode_seconds": 0.0003500599996186793,
+      "total_seconds": 0.5828889620024711,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0018305809935554862,
+      "frontend_seconds": 0.06886342000507284,
+      "inference_seconds": 0.5288213619933231,
+      "decode_seconds": 0.0003584000078262761,
+      "total_seconds": 0.5998737629997777,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013498979969881475,
+      "frontend_seconds": 0.06319859001087025,
+      "inference_seconds": 0.5187179629865568,
+      "decode_seconds": 0.00033905899908859283,
+      "total_seconds": 0.5836055099935038,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013451179984258488,
+      "frontend_seconds": 0.0641497049946338,
+      "inference_seconds": 0.5388028150046011,
+      "decode_seconds": 0.00034066000080201775,
+      "total_seconds": 0.6046382979984628,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.001586714992299676,
+      "frontend_seconds": 0.06509474200720433,
+      "inference_seconds": 0.5016644610004732,
+      "decode_seconds": 0.0003351499908603728,
+      "total_seconds": 0.5686810679908376,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013602289982372895,
+      "frontend_seconds": 0.06735790499078576,
+      "inference_seconds": 0.4923307080025552,
+      "decode_seconds": 0.00033560900192242116,
+      "total_seconds": 0.5613844509935006,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0014452900068135932,
+      "frontend_seconds": 0.06694350199541077,
+      "inference_seconds": 0.49587879099999554,
+      "decode_seconds": 0.0003345000004628673,
+      "total_seconds": 0.5646020830026828,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013844189961673692,
+      "frontend_seconds": 0.06865996999840718,
+      "inference_seconds": 0.4910690029937541,
+      "decode_seconds": 0.0003601299977162853,
+      "total_seconds": 0.5614735219860449,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013518479972844943,
+      "frontend_seconds": 0.06501781599945389,
+      "inference_seconds": 0.4902874370018253,
+      "decode_seconds": 0.00033434899523854256,
+      "total_seconds": 0.5569914499938022,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013562780077336356,
+      "frontend_seconds": 0.0676074700022582,
+      "inference_seconds": 0.49449384899344295,
+      "decode_seconds": 0.00033609900856390595,
+      "total_seconds": 0.5637936960119987,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0014699020102852955,
+      "frontend_seconds": 0.0635072129953187,
+      "inference_seconds": 0.49431850100518204,
+      "decode_seconds": 0.00033537999843247235,
+      "total_seconds": 0.5596309960092185,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.02363047299149912,
+      "frontend_seconds": 0.06736183199973311,
+      "inference_seconds": 0.4934590199991362,
+      "decode_seconds": 0.0003341390111017972,
+      "total_seconds": 0.5847854640014702,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.001709407995804213,
+      "frontend_seconds": 0.06536668400804047,
+      "inference_seconds": 0.4906226000020979,
+      "decode_seconds": 0.00033419899409636855,
+      "total_seconds": 0.5580328910000389,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013229679898358881,
+      "frontend_seconds": 0.06540989399945829,
+      "inference_seconds": 0.4880927110061748,
+      "decode_seconds": 0.00036107099731452763,
+      "total_seconds": 0.5551866439927835,
+      "encoded_length": 93,
+      "hardware_execution": false
+    },
+    {
+      "transcript": "well i don ' t wish to see it any more observed phoebe turning away her eyes it is certainly very like the old portrait",
+      "audio_seconds": 7.435,
+      "load_seconds": 0.0013354469992918894,
+      "frontend_seconds": 0.06489833099476527,
+      "inference_seconds": 0.49024451900913846,
+      "decode_seconds": 0.0003705199924297631,
+      "total_seconds": 0.5568488169956254,
+      "encoded_length": 93,
+      "hardware_execution": false
+    }
+  ],
+  "p50_seconds": 0.5641978895073407,
+  "p95_seconds": 0.6001119897497119
+}

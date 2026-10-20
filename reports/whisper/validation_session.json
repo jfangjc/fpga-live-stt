@@ -1,0 +1,28 @@
+{
+  "original_app": "k26-starter-kits",
+  "original_qn_module": false,
+  "kernel": "6.8.0-1036-xilinx",
+  "firmware_sha256": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "command": [
+    "python3",
+    "final-source/software/whisper/refresh_validation.py",
+    "--prior",
+    "previous-backend/validation_results/results.json",
+    "--cpu",
+    "build-cpu/bin/whisper-cli",
+    "--hybrid",
+    "build-hybrid/bin/whisper-cli",
+    "--model",
+    "model-base-q8_0.bin",
+    "--out",
+    "validation_results"
+  ],
+  "restored": true,
+  "clock_hz": 99999999,
+  "activation_seconds": 0.9899674729999788,
+  "command_seconds": 81.80225135500001,
+  "command_exit_code": 0,
+  "restoration_seconds": 1.6230802120000476,
+  "session_seconds": 84.41532235099999
+}

@@ -1,0 +1,108 @@
+{
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "file",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "audio",
+      "type": {
+        "sampling_rate": 16000,
+        "_type": "Audio"
+      }
+    },
+    {
+      "feature_idx": 2,
+      "name": "text",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 3,
+      "name": "speaker_id",
+      "type": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 4,
+      "name": "chapter_id",
+      "type": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 5,
+      "name": "id",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "row_idx": 0,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/4a12a5d9e3d43248af424bf5fb40094f2aac834e9c19b34fb91aa912db1bd0b0/6930-75918-0000.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/test/0/audio/audio.flac?Expires=1791500618&Signature=YwVuBlGfTocNCsn2feLDvsDPk92mJ4f3klISjYpQYhnsbatCWJOp0~SUP3rH7fRR1vkj6ButaP1L0qPCm1ifV0UyN-776ZkTTii26SQCicqpwEna-9XVUQ~T--spMijJhF7~3XpaWLcq9q6bXI85tBJlKGOFoG-P56MEn6zbYp3MEmzH5UTI2~1TVzsLjqtGFgslb7d0adQD-Ezv5NNbshbF1gpkDRlmbNCumHraVW0jTmvjeXFmUZ2Nvpci4Q-v0vZ2wDpsS~RsLeTzZ8fsic~u6aNqZpc7VSeI6xIwps0DMXhq0~TN5kEN1JwVCMujWQi5pDT8qdZ9WP4DY93qnQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS",
+        "speaker_id": 6930,
+        "chapter_id": 75918,
+        "id": "6930-75918-0000"
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 1,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/4a12a5d9e3d43248af424bf5fb40094f2aac834e9c19b34fb91aa912db1bd0b0/6930-75918-0001.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/test/1/audio/audio.flac?Expires=1791500618&Signature=RBR4DbWwHRHJ7K6TZB4INh7zEdmGPdTp5DP957-ULLM8witnLiBfjCahXH6wVcnWXyXxWHqQ13MTqESoZNlj~uykIp6iL~nlrgwNK75EvcpfKILqK0ObSzrS6ctLOndjz2FV0W69s5wk0ThkSwkGe-Mdu4FDBjvNT7BkNO2ZuOb8WpKMTrWjToD8Mcw-IJeIJxQkQ~xTuORy~5G4ZiWIkpzpeH8JVIYvchiXhnBvoUmADrnbjxYCMoIG0VfSfRt6TzuTC6B5lm~xF21Bn-ncq0W8FaEZQThavzT0L6ZCnmxQ163xQUNqQBgPGJMknBRmGvh8pBZETcMaEh8pNtOxqg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY",
+        "speaker_id": 6930,
+        "chapter_id": 75918,
+        "id": "6930-75918-0001"
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 2,
+      "row": {
+        "file": "/home/albert/.cache/huggingface/datasets/downloads/extracted/4a12a5d9e3d43248af424bf5fb40094f2aac834e9c19b34fb91aa912db1bd0b0/6930-75918-0002.flac",
+        "audio": [
+          {
+            "src": "https://datasets-server.huggingface.co/cached-assets/openslr/librispeech_asr/--/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/--/clean/test/2/audio/audio.flac?Expires=1791500618&Signature=DkqlEfvA1o0CG2VAYv0hD5z58dKnBTqql5B~ZM7f0BENXYppG6UbE1BEMW6l-8TCZF8R4iU3qOQyv9eKzWGvxzYmTvRGq4Y2tozigse6oVNQZkDpU-9UuA437WbJqOESp3dtgX77qcgfVMG9jq8fuoMpUk~BDqP8c6zsvbB6UG4pKrywJMbxIIoWeBcx5YM7ELAwFBytXVgwYJHOdSrrW4fjtQh4AKsIlAxczeQlN8uasP4DFRzuT75RDGAgS1U6JPGYUPB-OXAxhc60H0KjPPJwiSR44otrQyDiEvSRzTtlaLd-UQd0eHLAX2AgWXiWC5CHhrb6Gh8td4CcvHD6Vw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+            "type": "audio/flac"
+          }
+        ],
+        "text": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY",
+        "speaker_id": 6930,
+        "chapter_id": 75918,
+        "id": "6930-75918-0002"
+      },
+      "truncated_cells": []
+    }
+  ],
+  "num_rows_total": 2620,
+  "num_rows_per_page": 100,
+  "partial": false
+}

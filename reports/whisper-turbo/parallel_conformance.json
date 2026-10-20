@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "m": 64,
+      "k": 64,
+      "t": 17,
+      "exact_int32": true,
+      "physical_seconds": 0.00041439999995418475
+    },
+    {
+      "m": 512,
+      "k": 512,
+      "t": 31,
+      "exact_int32": true,
+      "physical_seconds": 0.0020095959998798207
+    },
+    {
+      "m": 1024,
+      "k": 512,
+      "t": 17,
+      "exact_int32": true,
+      "physical_seconds": 0.0032425130002593505
+    },
+    {
+      "m": 512,
+      "k": 1024,
+      "t": 17,
+      "exact_int32": true,
+      "physical_seconds": 0.0024972659998638846
+    },
+    {
+      "m": 65,
+      "k": 67,
+      "t": 19,
+      "exact_int32": true,
+      "physical_seconds": 0.00043580000010479125
+    },
+    {
+      "m": 512,
+      "k": 512,
+      "t": 1500,
+      "exact_int32": true,
+      "physical_seconds": 0.028447099999993952
+    },
+    {
+      "m": 1024,
+      "k": 1024,
+      "t": 1500,
+      "exact_int32": true,
+      "physical_seconds": 0.06481933100030801
+    },
+    {
+      "m": 65,
+      "k": 67,
+      "t": 19,
+      "ggml_per_column_float_exact": true
+    },
+    {
+      "m": 512,
+      "k": 1024,
+      "t": 17,
+      "ggml_per_column_float_exact": true
+    },
+    {
+      "m": 1024,
+      "k": 64,
+      "t": 1500,
+      "ggml_per_column_float_exact": true
+    },
+    {
+      "m": 1024,
+      "k": 64,
+      "t": 1500,
+      "ggml_parallel_4_exact": true,
+      "first_tile_overwrites": true
+    }
+  ],
+  "stats": {
+    "ioctls": 24,
+    "loads": 10,
+    "runs": 390,
+    "tx_bytes": 5839776,
+    "rx_bytes": 21924096,
+    "ioctl_seconds": 0.09185516099933011
+  }
+}

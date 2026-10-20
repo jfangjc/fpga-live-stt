@@ -1,0 +1,2233 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "source_sha256": "e4bf6d6960882c2b6a5a3532a7463bcc0497140403427d9da886a9109473a9b4",
+  "records": [
+    {
+      "name": "/encoder/encoder.1/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.1/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.1/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          2
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.1/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.1/mconv.0/Where_output_0",
+            "/encoder/encoder.1/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.1/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.0/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.0/mout/fc.1/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.0/mout/fc.1/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.0/mconv.3/Mul_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.0/mconv.3/Mul",
+          "op": "Mul",
+          "inputs": [
+            "/encoder/encoder.0/mconv.3/Where_output_0",
+            "/encoder/encoder.0/mconv.3/Sigmoid_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.1/mconv.16/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.1/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.1/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.1/mconv.0/Where_output_0",
+                "/encoder/encoder.1/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.1/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.0/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.0/mout/fc.1/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.0/mout/fc.1/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.0/mconv.3/Mul_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.0/mconv.3/Mul",
+              "op": "Mul",
+              "inputs": [
+                "/encoder/encoder.0/mconv.3/Where_output_0",
+                "/encoder/encoder.0/mconv.3/Sigmoid_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.2/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.2/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.2/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.2/mconv.0/Where_output_0",
+            "/encoder/encoder.2/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.2/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.1/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.1/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.1/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.1/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.1/mconv.23/Mul_output_0",
+            "/encoder/encoder.1/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.2/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.2/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.2/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.2/mconv.0/Where_output_0",
+                "/encoder/encoder.2/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.2/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.1/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.1/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.1/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.1/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.1/mconv.23/Mul_output_0",
+                "/encoder/encoder.1/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.3/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.3/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.3/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.3/mconv.0/Where_output_0",
+            "/encoder/encoder.3/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.3/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.2/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.2/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.2/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.2/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.2/mconv.23/Mul_output_0",
+            "/encoder/encoder.2/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.3/mconv.1/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.3/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.3/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.3/mconv.0/Where_output_0",
+                "/encoder/encoder.3/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.3/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.2/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.2/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.2/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.2/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.2/mconv.23/Mul_output_0",
+                "/encoder/encoder.2/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "/encoder/encoder.3/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.3/mconv.10/Where_output_0_quantized",
+          "same_input": false,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.3/mconv.10/Where_output_0_QuantizeLinear_lut",
+              "op": "LookupMask",
+              "inputs": [
+                "/encoder/encoder.3/mconv.6/conv/Conv_output_0_quantized",
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.3/mconv.10/Where_output_0_QuantizeLinear_lut_table"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.3/mconv.6/conv/Conv_quant",
+              "op": "QLinearConv",
+              "inputs": [
+                "/encoder/encoder.3/mconv.6/Where_output_0_quantized",
+                "/encoder/encoder.3/mconv.6/Where_output_0_scale",
+                "/encoder/encoder.3/mconv.6/Where_output_0_zero_point",
+                "onnx::Conv_5795_quantized",
+                "onnx::Conv_5795_scale",
+                "onnx::Conv_5753_zero_point",
+                "/encoder/encoder.3/mconv.6/conv/Conv_output_0_scale",
+                "/encoder/encoder.3/mconv.6/conv/Conv_output_0_zero_point",
+                "onnx::Conv_5796_quantized"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.4/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.4/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.4/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.4/mconv.0/Where_output_0",
+            "/encoder/encoder.4/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.4/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.3/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.3/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.3/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.3/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.3/mconv.23/Mul_output_0",
+            "/encoder/encoder.3/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.4/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.4/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.4/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.4/mconv.0/Where_output_0",
+                "/encoder/encoder.4/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.4/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.3/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.3/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.3/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.3/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.3/mconv.23/Mul_output_0",
+                "/encoder/encoder.3/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.5/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.5/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.5/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.5/mconv.0/Where_output_0",
+            "/encoder/encoder.5/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.5/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.4/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.4/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.4/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.4/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.4/mconv.23/Mul_output_0",
+            "/encoder/encoder.4/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.5/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.5/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.5/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.5/mconv.0/Where_output_0",
+                "/encoder/encoder.5/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.5/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.4/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.4/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.4/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.4/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.4/mconv.23/Mul_output_0",
+                "/encoder/encoder.4/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.6/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.6/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.6/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.6/mconv.0/Where_output_0",
+            "/encoder/encoder.6/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.6/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.5/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.5/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.5/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.5/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.5/mconv.23/Mul_output_0",
+            "/encoder/encoder.5/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.6/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.6/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.6/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.6/mconv.0/Where_output_0",
+                "/encoder/encoder.6/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.6/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.5/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.5/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.5/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.5/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.5/mconv.23/Mul_output_0",
+                "/encoder/encoder.5/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.7/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.7/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.7/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          2
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.7/mconv.0/Where_output_0",
+            "/encoder/encoder.7/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.7/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.6/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.6/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.6/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.6/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.6/mconv.23/Mul_output_0",
+            "/encoder/encoder.6/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.7/mconv.16/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.7/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.7/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.7/mconv.0/Where_output_0",
+                "/encoder/encoder.7/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.7/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.1/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.6/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.6/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.6/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.6/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.6/mconv.23/Mul_output_0",
+                "/encoder/encoder.6/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.8/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.8/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.8/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.8/mconv.0/Where_output_0",
+            "/encoder/encoder.8/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.8/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.7/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.7/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.7/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.7/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.7/mconv.23/Mul_output_0",
+            "/encoder/encoder.7/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.8/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.8/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.8/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.8/mconv.0/Where_output_0",
+                "/encoder/encoder.8/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.8/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.7/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.7/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.7/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.7/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.7/mconv.23/Mul_output_0",
+                "/encoder/encoder.7/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.9/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.9/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.9/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.9/mconv.0/Where_output_0",
+            "/encoder/encoder.9/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.9/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.8/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.8/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.8/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.8/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.8/mconv.23/Mul_output_0",
+            "/encoder/encoder.8/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.9/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.9/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.9/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.9/mconv.0/Where_output_0",
+                "/encoder/encoder.9/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.9/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.8/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.8/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.8/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.8/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.8/mconv.23/Mul_output_0",
+                "/encoder/encoder.8/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.10/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.10/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.10/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.10/mconv.0/Where_output_0",
+            "/encoder/encoder.10/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.10/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.9/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.9/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.9/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.9/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.9/mconv.23/Mul_output_0",
+            "/encoder/encoder.9/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.10/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.10/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.10/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.10/mconv.0/Where_output_0",
+                "/encoder/encoder.10/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.10/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.9/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.9/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.9/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.9/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.9/mconv.23/Mul_output_0",
+                "/encoder/encoder.9/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.11/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.11/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.11/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.11/mconv.0/Where_output_0",
+            "/encoder/encoder.11/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.11/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.10/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.10/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.10/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.10/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.10/mconv.23/Mul_output_0",
+            "/encoder/encoder.10/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.11/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.11/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.11/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.11/mconv.0/Where_output_0",
+                "/encoder/encoder.11/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.11/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.10/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.10/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.10/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.10/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.10/mconv.23/Mul_output_0",
+                "/encoder/encoder.10/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.12/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.12/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.12/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.12/mconv.0/Where_output_0",
+            "/encoder/encoder.12/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.12/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.11/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.11/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.11/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.11/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.11/mconv.23/Mul_output_0",
+            "/encoder/encoder.11/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.12/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.12/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.12/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.12/mconv.0/Where_output_0",
+                "/encoder/encoder.12/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.12/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.11/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.11/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.11/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.11/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.11/mconv.23/Mul_output_0",
+                "/encoder/encoder.11/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.13/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.13/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.13/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.13/mconv.0/Where_output_0",
+            "/encoder/encoder.13/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.13/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.12/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.12/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.12/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.12/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.12/mconv.23/Mul_output_0",
+            "/encoder/encoder.12/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.13/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.13/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.13/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.13/mconv.0/Where_output_0",
+                "/encoder/encoder.13/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.13/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.12/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.12/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.12/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.12/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.12/mconv.23/Mul_output_0",
+                "/encoder/encoder.12/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.14/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.14/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.14/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          2
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.14/mconv.0/Where_output_0",
+            "/encoder/encoder.14/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.14/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.13/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.13/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.13/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.13/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.13/mconv.23/Mul_output_0",
+            "/encoder/encoder.13/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.14/mconv.16/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.14/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.14/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.14/mconv.0/Where_output_0",
+                "/encoder/encoder.14/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.14/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.7/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.13/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.13/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.13/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.13/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.13/mconv.23/Mul_output_0",
+                "/encoder/encoder.13/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.15/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.15/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.15/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.15/mconv.0/Where_output_0",
+            "/encoder/encoder.15/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.15/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.14/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.14/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.14/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.14/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.14/mconv.23/Mul_output_0",
+            "/encoder/encoder.14/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.15/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.15/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.15/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.15/mconv.0/Where_output_0",
+                "/encoder/encoder.15/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.15/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.14/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.14/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.14/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.14/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.14/mconv.23/Mul_output_0",
+                "/encoder/encoder.14/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.16/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.16/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.16/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.16/mconv.0/Where_output_0",
+            "/encoder/encoder.16/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.16/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.15/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.15/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.15/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.15/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.15/mconv.23/Mul_output_0",
+            "/encoder/encoder.15/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.16/mconv.11/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.16/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.16/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.16/mconv.0/Where_output_0",
+                "/encoder/encoder.16/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.16/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.15/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.15/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.15/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.15/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.15/mconv.23/Mul_output_0",
+                "/encoder/encoder.15/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "/encoder/encoder.16/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.16/mconv.20/Where_output_0_quantized",
+          "same_input": false,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.16/mconv.20/Where_output_0_QuantizeLinear_lut",
+              "op": "LookupMask",
+              "inputs": [
+                "/encoder/encoder.16/mconv.16/conv/Conv_output_0_quantized",
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.16/mconv.20/Where_output_0_QuantizeLinear_lut_table"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.16/mconv.16/conv/Conv_quant",
+              "op": "QLinearConv",
+              "inputs": [
+                "/encoder/encoder.16/mconv.16/Where_output_0_quantized",
+                "/encoder/encoder.16/mconv.16/Where_output_0_scale",
+                "/encoder/encoder.16/mconv.16/Where_output_0_zero_point",
+                "onnx::Conv_6035_quantized",
+                "onnx::Conv_6035_scale",
+                "onnx::Conv_5753_zero_point",
+                "/encoder/encoder.16/mconv.16/conv/Conv_output_0_scale",
+                "/encoder/encoder.16/mconv.16/conv/Conv_output_0_zero_point",
+                "onnx::Conv_6036_quantized"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.17/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.17/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.17/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.17/mconv.0/Where_output_0",
+            "/encoder/encoder.17/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.17/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.16/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.16/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.16/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.16/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.16/mconv.23/Mul_output_0",
+            "/encoder/encoder.16/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.17/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.17/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.17/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.17/mconv.0/Where_output_0",
+                "/encoder/encoder.17/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.17/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.16/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.16/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.16/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.16/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.16/mconv.23/Mul_output_0",
+                "/encoder/encoder.16/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.18/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.18/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.18/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.18/mconv.0/Where_output_0",
+            "/encoder/encoder.18/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.18/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.17/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.17/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.17/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.17/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.17/mconv.23/Mul_output_0",
+            "/encoder/encoder.17/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.18/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.18/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.18/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.18/mconv.0/Where_output_0",
+                "/encoder/encoder.18/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.18/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.17/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.17/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.17/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.17/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.17/mconv.23/Mul_output_0",
+                "/encoder/encoder.17/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.19/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.19/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.19/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.19/mconv.0/Where_output_0",
+            "/encoder/encoder.19/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.19/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.18/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.18/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.18/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.18/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.18/mconv.23/Mul_output_0",
+            "/encoder/encoder.18/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.19/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.19/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.19/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.19/mconv.0/Where_output_0",
+                "/encoder/encoder.19/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.19/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.18/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.18/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.18/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.18/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.18/mconv.23/Mul_output_0",
+                "/encoder/encoder.18/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.20/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.20/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.20/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.20/mconv.0/Where_output_0",
+            "/encoder/encoder.20/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.20/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.19/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.19/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.19/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.19/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.19/mconv.23/Mul_output_0",
+            "/encoder/encoder.19/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.20/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.20/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.20/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.20/mconv.0/Where_output_0",
+                "/encoder/encoder.20/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.20/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.19/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.19/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.19/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.19/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.19/mconv.23/Mul_output_0",
+                "/encoder/encoder.19/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/encoder/encoder.21/res.0.0/conv/Conv_quant",
+      "input": "/encoder/encoder.21/mconv.0/Where_output_0_quantized",
+      "output": "/encoder/encoder.21/res.0.0/conv/Conv_output_0_quantized",
+      "weights_shape": [
+        256,
+        256,
+        1
+      ],
+      "attributes": {
+        "dilations": [
+          1
+        ],
+        "group": 1,
+        "kernel_shape": [
+          1
+        ],
+        "pads": [
+          0,
+          0
+        ],
+        "strides": [
+          1
+        ]
+      },
+      "input_lineage": [
+        {
+          "name": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+          "op": "QuantizeLinear",
+          "inputs": [
+            "/encoder/encoder.21/mconv.0/Where_output_0",
+            "/encoder/encoder.21/mconv.0/Where_output_0_scale",
+            "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.21/mconv.0/Where",
+          "op": "Where",
+          "inputs": [
+            "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+            "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+            "/encoder/encoder.20/mout/mconv.3/Relu_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.20/mout/mconv.3/Relu",
+          "op": "Relu",
+          "inputs": [
+            "/encoder/encoder.20/Add_output_0"
+          ]
+        },
+        {
+          "name": "/encoder/encoder.20/Add",
+          "op": "Add",
+          "inputs": [
+            "/encoder/encoder.20/mconv.23/Mul_output_0",
+            "/encoder/encoder.20/res.0.0/conv/Conv_output_0"
+          ]
+        }
+      ],
+      "chains": [
+        {
+          "name": "/encoder/encoder.21/mconv.21/conv/Conv_quant_retained_pair_chain",
+          "input": "/encoder/encoder.21/mconv.0/Where_output_0_quantized",
+          "same_input": true,
+          "input_lineage": [
+            {
+              "name": "/encoder/encoder.21/mconv.0/Where_output_0_QuantizeLinear",
+              "op": "QuantizeLinear",
+              "inputs": [
+                "/encoder/encoder.21/mconv.0/Where_output_0",
+                "/encoder/encoder.21/mconv.0/Where_output_0_scale",
+                "/encoder/encoder.1/mconv.0/Where_output_0_zero_point"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.21/mconv.0/Where",
+              "op": "Where",
+              "inputs": [
+                "/encoder/encoder.14/mconv.21/Cast_1_output_0",
+                "/encoder/encoder.0/mconv.0/Constant_7_output_0",
+                "/encoder/encoder.20/mout/mconv.3/Relu_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.20/mout/mconv.3/Relu",
+              "op": "Relu",
+              "inputs": [
+                "/encoder/encoder.20/Add_output_0"
+              ]
+            },
+            {
+              "name": "/encoder/encoder.20/Add",
+              "op": "Add",
+              "inputs": [
+                "/encoder/encoder.20/mconv.23/Mul_output_0",
+                "/encoder/encoder.20/res.0.0/conv/Conv_output_0"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

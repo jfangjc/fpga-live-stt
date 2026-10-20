@@ -1,0 +1,958 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "cases": [
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 1,
+      "valid_times": 1,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 3,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 7,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 3,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 7,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 3,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 7,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 3,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 7,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 3,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 7,
+      "valid_times": 7,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 6,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 13,
+      "valid_times": 13,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "kernel": 1,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "kernel": 11,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "kernel": 21,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "kernel": 39,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 8,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 16,
+      "valid_times": 16,
+      "kernel": 41,
+      "channels": 4,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 8,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 17,
+      "valid_times": 17,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 25,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 51,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 25,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 51,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 25,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 51,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 25,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 51,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 25,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 51,
+      "valid_times": 51,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 1
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 32,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 65,
+      "valid_times": 65,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 50,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 101,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 50,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 101,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 50,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 101,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 50,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 101,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 50,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 101,
+      "valid_times": 101,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 2
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "kernel": 1,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "kernel": 11,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "kernel": 21,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "kernel": 39,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 0,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 128,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 4
+    },
+    {
+      "times": 256,
+      "valid_times": 256,
+      "kernel": 41,
+      "channels": 1,
+      "beats": 4
+    }
+  ],
+  "beats": 210,
+  "fixtures_sha256": {
+    "config.mem": "851bf61a48ef98e60013b3a3255f462e92bd4b1048256a8c9f10c0cdfa919edd",
+    "expected.mem": "fe7eff170851d60b32d358bb1fdb5065d5f655c02f1fb4c9ea43f5801f5c7b26",
+    "input.mem": "f03a11e742ab205f33e669409ae1e532743423f12ca3dd50d2bad5c8c4d67ddf",
+    "metadata.mem": "e5c739e3b8d5b3bb12aa16e2258f418b312ebf4d38f23b1e35dd892ef8222cb3"
+  }
+}

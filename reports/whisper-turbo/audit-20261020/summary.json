@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-20 Australia/Sydney",
+  "model": "openai/whisper-large-v3-turbo",
+  "audio_seconds": 3.505,
+  "context_encoder_positions": 1500,
+  "measurements": [
+    {
+      "variant": "cpu_original",
+      "external_wall_seconds": 316.11,
+      "cli_stages_seconds": {
+        "load": 2.1761500000000003,
+        "mel": 0.049030000000000004,
+        "encode": 312.2175,
+        "decode": 0.6628,
+        "batchd": 0.19476,
+        "total": 315.49419
+      },
+      "cpu_percent": "391",
+      "user_seconds": 1233.06,
+      "system_seconds": 4.03,
+      "peak_rss_kib": 1265292,
+      "same_qualified_transcript": true
+    },
+    {
+      "variant": "hybrid",
+      "external_wall_seconds": 93.22999999999999,
+      "cli_stages_seconds": {
+        "load": 2.1971100000000003,
+        "mel": 0.04931,
+        "encode": 89.15957,
+        "decode": 0.66426,
+        "batchd": 0.19111,
+        "total": 92.44507
+      },
+      "cpu_percent": "349",
+      "user_seconds": 308.23,
+      "system_seconds": 17.48,
+      "peak_rss_kib": 1814288,
+      "same_qualified_transcript": true
+    },
+    {
+      "variant": "cpu_native",
+      "external_wall_seconds": 315.4,
+      "cli_stages_seconds": {
+        "load": 2.19568,
+        "mel": 0.04888,
+        "encode": 311.602,
+        "decode": 0.66186,
+        "batchd": 0.2089,
+        "total": 314.89125
+      },
+      "cpu_percent": "391",
+      "user_seconds": 1230.74,
+      "system_seconds": 4.25,
+      "peak_rss_kib": 1265304,
+      "same_qualified_transcript": true
+    }
+  ],
+  "original_cpu_vs_hybrid_speedup": 3.390646787514749,
+  "native_cpu_vs_hybrid_speedup": 3.383031213128821,
+  "reported_cpu_clock_hz": [
+    1333333320
+  ],
+  "monitor_samples": 117,
+  "temperatures_available": false,
+  "hybrid_restored": true,
+  "source_commit": "2eeeba56e9edd762b4b38467bab96c2517163158",
+  "tracked_upstream_clean": true,
+  "evidence_archive_sha256": "485518c9ca1921772ba8f2ca22086f547dc8c460707cc74ac80a56c3991ab27d",
+  "limits": [
+    "One fresh measured run per configuration; confirmation audit, not new repeated qualification",
+    "Model file pre-read before each command; fresh process/model initialization remains timed",
+    "No optimized BLAS or alternative CPU engine benchmarked",
+    "PL activation/restoration excluded from GNU CLI timing"
+  ],
+  "original_binaries_and_libraries_match_qualified_release": true
+}

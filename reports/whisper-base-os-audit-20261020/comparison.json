@@ -1,0 +1,139 @@
+{
+  "archive_sha256": "fddfa7a5fbdd9fa5a00c39604e9dabe5d7a8f75cc2f5dd0476fdd1d44c13d988",
+  "exact_artifacts_and_loaded_libraries_match_original": true,
+  "exact_replay_transcripts_match_original": true,
+  "current_backend_q8_transcripts_match_original": true,
+  "comparison": [
+    {
+      "audio": "6930-75918-0000.wav",
+      "original_cpu": 16.854482486999927,
+      "replay_cpu": 16.95292588800021,
+      "cpu_change_percent": 0.5840784555456446,
+      "original_hybrid": 6.777444500000001,
+      "replay_hybrid": 6.884613347000595,
+      "hybrid_change_percent": 1.5812574636442145,
+      "current_cpu": 16.92597778599975,
+      "current_hybrid": 6.63267230800011,
+      "original_cpu_observed_range": [
+        16.829008785000042,
+        17.063300407000042
+      ],
+      "original_hybrid_observed_range": [
+        6.751365265000004,
+        8.919222407999996
+      ],
+      "replay_cpu_within_original_observed_range": true,
+      "replay_hybrid_within_original_observed_range": true
+    },
+    {
+      "audio": "6930-75918-0001.wav",
+      "original_cpu": 18.20929228800003,
+      "replay_cpu": 18.316090621000512,
+      "cpu_change_percent": 0.5865045786038747,
+      "original_hybrid": 8.162074465000046,
+      "replay_hybrid": 8.252356897000027,
+      "hybrid_change_percent": 1.1061211507824797,
+      "current_cpu": 18.37028146099965,
+      "current_hybrid": 8.086468367000634,
+      "original_cpu_observed_range": [
+        18.204707546999998,
+        18.430314817000067
+      ],
+      "original_hybrid_observed_range": [
+        8.142885315999933,
+        8.299133632000007
+      ],
+      "replay_cpu_within_original_observed_range": true,
+      "replay_hybrid_within_original_observed_range": true
+    },
+    {
+      "audio": "6930-75918-0003.wav",
+      "original_cpu": 19.092703926000013,
+      "replay_cpu": 19.24144158800027,
+      "cpu_change_percent": 0.7790287985229183,
+      "original_hybrid": 9.102636732000065,
+      "replay_hybrid": 9.181033910000224,
+      "hybrid_change_percent": 0.8612579004120491,
+      "current_cpu": 19.221723620000375,
+      "current_hybrid": 8.962562677000278,
+      "original_cpu_observed_range": [
+        19.08627889000013,
+        19.903806092999957
+      ],
+      "original_hybrid_observed_range": [
+        9.01919370099995,
+        11.262355694999997
+      ],
+      "replay_cpu_within_original_observed_range": true,
+      "replay_hybrid_within_original_observed_range": true
+    }
+  ],
+  "os_telemetry": {
+    "idle_os_sample": {
+      "samples": 3,
+      "aggregate_cpu_busy_percent": 0.42068794852759217,
+      "aggregate_cpu_iowait_percent": 1.1878247958426131,
+      "minimum_mem_available_mib": 3450.66015625,
+      "swap_total_kib": 0,
+      "swap_in_pages": 0,
+      "swap_out_pages": 0,
+      "memory_full_stall_microseconds": 0,
+      "memory_some_stall_microseconds": 0,
+      "io_full_stall_microseconds": 278964
+    },
+    "exact_original_replay": {
+      "samples": 161,
+      "aggregate_cpu_busy_percent": 94.67610340498453,
+      "aggregate_cpu_iowait_percent": 0.0064147012734709335,
+      "minimum_mem_available_mib": 3061.82421875,
+      "swap_total_kib": 0,
+      "swap_in_pages": 0,
+      "swap_out_pages": 0,
+      "memory_full_stall_microseconds": 68051,
+      "memory_some_stall_microseconds": 77116,
+      "io_full_stall_microseconds": 56121
+    },
+    "current_backend_cache_control": {
+      "samples": 63,
+      "aggregate_cpu_busy_percent": 91.97061283754991,
+      "aggregate_cpu_iowait_percent": 0.04734773756727324,
+      "minimum_mem_available_mib": 3120.4765625,
+      "swap_total_kib": 0,
+      "swap_in_pages": 0,
+      "swap_out_pages": 0,
+      "memory_full_stall_microseconds": 1,
+      "memory_some_stall_microseconds": 1,
+      "io_full_stall_microseconds": 160646
+    }
+  },
+  "reported_cpu_clock_hz": [
+    1333333320
+  ],
+  "temperature_samples_available": false,
+  "board_check": {
+    "active_app": "k26-starter-kits",
+    "qn_tile_loaded": false,
+    "fpga_state": "operating"
+  },
+  "kernel_warnings": {
+    "command_exit": 0,
+    "matching_warnings": [
+      "[  631.579872] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+      "[ 2480.602522] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+      "[ 2706.004418] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+      "[ 3702.192005] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+      "[ 6700.481820] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+      "[ 7524.868870] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma"
+    ]
+  },
+  "limits": [
+    "Three measured repetitions per clip/configuration",
+    "No alternative OS boot comparison",
+    "Original test did not collect equivalent OS telemetry",
+    "New-backend control also changes build flags and pre-reading policy"
+  ],
+  "physical_base_runs_verified": 24,
+  "current_backend_gnu_time_runs_checked": 24,
+  "maximum_current_python_vs_gnu_seconds": 0.013795779000393082,
+  "sessions_restored": true
+}

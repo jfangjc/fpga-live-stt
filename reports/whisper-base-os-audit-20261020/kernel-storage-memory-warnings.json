@@ -1,0 +1,11 @@
+{
+  "command_exit": 0,
+  "matching_warnings": [
+    "[  631.579872] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+    "[ 2480.602522] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+    "[ 2706.004418] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+    "[ 3702.192005] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+    "[ 6700.481820] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma",
+    "[ 7524.868870] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/voice_tensor_dma"
+  ]
+}

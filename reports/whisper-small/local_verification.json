@@ -1,0 +1,851 @@
+{
+  "verified_archive_sha256": "d0448943c64e897b03954ee0f05a433da4eb25e9dc7055827a499322e52534a0",
+  "qualification_evidence_hashes_verified": true,
+  "gnu_time_runs_checked": 56,
+  "maximum_absolute_python_vs_gnu_seconds": 0.014175152999996499,
+  "hybrid_peak_rss_mib": 602.171875,
+  "hybrid_encoder_median_seconds": 16.92841,
+  "hybrid_loading_median_seconds": 0.8014,
+  "measurements": [
+    {
+      "group": "validation_results",
+      "audio": "3570-5694-0013.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 76.84292592400016,
+      "gnu_seconds": 76.83,
+      "rss_kib": 782428,
+      "internal_seconds": {
+        "load": 1.32371,
+        "encode": 72.66849,
+        "decode": 1.76534,
+        "batchd": 0.45013,
+        "total": 76.52368
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "3570-5694-0013.wav",
+      "variant": "hybrid",
+      "python_seconds": 20.83852270599982,
+      "gnu_seconds": 20.83,
+      "rss_kib": 614816,
+      "internal_seconds": {
+        "load": 0.79961,
+        "encode": 17.78589,
+        "decode": 1.42461,
+        "batchd": 0.20796,
+        "total": 20.53523
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "8455-210777-0062.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 74.78972940100039,
+      "gnu_seconds": 74.78,
+      "rss_kib": 782064,
+      "internal_seconds": {
+        "load": 1.323,
+        "encode": 71.59543,
+        "decode": 1.02776,
+        "batchd": 0.2724,
+        "total": 74.47072999999999
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "8455-210777-0062.wav",
+      "variant": "hybrid",
+      "python_seconds": 19.99131519799994,
+      "gnu_seconds": 19.98,
+      "rss_kib": 614576,
+      "internal_seconds": {
+        "load": 0.79768,
+        "encode": 17.584229999999998,
+        "decode": 0.84058,
+        "batchd": 0.20858000000000002,
+        "total": 19.684639999999998
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "237-134500-0034.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 74.83304706299987,
+      "gnu_seconds": 74.82,
+      "rss_kib": 782064,
+      "internal_seconds": {
+        "load": 1.32519,
+        "encode": 71.92861,
+        "decode": 0.75097,
+        "batchd": 0.27220999999999995,
+        "total": 74.51325
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "237-134500-0034.wav",
+      "variant": "hybrid",
+      "python_seconds": 19.055858385999727,
+      "gnu_seconds": 19.05,
+      "rss_kib": 614708,
+      "internal_seconds": {
+        "load": 0.79906,
+        "encode": 16.91285,
+        "decode": 0.59581,
+        "batchd": 0.20801,
+        "total": 18.75107
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "121-123852-0003.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 80.10089376600035,
+      "gnu_seconds": 80.09,
+      "rss_kib": 783972,
+      "internal_seconds": {
+        "load": 1.37382,
+        "encode": 71.59123,
+        "decode": 5.84621,
+        "batchd": 0.27175,
+        "total": 79.77878
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "121-123852-0003.wav",
+      "variant": "hybrid",
+      "python_seconds": 24.33411144799993,
+      "gnu_seconds": 24.32,
+      "rss_kib": 616624,
+      "internal_seconds": {
+        "load": 0.80018,
+        "encode": 17.57029,
+        "decode": 4.756060000000001,
+        "batchd": 0.20799,
+        "total": 24.030279999999998
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "5142-33396-0033.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 76.39983400699975,
+      "gnu_seconds": 76.39,
+      "rss_kib": 782132,
+      "internal_seconds": {
+        "load": 1.3229600000000001,
+        "encode": 71.92264999999999,
+        "decode": 2.21997,
+        "batchd": 0.27185000000000004,
+        "total": 76.08009
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "5142-33396-0033.wav",
+      "variant": "hybrid",
+      "python_seconds": 20.40962747200001,
+      "gnu_seconds": 20.4,
+      "rss_kib": 614912,
+      "internal_seconds": {
+        "load": 0.79996,
+        "encode": 16.96506,
+        "decode": 1.7897100000000001,
+        "batchd": 0.20844,
+        "total": 20.10621
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "7176-92135-0045.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 75.31736430199999,
+      "gnu_seconds": 75.31,
+      "rss_kib": 782392,
+      "internal_seconds": {
+        "load": 1.3266900000000001,
+        "encode": 71.52551,
+        "decode": 1.56121,
+        "batchd": 0.27908999999999995,
+        "total": 74.99558999999999
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "7176-92135-0045.wav",
+      "variant": "hybrid",
+      "python_seconds": 20.46062593400029,
+      "gnu_seconds": 20.45,
+      "rss_kib": 614912,
+      "internal_seconds": {
+        "load": 0.8002400000000001,
+        "encode": 16.9106,
+        "decode": 1.91318,
+        "batchd": 0.21596,
+        "total": 20.14296
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "1221-135766-0011.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 81.7769723639999,
+      "gnu_seconds": 81.77,
+      "rss_kib": 783776,
+      "internal_seconds": {
+        "load": 1.32626,
+        "encode": 72.93594,
+        "decode": 6.22016,
+        "batchd": 0.27188999999999997,
+        "total": 81.45677
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "1221-135766-0011.wav",
+      "variant": "hybrid",
+      "python_seconds": 24.04403040599982,
+      "gnu_seconds": 24.03,
+      "rss_kib": 616336,
+      "internal_seconds": {
+        "load": 0.79825,
+        "encode": 16.964419999999997,
+        "decode": 5.0651,
+        "batchd": 0.20858000000000002,
+        "total": 23.7404
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "8230-279154-0004.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 77.05973299300013,
+      "gnu_seconds": 77.05,
+      "rss_kib": 782960,
+      "internal_seconds": {
+        "load": 1.32409,
+        "encode": 71.35126,
+        "decode": 3.31678,
+        "batchd": 0.27209,
+        "total": 76.73862
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "8230-279154-0004.wav",
+      "variant": "hybrid",
+      "python_seconds": 21.72801325399996,
+      "gnu_seconds": 21.72,
+      "rss_kib": 615608,
+      "internal_seconds": {
+        "load": 0.79741,
+        "encode": 17.234360000000002,
+        "decode": 2.70973,
+        "batchd": 0.20857,
+        "total": 21.423419999999997
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "4992-41806-0013.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 75.62235515599968,
+      "gnu_seconds": 75.61,
+      "rss_kib": 782584,
+      "internal_seconds": {
+        "load": 1.32478,
+        "encode": 71.61677,
+        "decode": 1.7470999999999999,
+        "batchd": 0.28999,
+        "total": 75.29832
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "4992-41806-0013.wav",
+      "variant": "hybrid",
+      "python_seconds": 19.9898204670003,
+      "gnu_seconds": 19.98,
+      "rss_kib": 614984,
+      "internal_seconds": {
+        "load": 0.8019,
+        "encode": 16.917630000000003,
+        "decode": 1.4361,
+        "batchd": 0.20837999999999998,
+        "total": 19.68439
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "260-123286-0019.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 77.14922895000018,
+      "gnu_seconds": 77.14,
+      "rss_kib": 783016,
+      "internal_seconds": {
+        "load": 1.32412,
+        "encode": 71.3562,
+        "decode": 3.41118,
+        "batchd": 0.27222,
+        "total": 76.82825
+      }
+    },
+    {
+      "group": "validation_results",
+      "audio": "260-123286-0019.wav",
+      "variant": "hybrid",
+      "python_seconds": 21.656899467999665,
+      "gnu_seconds": 21.65,
+      "rss_kib": 615408,
+      "internal_seconds": {
+        "load": 0.8038099999999999,
+        "encode": 17.08882,
+        "decode": 2.78538,
+        "batchd": 0.20832,
+        "total": 21.35146
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 74.55522704700024,
+      "gnu_seconds": 74.55,
+      "rss_kib": 782348,
+      "internal_seconds": {
+        "load": 1.32523,
+        "encode": 71.371,
+        "decode": 1.00937,
+        "batchd": 0.27188,
+        "total": 74.23409
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 74.53671914699999,
+      "gnu_seconds": 74.53,
+      "rss_kib": 782252,
+      "internal_seconds": {
+        "load": 1.32776,
+        "encode": 71.35085000000001,
+        "decode": 1.00848,
+        "batchd": 0.27182999999999996,
+        "total": 74.21488000000001
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 74.54287791499974,
+      "gnu_seconds": 74.53,
+      "rss_kib": 782232,
+      "internal_seconds": {
+        "load": 1.3296199999999998,
+        "encode": 71.35239999999999,
+        "decode": 1.01041,
+        "batchd": 0.27215,
+        "total": 74.22034
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 58.264175153,
+      "gnu_seconds": 58.25,
+      "rss_kib": 564312,
+      "internal_seconds": {
+        "load": 0.8071799999999999,
+        "encode": 55.925059999999995,
+        "decode": 0.8136599999999999,
+        "batchd": 0.20707,
+        "total": 58.00951
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 58.40274870400026,
+      "gnu_seconds": 58.39,
+      "rss_kib": 564312,
+      "internal_seconds": {
+        "load": 0.80591,
+        "encode": 56.036660000000005,
+        "decode": 0.84123,
+        "batchd": 0.20812,
+        "total": 58.14775
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 58.403577775000485,
+      "gnu_seconds": 58.39,
+      "rss_kib": 564316,
+      "internal_seconds": {
+        "load": 0.80602,
+        "encode": 56.054480000000005,
+        "decode": 0.81936,
+        "batchd": 0.20687,
+        "total": 58.14855
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 63.85795866200033,
+      "gnu_seconds": 63.85,
+      "rss_kib": 477024,
+      "internal_seconds": {
+        "load": 0.60685,
+        "encode": 61.67969,
+        "decode": 0.86277,
+        "batchd": 0.22482,
+        "total": 63.63055
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 63.856185562000064,
+      "gnu_seconds": 63.85,
+      "rss_kib": 476892,
+      "internal_seconds": {
+        "load": 0.6004299999999999,
+        "encode": 61.68409,
+        "decode": 0.8636900000000001,
+        "batchd": 0.22491999999999998,
+        "total": 63.6284
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 63.76885888900051,
+      "gnu_seconds": 63.76,
+      "rss_kib": 477024,
+      "internal_seconds": {
+        "load": 0.6022000000000001,
+        "encode": 61.59424,
+        "decode": 0.86407,
+        "batchd": 0.22476,
+        "total": 63.54025
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "hybrid",
+      "python_seconds": 21.015414733999933,
+      "gnu_seconds": 21.01,
+      "rss_kib": 614744,
+      "internal_seconds": {
+        "load": 0.80004,
+        "encode": 18.625040000000002,
+        "decode": 0.81925,
+        "batchd": 0.20824,
+        "total": 20.70837
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "hybrid",
+      "python_seconds": 19.507394285999908,
+      "gnu_seconds": 19.5,
+      "rss_kib": 614616,
+      "internal_seconds": {
+        "load": 0.8024600000000001,
+        "encode": 17.114939999999997,
+        "decode": 0.82004,
+        "batchd": 0.20786000000000002,
+        "total": 19.20157
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0000.wav",
+      "variant": "hybrid",
+      "python_seconds": 19.292663634000746,
+      "gnu_seconds": 19.28,
+      "rss_kib": 614744,
+      "internal_seconds": {
+        "load": 0.8014,
+        "encode": 16.901049999999998,
+        "decode": 0.8197300000000001,
+        "batchd": 0.20823,
+        "total": 18.98661
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 78.44684200499978,
+      "gnu_seconds": 78.44,
+      "rss_kib": 782848,
+      "internal_seconds": {
+        "load": 1.33094,
+        "encode": 71.32588,
+        "decode": 4.63072,
+        "batchd": 0.27205,
+        "total": 78.12379
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 78.45456434399966,
+      "gnu_seconds": 78.45,
+      "rss_kib": 783096,
+      "internal_seconds": {
+        "load": 1.3272899999999999,
+        "encode": 71.34173,
+        "decode": 4.63591,
+        "batchd": 0.27204,
+        "total": 78.13191
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 78.62198259200068,
+      "gnu_seconds": 78.61,
+      "rss_kib": 782976,
+      "internal_seconds": {
+        "load": 1.32606,
+        "encode": 71.23605,
+        "decode": 4.911020000000001,
+        "batchd": 0.27204,
+        "total": 78.29975999999999
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 64.11330758099939,
+      "gnu_seconds": 64.1,
+      "rss_kib": 565316,
+      "internal_seconds": {
+        "load": 0.8067799999999999,
+        "encode": 56.017230000000005,
+        "decode": 6.27118,
+        "batchd": 0.20718,
+        "total": 63.85757
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 61.6168673330003,
+      "gnu_seconds": 61.61,
+      "rss_kib": 565448,
+      "internal_seconds": {
+        "load": 0.80922,
+        "encode": 56.04656,
+        "decode": 3.74088,
+        "batchd": 0.20724,
+        "total": 61.36031
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 61.49633316299969,
+      "gnu_seconds": 61.49,
+      "rss_kib": 565168,
+      "internal_seconds": {
+        "load": 0.80576,
+        "encode": 55.929199999999994,
+        "decode": 3.74404,
+        "batchd": 0.2072,
+        "total": 61.24021
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 67.27042407500085,
+      "gnu_seconds": 67.26,
+      "rss_kib": 478028,
+      "internal_seconds": {
+        "load": 0.60072,
+        "encode": 61.676089999999995,
+        "decode": 3.98496,
+        "batchd": 0.22532,
+        "total": 67.0424
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 67.15187399899969,
+      "gnu_seconds": 67.14,
+      "rss_kib": 478032,
+      "internal_seconds": {
+        "load": 0.59851,
+        "encode": 61.576980000000006,
+        "decode": 3.96688,
+        "batchd": 0.22497,
+        "total": 66.92351
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 67.26703240400002,
+      "gnu_seconds": 67.26,
+      "rss_kib": 478032,
+      "internal_seconds": {
+        "load": 0.6015900000000001,
+        "encode": 61.68966,
+        "decode": 3.96716,
+        "batchd": 0.22529,
+        "total": 67.03847999999999
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "hybrid",
+      "python_seconds": 22.57055283199952,
+      "gnu_seconds": 22.56,
+      "rss_kib": 615500,
+      "internal_seconds": {
+        "load": 0.8006599999999999,
+        "encode": 16.92841,
+        "decode": 3.77271,
+        "batchd": 0.20856,
+        "total": 22.265259999999998
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "hybrid",
+      "python_seconds": 22.79477430499992,
+      "gnu_seconds": 22.79,
+      "rss_kib": 615372,
+      "internal_seconds": {
+        "load": 0.79996,
+        "encode": 16.861720000000002,
+        "decode": 4.06428,
+        "batchd": 0.20812,
+        "total": 22.48895
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0001.wav",
+      "variant": "hybrid",
+      "python_seconds": 22.721333966000202,
+      "gnu_seconds": 22.71,
+      "rss_kib": 615500,
+      "internal_seconds": {
+        "load": 0.80065,
+        "encode": 17.081400000000002,
+        "decode": 3.77018,
+        "batchd": 0.2083,
+        "total": 22.415029999999998
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 81.12850375700054,
+      "gnu_seconds": 81.12,
+      "rss_kib": 783956,
+      "internal_seconds": {
+        "load": 1.3245799999999999,
+        "encode": 71.36180999999999,
+        "decode": 7.07921,
+        "batchd": 0.27194,
+        "total": 80.80537
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 81.12933537000026,
+      "gnu_seconds": 81.12,
+      "rss_kib": 784084,
+      "internal_seconds": {
+        "load": 1.32572,
+        "encode": 71.35467,
+        "decode": 7.08686,
+        "batchd": 0.27186,
+        "total": 80.80717
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_0_no_flash",
+      "python_seconds": 81.142436567,
+      "gnu_seconds": 81.13,
+      "rss_kib": 783964,
+      "internal_seconds": {
+        "load": 1.3256700000000001,
+        "encode": 71.36721,
+        "decode": 7.08548,
+        "batchd": 0.27182999999999996,
+        "total": 80.81795
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 63.8268389800005,
+      "gnu_seconds": 63.82,
+      "rss_kib": 566172,
+      "internal_seconds": {
+        "load": 0.80522,
+        "encode": 56.09111,
+        "decode": 5.698729999999999,
+        "batchd": 0.20747,
+        "total": 63.57082
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 63.82037804800075,
+      "gnu_seconds": 63.81,
+      "rss_kib": 566100,
+      "internal_seconds": {
+        "load": 0.80931,
+        "encode": 56.07071,
+        "decode": 5.70779,
+        "batchd": 0.2071,
+        "total": 63.56422
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_1_no_flash",
+      "python_seconds": 63.77287639499991,
+      "gnu_seconds": 63.76,
+      "rss_kib": 565916,
+      "internal_seconds": {
+        "load": 0.80999,
+        "encode": 56.029180000000004,
+        "decode": 5.70348,
+        "batchd": 0.20701,
+        "total": 63.51636
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 69.63692282500051,
+      "gnu_seconds": 69.63,
+      "rss_kib": 479012,
+      "internal_seconds": {
+        "load": 0.6022000000000001,
+        "encode": 61.715,
+        "decode": 6.096100000000001,
+        "batchd": 0.22571000000000002,
+        "total": 69.40723
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 69.5352095900007,
+      "gnu_seconds": 69.53,
+      "rss_kib": 479136,
+      "internal_seconds": {
+        "load": 0.59982,
+        "encode": 61.65886,
+        "decode": 6.05284,
+        "batchd": 0.22511,
+        "total": 69.30588
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "cpu_2_no_flash",
+      "python_seconds": 69.5629317060002,
+      "gnu_seconds": 69.55,
+      "rss_kib": 479008,
+      "internal_seconds": {
+        "load": 0.60103,
+        "encode": 61.66718,
+        "decode": 6.07183,
+        "batchd": 0.22512000000000001,
+        "total": 69.33391
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "hybrid",
+      "python_seconds": 24.764206497000487,
+      "gnu_seconds": 24.76,
+      "rss_kib": 616472,
+      "internal_seconds": {
+        "load": 0.80174,
+        "encode": 16.92571,
+        "decode": 5.75296,
+        "batchd": 0.20804,
+        "total": 24.457639999999998
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "hybrid",
+      "python_seconds": 24.866256992999297,
+      "gnu_seconds": 24.86,
+      "rss_kib": 616348,
+      "internal_seconds": {
+        "load": 0.8034600000000001,
+        "encode": 17.016209999999997,
+        "decode": 5.75229,
+        "batchd": 0.20815,
+        "total": 24.55987
+      }
+    },
+    {
+      "group": "latency_results",
+      "audio": "6930-75918-0003.wav",
+      "variant": "hybrid",
+      "python_seconds": 25.01704366100057,
+      "gnu_seconds": 25.01,
+      "rss_kib": 616604,
+      "internal_seconds": {
+        "load": 0.8014199999999999,
+        "encode": 16.908669999999997,
+        "decode": 6.022810000000001,
+        "batchd": 0.20849,
+        "total": 24.71053
+      }
+    }
+  ]
+}

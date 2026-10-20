@@ -1,0 +1,31 @@
+{
+  "cpu_upstream_commit": "2eeeba56e9edd762b4b38467bab96c2517163158",
+  "cpu_tracked_changes": "",
+  "source_hashes": {
+    "source/software/whisper/start_qualification.sh": "2048468532bf63699e1ecc62ad43aff2fa3f5c373542807d8b1c927d9d996bea",
+    "source/software/whisper/model_spec.py": "7c865010a1313cdeb5cf79a211722d716bc15ebae8baae946f3760978072054b",
+    "source/software/whisper/audit_timing.py": "4b0a445bce427d92cc8a71a5234792deaa0eafe91aecbb11f58a65210518dffd",
+    "source/software/whisper/kv260-direct.h": "eba11031790bfb28888aebe9bbc7e34f4241239efcbecf758292cd5ec82f022f",
+    "source/software/whisper/benchmark.py": "a89d377b1b249623aebaac05cda064475258d20df86f15619328e422238026e1",
+    "source/software/whisper/progress_status.py": "760b64bcd3ec5a4365dcff440fca3653c18f1e1e3a5fc06da301117ca499116e",
+    "source/software/whisper/run_board.py": "3ffa149b8581b9868afb56c6c047c6788a5f79b2136b968078576c18031b2dc4",
+    "source/software/whisper/refresh_validation.py": "98e998937ecc36e1e648f13b9d52037942eb1d4830eeb31debba68bd7f96e6c8",
+    "source/software/whisper/prepare_validation.py": "23b0f14ce16fd23c97b0909c3742c49b980c1d748bafe0cfd58ca032242bb4a7",
+    "source/software/whisper/patch_upstream.py": "24eac5ef695e2238eba86d06c48634bc4df28a386f1a4d7167ec67e5ebbb65c6",
+    "source/software/whisper/write_model_manifest.py": "9edf959aedb79acca1a25e57e17e27954fa04353b55437050d5a2b9baa56d356",
+    "source/software/whisper/evaluate_small_board.py": "840b830210d88a23f5732bc000f4c4b1231399a3772b7c8c01b21f828d8abb3b",
+    "source/software/whisper/screen_attention.py": "cc4400eb4d2e889aed245b629d02e3ad29a639583ed4a6abc047b79151fcb280",
+    "source/software/whisper/qualify.py": "ac152ee6d8403edddcdbc3f98c58ce70354daa12f138e0fe2dc6a208725869e0",
+    "source/software/whisper/WHISPER_MODEL_LICENSE.txt": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+    "source/software/whisper/qualify_board.py": "d62a5daeee824e9cff0dfb927fab91a086338f6f7d4566bb33e1c2ce18c4b0f4",
+    "source/software/whisper/verify_runtime.py": "45c85ad972b27d16b9fed962aeb08fc8351ce1a20b3e15a923eae00ba175c90d",
+    "source/software/whisper/transcribe.py": "993320a2fb615e7a7a4c7399c2c1b929afbfa9b24a5340c67f9421ce239a8e8c",
+    "source/software/whisper/hardware_session.py": "792e1406672e8021f5ad0468c8ed6843c4fc9e022040443fe4561a11b8b5f9d4",
+    "source/software/whisper/build_board.sh": "88e2a82ab9004688185e53d59c5745fddc07ebda7f74c457750048c494964767",
+    "source/software/whisper/test_benchmark.py": "74a4db4e7523a06e3dbbc0dc73cfde5631342cb428117f3da692cab38bc21c09",
+    "source/software/whisper/qnc_ggml.inc": "2b62f4a2edda6107eba819e37ff9d3144a08aeadc21dd7bc691d092300c0c774",
+    "source/software/whisper/prepare_small_backend.py": "5d79b0daae2898f971597d647e8ead4838def9e3a9ce0e6ca107c37ffbf8de6b",
+    "source/software/whisper/evaluate_report.py": "1a842e2bf1cb05202abc8d254748592436ef1e3ded3320acc937bf1ae654fc78",
+    "source/software/whisper/test_physical_matrix.py": "192eaef5bbd490f9797f389acf10577b1856688f9048c36d7d352d5a1b46ac48"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "execution": "CPU INT8; no FPGA execution",
+  "candidate_sha256": "f430addb348997878eb49b8d09fe05d4fd8d5e3bdfba2d9b119c1a0acc6cff60",
+  "threads": 4,
+  "worker_spinning": false,
+  "initialization_seconds": 2.695862400025362,
+  "recordings": [
+    {
+      "wav": "C:\\Users\\jfang\\Documents\\Vivado\\Prototype_v2\\research\\eval\\user-recording\\speech.wav",
+      "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+      "encoded_length": 126,
+      "processing_seconds": 0.0782525000104215
+    }
+  ],
+  "representative_accuracy_accepted": false
+}

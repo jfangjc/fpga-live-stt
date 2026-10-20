@@ -1,0 +1,115 @@
+{
+  "engine": "integer",
+  "hardware_execution": false,
+  "model_identity": {
+    "model.onnx": "29de673c3e3fb75d3845184c22a5237c8466e4c402e70536f54910981864fb58",
+    "frontend.npz": "fa50eeabbb2e43ee4667099f9cfc9cbd79ea3a82c223e7e489059c28253eb770",
+    "vocab.txt": "656aff6cb2d759e2ca3418175ef7ebb0c693683d0e4642624a8218b645d4d828",
+    "frontend_decoder_source": "85cf46362eefd1242318275d4e5371bdbbb756d296b32c4db49ecc885e6637cd",
+    "wer_source": "8e25ea2e2607e8ed1d3c3fbf1f9906336c462bbaeea3793c152dbcc365d6a119"
+  },
+  "sources_sha256": {
+    "benchmark_cpu.py": "029d265f733f77f4107a5a90c9dc16ffa06abadcf3d70b4616af2c297c7e9ab1",
+    "common.py": "c724a52134c0580eb27661833e65f927b06960dd123b265691e788ed2ac9d48a",
+    "experiment.py": "43e6ab83fa0b4899118bbc5dd232b07719db146521ed3abc91133c86e1349f98",
+    "oracle.py": "5d9c6c9308e3450e8b7bb260c11e5e26e5bfceab362fb3af7a54806e559189bb",
+    "test_fused.py": "7607bd8e3858b44571f8708e3f91a1b2b98be4657d4baff65fef8ac2ea415938"
+  },
+  "calibration_sha256": "166d3e6160a3d4cdfd8d49f6d5c95fbada9dedfefd7e1c41e1b1d96cb8bac6ae",
+  "evaluation_manifest_sha256": "4a12343465ea37810d5eba71f107d3f748bd2b158ca8bc0fc46654fb290eb03c",
+  "exclude_blocks": [],
+  "environment": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "thermal_millicelsius": {},
+    "cpu_frequency_khz": {},
+    "cpu_governor": {},
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "hwmon_temperature_millicelsius": {},
+    "iio_temperature_attributes": {},
+    "cpu_frequency_bounds_khz": {}
+  },
+  "cpu_wer": 0.01910828025477707,
+  "candidate_wer": 0.01910828025477707,
+  "absolute_wer_degradation": 0.0,
+  "regression_within_one_pp": true,
+  "required_category_coverage": false,
+  "final_accuracy_gate_claimed": false,
+  "rtl_expansion_approved": false,
+  "clips": [
+    {
+      "id": "6930-75918-0000",
+      "audio_sha256": "103c3f15eb3715ebc6243d142244128a3ac39b6bfae315baa6b8dc4a8be14aa8",
+      "reference": "concord returned to its place amidst the tents",
+      "reference_words": 8,
+      "cpu_text": "concord returned to its place amidst the tents",
+      "candidate_text": "concord returned to its place amidst the tents",
+      "cpu_errors": 0,
+      "candidate_errors": 0,
+      "max_log_probability_difference": 12.739813804626465,
+      "candidate_diagnostic_seconds": 5.117949200008297,
+      "encoded_length": 44
+    },
+    {
+      "id": "6930-75918-0001",
+      "audio_sha256": "7a0c28ad2cca523cd7e7d72e360a3f314eeb905688358dbf6f150c0a87b87f76",
+      "reference": "the english forwarded to the french baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "reference_words": 43,
+      "cpu_text": "the english foarded to the french baskets of flowers of which they had made a plentable provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "candidate_text": "the english foded to the french baskets of flowers of which they had made a plentiful provision to greet the arrival of the young princess the french in return invited the english to a supper which was to be given the next day",
+      "cpu_errors": 2,
+      "candidate_errors": 1,
+      "max_log_probability_difference": 10.472509384155273,
+      "candidate_diagnostic_seconds": 8.85919930000091,
+      "encoded_length": 178
+    },
+    {
+      "id": "6930-75918-0002",
+      "audio_sha256": "ca418189ed1db4ce1bf5e6940d51a9ce870d4d52f3ef9019ccdbb2189d1a0a9c",
+      "reference": "congratulations were poured in upon the princess everywhere during her journey",
+      "reference_words": 11,
+      "cpu_text": "congratulations were poured in upon the princess everywhere during her journey",
+      "candidate_text": "congratulations were poured in upon the princess everywhere during her journey",
+      "cpu_errors": 0,
+      "candidate_errors": 0,
+      "max_log_probability_difference": 18.203079223632812,
+      "candidate_diagnostic_seconds": 5.323116099985782,
+      "encoded_length": 63
+    },
+    {
+      "id": "6930-75918-0003",
+      "audio_sha256": "166d138dc95c706e4eedbebb48f4ac4c8cb1b77ea796c0bc650da518308657e2",
+      "reference": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she had suffered too much unhappiness in england for england to have made her forget france",
+      "reference_words": 64,
+      "cpu_text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she had suffered too much unhappiness in england for england to have made her forget france",
+      "candidate_text": "from the respect paid her on all sides she seemed like a queen and from the adoration with which she was treated by two or three she appeared an object of worship the queen mother gave the french the most affectionate reception france was her native country and she hads suffered too much unhappiness in england for england to have made her forget france",
+      "cpu_errors": 0,
+      "candidate_errors": 1,
+      "max_log_probability_difference": 11.43273639678955,
+      "candidate_diagnostic_seconds": 14.236465699999826,
+      "encoded_length": 292
+    },
+    {
+      "id": "6930-75918-0004",
+      "audio_sha256": "af568c26be7892254398fc5ecc6a346dc28c3e5ef1123aa6cdf8a8dda3ce1c57",
+      "reference": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened before them",
+      "reference_words": 31,
+      "cpu_text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "candidate_text": "she taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them",
+      "cpu_errors": 1,
+      "candidate_errors": 1,
+      "max_log_probability_difference": 5.395872116088867,
+      "candidate_diagnostic_seconds": 7.493630399985705,
+      "encoded_length": 139
+    }
+  ],
+  "limits": [
+    "Small regression is not representative accuracy acceptance.",
+    "Integer Python reference timing is not a latency prediction.",
+    "QDQ uses FP32 bias/SE/residual arithmetic; integer engine uses INT32 bias, Q31 Conv, Q16 residual, Q0.15 gate."
+  ]
+}

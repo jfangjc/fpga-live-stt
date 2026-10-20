@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "release": "kv260-asr-mvp-1.0.1",
+  "scope": "Bounded WAV transcription on KV260; archived physical results re-audited",
+  "fresh_physical_execution": false,
+  "fresh_rtl_simulation": true,
+  "capture_qualified": false,
+  "representative_wer_qualified": false,
+  "firmware_binding_files_checked": 272,
+  "fresh_simulations_sha256": {
+    "build/mvp_ab_mac_conformance/mvp_ab_mac_conformance.sim/sim_1/behav/xsim/simulate.log": "96cb81c3be3777a2a9eea063cabc0019c3f4093c849bade5d2681f72465d79e5",
+    "build/mvp_branch512_ab_fast_sim/mvp_branch512_ab_fast_sim.sim/sim_1/behav/xsim/simulate.log": "cea8a8a64a7257896d698731179421b231154c0c8b70fcf92185518502db644d",
+    "build/mvp_branch512_ab_reset_sim/mvp_branch512_ab_reset_sim.sim/sim_1/behav/xsim/simulate.log": "fa64f78464d9eb206eaf2471151378295ee6dfcc4e02f81b80b29b144ec92bed",
+    "build/mvp_branch512_ab_payload_reset_sim/mvp_branch512_ab_payload_reset_sim.sim/sim_1/behav/xsim/simulate.log": "ee7f102d4038e450d969d3984a43e1f2ba85717fafddf43c90401a4561b05405"
+  },
+  "host_tests_passed": 13,
+  "fresh_project_check_sha256": "dbea4eec30045f6c6f5d96c582664c4dd2f3f25b520b9df907688d5e8a9290a5",
+  "fresh_frontend_validation_sha256": "57721f29b394bda6a26458a97a9aa478f27af5585d0ffa0e6a84f4dcfe440486",
+  "completion_audit_sha256": "be7e95f0c20e35453ea918b85c180b70f46ba5d76c02da3fd4458fdaa9d4105c",
+  "clean_board_test_sha256": "d9f07ad6bb8b60aa505a2ca97b5738d510ffb4b35db82e10004e0d8d6ca4be8b",
+  "clean_board_functional_tests_passed": true,
+  "clean_board_strict_twofold_speed_acceptance": false
+}

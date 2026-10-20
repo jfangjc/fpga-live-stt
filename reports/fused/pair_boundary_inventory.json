@@ -1,0 +1,1077 @@
+{
+  "complete": true,
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72",
+  "source_sha256": "966f68536e8dd0291928762c272117ef9b7d5b60ba8f716b1cb35612e77bacde",
+  "graph_source_sha256": "f767c27261533b34d0619e5c9fed1acdfe722488372211f556eecf16e7390774",
+  "boundaries": [
+    {
+      "depthwise": "/encoder/encoder.0/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.0/mconv.1/conv/Conv_quant",
+      "channels": 80,
+      "outputs": 256,
+      "kernel": 5,
+      "weight_bytes": 20880,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 11,
+      "weight_bytes": 68352,
+      "current_graph_contract_supported": true
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 11,
+      "weight_bytes": 68352,
+      "current_graph_contract_supported": true
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 11,
+      "weight_bytes": 68352,
+      "current_graph_contract_supported": true
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 11,
+      "weight_bytes": 68352,
+      "current_graph_contract_supported": true
+    },
+    {
+      "depthwise": "/encoder/encoder.1/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.1/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 11,
+      "weight_bytes": 68352,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.2/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.2/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.3/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.3/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.4/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.4/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.5/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.5/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.6/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.6/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.7/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.7/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 13,
+      "weight_bytes": 68864,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.8/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.8/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 15,
+      "weight_bytes": 69376,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.9/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.9/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.9/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.9/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.9/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.9/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.9/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.9/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.9/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.9/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 17,
+      "weight_bytes": 69888,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.10/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.10/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.10/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.10/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.10/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.10/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.10/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.10/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.10/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.10/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 19,
+      "weight_bytes": 70400,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.11/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.11/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.11/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.11/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.11/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.11/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.11/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.11/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.11/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.11/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 21,
+      "weight_bytes": 70912,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.12/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.12/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 23,
+      "weight_bytes": 71424,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.12/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.12/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 23,
+      "weight_bytes": 71424,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.12/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.12/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 23,
+      "weight_bytes": 71424,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.12/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.12/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 23,
+      "weight_bytes": 71424,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.12/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.12/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 23,
+      "weight_bytes": 71424,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.13/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.13/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.13/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.13/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.13/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.13/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.13/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.13/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.13/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.13/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.14/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.14/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.14/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.14/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.14/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.14/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.14/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.14/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.14/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.14/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 25,
+      "weight_bytes": 71936,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.15/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.15/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 27,
+      "weight_bytes": 72448,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.15/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.15/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 27,
+      "weight_bytes": 72448,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.15/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.15/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 27,
+      "weight_bytes": 72448,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.15/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.15/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 27,
+      "weight_bytes": 72448,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.15/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.15/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 27,
+      "weight_bytes": 72448,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.16/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.16/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 29,
+      "weight_bytes": 72960,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.16/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.16/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 29,
+      "weight_bytes": 72960,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.16/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.16/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 29,
+      "weight_bytes": 72960,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.16/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.16/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 29,
+      "weight_bytes": 72960,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.16/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.16/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 29,
+      "weight_bytes": 72960,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.17/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.17/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 31,
+      "weight_bytes": 73472,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.17/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.17/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 31,
+      "weight_bytes": 73472,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.17/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.17/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 31,
+      "weight_bytes": 73472,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.17/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.17/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 31,
+      "weight_bytes": 73472,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.17/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.17/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 31,
+      "weight_bytes": 73472,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.18/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.18/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 33,
+      "weight_bytes": 73984,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.18/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.18/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 33,
+      "weight_bytes": 73984,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.18/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.18/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 33,
+      "weight_bytes": 73984,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.18/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.18/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 33,
+      "weight_bytes": 73984,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.18/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.18/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 33,
+      "weight_bytes": 73984,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.19/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.19/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 35,
+      "weight_bytes": 74496,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.19/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.19/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 35,
+      "weight_bytes": 74496,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.19/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.19/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 35,
+      "weight_bytes": 74496,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.19/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.19/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 35,
+      "weight_bytes": 74496,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.19/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.19/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 35,
+      "weight_bytes": 74496,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.20/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.20/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 37,
+      "weight_bytes": 75008,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.20/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.20/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 37,
+      "weight_bytes": 75008,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.20/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.20/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 37,
+      "weight_bytes": 75008,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.20/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.20/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 37,
+      "weight_bytes": 75008,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.20/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.20/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 37,
+      "weight_bytes": 75008,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.21/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.21/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 39,
+      "weight_bytes": 75520,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.21/mconv.5/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.21/mconv.6/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 39,
+      "weight_bytes": 75520,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.21/mconv.10/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.21/mconv.11/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 39,
+      "weight_bytes": 75520,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.21/mconv.15/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.21/mconv.16/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 39,
+      "weight_bytes": 75520,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.21/mconv.20/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.21/mconv.21/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 256,
+      "kernel": 39,
+      "weight_bytes": 75520,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    },
+    {
+      "depthwise": "/encoder/encoder.22/mconv.0/conv/Conv_quant",
+      "pointwise": "/encoder/encoder.22/mconv.1/conv/Conv_quant",
+      "channels": 256,
+      "outputs": 640,
+      "kernel": 41,
+      "weight_bytes": 174336,
+      "current_graph_contract_supported": false,
+      "rejection": "AssertionError"
+    }
+  ],
+  "current_supported_count": 4,
+  "physical_expansion_validated": false,
+  "constraint": "Current hardware caches one pair. Multiple graph replacements reload weights; inventory is not a speed claim."
+}

@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "strongest_tested_cpu_selection_verified": true,
+  "contexts": 3,
+  "policies_per_context": 64,
+  "warm_inferences_checked": 5760,
+  "screen_sha256": "66e7eba56fb548bf71266abd710a849d0b5ed2ffa92fdbbe37945f652689cf74",
+  "audit_source_sha256": "88a1bfc71a79415118d7792d8ce08866f6f7d95cb1ae10381db136aea046d236"
+}

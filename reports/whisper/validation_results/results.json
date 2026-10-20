@@ -1,0 +1,943 @@
+{
+  "scope": "Accuracy refresh; verified unchanged CPU reference runs reused. Fresh paired performance is in latency_results.",
+  "language": "en",
+  "decoding": "greedy beam=1 best_of=1 temperature=0 no fallback; attention mode recorded per run",
+  "threads": 4,
+  "warmup": 0,
+  "repeats": 1,
+  "fpga_decoder_dense": false,
+  "fpga_attention": true,
+  "cpu_attention_mode": "unfused",
+  "artifacts": {
+    "build-cpu/bin/whisper-cli": "3fbac30a8b4edafe663d13a1b6d1c5a16c51e5d96a8c7e19efffeda47a9196ef",
+    "build-hybrid/bin/whisper-cli": "37b916dff9f8f920d1ead5d9db48dbb28e31a23d0fb3d8a4816a101f0360be07",
+    "model-base-q8_0.bin": "c577b9a86e7e048a0b7eada054f4dd79a56bbfa911fbdacf900ac5b567cbb7d9",
+    "model-base.bin": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
+    "model-base-q5_0.bin": "64a4aa8c82f4cdf066fa0d605400e7e5086f9b7992f2e5f638faaee1b3dae25c",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/3570-5694-0013.wav": "c855b7ae6a6872f603af6cc329fdcff9508504c0ad391b0e8b6b4e2bc32d0376",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/8455-210777-0062.wav": "4402761d15d4a7c16e73d8058ec16b119ca9f034fdde3cf5d8228d7be7cd43a6",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/237-134500-0034.wav": "df26ff6465d5cd77c703eb64bd27741bfea5319b38329019833f437422c2af7c",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/121-123852-0003.wav": "eb6a9bb87263434427d2e625917f8c73285f180228005b1212ecfbc8be8182ca",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/5142-33396-0033.wav": "7fedb93dc273f4396decbb4759d7f074e4b346046e860197c2463fe1247883c3",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/7176-92135-0045.wav": "de26eaa6d5b6b21b7446196d0cd062076980db51f375bdb99f418055f1167df9",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/1221-135766-0011.wav": "58702a399e289edbf0fc6a1cfbfc8ea153bfb2c051851c52ae24ed633321f4ca",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/8230-279154-0004.wav": "33b0361ee1ca32e45aac59eba9d54c831e12dc184ed41276321d130516c8b8cf",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/4992-41806-0013.wav": "7b84c8a6e9379020c708aa34de0918877059a189f624ccb18d3a22baaed694f5",
+    "/home/ubuntu/whisper-kv260/validation-ten/audio/260-123286-0019.wav": "70590f6f2978b8717061772c7dc8bf35a48cfd9d1b8fc03d12d87ea3a7755aeb"
+  },
+  "dynamic_libraries": {
+    "cpu": {
+      "/home/ubuntu/whisper-kv260/build-cpu/src/libwhisper.so.1": "6c94fe6011183ccc7ac4129a60ee411a4f15c5418f6de562ef97bbbe0baba5af",
+      "/home/ubuntu/whisper-kv260/build-cpu/ggml/src/libggml.so.0": "f569646c1e72fbb081ef0480edb52b42399520f552a7a25cbc687b355c6d7e61",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-kv260/build-cpu/ggml/src/libggml-base.so.0": "b748075a8a367e31f28c4ee2a31cc906c0e7fbb6154e69724f89a1a7f9ca2305",
+      "/home/ubuntu/whisper-kv260/build-cpu/ggml/src/libggml-cpu.so.0": "fb20ca6ac2fc68ee703c3afd1d24c3d3b7a215b7273a425b2517a1f5934e2d8a"
+    },
+    "hybrid": {
+      "/home/ubuntu/whisper-kv260/build-hybrid/src/libwhisper.so.1": "cacfaab6b9d3a7128ecd60bb90cb896bc1d51327f10a3ca160bce6f738c0f868",
+      "/home/ubuntu/whisper-kv260/build-hybrid/ggml/src/libggml.so.0": "2c34249ac06f02eed30bb2ee02a1615b2192a80dc1389d65a418809b0b0a8cfb",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-kv260/build-hybrid/ggml/src/libggml-base.so.0": "03e73a0bfae6e58ee0adf56512c909eeddd4dbad35a0fe397691f80c54ce3238",
+      "/home/ubuntu/whisper-kv260/build-hybrid/ggml/src/libggml-cpu.so.0": "550c09e0c135c0cead4afbb8456873b5c8179cf32333001ed4fe13f206fe16a9"
+    }
+  },
+  "clips": [
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/3570-5694-0013.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 20.849153759000274,
+            "text": "This differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility.",
+            "log": "validation_results/0_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 17.113705609000135,
+            "text": "This differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility.",
+            "log": "validation_results/0_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 18.41221352599996,
+            "text": "This differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility.",
+            "log": "validation_results/0_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 7.115940684000009,
+            "text": "This differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility.",
+            "log": "validation_results/0_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 20.849153759000274,
+          "p95_seconds": 20.849153759000274,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 17.113705609000135,
+          "p95_seconds": 17.113705609000135,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 18.41221352599996,
+          "p95_seconds": 18.41221352599996,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 7.115940684000009,
+          "p95_seconds": 7.115940684000009,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.4049814871953354,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/8455-210777-0062.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 20.508752369000376,
+            "text": "When do you intend that the John Bright shall start?",
+            "log": "validation_results/1_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 18.4346084230001,
+            "text": "When do you intend that the John Bright shall start?",
+            "log": "validation_results/1_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 18.140442199000063,
+            "text": "When do you intend that the job right shall start?",
+            "log": "validation_results/1_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 6.787582175000011,
+            "text": "When do you intend that the John Bright shall start?",
+            "log": "validation_results/1_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 20.508752369000376,
+          "p95_seconds": 20.508752369000376,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 18.4346084230001,
+          "p95_seconds": 18.4346084230001,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 18.140442199000063,
+          "p95_seconds": 18.140442199000063,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 6.787582175000011,
+          "p95_seconds": 6.787582175000011,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_2_no_flash",
+      "speedup": 2.6725926451122533,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/237-134500-0034.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 20.388793294000152,
+            "text": "Thank you. He returned shortly.",
+            "log": "validation_results/2_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 16.71794024599967,
+            "text": "Thank you. He returned shortly.",
+            "log": "validation_results/2_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 17.999925414000245,
+            "text": "Thank you, he returned shortly.",
+            "log": "validation_results/2_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 6.832317235999994,
+            "text": "Thank you. He returned shortly.",
+            "log": "validation_results/2_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 20.388793294000152,
+          "p95_seconds": 20.388793294000152,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 16.71794024599967,
+          "p95_seconds": 16.71794024599967,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 17.999925414000245,
+          "p95_seconds": 17.999925414000245,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 6.832317235999994,
+          "p95_seconds": 6.832317235999994,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.4468916867489092,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/121-123852-0003.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 23.638790928000162,
+            "text": "Thought kills me that I am not thought, To leap large lengths of miles when thou art gone, But that so much of earth and water wrought, I must attend, Times leisure with my moan, Receiving not by elements so slow, But heavy tears, Badges of either's woe.",
+            "log": "validation_results/3_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 18.62031436699999,
+            "text": "Thought kills me that I am not thought, to leap large lengths of miles when thou art gone, but that so much of earth and water wrought, I must attend, times leisure with my moan, Receiving not by elements so slow, but heavy tears, badges of either's woe.",
+            "log": "validation_results/3_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 19.980361352000273,
+            "text": "Thought kills me that I am not thought, To leap large lengths of miles when thou art gone, But that so much of earth and water wrought, I must attend, Times leisure with my moan, Receiving not by elements so slow, But heavy tears, badges of either's woe,",
+            "log": "validation_results/3_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 8.593303278000008,
+            "text": "Thought kills me that I am not thought, To leap large lengths of miles when thou art gone, But that so much of earth and water wrought, I must attend, Times leisure with my moan, Receiving not by elements so slow, But heavy tears, Badges of either's woe.",
+            "log": "validation_results/3_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 23.638790928000162,
+          "p95_seconds": 23.638790928000162,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 18.62031436699999,
+          "p95_seconds": 18.62031436699999,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 19.980361352000273,
+          "p95_seconds": 19.980361352000273,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 8.593303278000008,
+          "p95_seconds": 8.593303278000008,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.166840127087154,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/5142-33396-0033.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 21.04647275299976,
+            "text": "You would not eat with us. You cannot say no to half of my ale. I drink this to your health.",
+            "log": "validation_results/4_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 17.442581192000034,
+            "text": "You would not eat with us. You cannot say no to half of my ale. I drink this to your health.",
+            "log": "validation_results/4_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 18.5756733799999,
+            "text": "You would not eat with us, you cannot say no to half of my ale, I drink this to your health!",
+            "log": "validation_results/4_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 8.791783871000007,
+            "text": "You would not eat with us. You cannot say no to half of my ale. I drink this to your health.",
+            "log": "validation_results/4_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 21.04647275299976,
+          "p95_seconds": 21.04647275299976,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 17.442581192000034,
+          "p95_seconds": 17.442581192000034,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 18.5756733799999,
+          "p95_seconds": 18.5756733799999,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 8.791783871000007,
+          "p95_seconds": 8.791783871000007,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 1.9839638289488635,
+      "text_parity": true,
+      "timing_2x": false
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/7176-92135-0045.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 20.84025407700028,
+            "text": "Laura John, taking out gold cigarette case from his left-hand Upper Waste Coast Pocket.",
+            "log": "validation_results/5_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 17.124649922000117,
+            "text": "Laura John, taking out gold cigarette case from his left-hand Upper Waste Coast Pocket.",
+            "log": "validation_results/5_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 18.44100082499972,
+            "text": "Laura John, taking out Gold's cigarette case from his left-hand Upper Waste Coast Pocket.",
+            "log": "validation_results/5_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 7.108353460999979,
+            "text": "Laura John, taking out gold cigarette case from his left-hand Upper Waste Coast Pocket.",
+            "log": "validation_results/5_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 20.84025407700028,
+          "p95_seconds": 20.84025407700028,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 17.124649922000117,
+          "p95_seconds": 17.124649922000117,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 18.44100082499972,
+          "p95_seconds": 18.44100082499972,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 7.108353460999979,
+          "p95_seconds": 7.108353460999979,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.4090881265196793,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/1221-135766-0011.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 22.849407961999987,
+            "text": "Beholding it, Hester was constrained to rush towards the child, to pursue the little elf in the flight which she invariably began, to snatch her to her bosom with a close pressure and earnest kisses, not so much from overflowing love as to assure herself that Pearl was flesh and blood and not utterly delusive.",
+            "log": "validation_results/6_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 18.793624785999782,
+            "text": "Beholding it, Hester was constrained to rush towards the child, to pursue the little elf in the flight which she invariably began, to snatch her to her bosom with a close pressure and earnest kisses, not so much from overflowing love as to assure herself that Pearl was flesh and blood and not utterly delusive.",
+            "log": "validation_results/6_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 20.242294221000066,
+            "text": "Beholding it, Hester was constrained to rush towards the child, to pursue the little elf in the flight which she invariably began, to snatch her to her bosom with a close pressure and earnest kisses, not so much from overflowing love, as to assure herself that Pearl was flesh and blood, and not utterly delusive.",
+            "log": "validation_results/6_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 8.729663290000019,
+            "text": "Beholding it, Hester was constrained to rush towards the child, to pursue the little elf in the flight which she invariably began, to snatch her to her bosom with a close pressure and earnest kisses, not so much from overflowing love as to assure herself that Pearl was flesh and blood and not utterly delusive.",
+            "log": "validation_results/6_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 22.849407961999987,
+          "p95_seconds": 22.849407961999987,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 18.793624785999782,
+          "p95_seconds": 18.793624785999782,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 20.242294221000066,
+          "p95_seconds": 20.242294221000066,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 8.729663290000019,
+          "p95_seconds": 8.729663290000019,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.1528464686064357,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/8230-279154-0004.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 21.542722937000235,
+            "text": "There is no logical impossibility in the hypothesis that the world spring into being five minutes ago, exactly as it then was, with the population that remembered a wholly unreal past.",
+            "log": "validation_results/7_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 17.709119095000005,
+            "text": "There is no logical impossibility in the hypothesis that the world spring into being five minutes ago, exactly as it then was, with the population that remembered a wholly unreal past.",
+            "log": "validation_results/7_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 19.0630740229999,
+            "text": "There is no logical impossibility in the hypothesis that the world sprang into being 5 minutes ago, exactly as it then was, with the population that remembered a wholly unreal past.",
+            "log": "validation_results/7_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 7.666316733999963,
+            "text": "There is no logical impossibility in the hypothesis that the world spring into being five minutes ago, exactly as it then was, with the population that remembered a wholly unreal past.",
+            "log": "validation_results/7_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 21.542722937000235,
+          "p95_seconds": 21.542722937000235,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 17.709119095000005,
+          "p95_seconds": 17.709119095000005,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 19.0630740229999,
+          "p95_seconds": 19.0630740229999,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 7.666316733999963,
+          "p95_seconds": 7.666316733999963,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.309990535149743,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/4992-41806-0013.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 20.856429847000072,
+            "text": "Approaching the dining table, he carefully plays the article in the center and remove the cloth.",
+            "log": "validation_results/8_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 18.040621942000143,
+            "text": "Approaching the dining table, he carefully plays the article in the center and remove the cloth.",
+            "log": "validation_results/8_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 18.457609275999857,
+            "text": "Approaching the dining table, he carefully plays the article in the center and remove the cloth.",
+            "log": "validation_results/8_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 7.674405976000003,
+            "text": "Approaching the dining table, he carefully plays the article in the center and remove the cloth.",
+            "log": "validation_results/8_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 20.856429847000072,
+          "p95_seconds": 20.856429847000072,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 18.040621942000143,
+          "p95_seconds": 18.040621942000143,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 18.457609275999857,
+          "p95_seconds": 18.457609275999857,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 7.674405976000003,
+          "p95_seconds": 7.674405976000003,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.3507515758767745,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-kv260/validation-ten/audio/260-123286-0019.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 21.572379010000077,
+            "text": "I suppose Professor Leidenbrock was of my opinion too and even shared my fears. For after having examined the pick, his eyes traversed the ocean from side to side.",
+            "log": "validation_results/9_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_1_no_flash": [
+          {
+            "seconds": 17.706902038999942,
+            "text": "I suppose Professor Leidenbrock was of my opinion too and even shared my fears. For after having examined the pick, his eyes traversed the ocean from side to side.",
+            "log": "validation_results/9_0_cpu_1_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "cpu_2_no_flash": [
+          {
+            "seconds": 19.07231881000007,
+            "text": "I suppose Professor Leedon Brock was of my opinion too, and even shared my fears. For after having examined the pick, his eyes traversed the ocean from side to side.",
+            "log": "validation_results/9_0_cpu_2_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null,
+            "reference_reused": true
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 7.636290556999995,
+            "text": "I suppose Professor Leidenbrock was of my opinion too and even shared my fears. For after having examined the pick, his eyes traversed the ocean from side to side.",
+            "log": "validation_results/9_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 60,
+              "ioctls": 564,
+              "weight_loads": 252,
+              "time_tiles": 23688
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 21.572379010000077,
+          "p95_seconds": 21.572379010000077,
+          "runs": 1
+        },
+        "cpu_1_no_flash": {
+          "p50_seconds": 17.706902038999942,
+          "p95_seconds": 17.706902038999942,
+          "runs": 1
+        },
+        "cpu_2_no_flash": {
+          "p50_seconds": 19.07231881000007,
+          "p95_seconds": 19.07231881000007,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 7.636290556999995,
+          "p95_seconds": 7.636290556999995,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_1_no_flash",
+      "speedup": 2.318783171859336,
+      "text_parity": true,
+      "timing_2x": true
+    }
+  ],
+  "qualified_2x": false,
+  "manifest": {
+    "path": "validation-ten/evaluation.jsonl",
+    "sha256": "229a72565d857642af9673e5f437730a65fbf155e2d5e53e61fa1b39efd56306"
+  },
+  "all_clips_timing_2x": false,
+  "accuracy_status": "Corpus WER not measured; prototype remains unqualified",
+  "cpu_reference_reuse": {
+    "source_report_sha256": "cea40b1d1e139156f2d555ea2cac04b11d05d97637cb0eb49c92f1668826987f",
+    "cpu_dynamic_libraries": {
+      "/home/ubuntu/whisper-kv260/build-cpu/src/libwhisper.so.1": "6c94fe6011183ccc7ac4129a60ee411a4f15c5418f6de562ef97bbbe0baba5af",
+      "/home/ubuntu/whisper-kv260/build-cpu/ggml/src/libggml.so.0": "f569646c1e72fbb081ef0480edb52b42399520f552a7a25cbc687b355c6d7e61",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-kv260/build-cpu/ggml/src/libggml-base.so.0": "b748075a8a367e31f28c4ee2a31cc906c0e7fbb6154e69724f89a1a7f9ca2305",
+      "/home/ubuntu/whisper-kv260/build-cpu/ggml/src/libggml-cpu.so.0": "fb20ca6ac2fc68ee703c3afd1d24c3d3b7a215b7273a425b2517a1f5934e2d8a"
+    },
+    "reason": "Only the hybrid changed; CPU executable, libraries, model and WAV bytes are unchanged"
+  }
+}

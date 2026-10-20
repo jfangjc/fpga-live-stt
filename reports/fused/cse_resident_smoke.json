@@ -1,0 +1,221 @@
+{
+  "complete": true,
+  "scope": "Resident API smoke test; not speed acceptance",
+  "caller_affinity_restored": true,
+  "caller_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "benchmark_sha256": "e6d04666a4a882e99faa58899c2cd057ca4301f326e587419ca14a9fc2dd78bf",
+  "resident_source_sha256": "5563dcf6625ce903161373343fd3099d7025f2401e59a4469f7c216b2d580899",
+  "smoke_source_sha256": "f7b2160ba9a052e4d27439ee83d4547c27f87ab365a20cbcd529184e9673f58d",
+  "results": {
+    "cpu": {
+      "initialization_seconds": 5.594449580006767,
+      "calls": [
+        {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "backend": "cpu",
+          "seconds": 0.4726771319983527,
+          "frontend_seconds": 0.03933644600328989,
+          "model_seconds": 0.432950812013587,
+          "decode_seconds": 0.0003898739814758301,
+          "audio_seconds": 10.0,
+          "encoded_length": 126,
+          "fpga_counters": null,
+          "worker_policy": {
+            "threads": 4,
+            "spin_duration_us": 1000,
+            "main_core": 3,
+            "worker_cores": [
+              0,
+              1,
+              2
+            ],
+            "feature_padding_policy": "original",
+            "dma_irq_core": null
+          },
+          "prefix_text_is_provisional": true
+        },
+        {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "backend": "cpu",
+          "seconds": 0.46245868000551127,
+          "frontend_seconds": 0.039534748008009046,
+          "model_seconds": 0.422504427988315,
+          "decode_seconds": 0.0004195040091872215,
+          "audio_seconds": 10.0,
+          "encoded_length": 126,
+          "fpga_counters": null,
+          "worker_policy": {
+            "threads": 4,
+            "spin_duration_us": 1000,
+            "main_core": 3,
+            "worker_cores": [
+              0,
+              1,
+              2
+            ],
+            "feature_padding_policy": "original",
+            "dma_irq_core": null
+          },
+          "prefix_text_is_provisional": true
+        },
+        {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "backend": "cpu",
+          "seconds": 0.4608772360079456,
+          "frontend_seconds": 0.03901558299548924,
+          "model_seconds": 0.42144290800206363,
+          "decode_seconds": 0.00041874501039274037,
+          "audio_seconds": 10.0,
+          "encoded_length": 126,
+          "fpga_counters": null,
+          "worker_policy": {
+            "threads": 4,
+            "spin_duration_us": 1000,
+            "main_core": 3,
+            "worker_cores": [
+              0,
+              1,
+              2
+            ],
+            "feature_padding_policy": "original",
+            "dma_irq_core": null
+          },
+          "prefix_text_is_provisional": true
+        }
+      ]
+    },
+    "fpga": {
+      "initialization_seconds": 5.481296584010124,
+      "calls": [
+        {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "backend": "fpga",
+          "seconds": 0.4815378880011849,
+          "frontend_seconds": 0.05461894499603659,
+          "model_seconds": 0.42653128900565207,
+          "decode_seconds": 0.00038765399949625134,
+          "audio_seconds": 10.0,
+          "encoded_length": 126,
+          "fpga_counters": {
+            "ioctls": 12,
+            "loads": 6,
+            "runs": 316,
+            "tx_bytes": 1712320,
+            "rx_bytes": 1294624,
+            "ioctl_seconds": 0.014233803027309477,
+            "physical_calls": 6,
+            "oracle_calls": 0,
+            "load_pack_seconds": 0.0006073559925425798,
+            "scan_seconds": 0.0,
+            "run_pack_seconds": 0.0003242530219722539,
+            "unpack_seconds": 0.001695526036201045,
+            "mac_issue_cycles": 647168,
+            "input_stall_cycles": 128,
+            "output_stall_cycles": 0,
+            "active_cycles": 831846
+          },
+          "worker_policy": {
+            "threads": 4,
+            "spin_duration_us": 1000,
+            "main_core": 3,
+            "worker_cores": [
+              0,
+              1,
+              2
+            ],
+            "feature_padding_policy": "original",
+            "dma_irq_core": null
+          },
+          "prefix_text_is_provisional": true
+        },
+        {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "backend": "fpga",
+          "seconds": 0.4696059830021113,
+          "frontend_seconds": 0.04519808499026112,
+          "model_seconds": 0.4240219540079124,
+          "decode_seconds": 0.00038594400393776596,
+          "audio_seconds": 10.0,
+          "encoded_length": 126,
+          "fpga_counters": {
+            "ioctls": 12,
+            "loads": 6,
+            "runs": 316,
+            "tx_bytes": 1712320,
+            "rx_bytes": 1294624,
+            "ioctl_seconds": 0.020082512928638607,
+            "physical_calls": 6,
+            "oracle_calls": 0,
+            "load_pack_seconds": 0.0006127360102254897,
+            "scan_seconds": 0.0,
+            "run_pack_seconds": 0.000332064984831959,
+            "unpack_seconds": 0.0016454390715807676,
+            "mac_issue_cycles": 647168,
+            "input_stall_cycles": 97,
+            "output_stall_cycles": 0,
+            "active_cycles": 831815
+          },
+          "worker_policy": {
+            "threads": 4,
+            "spin_duration_us": 1000,
+            "main_core": 3,
+            "worker_cores": [
+              0,
+              1,
+              2
+            ],
+            "feature_padding_policy": "original",
+            "dma_irq_core": null
+          },
+          "prefix_text_is_provisional": true
+        },
+        {
+          "text": "tuner are number made up so is the apiay price on the right all of these numbers are fake and neither of them represent the actual costs to",
+          "backend": "fpga",
+          "seconds": 0.4832857639994472,
+          "frontend_seconds": 0.043409025005530566,
+          "model_seconds": 0.4394866749935318,
+          "decode_seconds": 0.0003900640003848821,
+          "audio_seconds": 10.0,
+          "encoded_length": 126,
+          "fpga_counters": {
+            "ioctls": 12,
+            "loads": 6,
+            "runs": 316,
+            "tx_bytes": 1712320,
+            "rx_bytes": 1294624,
+            "ioctl_seconds": 0.018908993049990386,
+            "physical_calls": 6,
+            "oracle_calls": 0,
+            "load_pack_seconds": 0.0006113060226198286,
+            "scan_seconds": 0.0,
+            "run_pack_seconds": 0.00033166399225592613,
+            "unpack_seconds": 0.00165715700131841,
+            "mac_issue_cycles": 647168,
+            "input_stall_cycles": 87,
+            "output_stall_cycles": 0,
+            "active_cycles": 831805
+          },
+          "worker_policy": {
+            "threads": 4,
+            "spin_duration_us": 1000,
+            "main_core": 3,
+            "worker_cores": [
+              0,
+              1,
+              2
+            ],
+            "feature_padding_policy": "original",
+            "dma_irq_core": null
+          },
+          "prefix_text_is_provisional": true
+        }
+      ]
+    }
+  }
+}

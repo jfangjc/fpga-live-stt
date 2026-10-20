@@ -1,0 +1,1408 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "all_bit_exact": true,
+  "micro_cases": [
+    {
+      "channels": 1,
+      "times": 1,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 1,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 1,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 1,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 7,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 7,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 7,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 7,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 13,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 13,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 13,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 13,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 16,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 16,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 16,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 16,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 17,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 17,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 17,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 17,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 32,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 32,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 32,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 32,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 51,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 51,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 51,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 51,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 65,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 65,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 65,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 65,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 101,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 101,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 101,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 101,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 256,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 256,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 256,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 1,
+      "times": 256,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 1,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 1,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 1,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 1,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 7,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 7,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 7,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 7,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 13,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 13,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 13,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 13,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 16,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 16,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 16,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 16,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 17,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 17,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 17,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 17,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 32,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 32,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 32,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 32,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 51,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 51,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 51,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 51,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 65,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 65,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 65,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 65,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 101,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 101,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 101,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 101,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 256,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 256,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 256,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 32,
+      "times": 256,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 1,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 1,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 1,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 1,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 7,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 7,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 7,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 7,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 13,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 13,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 13,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 13,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 16,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 16,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 16,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 16,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 17,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 17,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 17,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 17,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 32,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 32,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 32,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 32,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 51,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 51,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 51,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 51,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 65,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 65,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 65,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 65,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 101,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 101,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 101,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 101,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 256,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 256,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 256,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 256,
+      "times": 256,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 1,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 1,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 1,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 1,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 7,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 7,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 7,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 7,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 13,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 13,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 13,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 13,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 16,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 16,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 16,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 16,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 17,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 17,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 17,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 17,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 32,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 32,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 32,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 32,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 51,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 51,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 51,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 51,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 65,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 65,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 65,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 65,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 101,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 101,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 101,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 101,
+      "mask": "random",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 256,
+      "mask": "full",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 256,
+      "mask": "half",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 256,
+      "mask": "empty",
+      "all_float_bits_exact": true
+    },
+    {
+      "channels": 640,
+      "times": 256,
+      "mask": "random",
+      "all_float_bits_exact": true
+    }
+  ],
+  "full_model_cases": [
+    {
+      "id": "user-speech-original",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-speech-original",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-speech-original",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-speech-original",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0000",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0001",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0002",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0003",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "6930-75918-0004",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-quiet-minus20db",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr20",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 0.25,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 0.5,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 1,
+      "all_outputs_bit_exact": true
+    },
+    {
+      "id": "user-ac-noise-snr10",
+      "seconds": 2,
+      "all_outputs_bit_exact": true
+    }
+  ],
+  "regions": [
+    {
+      "name": "/encoder/encoder.1/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.1/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.1/mconv.23/Where_output_0",
+        "/encoder/encoder.1/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.2/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.2/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.2/mconv.23/Where_output_0",
+        "/encoder/encoder.2/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.3/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.3/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.3/mconv.23/Where_output_0",
+        "/encoder/encoder.3/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.4/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.4/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.4/mconv.23/Where_output_0",
+        "/encoder/encoder.4/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.5/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.5/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.5/mconv.23/Where_output_0",
+        "/encoder/encoder.5/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.6/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.6/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.1/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.6/mconv.23/Where_output_0",
+        "/encoder/encoder.6/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.7/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.7/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.7/mconv.23/Where_output_0",
+        "/encoder/encoder.7/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.8/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.8/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.8/mconv.23/Where_output_0",
+        "/encoder/encoder.8/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.9/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.9/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.9/mconv.23/Where_output_0",
+        "/encoder/encoder.9/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.10/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.10/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.10/mconv.23/Where_output_0",
+        "/encoder/encoder.10/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.11/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.11/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.11/mconv.23/Where_output_0",
+        "/encoder/encoder.11/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.12/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.12/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.12/mconv.23/Where_output_0",
+        "/encoder/encoder.12/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.13/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.13/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.7/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.13/mconv.23/Where_output_0",
+        "/encoder/encoder.13/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.14/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.14/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.14/mconv.23/Where_output_0",
+        "/encoder/encoder.14/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.15/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.15/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.15/mconv.23/Where_output_0",
+        "/encoder/encoder.15/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.16/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.16/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.16/mconv.23/Where_output_0",
+        "/encoder/encoder.16/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.17/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.17/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.17/mconv.23/Where_output_0",
+        "/encoder/encoder.17/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.18/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.18/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.18/mconv.23/Where_output_0",
+        "/encoder/encoder.18/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.19/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.19/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.19/mconv.23/Where_output_0",
+        "/encoder/encoder.19/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.20/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.20/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.20/mconv.23/Where_output_0",
+        "/encoder/encoder.20/mconv.23/Div_output_0"
+      ]
+    },
+    {
+      "name": "/encoder/encoder.21/mconv.23/Div",
+      "inputs": [
+        "/encoder/encoder.21/mconv.21/conv/Conv_output_0",
+        "/encoder/encoder.14/mconv.23/Cast_1_output_0",
+        "onnx::ReduceSum_978"
+      ],
+      "outputs": [
+        "/encoder/encoder.21/mconv.23/Where_output_0",
+        "/encoder/encoder.21/mconv.23/Div_output_0"
+      ]
+    }
+  ],
+  "library_sha256": "54c6b5206f70d501fe7078f89e4acbf10b53ff3e26798f3a078d41d85f98fa38",
+  "implementation_sha256": "fab3ca26d45dde6d801e053121a6fec5936252a46ace2575c1e79080e0d287a5",
+  "transform_sha256": "1f02945060ed5bf6dc03598394d5e74fd0bcb95d6658e358094531932c104073",
+  "source_sha256": "2532892da5ae4e89b0fc1ce5d8688da7c4b1730744f2b76b036b8b71202bf3d5",
+  "cpu_model_sha256": "ba83fe80a8d73c3900218e725823cc8cbbac35d22fb2758f6ab6816dc22fed72"
+}

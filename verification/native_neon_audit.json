@@ -1,0 +1,32 @@
+{
+  "status": "independent_review_passed",
+  "source_manifest_hashes_match": true,
+  "arm64_library_hash_matches": true,
+  "original_stats_abi_bytes": 48,
+  "phase_profile_abi_bytes": 32,
+  "executed_tests": {
+    "cortex_a53_qemu_neon": "passed",
+    "cortex_a53_qemu_forced_scalar": "passed"
+  },
+  "code_review": {
+    "load_vector_bounds": "8 channels x8 K only inside dimensions; tail group padding cleared",
+    "run_vector_bounds": "16 time lanes only on complete tiles; explicit partial-lane zero padding",
+    "output_vector_bounds": "4 channels x4 times, no output-group boundary crossing; scalar tails",
+    "quantization": "IEEE vector FDIV then clamp and explicit nearest-even FRINTN; strict compile flags prevent reciprocal/FMA changes",
+    "error_handling": "No replay; cache invalidated on transport or response identity/status failure",
+    "abi": "QNC2 ioctl requests remain 32 bytes; original 48-byte Stats getter unchanged; optional 32-byte phase getter"
+  },
+  "correctness_blockers": [],
+  "physical_board_new_binary_tested": false,
+  "validation_reuse": "Previous physical graph proof invalidated by changed qnc.c/qnc.h/qnc.py/native binary; original CPU NeMo validation may remain valid if its own provenance unchanged",
+  "library_sha256": "d7b0e17468a74aef7074141ebef77150944f719574531f66960f24c71c1e1d34",
+  "test_binary_sha256": {
+    "test_qnc_neon": "33d83facfaad39794828c3c612eeee0eeaa4bced065a0c60935a90c58a75c8fc",
+    "test_qnc_scalar": "5974fa8a1a8d9693d40659997edaf1fbf215ce5ab6a036245c9dd6c6e3dbddb9"
+  },
+  "limitations": [
+    "QEMU instruction correctness does not measure ARM board performance or physical DMA",
+    "Host sanitizer results were reported by implementer; independently rerun instruction tests and checked hashes only",
+    "No new whole-graph parity/WER/speedup/capture result obtained for optimized binary"
+  ]
+}

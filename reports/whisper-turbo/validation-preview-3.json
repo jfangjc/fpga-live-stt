@@ -1,0 +1,207 @@
+{
+  "scope": "End-to-end process time including model load, WAV, frontend, encoder, decoder, text and DMA",
+  "model": "openai/whisper-large-v3-turbo",
+  "language": "en",
+  "decoding": "greedy beam=1 best_of=1 temperature=0 no fallback; attention mode recorded per run",
+  "threads": 4,
+  "warmup": 0,
+  "repeats": 1,
+  "fpga_decoder_dense": false,
+  "fpga_attention": true,
+  "cpu_attention_mode": "unfused",
+  "artifacts": {
+    "build-cpu/bin/whisper-cli": "1782885b4b4676194c4e705c985567104572cf1d632ab48f3426737757fdcbde",
+    "build-hybrid/bin/whisper-cli": "8dfefb09f7e81fde24494b84720938a344065df7d1f50c8d880e5556c02d7000",
+    "models/ggml-large-v3-turbo-q8_0.bin": "317eb69c11673c9de1e1f0d459b253999804ec71ac4c23c17ecf5fbe24e259a1",
+    "models/ggml-large-v3-turbo.bin": "1fc70f774d38eb169993ac391eea357ef47c88757ef72ee5943879b7e8e2bc69",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/3570-5694-0013.wav": "c855b7ae6a6872f603af6cc329fdcff9508504c0ad391b0e8b6b4e2bc32d0376",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/8455-210777-0062.wav": "4402761d15d4a7c16e73d8058ec16b119ca9f034fdde3cf5d8228d7be7cd43a6",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/237-134500-0034.wav": "df26ff6465d5cd77c703eb64bd27741bfea5319b38329019833f437422c2af7c",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/121-123852-0003.wav": "eb6a9bb87263434427d2e625917f8c73285f180228005b1212ecfbc8be8182ca",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/5142-33396-0033.wav": "7fedb93dc273f4396decbb4759d7f074e4b346046e860197c2463fe1247883c3",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/7176-92135-0045.wav": "de26eaa6d5b6b21b7446196d0cd062076980db51f375bdb99f418055f1167df9",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/1221-135766-0011.wav": "58702a399e289edbf0fc6a1cfbfc8ea153bfb2c051851c52ae24ed633321f4ca",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/8230-279154-0004.wav": "33b0361ee1ca32e45aac59eba9d54c831e12dc184ed41276321d130516c8b8cf",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/4992-41806-0013.wav": "7b84c8a6e9379020c708aa34de0918877059a189f624ccb18d3a22baaed694f5",
+    "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/260-123286-0019.wav": "70590f6f2978b8717061772c7dc8bf35a48cfd9d1b8fc03d12d87ea3a7755aeb"
+  },
+  "dynamic_libraries": {
+    "cpu": {
+      "/home/ubuntu/whisper-turbo-kv260/build-cpu/src/libwhisper.so.1": "8a693bfac1c665a7b5e558f1a4a0cb17550609fda611bf860d52642467589a18",
+      "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml.so.0": "8a7d82b49a61da18a5c0663d8730d830e877b21a6c693e884507f86d96407bf1",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-base.so.0": "5580ade62cba589a9048dd693081311e4cacab79c54beec7b3f8fb561a61fe55",
+      "/home/ubuntu/whisper-turbo-kv260/build-cpu/ggml/src/libggml-cpu.so.0": "3944342d07b9784c13621c85d46b745320250fcdadb90474be66371aea47d970"
+    },
+    "hybrid": {
+      "/home/ubuntu/whisper-turbo-kv260/build-hybrid/src/libwhisper.so.1": "380c6c6bc441e538511f33cec0cbcfc6305368039ceab6af5f69860ace18c3b2",
+      "/home/ubuntu/whisper-turbo-kv260/build-hybrid/ggml/src/libggml.so.0": "d1de42b36d9ee99d4e2fc0dba1de9926b34d935246b7480ab5d1ea279f9e7f40",
+      "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "/home/ubuntu/whisper-turbo-kv260/build-hybrid/ggml/src/libggml-base.so.0": "2f94187a98eb5dce089a98e2bc6c85e0bdedb34bd1996f608040eb24b20d88ca",
+      "/home/ubuntu/whisper-turbo-kv260/build-hybrid/ggml/src/libggml-cpu.so.0": "fb720cb29a5002c6548338881a12e074d070b352722123360c2b45e6dc604cdd"
+    }
+  },
+  "clips": [
+    {
+      "audio": "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/3570-5694-0013.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 446.7733848079997,
+            "text": "this differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility",
+            "log": "validation_results/0_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 91.55028117100028,
+            "text": "this differentiation is furthered by the inheritance of wealth and the consequent inheritance of gentility",
+            "log": "validation_results/0_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 264,
+              "ioctls": 8880,
+              "weight_loads": 3744,
+              "time_tiles": 351936
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 446.7733848079997,
+          "p95_seconds": 446.7733848079997,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 91.55028117100028,
+          "p95_seconds": 91.55028117100028,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_0_no_flash",
+      "speedup": 4.88008752232561,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/8455-210777-0062.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 465.9041845319998,
+            "text": "When do you intend that the John Bright shall start?",
+            "log": "validation_results/1_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 117.51812063100078,
+            "text": "When do you intend that the John Bright shall start?",
+            "log": "validation_results/1_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 264,
+              "ioctls": 8880,
+              "weight_loads": 3744,
+              "time_tiles": 351936
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 465.9041845319998,
+          "p95_seconds": 465.9041845319998,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 117.51812063100078,
+          "p95_seconds": 117.51812063100078,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_0_no_flash",
+      "speedup": 3.964530593498074,
+      "text_parity": true,
+      "timing_2x": true
+    },
+    {
+      "audio": "/home/ubuntu/whisper-turbo-kv260/validation-ten/audio/237-134500-0034.wav",
+      "rows": {
+        "cpu_0_no_flash": [
+          {
+            "seconds": 457.4021732359997,
+            "text": "\"'Thank you,' he returned shortly.",
+            "log": "validation_results/2_0_cpu_0_no_flash.log",
+            "physical": false,
+            "fpga_decoder": false,
+            "fpga_attention": false,
+            "flash_attention": false,
+            "physical_counters": null
+          }
+        ],
+        "hybrid": [
+          {
+            "seconds": 117.79393019000054,
+            "text": "\"'Thank you,' he returned shortly.",
+            "log": "validation_results/2_0_hybrid.log",
+            "physical": true,
+            "fpga_decoder": false,
+            "fpga_attention": true,
+            "flash_attention": false,
+            "physical_counters": {
+              "matrix_operations": 264,
+              "ioctls": 8880,
+              "weight_loads": 3744,
+              "time_tiles": 351936
+            }
+          }
+        ]
+      },
+      "summary": {
+        "cpu_0_no_flash": {
+          "p50_seconds": 457.4021732359997,
+          "p95_seconds": 457.4021732359997,
+          "runs": 1
+        },
+        "hybrid": {
+          "p50_seconds": 117.79393019000054,
+          "p95_seconds": 117.79393019000054,
+          "runs": 1
+        }
+      },
+      "best_cpu": "cpu_0_no_flash",
+      "speedup": 3.8830708212062723,
+      "text_parity": true,
+      "timing_2x": true
+    }
+  ],
+  "qualified_2x": false,
+  "manifest": {
+    "path": "validation-ten/evaluation.jsonl",
+    "sha256": "229a72565d857642af9673e5f437730a65fbf155e2d5e53e61fa1b39efd56306"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "purpose": "correlated stress regression only",
+  "independent_utterances": 1,
+  "representative_corpus": false,
+  "source": "research\\eval\\user-recording\\speech.wav",
+  "transforms": [
+    {
+      "gain_db": -20
+    },
+    {
+      "noise": "seeded Gaussian",
+      "snr_db": 20,
+      "seed": 29102026
+    },
+    {
+      "noise": "seeded Gaussian",
+      "snr_db": 10,
+      "seed": 29102026
+    }
+  ],
+  "snr_reference": "Total waveform power including DC; legacy diagnostic",
+  "source_mean": -0.0957670392036438,
+  "source_total_rms": 0.09979357234060755,
+  "source_ac_rms": 0.028061206008791285,
+  "equivalent_ac_snr_db": {
+    "20": 8.980075252768769,
+    "10": -1.0199247472312312
+  }
+}

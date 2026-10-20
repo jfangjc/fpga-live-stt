@@ -1,0 +1,25 @@
+{
+  "source": "https://www.openslr.org/12/",
+  "mirror": "https://huggingface.co/datasets/openslr/librispeech_asr",
+  "license": "CC-BY-4.0",
+  "split": "test-clean",
+  "dataset_revisions": [
+    "71cacbfb7e2354c4226d01e70d77d5fca3d04ba1"
+  ],
+  "seed": 260,
+  "count": 10,
+  "speakers": [
+    121,
+    237,
+    260,
+    1221,
+    3570,
+    4992,
+    5142,
+    7176,
+    8230,
+    8455
+  ],
+  "selection": "Seeded random row order; ten distinct speakers excluding prior engineering/calibration speakers; 3-28 s duration",
+  "limitations": "Small English read-speech engineering sample; production, multilingual and noisy accuracy unqualified"
+}

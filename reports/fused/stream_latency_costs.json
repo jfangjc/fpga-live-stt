@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "source_report_sha256": "06dd02e8e5fee4424235d7188c7f3a703f6b0adae9d64806ef20239de3d3551b",
+  "notes": "Components overlap: FPGA active is inside ioctl time; each value is its own median. CPU remainder includes dispatch. These are measured costs, not projected latency gains.",
+  "contexts": [
+    {
+      "context_seconds": 0.5,
+      "cpu_p50": 0.05648089450187399,
+      "fpga_p50": 0.05231812700003502,
+      "latency_reduction_percent": 7.370222335449828,
+      "components_ms": {
+        "frontend": 4.112072001589695,
+        "model": 48.04729349780246,
+        "decode": 0.1244570012204349,
+        "ioctl_including_transfer_compute_and_sync": 29.10532950772904,
+        "activation_packing": 0.21380601174314506,
+        "output_unpacking": 0.2303655055584386,
+        "fpga_active_including_weight_loading": 19.657790000000002,
+        "pointwise_mac_issue": 2.8672,
+        "input_stalls": 10.27059,
+        "output_stalls": 0.07704,
+        "cpu_and_dispatch_remainder": 18.510375975893112
+      },
+      "transferred_bytes": 8894720.0,
+      "additional_ms_needed_for_30_percent": 12.781500848723232
+    },
+    {
+      "context_seconds": 1,
+      "cpu_p50": 0.0963896190005471,
+      "fpga_p50": 0.0655796389983152,
+      "latency_reduction_percent": 31.96400226673478,
+      "components_ms": {
+        "frontend": 6.136750496807508,
+        "model": 59.28478050191188,
+        "decode": 0.1531825037091039,
+        "ioctl_including_transfer_compute_and_sync": 32.88506298849825,
+        "activation_packing": 0.2181599884352181,
+        "output_unpacking": 0.32153900974662974,
+        "fpga_active_including_weight_loading": 23.27324,
+        "pointwise_mac_issue": 4.956160000000001,
+        "input_stalls": 11.01852,
+        "output_stalls": 0.1332,
+        "cpu_and_dispatch_remainder": 25.649046496255323
+      },
+      "transferred_bytes": 9091328.0,
+      "additional_ms_needed_for_30_percent": 0
+    },
+    {
+      "context_seconds": 2.5,
+      "cpu_p50": 0.15003979350149166,
+      "fpga_p50": 0.09942332650098251,
+      "latency_reduction_percent": 33.7353616792374,
+      "components_ms": {
+        "frontend": 11.76685399695998,
+        "model": 87.44984449731419,
+        "decode": 0.18955899940920062,
+        "ioctl_including_transfer_compute_and_sync": 44.15873250036384,
+        "activation_packing": 0.25488097162451595,
+        "output_unpacking": 0.7069355015119072,
+        "fpga_active_including_weight_loading": 34.004149999999996,
+        "pointwise_mac_issue": 10.076160000000002,
+        "input_stalls": 14.72087,
+        "output_stalls": 0.27072,
+        "cpu_and_dispatch_remainder": 42.043403980642324
+      },
+      "transferred_bytes": 9574656.0,
+      "additional_ms_needed_for_30_percent": 0
+    }
+  ]
+}

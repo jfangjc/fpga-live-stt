@@ -1,0 +1,1430 @@
+{
+  "complete": true,
+  "hardware_execution": true,
+  "timing_acceptance": false,
+  "source_sha256": "0b1dcd98c28ac11cfdac61c8cea866588eef52f2a88af4a82b368b38ced00650",
+  "resident_source_sha256": "1d8ab65d264294f119f0720b59ecc49672037df4cd9be4884b4caa5a5dd1df89",
+  "accepted_resident_source_sha256": "5563dcf6625ce903161373343fd3099d7025f2401e59a4469f7c216b2d580899",
+  "irq_before": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "irq_after": {
+    "56": {
+      "requested": "0-3",
+      "effective": "0"
+    },
+    "57": {
+      "requested": "0-3",
+      "effective": "0"
+    }
+  },
+  "calls": [
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06893205002415925,
+        "frontend_seconds": 0.003909646009560674,
+        "model_seconds": 0.0648978819954209,
+        "decode_seconds": 0.00012452201917767525,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.060886455001309514,
+        "frontend_seconds": 0.003907745995093137,
+        "model_seconds": 0.05685243697371334,
+        "decode_seconds": 0.00012627203250303864,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.005700316978618503,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00029682385502383113,
+          "unpack_seconds": 0.0004216079832985997,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06707479897886515,
+        "frontend_seconds": 0.003961565962526947,
+        "model_seconds": 0.06298590003279969,
+        "decode_seconds": 0.00012733298353850842,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.0642890120507218,
+        "frontend_seconds": 0.004024897993076593,
+        "model_seconds": 0.060118662018794566,
+        "decode_seconds": 0.0001454520388506353,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.005692676990292966,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00033027498284354806,
+          "unpack_seconds": 0.00042208610102534294,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.07032276398967952,
+        "frontend_seconds": 0.0038903249660506845,
+        "model_seconds": 0.06629068602342159,
+        "decode_seconds": 0.00014175300020724535,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.060543148953001946,
+        "frontend_seconds": 0.003886024991516024,
+        "model_seconds": 0.05653194198384881,
+        "decode_seconds": 0.00012518197763711214,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.005734977952670306,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0002968029002659023,
+          "unpack_seconds": 0.0004331279778853059,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06899224198423326,
+        "frontend_seconds": 0.0039281860226765275,
+        "model_seconds": 0.0649392629857175,
+        "decode_seconds": 0.00012479297583922744,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.06101979699451476,
+        "frontend_seconds": 0.003959446970839053,
+        "model_seconds": 0.056934098014608026,
+        "decode_seconds": 0.0001262520090676844,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.005711564910598099,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00029743590857833624,
+          "unpack_seconds": 0.0004347100621089339,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.0664536589756608,
+        "frontend_seconds": 0.003937385976314545,
+        "model_seconds": 0.06239212100626901,
+        "decode_seconds": 0.00012415199307724833,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.06376541400095448,
+        "frontend_seconds": 0.003927876008674502,
+        "model_seconds": 0.05971103598130867,
+        "decode_seconds": 0.00012650201097130775,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.008458132215309888,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00031538389157503843,
+          "unpack_seconds": 0.00042278895853087306,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06781412096461281,
+        "frontend_seconds": 0.003938885987736285,
+        "model_seconds": 0.06374954298371449,
+        "decode_seconds": 0.00012569199316203594,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.06276839703787118,
+        "frontend_seconds": 0.0038916750345379114,
+        "model_seconds": 0.05875307001406327,
+        "decode_seconds": 0.00012365198927000165,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.005770488001871854,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00029862497467547655,
+          "unpack_seconds": 0.00042226817458868027,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.07201331300893798,
+        "frontend_seconds": 0.003913335967808962,
+        "model_seconds": 0.06797493499470875,
+        "decode_seconds": 0.00012504204642027617,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.062227568007074296,
+        "frontend_seconds": 0.003893095999956131,
+        "model_seconds": 0.058210460003465414,
+        "decode_seconds": 0.00012401200365275145,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.0061625269590877,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.000310972158331424,
+          "unpack_seconds": 0.0004223049618303776,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06855583499418572,
+        "frontend_seconds": 0.003906915953848511,
+        "model_seconds": 0.06452493701362982,
+        "decode_seconds": 0.000123982026707381,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.06110046897083521,
+        "frontend_seconds": 0.003956986998673528,
+        "model_seconds": 0.056997399020474404,
+        "decode_seconds": 0.00014608295168727636,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.006122913851868361,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0002963538281619549,
+          "unpack_seconds": 0.00042323709931224585,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06731627299450338,
+        "frontend_seconds": 0.003886104968842119,
+        "model_seconds": 0.06328425602987409,
+        "decode_seconds": 0.0001459119957871735,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.0688783599762246,
+        "frontend_seconds": 0.0038704449543729424,
+        "model_seconds": 0.06488302204525098,
+        "decode_seconds": 0.00012489297660067677,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.005858948919922113,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.000295781996101141,
+          "unpack_seconds": 0.0004347168724052608,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 0.5,
+      "cpu": {
+        "text": "to",
+        "backend": "cpu",
+        "seconds": 0.06532324000727385,
+        "frontend_seconds": 0.0039664669893682,
+        "model_seconds": 0.06123246101196855,
+        "decode_seconds": 0.00012431200593709946,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "to",
+        "backend": "fpga",
+        "seconds": 0.06215077597880736,
+        "frontend_seconds": 0.003878554969560355,
+        "model_seconds": 0.05814749904675409,
+        "decode_seconds": 0.000124721962492913,
+        "audio_seconds": 0.5,
+        "encoded_length": 7,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 68,
+          "tx_bytes": 279552,
+          "rx_bytes": 279552,
+          "ioctl_seconds": 0.0056763142929412425,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0003091529360972345,
+          "unpack_seconds": 0.0004304880858398974,
+          "mac_issue_cycles": 139264,
+          "input_stall_cycles": 225760,
+          "output_stall_cycles": 0,
+          "active_cycles": 404832
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 0,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.11329664604272693,
+        "frontend_seconds": 0.012064434005878866,
+        "model_seconds": 0.1010533890221268,
+        "decode_seconds": 0.00017882301472127438,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.09159578895196319,
+        "frontend_seconds": 0.005883689969778061,
+        "model_seconds": 0.0855588560225442,
+        "decode_seconds": 0.00015324295964092016,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.008019339351449162,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00032727187499403954,
+          "unpack_seconds": 0.0005532968789339066,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.1194786699488759,
+        "frontend_seconds": 0.005954230960924178,
+        "model_seconds": 0.11336898599984124,
+        "decode_seconds": 0.0001554529881104827,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.09116023103706539,
+        "frontend_seconds": 0.00591085001360625,
+        "model_seconds": 0.08509741799207404,
+        "decode_seconds": 0.00015196303138509393,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.007979247835464776,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0003298441879451275,
+          "unpack_seconds": 0.0005746481474488974,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10500782495364547,
+        "frontend_seconds": 0.005861348996404558,
+        "model_seconds": 0.09899480297463015,
+        "decode_seconds": 0.00015167298261076212,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.09273153799585998,
+        "frontend_seconds": 0.005862509016878903,
+        "model_seconds": 0.08671540598152205,
+        "decode_seconds": 0.0001536229974590242,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.008006562711670995,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00032976502552628517,
+          "unpack_seconds": 0.0005488669849000871,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10996171896113083,
+        "frontend_seconds": 0.00587708898819983,
+        "model_seconds": 0.10393167700385675,
+        "decode_seconds": 0.00015295296907424927,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.09230817999923602,
+        "frontend_seconds": 0.005920780007727444,
+        "model_seconds": 0.08623506798176095,
+        "decode_seconds": 0.0001523320097476244,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.008009742887225002,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00033007399179041386,
+          "unpack_seconds": 0.0005457802908495069,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10556134500075132,
+        "frontend_seconds": 0.005890349973924458,
+        "model_seconds": 0.09949203202268109,
+        "decode_seconds": 0.00017896300414577127,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.0977635020390153,
+        "frontend_seconds": 0.009938717994373292,
+        "model_seconds": 0.08767334203002974,
+        "decode_seconds": 0.00015144201461225748,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.007998672779649496,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00032881490187719464,
+          "unpack_seconds": 0.0005571399815380573,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10419722204096615,
+        "frontend_seconds": 0.005919579998590052,
+        "model_seconds": 0.09812487900489941,
+        "decode_seconds": 0.00015276303747668862,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.09448339801747352,
+        "frontend_seconds": 0.007940075010992587,
+        "model_seconds": 0.08639151003444567,
+        "decode_seconds": 0.000151812972035259,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.007997985172551125,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0003272457397542894,
+          "unpack_seconds": 0.0005343588418327272,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10640964901540428,
+        "frontend_seconds": 0.005789607006590813,
+        "model_seconds": 0.10046997899189591,
+        "decode_seconds": 0.00015006301691755652,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.10370232304558158,
+        "frontend_seconds": 0.005878529045730829,
+        "model_seconds": 0.09767266199924052,
+        "decode_seconds": 0.00015113200061023235,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.012804472062271088,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.00032734707929193974,
+          "unpack_seconds": 0.0005368418642319739,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.11164034699322656,
+        "frontend_seconds": 0.005879618984181434,
+        "model_seconds": 0.1056083359871991,
+        "decode_seconds": 0.00015239202184602618,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.11668939399532974,
+        "frontend_seconds": 0.007194351986981928,
+        "model_seconds": 0.10934243898373097,
+        "decode_seconds": 0.0001526030246168375,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.021238597051706165,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0003298140363767743,
+          "unpack_seconds": 0.0005454981001093984,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10764007997931913,
+        "frontend_seconds": 0.005870188993867487,
+        "model_seconds": 0.1016189280198887,
+        "decode_seconds": 0.00015096296556293964,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.09530981199350208,
+        "frontend_seconds": 0.005911740008741617,
+        "model_seconds": 0.08924483897862956,
+        "decode_seconds": 0.00015323300613090396,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.011502734618261456,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.000327005865983665,
+          "unpack_seconds": 0.0005395478801801801,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    },
+    {
+      "context_seconds": 1,
+      "cpu": {
+        "text": "funery number mad",
+        "backend": "cpu",
+        "seconds": 0.10436871502315626,
+        "frontend_seconds": 0.005892100045457482,
+        "model_seconds": 0.09832529199775308,
+        "decode_seconds": 0.00015132297994568944,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": null,
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 10,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      },
+      "fpga": {
+        "text": "funery number mad",
+        "backend": "fpga",
+        "seconds": 0.10990152898011729,
+        "frontend_seconds": 0.005837587988935411,
+        "model_seconds": 0.10391110798809677,
+        "decode_seconds": 0.0001528330030851066,
+        "audio_seconds": 1.0,
+        "encoded_length": 13,
+        "fpga_counters": {
+          "ioctls": 32,
+          "loads": 0,
+          "runs": 132,
+          "tx_bytes": 541696,
+          "rx_bytes": 541696,
+          "ioctl_seconds": 0.012459659134037793,
+          "physical_calls": 32,
+          "oracle_calls": 0,
+          "load_pack_seconds": 0.0,
+          "scan_seconds": 0.0,
+          "run_pack_seconds": 0.0003458749852143228,
+          "unpack_seconds": 0.0005492782220244408,
+          "mac_issue_cycles": 270336,
+          "input_stall_cycles": 260576,
+          "output_stall_cycles": 0,
+          "active_cycles": 608096
+        },
+        "worker_policy": {
+          "threads": 4,
+          "spin_duration_us": 0,
+          "main_core": 3,
+          "worker_cores": [
+            0,
+            1,
+            2
+          ],
+          "feature_padding_policy": "trim_to_valid",
+          "dma_irq_core": 3,
+          "experiment": "32_resident_pairs_scheduled"
+        },
+        "prefix_text_is_provisional": true
+      }
+    }
+  ]
+}

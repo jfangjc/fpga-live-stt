@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "hardware_execution": false,
+  "firmware_exported": false,
+  "directive": "AggressiveExplore",
+  "setup_slack_ns": -0.258,
+  "hold_slack_ns": 0.002,
+  "error_or_critical_drc_count": 0,
+  "timing_acceptance": false,
+  "sources_sha256": {
+    "reports/fused/branch512_dma128166_postroute_aggressive_trial.json": "6a9ee2756fae6efe16318e647162cb708d77295984412aac01fd79859d468a90",
+    "reports/fused/branch512_dma128166_fullroute_failure_evidence.json": "905492a76a40cb753471a09c586ce5c63b34fa850226e754c08d0de1009c9569",
+    "scripts/branch512_dma128166_postroute_aggressive_probe.tcl": "90dd376655f4e565f857c0ae3e6014beaae0188d66475a47ad81d2fbd774ac3e",
+    "build/branch512_dma128166_postroute_aggressive_driver.log": "45523c7b36a923ae58c8c7003de3484632d02fb04ceca170e07e79e079ee29d0",
+    "build/branch512_dma128166_postroute_aggressive_repair/asr_v2_top.dcp": "7d5edc12f491d296ae67398b57d0ddd3c39042fa1e28dae322cbb74ca4be1846",
+    "reports/fused/branch512_dma128166_postroute_aggressive_before.rpt": "52076396d1c9a4be41b035198eca009dac0c62e040c97a018e2e19883c64cccd",
+    "reports/fused/branch512_dma128166_postroute_aggressive_timing.rpt": "a8050ce2219daaf104b153b8ea7c7f900dddf21af24754dc42bef798abf703dc",
+    "reports/fused/branch512_dma128166_postroute_aggressive_paths.rpt": "280bfa17e6c3d88764994be199e7f102a235d74ce39c5465515b63c8340bd245",
+    "reports/fused/branch512_dma128166_postroute_aggressive_drc.rpt": "3cc89e10fabdcf261996b4e7f3548619a6c72aeb66a303a43d15869d6a576d5c",
+    "reports/fused/branch512_dma128166_postroute_aggressive_status.rpt": "1b7ae32fda1b3d4fbff4ccceb16f91ef7093a8b8e89176e555cfdbee6a1d2243"
+  }
+}

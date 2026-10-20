@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "qualified": false,
+  "hardware_execution": false,
+  "deployment_started": false,
+  "clock_hz": 166666666,
+  "setup_slack_ns": -0.075,
+  "hold_slack_ns": 0.01,
+  "reason": "Final routed setup gate failed; no qualified XSA or board deployment",
+  "worst_path": "Depthwise compact quantizer shifts[4] to integer_result register",
+  "next_experiment": "Private exact DW quantizer with an elastic effective-drop stage",
+  "sources_and_reports_sha256": {
+    "reports/fused/branch512_outslice166_system_timing.rpt": "ee0b174e066a5f55a38dccc06fee8e36555cf2dc79ffa794f5c3b73b2c60e067",
+    "build/branch512_outslice166_implement_driver.log": "bd972e5f1d625ae7fe13b3eb01d05cace19c03135f471e4a4f55563e95ed2344",
+    "reports/fused/branch512_outslice166_system_drc.rpt": "51b277288550ea58f4bd2151febcd399079ffddde203564c5d937eacd733019b",
+    "reports/fused/branch512_outslice_regression_evidence.json": "a5a005046a48c49e735e753b895a85592c231b75f91260f7c4e400603199c902",
+    "scripts/record_branch512_outslice166_failure.py": "2f435bc77b91d56e2939a7a3b70350315fae1b565f799f8e54f1877dffca21bf"
+  }
+}

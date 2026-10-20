@@ -1,0 +1,8 @@
+{
+  "update_sha256": "80b6869bdb33007677a2f87495f38d89751da4dc75ef35c705928ed77faedc0f",
+  "baseline_zip_sha256": "b9519f252578044e66b7e149f5be6bb8bd8f4a6ff92a883fc8783af7f770427c",
+  "verified_files": 34,
+  "contents": "source-only experiments; existing firmware unchanged",
+  "physical_speedup_demonstrated": false,
+  "physical_parity_requires_rerun": true
+}

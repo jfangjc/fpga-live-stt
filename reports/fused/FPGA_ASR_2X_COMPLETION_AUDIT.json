@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "all_goal_latency_and_parity_requirements_met": true,
+  "contexts": [
+    {
+      "input_seconds": 0.5,
+      "cpu_p50": 0.05257505200000878,
+      "hybrid_p50": 0.026136009000310878,
+      "cpu_p95": 0.06009008680001386,
+      "hybrid_p95": 0.02699336214986943,
+      "speedup": 2.011594501646499,
+      "latency_reduction_percent": 50.28819182089157,
+      "meets_goal": true
+    },
+    {
+      "input_seconds": 1,
+      "cpu_p50": 0.09381408800027202,
+      "hybrid_p50": 0.03583266599980561,
+      "cpu_p95": 0.09683269719962481,
+      "hybrid_p95": 0.049225551449899346,
+      "speedup": 2.618116329964981,
+      "latency_reduction_percent": 61.80460017934437,
+      "meets_goal": true
+    },
+    {
+      "input_seconds": 2.5,
+      "cpu_p50": 0.14544889499984492,
+      "hybrid_p50": 0.05897485000014058,
+      "cpu_p95": 0.14842475460040988,
+      "hybrid_p95": 0.06506137305027551,
+      "speedup": 2.466286815473006,
+      "latency_reduction_percent": 59.453215508991356,
+      "meets_goal": true
+    }
+  ],
+  "warm_pairs_per_context": 300,
+  "full_warm_logits_checked": 900,
+  "physical_model_comparisons": 36,
+  "valid_frame_bit_pattern_cases": 71,
+  "cpu_candidates_per_context": 64,
+  "extra_isolated_cpu_candidates_per_context": [
+    4,
+    5,
+    4
+  ],
+  "latency_scope": "Full frontend, model, decode, transfers, per-inference weight loading and synchronization",
+  "capture_qualified": false,
+  "representative_wer_qualified": false,
+  "maximum_feature_frames": 256,
+  "sources_sha256": {
+    "scripts/final_completion_audit.py": "aae288c304736c00ef5ee7b8476cea79a33713f485e12116da70568ddde6ee56",
+    "reports/fused/branch512_ab166_vf_acceptance_audit.json": "b9dafd2b18069479cf34154622a9a4a6010af4e555666befac796d00ccf23dc0",
+    "reports/fused/valid_frame_cpu_leaders_confirmation.json": "d99d67c0dbcea379c3d3141da31c467cb02cb51e677ba897ed7dddccf7d4182a"
+  }
+}

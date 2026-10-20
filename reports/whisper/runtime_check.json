@@ -1,0 +1,33 @@
+{
+  "root": "/home/ubuntu/whisper-kv260-runtime-check2-20261018",
+  "manifest_and_relocated_libraries": true,
+  "runs": {
+    "en": {
+      "seconds": 8.623188105000054,
+      "exact_qualified_transcript": true,
+      "physical_counters": {
+        "matrix_operations": 60,
+        "ioctls": 564,
+        "weight_loads": 252,
+        "time_tiles": 23688
+      },
+      "restored": true
+    },
+    "auto": {
+      "seconds": 12.554783536000059,
+      "exact_qualified_transcript": true,
+      "physical_counters": {
+        "matrix_operations": 120,
+        "ioctls": 1128,
+        "weight_loads": 504,
+        "time_tiles": 47376
+      },
+      "restored": true
+    }
+  },
+  "expected_failure": {
+    "exit_code": 7,
+    "restored": true
+  },
+  "passed": true
+}
