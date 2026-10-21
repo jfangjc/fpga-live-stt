@@ -1,0 +1,46 @@
+{
+  "cpu_backend": "cpu-int8",
+  "cpu_threads": 4,
+  "cpu_p50_seconds": 2.0324008620227687,
+  "fpga_p50_seconds": 2.0810029610001948,
+  "speedup": 0.9766448679371094,
+  "target": 2,
+  "oracle_tokens_equal": true,
+  "token_limit_reached": false,
+  "float_transcript_equal": true,
+  "cpu_comparator_transcript_equal": true,
+  "partial_token_limits_reached": true,
+  "target_met": false,
+  "recording_seconds": 2.5,
+  "fpga_realtime_factor": 0.8324011844000779,
+  "fpga_max_seconds": 2.083781255001668,
+  "fpga_first_call_seconds": 2.245723486994393,
+  "realtime_timing_met": true,
+  "realtime_execution_met": true,
+  "cpu_profile_p50": {
+    "frontend_seconds": 0.2418847079970874,
+    "encoder_seconds": 0.7761732309882063,
+    "decoder_seconds": 1.0104733080079313
+  },
+  "fpga_profile_p50": {
+    "frontend_seconds": 0.2438349439908052,
+    "encoder_seconds": 0.8280780809873249,
+    "decoder_seconds": 1.010542746007559
+  },
+  "float_cpu_text": "$200 number made up. So is the...",
+  "fpga_text": "$200 number made up. So is the...",
+  "accuracy_qualified": false
+}
+paired_gate_exit=2
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  65%|██████▌   | 171/262 [00:00<00:00, 1706.34it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1757.91it/s]
+[0;93m2026-10-21 00:13:23.480303605 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1021 00:13:30.409791842 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+cpu-int8 2.5 [3.274898371004383, 2.230374288992607, 2.239862689995789, 2.2817608720069984]
+cpu-int8 5.0 [4.732984075002605, 4.6519990770029835, 4.6588194820069475, 4.598483497989946]
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 149/262 [00:00<00:00, 1489.13it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1498.63it/s]
+oracle 2.5 [44.53808540700993]
+oracle 5.0 [89.81093346000125]
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 162/262 [00:00<00:00, 1614.90it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1553.94it/s]
+fpga 2.5 [2.1704855340067297, 2.081870592010091, 2.0903290859860135, 2.164320048002992]
+fpga 5.0 [4.35893554300128, 4.306384744006209, 4.316173422994325, 4.261168354001711]
+duration_gate_exit=0

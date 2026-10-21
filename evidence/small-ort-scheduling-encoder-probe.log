@@ -1,0 +1,36 @@
+[0;93m2026-10-21 02:31:54.425897670 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  66%|██████▌   | 172/262 [00:00<00:00, 1705.59it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1693.44it/s]
+[0;93m2026-10-21 02:32:20.533951874 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [0]. It will be overwritten[m
+[0;93m2026-10-21 02:32:21.278381591 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:21.278538324 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[W1021 02:32:26.632206446 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+decoder-only 2500 [2.175790904002497, 2.0018297670030734, 1.995448123998358, 1.9904963959997986] $200 number made up. So is the...
+decoder-only 1000 [2.6782428000005893, 2.6627306550071808, 2.6752073259995086, 2.65886189500452] $200 number made up. So is the...
+[0;93m2026-10-21 02:32:45.955025749 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [0]. It will be overwritten[m
+[0;93m2026-10-21 02:32:45.997255876 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:45.997414049 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.038933973 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.039070475 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.080271644 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.080444307 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.121122227 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.121267389 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.161587462 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.161733015 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.202315563 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.202479215 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.243293637 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.243461370 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.284026718 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.284161140 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.324748498 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.324879810 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.402000354 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.402141727 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.474570388 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.474706230 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:46.548272031 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [0]. It will be overwritten[m
+[0;93m2026-10-21 02:32:47.273650120 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.intra_op.allow_spinning] already exists with value [1]. It will be overwritten[m
+[0;93m2026-10-21 02:32:47.273795123 [W:onnxruntime:Default, config_options.cc:45 AddConfigEntry] Config with key [session.force_spinning_stop] already exists with value [1]. It will be overwritten[m
+both 2500 [2.0915515499946196, 1.9928266439965228, 1.9845912979944842, 1.976362531990162] $200 number made up. So is the...
+both 1000 [2.6472773869900266, 2.66536211699713, 2.6357965740025975, 2.6156948279967764] $200 number made up. So is the...

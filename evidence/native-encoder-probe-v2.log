@@ -1,0 +1,11 @@
+[0;93m2026-10-20 23:47:36.434534889 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 161/262 [00:00<00:00, 1580.67it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1755.96it/s]
+/home/ubuntu/moonshine-kv260-20261020/build/probe_native_encoder.py:47: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.
+  torch.onnx.export(m,args,str(p),input_names=inputs,output_names=outputs,dynamic_axes=axes,opset_version=18,dynamo=False)
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  46%|████▌     | 121/262 [00:00<00:00, 1204.25it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1309.83it/s]
+[W1020 23:48:04.167840447 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+2 2500 [2.6581309430039255, 2.5045131459919503, 2.4935671359999105, 2.8550352029997157] $200 number made up. So is the...
+2 1000 [3.296465444000205, 3.3153445909993025, 3.224195299000712, 3.203437486998155] $200 number made up. So is the...
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 156/262 [00:00<00:00, 1558.03it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1514.42it/s]
+4 2500 [2.292349807001301, 2.1496505980030634, 2.155158056993969, 2.273585621995153] $200 number made up. So is the...
+4 1000 [2.8595425759995123, 2.8593870559998322, 2.9499155079975026, 2.8623712840053486] $200 number made up. So is the...

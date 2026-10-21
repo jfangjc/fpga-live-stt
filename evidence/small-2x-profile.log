@@ -1,0 +1,57 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  45%|████▍     | 117/262 [00:00<00:00, 1166.24it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1553.00it/s]
+[0;93m2026-10-20 23:52:32.522848987 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 23:52:38.879987274 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+         12534 function calls (11437 primitive calls) in 2.622 seconds
+
+   Ordered by: internal time
+   List reduced from 137 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       22    1.132    0.051    1.134    0.052 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:278(run)
+       81    0.319    0.004    0.319    0.004 {built-in method torch._ops.quantized.linear_dynamic}
+      120    0.298    0.002    0.305    0.003 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/matrix.py:81(multiply)
+        2    0.275    0.138    0.275    0.138 {built-in method torch.conv1d}
+       40    0.105    0.003    0.609    0.015 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/matrix.py:130(__call__)
+       20    0.069    0.003    0.069    0.003 {built-in method torch._C._nn.scaled_dot_product_attention}
+       42    0.057    0.001    0.057    0.001 {method 'copy' of 'numpy.ndarray' objects}
+       40    0.040    0.001    0.102    0.003 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/matrix.py:19(quantize_input)
+        2    0.036    0.018    1.169    0.585 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/streaming.py:63(push)
+      280    0.035    0.000    0.035    0.000 {built-in method numpy.ascontiguousarray}
+       40    0.028    0.001    0.028    0.001 {method 'astype' of 'numpy.ndarray' objects}
+       20    0.027    0.001    0.027    0.001 {built-in method torch._C._nn.gelu}
+       42    0.026    0.001    0.026    0.001 {built-in method torch.layer_norm}
+       40    0.014    0.000    0.014    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:96(_clip)
+      122    0.014    0.000    0.014    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+       26    0.011    0.000    0.011    0.000 {built-in method torch.cat}
+       42    0.011    0.000    0.041    0.001 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/transformers/models/moonshine_streaming/modeling_moonshine_streaming.py:127(forward)
+        2    0.009    0.005    0.009    0.005 {built-in method torch._C._nn.silu}
+  247/145    0.007    0.000    1.052    0.007 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1777(_call_impl)
+       81    0.006    0.000    0.349    0.004 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/ao/nn/quantized/dynamic/modules/linear.py:50(forward)
+ 1215/324    0.005    0.000    0.015    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/utils/_pytree.py:1306(tree_iter)
+  247/145    0.005    0.000    1.055    0.007 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1769(_wrapped_call_impl)
+       40    0.005    0.000    0.005    0.000 {built-in method numpy.zeros}
+       40    0.004    0.000    0.618    0.015 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/model.py:29(forward)
+      574    0.004    0.000    0.004    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1949(__getattr__)
+       83    0.004    0.000    0.004    0.000 {method 'reshape' of 'torch._C.TensorBase' objects}
+        1    0.003    0.003    0.003    0.003 {built-in method torch.asinh}
+       20    0.003    0.000    0.003    0.000 {method 'argmax' of 'numpy.ndarray' objects}
+      360    0.003    0.000    0.003    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/numpy/_core/_internal.py:262(__init__)
+       20    0.003    0.000    0.003    0.000 {built-in method torch.tensor}
+      247    0.003    0.000    0.003    0.000 {built-in method torch._C._get_tracing_state}
+      729    0.002    0.000    0.004    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/utils/_pytree.py:679(is_namedtuple_class)
+       80    0.002    0.000    0.015    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:66(_wrapreduction)
+       82    0.002    0.000    0.002    0.000 {method 'transpose' of 'torch._C.TensorBase' objects}
+       23    0.002    0.000    0.002    0.000 {method 'clone' of 'torch._C.TensorBase' objects}
+       81    0.002    0.000    0.002    0.000 {method 'to' of 'torch._C.TensorBase' objects}
+       62    0.002    0.000    0.002    0.000 {method 'numpy' of 'torch._C.TensorBase' objects}
+       20    0.002    0.000    0.651    0.033 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/transformers/models/moonshine_streaming/modeling_moonshine_streaming.py:141(forward)
+       40    0.002    0.000    0.002    0.000 {built-in method torch.arange}
+      729    0.002    0.000    0.006    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/torch/utils/_pytree.py:1012(_get_node_type)
+       40    0.002    0.000    0.002    0.000 {built-in method torch.from_numpy}
+      125    0.002    0.000    0.002    0.000 {built-in method numpy.empty}
+       20    0.002    0.000    0.992    0.050 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/ort_decoder.py:205(predict)
+       60    0.002    0.000    0.006    0.000 /home/ubuntu/moonshine-kv260-20261020/software/moonshine/streaming.py:81(heads)
+      128    0.002    0.000    0.002    0.000 /home/ubuntu/moonshine-kv260-20261020/.venv/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py:291(__getattribute__)
+
+
+{"frontend_seconds": 0.30378614699293394, "encoder_seconds": 1.169438690005336, "decoder_seconds": 1.1482805960113183}

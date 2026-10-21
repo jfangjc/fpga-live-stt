@@ -1,0 +1,6 @@
+Collecting onnx-ir
+  Downloading onnx_ir-1.1.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading onnx_ir-1.1.0-py3-none-any.whl (192 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 192.2/192.2 kB 1.3 MB/s eta 0:00:00
+Installing collected packages: onnx-ir
+Successfully installed onnx-ir-1.1.0
