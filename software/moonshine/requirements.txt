@@ -1,0 +1,9 @@
+# Install CPU PyTorch separately on ARM64:
+# pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+# Install the pinned reference implementation separately (see docs/moonshine.md).
+numpy==2.5.4
+soundfile==0.14.0
+sentencepiece==0.2.2
+# Native decoder export and execution (optional at runtime).
+onnx==1.20.1
+onnxruntime==1.24.1

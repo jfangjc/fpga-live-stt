@@ -1,0 +1,12 @@
+[sudo] password for ubuntu: Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1793.96it/s]
+[0;93m2026-10-20 20:54:59.331380407 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 20:55:01.121521611 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+oracle speech_05.wav [1.1574070100032259]
+oracle speech_10.wav [2.3006278199900407]
+oracle repeat-5s [14.921608884993475]
+oracle repeat-10s [33.83843733400863]
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights:  98%|█████████▊| 157/161 [00:00<00:00, 1561.96it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1569.31it/s]
+fpga speech_05.wav [0.45161427900893614, 0.37248366499261465, 0.3727371690038126, 0.37347220300580375]
+fpga speech_10.wav [0.63708201800182, 0.6345127640088322, 0.6291343909979332, 0.6297568829904776]
+fpga repeat-5s [5.648589032003656, 5.578852200997062, 5.572397808995447, 5.585356491996208]
+fpga repeat-10s [14.875517136999406, 14.807287466013804, 14.849313108992646, 15.102768833006849]

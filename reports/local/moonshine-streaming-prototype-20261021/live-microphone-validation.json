@@ -1,0 +1,46 @@
+{
+  "functional_live_recognition_passed": true,
+  "user_confirmed_source_topic": true,
+  "source_topic": "luxury-car review mentioning Bentleys and Rolls-Royces",
+  "strict_continuous_latency_qualified": false,
+  "word_error_rate_qualified": false,
+  "mic_selection": 1,
+  "highpass_hz": 30,
+  "vad_dbfs": -50.0,
+  "runtime_sources_sha256": "3c124f69dc2ef8d008a6ae3780fc99aa61e0d241f65a693e0ba79b9bcd084c8c",
+  "capture_helper_sha256": "2481f6a362d51fc6026db8984bdce2b0b9df1cf4feca3b5697f9e00102d2fe22",
+  "partial_updates": 32,
+  "finals": 9,
+  "all_finals_complete": true,
+  "total_update_processing_seconds": 87.44732140701672,
+  "summary": {
+    "type": "summary",
+    "exit_code": 130,
+    "samples": 2424000,
+    "audio_seconds": 151.5,
+    "utterances": 10,
+    "finals": 9,
+    "discarded": 0,
+    "incomplete": 0,
+    "clipped_samples": 0,
+    "all_zero_audio": false,
+    "max_transcript_lag_ms": 5057.665655,
+    "queue_high_water_ms": 7000,
+    "physical": {
+      "ioctls": 5040,
+      "loads": 2520,
+      "runs": 19074,
+      "tx_bytes": 1516845664,
+      "rx_bytes": 885786016,
+      "ioctl_seconds": 6.775122432241915
+    },
+    "emitted_monotonic_ns": 121181773432646
+  },
+  "firmware_sha256": {
+    "asr-v3-mic-select.bit.bin": "56179f557544fba3221a41b7fc8e81b61a0d041403a4a24d70a1e09dc39317b2",
+    "asr-v3-mic-select.dtbo": "de44bbd3040cfcc963d061f932161fc129433a0c5597041725b0f44cce918687",
+    "shell.json": "5b262494370cdb4f3e2ef124072cfaf68fd2f0bdc8c0a207913dedfba66cd841"
+  },
+  "restored": true,
+  "note": "Exit 130 is the intentional end of the speaking test; queued audio and the unfinished tenth utterance were cancelled. Caption content matched the user supplied source topic; no reference transcript or WER is available. Peak lag and queue depth require further latency work."
+}

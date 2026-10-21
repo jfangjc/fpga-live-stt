@@ -1,0 +1,112 @@
+{
+  "ready": {
+    "type": "ready",
+    "model": {
+      "model": "moonshine-ai/moonshine-streaming-tiny",
+      "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+      "backend": "fpga",
+      "runtime_sources_sha256": "a1c47bb851fee6eb0710652ee27d4ea3a9e440287ede5cb74731b737bf9346c9",
+      "scope": "encoder-ffn",
+      "projections": [
+        "model.encoder.layers.0.mlp.fc1",
+        "model.encoder.layers.0.mlp.fc2",
+        "model.encoder.layers.1.mlp.fc1",
+        "model.encoder.layers.1.mlp.fc2",
+        "model.encoder.layers.2.mlp.fc1",
+        "model.encoder.layers.2.mlp.fc2",
+        "model.encoder.layers.3.mlp.fc1",
+        "model.encoder.layers.3.mlp.fc2",
+        "model.encoder.layers.4.mlp.fc1",
+        "model.encoder.layers.4.mlp.fc2",
+        "model.encoder.layers.5.mlp.fc1",
+        "model.encoder.layers.5.mlp.fc2"
+      ],
+      "threads": 2,
+      "frontend_lowering": false,
+      "cpu_tail_int8": true
+    },
+    "decoder_runtime": {
+      "engine": "onnxruntime",
+      "precision": "int8",
+      "version": "1.24.1",
+      "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+      "threads": 4,
+      "scheduling": "run-spin"
+    },
+    "encoder_runtime": {
+      "engine": "onnxruntime",
+      "attention_precision": "int8",
+      "convolution_precision": "float32",
+      "threads": 4,
+      "version": "1.24.1",
+      "scheduling": "sleep",
+      "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+    },
+    "source": "replay",
+    "paced": true,
+    "source_audio_sha256": "7e0e1111e46c8b9a0a0d6a8d32fe1df0788f20cb73d5ab512c24e374680fe89d",
+    "capture_helper_sha256": null,
+    "mic_selection": null,
+    "initialization_seconds": 19.145280397991883,
+    "sample_rate": 16000,
+    "chunk_ms": 250,
+    "vad_dbfs": -55,
+    "silence_ms": 350,
+    "coalesce_partials": true,
+    "max_seconds": 3,
+    "gain": 1,
+    "highpass_hz": 0,
+    "emitted_monotonic_ns": 144645918294761
+  },
+  "summary": {
+    "type": "summary",
+    "exit_code": 0,
+    "samples": 1000000,
+    "audio_seconds": 62.5,
+    "utterances": 22,
+    "finals": 22,
+    "discarded": 0,
+    "incomplete": 0,
+    "clipped_samples": 0,
+    "all_zero_audio": false,
+    "max_transcript_lag_ms": 630.772526,
+    "max_oldest_update_age_ms": 1089.909473,
+    "queue_high_water_ms": 620,
+    "physical": {
+      "ioctls": 11136,
+      "loads": 5568,
+      "runs": 5888,
+      "tx_bytes": 1185729536,
+      "rx_bytes": 181062656,
+      "ioctl_seconds": 2.785335464257514
+    },
+    "emitted_monotonic_ns": 144708472229982
+  },
+  "partial_count": 210,
+  "final_count": 22,
+  "partial_source_end_lag_ms": {
+    "count": 210,
+    "p50": 163.5331975,
+    "p95": 283.98562469999996,
+    "max": 393.571941
+  },
+  "partial_oldest_update_age_ms": {
+    "count": 210,
+    "p50": 669.491904,
+    "p95": 830.23959205,
+    "max": 981.527963
+  },
+  "max_within_utterance_partial_gap_ms": 469.646724,
+  "clean_completion": true,
+  "live_timing_eligible": true,
+  "timing_scope": "Paced acquisition to result; oldest update age adds update audio duration and encoder lookahead. Neither metric measures aligned word latency."
+}
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1798.47it/s]
+[0;93m2026-10-21 13:33:32.193912111 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1021 13:33:35.340507878 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+{"passed": true, "updates": 232, "finals": 22, "mismatches": [], "runtime_sources_sha256": "a1c47bb851fee6eb0710652ee27d4ea3a9e440287ede5cb74731b737bf9346c9"}
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.408s
+
+OK

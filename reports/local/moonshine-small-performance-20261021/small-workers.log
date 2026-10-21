@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 152/262 [00:00<00:00, 1514.88it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1681.50it/s]
+[0;93m2026-10-20 21:59:11.950955564 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 21:59:18.421722050 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+1 2500 [3.6275064289948205, 3.211608534998959, 3.177677468993352, 3.186785167999915] $200 number made up. So is the... False
+2 2500 [2.777527412996278, 2.7583369070052868, 3.015417182003148, 2.662645093994797] $200 number made up. So is the... False
+3 2500 [2.6374809840053786, 2.508072122000158, 2.506539324996993, 2.504013746001874] $200 number made up. So is the... False
+4 2500 [2.584199136996176, 2.435831070994027, 2.4366636919876328, 2.436989926005481] $200 number made up. So is the... False

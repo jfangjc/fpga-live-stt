@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1816.33it/s]
+[0;93m2026-10-21 14:09:47.325299859 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1021 14:09:50.429272232 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+{"passed": true, "updates": 38, "finals": 4, "mismatches": [], "runtime_sources_sha256": "49f65ddd853ae49cf8c491ba114037b605719e78d0dacbfd6ed247dad2d17f9c"}

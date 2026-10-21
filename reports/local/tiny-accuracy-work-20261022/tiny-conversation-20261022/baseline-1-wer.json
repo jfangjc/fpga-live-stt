@@ -1,0 +1,117 @@
+{
+  "variant": "live-session",
+  "manifest_sha256": "05f056966769cb8b6d0d6465fe6be2d5cd7c942ff6e34598f055d97f2b221810",
+  "dataset": "Synthetic conversational prompts for regression only; not human conversation WER",
+  "model": {
+    "type": "ready",
+    "model": {
+      "model": "moonshine-ai/moonshine-streaming-tiny",
+      "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+      "backend": "fpga",
+      "runtime_sources_sha256": "49f65ddd853ae49cf8c491ba114037b605719e78d0dacbfd6ed247dad2d17f9c",
+      "scope": "encoder-ffn",
+      "projections": [
+        "model.encoder.layers.0.mlp.fc1",
+        "model.encoder.layers.0.mlp.fc2",
+        "model.encoder.layers.1.mlp.fc1",
+        "model.encoder.layers.1.mlp.fc2",
+        "model.encoder.layers.2.mlp.fc1",
+        "model.encoder.layers.2.mlp.fc2",
+        "model.encoder.layers.3.mlp.fc1",
+        "model.encoder.layers.3.mlp.fc2",
+        "model.encoder.layers.4.mlp.fc1",
+        "model.encoder.layers.4.mlp.fc2",
+        "model.encoder.layers.5.mlp.fc1",
+        "model.encoder.layers.5.mlp.fc2"
+      ],
+      "threads": 2,
+      "frontend_lowering": false,
+      "cpu_tail_int8": true
+    },
+    "decoder_runtime": {
+      "engine": "onnxruntime",
+      "precision": "int8",
+      "version": "1.24.1",
+      "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+      "threads": 4,
+      "scheduling": "run-spin"
+    },
+    "encoder_runtime": {
+      "engine": "onnxruntime",
+      "attention_precision": "int8",
+      "convolution_precision": "float32",
+      "threads": 4,
+      "version": "1.24.1",
+      "scheduling": "sleep",
+      "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+    },
+    "source": "replay",
+    "paced": true,
+    "source_audio_sha256": "f9f2e84d4d9fea27782c202cb9bf1e41df3fba1d60def926d34ca7bab09b49ef",
+    "capture_helper_sha256": null,
+    "mic_selection": null,
+    "initialization_seconds": 19.16789936699206,
+    "sample_rate": 16000,
+    "chunk_ms": 250,
+    "vad_dbfs": -55,
+    "silence_ms": 350,
+    "coalesce_partials": true,
+    "accuracy_mode": false,
+    "segmentation": {
+      "chunk_ms": 250,
+      "threshold": -55,
+      "silence_ms": 350,
+      "max_seconds": 3,
+      "gain": 1,
+      "overlap_ms": 0,
+      "pause_after_seconds": null,
+      "pause_ms": 250,
+      "pre_roll_ms": 300,
+      "attack_ms": 60,
+      "min_speech_ms": 200
+    },
+    "preview_seconds": null,
+    "preview_overlap_seconds": null,
+    "max_seconds": 3,
+    "gain": 1,
+    "highpass_hz": 0,
+    "emitted_monotonic_ns": 146489483318180
+  },
+  "clips": [
+    {
+      "wav": "/home/ubuntu/moonshine-kv260-20261020/build/conversation-accuracy-v1/conversation-1.wav",
+      "wav_sha256": "f9f2e84d4d9fea27782c202cb9bf1e41df3fba1d60def926d34ca7bab09b49ef",
+      "reference": "I was thinking we could meet at the coffee shop after lunch. Would you like to walk there together, or should I meet you outside? I can bring the book you asked about last week.",
+      "hypothesis": "I was thinking we could meet at the coffee shop after lunch. Would you like to walk there together? Or should I meet you outside? I can bring the book you asked about last week.",
+      "score": {
+        "reference_words": 35,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "signal": {
+        "seconds": 11.45,
+        "dc_offset": 0.01502211019396782,
+        "ac_rms_dbfs": -20.955711938831357,
+        "peak": 0.6541748046875,
+        "clipped_fraction": 0.0
+      },
+      "processing_seconds": 5.597036174091045,
+      "token_limit_reached": false
+    }
+  ],
+  "total": {
+    "reference_words": 35,
+    "errors": 0,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0
+  },
+  "physical": null,
+  "complete": true,
+  "normalization": "Unicode NFKC, casefold, punctuation stripped; numbers are not expanded",
+  "timing_scope": "Offline accuracy comparison; not a live latency benchmark"
+}

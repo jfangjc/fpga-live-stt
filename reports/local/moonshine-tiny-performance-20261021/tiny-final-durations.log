@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1687.04it/s]
+[0;93m2026-10-20 21:13:21.132271437 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 21:13:23.008514031 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+oracle speech_25.wav [7.365459329987061]
+oracle repeat-5s [16.617041249002796]
+oracle repeat-10s [31.420156245003454]
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights:  96%|█████████▌| 154/161 [00:00<00:00, 1534.99it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1559.05it/s]
+fpga speech_25.wav [1.3759709180012578, 1.2791908219951438, 1.2698841109959176, 1.270611445987015]
+fpga repeat-5s [2.6467061919975094, 2.573585791993537, 2.575434211990796, 2.5682214550033677]
+fpga repeat-10s [5.2502394809998805, 5.1048544100049185, 4.758983735999209, 4.761909417997231]

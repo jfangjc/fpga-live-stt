@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "restored": true,
+  "helper_closed": true,
+  "cleanup": {
+    "helper_exit_code": 0,
+    "diagnostics": "{\"samples\":21381,\"seconds\":1.336805,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":21389}\n"
+  }
+}

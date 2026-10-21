@@ -1,0 +1,11 @@
+{
+  "original_app": "k26-starter-kits",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "restored": true,
+  "command": [
+    ".venv/bin/python",
+    "build/test_live_board.py"
+  ],
+  "clock_hz": 99999999,
+  "command_exit_code": 0
+}

@@ -1,0 +1,9 @@
+{
+  "samples": 192000,
+  "nonzero": 0,
+  "peak": 0.0,
+  "queue_high_water_blocks": 1,
+  "diagnostics": "{\"samples\":192000,\"seconds\":12.000421,\"startup_discarded\":1033,\"startup_dropped\":531156,\"newly_dropped\":0,\"captured_delta\":192006}\n",
+  "transport_passed": true,
+  "signal_present": false
+}

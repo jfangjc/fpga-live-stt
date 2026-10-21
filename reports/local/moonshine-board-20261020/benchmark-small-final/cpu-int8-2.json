@@ -1,0 +1,519 @@
+{
+  "model": "moonshine-ai/moonshine-streaming-small",
+  "revision": "2c036506f23a09c18df5a50057599ba6d9280999",
+  "backend": "cpu-int8",
+  "runtime_sources_sha256": "635f959045ce9f8ff0061adfc9142fe611d5191faa9b664bc1ff7001927a3bdb",
+  "scope": "encoder-ffn",
+  "projections": [],
+  "threads": 2,
+  "frontend_lowering": false,
+  "cpu_tail_int8": true,
+  "initialization_seconds": 18.273213363005198,
+  "first_call_seconds": 10.313509043000522,
+  "warmup_runs": 1,
+  "chunk_ms": 500,
+  "draft_reuse": true,
+  "final_only": false,
+  "size": "small",
+  "sample_count": 40000,
+  "platform": "Linux-6.8.0-1036-xilinx-aarch64-with-glibc2.39",
+  "runs": [
+    {
+      "events": [
+        {
+          "text": "Sure.",
+          "tokens": [
+            1,
+            18585,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 13,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 0.5,
+          "processing_seconds": 0.8170121610019123
+        },
+        {
+          "text": "$200 number one.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            697,
+            29889
+          ],
+          "final": false,
+          "frames": 38,
+          "token_limit_reached": true,
+          "run": 0,
+          "audio_seconds": 1.0,
+          "processing_seconds": 1.5256695369971567
+        },
+        {
+          "text": "$200 number made up.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 63,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 1.5,
+          "processing_seconds": 1.1168500920030056
+        },
+        {
+          "text": "$200 number made up.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 88,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 2.0,
+          "processing_seconds": 0.7825283800048055
+        },
+        {
+          "text": "$200 number made up. So is $1,200.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            395,
+            29896,
+            29892,
+            29906,
+            29900,
+            29900,
+            29889
+          ],
+          "final": false,
+          "frames": 113,
+          "token_limit_reached": true,
+          "run": 0,
+          "audio_seconds": 2.5,
+          "processing_seconds": 2.014548795996234
+        },
+        {
+          "text": "$200 number made up. So is the...",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            278,
+            856,
+            2
+          ],
+          "final": true,
+          "frames": 125,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 2.5,
+          "processing_seconds": 0.9575923060037894
+        }
+      ],
+      "total_processing_seconds": 7.214201272006903,
+      "final_processing_seconds": 0.9575923060037894,
+      "profile": {
+        "frontend_seconds": 0.434767084007035,
+        "encoder_seconds": 1.707295904008788,
+        "decoder_seconds": 5.069132733995502
+      },
+      "decode_stats": {
+        "prefill_tokens": 45,
+        "accepted_draft_tokens": 31,
+        "autoregressive_tokens": 22
+      },
+      "text": "$200 number made up. So is the...",
+      "tokens": [
+        1,
+        395,
+        29906,
+        29900,
+        29900,
+        1353,
+        1754,
+        701,
+        29889,
+        1105,
+        338,
+        278,
+        856,
+        2
+      ]
+    },
+    {
+      "events": [
+        {
+          "text": "Sure.",
+          "tokens": [
+            1,
+            18585,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 13,
+          "token_limit_reached": false,
+          "run": 1,
+          "audio_seconds": 0.5,
+          "processing_seconds": 0.8148177240000223
+        },
+        {
+          "text": "$200 number one.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            697,
+            29889
+          ],
+          "final": false,
+          "frames": 38,
+          "token_limit_reached": true,
+          "run": 1,
+          "audio_seconds": 1.0,
+          "processing_seconds": 1.5267242640038603
+        },
+        {
+          "text": "$200 number made up.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 63,
+          "token_limit_reached": false,
+          "run": 1,
+          "audio_seconds": 1.5,
+          "processing_seconds": 1.1203444889979437
+        },
+        {
+          "text": "$200 number made up.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 88,
+          "token_limit_reached": false,
+          "run": 1,
+          "audio_seconds": 2.0,
+          "processing_seconds": 0.7759628399944631
+        },
+        {
+          "text": "$200 number made up. So is $1,200.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            395,
+            29896,
+            29892,
+            29906,
+            29900,
+            29900,
+            29889
+          ],
+          "final": false,
+          "frames": 113,
+          "token_limit_reached": true,
+          "run": 1,
+          "audio_seconds": 2.5,
+          "processing_seconds": 2.0086954290018184
+        },
+        {
+          "text": "$200 number made up. So is the...",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            278,
+            856,
+            2
+          ],
+          "final": true,
+          "frames": 125,
+          "token_limit_reached": false,
+          "run": 1,
+          "audio_seconds": 2.5,
+          "processing_seconds": 0.9715685270057293
+        }
+      ],
+      "total_processing_seconds": 7.218113273003837,
+      "final_processing_seconds": 0.9715685270057293,
+      "profile": {
+        "frontend_seconds": 0.42471337901224615,
+        "encoder_seconds": 1.7179949389974354,
+        "decoder_seconds": 5.07242766499985
+      },
+      "decode_stats": {
+        "prefill_tokens": 45,
+        "accepted_draft_tokens": 31,
+        "autoregressive_tokens": 22
+      },
+      "text": "$200 number made up. So is the...",
+      "tokens": [
+        1,
+        395,
+        29906,
+        29900,
+        29900,
+        1353,
+        1754,
+        701,
+        29889,
+        1105,
+        338,
+        278,
+        856,
+        2
+      ]
+    },
+    {
+      "events": [
+        {
+          "text": "Sure.",
+          "tokens": [
+            1,
+            18585,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 13,
+          "token_limit_reached": false,
+          "run": 2,
+          "audio_seconds": 0.5,
+          "processing_seconds": 0.8175682090004557
+        },
+        {
+          "text": "$200 number one.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            697,
+            29889
+          ],
+          "final": false,
+          "frames": 38,
+          "token_limit_reached": true,
+          "run": 2,
+          "audio_seconds": 1.0,
+          "processing_seconds": 1.5242189920027158
+        },
+        {
+          "text": "$200 number made up.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 63,
+          "token_limit_reached": false,
+          "run": 2,
+          "audio_seconds": 1.5,
+          "processing_seconds": 1.115071981002984
+        },
+        {
+          "text": "$200 number made up.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 88,
+          "token_limit_reached": false,
+          "run": 2,
+          "audio_seconds": 2.0,
+          "processing_seconds": 0.7769720360010979
+        },
+        {
+          "text": "$200 number made up. So is $1,200.",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            395,
+            29896,
+            29892,
+            29906,
+            29900,
+            29900,
+            29889
+          ],
+          "final": false,
+          "frames": 113,
+          "token_limit_reached": true,
+          "run": 2,
+          "audio_seconds": 2.5,
+          "processing_seconds": 2.004760042997077
+        },
+        {
+          "text": "$200 number made up. So is the...",
+          "tokens": [
+            1,
+            395,
+            29906,
+            29900,
+            29900,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            278,
+            856,
+            2
+          ],
+          "final": true,
+          "frames": 125,
+          "token_limit_reached": false,
+          "run": 2,
+          "audio_seconds": 2.5,
+          "processing_seconds": 0.9594287459985935
+        }
+      ],
+      "total_processing_seconds": 7.198020007002924,
+      "final_processing_seconds": 0.9594287459985935,
+      "profile": {
+        "frontend_seconds": 0.4241395760109299,
+        "encoder_seconds": 1.703335446989513,
+        "decoder_seconds": 5.0676083539947285
+      },
+      "decode_stats": {
+        "prefill_tokens": 45,
+        "accepted_draft_tokens": 31,
+        "autoregressive_tokens": 22
+      },
+      "text": "$200 number made up. So is the...",
+      "tokens": [
+        1,
+        395,
+        29906,
+        29900,
+        29900,
+        1353,
+        1754,
+        701,
+        29889,
+        1105,
+        338,
+        278,
+        856,
+        2
+      ]
+    }
+  ],
+  "max_tokens": 256,
+  "p50_seconds": 7.214201272006903,
+  "p95_seconds": 7.217722072904143,
+  "realtime_factor": 2.8856805088027615,
+  "physical": null,
+  "audio_sha256": "ffb22adfc09b9bc312b00ef19d64540dbe42f1d65c924ec374185513ed7c21dc",
+  "torch_version": "2.8.0+cpu",
+  "transformers_version": "5.21.0.dev0"
+}

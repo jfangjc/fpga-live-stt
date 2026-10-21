@@ -1,0 +1,61 @@
+# Vivado outputs (regenerate with the build scripts)
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+.Xil/
+xsim.dir/
+*.jou
+*.pb
+*.wdb
+*.dcp
+*.xsa
+*.bit
+*.bit.bin
+*.dtbo
+
+# Compiled code
+__pycache__/
+*.py[cod]
+*.o
+*.a
+*.so
+*.ko
+*.mod
+*.mod.c
+*.cmd
+Module.symvers
+modules.order
+obj_dir/
+
+# Python environments
+.venv*/
+
+# Models, recordings and archives (download, record or package with the scripts)
+*.onnx
+*.ort
+*.ckpt
+*.nemo
+*.npz
+*.safetensors
+*.wav
+*.flac
+*.zip
+*.tar
+*.tar.gz
+*.whl
+*.deb
+build/
+
+# ONNX Runtime headers (copy from the ORT v1.30.0 release)
+software/*/include/
+
+# Local secrets
+.env
+.env.*
+.board.env
+*.pem
+*.key
+*.ppk

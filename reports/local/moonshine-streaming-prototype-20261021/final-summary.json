@@ -1,0 +1,229 @@
+{
+  "source_archive": "build/moonshine-streaming-prototype-source.zip",
+  "archive_sha256": "079b3e0f1c2b9c81f609e45461991948002a4480925d4145c67980f8a3a33b46",
+  "source_files": 98,
+  "runtime_sources_sha256": "3c124f69dc2ef8d008a6ae3780fc99aa61e0d241f65a693e0ba79b9bcd084c8c",
+  "firmware": {
+    "format_version": 1,
+    "app": "asr-v3-mic-select",
+    "clock_hz": 100000000,
+    "protocol": "bulk",
+    "capture_abi": "MIC1",
+    "sample_rate": 16000,
+    "selection": {
+      "0": "primary-left",
+      "1": "primary-right",
+      "2": "secondary-left",
+      "3": "secondary-right"
+    },
+    "files_sha256": {
+      "asr-v3-mic-select.bit.bin": "56179f557544fba3221a41b7fc8e81b61a0d041403a4a24d70a1e09dc39317b2",
+      "asr-v3-mic-select.dtbo": "de44bbd3040cfcc963d061f932161fc129433a0c5597041725b0f44cce918687",
+      "shell.json": "5b262494370cdb4f3e2ef124072cfaf68fd2f0bdc8c0a207913dedfba66cd841"
+    },
+    "build": {
+      "app": "asr-v3-mic-select",
+      "setup_slack_ns": 0.653,
+      "hold_slack_ns": 0.012,
+      "routed_xsa_sha256": "e24b0c6ab480049f8cbebc017cc9d18254513be83fa59b24f1f6aa99d6b7f9e9",
+      "build_log_sha256": "126edf930bb2c30aa1ba17a3ed6a835f4f775ee22c8aa5b1de777877136c65a5",
+      "sources_sha256": {
+        "rtl/experimental/voice_axi_streaming.v": "b495af6a4d79b0699fda489a8329ac6739b6e83d6335d088bc1bdff4a092ed43",
+        "rtl/experimental/sph0645_stream_rx.v": "e152a49a83d3e3b2744b1cda04f8d8e1c4ac44ce2035c7e8b3bfb93cdc5492c6",
+        "rtl/experimental/qn_bulk_axis.v": "042ffce335e78dca1f65fdc32ed56adbdc19a3cb4403ff452b3f7374cd180cd2",
+        "rtl/experimental/fused_affine_quant.v": "eda062410420504864e78b3db6aa66bf48302269122bedf7dc2cbd8b9b4ddb1a",
+        "rtl/experimental/moonshine_stream_top.v": "de85a7bdb6f81857a044e29bb4ffc73e78fefa50453948f33cc1bc73a2810975",
+        "hardware/mic_cdc.xdc": "13b876cb794c2cfdd1291e77793b863b15ac86ee4bb53f3a6d56951f1c7ff6b5",
+        "scripts/project_streaming.tcl": "8db151965dd6f8bdc6a745a48cdde7299133832fbb06a59cb5bad4ce9e7ff7c9"
+      },
+      "tile_max_k": 1024,
+      "tile_max_m": 1024,
+      "note": "Routed build passed timing/DRC; physical qualification is recorded separately."
+    }
+  },
+  "host_tests": {
+    "total": 48,
+    "skipped": 8,
+    "passed": true
+  },
+  "board_live_tests": {
+    "total": 11,
+    "passed": true
+  },
+  "capture_rtl_simulation_passed": true,
+  "selected_microphone": {
+    "carrier_connector": "J3",
+    "input": "primary",
+    "slot": "right",
+    "selection": 1
+  },
+  "sustained_replay": {
+    "arithmetic_and_replay_passed": true,
+    "microphone_probes": [
+      {
+        "samples": 48000,
+        "sample_rate": 16000,
+        "audio_seconds": 3.0,
+        "mic_selection": 1,
+        "transport_passed": true,
+        "signal_present": true,
+        "rms_dbfs": -20.31376792974969,
+        "peak": 0.116943359375,
+        "zero_fraction": 0.0,
+        "error": null,
+        "helper_diagnostics": "{\"samples\":48000,\"seconds\":3.000246,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":48003}\n",
+        "first_packet_ns": 120804814065083,
+        "last_packet_ns": 120807794229150,
+        "passed": true,
+        "dc": -0.09638798236846924,
+        "standard_deviation": 0.0035160689149051905,
+        "low_six_bits_zero_fraction": 1.0,
+        "plausible_microphone_signal": true
+      },
+      {
+        "samples": 48000,
+        "sample_rate": 16000,
+        "audio_seconds": 3.0,
+        "mic_selection": 3,
+        "transport_passed": true,
+        "signal_present": true,
+        "rms_dbfs": -40.92798969478924,
+        "peak": 0.9375,
+        "zero_fraction": 0.27860416666666665,
+        "error": null,
+        "helper_diagnostics": "{\"samples\":48000,\"seconds\":3.000609,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":48009}\n",
+        "first_packet_ns": 120808678828991,
+        "last_packet_ns": 120811659384039,
+        "passed": true,
+        "dc": -0.00031957353348843753,
+        "standard_deviation": 0.00898102205246687,
+        "low_six_bits_zero_fraction": 0.2913125,
+        "plausible_microphone_signal": false
+      },
+      {
+        "samples": 48000,
+        "sample_rate": 16000,
+        "audio_seconds": 3.0,
+        "mic_selection": 0,
+        "transport_passed": true,
+        "signal_present": false,
+        "rms_dbfs": -240.0,
+        "peak": 0.0,
+        "zero_fraction": 1.0,
+        "error": null,
+        "helper_diagnostics": "{\"samples\":48000,\"seconds\":3.000063,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":48001}\n",
+        "first_packet_ns": 120812540068923,
+        "last_packet_ns": 120815520074143,
+        "passed": false,
+        "dc": 0.0,
+        "standard_deviation": 0.0,
+        "low_six_bits_zero_fraction": 1.0,
+        "plausible_microphone_signal": false
+      },
+      {
+        "samples": 48000,
+        "sample_rate": 16000,
+        "audio_seconds": 3.0,
+        "mic_selection": 2,
+        "transport_passed": true,
+        "signal_present": true,
+        "rms_dbfs": -39.11057362218851,
+        "peak": 1.0,
+        "zero_fraction": 0.7863333333333333,
+        "error": null,
+        "helper_diagnostics": "{\"samples\":48000,\"seconds\":3.000357,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":48005}\n",
+        "first_packet_ns": 120816479251826,
+        "last_packet_ns": 120819459162097,
+        "passed": true,
+        "dc": -0.0001489512069383636,
+        "standard_deviation": 0.01107725128531456,
+        "low_six_bits_zero_fraction": 0.7866041666666667,
+        "plausible_microphone_signal": false
+      }
+    ],
+    "capture_helper_sha256": "2481f6a362d51fc6026db8984bdce2b0b9df1cf4feca3b5697f9e00102d2fe22",
+    "preferred_selection": 1,
+    "signal_present": true,
+    "concurrent_capture": {
+      "samples": 1040000,
+      "nonzero": 1040000,
+      "queue_high_water_blocks": 1,
+      "diagnostics": "{\"samples\":1040000,\"seconds\":65.000772,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":1040001}\n",
+      "transport_passed": true
+    },
+    "all_updates_match_oracle": true,
+    "summary": {
+      "type": "summary",
+      "exit_code": 0,
+      "samples": 998400,
+      "audio_seconds": 62.4,
+      "utterances": 16,
+      "finals": 16,
+      "discarded": 0,
+      "incomplete": 0,
+      "clipped_samples": 0,
+      "all_zero_audio": false,
+      "max_transcript_lag_ms": 1831.343703,
+      "queue_high_water_ms": 1460,
+      "physical": {
+        "ioctls": 3840,
+        "loads": 1920,
+        "runs": 11520,
+        "tx_bytes": 1120778240,
+        "rx_bytes": 534988800,
+        "ioctl_seconds": 4.369880039856071
+      },
+      "emitted_monotonic_ns": 120916632780396
+    },
+    "audio_seconds": 62.4,
+    "expected_finals": 16,
+    "note": "Replay tokens use prerecorded audio. Physical microphone transcription requires a separate live test."
+  },
+  "live_microphone": {
+    "functional_live_recognition_passed": true,
+    "user_confirmed_source_topic": true,
+    "source_topic": "luxury-car review mentioning Bentleys and Rolls-Royces",
+    "strict_continuous_latency_qualified": false,
+    "word_error_rate_qualified": false,
+    "mic_selection": 1,
+    "highpass_hz": 30,
+    "vad_dbfs": -50.0,
+    "runtime_sources_sha256": "3c124f69dc2ef8d008a6ae3780fc99aa61e0d241f65a693e0ba79b9bcd084c8c",
+    "capture_helper_sha256": "2481f6a362d51fc6026db8984bdce2b0b9df1cf4feca3b5697f9e00102d2fe22",
+    "partial_updates": 32,
+    "finals": 9,
+    "all_finals_complete": true,
+    "total_update_processing_seconds": 87.44732140701672,
+    "summary": {
+      "type": "summary",
+      "exit_code": 130,
+      "samples": 2424000,
+      "audio_seconds": 151.5,
+      "utterances": 10,
+      "finals": 9,
+      "discarded": 0,
+      "incomplete": 0,
+      "clipped_samples": 0,
+      "all_zero_audio": false,
+      "max_transcript_lag_ms": 5057.665655,
+      "queue_high_water_ms": 7000,
+      "physical": {
+        "ioctls": 5040,
+        "loads": 2520,
+        "runs": 19074,
+        "tx_bytes": 1516845664,
+        "rx_bytes": 885786016,
+        "ioctl_seconds": 6.775122432241915
+      },
+      "emitted_monotonic_ns": 121181773432646
+    },
+    "firmware_sha256": {
+      "asr-v3-mic-select.bit.bin": "56179f557544fba3221a41b7fc8e81b61a0d041403a4a24d70a1e09dc39317b2",
+      "asr-v3-mic-select.dtbo": "de44bbd3040cfcc963d061f932161fc129433a0c5597041725b0f44cce918687",
+      "shell.json": "5b262494370cdb4f3e2ef124072cfaf68fd2f0bdc8c0a207913dedfba66cd841"
+    },
+    "restored": true,
+    "note": "Exit 130 is the intentional end of the speaking test; queued audio and the unfinished tenth utterance were cancelled. Caption content matched the user supplied source topic; no reference transcript or WER is available. Peak lag and queue depth require further latency work."
+  },
+  "note": "Functional streaming prototype. Continuous-speech latency, word accuracy and 2x-versus-CPU remain open. Optimized pre-prototype Desktop snapshot is unchanged."
+}

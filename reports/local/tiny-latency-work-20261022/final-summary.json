@@ -1,0 +1,53 @@
+{
+  "profile": "tiny --low-latency",
+  "source_package": {
+    "path": "build\\moonshine-tiny-low-latency-source-20261022.zip",
+    "files": 100,
+    "sha256": "30d2a1a644fe81a24d477a5ada39be46539c7f088b540694b13a4f832b39750f"
+  },
+  "runtime_sources_sha256": "a1c47bb851fee6eb0710652ee27d4ea3a9e440287ede5cb74731b737bf9346c9",
+  "audio_seconds": 62.5,
+  "partial_count": 210,
+  "finals": 22,
+  "partial_oldest_update_age_ms": {
+    "count": 210,
+    "p50": 669.491904,
+    "p95": 830.23959205,
+    "max": 981.527963
+  },
+  "partial_source_end_lag_ms": {
+    "count": 210,
+    "p50": 163.5331975,
+    "p95": 283.98562469999996,
+    "max": 393.571941
+  },
+  "total_processing_seconds": 41.99139332678169,
+  "compute_realtime_factor": 0.671862293228507,
+  "oracle": {
+    "passed": true,
+    "updates": 232,
+    "finals": 22,
+    "mismatches": [],
+    "runtime_sources_sha256": "a1c47bb851fee6eb0710652ee27d4ea3a9e440287ede5cb74731b737bf9346c9"
+  },
+  "microphone": {
+    "samples": 1040000,
+    "nonzero": 1040000,
+    "queue_high_water_ms": 20,
+    "transport_passed": true,
+    "diagnostics": "{\"samples\":1040000,\"seconds\":65.000221,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":1040008}\n"
+  },
+  "board_restored": true,
+  "host_checks": {
+    "unit_tests": 50,
+    "skipped": 8,
+    "source_and_dependency_integrity": true,
+    "distribution": true
+  },
+  "limitations": [
+    "Repeated test speech; no held-out WER or aligned word latency measurement.",
+    "Three-second contexts can split words and lower recognition accuracy.",
+    "Final captions can exceed one second. No 2x FPGA-versus-CPU claim.",
+    "Existing FPGA encoder FFN accelerator; attention and decoder remain on CPU."
+  ]
+}

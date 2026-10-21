@@ -1,0 +1,17 @@
+test_duration_gate_requires_complete_physical_runs (test_moonshine.MatrixTests.test_duration_gate_requires_complete_physical_runs) ... ok
+test_fpga_tile_route_matches_oracle (test_moonshine.MatrixTests.test_fpga_tile_route_matches_oracle) ... ok
+test_hardware_failure_propagates (test_moonshine.MatrixTests.test_hardware_failure_propagates) ... ok
+test_prepacked_weights_follow_bulk_wire_layout (test_moonshine.MatrixTests.test_prepacked_weights_follow_bulk_wire_layout) ... ok
+test_reject_invalid_inputs (test_moonshine.MatrixTests.test_reject_invalid_inputs) ... ok
+test_speedup_gate_uses_fastest_cpu_and_requires_physical_parity (test_moonshine.MatrixTests.test_speedup_gate_uses_fastest_cpu_and_requires_physical_parity) ... ok
+test_tiling_preserves_whole_matrix_scales (test_moonshine.MatrixTests.test_tiling_preserves_whole_matrix_scales) ... ok
+test_zero_and_nearest_even (test_moonshine.MatrixTests.test_zero_and_nearest_even) ... ok
+test_chunked_frontend_and_encoder_match_reference (test_moonshine.StreamingTests.test_chunked_frontend_and_encoder_match_reference) ... ok
+test_convolution_lowering_matches_reference (test_moonshine.StreamingTests.test_convolution_lowering_matches_reference) ... ok
+test_final_decoding_uses_full_utterance_budget (test_moonshine.StreamingTests.test_final_decoding_uses_full_utterance_budget) ... ok
+test_native_decoder_graph_matches_reference_with_cache (test_moonshine.StreamingTests.test_native_decoder_graph_matches_reference_with_cache) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.876s
+
+OK

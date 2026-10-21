@@ -1,0 +1,218 @@
+{
+  "profile": "Tiny --accuracy; 400 ms previews, 2 s windows/1 s overlap, 12 s phrase context",
+  "runtime_sources_sha256": "fa31d575443b9fbe4ad887e1de48c15fe35136be1434762945103808aa1e74ab",
+  "source_package": {
+    "path": "build\\moonshine-tiny-accuracy-source-20261022.zip",
+    "files": 105,
+    "sha256": "19f60e2e2ee933985b7017aaab2704f4e7739177239f3c096175df96cf7dfac5"
+  },
+  "balanced_filtered_replay": {
+    "ready": {
+      "type": "ready",
+      "model": {
+        "model": "moonshine-ai/moonshine-streaming-tiny",
+        "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+        "backend": "fpga",
+        "runtime_sources_sha256": "fa31d575443b9fbe4ad887e1de48c15fe35136be1434762945103808aa1e74ab",
+        "scope": "encoder-ffn",
+        "projections": [
+          "model.encoder.layers.0.mlp.fc1",
+          "model.encoder.layers.0.mlp.fc2",
+          "model.encoder.layers.1.mlp.fc1",
+          "model.encoder.layers.1.mlp.fc2",
+          "model.encoder.layers.2.mlp.fc1",
+          "model.encoder.layers.2.mlp.fc2",
+          "model.encoder.layers.3.mlp.fc1",
+          "model.encoder.layers.3.mlp.fc2",
+          "model.encoder.layers.4.mlp.fc1",
+          "model.encoder.layers.4.mlp.fc2",
+          "model.encoder.layers.5.mlp.fc1",
+          "model.encoder.layers.5.mlp.fc2"
+        ],
+        "threads": 2,
+        "frontend_lowering": false,
+        "cpu_tail_int8": true
+      },
+      "decoder_runtime": {
+        "engine": "onnxruntime",
+        "precision": "int8",
+        "version": "1.24.1",
+        "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+        "threads": 4,
+        "scheduling": "run-spin"
+      },
+      "encoder_runtime": {
+        "engine": "onnxruntime",
+        "attention_precision": "int8",
+        "convolution_precision": "float32",
+        "threads": 4,
+        "version": "1.24.1",
+        "scheduling": "sleep",
+        "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+      },
+      "source": "replay",
+      "paced": true,
+      "source_audio_sha256": "00dffa9e32a7030c5f3848d5fef85b51eaf633794bef2336b69ae186a6ec67c9",
+      "capture_helper_sha256": null,
+      "mic_selection": null,
+      "initialization_seconds": 19.062703773990506,
+      "sample_rate": 16000,
+      "chunk_ms": 400,
+      "vad_dbfs": -55,
+      "silence_ms": 700,
+      "coalesce_partials": true,
+      "accuracy_mode": true,
+      "segmentation": {
+        "chunk_ms": 400,
+        "threshold": -55,
+        "silence_ms": 700,
+        "max_seconds": 12,
+        "gain": 1,
+        "overlap_ms": 1000,
+        "pause_after_seconds": 6,
+        "pause_ms": 250,
+        "pre_roll_ms": 300,
+        "attack_ms": 60,
+        "min_speech_ms": 200
+      },
+      "preview_seconds": 2,
+      "preview_overlap_seconds": 1,
+      "max_seconds": 12,
+      "gain": 1,
+      "highpass_hz": 30.0,
+      "emitted_monotonic_ns": 147643834555881
+    },
+    "summary": {
+      "type": "summary",
+      "exit_code": 0,
+      "samples": 1000000,
+      "audio_seconds": 62.5,
+      "utterances": 10,
+      "finals": 10,
+      "discarded": 0,
+      "incomplete": 0,
+      "pending_refinements": 0,
+      "refinement_queue_high_water": 1,
+      "clipped_samples": 0,
+      "all_zero_audio": false,
+      "max_transcript_lag_ms": 2897.468891,
+      "max_oldest_update_age_ms": 3437.468891,
+      "raw_clipped_samples": 0,
+      "queue_high_water_ms": 360,
+      "physical": {
+        "ioctls": 7584,
+        "loads": 3792,
+        "runs": 7340,
+        "tx_bytes": 833150912,
+        "rx_bytes": 225662912,
+        "ioctl_seconds": 2.2922801777895074
+      },
+      "emitted_monotonic_ns": 147706388633294
+    },
+    "partial_count": 148,
+    "final_count": 10,
+    "partial_source_end_lag_ms": {
+      "count": 148,
+      "p50": 251.435922,
+      "p95": 347.6504546500001,
+      "max": 360.698375
+    },
+    "partial_oldest_update_age_ms": {
+      "count": 148,
+      "p50": 891.70508,
+      "p95": 992.9934443,
+      "max": 1000.6983749999999
+    },
+    "final_source_end_lag_ms": {
+      "count": 10,
+      "p50": 1107.133711,
+      "p95": 2238.0416247499984,
+      "max": 2897.468891
+    },
+    "refined_finals": 10,
+    "max_within_utterance_partial_gap_ms": 510.956484,
+    "clean_completion": true,
+    "live_timing_eligible": true,
+    "timing_scope": "Paced acquisition to result; oldest update age adds update audio duration and encoder lookahead. Neither metric measures aligned word latency."
+  },
+  "oracle": {
+    "passed": true,
+    "updates": 168,
+    "finals": 10,
+    "mismatches": [],
+    "runtime_sources_sha256": "fa31d575443b9fbe4ad887e1de48c15fe35136be1434762945103808aa1e74ab"
+  },
+  "concurrent_microphone": {
+    "samples": 1040000,
+    "nonzero": 1040000,
+    "queue_high_water_ms": 20,
+    "transport_passed": true,
+    "diagnostics": "{\"samples\":1040000,\"seconds\":65.000855,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":1040006}\n"
+  },
+  "synthetic_conversation_regression": {
+    "baseline": {
+      "reference_words": 69,
+      "errors": 2
+    },
+    "accuracy": {
+      "reference_words": 69,
+      "errors": 1
+    }
+  },
+  "precision_comparison": {
+    "float": {
+      "reference_words": 69,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    },
+    "fpga-int8": {
+      "reference_words": 69,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    },
+    "fpga-float-attention": {
+      "reference_words": 69,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    },
+    "fpga-float-decoder": {
+      "reference_words": 69,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    }
+  },
+  "tests": {
+    "host": {
+      "ran": 63,
+      "skipped": 9,
+      "passed": true
+    },
+    "board_numerical": {
+      "ran": 15,
+      "passed": true
+    },
+    "board_refinement": {
+      "ran": 10,
+      "passed": true
+    }
+  },
+  "board_restored": true,
+  "limitations": [
+    "Synthetic regression is not representative general-conversation WER.",
+    "Preview text remains revisable and can be incorrect. Timings are not aligned word latency.",
+    "Final refinement can take seconds; overlap matching has no word timestamps.",
+    "Existing FPGA encoder FFN accelerator; attention and decoding remain on CPU."
+  ]
+}

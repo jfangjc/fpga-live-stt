@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1872.08it/s]
+[0;93m2026-10-21 14:08:10.529466209 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1021 14:08:19.327495251 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+{"variant": "fpga-float-decoder", "total": {"reference_words": 69, "errors": 0, "substitutions": 0, "deletions": 0, "insertions": 0, "wer": 0.0}, "complete": true}

@@ -1,0 +1,6 @@
+[sudo] password for ubuntu: Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1826.73it/s]
+[0;93m2026-10-20 20:59:24.756753544 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 20:59:27.638402820 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+2.5 [1.6180737980030244, 1.5104203010123456, 1.506592523001018, 1.5126108510012273] True
+5.0 [4.956582332000835, 4.976857710003969, 4.9179232210008195, 4.904134678989067] True
+10.0 [12.718229918013094, 13.212576185003854, 12.709229063009843, 12.6715658250032] True

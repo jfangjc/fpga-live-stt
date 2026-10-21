@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "raw_tiles": [
+    {
+      "m": 1,
+      "k": 1,
+      "t": 1,
+      "seconds": 0.0003573279973352328,
+      "prepared_seconds": 0.0006042530003469437,
+      "exact": true,
+      "prepared_exact": true
+    },
+    {
+      "m": 17,
+      "k": 31,
+      "t": 19,
+      "seconds": 0.00024406499869655818,
+      "prepared_seconds": 0.0004967799904989079,
+      "exact": true,
+      "prepared_exact": true
+    },
+    {
+      "m": 512,
+      "k": 620,
+      "t": 25,
+      "seconds": 0.0023098269884940237,
+      "prepared_seconds": 0.0019296489917906001,
+      "exact": true,
+      "prepared_exact": true
+    },
+    {
+      "m": 620,
+      "k": 512,
+      "t": 16,
+      "seconds": 0.001380948000587523,
+      "prepared_seconds": 0.001801756996428594,
+      "exact": true,
+      "prepared_exact": true
+    },
+    {
+      "m": 1024,
+      "k": 1024,
+      "t": 33,
+      "seconds": 0.006475552989286371,
+      "prepared_seconds": 0.0044778320007026196,
+      "exact": true,
+      "prepared_exact": true
+    }
+  ],
+  "large_projection_exact": true,
+  "physical": {
+    "ioctls": 37,
+    "loads": 16,
+    "runs": 39,
+    "tx_bytes": 6862240,
+    "rx_bytes": 1401712,
+    "ioctl_seconds": 0.01972494898654986
+  }
+}

@@ -1,0 +1,47 @@
+Selected microphone configuration: 1
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  67%|██████▋   | 175/262 [00:00<00:00, 1740.68it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1718.12it/s]
+[0;93m2026-10-21 06:58:12.393390846 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+Listening for speech. Press Ctrl+C to stop.
+[W1021 06:59:13.113228257 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+[partial 1] I'm going to send it on the phone.
+[partial 1] All right, I'm going to do something on this all day. I'm going to take a look. I've been feeling a lot of fr
+[partial 1] I'm going to do something on this all day. I've been feeling a lot of really luxurious cars on this channel. They don't necessarily
+[partial 1] I'm going to do something on this all day. I've reviewed a lot of really luxurious cars on this channel. They don't necessarily say about the Bentleys and the Rolls Royces of the world.
+[final 1] I'm going to do something on this all day. I've reviewed a lot of really luxurious cars on this channel. They don't necessarily say about the Bentleys and the Rolls Royces of the world.
+[partial 2] They're not actually a good value, but if you
+[partial 2] They're not actually a good value, but if you truly want the maximum luxury,
+[final 2] They're not actually a good value but if you truly want the maximum luxury the 101 luxury
+[partial 3] Then that's where you gotta go to get it.
+[partial 3] Then that's where you gotta go to get it. It's gonna be like $300,000 or $400
+[partial 3] Then that's where you gotta go to get it. It's gonna be like $300,000 or $400,000. But how do you get as close to $30
+[final 3] Then that's where you gotta go to get it. It's gonna be like $300,000 or $400,000. But how do you get as close to that as possible without spending that kind of money?
+[final 4] What does that actually look like?
+[partial 5] And I'm going to answer to that question. This is my answer.
+[partial 5] And I'm going to answer to that question. This is my actual new answer. This is the Volvo.
+[partial 5] And i have a new answer to that question this is my actual new answer this is the Volvo ex-90 and i'm telling you guys this thing that i'm
+[partial 5] And i have a new answer to that question this is my actual new answer this is the Volvo ex-90 and i'm telling you guys this thing is like 98 percent of what
+[final 5] And i have a new answer to that question this is my actual new answer this is the Volvo ex-90 and i'm telling you guys this thing is like 98 of the luxury of that car
+[partial 6] Quarter of the cost. So I'll just wait for this by saying I
+[partial 6] Quarter of the cost. So I'll just wait for this by saying I've never actually driven a Rolls Royce Cullinan, which
+[partial 6] So I'll just wait for this by saying I've never actually driven a Rolls Royce Cullinan, which is probably closer to the size of this, but I did review and drive it
+[partial 6] So I'll just wait for this by saying I've never actually driven a Rolls-Royce Cullinan, which is probably closer to the size of this, but I did review and drive for a week the Rolls-Royce Spectre, which, by the way,
+[final 6] So I'll just wait for this by saying I've never actually driven a Rolls-Royce Cullinan, which is probably closer to the size of this, but I did review and drive for a week the Rolls-Royce Spectre, which by all accounts and by everyone else who has seen reviews,
+[partial 7] In a car, that is like a vehicle.
+[partial 7] in a car that is like painful for us, the quietest, the smoothest.
+[partial 7] in a car that is like people's lives, the quietest, the smoothest, the most soft and pluffed.
+[final 7] in a car that is like April 4th, the quietest, the smoothest, the most soft and pluffed. That's apex, right?
+[partial 8] This, now that I've driven it for a week.
+[partial 8] This, now that I've driven it for a week, is so close. It's so close.
+[partial 8] This, now that I've driven it for a week, is so close in so many areas that were special about the rolls.
+[partial 8] This, now that I've driven it for a week, is so close in so many areas that we're special about the roles for it. So I'm going to go through that and explain why I think we're
+[final 8] This, now that I've driven it for a week, is so close in so many areas that we're special about the roles for it. So I'm going to go through that and explain why I think we'll probably sleep in office car. But first, just a basic
+[partial 9] This is a3 row suv from rover
+[partial 9] This is a3 row suv from waltham and it starts in the 80s
+[partial 9] This is a3 row suv from waltham and it starts in the 80s i think it's 80s up and down this one this one
+[partial 9] This is a3 row suv from waltham and it starts in the 80s i think it's 80s up above the dollars this one is somewhere in the 90s it's got a
+[final 9] This is a3 row suv from waltham and it starts in the 80s i think it's 80s up above the dollars this one is somewhere in the 90s it's got this sort of beige sand color to it
+[partial 10] Going on battery and this is a
+[partial 10] So what our battery and this is a pretty high-end option one that will get you a 100%
+[partial 10] So in our battery, and this is a pretty high-end option one that will get you about $300 a wrench on a full-charge battery.
+[partial 10] So an hour battery and this is a pretty high-end option one that will get you about $300 a wrench on a full charge. Now it won't just kind of refresh the entire wrench.
+Stopped. Completed utterances: 9

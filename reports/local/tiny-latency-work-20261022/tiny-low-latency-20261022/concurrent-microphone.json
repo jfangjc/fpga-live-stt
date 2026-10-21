@@ -1,0 +1,7 @@
+{
+  "samples": 1040000,
+  "nonzero": 1040000,
+  "queue_high_water_ms": 20,
+  "transport_passed": true,
+  "diagnostics": "{\"samples\":1040000,\"seconds\":65.000221,\"startup_discarded\":18,\"startup_dropped\":0,\"newly_dropped\":0,\"captured_delta\":1040008}\n"
+}

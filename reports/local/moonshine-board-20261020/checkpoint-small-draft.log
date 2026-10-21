@@ -1,0 +1,7 @@
+test_streaming_matches_pinned_reference (test_moonshine_checkpoint.CheckpointTests.test_streaming_matches_pinned_reference) ... Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  65%|██████▍   | 169/262 [00:00<00:00, 1687.99it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1738.09it/s]
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 56.532s
+
+OK

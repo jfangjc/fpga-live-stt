@@ -1,0 +1,113 @@
+{
+  "variant": "fpga-float-attention",
+  "manifest_sha256": "0a055e132c16350cba6acc438ff2f22b593c08c5dcd373bb35c90b5de0ae782c",
+  "dataset": "Synthetic conversational prompts for regression only; not human conversation WER",
+  "model": {
+    "model": "moonshine-ai/moonshine-streaming-tiny",
+    "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+    "backend": "fpga",
+    "runtime_sources_sha256": "49f65ddd853ae49cf8c491ba114037b605719e78d0dacbfd6ed247dad2d17f9c",
+    "scope": "encoder-ffn",
+    "projections": [
+      "model.encoder.layers.0.mlp.fc1",
+      "model.encoder.layers.0.mlp.fc2",
+      "model.encoder.layers.1.mlp.fc1",
+      "model.encoder.layers.1.mlp.fc2",
+      "model.encoder.layers.2.mlp.fc1",
+      "model.encoder.layers.2.mlp.fc2",
+      "model.encoder.layers.3.mlp.fc1",
+      "model.encoder.layers.3.mlp.fc2",
+      "model.encoder.layers.4.mlp.fc1",
+      "model.encoder.layers.4.mlp.fc2",
+      "model.encoder.layers.5.mlp.fc1",
+      "model.encoder.layers.5.mlp.fc2"
+    ],
+    "threads": 2,
+    "frontend_lowering": false,
+    "cpu_tail_int8": true,
+    "decoder_runtime": {
+      "engine": "onnxruntime",
+      "precision": "int8",
+      "version": "1.24.1",
+      "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+      "threads": 4,
+      "scheduling": "run-spin"
+    },
+    "encoder_runtime": {
+      "engine": "onnxruntime",
+      "attention_precision": "float",
+      "convolution_precision": "float32",
+      "threads": 4,
+      "version": "1.24.1",
+      "scheduling": "sleep",
+      "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+    }
+  },
+  "clips": [
+    {
+      "wav": "conversation-1.wav",
+      "wav_sha256": "f9f2e84d4d9fea27782c202cb9bf1e41df3fba1d60def926d34ca7bab09b49ef",
+      "reference": "I was thinking we could meet at the coffee shop after lunch. Would you like to walk there together, or should I meet you outside? I can bring the book you asked about last week.",
+      "hypothesis": "I was thinking we could meet at the coffee shop after lunch. Would you like to walk there together, or should I meet you outside? I can bring the book you asked about last week.",
+      "score": {
+        "reference_words": 35,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "signal": {
+        "seconds": 11.45,
+        "dc_offset": 0.01502211019396782,
+        "ac_rms_dbfs": -20.955711938831357,
+        "peak": 0.6541748046875,
+        "clipped_fraction": 0.0
+      },
+      "processing_seconds": 2.7144707280094735,
+      "token_limit_reached": false
+    },
+    {
+      "wav": "conversation-2.wav",
+      "wav_sha256": "2bac94ddc830edb88a5f1ed833e2b2918042280aa4df616ac1252d847d6b54ff",
+      "reference": "How was your weekend? We went to the park on Saturday and had dinner with some friends. The weather was lovely, so we stayed outside until it started getting dark. What did you do?",
+      "hypothesis": "How was your weekend? We went to the park on Saturday and had dinner with some friends. The weather was lovely, so we stayed outside until it started getting dark. What did you do?",
+      "score": {
+        "reference_words": 34,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "signal": {
+        "seconds": 12.67,
+        "dc_offset": 0.015417059883475304,
+        "ac_rms_dbfs": -20.853502650835672,
+        "peak": 0.688201904296875,
+        "clipped_fraction": 0.0
+      },
+      "processing_seconds": 2.7660905480151996,
+      "token_limit_reached": false
+    }
+  ],
+  "total": {
+    "reference_words": 69,
+    "errors": 0,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0
+  },
+  "physical": {
+    "ioctls": 96,
+    "loads": 48,
+    "runs": 1824,
+    "tx_bytes": 23868672,
+    "rx_bytes": 56063232,
+    "ioctl_seconds": 0.24753296590643004
+  },
+  "complete": true,
+  "normalization": "Unicode NFKC, casefold, punctuation stripped; numbers are not expanded",
+  "timing_scope": "Offline accuracy comparison; not a live latency benchmark"
+}

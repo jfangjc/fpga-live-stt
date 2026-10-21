@@ -1,0 +1,45 @@
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1735.23it/s]
+[W1020 20:42:04.281682119 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+-----------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                 Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
+-----------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                            quantized::linear_dynamic        68.51%        2.295s        74.00%        2.479s       1.406ms          1763  
+                             aten::mkldnn_convolution         4.14%     138.657ms         4.24%     142.034ms      14.203ms            10  
+    aten::_scaled_dot_product_flash_attention_for_cpu         3.54%     118.653ms         4.98%     166.857ms     421.357us           396  
+                                            aten::cat         2.01%      67.292ms         3.24%     108.400ms      87.419us          1240  
+                                          aten::slice         1.63%      54.712ms         2.15%      72.029ms      17.133us          4204  
+                                          aten::empty         1.62%      54.130ms         1.62%      54.130ms       5.880us          9205  
+                              aten::native_layer_norm         1.61%      53.784ms         2.09%      70.110ms     108.194us           648  
+                            aten::quantize_per_tensor         1.35%      45.327ms         1.35%      45.327ms      25.710us          1763  
+                                            aten::min         1.24%      41.439ms         1.67%      55.973ms      31.749us          1763  
+                                      aten::transpose         1.21%      40.435ms         1.62%      54.144ms      14.705us          3682  
+                                     aten::as_strided         1.19%      39.767ms         1.19%      39.767ms       3.942us         10088  
+                                            aten::max         1.02%      34.046ms         1.34%      44.875ms      25.454us          1763  
+                                           aten::silu         0.91%      30.337ms         0.91%      30.337ms     159.666us           190  
+                                            aten::add         0.85%      28.515ms         0.99%      33.180ms      30.413us          1091  
+                                            aten::mul         0.73%      24.481ms         0.80%      26.690ms      24.874us          1073  
+                                         aten::argmax         0.63%      21.061ms         0.64%      21.454ms     715.119us            30  
+                                           aten::item         0.61%      20.463ms         0.72%      24.271ms       6.835us          3551  
+                                         aten::narrow         0.59%      19.898ms         1.62%      54.321ms      26.999us          2012  
+                                      aten::unsqueeze         0.54%      18.030ms         0.73%      24.336ms      14.625us          1664  
+                                           aten::gelu         0.51%      17.184ms         0.51%      17.184ms     477.323us            36  
+                                          aten::copy_         0.46%      15.572ms         0.46%      15.572ms      24.562us           634  
+                                           aten::view         0.46%      15.242ms         0.46%      15.242ms       4.458us          3419  
+                                     aten::layer_norm         0.38%      12.709ms         2.47%      82.819ms     127.807us           648  
+                   aten::scaled_dot_product_attention         0.33%      10.907ms         5.42%     181.613ms     458.618us           396  
+                              aten::repeat_interleave         0.32%      10.684ms         1.42%      47.413ms     131.702us           360  
+                                     aten::empty_like         0.30%      10.182ms         0.51%      17.129ms      21.251us           806  
+                                          aten::stack         0.27%       9.103ms         1.69%      56.599ms     157.219us           360  
+                                        aten::flatten         0.26%       8.649ms         0.34%      11.259ms      15.638us           720  
+                                          aten::clone         0.23%       7.554ms         0.84%      28.166ms      62.453us           451  
+                                            aten::neg         0.21%       7.177ms         0.21%       7.177ms      18.123us           396  
+                                   aten::index_select         0.20%       6.828ms         0.26%       8.794ms     244.280us            36  
+                                  aten::empty_strided         0.19%       6.296ms         0.19%       6.296ms       9.994us           630  
+                                          aten::asinh         0.18%       6.088ms         0.18%       6.088ms       1.218ms             5  
+                                        aten::reshape         0.18%       5.932ms         0.25%       8.465ms      15.532us           545  
+                                         aten::arange         0.14%       4.743ms         0.26%       8.866ms      41.044us           216  
+-----------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 3.350s
+
+{"frontend_seconds": 0.1832383029977791, "encoder_seconds": 0.6888421029725578, "decoder_seconds": 3.748247119016014}
+[1, 395, 29906, 29900, 29900, 1353, 1754, 701, 29889, 1105, 338, 278, 856, 2]

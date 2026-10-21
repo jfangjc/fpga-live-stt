@@ -1,0 +1,12 @@
+test_native_float_decoder_preserves_every_update (test_moonshine_checkpoint.CheckpointTests.test_native_float_decoder_preserves_every_update) ... Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  64%|██████▎   | 167/262 [00:00<00:00, 1663.91it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1940.60it/s]
+[0;93m2026-10-21 00:00:48.151394739 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+ok
+test_native_float_encoder_preserves_chunked_memory (test_moonshine_checkpoint.CheckpointTests.test_native_float_encoder_preserves_chunked_memory) ... Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 150/262 [00:00<00:00, 1498.28it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1516.23it/s]
+ok
+test_streaming_matches_pinned_reference (test_moonshine_checkpoint.CheckpointTests.test_streaming_matches_pinned_reference) ... Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 144/262 [00:00<00:00, 1438.38it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1468.87it/s]
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 99.136s
+
+OK

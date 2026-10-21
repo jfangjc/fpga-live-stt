@@ -1,0 +1,41 @@
+test_cold_call_rejects_missing_registration (test_counters.CounterTests.test_cold_call_rejects_missing_registration) ... ok
+test_first_call_registers_and_executes (test_counters.CounterTests.test_first_call_registers_and_executes) ... ok
+test_warm_call_rejects_extra_registration (test_counters.CounterTests.test_warm_call_rejects_extra_registration) ... ok
+test_warm_call_reuses_registration (test_counters.CounterTests.test_warm_call_reuses_registration) ... ok
+test_changed_archive_is_rejected (test_dependencies.DependencyTests.test_changed_archive_is_rejected) ... ok
+test_changed_destination_is_preserved (test_dependencies.DependencyTests.test_changed_destination_is_preserved) ... ok
+test_install_and_repeat (test_dependencies.DependencyTests.test_install_and_repeat) ... ok
+test_parent_path_is_rejected (test_dependencies.DependencyTests.test_parent_path_is_rejected) ... ok
+test_fpga_tile_route_matches_oracle (test_moonshine.MatrixTests.test_fpga_tile_route_matches_oracle) ... ok
+test_hardware_failure_propagates (test_moonshine.MatrixTests.test_hardware_failure_propagates) ... ok
+test_reject_invalid_inputs (test_moonshine.MatrixTests.test_reject_invalid_inputs) ... ok
+test_speedup_gate_uses_fastest_cpu_and_requires_physical_parity (test_moonshine.MatrixTests.test_speedup_gate_uses_fastest_cpu_and_requires_physical_parity) ... ok
+test_tiling_preserves_whole_matrix_scales (test_moonshine.MatrixTests.test_tiling_preserves_whole_matrix_scales) ... ok
+test_zero_and_nearest_even (test_moonshine.MatrixTests.test_zero_and_nearest_even) ... ok
+test_chunked_frontend_and_encoder_match_reference (test_moonshine.StreamingTests.test_chunked_frontend_and_encoder_match_reference) ... skipped 'Install Moonshine runtime dependencies for streaming tests'
+test_convolution_lowering_matches_reference (test_moonshine.StreamingTests.test_convolution_lowering_matches_reference) ... skipped 'Install Moonshine runtime dependencies for streaming tests'
+test_final_decoding_uses_full_utterance_budget (test_moonshine.StreamingTests.test_final_decoding_uses_full_utterance_budget) ... skipped 'Install Moonshine runtime dependencies for streaming tests'
+test_native_decoder_graph_matches_reference_with_cache (test_moonshine.StreamingTests.test_native_decoder_graph_matches_reference_with_cache) ... skipped 'Install Moonshine runtime dependencies for streaming tests'
+test_native_float_decoder_preserves_every_update (test_moonshine_checkpoint.CheckpointTests.test_native_float_decoder_preserves_every_update) ... skipped 'Set MOONSHINE_TEST_WAV for checkpoint validation'
+test_streaming_matches_pinned_reference (test_moonshine_checkpoint.CheckpointTests.test_streaming_matches_pinned_reference) ... skipped 'Set MOONSHINE_TEST_WAV for checkpoint validation'
+test_frontend_shape_and_finite_values (test_project.ProjectTests.test_frontend_shape_and_finite_values) ... ok
+test_installer_does_not_overwrite_existing_app (test_project.ProjectTests.test_installer_does_not_overwrite_existing_app) ... ok
+test_manifest_detects_tampering (test_project.ProjectTests.test_manifest_detects_tampering) ... ok
+test_manifest_rejects_path_escape (test_project.ProjectTests.test_manifest_rejects_path_escape) ... ok
+test_policy_context_keys (test_project.ProjectTests.test_policy_context_keys) ... ok
+test_rebuild_sources_are_present (test_project.ProjectTests.test_rebuild_sources_are_present) ... ok
+test_shipped_assets (test_project.ProjectTests.test_shipped_assets) ... ok
+test_wav_bounds (test_project.ProjectTests.test_wav_bounds) ... ok
+test_failed_activation_restores_bulk (test_rollback.RollbackTests.test_failed_activation_restores_bulk) ... ok
+test_failed_inference_restores_bulk (test_rollback.RollbackTests.test_failed_inference_restores_bulk) ... ok
+test_success_restores_bulk (test_rollback.RollbackTests.test_success_restores_bulk) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.376s
+
+OK (skipped=6)
+PASS: 1 external files installed with their notices and driver sources
+PASS: 1 external files installed with their notices and driver sources
+PASS: bulk firmware, driver, clock and IRQ masks restored
+PASS: bulk firmware, driver, clock and IRQ masks restored
+PASS: bulk firmware, driver, clock and IRQ masks restored

@@ -1,0 +1,19 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  56%|█████▋    | 148/262 [00:00<00:00, 1473.47it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1738.38it/s]
+[0;93m2026-10-20 22:03:30.838090350 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 22:03:36.133711311 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+cpu-int8 2.5 [3.685915868001757, 2.49652579499525, 2.4394167740101693, 2.4623234260070603]
+cpu-int8 5.0 [5.117473899998004, 5.043935326000792, 5.067583630006993, 5.069455213990295]
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 161/262 [00:00<00:00, 1590.91it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1562.89it/s]
+oracle 2.5 [44.7909454239998]
+oracle 5.0 [91.26284093600407]
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 150/262 [00:00<00:00, 1494.14it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1510.39it/s]
+fpga 2.5 [2.8455067130125826, 2.412980854001944, 2.4801961860066513, 2.4200568230007775]
+fpga 5.0 [4.997084932008875, 4.891792502996395, 4.9044353810022585, 4.892625832988415]
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1791.65it/s]
+[0;93m2026-10-20 22:07:46.352848250 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 22:07:51.977793230 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+cpu-int8 2.5 [1.383779965006397, 1.210259532002965, 1.3685729730059393, 1.3727503789996263]
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights:  93%|█████████▎| 149/161 [00:00<00:00, 1485.95it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1530.20it/s]
+oracle 2.5 [7.372156115001417]
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights:  98%|█████████▊| 157/161 [00:00<00:00, 1567.59it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1568.63it/s]
+fpga 2.5 [1.3252572969940957, 1.2254899380059214, 1.2414883290039143, 1.243379214007291]

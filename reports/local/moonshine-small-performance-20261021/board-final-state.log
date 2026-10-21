@@ -1,0 +1,4 @@
+operating
+PASS: project sources verified
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+f2f9b240b22471b3e0bf5577ae748d9f5a69aeab10c62a0ec14a0feb879b77a0  build/native/libqnc_moonshine.so

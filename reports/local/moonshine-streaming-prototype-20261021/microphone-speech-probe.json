@@ -1,0 +1,11 @@
+{
+  "samples": 320000,
+  "seconds": 20.0,
+  "elapsed": 20.228609925994533,
+  "rms_dbfs": -240.0,
+  "peak": 0.0,
+  "zero_fraction": 1.0,
+  "low_six_bits_zero_fraction": 1.0,
+  "helper": "{\"samples\":320000,\"seconds\":20.000465,\"startup_discarded\":1033,\"startup_dropped\":10691,\"newly_dropped\":0,\"captured_delta\":320004}\n",
+  "queue_high_water_blocks": 1
+}

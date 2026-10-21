@@ -1,0 +1,273 @@
+{
+  "model": {
+    "model": "moonshine-ai/moonshine-streaming-tiny",
+    "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+    "backend": "fpga",
+    "runtime_sources_sha256": "243bd276f650db32cc6577c21ebf8ecd464c64701fdd7b0b484a9aee3fae0452",
+    "scope": "encoder-ffn",
+    "projections": [
+      "model.encoder.layers.0.mlp.fc1",
+      "model.encoder.layers.0.mlp.fc2",
+      "model.encoder.layers.1.mlp.fc1",
+      "model.encoder.layers.1.mlp.fc2",
+      "model.encoder.layers.2.mlp.fc1",
+      "model.encoder.layers.2.mlp.fc2",
+      "model.encoder.layers.3.mlp.fc1",
+      "model.encoder.layers.3.mlp.fc2",
+      "model.encoder.layers.4.mlp.fc1",
+      "model.encoder.layers.4.mlp.fc2",
+      "model.encoder.layers.5.mlp.fc1",
+      "model.encoder.layers.5.mlp.fc2"
+    ],
+    "threads": 2,
+    "frontend_lowering": false,
+    "cpu_tail_int8": true
+  },
+  "decoder": {
+    "engine": "onnxruntime",
+    "precision": "int8",
+    "version": "1.24.1",
+    "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+    "threads": 4,
+    "scheduling": "run-spin"
+  },
+  "encoder": {
+    "engine": "onnxruntime",
+    "attention_precision": "int8",
+    "convolution_precision": "float32",
+    "threads": 4,
+    "version": "1.24.1",
+    "scheduling": "sleep",
+    "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+  },
+  "cases": [
+    {
+      "chunk_ms": 250,
+      "max_seconds": 4,
+      "threads": 2,
+      "wall_seconds": 16.55277819299954,
+      "summary": {
+        "samples": 264000,
+        "audio_seconds": 16.5,
+        "utterances": 4,
+        "finals": 4,
+        "discarded": 0,
+        "incomplete": 0,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 903.611339,
+        "max_oldest_update_age_ms": 1483.611339
+      },
+      "queue_high_water_ms": 900,
+      "partial_count": 49,
+      "p95_partial_source_lag_ms": 397.7144506,
+      "p95_oldest_update_age_ms": 1167.358961,
+      "max_oldest_update_age_ms": 1390.885745,
+      "total_processing_seconds": 13.439270362927346,
+      "final_texts": [
+        "200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars?",
+        "All our number made up. So is the two hundred all our number made up.",
+        "So is the $200 number made up. So is the $200 number made up."
+      ],
+      "final_profiles": [
+        {
+          "frontend_seconds": 0.3045649419655092,
+          "encoder_seconds": 0.9114466660830658,
+          "decoder_seconds": 2.1690748949476983
+        },
+        {
+          "frontend_seconds": 0.3034929990535602,
+          "encoder_seconds": 0.9115586359694134,
+          "decoder_seconds": 2.3352086580416653
+        },
+        {
+          "frontend_seconds": 0.32697217795066535,
+          "encoder_seconds": 0.9245320290501695,
+          "decoder_seconds": 2.5615619809832424
+        },
+        {
+          "frontend_seconds": 0.27214833701145835,
+          "encoder_seconds": 0.7960362309822813,
+          "decoder_seconds": 1.6060600120399613
+        }
+      ]
+    },
+    {
+      "chunk_ms": 250,
+      "max_seconds": 4,
+      "threads": 3,
+      "wall_seconds": 16.552705521986354,
+      "summary": {
+        "samples": 264000,
+        "audio_seconds": 16.5,
+        "utterances": 4,
+        "finals": 4,
+        "discarded": 0,
+        "incomplete": 0,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 790.746307,
+        "max_oldest_update_age_ms": 1364.940377
+      },
+      "queue_high_water_ms": 780,
+      "partial_count": 49,
+      "p95_partial_source_lag_ms": 383.5767377999998,
+      "p95_oldest_update_age_ms": 1146.6785969999996,
+      "max_oldest_update_age_ms": 1210.448042,
+      "total_processing_seconds": 11.91278871698887,
+      "final_texts": [
+        "200-hour number made up. So is the 200-hour number made up.",
+        "So is the two hundred all are number made up. So is the two hundred all are number made up.",
+        "Or number made up. So is the two hundred all are number made up.",
+        "So is the $200 number made up. So is the $200 number made up."
+      ],
+      "final_profiles": [
+        {
+          "frontend_seconds": 0.2435506119800266,
+          "encoder_seconds": 0.8849314319668338,
+          "decoder_seconds": 2.17517538802349
+        },
+        {
+          "frontend_seconds": 0.24573605405748822,
+          "encoder_seconds": 0.8810622669407167,
+          "decoder_seconds": 1.7891933969804086
+        },
+        {
+          "frontend_seconds": 0.24278897800832056,
+          "encoder_seconds": 0.8000247879826929,
+          "decoder_seconds": 2.231705352984136
+        },
+        {
+          "frontend_seconds": 0.21921183000085875,
+          "encoder_seconds": 0.8196905179938767,
+          "decoder_seconds": 1.3633029859920498
+        }
+      ]
+    },
+    {
+      "chunk_ms": 200,
+      "max_seconds": 4,
+      "threads": 4,
+      "wall_seconds": 16.552506109001115,
+      "summary": {
+        "samples": 264000,
+        "audio_seconds": 16.5,
+        "utterances": 4,
+        "finals": 4,
+        "discarded": 0,
+        "incomplete": 0,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 914.010585,
+        "max_oldest_update_age_ms": 1382.849837
+      },
+      "queue_high_water_ms": 900,
+      "partial_count": 61,
+      "p95_partial_source_lag_ms": 360.690035,
+      "p95_oldest_update_age_ms": 1076.112575,
+      "max_oldest_update_age_ms": 1382.849837,
+      "total_processing_seconds": 13.180905075190822,
+      "final_texts": [
+        "200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred all are number made up. So is the two hundred all are number made up.",
+        "All I number made up. So is the two hundred all are number made up.",
+        "So is the $200 number made up. So is the $200 number made up."
+      ],
+      "final_profiles": [
+        {
+          "frontend_seconds": 0.30048183191684075,
+          "encoder_seconds": 1.0301173879706766,
+          "decoder_seconds": 1.8927067561016884
+        },
+        {
+          "frontend_seconds": 0.319416473939782,
+          "encoder_seconds": 1.110810278041754,
+          "decoder_seconds": 2.115074857021682
+        },
+        {
+          "frontend_seconds": 0.27959877491230145,
+          "encoder_seconds": 0.9431116769846994,
+          "decoder_seconds": 2.6144949780136812
+        },
+        {
+          "frontend_seconds": 0.24797467101598158,
+          "encoder_seconds": 0.8747946170333307,
+          "decoder_seconds": 1.430796722881496
+        }
+      ]
+    },
+    {
+      "chunk_ms": 250,
+      "max_seconds": 3,
+      "threads": 4,
+      "wall_seconds": 16.55294263298856,
+      "summary": {
+        "samples": 264000,
+        "audio_seconds": 16.5,
+        "utterances": 6,
+        "finals": 6,
+        "discarded": 0,
+        "incomplete": 0,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 543.788339,
+        "max_oldest_update_age_ms": 990.943203
+      },
+      "queue_high_water_ms": 540,
+      "partial_count": 52,
+      "p95_partial_source_lag_ms": 302.4394150999999,
+      "p95_oldest_update_age_ms": 898.3738422499997,
+      "max_oldest_update_age_ms": 944.689338,
+      "total_processing_seconds": 10.909180312999524,
+      "final_texts": [
+        "Two hundred all are number made up. So is the two of the two hundred all are number made up.",
+        "All our number made up. So is the two hundred all our number number.",
+        "It up. So is the $200 number made up.",
+        "So is the two hundred dollars number made up?",
+        "So is the $200 number made up. So is the $200 number made up.",
+        "the"
+      ],
+      "final_profiles": [
+        {
+          "frontend_seconds": 0.190156068012584,
+          "encoder_seconds": 0.6959959689702373,
+          "decoder_seconds": 1.1569240300159436
+        },
+        {
+          "frontend_seconds": 0.21310809103306383,
+          "encoder_seconds": 0.7116770649736281,
+          "decoder_seconds": 1.5465484710002784
+        },
+        {
+          "frontend_seconds": 0.19307215500157326,
+          "encoder_seconds": 0.6864916170598008,
+          "decoder_seconds": 1.3952903039753437
+        },
+        {
+          "frontend_seconds": 0.1947059549856931,
+          "encoder_seconds": 0.6843160100106616,
+          "decoder_seconds": 0.969105853990186
+        },
+        {
+          "frontend_seconds": 0.19669122298364528,
+          "encoder_seconds": 0.7260298000182956,
+          "decoder_seconds": 1.1116538079513703
+        },
+        {
+          "frontend_seconds": 0.04029144297237508,
+          "encoder_seconds": 0.12367051700130105,
+          "decoder_seconds": 0.05483895601355471
+        }
+      ]
+    }
+  ],
+  "physical": {
+    "ioctls": 11376,
+    "loads": 5688,
+    "runs": 6448,
+    "tx_bytes": 1214617216,
+    "rx_bytes": 198276736,
+    "ioctl_seconds": 2.9419601994159166
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "ready": {
+    "type": "ready",
+    "model": {
+      "model": "moonshine-ai/moonshine-streaming-tiny",
+      "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+      "backend": "fpga",
+      "runtime_sources_sha256": "f3f3b6e4619edc71408541c3214f28c3519bf84d5a6fbd163aab638d0485dc6a",
+      "scope": "encoder-ffn",
+      "projections": [
+        "model.encoder.layers.0.mlp.fc1",
+        "model.encoder.layers.0.mlp.fc2",
+        "model.encoder.layers.1.mlp.fc1",
+        "model.encoder.layers.1.mlp.fc2",
+        "model.encoder.layers.2.mlp.fc1",
+        "model.encoder.layers.2.mlp.fc2",
+        "model.encoder.layers.3.mlp.fc1",
+        "model.encoder.layers.3.mlp.fc2",
+        "model.encoder.layers.4.mlp.fc1",
+        "model.encoder.layers.4.mlp.fc2",
+        "model.encoder.layers.5.mlp.fc1",
+        "model.encoder.layers.5.mlp.fc2"
+      ],
+      "threads": 2,
+      "frontend_lowering": false,
+      "cpu_tail_int8": true
+    },
+    "decoder_runtime": {
+      "engine": "onnxruntime",
+      "precision": "int8",
+      "version": "1.24.1",
+      "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+      "threads": 4,
+      "scheduling": "run-spin"
+    },
+    "encoder_runtime": {
+      "engine": "onnxruntime",
+      "attention_precision": "int8",
+      "convolution_precision": "float32",
+      "threads": 4,
+      "version": "1.24.1",
+      "scheduling": "sleep",
+      "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+    },
+    "source": "replay",
+    "paced": true,
+    "source_audio_sha256": "415bc75d204c41ff6b08d3186a7e92b1986cdce0b907e9678f4555b7bc265223",
+    "capture_helper_sha256": null,
+    "mic_selection": null,
+    "initialization_seconds": 19.105427370988764,
+    "sample_rate": 16000,
+    "chunk_ms": 250,
+    "vad_dbfs": -55,
+    "silence_ms": 700,
+    "coalesce_partials": true,
+    "accuracy_mode": true,
+    "segmentation": {
+      "chunk_ms": 250,
+      "threshold": -55,
+      "silence_ms": 700,
+      "max_seconds": 12,
+      "gain": 1,
+      "overlap_ms": 1000,
+      "pause_after_seconds": 6,
+      "pause_ms": 250,
+      "pre_roll_ms": 300,
+      "attack_ms": 60,
+      "min_speech_ms": 200
+    },
+    "preview_seconds": 2,
+    "preview_overlap_seconds": 1,
+    "max_seconds": 12,
+    "gain": 1,
+    "highpass_hz": 0,
+    "emitted_monotonic_ns": 146177365670364
+  },
+  "summary": {
+    "type": "summary",
+    "exit_code": 0,
+    "samples": 1000000,
+    "audio_seconds": 62.5,
+    "utterances": 6,
+    "finals": 6,
+    "discarded": 0,
+    "incomplete": 0,
+    "pending_refinements": 0,
+    "refinement_queue_high_water": 3,
+    "clipped_samples": 0,
+    "all_zero_audio": false,
+    "max_transcript_lag_ms": 29717.952537,
+    "max_oldest_update_age_ms": 30017.952537,
+    "raw_clipped_samples": 0,
+    "queue_high_water_ms": 380,
+    "physical": {
+      "ioctls": 10704,
+      "loads": 5352,
+      "runs": 6008,
+      "tx_bytes": 1142412800,
+      "rx_bytes": 184747520,
+      "ioctl_seconds": 2.678672886104323
+    },
+    "emitted_monotonic_ns": 146243289901128
+  },
+  "partial_count": 217,
+  "final_count": 6,
+  "partial_source_end_lag_ms": {
+    "count": 217,
+    "p50": 256.846337,
+    "p95": 342.74440739999994,
+    "max": 386.743922
+  },
+  "partial_oldest_update_age_ms": {
+    "count": 217,
+    "p50": 773.667101,
+    "p95": 887.039932,
+    "max": 1780.324731
+  },
+  "final_source_end_lag_ms": {
+    "count": 6,
+    "p50": 19702.9318965,
+    "p95": 27797.061263,
+    "max": 29717.952537
+  },
+  "refined_finals": 6,
+  "max_within_utterance_partial_gap_ms": 393.082637,
+  "clean_completion": true,
+  "live_timing_eligible": true,
+  "timing_scope": "Paced acquisition to result; oldest update age adds update audio duration and encoder lookahead. Neither metric measures aligned word latency."
+}

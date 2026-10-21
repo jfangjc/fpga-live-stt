@@ -1,0 +1,26 @@
+{
+  "cpu_backend": "cpu-int8",
+  "cpu_threads": 2,
+  "cpu_p50_seconds": 5.041091830011283,
+  "fpga_p50_seconds": 7.503312084991194,
+  "speedup": 0.6718488812553768,
+  "target": 2,
+  "oracle_tokens_equal": true,
+  "token_limit_reached": false,
+  "float_transcript_equal": true,
+  "partial_token_limits_reached": true,
+  "target_met": false,
+  "cpu_profile_p50": {
+    "frontend_seconds": 0.31081366499711294,
+    "encoder_seconds": 1.7046166879954399,
+    "decoder_seconds": 3.0227790220087627
+  },
+  "fpga_profile_p50": {
+    "frontend_seconds": 0.33606671500456287,
+    "encoder_seconds": 2.1241738599928794,
+    "decoder_seconds": 5.035771527007455
+  },
+  "float_cpu_text": "$200 number made up. So is the...",
+  "fpga_text": "$200 number made up. So is the...",
+  "accuracy_qualified": false
+}

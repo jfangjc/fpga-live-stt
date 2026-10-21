@@ -1,0 +1,48 @@
+[0;93m2026-10-21 13:23:36.045629176 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1854.99it/s]
+/home/ubuntu/moonshine-kv260-20261020/software/moonshine/ort_encoder.py:72: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.
+  torch.onnx.export(graph, args, str(path), opset_version=18, dynamo=False,
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+/home/ubuntu/moonshine-kv260-20261020/software/moonshine/ort_encoder.py:102: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.
+  torch.onnx.export(graph, (x,), str(path), opset_version=18, dynamo=False,
+{
+  "format_version": 1,
+  "model": "moonshine-ai/moonshine-streaming-tiny",
+  "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+  "layers": 6,
+  "hidden_size": 320,
+  "export_sources_sha256": "3c124f69dc2ef8d008a6ae3780fc99aa61e0d241f65a693e0ba79b9bcd084c8c",
+  "torch_version": "2.8.0+cpu",
+  "onnxruntime_version": "1.24.1",
+  "float_max_errors": {
+    "attention-0": 1.8596649169921875e-05,
+    "attention-1": 1.430511474609375e-05,
+    "attention-2": 9.5367431640625e-06,
+    "attention-3": 9.5367431640625e-06,
+    "attention-4": 1.621246337890625e-05,
+    "attention-5": 3.4809112548828125e-05,
+    "conv0": 4.00543212890625e-05,
+    "conv1": 6.198883056640625e-06
+  },
+  "files": {
+    "attention-0-float.onnx": "5997a4f82262e02daca61dbf66765692e7c2ed5bfeeab464f45cc4e44624749c",
+    "attention-0-int8.onnx": "31190fafe6291351592a77c3a3598103545ca77616ea3c8a734a3c9cf8ae2c9d",
+    "attention-1-float.onnx": "b4ef727351201bc356831ffc201b8c8983b71f77d81b9811289c613dcec021f4",
+    "attention-1-int8.onnx": "dde3fede9dca7cf24ea943210a8acb6fa09ab7c57cd18b23ff24fd688d6eba34",
+    "attention-2-float.onnx": "00df6703b8692a788fb4553433d4f2f24a6f1bc5477849e7061da64370e4063c",
+    "attention-2-int8.onnx": "afb3e0cea3f462c89ac324d3a193e6974e5dff2de09af6f4ffef884897b8c998",
+    "attention-3-float.onnx": "7a185a77c2ece6be6a76607a7b89df9c88e3d2cc77bf791c0dc2a2019da55320",
+    "attention-3-int8.onnx": "48c53f43fa88ba2e2f7bb8b321d74aa084a1af7a14f7a2c1ee39cd872d6719ee",
+    "attention-4-float.onnx": "fe8be8b346217ac763fde6c2da11340fa652ce80a8477b8af574674c3b32004a",
+    "attention-4-int8.onnx": "b8869f8703ea72a63ae213667087a8575ed619a5bbb340f386978560c1d1a9b0",
+    "attention-5-float.onnx": "45dd53d038c78b84a593e32bc4206d0c02e528b2b9e3ad44d0eb237ddadd5804",
+    "attention-5-int8.onnx": "f2f244310d2680e76369122f857b71a43c0decf100571b8a15b71ad699b3188c",
+    "conv0-float.onnx": "ef55c0bea87878196b96af39ecb000ca159cdd9446eb835a80888c7a31793f61",
+    "conv1-float.onnx": "da243e22f01e9c879331022b4c9565e1ff41fa9a0cf6f7e04ca836762ac9d330"
+  }
+}

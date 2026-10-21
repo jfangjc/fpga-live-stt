@@ -1,0 +1,16 @@
+test_capture_overrun_is_explicit_and_reader_stops (test_moonshine_live.CaptureTests.test_capture_overrun_is_explicit_and_reader_stops) ... ok
+test_dc_filter_matches_scalar_recurrence_across_irregular_blocks (test_moonshine_live.CaptureTests.test_dc_filter_matches_scalar_recurrence_across_irregular_blocks) ... ok
+test_dc_offset_has_no_startup_transient_or_false_speech (test_moonshine_live.CaptureTests.test_dc_offset_has_no_startup_transient_or_false_speech) ... ok
+test_signed_pcm24_and_packet_continuity (test_moonshine_live.CaptureTests.test_signed_pcm24_and_packet_continuity) ... ok
+test_truncation_overflow_bad_samples_and_sequence_fail (test_moonshine_live.CaptureTests.test_truncation_overflow_bad_samples_and_sequence_fail) ... ok
+test_click_is_discarded_without_running_decoder (test_moonshine_live.LiveTests.test_click_is_discarded_without_running_decoder) ... ok
+test_generation_limit_never_commits_incomplete_text_as_final (test_moonshine_live.LiveTests.test_generation_limit_never_commits_incomplete_text_as_final) ... ok
+test_hard_boundaries_preserve_audio_with_irregular_source_blocks (test_moonshine_live.LiveTests.test_hard_boundaries_preserve_audio_with_irregular_source_blocks) ... ok
+test_invalid_audio_and_configuration_fail (test_moonshine_live.LiveTests.test_invalid_audio_and_configuration_fail) ... ok
+test_silence_does_not_create_model_or_hallucinated_text (test_moonshine_live.LiveTests.test_silence_does_not_create_model_or_hallucinated_text) ... ok
+test_two_utterances_keep_exact_audio_and_fresh_stream_state (test_moonshine_live.LiveTests.test_two_utterances_keep_exact_audio_and_fresh_stream_state) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.367s
+
+OK

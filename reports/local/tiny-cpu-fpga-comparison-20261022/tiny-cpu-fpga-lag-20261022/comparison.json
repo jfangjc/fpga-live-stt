@@ -1,0 +1,488 @@
+{
+  "matched_configuration": {
+    "source_audio_sha256": "00dffa9e32a7030c5f3848d5fef85b51eaf633794bef2336b69ae186a6ec67c9",
+    "sample_rate": 16000,
+    "chunk_ms": 400,
+    "silence_ms": 700,
+    "max_seconds": 12,
+    "highpass_hz": 30.0,
+    "gain": 1,
+    "segmentation": {
+      "chunk_ms": 400,
+      "threshold": -55,
+      "silence_ms": 700,
+      "max_seconds": 12,
+      "gain": 1,
+      "overlap_ms": 1000,
+      "pause_after_seconds": 6,
+      "pause_ms": 250,
+      "pre_roll_ms": 300,
+      "attack_ms": 60,
+      "min_speech_ms": 200
+    },
+    "accuracy_mode": true,
+    "preview_seconds": 2,
+    "preview_overlap_seconds": 1,
+    "decoder_runtime": {
+      "engine": "onnxruntime",
+      "precision": "int8",
+      "version": "1.24.1",
+      "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+      "threads": 4,
+      "scheduling": "run-spin"
+    },
+    "encoder_runtime": {
+      "engine": "onnxruntime",
+      "attention_precision": "int8",
+      "convolution_precision": "float32",
+      "threads": 4,
+      "version": "1.24.1",
+      "scheduling": "sleep",
+      "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+    },
+    "model": {
+      "model": "moonshine-ai/moonshine-streaming-tiny",
+      "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+      "runtime_sources_sha256": "fa31d575443b9fbe4ad887e1de48c15fe35136be1434762945103808aa1e74ab",
+      "threads": 2
+    }
+  },
+  "order": [
+    "cpu-int8",
+    "fpga",
+    "fpga",
+    "cpu-int8"
+  ],
+  "trials": [
+    {
+      "trial": 1,
+      "backend": "cpu-int8",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "moonshine.live",
+        "--size",
+        "tiny",
+        "--accuracy",
+        "--wav",
+        "reports/local/tiny-accuracy-final-20261022/fixture.wav",
+        "--highpass-hz",
+        "30",
+        "--threads",
+        "2",
+        "--native-threads",
+        "4",
+        "--ort-decoder",
+        "build/tiny-decoder-v2",
+        "--ort-encoder",
+        "build/tiny-encoder-v1",
+        "--backend",
+        "cpu-int8",
+        "--out",
+        "reports/local/tiny-cpu-fpga-lag-20261022/1-cpu-int8.jsonl"
+      ],
+      "wall_seconds_with_initialization": 92.96686014800798,
+      "initialization_seconds": 19.53081367901177,
+      "preview_update_age_ms": {
+        "count": 148,
+        "p50": 879.015047,
+        "p95": 971.2689740999999,
+        "max": 991.022755
+      },
+      "preview_source_end_lag_ms": {
+        "count": 148,
+        "p50": 239.01504699999998,
+        "p95": 331.26897410000004,
+        "max": 351.022755
+      },
+      "final_source_end_lag_ms": {
+        "count": 10,
+        "p50": 1021.8847089999999,
+        "p95": 1154.6870402499999,
+        "max": 1190.866336
+      },
+      "queue_high_water_ms": 340,
+      "refinement_queue_high_water": 1,
+      "processing_seconds": 40.47632332154899,
+      "final_tokens": 280,
+      "final_texts": [
+        "200-yard number made up. So is the 200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the?",
+        "200-yard number made up. So is the 200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the?"
+      ],
+      "summary": {
+        "type": "summary",
+        "exit_code": 0,
+        "samples": 1000000,
+        "audio_seconds": 62.5,
+        "utterances": 10,
+        "finals": 10,
+        "discarded": 0,
+        "incomplete": 0,
+        "pending_refinements": 0,
+        "refinement_queue_high_water": 1,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 1190.866336,
+        "max_oldest_update_age_ms": 1710.866336,
+        "raw_clipped_samples": 0,
+        "queue_high_water_ms": 340,
+        "physical": null,
+        "emitted_monotonic_ns": 174950235794397
+      },
+      "health_before": {},
+      "health_after": {}
+    },
+    {
+      "trial": 2,
+      "backend": "fpga",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "moonshine.live",
+        "--size",
+        "tiny",
+        "--accuracy",
+        "--wav",
+        "reports/local/tiny-accuracy-final-20261022/fixture.wav",
+        "--highpass-hz",
+        "30",
+        "--threads",
+        "2",
+        "--native-threads",
+        "4",
+        "--ort-decoder",
+        "build/tiny-decoder-v2",
+        "--ort-encoder",
+        "build/tiny-encoder-v1",
+        "--backend",
+        "fpga",
+        "--out",
+        "reports/local/tiny-cpu-fpga-lag-20261022/2-fpga.jsonl"
+      ],
+      "wall_seconds_with_initialization": 92.45541069400497,
+      "initialization_seconds": 19.104427729995223,
+      "preview_update_age_ms": {
+        "count": 148,
+        "p50": 881.8951245000001,
+        "p95": 989.80535715,
+        "max": 1105.340041
+      },
+      "preview_source_end_lag_ms": {
+        "count": 148,
+        "p50": 241.8951245,
+        "p95": 348.6979172,
+        "max": 465.340041
+      },
+      "final_source_end_lag_ms": {
+        "count": 10,
+        "p50": 1056.069654,
+        "p95": 1413.2968580499996,
+        "max": 1617.231553
+      },
+      "queue_high_water_ms": 460,
+      "refinement_queue_high_water": 1,
+      "processing_seconds": 41.20369054703042,
+      "final_tokens": 280,
+      "final_texts": [
+        "200-yard number made up. So is the 200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the.",
+        "200-hour number made up. So is the 200-hour number made up. So is the 200-hour number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the."
+      ],
+      "summary": {
+        "type": "summary",
+        "exit_code": 0,
+        "samples": 1000000,
+        "audio_seconds": 62.5,
+        "utterances": 10,
+        "finals": 10,
+        "discarded": 0,
+        "incomplete": 0,
+        "pending_refinements": 0,
+        "refinement_queue_high_water": 1,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 1617.231553,
+        "max_oldest_update_age_ms": 2057.231553,
+        "raw_clipped_samples": 0,
+        "queue_high_water_ms": 460,
+        "physical": {
+          "ioctls": 7584,
+          "loads": 3792,
+          "runs": 7328,
+          "tx_bytes": 833058560,
+          "rx_bytes": 225294080,
+          "ioctl_seconds": 2.3792723236838356
+        },
+        "emitted_monotonic_ns": 175042772828522
+      },
+      "health_before": {},
+      "health_after": {}
+    },
+    {
+      "trial": 3,
+      "backend": "fpga",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "moonshine.live",
+        "--size",
+        "tiny",
+        "--accuracy",
+        "--wav",
+        "reports/local/tiny-accuracy-final-20261022/fixture.wav",
+        "--highpass-hz",
+        "30",
+        "--threads",
+        "2",
+        "--native-threads",
+        "4",
+        "--ort-decoder",
+        "build/tiny-decoder-v2",
+        "--ort-encoder",
+        "build/tiny-encoder-v1",
+        "--backend",
+        "fpga",
+        "--out",
+        "reports/local/tiny-cpu-fpga-lag-20261022/3-fpga.jsonl"
+      ],
+      "wall_seconds_with_initialization": 92.76473023998551,
+      "initialization_seconds": 19.406554690998746,
+      "preview_update_age_ms": {
+        "count": 148,
+        "p50": 881.756995,
+        "p95": 983.9871926,
+        "max": 994.176373
+      },
+      "preview_source_end_lag_ms": {
+        "count": 148,
+        "p50": 241.75699500000002,
+        "p95": 343.9871926,
+        "max": 354.176373
+      },
+      "final_source_end_lag_ms": {
+        "count": 10,
+        "p50": 1052.6005475000002,
+        "p95": 1311.1252978499997,
+        "max": 1431.056007
+      },
+      "queue_high_water_ms": 340,
+      "refinement_queue_high_water": 1,
+      "processing_seconds": 40.544865796138765,
+      "final_tokens": 280,
+      "final_texts": [
+        "200-hour number made up. So is the 200-hour number made up. So is the 200-hour number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the.",
+        "200-hour number made up. So is the 200-hour number made up. So is the 200-hour number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up?",
+        "So is the."
+      ],
+      "summary": {
+        "type": "summary",
+        "exit_code": 0,
+        "samples": 1000000,
+        "audio_seconds": 62.5,
+        "utterances": 10,
+        "finals": 10,
+        "discarded": 0,
+        "incomplete": 0,
+        "pending_refinements": 0,
+        "refinement_queue_high_water": 1,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 1431.056007,
+        "max_oldest_update_age_ms": 1951.056007,
+        "raw_clipped_samples": 0,
+        "queue_high_water_ms": 340,
+        "physical": {
+          "ioctls": 7584,
+          "loads": 3792,
+          "runs": 7344,
+          "tx_bytes": 833181696,
+          "rx_bytes": 225785856,
+          "ioctl_seconds": 2.311384499334963
+        },
+        "emitted_monotonic_ns": 175135544543003
+      },
+      "health_before": {},
+      "health_after": {}
+    },
+    {
+      "trial": 4,
+      "backend": "cpu-int8",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "moonshine.live",
+        "--size",
+        "tiny",
+        "--accuracy",
+        "--wav",
+        "reports/local/tiny-accuracy-final-20261022/fixture.wav",
+        "--highpass-hz",
+        "30",
+        "--threads",
+        "2",
+        "--native-threads",
+        "4",
+        "--ort-decoder",
+        "build/tiny-decoder-v2",
+        "--ort-encoder",
+        "build/tiny-encoder-v1",
+        "--backend",
+        "cpu-int8",
+        "--out",
+        "reports/local/tiny-cpu-fpga-lag-20261022/4-cpu-int8.jsonl"
+      ],
+      "wall_seconds_with_initialization": 93.19080415301141,
+      "initialization_seconds": 19.804424208996352,
+      "preview_update_age_ms": {
+        "count": 148,
+        "p50": 877.225592,
+        "p95": 973.4607911500001,
+        "max": 997.0669909999999
+      },
+      "preview_source_end_lag_ms": {
+        "count": 148,
+        "p50": 237.225592,
+        "p95": 333.46079115000003,
+        "max": 357.066991
+      },
+      "final_source_end_lag_ms": {
+        "count": 10,
+        "p50": 1018.6348005,
+        "p95": 1154.738928,
+        "max": 1183.209798
+      },
+      "queue_high_water_ms": 340,
+      "refinement_queue_high_water": 1,
+      "processing_seconds": 40.40406207984779,
+      "final_tokens": 280,
+      "final_texts": [
+        "200-yard number made up. So is the 200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the?",
+        "200-yard number made up. So is the 200-yard number made up. So is the 200-yard number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the two hundred dollars number made up? So is the two hundred dollars number made up? So is the two hundred dollars number made up.",
+        "So is the?"
+      ],
+      "summary": {
+        "type": "summary",
+        "exit_code": 0,
+        "samples": 1000000,
+        "audio_seconds": 62.5,
+        "utterances": 10,
+        "finals": 10,
+        "discarded": 0,
+        "incomplete": 0,
+        "pending_refinements": 0,
+        "refinement_queue_high_water": 1,
+        "clipped_samples": 0,
+        "all_zero_audio": false,
+        "max_transcript_lag_ms": 1183.209798,
+        "max_oldest_update_age_ms": 1703.209798,
+        "raw_clipped_samples": 0,
+        "queue_high_water_ms": 340,
+        "physical": null,
+        "emitted_monotonic_ns": 175228712998762
+      },
+      "health_before": {},
+      "health_after": {}
+    }
+  ],
+  "aggregate": {
+    "cpu-int8": {
+      "preview_update_age_ms": {
+        "count": 296,
+        "p50": 878.2693285,
+        "p95": 973.40281875,
+        "max": 997.0669909999999
+      },
+      "preview_source_end_lag_ms": {
+        "count": 296,
+        "p50": 238.2693285,
+        "p95": 333.40281875000005,
+        "max": 357.066991
+      },
+      "final_source_end_lag_ms": {
+        "count": 20,
+        "p50": 1021.8847089999999,
+        "p95": 1183.5926249000001,
+        "max": 1190.866336
+      },
+      "median_processing_seconds": 40.44019270069839
+    },
+    "fpga": {
+      "preview_update_age_ms": {
+        "count": 296,
+        "p50": 881.863317,
+        "p95": 986.91320125,
+        "max": 1105.340041
+      },
+      "preview_source_end_lag_ms": {
+        "count": 296,
+        "p50": 241.863317,
+        "p95": 346.28423075,
+        "max": 465.340041
+      },
+      "final_source_end_lag_ms": {
+        "count": 20,
+        "p50": 1054.6021695,
+        "p95": 1440.3647843,
+        "max": 1617.231553
+      },
+      "median_processing_seconds": 40.87427817158459
+    }
+  },
+  "comparison": {
+    "preview_update_age_ms": {
+      "cpu_p95_ms": 973.40281875,
+      "fpga_p95_ms": 986.91320125,
+      "fpga_minus_cpu_ms": 13.510382499999992,
+      "fpga_lag_reduction_percent": -1.3879539117576642
+    },
+    "preview_source_end_lag_ms": {
+      "cpu_p95_ms": 333.40281875000005,
+      "fpga_p95_ms": 346.28423075,
+      "fpga_minus_cpu_ms": 12.881411999999955,
+      "fpga_lag_reduction_percent": -3.8636182046376155
+    },
+    "final_source_end_lag_ms": {
+      "cpu_p95_ms": 1183.5926249000001,
+      "fpga_p95_ms": 1440.3647843,
+      "fpga_minus_cpu_ms": 256.77215939999996,
+      "fpga_lag_reduction_percent": -21.694302076417063
+    }
+  },
+  "notes": [
+    "Paced replay of repeated test speech, two trials per backend; not a diverse accuracy corpus.",
+    "Same native INT8 decoder/attention, Torch and native thread counts, segmentation, input and filtering.",
+    "CPU uses optimized QNNPACK INT8 feed-forward projections; FPGA uses physical INT8 bulk projections.",
+    "Partial coalescing follows queue state; hypotheses/update boundaries may differ between backends.",
+    "Preview update age includes collection plus encoder lookahead; final lag excludes silence waiting.",
+    "No microphone reader or competing benchmark was run during timing. Initialization is separate."
+  ]
+}

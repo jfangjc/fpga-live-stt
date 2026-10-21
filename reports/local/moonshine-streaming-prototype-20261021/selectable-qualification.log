@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/moonshine-kv260-20261020/scripts/test_moonshine_physical.py", line 56, in <module>
+    main()
+  File "/home/ubuntu/moonshine-kv260-20261020/scripts/test_moonshine_physical.py", line 26, in main
+    y = device.multiply(w, x)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/moonshine-kv260-20261020/software/moonshine/matrix.py", line 106, in multiply
+    raise OSError(-rc, 'FPGA weight load failed')
+OSError: [Errno 5] FPGA weight load failed
+Traceback (most recent call last):
+  File "/home/ubuntu/moonshine-kv260-20261020/build/qualify_selectable.py", line 12, in <module>
+    subprocess.run([python, 'scripts/test_moonshine_physical.py', '--out', str(root/'physical.json')], check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['.venv/bin/python', 'scripts/test_moonshine_physical.py', '--out', 'reports/local/selectable-qualification/physical.json']' returned non-zero exit status 1.

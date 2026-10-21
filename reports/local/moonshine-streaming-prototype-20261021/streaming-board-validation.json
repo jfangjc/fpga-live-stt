@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "input_samples": 124800,
+  "audio_seconds": 7.8,
+  "partials": 2,
+  "finals": 2,
+  "all_updates_match_oracle": true,
+  "final_texts": [
+    "$200 number made up so is the",
+    "$200 number made up so is the"
+  ],
+  "max_lag_ms": 1478.778926,
+  "summary": {
+    "type": "summary",
+    "exit_code": 0,
+    "samples": 124800,
+    "audio_seconds": 7.8,
+    "utterances": 2,
+    "finals": 2,
+    "discarded": 0,
+    "clipped_samples": 0,
+    "all_zero_audio": false,
+    "max_transcript_lag_ms": 1478.778926,
+    "queue_high_water_ms": 1460,
+    "physical": {
+      "ioctls": 480,
+      "loads": 240,
+      "runs": 1440,
+      "tx_bytes": 140097280,
+      "rx_bytes": 66873600,
+      "ioctl_seconds": 0.5514291220315499
+    },
+    "emitted_monotonic_ns": 115916304794553
+  },
+  "concurrent_microphone": {
+    "samples": 192000,
+    "nonzero": 0,
+    "peak": 0.0,
+    "queue_high_water_blocks": 1,
+    "diagnostics": "{\"samples\":192000,\"seconds\":12.000421,\"startup_discarded\":1033,\"startup_dropped\":531156,\"newly_dropped\":0,\"captured_delta\":192006}\n",
+    "transport_passed": true,
+    "signal_present": false
+  },
+  "note": "Paced prerecorded speech exercises live pipeline; microphone data is a separate simultaneous transport stress check, not the ASR input. No held-out WER qualification."
+}

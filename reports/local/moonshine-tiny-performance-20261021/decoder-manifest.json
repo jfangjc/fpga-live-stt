@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "model": "moonshine-ai/moonshine-streaming-tiny",
+  "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+  "layers": 6,
+  "heads": 8,
+  "head_dim": 40,
+  "torch_version": "2.8.0+cpu",
+  "onnxruntime_version": "1.24.1",
+  "export_sources_sha256": "95544baffad40d701c4af002e5b770f6ca98105de3723c271fd0310498c1f86e",
+  "float_logits_max_errors": [
+    2.288818359375e-05,
+    3.0517578125e-05,
+    5.6743621826171875e-05,
+    3.62396240234375e-05
+  ],
+  "files": {
+    "memory-float.onnx": "4375846cffb265062575e08afc7f180fa686869a017b122d7ca0698aa40188ea",
+    "memory-int8.onnx": "e69dda35b5e29a6bea3312bf76cfbfefd2343abfe6fae8738af976e38348c1f8",
+    "step-float.onnx": "bec8d4c144acefaa29aafb449d2a4da8b46ff9ca25bf33f045f494fec38cac11",
+    "step-int8.onnx": "6330d2c312e3b9aa57ef9e046f98ce13a6f30658e1ecc99c8fcf63bb1afbafbe"
+  }
+}

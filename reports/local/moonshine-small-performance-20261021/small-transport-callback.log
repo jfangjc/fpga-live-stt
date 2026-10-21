@@ -1,0 +1,6 @@
+test_borrowed_packet_is_restored_on_success_and_failures (test_moonshine_transport.TransportTests.test_borrowed_packet_is_restored_on_success_and_failures) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.176s
+
+OK

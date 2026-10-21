@@ -1,0 +1,39 @@
+{
+  "original_app": "k26-starter-kits",
+  "app": "asr-v3-mic-select",
+  "firmware_sha256": {
+    "asr-v3-mic-select.bit.bin": "06faf0b466b3e3ff5b4eb4483172bb494e5a376d874cb8087a191cde884ae75d",
+    "asr-v3-mic-select.dtbo": "de44bbd3040cfcc963d061f932161fc129433a0c5597041725b0f44cce918687",
+    "shell.json": "5b262494370cdb4f3e2ef124072cfaf68fd2f0bdc8c0a207913dedfba66cd841"
+  },
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "restored": true,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "-m",
+    "moonshine.live",
+    "--size",
+    "small",
+    "--backend",
+    "cpu-int8",
+    "--ort-decoder",
+    "build/small-decoder-v1",
+    "--ort-encoder",
+    "build/small-encoder-v2",
+    "--mic-input",
+    "primary",
+    "--mic-channel",
+    "right",
+    "--capture-seconds",
+    "60",
+    "--vad-dbfs",
+    "-40",
+    "--display",
+    "text",
+    "--out",
+    "reports/local/cpu-microphone.jsonl"
+  ],
+  "clock_hz": 99999999,
+  "command_exit_code": 0
+}

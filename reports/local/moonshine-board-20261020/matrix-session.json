@@ -1,0 +1,13 @@
+{
+  "original_app": "k26-starter-kits",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "restored": true,
+  "command": [
+    "/home/ubuntu/kv260-asr-mvp-20261015/.venv/bin/python",
+    "scripts/test_moonshine_physical.py",
+    "--out",
+    "reports/local/matrix.json"
+  ],
+  "clock_hz": 99999999,
+  "command_exit_code": 0
+}

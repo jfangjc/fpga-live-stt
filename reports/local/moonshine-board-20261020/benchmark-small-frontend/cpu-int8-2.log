@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 149/262 [00:00<00:00, 1486.18it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1763.06it/s]
+[W1020 10:30:45.993535993 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+{"text": "Yeah.", "tokens": [1, 15011, 29889, 2], "final": false, "frames": 13, "token_limit_reached": false, "run": -1, "audio_seconds": 0.5, "processing_seconds": 4.159534860002168}
+{"text": "Thank you.", "tokens": [1, 3374, 366, 29889, 2], "final": false, "frames": 38, "token_limit_reached": false, "run": -1, "audio_seconds": 1.0, "processing_seconds": 1.058602247001545}
+{"text": "I'm sorry.", "tokens": [1, 306, 29915, 29885, 7423, 29889, 2], "final": false, "frames": 63, "token_limit_reached": false, "run": -1, "audio_seconds": 1.5, "processing_seconds": 1.3837271399970632}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 88, "token_limit_reached": false, "run": -1, "audio_seconds": 2.0, "processing_seconds": 0.6654066659975797}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 113, "token_limit_reached": false, "run": -1, "audio_seconds": 2.5, "processing_seconds": 0.6764813189947745}
+{"text": "", "tokens": [1, 2], "final": true, "frames": 125, "token_limit_reached": false, "run": -1, "audio_seconds": 2.5, "processing_seconds": 0.4629795579967322}
+{"text": "Yeah.", "tokens": [1, 15011, 29889, 2], "final": false, "frames": 13, "token_limit_reached": false, "run": 0, "audio_seconds": 0.5, "processing_seconds": 0.7935192810036824}
+{"text": "Thank you.", "tokens": [1, 3374, 366, 29889, 2], "final": false, "frames": 38, "token_limit_reached": false, "run": 0, "audio_seconds": 1.0, "processing_seconds": 1.061492813998484}
+{"text": "I'm sorry.", "tokens": [1, 306, 29915, 29885, 7423, 29889, 2], "final": false, "frames": 63, "token_limit_reached": false, "run": 0, "audio_seconds": 1.5, "processing_seconds": 1.3822333240023}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 88, "token_limit_reached": false, "run": 0, "audio_seconds": 2.0, "processing_seconds": 0.6663950520014623}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 113, "token_limit_reached": false, "run": 0, "audio_seconds": 2.5, "processing_seconds": 0.6756753559966455}
+{"text": "", "tokens": [1, 2], "final": true, "frames": 125, "token_limit_reached": false, "run": 0, "audio_seconds": 2.5, "processing_seconds": 0.4586388669995358}
+{"text": "Yeah.", "tokens": [1, 15011, 29889, 2], "final": false, "frames": 13, "token_limit_reached": false, "run": 1, "audio_seconds": 0.5, "processing_seconds": 0.7906125510053243}
+{"text": "Thank you.", "tokens": [1, 3374, 366, 29889, 2], "final": false, "frames": 38, "token_limit_reached": false, "run": 1, "audio_seconds": 1.0, "processing_seconds": 1.0642919699967024}
+{"text": "I'm sorry.", "tokens": [1, 306, 29915, 29885, 7423, 29889, 2], "final": false, "frames": 63, "token_limit_reached": false, "run": 1, "audio_seconds": 1.5, "processing_seconds": 1.383814289001748}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 88, "token_limit_reached": false, "run": 1, "audio_seconds": 2.0, "processing_seconds": 0.6660797759977868}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 113, "token_limit_reached": false, "run": 1, "audio_seconds": 2.5, "processing_seconds": 0.6766308210062562}
+{"text": "", "tokens": [1, 2], "final": true, "frames": 125, "token_limit_reached": false, "run": 1, "audio_seconds": 2.5, "processing_seconds": 0.45966242300346494}
+{"text": "Yeah.", "tokens": [1, 15011, 29889, 2], "final": false, "frames": 13, "token_limit_reached": false, "run": 2, "audio_seconds": 0.5, "processing_seconds": 0.7939964570032316}
+{"text": "Thank you.", "tokens": [1, 3374, 366, 29889, 2], "final": false, "frames": 38, "token_limit_reached": false, "run": 2, "audio_seconds": 1.0, "processing_seconds": 1.063262752002629}
+{"text": "I'm sorry.", "tokens": [1, 306, 29915, 29885, 7423, 29889, 2], "final": false, "frames": 63, "token_limit_reached": false, "run": 2, "audio_seconds": 1.5, "processing_seconds": 1.3830534250009805}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 88, "token_limit_reached": false, "run": 2, "audio_seconds": 2.0, "processing_seconds": 0.6653320530022029}
+{"text": "", "tokens": [1, 2], "final": false, "frames": 113, "token_limit_reached": false, "run": 2, "audio_seconds": 2.5, "processing_seconds": 0.6773742730001686}
+{"text": "", "tokens": [1, 2], "final": true, "frames": 125, "token_limit_reached": false, "run": 2, "audio_seconds": 2.5, "processing_seconds": 0.4616378860009718}

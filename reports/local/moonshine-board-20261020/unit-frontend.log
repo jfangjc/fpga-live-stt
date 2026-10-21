@@ -1,0 +1,13 @@
+test_fpga_tile_route_matches_oracle (test_moonshine.MatrixTests.test_fpga_tile_route_matches_oracle) ... ok
+test_hardware_failure_propagates (test_moonshine.MatrixTests.test_hardware_failure_propagates) ... ok
+test_reject_invalid_inputs (test_moonshine.MatrixTests.test_reject_invalid_inputs) ... ok
+test_speedup_gate_uses_fastest_cpu_and_requires_physical_parity (test_moonshine.MatrixTests.test_speedup_gate_uses_fastest_cpu_and_requires_physical_parity) ... ok
+test_tiling_preserves_whole_matrix_scales (test_moonshine.MatrixTests.test_tiling_preserves_whole_matrix_scales) ... ok
+test_zero_and_nearest_even (test_moonshine.MatrixTests.test_zero_and_nearest_even) ... ok
+test_chunked_frontend_and_encoder_match_reference (test_moonshine.StreamingTests.test_chunked_frontend_and_encoder_match_reference) ... ok
+test_convolution_lowering_matches_reference (test_moonshine.StreamingTests.test_convolution_lowering_matches_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.676s
+
+OK

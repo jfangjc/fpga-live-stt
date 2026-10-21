@@ -1,0 +1,213 @@
+{
+  "model": "moonshine-ai/moonshine-streaming-tiny",
+  "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+  "backend": "oracle",
+  "runtime_sources_sha256": "95544baffad40d701c4af002e5b770f6ca98105de3723c271fd0310498c1f86e",
+  "scope": "encoder-ffn",
+  "projections": [
+    "model.encoder.layers.0.mlp.fc1",
+    "model.encoder.layers.0.mlp.fc2",
+    "model.encoder.layers.1.mlp.fc1",
+    "model.encoder.layers.1.mlp.fc2",
+    "model.encoder.layers.2.mlp.fc1",
+    "model.encoder.layers.2.mlp.fc2",
+    "model.encoder.layers.3.mlp.fc1",
+    "model.encoder.layers.3.mlp.fc2",
+    "model.encoder.layers.4.mlp.fc1",
+    "model.encoder.layers.4.mlp.fc2",
+    "model.encoder.layers.5.mlp.fc1",
+    "model.encoder.layers.5.mlp.fc2"
+  ],
+  "threads": 2,
+  "frontend_lowering": false,
+  "cpu_tail_int8": true,
+  "decoder_runtime": {
+    "engine": "onnxruntime",
+    "precision": "int8",
+    "version": "1.24.1",
+    "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+    "threads": 2
+  },
+  "initialization_seconds": 18.884583409002516,
+  "first_call_seconds": 6.411299209023127,
+  "warmup_runs": 0,
+  "chunk_ms": 500,
+  "draft_reuse": true,
+  "final_only": false,
+  "size": "tiny",
+  "sample_count": 40000,
+  "platform": "Linux-6.8.0-1036-xilinx-aarch64-with-glibc2.39",
+  "runs": [
+    {
+      "events": [
+        {
+          "text": "Two and a half",
+          "tokens": [
+            1,
+            7803,
+            322,
+            263,
+            4203
+          ],
+          "final": false,
+          "frames": 13,
+          "token_limit_reached": true,
+          "run": 0,
+          "audio_seconds": 0.5,
+          "processing_seconds": 0.8361705150018679
+        },
+        {
+          "text": "200-yard number",
+          "tokens": [
+            1,
+            29871,
+            29906,
+            29900,
+            29900,
+            29899,
+            19852,
+            1353
+          ],
+          "final": false,
+          "frames": 38,
+          "token_limit_reached": true,
+          "run": 0,
+          "audio_seconds": 1.0,
+          "processing_seconds": 1.2601709060108988
+        },
+        {
+          "text": "200-yard number made up.",
+          "tokens": [
+            1,
+            29871,
+            29906,
+            29900,
+            29900,
+            29899,
+            19852,
+            1353,
+            1754,
+            701,
+            29889
+          ],
+          "final": false,
+          "frames": 63,
+          "token_limit_reached": true,
+          "run": 0,
+          "audio_seconds": 1.5,
+          "processing_seconds": 1.2468523800052935
+        },
+        {
+          "text": "200-yard number made up.",
+          "tokens": [
+            1,
+            29871,
+            29906,
+            29900,
+            29900,
+            29899,
+            19852,
+            1353,
+            1754,
+            701,
+            29889,
+            2
+          ],
+          "final": false,
+          "frames": 88,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 2.0,
+          "processing_seconds": 1.2459387869894272
+        },
+        {
+          "text": "Two hundred all our number made up. So is that?",
+          "tokens": [
+            1,
+            7803,
+            6893,
+            599,
+            1749,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            393,
+            29973,
+            2
+          ],
+          "final": false,
+          "frames": 113,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 2.5,
+          "processing_seconds": 1.447486225006287
+        },
+        {
+          "text": "Two hundred all our number made up. So is the.",
+          "tokens": [
+            1,
+            7803,
+            6893,
+            599,
+            1749,
+            1353,
+            1754,
+            701,
+            29889,
+            1105,
+            338,
+            278,
+            29889,
+            2
+          ],
+          "final": true,
+          "frames": 125,
+          "token_limit_reached": false,
+          "run": 0,
+          "audio_seconds": 2.5,
+          "processing_seconds": 0.374680396009353
+        }
+      ],
+      "total_processing_seconds": 6.411299209023127,
+      "final_processing_seconds": 0.374680396009353,
+      "profile": {
+        "frontend_seconds": 0.15572667999367695,
+        "encoder_seconds": 5.330001127018477,
+        "decoder_seconds": 0.9237802519928664
+      },
+      "decode_stats": {
+        "prefill_tokens": 45,
+        "accepted_draft_tokens": 27,
+        "autoregressive_tokens": 28
+      },
+      "text": "Two hundred all our number made up. So is the.",
+      "tokens": [
+        1,
+        7803,
+        6893,
+        599,
+        1749,
+        1353,
+        1754,
+        701,
+        29889,
+        1105,
+        338,
+        278,
+        29889,
+        2
+      ]
+    }
+  ],
+  "max_tokens": 256,
+  "p50_seconds": 6.411299209023127,
+  "p95_seconds": 6.411299209023127,
+  "realtime_factor": 2.5645196836092508,
+  "physical": null,
+  "audio_sha256": "ffb22adfc09b9bc312b00ef19d64540dbe42f1d65c924ec374185513ed7c21dc",
+  "torch_version": "2.8.0+cpu",
+  "transformers_version": "5.21.0.dev0"
+}

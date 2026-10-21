@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "kind": "quiet microphone capture and segmentation, CPU inference initialized",
+  "selection": 1,
+  "highpass_hz": 30,
+  "vad_dbfs": -40.0,
+  "summary": {
+    "type": "summary",
+    "exit_code": 0,
+    "samples": 960000,
+    "audio_seconds": 60.0,
+    "utterances": 0,
+    "finals": 0,
+    "discarded": 0,
+    "incomplete": 0,
+    "clipped_samples": 0,
+    "all_zero_audio": false,
+    "max_transcript_lag_ms": 0.0,
+    "queue_high_water_ms": 20,
+    "physical": null,
+    "emitted_monotonic_ns": 119398411163280
+  },
+  "filtered_level_dbfs": {
+    "minimum": -64.65248661431201,
+    "median": -62.54399236318136,
+    "maximum": -58.995519184619596
+  },
+  "acquisition_elapsed_seconds": 60.060461393,
+  "runtime_sources_sha256": "b0c4ea3e3d79eecf4d53a70c59646b5fbc808989e4238419d676e0baab10d971",
+  "note": "No speech utterance was detected; this is not recognition accuracy evidence."
+}

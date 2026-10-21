@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 156/262 [00:00<00:00, 1550.09it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1732.40it/s]
+[0;93m2026-10-20 21:49:10.661870189 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 21:49:16.018465871 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+2 1000 [3.947640225000214, 3.5583038150070934, 3.4702960869908566] $200 number made up. So is the... False
+2 1500 [2.9742207009985577, 2.9100173890037695, 2.893840844000806] $200 number made up. So is the... False
+2 2000 [3.1362207000056515, 3.0864880209992407, 3.093377519006026] $200 number made up. So is the... False
+2 2500 [2.533311197999865, 2.5271397149917902, 2.527506489001098] $200 number made up. So is the... False
+4 1000 [3.5761209310003323, 3.6642878880084027, 3.6036524930095766] $200 number made up. So is the... False
+4 1500 [3.1080249000078766, 3.155364952996024, 3.5381860060006147] $200 number made up. So is the... False
+4 2000 [3.5942679940053495, 3.230107424999005, 3.2206535119912587] $200 number made up. So is the... False
+4 2500 [2.668608984007733, 2.6361195759964176, 2.641531229004613] $200 number made up. So is the... False

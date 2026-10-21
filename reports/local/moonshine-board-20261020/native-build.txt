@@ -1,0 +1,5 @@
+Linux kria 6.8.0-1036-xilinx #37-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 25 06:57:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+19ffae1e6d6e6d8b897965f049ecf401caad7e7160343c982b3b03e9011279e2  /home/ubuntu/moonshine-kv260-20261020/build/native/libqnc_moonshine.so
+operating
+qn_tile-unloaded

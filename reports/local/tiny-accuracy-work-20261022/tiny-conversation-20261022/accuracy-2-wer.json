@@ -1,0 +1,117 @@
+{
+  "variant": "live-session",
+  "manifest_sha256": "c1ffc68a8cb88c0d6106343ae999cd291f92bc082cb6f88b15123a07d95646d6",
+  "dataset": "Synthetic conversational prompts for regression only; not human conversation WER",
+  "model": {
+    "type": "ready",
+    "model": {
+      "model": "moonshine-ai/moonshine-streaming-tiny",
+      "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+      "backend": "fpga",
+      "runtime_sources_sha256": "49f65ddd853ae49cf8c491ba114037b605719e78d0dacbfd6ed247dad2d17f9c",
+      "scope": "encoder-ffn",
+      "projections": [
+        "model.encoder.layers.0.mlp.fc1",
+        "model.encoder.layers.0.mlp.fc2",
+        "model.encoder.layers.1.mlp.fc1",
+        "model.encoder.layers.1.mlp.fc2",
+        "model.encoder.layers.2.mlp.fc1",
+        "model.encoder.layers.2.mlp.fc2",
+        "model.encoder.layers.3.mlp.fc1",
+        "model.encoder.layers.3.mlp.fc2",
+        "model.encoder.layers.4.mlp.fc1",
+        "model.encoder.layers.4.mlp.fc2",
+        "model.encoder.layers.5.mlp.fc1",
+        "model.encoder.layers.5.mlp.fc2"
+      ],
+      "threads": 2,
+      "frontend_lowering": false,
+      "cpu_tail_int8": true
+    },
+    "decoder_runtime": {
+      "engine": "onnxruntime",
+      "precision": "int8",
+      "version": "1.24.1",
+      "manifest_sha256": "e10ec268b4341361bb1127b0c9bddce044e9e546c148f20dd8816edfbdd8e889",
+      "threads": 4,
+      "scheduling": "run-spin"
+    },
+    "encoder_runtime": {
+      "engine": "onnxruntime",
+      "attention_precision": "int8",
+      "convolution_precision": "float32",
+      "threads": 4,
+      "version": "1.24.1",
+      "scheduling": "sleep",
+      "manifest_sha256": "1a8ab716f63f811777c8ed26a8db851e91872993cf6788c5246ba3b571046029"
+    },
+    "source": "replay",
+    "paced": true,
+    "source_audio_sha256": "2bac94ddc830edb88a5f1ed833e2b2918042280aa4df616ac1252d847d6b54ff",
+    "capture_helper_sha256": null,
+    "mic_selection": null,
+    "initialization_seconds": 19.15027602700866,
+    "sample_rate": 16000,
+    "chunk_ms": 400,
+    "vad_dbfs": -55,
+    "silence_ms": 700,
+    "coalesce_partials": true,
+    "accuracy_mode": true,
+    "segmentation": {
+      "chunk_ms": 400,
+      "threshold": -55,
+      "silence_ms": 700,
+      "max_seconds": 12,
+      "gain": 1,
+      "overlap_ms": 1000,
+      "pause_after_seconds": 6,
+      "pause_ms": 250,
+      "pre_roll_ms": 300,
+      "attack_ms": 60,
+      "min_speech_ms": 200
+    },
+    "preview_seconds": 2,
+    "preview_overlap_seconds": 1,
+    "max_seconds": 12,
+    "gain": 1,
+    "highpass_hz": 0,
+    "emitted_monotonic_ns": 146645673164578
+  },
+  "clips": [
+    {
+      "wav": "/home/ubuntu/moonshine-kv260-20261020/build/conversation-accuracy-v1/conversation-2.wav",
+      "wav_sha256": "2bac94ddc830edb88a5f1ed833e2b2918042280aa4df616ac1252d847d6b54ff",
+      "reference": "How was your weekend? We went to the park on Saturday and had dinner with some friends. The weather was lovely, so we stayed outside until it started getting dark. What did you do?",
+      "hypothesis": "How is your weekend? We went to the park on Saturday and had dinner with some friends. The weather was lovely, so we stayed outside until it started getting dark. What did you do?",
+      "score": {
+        "reference_words": 34,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 1,
+        "wer": 0.029411764705882353
+      },
+      "signal": {
+        "seconds": 12.67,
+        "dc_offset": 0.015417059883475304,
+        "ac_rms_dbfs": -20.853502650835672,
+        "peak": 0.688201904296875,
+        "clipped_fraction": 0.0
+      },
+      "processing_seconds": 7.1324577179329935,
+      "token_limit_reached": false
+    }
+  ],
+  "total": {
+    "reference_words": 34,
+    "errors": 1,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.029411764705882353
+  },
+  "physical": null,
+  "complete": true,
+  "normalization": "Unicode NFKC, casefold, punctuation stripped; numbers are not expanded",
+  "timing_scope": "Offline accuracy comparison; not a live latency benchmark"
+}

@@ -1,0 +1,28 @@
+{
+  "original_app": "k26-starter-kits",
+  "driver_sha256": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
+  "restored": true,
+  "command": [
+    ".venv/bin/python",
+    "scripts/benchmark_moonshine_durations.py",
+    "/home/ubuntu/kv260-asr-mvp-20261015/reports/test-inputs/speech_25.wav",
+    "--size",
+    "tiny",
+    "--ort-decoder",
+    "build/tiny-decoder-v2",
+    "--chunk-ms",
+    "1000",
+    "--threads",
+    "2",
+    "--decoder-threads",
+    "4",
+    "--repeat",
+    "1",
+    "--runs",
+    "3",
+    "--out",
+    "reports/local/tiny-packets-regression.json"
+  ],
+  "clock_hz": 99999999,
+  "command_exit_code": 0
+}

@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  53%|█████▎    | 138/262 [00:00<00:00, 1375.10it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1474.20it/s]
+{"text": "Sure.", "tokens": [1, 18585, 29889, 2], "final": false, "frames": 13, "token_limit_reached": false, "run": -1, "audio_seconds": 0.5, "processing_seconds": 3.0966021309977805}
+{"text": "$200 number one.", "tokens": [1, 395, 29906, 29900, 29900, 1353, 697, 29889], "final": false, "frames": 38, "token_limit_reached": true, "run": -1, "audio_seconds": 1.0, "processing_seconds": 5.072940264002682}
+{"text": "$200 number made up.", "tokens": [1, 395, 29906, 29900, 29900, 1353, 1754, 701, 29889, 2], "final": false, "frames": 63, "token_limit_reached": false, "run": -1, "audio_seconds": 1.5, "processing_seconds": 3.281222589997924}
+{"text": "$200 number made up.", "tokens": [1, 395, 29906, 29900, 29900, 1353, 1754, 701, 29889, 2], "final": false, "frames": 88, "token_limit_reached": false, "run": -1, "audio_seconds": 2.0, "processing_seconds": 1.4530095139998593}

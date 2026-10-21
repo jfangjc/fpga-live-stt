@@ -1,0 +1,31 @@
+[0;93m2026-10-20 20:47:23.211829486 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1727.55it/s]
+/home/ubuntu/moonshine-kv260-20261020/software/moonshine/ort_decoder.py:105: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.
+  torch.onnx.export(MemoryGraph(d), (memory,), str(directory/'memory-float.onnx'),
+/home/ubuntu/moonshine-kv260-20261020/software/moonshine/ort_decoder.py:109: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.
+  torch.onnx.export(StepGraph(model), args, str(directory/'step-float.onnx'),
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+{
+  "format_version": 1,
+  "model": "moonshine-ai/moonshine-streaming-tiny",
+  "revision": "f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a",
+  "layers": 6,
+  "heads": 8,
+  "head_dim": 40,
+  "torch_version": "2.8.0+cpu",
+  "onnxruntime_version": "1.24.1",
+  "export_sources_sha256": "95544baffad40d701c4af002e5b770f6ca98105de3723c271fd0310498c1f86e",
+  "float_logits_max_errors": [
+    2.288818359375e-05,
+    3.0517578125e-05,
+    5.6743621826171875e-05,
+    3.62396240234375e-05
+  ],
+  "files": {
+    "memory-float.onnx": "4375846cffb265062575e08afc7f180fa686869a017b122d7ca0698aa40188ea",
+    "memory-int8.onnx": "e69dda35b5e29a6bea3312bf76cfbfefd2343abfe6fae8738af976e38348c1f8",
+    "step-float.onnx": "bec8d4c144acefaa29aafb449d2a4da8b46ff9ca25bf33f045f494fec38cac11",
+    "step-int8.onnx": "6330d2c312e3b9aa57ef9e046f98ce13a6f30658e1ecc99c8fcf63bb1afbafbe"
+  }
+}

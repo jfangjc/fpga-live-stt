@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  69%|██████▉   | 181/262 [00:00<00:00, 1807.14it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1701.83it/s]
+[0;93m2026-10-20 23:50:08.154003545 [W:onnxruntime:Default, device_discovery.cc:211 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:91 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+[W1020 23:50:14.457073181 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+encoder-ffn 2500 [2.8475060750060948, 2.4411597739963327, 2.4068101399898296, 2.430471882005804] $200 number made up. So is the...
+encoder-ffn 1000 [3.2325706749979872, 3.239861435999046, 3.22297896600503, 3.2384081130003324] $200 number made up. So is the...
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 150/262 [00:00<00:00, 1429.88it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1465.01it/s]
+frontend-ffn 2500 [2.733760718998383, 2.325447099006851, 2.307564110000385, 2.3127461560070515] $200 number made up. So is the...
+frontend-ffn 1000 [3.6653808409901103, 3.441052825000952, 3.4468921149964444, 3.4453928349976195] $200 number made up. So is the $1,000 number made up.
+Loading weights:   0%|          | 0/262 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 155/262 [00:00<00:00, 1537.80it/s]Loading weights: 100%|██████████| 262/262 [00:00<00:00, 1512.72it/s]
+encoder 2500 [2.41524031899462, 2.432762519994867, 2.316096607988584, 2.31264225099585] $200 number made up. So is the...
+encoder 1000 [3.2428567229944747, 3.0571969730081037, 3.083525970010669, 3.1054353449871996] $200 number made up. So is the...

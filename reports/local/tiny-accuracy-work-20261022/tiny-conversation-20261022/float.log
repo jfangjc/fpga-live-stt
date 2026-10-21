@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/161 [00:00<?, ?it/s]Loading weights: 100%|██████████| 161/161 [00:00<00:00, 1797.29it/s]
+{"variant": "float", "total": {"reference_words": 69, "errors": 0, "substitutions": 0, "deletions": 0, "insertions": 0, "wer": 0.0}, "complete": true}

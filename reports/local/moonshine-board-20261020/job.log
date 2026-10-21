@@ -1,0 +1,14 @@
+{
+  "cpu_backend": "cpu-int8",
+  "cpu_threads": 2,
+  "cpu_p50_seconds": 7.184218985996267,
+  "fpga_p50_seconds": 8.857962497997505,
+  "speedup": 0.8110464441027362,
+  "target": 2,
+  "oracle_tokens_equal": true,
+  "token_limit_reached": true,
+  "target_met": false,
+  "float_cpu_text": "$200 number made up. So is the...",
+  "fpga_text": "$200 number made up. So is the...",
+  "accuracy_qualified": false
+}

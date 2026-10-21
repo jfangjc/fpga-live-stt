@@ -1,0 +1,56 @@
+{
+  "cpu_backend": "cpu-int8",
+  "cpu_threads": 2,
+  "cpu_p50_seconds": 7.214201272006903,
+  "fpga_p50_seconds": 7.579547175002517,
+  "speedup": 0.9517984525249039,
+  "target": 2,
+  "oracle_tokens_equal": true,
+  "token_limit_reached": false,
+  "float_transcript_equal": true,
+  "cpu_comparator_transcript_equal": true,
+  "partial_token_limits_reached": true,
+  "target_met": false,
+  "cpu_profile_p50": {
+    "frontend_seconds": 0.42471337901224615,
+    "encoder_seconds": 1.707295904008788,
+    "decoder_seconds": 5.069132733995502
+  },
+  "fpga_profile_p50": {
+    "frontend_seconds": 0.4240768739982741,
+    "encoder_seconds": 2.1256317010047496,
+    "decoder_seconds": 5.031362967005407
+  },
+  "float_cpu_text": "$200 number made up. So is the...",
+  "fpga_text": "$200 number made up. So is the...",
+  "accuracy_qualified": false
+}
+Completed small benchmark with status 2
+{
+  "cpu_backend": "cpu-int8",
+  "cpu_threads": 2,
+  "cpu_p50_seconds": 3.003869718995702,
+  "fpga_p50_seconds": 3.692803609992552,
+  "speedup": 0.8134387950844102,
+  "target": 2,
+  "oracle_tokens_equal": true,
+  "token_limit_reached": false,
+  "float_transcript_equal": false,
+  "cpu_comparator_transcript_equal": false,
+  "partial_token_limits_reached": true,
+  "target_met": false,
+  "cpu_profile_p50": {
+    "frontend_seconds": 0.14533819200005382,
+    "encoder_seconds": 0.49806188599905,
+    "decoder_seconds": 2.3496357209951384
+  },
+  "fpga_profile_p50": {
+    "frontend_seconds": 0.14443913800641894,
+    "encoder_seconds": 0.6082500560078188,
+    "decoder_seconds": 2.9402366879876354
+  },
+  "float_cpu_text": "Two hundred all are number made up. So is the.",
+  "fpga_text": "Two hundred all our number made up. So is the...",
+  "accuracy_qualified": false
+}
+Completed tiny benchmark with status 2
