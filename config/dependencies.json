@@ -1,9 +1,0 @@
-{
-  "format_version": 1,
-  "files_sha256": {
-    "drivers/prebuilt/6.8.0-1036-xilinx/bulk/qn_tile.ko": "ec5e9c82766ba633ae27c8c2207a8711210892f80d1e62857521daa33eaac257",
-    "firmware/asr-v3-bulk/asr-v3-bulk.bit.bin": "b8381da2d15c7b60dc1bb97aa27534897c7977e20ab03e8894bd91e5c345c32e",
-    "firmware/asr-v3-bulk/asr-v3-bulk.dtbo": "ac4aaebd5cd82e6314cbc55b7225ea345d12e59cfb0e43232ea28b57d21b2e59",
-    "firmware/asr-v3-bulk/shell.json": "5b262494370cdb4f3e2ef124072cfaf68fd2f0bdc8c0a207913dedfba66cd841"
-  }
-}

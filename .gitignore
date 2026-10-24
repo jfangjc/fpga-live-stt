@@ -1,33 +1,24 @@
-/.venv/
+# The only ignore file in the repository. Every build product goes to build/;
+# everything else here is downloaded, local to one machine, or left behind by tools.
+
+# Build products: sw/, sim/ and hw/ builds, releases, test scratch (README.md)
 /build/
-/reports/
-/models/
-/firmware/
-/drivers/
-/dist/
+# Datasets, weights, golden vectors and exports (model/README.md)
+/data/
+# Local settings and secrets
+.board.env
+# Scratch space
+/tmp/
+
+# Python
 __pycache__/
-*.py[cod]
-*.so
-*.dll
-*.o
-*.ko
-*.onnx
-*.ort
-*.safetensors
-*.pt
-*.pth
-*.bin
-*.bit
-*.dtbo
-*.xsa
-*.wav
-*.flac
-*.mp3
-*.log
-*.jou
-*.zip
-.env
-.env.*
-*.pem
-*.key
-*.ppk
+.venv/
+
+# Files Vivado and Verilator drop in their working directory
+.Xil/
+vivado*.jou
+vivado*.log
+clockInfo.txt
+iter_*_CongestedCLBsAndNets.txt
+*.vcd
+*.fst

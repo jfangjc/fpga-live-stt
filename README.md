@@ -1,113 +1,131 @@
-# Moonshine on KV260
+# Live FPGA-accelerated speech-to-text on the Kria KV260
 
-Experimental live speech-to-text with Moonshine Tiny/Small and one SPH0645LM4H-B.
-Encoder feed-forward projections run on the FPGA; attention and decoding run on ARM.
+A live captioning device on the AMD Kria KV260. A PMOD I2S MEMS microphone
+feeds a speech front end in the programmable logic (PL). A custom INT8
+accelerator, also in the PL, runs the QuartzNet 15x5 acoustic model. The Arm
+A53 cores do voice activity detection, CTC decoding and the caption display.
+Captions appear on a DisplayPort monitor and are streamed over TCP to PCs on
+the network. All processing stays on the board.
 
-## Requirements
+## Results
 
-KV260, ARM64 Ubuntu, Python 3.12, GCC, and the **existing provisioned hardware**:
-`asr-v3-mic-select` at 100 MHz and the qualified bulk `qn_tile.ko` for kernel
-`6.8.0-1036-xilinx`. Firmware/driver hashes are pinned in `config/`.
-Supply these separately; this small repository includes accelerator RTL but
-does not include the Vivado integration project, generated IP or firmware binaries.
-Models download from Hugging Face at the revisions pinned in `software/moonshine/model.py`.
+Final configuration: the `stt-full150` overlay. The front end runs at 100 MHz
+and the engine at 150 MHz. Audio is injected after the I2S FIFO, over 40
+LibriSpeech test-clean clips (848 words).
 
-## Setup (on the board)
+| Metric | Measured | Target (core / stretch) |
+|---|---|---|
+| Speed-up vs the same INT8 model on the A53s | **3.14x** (3 s window: 69.6 ms PL vs 218.4 ms CPU) | 2x / 3x |
+| Preview latency p95 | **205 ms** | 1000 ms / 250 ms |
+| Final WER | **4.60 %** (float 4.36 %) | 10 % / float + 1 point |
+| Board power while captioning | **3.68 W mean**, 4.60 W max | 20 W / 15 W |
+| A53 load of the captioning app | **10.7 %** of one core (274.6 % with the CPU backend) | reported |
 
-```sh
-python3 -m venv .venv
-.venv/bin/pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
-.venv/bin/pip install -r requirements.txt
-sh scripts/build_moonshine.sh
-sh scripts/build_moonshine_capture.sh
-PYTHONPATH=software .venv/bin/python -m moonshine.ort_decoder --size tiny --out build/tiny-decoder
-PYTHONPATH=software .venv/bin/python -m moonshine.ort_encoder --size tiny --out build/tiny-encoder
+With the live microphone (PC speaker to microphone), the final WER is 11.2 %.
+A 30-minute soak dropped no samples. See [docs/results.md](docs/results.md)
+for every metric and its evidence. The project's reach goal, Moonshine
+Streaming Tiny on the same engine, is kept in a separate `moonshine`
+repository; this one covers QuartzNet only.
+
+## Architecture
+
+```
+MEMS mic --I2S--> [PL, 100 MHz] I2S rx -> FIFO -> beamformer -> pre-emphasis/FFT/log-mel
+                                                                   | DMA
+                                                                   v
+                  [PS, A53] VAD -> 3 s windows every 120 ms -> engine driver
+                                                                   | DMA
+                                                                   v
+                  [PL, 150 MHz] INT8 engine: 32x16 MAC array, 16x16 depthwise unit,
+                                requantiser, residual add, on-chip RUN_NETWORK
+                                                                   | logits
+                                                                   v
+                  [PS, A53] greedy CTC, stitching, caption states -> DisplayPort, TCP, SD log
 ```
 
-Exports require new output directories. For Small, use `--size small` and separate
-artifact directories; `--accuracy` and `--low-latency` currently target Tiny.
+Utilisation: 68.6k LUT (59 %), 843 DSP (68 %), 60 URAM (94 %),
+74.5 BRAM tiles (52 %).
 
-## Run Tiny
+## Repository layout
 
-Start from idle `k26-starter-kits` with no loaded `qn_tile` module. Replace the
-driver path below. The wrapper verifies hardware hashes and restores the starting
-FPGA app on exit. Use new log paths each run.
+Each top-level folder has one job:
 
-```sh
-sudo env PYTHONPATH=software OMP_WAIT_POLICY=PASSIVE .venv/bin/python scripts/run_moonshine_board.py \
-  --app asr-v3-mic-select --hardware-manifest config/hardware.json \
-  --driver /path/to/qn_tile.ko --evidence reports/session.json -- \
-  .venv/bin/python -m moonshine.live --size tiny --backend fpga --accuracy \
-  --ort-decoder build/tiny-decoder --ort-encoder build/tiny-encoder \
-  --mic-input primary --mic-channel right --vad-dbfs -50 --display text \
-  --out reports/captions.jsonl
-```
+| Path | Contents |
+|---|---|
+| `rtl/` | SystemVerilog: I2S receiver, beamformer, FFT/mel front end (`rtl/frontend`); INT8 engine and QNC2 command parser (`rtl/engine`); KV260 pin constraints |
+| `sim/` | Verilator testbenches and their golden-vector generators (`make check` in each folder) |
+| `hw/` | Vivado build: block-design Tcl, device-tree overlays, build and packaging scripts |
+| `sw/` | board software with its unit tests: `app` (`sttcap`), `qnrt` (CPU INT8 runtime), `engdrv`, `fedrv` and `plio` (drivers), `frontend_c` |
+| `model/` | Python: QuartzNet float and INT8 golden models, quantisation, export, streaming simulation, WER |
+| `product/` | appliance packaging: systemd service, control script, installer |
+| `tools/` | everyday PC tools: board access, deploy, release and install, caption clients |
+| `tests/` | board and integration test harnesses, one folder per test; see [tests/README.md](tests/README.md) |
+| `results/` | measured evidence, one folder per test, described by the reports in `docs/results/` |
+| `docs/` | specifications, design notes, results reports, setup guide, original proposal |
 
-The custom carrier's J3 uses primary/right: WS **B10**, DATA **E12**, BCLK **D11**.
-Microphone input applies 30 Hz DC removal. `audio-health` events report levels
-and clipping. Tune `--vad-dbfs` and `--silence-ms` for the room.
-For paced replay, replace the microphone options with `--wav clip.wav`; raw
-microphone recordings also need `--highpass-hz 30`.
+## Building and running
 
-`--accuracy` uses overlapping two-second previews and up to 12 seconds of phrase
-context for refined finals. `final-pending` is provisional; only commit `final`
-events, in utterance order. Finals replace previews for their `utterance_id`.
-Use `--low-latency` instead for the earlier three-second context profile.
+Everything except simulation runs natively on Windows. You need:
+- Python 3.14 (`winget install Python.Python.3.14`, then open a new terminal);
+- Vivado/Vitis 2026.1, which also provides `bootgen` and `dtc`;
+- PuTTY's `plink` and `pscp` on `PATH`, for board access.
 
-The accuracy mode measured 0.99 s p95 preview update age and 2.24 s p95 final lag
-on a 62.5-second paced test. Final lag excludes silence waiting. Recognition
-accuracy on real conversation and 2x speedup over CPU remain unqualified.
+Linux works for the Python and simulation steps; there, use `.venv/bin/python`
+where Windows uses `.venv\Scripts\python`. The board runs Ubuntu 24.04 for
+the KV260 and compiles all of its C code itself during the install.
 
-`--provisional-preview` selects an experimental Tiny accuracy profile with
-250 ms updates and overlapping one-second previews. It decodes the unfinished
-encoder tail, then recomputes that
-tail when more audio arrives. Preview text can change; final refinement uses
-committed features and the complete phrase context. The normal accuracy mode
-remains the default. The 700 ms silence endpoint still applies to finals.
+1. **Model and golden vectors.** Follow [model/README.md](model/README.md).
+   Datasets, weights and generated vectors go into the ignored `data/`
+   directory and are not part of this repository.
+2. **Simulation (Linux or WSL only; optional).** It needs Verilator, gcc and
+   make. Run `python sim/frontend/extract_speech.py` once to take three speech
+   clips from the downloaded dev-clean archive. Then run `make -C sim/frontend
+   check` and `make -C sim/engine check`. Both use the `.venv` from step 1,
+   created on Linux.
+3. **Hardware.** Run `./hw/build.ps1 full150` and
+   `./tools/deploy.ps1 full150`; see [docs/platform.md](docs/platform.md).
+   Board access uses `tools/board.ps1`, which reads the host, user, password
+   and host key from an ignored `.board.env` file.
+4. **Appliance.** Run `tools/product_install.ps1`. It builds a release
+   tarball and installs the `stt-caption` service on the board; see
+   [docs/product.md](docs/product.md). To set up a new board from a blank SD
+   card, see [docs/setup_kv260_ubuntu24.md](docs/setup_kv260_ubuntu24.md).
+5. **Captions on a PC.** Run `python tools/caption_live.py <board-ip>`.
+   To replay a recorded session without a board, run
+   `python tools/caption_live.py --replay results/mic/t40/session.jsonl.gz --speed 2`.
 
-To compare the two preview modes on the same paced audio, run this command
-inside the board wrapper above (use an existing mono 16 kHz WAV and new output
-directory):
+The model step (step 1) and the Vivado build (step 3) are independent, so you
+can run them at the same time. The model step needs about 1.5 GB of downloads.
 
-```sh
-.venv/bin/python scripts/benchmark_moonshine_preview.py --wav clip.wav \
-  --ort-decoder build/tiny-decoder --ort-encoder build/tiny-encoder \
-  --out reports/preview-comparison
-```
+Every build product goes to `build/`, which mirrors the source tree:
+`build/sw/app/sttcap`, `build/sim/engine/obj_engine/`, `build/hw/full150/`
+and `build/release/`. Deleting `build/` cleans everything, and `make clean` in
+a folder removes that folder's part. Make honours `BUILD_ROOT=DIR` to build
+elsewhere. To keep Python caches there too, set
+`PYTHONPYCACHEPREFIX=$PWD/build/pycache`; the simulation Makefiles already do.
 
-The benchmark uses 30 Hz DC removal in both modes. Its 500 ms target is p95
-oldest-update age, measured from paced acquisition through computation, including
-the update's audio duration and any required encoder lookahead. It does not
-measure aligned word latency. JSONL logs include provisional frame counts and
-decoder timing; score finals against reference transcripts with the accuracy
-tool before selecting a profile for conversation. The selected profile measured
-480/469/476 ms p95 on the sustained and two synthetic conversation fixtures;
-see [measurements and board run command](docs/preview-latency.md). Matched CPU
-INT8 runs measured 475/525/523 ms on those fixtures; the FPGA latency benefit
-is modest and depends on the workload.
+The per-area reports in `docs/results/` give the exact commands behind each
+measurement. They are recorded as they were run on the development machine,
+so they include its absolute paths, such as `/mnt/c/Users/<user>/...` for the
+repository root under WSL.
 
-Further opt-in native host transforms and a specialized one-token decoder
-reduced mean hybrid preview computation by 4–7% in matched paced runs. Hybrid
-p95 update age measured 473/454/464 ms across the same three fixtures, with
-unchanged synthetic final word accuracy. See the
-[optimization measurements and deployment options](docs/hybrid-optimization.md).
+## Documentation
 
-A further experimental profile measured **267/264/257 ms hybrid p95** on these
-fixtures using 120 ms updates and 400 ms revisable previews. This reduces preview
-context and delays final refinement: sustained final lag p95 reached 8.62 s.
-The FPGA advantage over a CPU run with the same streaming settings remains
-modest. See [the sub-300 ms experiments and tradeoffs](docs/sub300-experiments.md)
-before selecting this opt-in profile.
+- [docs/PLAN.md](docs/PLAN.md): targets, phases and environment
+- [docs/Project_Proposal.pdf](docs/Project_Proposal.pdf): the original proposal
+- Specifications: [quantisation](docs/quant_spec.md),
+  [weights format](docs/weights_format.md),
+  [QNC2 protocol](docs/qnc2_protocol.md),
+  [front end](docs/frontend_spec.md), [engine](docs/engine.md),
+  [streaming policy](docs/streaming.md)
+- Software: [CPU runtime](docs/cpu_runtime.md),
+  [engine driver](docs/engdrv.md), [captioning app](docs/app.md),
+  [platform](docs/platform.md), [appliance](docs/product.md)
+- Results: [summary](docs/results.md);
+  [QuartzNet timing and PL/PS split](docs/results/quartznet.md)
 
-## Checks
+## Third-party models and data
 
-```sh
-.venv/bin/python -m unittest discover -s tests
-.venv/bin/python scripts/report_moonshine_latency.py reports/captions.jsonl
-PYTHONPATH=software .venv/bin/python -m moonshine.accuracy --help
-```
-
-The accuracy tool accepts human transcripts and compares live finals or float/INT8
-variants. `scripts/verify_moonshine_live.py` checks paced updates against the integer
-oracle; `scripts/test_moonshine_physical.py` checks FPGA arithmetic through the wrapper.
-Recordings, model files, binaries and local reports are excluded from Git.
+The QuartzNet 15x5 weights (NVIDIA NGC `stt_en_quartznet15x5`) and the
+LibriSpeech corpus are downloaded by the scripts in `model/`. They are not
+redistributed here and keep their own licences.
