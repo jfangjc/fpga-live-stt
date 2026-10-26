@@ -1,0 +1,12 @@
+{
+  "model": "moonshine-streaming-tiny",
+  "clips": 40,
+  "load_s": 1.7,
+  "latency_p50_s": 6.722,
+  "latency_p90_s": 12.244,
+  "latency_max_s": 18.08,
+  "rtf": 0.998,
+  "wer": 0.0832,
+  "peak_rss_mb": 313,
+  "max_temp_c": NaN
+}

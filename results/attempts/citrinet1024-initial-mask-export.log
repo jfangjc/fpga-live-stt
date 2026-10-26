@@ -1,0 +1,17 @@
+[1;31m2026-10-27 08:36:24.450505719 [E:onnxruntime:, sequential_executor.cc:677 ExecuteKernel] Non-zero status code returned while running Where node. Name:'/encoder/encoder.0/mconv.3/Where_1' Status Message: /onnxruntime_src/onnxruntime/core/providers/cpu/math/element_wise_ops.h:563 void onnxruntime::BroadcastIterator::Init(ptrdiff_t, ptrdiff_t) axis == 1 || axis == largest was false. Attempting to broadcast an axis by a dimension other than 1. 512 by 800
+[m
+Traceback (most recent call last):
+  File "/home/ubuntu/kv260-stt-bench/bench.py", line 167, in <module>
+    main()
+  File "/home/ubuntu/kv260-stt-bench/bench.py", line 128, in main
+    bench_model(args.child, args)
+  File "/home/ubuntu/kv260-stt-bench/bench.py", line 66, in bench_model
+    model.transcribe(audio)
+  File "/home/ubuntu/kv260-stt-bench/models.py", line 166, in transcribe
+    outputs = self.sess.run(None, inputs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/kv260-stt-bench/.venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py", line 395, in run
+    return self._sess.run(output_names, input_feed, run_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+onnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running Where node. Name:'/encoder/encoder.0/mconv.3/Where_1' Status Message: /onnxruntime_src/onnxruntime/core/providers/cpu/math/element_wise_ops.h:563 void onnxruntime::BroadcastIterator::Init(ptrdiff_t, ptrdiff_t) axis == 1 || axis == largest was false. Attempting to broadcast an axis by a dimension other than 1. 512 by 800
+

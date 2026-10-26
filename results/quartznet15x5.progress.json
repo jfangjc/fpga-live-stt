@@ -1,0 +1,1 @@
+{"state": "complete", "model": "quartznet15x5", "clips": 40, "load_s": 2.16, "latency_p50_s": 1.334, "latency_p90_s": 2.709, "latency_max_s": 3.579, "rtf": 0.198, "wer": 0.0543, "peak_rss_mb": 200, "max_temp_c": NaN}

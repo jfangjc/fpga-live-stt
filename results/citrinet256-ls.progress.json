@@ -1,0 +1,1 @@
+{"state": "complete", "model": "citrinet256-ls", "clips": 40, "load_s": 3.43, "latency_p50_s": 0.414, "latency_p90_s": 0.835, "latency_max_s": 1.041, "rtf": 0.063, "wer": 0.0555, "peak_rss_mb": 165, "max_temp_c": NaN}

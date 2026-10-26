@@ -1,0 +1,9 @@
+{
+  "max_abs_feature_error": 5.7220458984375e-05,
+  "shape": [
+    1,
+    64,
+    1008
+  ],
+  "valid_frames": 1000
+}

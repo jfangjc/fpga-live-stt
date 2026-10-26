@@ -1,0 +1,1 @@
+{"state": "complete", "model": "whisper-small", "clips": 40, "load_s": 8.0, "latency_p50_s": 27.171, "latency_p90_s": 30.848, "latency_max_s": 35.778, "rtf": 3.582, "wer": 0.0497, "peak_rss_mb": 684, "max_temp_c": NaN}

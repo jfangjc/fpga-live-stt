@@ -1,0 +1,57 @@
+[
+  {
+    "model": "quartznet15x5",
+    "returncode": 0,
+    "wall_s": 67.65
+  },
+  {
+    "model": "citrinet256-ls",
+    "returncode": 0,
+    "wall_s": 24.81
+  },
+  {
+    "model": "citrinet512-ls",
+    "returncode": 0,
+    "wall_s": 65.48
+  },
+  {
+    "model": "citrinet1024-gamma-0.25",
+    "returncode": 1,
+    "wall_s": 11.74
+  },
+  {
+    "model": "citrinet1024-gamma-0.25",
+    "returncode": 0,
+    "wall_s": 202.79
+  },
+  {
+    "model": "whisper-base",
+    "returncode": 0,
+    "wall_s": 371.31
+  },
+  {
+    "model": "whisper-small",
+    "returncode": 0,
+    "wall_s": 1164.98
+  },
+  {
+    "model": "whisper-large-v3-turbo",
+    "returncode": 0,
+    "wall_s": 5066.36
+  },
+  {
+    "model": "moonshine-tiny",
+    "returncode": 0,
+    "wall_s": 91.28
+  },
+  {
+    "model": "moonshine-streaming-tiny",
+    "returncode": 0,
+    "wall_s": 323.08
+  },
+  {
+    "model": "moonshine-streaming-small",
+    "returncode": 0,
+    "wall_s": 688.56
+  }
+]

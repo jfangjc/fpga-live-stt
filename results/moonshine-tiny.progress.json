@@ -1,0 +1,1 @@
+{"state": "complete", "model": "moonshine-tiny", "clips": 40, "load_s": 10.69, "latency_p50_s": 1.65, "latency_p90_s": 2.944, "latency_max_s": 4.434, "rtf": 0.244, "wer": 0.0462, "peak_rss_mb": 430, "max_temp_c": NaN}

@@ -1,0 +1,66 @@
+{
+  "citrinet1024-gamma-0.25.json": {
+    "bytes": 15104,
+    "sha256": "276aa2c76c266fe3e466cc21ed9eb5b8ea677b100655d9b474bbc8184d005172"
+  },
+  "citrinet1024-gamma-0.25.nemo": {
+    "bytes": 483819120,
+    "sha256": "db3cdb75f281e9889a6747ec9ff9994da03b5a17bb5a561586e9e57057ba15aa"
+  },
+  "citrinet1024-gamma-0.25.onnx": {
+    "bytes": 564696048,
+    "sha256": "eea486b8d1b2422c996d52be091a37205c4141e0b1f571f41315066546f273ac"
+  },
+  "citrinet1024-gamma-0.25.validation.json": {
+    "bytes": 587,
+    "sha256": "48d0cf51fc32155bf5c81c7540165d0e084520f17e4e9d86604a84f50a1bf132"
+  },
+  "citrinet256-ls.json": {
+    "bytes": 3057,
+    "sha256": "ff2b35c75bdbb41224e44f5753c3f46d919e2e0b882fe32a7a45fb6751dfd2be"
+  },
+  "citrinet256-ls.nemo": {
+    "bytes": 36693216,
+    "sha256": "a00c8fb75a2bcc37271275293bce950863e4e069d43f6cf193d42fcf605aa21c"
+  },
+  "citrinet256-ls.onnx": {
+    "bytes": 39259841,
+    "sha256": "614d1e5359ad4121696efc6b4a49f4f67e0c89e477714fc458597aa8f93a9567"
+  },
+  "citrinet256-ls.validation.json": {
+    "bytes": 118,
+    "sha256": "1c3556bc4080c27ad110b8679b50383a74875d6fba751158a06b9618e337eb9a"
+  },
+  "citrinet512-ls.json": {
+    "bytes": 3057,
+    "sha256": "ff2b35c75bdbb41224e44f5753c3f46d919e2e0b882fe32a7a45fb6751dfd2be"
+  },
+  "citrinet512-ls.nemo": {
+    "bytes": 136307071,
+    "sha256": "1620ba48901ee78330d6229f5057041e569573524e260664469ee2159be1d258"
+  },
+  "citrinet512-ls.onnx": {
+    "bytes": 146068211,
+    "sha256": "deb7c6fcf0af527fa042c58328958071e32f1f154e6f8a92e051955ca117c525"
+  },
+  "citrinet512-ls.validation.json": {
+    "bytes": 118,
+    "sha256": "1c3556bc4080c27ad110b8679b50383a74875d6fba751158a06b9618e337eb9a"
+  },
+  "quartznet15x5.json": {
+    "bytes": 399,
+    "sha256": "d1bc95f76bb8cbadeadffc70e3363d42daf58e41d0e00ca191015ba55c64804f"
+  },
+  "quartznet15x5.nemo": {
+    "bytes": 70993538,
+    "sha256": "1b9b7b87a9277e6fef164d8f99d1226f0511af154423bbf919b920421ac9602f"
+  },
+  "quartznet15x5.onnx": {
+    "bytes": 75611330,
+    "sha256": "2093d4cb6835dbb7334f8f3e507e7b3a2bf73112ec57b61abef1c0b5fc719d1a"
+  },
+  "quartznet15x5.validation.json": {
+    "bytes": 116,
+    "sha256": "815c41a045d8d9dd6591728e1881740c3a1fb1ace4ffdef0e71a3bcf0eb45d79"
+  }
+}

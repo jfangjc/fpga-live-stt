@@ -1,0 +1,11 @@
+{
+  "whisper-base": "/home/ubuntu/.cache/huggingface/hub/models--Systran--faster-whisper-base/snapshots/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+  "whisper-small": "/home/ubuntu/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+  "whisper-large-v3-turbo": "/home/ubuntu/.cache/huggingface/hub/models--mobiuslabsgmbh--faster-whisper-large-v3-turbo/snapshots/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+  "moonshine-tiny": [
+    "/home/ubuntu/.cache/huggingface/hub/models--UsefulSensors--moonshine/snapshots/48b4e427b587bcf67797a5be706d6ddc4a298149/onnx/merged/tiny/float/encoder_model.onnx",
+    "/home/ubuntu/.cache/huggingface/hub/models--UsefulSensors--moonshine/snapshots/48b4e427b587bcf67797a5be706d6ddc4a298149/onnx/merged/tiny/float/decoder_model_merged.onnx"
+  ],
+  "moonshine-streaming-tiny": "/home/ubuntu/.cache/moonshine_voice/download.moonshine.ai/model/tiny-streaming-en/quantized_26_08_21",
+  "moonshine-streaming-small": "/home/ubuntu/.cache/moonshine_voice/download.moonshine.ai/model/small-streaming-en/quantized_26_08_21"
+}

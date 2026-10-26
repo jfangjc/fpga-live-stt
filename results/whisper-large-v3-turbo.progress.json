@@ -1,0 +1,1 @@
+{"state": "complete", "model": "whisper-large-v3-turbo", "clips": 40, "load_s": 58.44, "latency_p50_s": 119.074, "latency_p90_s": 122.46, "latency_max_s": 125.553, "rtf": 15.521, "wer": 0.0312, "peak_rss_mb": 1675, "max_temp_c": NaN}

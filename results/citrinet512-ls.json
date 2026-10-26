@@ -1,0 +1,12 @@
+{
+  "model": "citrinet512-ls",
+  "clips": 40,
+  "load_s": 4.02,
+  "latency_p50_s": 1.331,
+  "latency_p90_s": 2.632,
+  "latency_max_s": 3.133,
+  "rtf": 0.188,
+  "wer": 0.0578,
+  "peak_rss_mb": 278,
+  "max_temp_c": NaN
+}

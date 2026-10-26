@@ -1,0 +1,12 @@
+{
+  "model": "citrinet1024-gamma-0.25",
+  "clips": 40,
+  "load_s": 6.61,
+  "latency_p50_s": 3.941,
+  "latency_p90_s": 8.804,
+  "latency_max_s": 11.527,
+  "rtf": 0.607,
+  "wer": 0.0324,
+  "peak_rss_mb": 708,
+  "max_temp_c": NaN
+}
