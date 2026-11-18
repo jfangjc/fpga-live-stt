@@ -6,3 +6,6 @@ __pycache__/
 .Xil/
 vivado*.jou
 vivado*.log
+
+# Board package
+stt-caption-kv260.tar.xz
