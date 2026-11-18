@@ -33,13 +33,15 @@ add_executable(caption caption.c)
 target_link_libraries(caption PRIVATE common)
 add_executable(transcript transcript.c)
 target_link_libraries(transcript PRIVATE common)
-add_executable(screen screen.c display.c settle.c)
+add_executable(screen screen.c display.c term.c settle.c)
 target_link_libraries(screen PRIVATE common)
 
-# Display layouts on a file in place of the framebuffer, and the settle rule on recorded previews, run on the board or
-# a Linux PC with ctest
+# Display layouts on a file in place of the framebuffer or the terminal, and the settle rule on recorded previews, run
+# on the board or a Linux PC with ctest
 enable_testing()
 add_executable(test_display test_display.c display.c)
 add_test(NAME display COMMAND test_display)
+add_executable(test_term test_term.c term.c display.c)
+add_test(NAME term COMMAND test_term)
 add_executable(test_settle test_settle.c settle.c)
 add_test(NAME settle COMMAND test_settle)

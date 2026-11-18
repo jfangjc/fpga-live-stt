@@ -15,7 +15,7 @@ else
     common="app/kv260.c app/hybrid.c app/cpu.c app/phrase.c app/live.c"
     cc $flags -o build/app/caption app/caption.c $common -lm -pthread
     cc $flags -o build/app/transcript app/transcript.c $common -lm -pthread
-    cc $flags -o build/app/screen app/screen.c app/display.c app/settle.c $common -lm -pthread
+    cc $flags -o build/app/screen app/screen.c app/display.c app/term.c app/settle.c $common -lm -pthread
 fi
 (cd u-dma-buf && make)
 

@@ -85,7 +85,7 @@ static void character(char c, unsigned x, unsigned y, unsigned size, const uint8
 }
 
 // word wraps text at cols characters and hands back the last max lines as [start end) offsets oldest first
-static unsigned wrap(const char* text, unsigned cols, size_t* start, size_t* end, unsigned max) {
+unsigned display_wrap(const char* text, unsigned cols, size_t* start, size_t* end, unsigned max) {
     size_t length = strlen(text), at = 0, s[64], e[64];
     unsigned n = 0;
     while (1) {
@@ -211,29 +211,36 @@ int display_open(int status, int which) {
     return 0;
 }
 
-// draws the history and the live phrase -> called by emit on every preview and final
-void display_show(const char* history, const char* live, size_t stable) {
+// the history to show -> a live phrase longer than two lines moves its earlier lines up into the history so no word
+// leaves the screen unseen
+const char* display_past(const char* history, const char* live, unsigned cols) {
     static char past[8192];
     size_t start[64], end[64];
-    if (fb < 0)
-        return;
-    fill(0, 0, WIDTH, HEIGHT, theme->background);
-    // -> a live phrase longer than two lines moves its earlier lines up into the history so no word leaves the screen unseen
-    unsigned lines = wrap(live, LIVE, start, end, 64);
+    unsigned lines = display_wrap(live, cols, start, end, 64);
     size_t moved = lines > 2 ? start[lines - 2] : 0, h = strlen(history);
     while (moved && live[moved - 1] == ' ')
         moved--;
     if (h + moved + 2 > sizeof past) // the oldest history is off the screen anyway
         history += h + moved + 2 - sizeof past, h = strlen(history);
     snprintf(past, sizeof past, "%s%s%.*s", history, h && moved ? " " : "", (int)moved, live);
+    return past;
+}
+
+// draws the history and the live phrase -> called by emit on every preview and final
+void display_show(const char* history, const char* live, size_t stable) {
+    size_t start[64], end[64];
+    if (fb < 0)
+        return;
+    fill(0, 0, WIDTH, HEIGHT, theme->background);
+    const char* past = display_past(history, live, LIVE);
     // -> history is two lines at twice the font with tops at rows 60 and 80 and only the newest lines show
-    unsigned n = wrap(past, HISTORY, start, end, 2);
+    unsigned n = display_wrap(past, HISTORY, start, end, 2);
     for (unsigned i = 0; i < n; i++)
         for (size_t j = start[i]; j < end[i]; j++)
             character(past[j], LEFT + 12 * (unsigned)(j - start[i]), 60 + 20 * (i + 2 - n), 2, theme->history);
     // -> live is two lines at three times the font at rows 116 and 148 so the eye stays in one place
     // -> characters before stable are settled and get the main colour while the rest get the tentative colour
-    n = wrap(live, LIVE, start, end, 2);
+    n = display_wrap(live, LIVE, start, end, 2);
     for (unsigned i = 0; i < n; i++)
         for (size_t j = start[i]; j < end[i]; j++)
             character(live[j], LEFT + 18 * (unsigned)(j - start[i]), 116 + 32 * i, 3,

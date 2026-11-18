@@ -9,3 +9,7 @@ vivado*.log
 
 # Board package
 stt-caption-kv260.tar.xz
+
+# Build output
+/build/
+/data/
